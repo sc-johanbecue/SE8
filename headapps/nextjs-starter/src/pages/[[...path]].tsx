@@ -57,13 +57,14 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
   let paths: StaticPath[] = [];
   let fallback: boolean | 'blocking' = 'blocking';
 
-  if (
-    process.env.NODE_ENV !== 'development' &&
-    process.env.DISABLE_SSG_FETCH?.toLowerCase() !== 'true'
-  ) {
+  if (process.env.NODE_ENV !== 'development' && !process.env.DISABLE_SSG_FETCH) {
     try {
       // Note: Next.js runs export in production mode
       paths = await sitemapFetcher.fetch(context);
+      paths = paths.filter((element) => {
+        // Currently Hardcoded catalogs as it tries to build that
+        return !element.params.path.includes(',-w-,');
+      });
     } catch (error) {
       console.log('Error occurred while fetching static paths');
       console.log(error);

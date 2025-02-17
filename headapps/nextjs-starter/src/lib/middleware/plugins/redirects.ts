@@ -1,12 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { RedirectsMiddleware } from '@sitecore-jss/sitecore-jss-nextjs/middleware';
 import { MiddlewarePlugin } from '..';
 import { siteResolver } from 'lib/site-resolver';
 import clientFactory from 'lib/graphql-client-factory';
+import { RedirectsMiddleware } from '@sitecore-jss/sitecore-jss-nextjs/middleware';
 
 class RedirectsPlugin implements MiddlewarePlugin {
   private redirectsMiddleware: RedirectsMiddleware;
   order = 0;
+
+  useExperimentalRedirects =
+    process?.env?.USE_EXPERIMENTAL_REDIRECTS_PLUGIN == 'true' ? true : false ?? false;
 
   constructor() {
     this.redirectsMiddleware = new RedirectsMiddleware({
@@ -21,7 +24,7 @@ class RedirectsPlugin implements MiddlewarePlugin {
       excludeRoute: () => false,
       // This function determines if the middleware should be turned off.
       // By default it is disabled while in development mode.
-      disabled: () => process.env.NODE_ENV === 'development',
+      disabled: () => this.useExperimentalRedirects,
       // Site resolver implementation
       siteResolver,
     });

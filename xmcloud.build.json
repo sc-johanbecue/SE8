@@ -1,58 +1,54 @@
 {
     "renderingHosts": {
-        "playwebsite": {
-            "path": "./src/rendering",
-            "nodeVersion": "20.10.0",
-            "jssDeploymentSecret":"511cdfab92b7440db866ac0fb817b490",
-            "enabled": true,
-            "type": "sxa",
-            "buildCommand": "build",
-            "runCommand": "next:start"
-        }
-    },
-    "transforms": [
-        {
-            "xdtPath": "/xdts/",
-            "targetPath": "/"
-        }
-    ],
-    "deployItems": {
-      "modules": [
-        "renderinghost",
-        "InitItems",
-        "HeadlessSxaWebsite",
-        "HeadlessSxaWebsite-Content"
-      ]
+      "nextjsstarter": {
+        "path": "./headapps/nextjs-starter",
+        "nodeVersion": "20.14.0",
+        "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
+        "enabled": true,
+        "type": "sxa",
+        "buildCommand": "build",
+        "runCommand": "next:start"
+      },
+	"customxmcloudpreview": {
+      "path": "./headapps/nextjs-starter",
+      "nodeVersion": "20.14.0",
+      "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
+      "enabled": true,
+      "type": "sxa",
+      "buildCommand": "build",
+      "runCommand": "next:start"
+	  }
     },
     "postActions": {
         "actions":{
-          "scsModules": {
-            "modules": [
-              "HeadlessSxaWebsite-Media"
-            ]
-          },
           "warmUpCm": {
             "urls": [
-              "/Utilities/Restart.aspx",
-              "/Utilities/InitializeComponentsLibraryId.aspx",
-              "/Utilities/InitializePointOfSale.aspx"
+              "/sitecore/shell",
+              "/sitecore/shell/Applications/Content%20Editor.aspx?sc_bw=1",
+              "/sitecore/client/Applications/Launchpad"
             ]
           },
+	"scsModules": {
+        "modules": [
+		  "Foundation.Globals",
+		  "Foundation.Shared",
+          "Foundation.Translation",
+          "Foundation.AI",
+		  "Feature.Authentication",
+          "Feature.Assets",
+		  "Feature.Products",
+		  "Feature.Forms",
+          "Feature.News",
+          "Feature.Seo",
+		  "Feature.Content",
+		  "Project.Content"
+		]
+      },
           "populateSchema": {
             "indexNames": []
           },
           "reindex": {
             "indexNames": []
-          },
-          "publish": {
-            "path": "/sitecore",
-            "languages": [
-              "en",
-              "fr-CA"
-            ],
-            "itemIds": [],
-            "targets": ["Edge"],
-            "republish": false
           }
         }
     }

@@ -1,0 +1,31 @@
+﻿---
+ID: "2fdd9f83-48a4-4a60-b02f-9e9feba002c9"
+Parent: "356973d1-8030-416b-978f-f64b5200b135"
+Template: "4e4fe910-da72-4844-90c7-e9c59ec45aa1"
+Path: /sitecore/content/Hahn Solo/Shared/Data/Accordion Elements
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20241004T105210Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Christian Hahn
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Christian Hahn
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "04068d79-3a9e-4e85-914f-c7940914a615"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Christian Hahn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20241004T105210Z

@@ -1,0 +1,48 @@
+﻿---
+ID: "77693f63-fc06-4fa9-b7a2-96456e2620ed"
+Parent: "40edd6e0-4564-4e4d-a76e-2a603b9639d6"
+Template: "40edd6e0-4564-4e4d-a76e-2a603b9639d6"
+Path: /sitecore/templates/Project/Hahn Solo/News Page/__Standard Values
+SharedFields:
+- ID: "899a49f0-caea-4964-b700-8581c200155d"
+  Hint: Author
+  Value: "{9B3A3BC6-05B8-440D-BB62-B91BC2EB3C65}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1d219cb0-f5fe-4258-a7bc-9dc5952d2162"
+      Hint: Content
+      Value: At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240711T124735Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Christian Hahn
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Christian Hahn
+    - ID: "6d98c466-99fa-480c-8b35-36b3827630a4"
+      Hint: PublicationDate
+      Value: 20240809T000000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "53a93404-9fa0-4ed6-82be-b5ad47954f84"
+    - ID: "a0095e8a-4e88-4811-a41a-14f5615a4a90"
+      Hint: Abstract
+      Value: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Jonathan Rauner
+    - ID: "d927d364-6b7f-49b3-8fa6-45823d848fac"
+      Hint: Image
+      Value: |
+        <image mediaid="{B05993EB-7FA9-4CF1-963F-526AFACCDF75}" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240809T064716Z

@@ -1,66 +1,40 @@
-# PLAY! Summit Demo on XM Cloud
+# XM Cloud Front End Application Starter Kits
 
-A headless site built to showcase the power of Sitecore's composable digital solutions, on XM Cloud
+This repository contains the Next.js Starter Kit, and the SPA Starters monorepo (which includes a Node Proxy Application and and SPA starter apps) for Sitecore XM Cloud Development. It is intended to get developers up and running quickly with a new front end project that is integrated with Sitecore XM Cloud.
 
-![PLAY! Website Home Page](docs/play-website-thumbnail.png)
+## GitHub Template
 
-This repository is a Sitecore DXP demo that uses:
+This Github repository is a template that can be used to create your own repository. To get started, click the `Use this template` button at the top of the repository.
 
-- Sitecore XM Cloud
-  - XM Cloud Pages Personalize
-  - XM Cloud Pages Analyze
-- Sitecore Content Hub DAM and CMP
-- Sitecore Search
-- Sitecore JavaScript Services (JSS)
-- Next.js
-- Vercel
-- Tailwind CSS
-- Storybook
+### Prerequisites
 
-## Live Demo
+- Access to an Sitecore XM Cloud Environment
+- [Node.js LTS](https://nodejs.org/en/)
 
-View the live demo at [play-website.sitecoredemo.com](https://play-website.sitecoredemo.com/)
+### Getting Started Guide
 
-## Storybook
+For developers new to XM Cloud you can follow the Getting Started Guide on the [Sitecore Documentation Site](https://doc.sitecore.com/xmc) to get up and running with XM Cloud. This will walk you through the process of creating a new XM Cloud Project, provisioning an Environment, deploying the NextJs Starter Kit, and finally creating your first Component.
 
-View the [Storybook](https://github.com/storybookjs/storybook) at [play-website-storybook.sitecoredemo.com](https://play-website-storybook.sitecoredemo.com/)
+### Running the Next.js Starter Kit
 
-## [📖 Documentation](docs/README.md)
+- Log into the Sitecore XM Cloud Deploy Portal, locate your Environment and select the `Developer Settings` tab.
+- Ensure that the `Preview` toggle is enabled.
+- In the `Local Development` section, click to copy the sample `.env` file contents to your clipboard.
+- Create a new `.env.local` file in the `./headapps/nextjs-starter` folder of this repository and paste the contents from your clipboard.
+- Run the following commands in the root of the repository to start the NextJs application:
+  ```bash
+  cd headapps/nextjs-starter
+  npm install
+  npm run start:connected
+  ```
+- You should now be able to access your site on `http://localhost:3000` and see your changes in real-time as you make them.
 
-The setup, installation, development, and usage documentation is available in the [docs folder](docs/README.md).
+### SPA Starters Monorepo and Angular SPA
 
-## ⚠ Important notice
+A new starter SPA based on Angular has been introduced with JSS v22.3.0. The Angular starter has been designed to be compatible with XM Cloud and should be used with the provided node XM Cloud proxy application to handle server-side rendering (SSR), data queries, personalization and more. For more details and information on how to run and deploy the Angular starter and proxy to XM Cloud have a look at [SPA starters monorepo](headapps/spa-starters/)
 
-### Is PLAY! Summit a starter kit or template solution?
+## Disconnected offline development
 
-**No.** You should not clone this repository for the purposes of starting a new Sitecore project. There are other community solutions which can be used as a starter for Sitecore implementations. PLAY! Summit is intended as a **demo site demonstrating the full Sitecore DXP capabilities**.
+It is possible to mock a small subset of the XM Cloud Application elements to enable offline development. This can allow for a disconnected development experience, however it is recommend to work in the default connected mode.
 
-### Is PLAY! Summit supported by Sitecore?
-
-Sitecore maintains the PLAY! Summit example, but PLAY! Summit code is not supported by Sitecore Product Support Services. Please do not submit support tickets regarding PLAY! Summit.
-
-### How can I get help with PLAY! Summit?
-
-For usage questions regarding PLAY! Summit, installation or code, please use [Sitecore Stack Exchange](https://sitecore.stackexchange.com/) or [#sitecoredemo](https://sitecorechat.slack.com/messages/CASEB5M38) on [Sitecore Community Slack](https://sitecore.chat/).
-
-Please do not submit usage questions via GitHub.
-
-### Bug reports
-
-You can use GitHub to submit [bug reports](https://github.com/Sitecore/Sitecore.Demo.XmCloud.PlaySummit/issues/new) for PLAY! Summit.
-
-### Feature requests
-
-You can use GitHub to submit [feature requests](https://github.com/Sitecore/Sitecore.Demo.XmCloud.PlaySummit/issues/new) for PLAY! Summit.
-
-### Contribute
-
-Contributions are always welcome by submitting [pull requests](https://github.com/Sitecore/Sitecore.Demo.XmCloud.PlaySummit/pulls) on GitHub!
-
-### License
-
-Please read the [LICENSE](https://github.com/Sitecore/Sitecore.Demo.XmCloud.PlaySummit/blob/main/LICENSE) carefully prior to using the code in this repository.
-
-### Warranty
-
-The code, samples and/or solutions provided in this repository are for example purposes only and **without warranty (expressed or implied)**. The code has not been extensively tested and is not guaranteed to be bug free.
+You can find more information about how setup the offline development experience [here](./local-containers/README.md)

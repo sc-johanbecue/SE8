@@ -1,5 +1,4 @@
 import React from 'react';
-import { Text } from '@chakra-ui/react';
 import { Field, RichText as JssRichText } from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
@@ -13,9 +12,7 @@ export type RichTextProps = {
 
 export const Default = (props: RichTextProps): JSX.Element => {
   const text = props.fields ? (
-    <Text as="div" fontSize={{ base: 'md', sm: 'sm', md: 'md', lg: 'lg', xl: 'xl' }}>
-      <JssRichText field={props.fields.Text} />
-    </Text>
+    <JssRichText field={props.fields.Text} />
   ) : (
     <span className="is-empty-hint">Rich text</span>
   );

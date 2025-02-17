@@ -30,6 +30,9 @@ const nextConfig = {
   // Enable React Strict Mode
   reactStrictMode: true,
 
+  // Disable the X-Powered-By header. Follows security best practices.
+  poweredByHeader: false,
+
   // use this configuration to ensure that only images from the whitelisted domains
   // can be served from the Next.js Image Optimization API
   // see https://nextjs.org/docs/app/api-reference/components/image#remotepatterns
@@ -50,14 +53,7 @@ const nextConfig = {
         hostname: 'feaas*.blob.core.windows.net',
         port: '',
       },
- 	  {
-        protocol: 'https',
-        hostname: 'cdn-assets-cloud.frontify.com',
-      },
-	  {
-        protocol: 'https',
-        hostname: 'emea-solution-engineering-demo-hahn-2.sitecoresandbox.cloud',
-      },    ]
+    ]
   },
 
   async rewrites() {

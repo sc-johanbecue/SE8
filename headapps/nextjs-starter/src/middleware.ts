@@ -19,6 +19,6 @@ export const config = {
    */
   matcher: [
     '/',
-    '/((?!api/|_next/|feaas-render|healthz|catalogs/|sitecore/api/|-/|favicon.ico|sc_logo.svg|nextRoute).*)',
+    '/((?!api/|_next/|feaas-render|healthz|sitecore/api/|-/|favicon.ico|sc_logo.svg).*)',
   ],
 };

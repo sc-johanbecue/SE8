@@ -139,7 +139,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         <footer>
           <div id="footer">{route && <Placeholder name="headless-footer" rendering={route} />}</div>
         </footer>
-          <div role="main" className="main">
+        <div role="main" className="main">
           <section className="section section-with-shape-divider border-0 py-0 m-0">
             <div
               className="shape-divider shape-divider-bottom z-index-3"

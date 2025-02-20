@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react'; //{ useState }
 import { TextField } from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
@@ -22,35 +22,35 @@ const FooterDefaultComponent = (props: FooterProps): JSX.Element => (
 export const Default = (props: FooterProps): JSX.Element => {
   //const id = props.params.RenderingIdentifier;
 
-  const [subject, setSubject] = useState('Contact Form');
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [message, setMessage] = useState('');
+  // const [subject, setSubject] = useState('Contact Form');
+  // const [name, setName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [phone, setPhone] = useState('');
+  // const [message, setMessage] = useState('');
 
-  const handleChangeSubject = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSubject(event.target.value);
-  };
+  // const handleChangeSubject = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   setSubject(event.target.value);
+  // };
 
-  const handleChangeName = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setName(event.target.value);
-  };
+  // const handleChangeName = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   setName(event.target.value);
+  // };
 
-  const handleChangePhone = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setPhone(event.target.value);
-  };
+  // const handleChangePhone = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   setPhone(event.target.value);
+  // };
 
-  const handleChangeEmail = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setEmail(event.target.value);
-  };
+  // const handleChangeEmail = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   setEmail(event.target.value);
+  // };
 
-  const handleChangeMessage = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setMessage(event.target.value);
-  };
+  // const handleChangeMessage = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+  //   setMessage(event.target.value);
+  // };
 
-  const handleSubmitClick = (event: React.MouseEvent<HTMLInputElement>) => {
-    event.preventDefault(); // Prevents form submission (optional)
-  };
+  // const handleSubmitClick = (event: React.MouseEvent<HTMLInputElement>) => {
+  //   event.preventDefault(); // Prevents form submission (optional)
+  // };
 
   return (
     <>
@@ -72,18 +72,12 @@ export const Default = (props: FooterProps): JSX.Element => {
                 Error sending your message.
                 <span className="mail-error-message text-1 d-block"></span>
               </div>
-              <input
-                type="hidden"
-                value={subject}
-                name="subject"
-                id="subject"
-                onChange={handleChangeSubject} // Hidden input can still have an onChange
-              />
+              <input type="hidden" value="" name="subject" id="subject" />
               <div className="row">
                 <div className="form-group col-md-6 pe-md-2">
                   <input
                     type="text"
-                    value={name}
+                    value=""
                     data-msg-required="Please enter your name."
                     maxLength={100}
                     className="form-control h-auto py-2"
@@ -91,13 +85,12 @@ export const Default = (props: FooterProps): JSX.Element => {
                     name="name"
                     id="name"
                     required
-                    onChange={handleChangeName}
                   />
                 </div>
                 <div className="form-group col-md-6 ps-md-2">
                   <input
                     type="text"
-                    value={phone}
+                    value=""
                     data-msg-required="Please enter your phone."
                     maxLength={100}
                     className="form-control h-auto py-2"
@@ -105,14 +98,13 @@ export const Default = (props: FooterProps): JSX.Element => {
                     name="phone"
                     id="phone"
                     required
-                    onChange={handleChangePhone}
                   />
                 </div>
               </div>
               <div className="form-group">
                 <input
                   type="email"
-                  value={email}
+                  value=""
                   data-msg-required="Please enter your email address."
                   data-msg-email="Please enter a valid email address."
                   maxLength={100}
@@ -121,14 +113,13 @@ export const Default = (props: FooterProps): JSX.Element => {
                   name="email"
                   id="email"
                   required
-                  onChange={handleChangeEmail}
                 />
               </div>
               <div className="row">
                 <div className="form-group col">
                   <textarea
                     maxLength={5000}
-                    value={message}
+                    value=""
                     data-msg-required="Please enter your message."
                     rows={4}
                     className="form-control"
@@ -136,7 +127,6 @@ export const Default = (props: FooterProps): JSX.Element => {
                     name="message"
                     id="message"
                     required
-                    onChange={handleChangeMessage}
                   ></textarea>
                 </div>
               </div>
@@ -147,7 +137,6 @@ export const Default = (props: FooterProps): JSX.Element => {
                     value="SUBMIT"
                     className="btn btn-primary font-weight-semibold text-3 px-5 btn-py-2"
                     data-loading-text="Loading..."
-                    onClick={handleSubmitClick} // ✅ onClick event added
                   />
                 </div>
               </div>

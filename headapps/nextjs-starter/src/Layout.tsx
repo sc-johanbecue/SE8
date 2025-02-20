@@ -143,23 +143,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           <div id="footer">{route && <Placeholder name="headless-footer" rendering={route} />}</div>
         </footer>
       </div>
-      <a
-        className="style-switcher-open-loader"
-        href="#"
-        data-base-path=""
-        data-skin-src=""
-        data-bs-toggle="tooltip"
-        data-bs-animation="false"
-        data-bs-placement="right"
-        title="Style Switcher"
-        aria-label="Style Switcher"
-      >
-        <i className="fas fa-cogs"></i>
-        <div className="style-switcher-tooltip">
-          <strong>Style Switcher</strong>
-          <p>Check out different color options and styles.</p>
-        </div>
-      </a>
 
       {/* Vendor */}
       <script src="../vendor/plugins/js/plugins.min.js" />

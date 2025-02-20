@@ -135,7 +135,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           className="header-transparent header-effect-shrink"
           data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}"
         >
-          <div>{route && <Placeholder name="headless-header" rendering={route} />}</div>
+          {route && <Placeholder name="headless-header" rendering={route} />}
         </header>
         <main>
           <div id="content">{route && <Placeholder name="headless-main" rendering={route} />}</div>

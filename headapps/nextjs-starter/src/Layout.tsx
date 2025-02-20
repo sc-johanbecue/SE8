@@ -65,13 +65,13 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           type="text/css"
         />
         {/* Vendor CSS */}
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
           integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
-        />
+        /> */}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -145,7 +145,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
       </div>
 
       {/* Vendor */}
-      <script src="../vendor/plugins/js/plugins.min.js" />
+      <script src="/vendor/plugins/js/plugins.min.js" />
       {/* <script
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -177,13 +177,13 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         referrerPolicy="no-referrer"
       /> */}
       {/* Theme Base, Components and Settings */}
-      <script src="../js/theme.js" />
+      <script src="/js/theme.js" />
       {/* Current Page Vendor and Views */}
-      <script src="../js/views/view.contact.js" />
+      <script src="/js/views/view.contact.js" />
       {/* Theme Custom */}
-      <script src="../js/custom.js" />
+      <script src="/js/custom.js" />
       {/* Theme Initialization Files */}
-      <script src="../js/theme.init.js" />
+      <script src="/js/theme.init.js" />
     </>
   );
 };

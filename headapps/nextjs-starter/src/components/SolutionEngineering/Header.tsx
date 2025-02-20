@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { TextField } from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
@@ -21,6 +21,13 @@ const HeaderDefaultComponent = (props: HeaderProps): JSX.Element => (
 
 export const Default = (props: HeaderProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
+
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(event.target.value);
+    console.log('Search query:', event.target.value);
+  };
 
   return (
     <div className="header-body border-top-0 bg-dark box-shadow-none" id={id ? id : undefined}>
@@ -3606,7 +3613,8 @@ export const Default = (props: HeaderProps): JSX.Element => {
                           id="headerSearch"
                           name="q"
                           type="search"
-                          value=""
+                          value={searchQuery}
+                          onChange={handleSearchChange}
                           placeholder="Search..."
                         />
                         <button className="btn" type="submit" aria-label="Search">

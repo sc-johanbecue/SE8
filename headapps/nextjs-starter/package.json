@@ -42,6 +42,7 @@
     "graphql-tag": "^2.12.6",
     "next": "^14.2.18",
     "next-localization": "^0.12.0",
+    "node": "^23.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.52.3",

@@ -631,7 +631,13 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     Error sending your message.
                     <span className="mail-error-message text-1 d-block"></span>
                   </div>
-                  <input type="hidden" value="Contact Form" name="subject" id="subject" />
+                  <input
+                    type="hidden"
+                    value="Contact Form"
+                    name="subject"
+                    id="subject"
+                    onChange={undefined}
+                  />
                   <div className="row">
                     <div className="form-group col-md-6 pe-md-2">
                       <input
@@ -644,6 +650,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         name="name"
                         id="name"
                         required
+                        onChange={undefined}
                       />
                     </div>
                     <div className="form-group col-md-6 ps-md-2">
@@ -657,6 +664,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         name="phone"
                         id="phone"
                         required
+                        onChange={undefined}
                       />
                     </div>
                   </div>
@@ -672,6 +680,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       name="email"
                       id="email"
                       required
+                      onChange={undefined}
                     />
                   </div>
                   <div className="row">
@@ -695,6 +704,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         value="SUBMIT"
                         className="btn btn-primary font-weight-semibold text-3 px-5 btn-py-2"
                         data-loading-text="Loading..."
+                        onChange={undefined}
                       />
                     </div>
                   </div>

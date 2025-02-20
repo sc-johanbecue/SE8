@@ -67,25 +67,25 @@
 //   list-style-type: none;
 // }
 
-// .xa-variable {
-//   border: 0px;
-//   padding: 1px;
-//   margin: 0px;
-//   background-color: #ebebe4;
-//   color: #545454;
-//   user-select: none;
-//   pointer-events: none;
-// }
+.xa-variable {
+  border: 0px;
+  padding: 1px;
+  margin: 0px;
+  background-color: #ebebe4;
+  color: #545454;
+  user-select: none;
+  pointer-events: none;
+}
 
-// //Navigation Bar fix
-// #breadcrumbMenuSubcontrol_context_menu * {
-//   box-sizing: initial;
-// }
+//Navigation Bar fix
+#breadcrumbMenuSubcontrol_context_menu * {
+  box-sizing: initial;
+}
 
-// //End navigation bar fix
-// .menu-mobile-navigate {
-//   display: none;
-// }
+//End navigation bar fix
+.menu-mobile-navigate {
+  display: none;
+}
 
 #header,
 #content,

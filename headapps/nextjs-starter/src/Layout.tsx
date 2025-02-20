@@ -65,13 +65,13 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           type="text/css"
         />
         {/* Vendor CSS */}
-        {/* <link
+        <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
           integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
-        /> */}
+        />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -130,15 +130,16 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
       {/* root placeholder for the app, which we add components to using route data */}
       <div className={'body ' + mainClassPageEditing}>
         <header
-          id="header"
           className="header-transparent header-effect-shrink"
           data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}"
         >
-          {route && <Placeholder name="headless-header" rendering={route} />}
+          <div id="header">{route && <Placeholder name="headless-header" rendering={route} />}</div>
         </header>
-        <div role="main" className="main" id="content">
-          {route && <Placeholder name="headless-main" rendering={route} />}
-        </div>
+        <main>
+          <div role="main" className="main" id="content">
+            {route && <Placeholder name="headless-main" rendering={route} />}
+          </div>
+        </main>
         <footer id="footer" className="bg-color-light border-0 pt-5 mt-0">
           <div id="footer">{route && <Placeholder name="headless-footer" rendering={route} />}</div>
         </footer>

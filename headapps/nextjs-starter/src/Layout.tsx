@@ -624,6 +624,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   className="contact-form form-style-3"
                   action="php/contact-form.php"
                   method="POST"
+                  onChange={undefined}
                 >
                   <div className="contact-form-success alert alert-success d-none">
                     Message has been sent to us.

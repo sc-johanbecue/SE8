@@ -69,7 +69,7 @@ export const Default = (props: MainProps): JSX.Element => {
                         >
                           <span className="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
                             <img
-                              src="img/slides/slide-title-border.png"
+                              src="/img/slides/slide-title-border.png"
                               className="w-auto appear-animation"
                               data-appear-animation="fadeInLeftShorter"
                               data-appear-animation-delay="250"
@@ -80,7 +80,7 @@ export const Default = (props: MainProps): JSX.Element => {
                           WE CREATE DESIGNS, WE ARE
                           <span className="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
                             <img
-                              src="img/slides/slide-title-border.png"
+                              src="/img/slides/slide-title-border.png"
                               className="w-auto appear-animation"
                               data-appear-animation="fadeInRightShorter"
                               data-appear-animation-delay="250"
@@ -138,7 +138,7 @@ export const Default = (props: MainProps): JSX.Element => {
                         >
                           <span className="position-absolute right-100pct top-50pct transform3dy-n50 opacity-7">
                             <img
-                              src="img/slides/slide-title-border-light.png"
+                              src="/img/slides/slide-title-border-light.png"
                               className="w-auto appear-animation"
                               data-appear-animation="fadeInRightShorter"
                               data-appear-animation-delay="250"
@@ -149,7 +149,7 @@ export const Default = (props: MainProps): JSX.Element => {
                           HELLO, THIS IS
                           <span className="position-absolute left-100pct top-50pct transform3dy-n50 opacity-7">
                             <img
-                              src="img/slides/slide-title-border-light.png"
+                              src="/img/slides/slide-title-border-light.png"
                               className="w-auto appear-animation"
                               data-appear-animation="fadeInLeftShorter"
                               data-appear-animation-delay="250"
@@ -309,7 +309,7 @@ export const Default = (props: MainProps): JSX.Element => {
                     <div className="thumb-info thumb-info-hide-wrapper-bg thumb-info-no-zoom rounded-0">
                       <div className="thumb-info-wrapper">
                         <img
-                          src="img/gallery/gallery-2.jpg"
+                          src="/img/gallery/gallery-2.jpg"
                           className="img-fluid rounded-0 hover-effect-2"
                           alt=""
                         />
@@ -322,7 +322,7 @@ export const Default = (props: MainProps): JSX.Element => {
                     <div className="thumb-info thumb-info-hide-wrapper-bg thumb-info-no-zoom rounded-0">
                       <div className="thumb-info-wrapper">
                         <img
-                          src="img/gallery/gallery-3.jpg"
+                          src="/img/gallery/gallery-3.jpg"
                           className="img-fluid rounded-0 hover-effect-2"
                           alt=""
                         />
@@ -335,7 +335,7 @@ export const Default = (props: MainProps): JSX.Element => {
                     <div className="thumb-info thumb-info-hide-wrapper-bg thumb-info-no-zoom rounded-0">
                       <div className="thumb-info-wrapper">
                         <img
-                          src="img/gallery/gallery-4.jpg"
+                          src="/img/gallery/gallery-4.jpg"
                           className="img-fluid rounded-0 hover-effect-2"
                           alt=""
                         />
@@ -348,7 +348,7 @@ export const Default = (props: MainProps): JSX.Element => {
                     <div className="thumb-info thumb-info-hide-wrapper-bg thumb-info-no-zoom rounded-0">
                       <div className="thumb-info-wrapper">
                         <img
-                          src="img/gallery/gallery-5.jpg"
+                          src="/img/gallery/gallery-5.jpg"
                           className="img-fluid rounded-0 hover-effect-2"
                           alt=""
                         />
@@ -361,7 +361,7 @@ export const Default = (props: MainProps): JSX.Element => {
                     <div className="thumb-info thumb-info-hide-wrapper-bg thumb-info-no-zoom rounded-0">
                       <div className="thumb-info-wrapper">
                         <img
-                          src="img/gallery/gallery-2.jpg"
+                          src="/img/gallery/gallery-2.jpg"
                           className="img-fluid rounded-0 hover-effect-2"
                           alt=""
                         />
@@ -374,7 +374,7 @@ export const Default = (props: MainProps): JSX.Element => {
                     <div className="thumb-info thumb-info-hide-wrapper-bg thumb-info-no-zoom rounded-0">
                       <div className="thumb-info-wrapper">
                         <img
-                          src="img/gallery/gallery-3.jpg"
+                          src="/img/gallery/gallery-3.jpg"
                           className="img-fluid rounded-0 hover-effect-2"
                           alt=""
                         />
@@ -401,28 +401,28 @@ export const Default = (props: MainProps): JSX.Element => {
             data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 5}, '992': {'items': 7}, '1200': {'items': 7}}, 'margin': 50, 'autoplay': true, 'autoplayTimeout': 3000, 'dots': false}"
           >
             <div>
-              <img className="img-fluid" src="img/logos/logo-1.png" alt="" />
+              <img className="img-fluid" src="/img/logos/logo-1.png" alt="" />
             </div>
             <div>
-              <img className="img-fluid" src="img/logos/logo-2.png" alt="" />
+              <img className="img-fluid" src="/img/logos/logo-2.png" alt="" />
             </div>
             <div>
-              <img className="img-fluid" src="img/logos/logo-3.png" alt="" />
+              <img className="img-fluid" src="/img/logos/logo-3.png" alt="" />
             </div>
             <div>
-              <img className="img-fluid" src="img/logos/logo-4.png" alt="" />
+              <img className="img-fluid" src="/img/logos/logo-4.png" alt="" />
             </div>
             <div>
-              <img className="img-fluid" src="img/logos/logo-5.png" alt="" />
+              <img className="img-fluid" src="/img/logos/logo-5.png" alt="" />
             </div>
             <div>
-              <img className="img-fluid" src="img/logos/logo-6.png" alt="" />
+              <img className="img-fluid" src="/img/logos/logo-6.png" alt="" />
             </div>
             <div>
-              <img className="img-fluid" src="img/logos/logo-4.png" alt="" />
+              <img className="img-fluid" src="/img/logos/logo-4.png" alt="" />
             </div>
             <div>
-              <img className="img-fluid" src="img/logos/logo-2.png" alt="" />
+              <img className="img-fluid" src="/img/logos/logo-2.png" alt="" />
             </div>
           </div>
         </div>

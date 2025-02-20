@@ -41,7 +41,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                     alt="Porto"
                     width="82"
                     height="40"
-                    src="img/logo-default-slim-dark-small.png"
+                    src="/img/logo-default-slim-dark-small.png"
                   />
                 </a>
               </div>
@@ -3627,7 +3627,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                 <div className="header-nav-feature header-nav-features-cart d-inline-flex ms-2">
                   <a href="#" className="header-nav-features-toggle" aria-label="">
                     <img
-                      src="img/icons/icon-cart-light.svg"
+                      src="/img/icons/icon-cart-light.svg"
                       width="14"
                       alt=""
                       className="header-nav-top-icon-img"
@@ -3640,7 +3640,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                     <ol className="mini-products-list">
                       <li className="item">
                         <a href="#" title="Camera X1000" className="product-image">
-                          <img src="img/products/product-1.jpg" alt="Camera X1000" />
+                          <img src="/img/products/product-1.jpg" alt="Camera X1000" />
                         </a>
                         <div className="product-details">
                           <p className="product-name">

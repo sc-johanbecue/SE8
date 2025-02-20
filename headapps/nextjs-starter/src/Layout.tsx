@@ -4,7 +4,7 @@
 /**
  * This Layout is needed for Starter Kit.
  */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { Placeholder, LayoutServiceData, Field, HTMLLink } from '@sitecore-jss/sitecore-jss-nextjs';
 import config from 'temp/config';
@@ -34,7 +34,35 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
     document.body.setAttribute('data-plugin-page-transition', '');
   }, []);
 
-  // {/* <body data-plugin-page-transition> */}
+  const [subject, setSubject] = useState('Contact Form');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleChangeSubject = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSubject(event.target.value);
+  };
+
+  const handleChangeName = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setName(event.target.value);
+  };
+
+  const handleChangePhone = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPhone(event.target.value);
+  };
+
+  const handleChangeEmail = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const handleChangeMessage = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setMessage(event.target.value);
+  };
+
+  const handleSubmitClick = (event: React.MouseEvent<HTMLInputElement>) => {
+    event.preventDefault(); // Prevents form submission (optional)
+  };
 
   return (
     <>
@@ -624,7 +652,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   className="contact-form form-style-3"
                   action="php/contact-form.php"
                   method="POST"
-                  onChange={undefined}
                 >
                   <div className="contact-form-success alert alert-success d-none">
                     Message has been sent to us.
@@ -635,16 +662,16 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   </div>
                   <input
                     type="hidden"
-                    value="Contact Form"
+                    value={subject}
                     name="subject"
                     id="subject"
-                    onChange={undefined}
+                    onChange={handleChangeSubject} // Hidden input can still have an onChange
                   />
                   <div className="row">
                     <div className="form-group col-md-6 pe-md-2">
                       <input
                         type="text"
-                        value=""
+                        value={name}
                         data-msg-required="Please enter your name."
                         maxLength={100}
                         className="form-control h-auto py-2"
@@ -652,13 +679,13 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         name="name"
                         id="name"
                         required
-                        onChange={undefined}
+                        onChange={handleChangeName}
                       />
                     </div>
                     <div className="form-group col-md-6 ps-md-2">
                       <input
                         type="text"
-                        value=""
+                        value={phone}
                         data-msg-required="Please enter your phone."
                         maxLength={100}
                         className="form-control h-auto py-2"
@@ -666,14 +693,14 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         name="phone"
                         id="phone"
                         required
-                        onChange={undefined}
+                        onChange={handleChangePhone}
                       />
                     </div>
                   </div>
                   <div className="form-group">
                     <input
                       type="email"
-                      value=""
+                      value={email}
                       data-msg-required="Please enter your email address."
                       data-msg-email="Please enter a valid email address."
                       maxLength={100}
@@ -682,13 +709,14 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       name="email"
                       id="email"
                       required
-                      onChange={undefined}
+                      onChange={handleChangeEmail}
                     />
                   </div>
                   <div className="row">
                     <div className="form-group col">
                       <textarea
                         maxLength={5000}
+                        value={message}
                         data-msg-required="Please enter your message."
                         rows={4}
                         className="form-control"
@@ -696,6 +724,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         name="message"
                         id="message"
                         required
+                        onChange={handleChangeMessage}
                       ></textarea>
                     </div>
                   </div>
@@ -706,7 +735,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         value="SUBMIT"
                         className="btn btn-primary font-weight-semibold text-3 px-5 btn-py-2"
                         data-loading-text="Loading..."
-                        onChange={undefined}
+                        onClick={handleSubmitClick} // ✅ onClick event added
                       />
                     </div>
                   </div>

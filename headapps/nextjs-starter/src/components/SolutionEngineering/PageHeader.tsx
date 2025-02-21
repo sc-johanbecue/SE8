@@ -40,25 +40,16 @@ const ModernPageHeader = (props: PageHeaderProps): JSX.Element => {
   let titleClassNames = 'align-self-center p-static';
   let breadcrumbClassNames = 'align-self-center';
 
-  let titlePosition = props.params.styles.includes('title-position-center')
-    ? 'Center'
-    : props.params.styles.includes('title-position-right')
-    ? 'Right'
-    : 'Left';
-
-  switch (titlePosition) {
-    case 'Left':
-      titleClassNames += ' col-md-8 order-2 order-md-1';
-      breadcrumbClassNames += ' col-md-4 order-1 order-md-2';
-      break;
-    case 'Right':
-      titleClassNames += 'col-md-8 order-1 order-md-2';
-      breadcrumbClassNames += ' col-md-4 order-2 order-md-1';
-      break;
-    case 'Center':
-      titleClassNames = 'col-md-12 p-static order-2 text-center';
-      breadcrumbClassNames = 'col-md-12 order-1';
-      break;
+  // Adjust classes based on detected styles
+  if (props.params.styles.includes('position-left')) {
+    titleClassNames += ' col-md-8 order-2 order-md-1';
+    breadcrumbClassNames += ' col-md-4 order-1 order-md-2';
+  } else if (props.params.styles.includes('position-right')) {
+    titleClassNames += 'col-md-8 order-1 order-md-2';
+    breadcrumbClassNames += ' col-md-4 order-2 order-md-1';
+  } else if (props.params.styles.includes('position-center')) {
+    titleClassNames = 'col-md-12 p-static order-2 text-center';
+    breadcrumbClassNames = 'col-md-12 order-1';
   }
 
   if (props.fields) {

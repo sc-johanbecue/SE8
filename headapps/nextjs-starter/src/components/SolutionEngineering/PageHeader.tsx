@@ -18,11 +18,69 @@ const PageHeaderDefaultComponent = (props: PageHeaderProps): JSX.Element => (
   </div>
 );
 
-export const Default = (props: PageHeaderProps): JSX.Element => {
+export const Modern = (props: PageHeaderProps): JSX.Element => {
   // const id = props.params.RenderingIdentifier;
   if (props.fields) {
     return (
-      <section className={`page-header page-header-modern bg-color-grey ${props.params.styles}`}>
+      <section className="page-header page-header-modern bg-color-grey page-header-md">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8 order-2 order-md-1 align-self-center p-static">
+              <h1 className="text-dark">
+                <JssRichText field={props.fields.Title} />
+              </h1>
+            </div>
+            <div className="col-md-4 order-1 order-md-2 align-self-center">
+              <ul className="breadcrumb d-block text-md-end">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li className="active">Features</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  return <PageHeaderDefaultComponent {...props} />;
+};
+
+export const ModernSmall = (props: PageHeaderProps): JSX.Element => {
+  // const id = props.params.RenderingIdentifier;
+  if (props.fields) {
+    return (
+      <section className="page-header page-header-modern bg-color-grey page-header-sm">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8 order-2 order-md-1 align-self-center p-static">
+              <h1 className="text-dark">
+                <JssRichText field={props.fields.Title} />
+              </h1>
+            </div>
+            <div className="col-md-4 order-1 order-md-2 align-self-center">
+              <ul className="breadcrumb d-block text-md-end">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li className="active">Features</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  return <PageHeaderDefaultComponent {...props} />;
+};
+
+export const ModernLarge = (props: PageHeaderProps): JSX.Element => {
+  // const id = props.params.RenderingIdentifier;
+  if (props.fields) {
+    return (
+      <section className="page-header page-header-modern bg-color-grey page-header-lg">
         <div className="container">
           <div className="row">
             <div className="col-md-8 order-2 order-md-1 align-self-center p-static">

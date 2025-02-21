@@ -47,11 +47,11 @@ export const Default = (props: PageHeaderProps): JSX.Element => {
   return <PageHeaderDefaultComponent {...props} />;
 };
 
-export const Classic = (props: PageHeaderProps): JSX.Element => {
+export const ClassicSmall = (props: PageHeaderProps): JSX.Element => {
   // const id = props.params.RenderingIdentifier;
   if (props.fields) {
     return (
-      <section className="page-header page-header-classic ${props.params.styles}">
+      <section className="page-header page-header-classic page-header-sm">
         <div className="container">
           <div className="row">
             <div className="col-md-8 order-2 order-md-1 align-self-center p-static">
@@ -70,6 +70,39 @@ export const Classic = (props: PageHeaderProps): JSX.Element => {
                 </li>
                 <li className="active">Features</li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  return <PageHeaderDefaultComponent {...props} />;
+};
+
+export const Classic = (props: PageHeaderProps): JSX.Element => {
+  // const id = props.params.RenderingIdentifier;
+  if (props.fields) {
+    return (
+      <section className="page-header page-header-classic">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <ul className="breadcrumb">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li className="active">Features</li>
+              </ul>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col p-static">
+              <span
+                className="page-header-title-border visible"
+                style={{ width: '216.938px' }}
+              ></span>
+              <h1 data-title-border=""><JssRichText field={props.fields.Title} /></h1>
             </div>
           </div>
         </div>

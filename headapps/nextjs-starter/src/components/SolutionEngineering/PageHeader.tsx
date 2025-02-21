@@ -29,7 +29,7 @@ export const Default = (props: PageHeaderProps): JSX.Element => {
         <div className="row">
           <div className="col-md-8 order-2 order-md-1 align-self-center p-static">
             <h1 className="text-dark">
-              Modern <strong>Small2</strong>
+              Modern <strong>Small</strong>
             </h1>
           </div>
           <div className="col-md-4 order-1 order-md-2 align-self-center">

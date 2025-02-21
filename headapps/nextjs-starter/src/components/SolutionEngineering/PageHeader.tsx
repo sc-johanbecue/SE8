@@ -49,6 +49,9 @@ export const Default = (props: PageHeaderProps): JSX.Element => {
 
 export const ClassicSmall = (props: PageHeaderProps): JSX.Element => {
   // const id = props.params.RenderingIdentifier;
+  const showBreadcrumb = `container-${props.params.ShowBreadcrumb}`;
+  const titleLocation = `container-${props.params.TitleLocation}`;
+
   if (props.fields) {
     return (
       <section className="page-header page-header-classic page-header-sm">
@@ -60,7 +63,7 @@ export const ClassicSmall = (props: PageHeaderProps): JSX.Element => {
                 style={{ width: '117.725px' }}
               ></span>
               <h1 data-title-border="">
-                <JssRichText field={props.fields.Title} />
+                <JssRichText field={props.fields.Title} /> {showBreadcrumb} - {titleLocation}
               </h1>
             </div>
             <div className="col-md-4 order-1 order-md-2 align-self-center">

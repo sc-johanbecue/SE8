@@ -23,7 +23,27 @@ const PageHeaderDefaultComponent = (props: PageHeaderProps): JSX.Element => (
 export const Default = (props: PageHeaderProps): JSX.Element => {
   // const id = props.params.RenderingIdentifier;
   if (props.fields) {
-    return <></>;
+    return (
+      <section className="page-header page-header-modern bg-color-grey page-header-sm">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8 order-2 order-md-1 align-self-center p-static">
+              <h1 className="text-dark">
+                Modern <strong>Small2</strong>
+              </h1>
+            </div>
+            <div className="col-md-4 order-1 order-md-2 align-self-center">
+              <ul className="breadcrumb d-block text-md-end">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li className="active">Features</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
   }
 
   return <PageHeaderDefaultComponent {...props} />;
@@ -38,7 +58,7 @@ export const ModernSmallPageHeader = (props: PageHeaderProps): JSX.Element => {
           <div className="row">
             <div className="col-md-8 order-2 order-md-1 align-self-center p-static">
               <h1 className="text-dark">
-                Modern <strong>Small2</strong>
+                Modern <strong>Small</strong>
               </h1>
             </div>
             <div className="col-md-4 order-1 order-md-2 align-self-center">

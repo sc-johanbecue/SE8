@@ -48,7 +48,8 @@ const ModernPageHeader = (props: PageHeaderProps): JSX.Element => {
     'bg-color-tertiary',
     'bg-color-quaternary',
   ];
-  const backgroundColor = backgroundColors.find((color) => props.params.styles.includes(color)) || '';
+  const backgroundColor =
+    backgroundColors.find((color) => props.params.styles.includes(color)) || '';
 
   // Adjust classes based on detected styles
   if (props.params.styles.includes('position-left')) {

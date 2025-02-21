@@ -21,7 +21,7 @@ a[target='_blank']:after {
 /* 
   Style for default content block
 */
-.contentTitle {
+/* .contentTitle {
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 1.2;
@@ -33,4 +33,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
+} */

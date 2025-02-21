@@ -74,7 +74,7 @@ const ModernPageHeader = (props: PageHeaderProps): JSX.Element => {
               <h1 className="text-dark">
                 <JssRichText field={props.fields.Title} />
               </h1>
-              {sitecoreContext.pageEditing || props.fields.SubTitle.value !== '' ? (
+              {sitecoreContext.pageEditing || props.fields.SubTitle.value != '' ? (
                 <span className="sub-title">
                   <JssRichText field={props.fields.SubTitle} />
                 </span>

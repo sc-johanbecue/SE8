@@ -1,14 +1,29 @@
 import React from 'react';
-import { RichTextField, RichText as JssRichText } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  RichTextField,
+  RichText as JssRichText,
+  useSitecoreContext,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
   Title: RichTextField;
+  SubTitle: RichTextField;
 }
 
 type PageHeaderProps = {
   params: { [key: string]: string };
   fields: Fields;
+  size: 'sm' | 'md' | 'lg';
 };
+
+const Breadcrumbs = () => (
+  <ul className="breadcrumb d-block text-md-end">
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li className="active">Features</li>
+  </ul>
+);
 
 const PageHeaderDefaultComponent = (props: PageHeaderProps): JSX.Element => (
   <div className={`component PageHeader ${props.params.styles}`}>
@@ -18,25 +33,92 @@ const PageHeaderDefaultComponent = (props: PageHeaderProps): JSX.Element => (
   </div>
 );
 
-export const Modern = (props: PageHeaderProps): JSX.Element => {
-  // const id = props.params.RenderingIdentifier;
+const ModernPageHeader = (props: PageHeaderProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+  const { sitecoreContext } = useSitecoreContext();
+
+  let titleClassNames = 'align-self-center p-static';
+  let breadcrumbClassNames = 'align-self-center';
+
+  let titlePosition = props.params.styles.includes('title-position-center')
+    ? 'Center'
+    : props.params.styles.includes('title-position-right')
+    ? 'Right'
+    : 'Left';
+
+  switch (titlePosition) {
+    case 'Left':
+      titleClassNames += ' col-md-8 order-2 order-md-1';
+      breadcrumbClassNames += ' col-md-4 order-1 order-md-2';
+      break;
+    case 'Right':
+      titleClassNames += 'col-md-8 order-1 order-md-2';
+      breadcrumbClassNames += ' col-md-4 order-2 order-md-1';
+      break;
+    case 'Center':
+      titleClassNames = 'col-md-12 p-static order-2 text-center';
+      breadcrumbClassNames = 'col-md-12 order-1';
+      break;
+  }
+
   if (props.fields) {
     return (
-      <section className="page-header page-header-modern bg-color-grey page-header-md">
+      <section
+        className={`page-header page-header-modern ${props.params.styles} page-header-${props.size}`}
+        id={id || undefined}
+      >
+        <div className="container">
+          <div className="row">
+            <div className={titleClassNames}>
+              <h1 className="text-dark">
+                <JssRichText field={props.fields.Title} />
+              </h1>
+              {sitecoreContext.pageEditing || props.fields.SubTitle.value !== '' ? (
+                <span className="sub-title">
+                  <JssRichText field={props.fields.SubTitle} />
+                </span>
+              ) : null}
+            </div>
+            <div className={breadcrumbClassNames}>
+              <Breadcrumbs />
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  } else return <PageHeaderDefaultComponent {...props} />;
+};
+
+export const ModernSmall = (props: PageHeaderProps) => <ModernPageHeader {...props} size="sm" />;
+export const Modern = (props: PageHeaderProps) => <ModernPageHeader {...props} size="md" />;
+export const ModernLarge = (props: PageHeaderProps) => <ModernPageHeader {...props} size="lg" />;
+
+export const OldModernSmall = (props: PageHeaderProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+  const { sitecoreContext } = useSitecoreContext();
+
+  if (props.fields) {
+    return (
+      <section
+        className={`page-header page-header-modern ${props.params.styles} page-header-sm`}
+        id={id ? id : undefined}
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-8 order-2 order-md-1 align-self-center p-static">
               <h1 className="text-dark">
                 <JssRichText field={props.fields.Title} />
               </h1>
+              {sitecoreContext.pageEditing || props.fields.SubTitle.value != '' ? (
+                <span className="sub-title">
+                  <JssRichText field={props.fields.SubTitle} />
+                </span>
+              ) : (
+                <></>
+              )}
             </div>
             <div className="col-md-4 order-1 order-md-2 align-self-center">
-              <ul className="breadcrumb d-block text-md-end">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li className="active">Features</li>
-              </ul>
+              <Breadcrumbs />
             </div>
           </div>
         </div>
@@ -46,26 +128,32 @@ export const Modern = (props: PageHeaderProps): JSX.Element => {
 
   return <PageHeaderDefaultComponent {...props} />;
 };
+export const OldModern = (props: PageHeaderProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+  const { sitecoreContext } = useSitecoreContext();
 
-export const ModernSmall = (props: PageHeaderProps): JSX.Element => {
-  // const id = props.params.RenderingIdentifier;
   if (props.fields) {
     return (
-      <section className="page-header page-header-modern bg-color-grey page-header-sm">
+      <section
+        className={`page-header page-header-modern ${props.params.styles} page-header-md`}
+        id={id ? id : undefined}
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-8 order-2 order-md-1 align-self-center p-static">
               <h1 className="text-dark">
                 <JssRichText field={props.fields.Title} />
               </h1>
+              {sitecoreContext.pageEditing || props.fields.SubTitle.value != '' ? (
+                <span className="sub-title">
+                  <JssRichText field={props.fields.SubTitle} />
+                </span>
+              ) : (
+                <></>
+              )}
             </div>
             <div className="col-md-4 order-1 order-md-2 align-self-center">
-              <ul className="breadcrumb d-block text-md-end">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li className="active">Features</li>
-              </ul>
+              <Breadcrumbs />
             </div>
           </div>
         </div>
@@ -75,26 +163,31 @@ export const ModernSmall = (props: PageHeaderProps): JSX.Element => {
 
   return <PageHeaderDefaultComponent {...props} />;
 };
-
-export const ModernLarge = (props: PageHeaderProps): JSX.Element => {
-  // const id = props.params.RenderingIdentifier;
+export const OldModernLarge = (props: PageHeaderProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+  const { sitecoreContext } = useSitecoreContext();
   if (props.fields) {
     return (
-      <section className="page-header page-header-modern bg-color-grey page-header-lg">
+      <section
+        className={`page-header page-header-modern ${props.params.styles} page-header-lg`}
+        id={id ? id : undefined}
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-8 order-2 order-md-1 align-self-center p-static">
               <h1 className="text-dark">
                 <JssRichText field={props.fields.Title} />
               </h1>
+              {sitecoreContext.pageEditing || props.fields.SubTitle.value != '' ? (
+                <span className="sub-title">
+                  <JssRichText field={props.fields.SubTitle} />
+                </span>
+              ) : (
+                <></>
+              )}
             </div>
             <div className="col-md-4 order-1 order-md-2 align-self-center">
-              <ul className="breadcrumb d-block text-md-end">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li className="active">Features</li>
-              </ul>
+              <Breadcrumbs />
             </div>
           </div>
         </div>
@@ -106,12 +199,15 @@ export const ModernLarge = (props: PageHeaderProps): JSX.Element => {
 };
 
 export const ClassicSmall = (props: PageHeaderProps): JSX.Element => {
-  // const id = props.params.RenderingIdentifier;
-  const size = `${props.params.Size}`;
+  const id = props.params.RenderingIdentifier;
+  const { sitecoreContext } = useSitecoreContext();
 
   if (props.fields) {
     return (
-      <section className="page-header page-header-classic page-header-sm">
+      <section
+        className={`page-header page-header-classic ${props.params.styles}`}
+        id={id ? id : undefined}
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-8 order-2 order-md-1 align-self-center p-static">
@@ -120,16 +216,18 @@ export const ClassicSmall = (props: PageHeaderProps): JSX.Element => {
                 style={{ width: '117.725px' }}
               ></span>
               <h1 data-title-border="">
-                <JssRichText field={props.fields.Title} /> - Size: {size}
+                <JssRichText field={props.fields.Title} />
               </h1>
+              {sitecoreContext.pageEditing || props.fields.SubTitle.value != '' ? (
+                <span className="sub-title">
+                  <JssRichText field={props.fields.SubTitle} />
+                </span>
+              ) : (
+                <></>
+              )}
             </div>
             <div className="col-md-4 order-1 order-md-2 align-self-center">
-              <ul className="breadcrumb d-block text-md-end">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li className="active">Features</li>
-              </ul>
+              <Breadcrumbs />
             </div>
           </div>
         </div>
@@ -141,19 +239,19 @@ export const ClassicSmall = (props: PageHeaderProps): JSX.Element => {
 };
 
 export const Classic = (props: PageHeaderProps): JSX.Element => {
-  // const id = props.params.RenderingIdentifier;
+  const id = props.params.RenderingIdentifier;
+  const { sitecoreContext } = useSitecoreContext();
+
   if (props.fields) {
     return (
-      <section className="page-header page-header-classic">
+      <section
+        className={`page-header page-header-classic ${props.params.styles}`}
+        id={id ? id : undefined}
+      >
         <div className="container">
           <div className="row">
             <div className="col">
-              <ul className="breadcrumb">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li className="active">Features</li>
-              </ul>
+              <Breadcrumbs />
             </div>
           </div>
           <div className="row">
@@ -165,6 +263,13 @@ export const Classic = (props: PageHeaderProps): JSX.Element => {
               <h1 data-title-border="">
                 <JssRichText field={props.fields.Title} />
               </h1>
+              {sitecoreContext.pageEditing || props.fields.SubTitle.value != '' ? (
+                <span className="sub-title">
+                  <JssRichText field={props.fields.SubTitle} />
+                </span>
+              ) : (
+                <></>
+              )}
             </div>
           </div>
         </div>
@@ -176,19 +281,19 @@ export const Classic = (props: PageHeaderProps): JSX.Element => {
 };
 
 export const ClassicLarge = (props: PageHeaderProps): JSX.Element => {
-  // const id = props.params.RenderingIdentifier;
+  const id = props.params.RenderingIdentifier;
+  const { sitecoreContext } = useSitecoreContext();
+
   if (props.fields) {
     return (
-      <section className="page-header page-header-classic page-header-lg">
+      <section
+        className={`page-header page-header-classic ${props.params.styles}`}
+        id={id ? id : undefined}
+      >
         <div className="container">
           <div className="row">
             <div className="col">
-              <ul className="breadcrumb">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li className="active">Features</li>
-              </ul>
+              <Breadcrumbs />
             </div>
           </div>
           <div className="row">
@@ -200,6 +305,13 @@ export const ClassicLarge = (props: PageHeaderProps): JSX.Element => {
               <h1 data-title-border="">
                 <JssRichText field={props.fields.Title} />
               </h1>
+              {sitecoreContext.pageEditing || props.fields.SubTitle.value != '' ? (
+                <span className="sub-title">
+                  <JssRichText field={props.fields.SubTitle} />
+                </span>
+              ) : (
+                <></>
+              )}
             </div>
           </div>
         </div>

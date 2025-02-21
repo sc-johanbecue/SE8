@@ -102,7 +102,9 @@ export const Classic = (props: PageHeaderProps): JSX.Element => {
                 className="page-header-title-border visible"
                 style={{ width: '216.938px' }}
               ></span>
-              <h1 data-title-border=""><JssRichText field={props.fields.Title} /></h1>
+              <h1 data-title-border="">
+                <JssRichText field={props.fields.Title} />
+              </h1>
             </div>
           </div>
         </div>

@@ -40,6 +40,16 @@ const ModernPageHeader = (props: PageHeaderProps): JSX.Element => {
   let titleClassNames = 'align-self-center p-static';
   let breadcrumbClassNames = 'align-self-center';
 
+  const backgroundColors = [
+    'bg-color-dark',
+    'bg-color-grey',
+    'bg-color-primary',
+    'bg-color-secondary',
+    'bg-color-tertiary',
+    'bg-color-quaternary',
+  ];
+  const backgroundColor = backgroundColors.find((color) => props.params.styles.includes(color)) || '';
+
   // Adjust classes based on detected styles
   if (props.params.styles.includes('position-left')) {
     titleClassNames += ' col-md-8 order-2 order-md-1';
@@ -55,7 +65,7 @@ const ModernPageHeader = (props: PageHeaderProps): JSX.Element => {
   if (props.fields) {
     return (
       <section
-        className={`page-header page-header-modern ${props.params.styles} page-header-${props.size}`}
+        className={`page-header page-header-modern ${backgroundColor} page-header-${props.size}`}
         id={id || undefined}
       >
         <div className="container">

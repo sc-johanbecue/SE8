@@ -79,3 +79,36 @@ export const Classic = (props: PageHeaderProps): JSX.Element => {
 
   return <PageHeaderDefaultComponent {...props} />;
 };
+
+export const ClassicLarge = (props: PageHeaderProps): JSX.Element => {
+  // const id = props.params.RenderingIdentifier;
+  if (props.fields) {
+    return (
+      <section className="page-header page-header-classic page-header-lg">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <ul className="breadcrumb">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li className="active">Features</li>
+              </ul>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col p-static">
+              <span
+                className="page-header-title-border visible"
+                style={{ width: '216.325px' }}
+              ></span>
+              <h1 data-title-border="">Classic Large</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  return <PageHeaderDefaultComponent {...props} />;
+};

@@ -69,7 +69,7 @@ const ModernPageHeader = (props: PageHeaderProps): JSX.Element => {
     breadcrumbDivClassNames += ' col-md-4 order-2 order-md-1';
   } else if (props.params.styles.includes('position-center')) {
     titleDivClassNames = 'col-md-12 p-static order-2 text-center';
-    breadcrumbDivClassNames = 'col-md-12 order-1';
+    breadcrumbDivClassNames = 'col-md-12 order-1 text-center';
   }
 
   if (props.fields) {

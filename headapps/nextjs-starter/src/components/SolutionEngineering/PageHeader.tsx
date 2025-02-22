@@ -41,12 +41,12 @@ const ModernPageHeader = (props: PageHeaderProps): JSX.Element => {
   let breadcrumbDivClassNames = 'align-self-center';
 
   let titleClassNames = 'text-dark';
-  if (props.params.styles.includes("title-uppercase")){
-    titleClassNames += " text-uppercase"
+  if (props.params.styles.includes('title-uppercase')) {
+    titleClassNames += ' text-uppercase';
   }
   let subTitleClassNames = 'sub-title';
-  if (props.params.styles.includes("subtitle-uppercase")){
-    subTitleClassNames += " text-uppercase"
+  if (props.params.styles.includes('subtitle-uppercase')) {
+    subTitleClassNames += ' text-uppercase';
   }
 
   const backgroundColors = [

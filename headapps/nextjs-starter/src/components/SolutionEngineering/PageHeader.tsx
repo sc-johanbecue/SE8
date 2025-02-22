@@ -37,8 +37,17 @@ const ModernPageHeader = (props: PageHeaderProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   const { sitecoreContext } = useSitecoreContext();
 
-  let titleClassNames = 'align-self-center p-static';
-  let breadcrumbClassNames = 'align-self-center';
+  let titleDivClassNames = 'align-self-center p-static';
+  let breadcrumbDivClassNames = 'align-self-center';
+
+  let titleClassNames = 'text-dark';
+  if (props.params.styles.includes("title-uppercase")){
+    titleClassNames += " text-uppercase"
+  }
+  let subTitleClassNames = 'sub-title';
+  if (props.params.styles.includes("subtitle-uppercase")){
+    subTitleClassNames += " text-uppercase"
+  }
 
   const backgroundColors = [
     'bg-color-dark',
@@ -53,14 +62,14 @@ const ModernPageHeader = (props: PageHeaderProps): JSX.Element => {
 
   // Adjust classes based on detected styles
   if (props.params.styles.includes('position-left')) {
-    titleClassNames += ' col-md-8 order-2 order-md-1';
-    breadcrumbClassNames += ' col-md-4 order-1 order-md-2';
+    titleDivClassNames += ' col-md-8 order-2 order-md-1';
+    breadcrumbDivClassNames += ' col-md-4 order-1 order-md-2';
   } else if (props.params.styles.includes('position-right')) {
-    titleClassNames += 'col-md-8 order-1 order-md-2';
-    breadcrumbClassNames += ' col-md-4 order-2 order-md-1';
+    titleDivClassNames += 'col-md-8 order-1 order-md-2';
+    breadcrumbDivClassNames += ' col-md-4 order-2 order-md-1';
   } else if (props.params.styles.includes('position-center')) {
-    titleClassNames = 'col-md-12 p-static order-2 text-center';
-    breadcrumbClassNames = 'col-md-12 order-1';
+    titleDivClassNames = 'col-md-12 p-static order-2 text-center';
+    breadcrumbDivClassNames = 'col-md-12 order-1';
   }
 
   if (props.fields) {
@@ -71,17 +80,17 @@ const ModernPageHeader = (props: PageHeaderProps): JSX.Element => {
       >
         <div className="container">
           <div className="row">
-            <div className={titleClassNames}>
-              <h1 className="text-dark">
+            <div className={titleDivClassNames}>
+              <h1 className={titleClassNames}>
                 <JssRichText field={props.fields.Title} />
               </h1>
               {sitecoreContext.pageEditing || props.fields.SubTitle.value != '' ? (
-                <span className="sub-title">
+                <span className={subTitleClassNames}>
                   <JssRichText field={props.fields.SubTitle} />
                 </span>
               ) : null}
             </div>
-            <div className={breadcrumbClassNames}>
+            <div className={breadcrumbDivClassNames}>
               <Breadcrumbs />
             </div>
           </div>

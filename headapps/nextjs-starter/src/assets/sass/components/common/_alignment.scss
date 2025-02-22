@@ -1,6 +1,6 @@
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/mixins';
+// @import '~bootstrap/scss/functions';
+// @import '~bootstrap/scss/variables';
+// @import '~bootstrap/scss/mixins';
 
 $breakpoints: sm, md, lg, xl, xxl;
 
@@ -37,10 +37,12 @@ $breakpoints: sm, md, lg, xl, xxl;
       margin-left: auto !important;
       margin-right: 0 !important;
     }
+
     .me-#{$breakpoint}-auto {
       margin-right: auto !important;
       margin-left: 0 !important;
     }
+
     .mx-#{$breakpoint}-auto {
       margin-right: auto !important;
       margin-left: auto !important;

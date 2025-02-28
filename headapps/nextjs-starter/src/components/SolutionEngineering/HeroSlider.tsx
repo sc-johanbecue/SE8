@@ -54,7 +54,7 @@ export default function HeroSlider() {
           ></path>
         </svg>
       </div>
-      <div className="slider-container">
+      <div className="slider-container" style={{height: "100vh", opacity: "1"}}>
         <Slider {...settings}>
           <div>
             <div
@@ -64,7 +64,7 @@ export default function HeroSlider() {
                   'url(https://www.okler.net/previews/porto/12.1.0/img/slides/slide-corporate-10-1.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                height: '100vh',
+                height: '100vh'
               }}
             >
               <div className="container position-relative z-index-3 h-100">

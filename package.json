@@ -1,8 +1,6 @@
 {
   "dependencies": {
-    "lucide-react": "^0.476.0"
-  },
-  "devDependencies": {
-    "@types/react-slick": "^0.23.13"
+    "lucide-react": "^0.476.0",
+    "slick-carousel": "^1.8.1"
   }
 }

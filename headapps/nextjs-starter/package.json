@@ -46,6 +46,7 @@
     "node": "^23.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "slick-carousel": "^0.30.3",
     "sass": "^1.52.3",
     "sass-alias": "^1.0.5",
     "sharp": "0.32.6"

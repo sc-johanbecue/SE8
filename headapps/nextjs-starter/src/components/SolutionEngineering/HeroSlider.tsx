@@ -1,149 +1,179 @@
-import { useRef, useState } from "react"
-import Image from "next/image"
-import Slider from "react-slick"
-import { ChevronRight } from "lucide-react"
-
-const slides = [
-  {
-    id: 1,
-    backgroundImage: "/img/slides/slide-corporate-10-1.jpg",
-    subtitle: "WE CREATE DESIGNS, WE ARE",
-    title: "PORTO",
-    description: "The best choice for your new website",
-    buttonText: "GET STARTED NOW!",
-    buttonLink: "#",
-    overlayOpacity: "overlay-op-8",
-  },
-  {
-    id: 2,
-    backgroundImage: "/img/slides/slide-corporate-10-2.jpg",
-    subtitle: "HELLO, THIS IS",
-    title: "PORTO HTML TEMPLATE",
-    description: "Trusted by over 40,000 satisfied users.",
-    buttonText: "GET STARTED NOW",
-    buttonLink: "#",
-    overlayOpacity: "overlay-op-9",
-  },
-]
+import Slider from 'react-slick';
 
 export default function HeroSlider() {
-  const sliderRef = useRef<Slider>(null)
-  const [activeSlide, setActiveSlide] = useState(0)
-
-  const settings = {
+  var settings = {
     dots: true,
-    infinite: true,
-    speed: 1000,
+    infinite: false,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 9000,
-    pauseOnHover: false,
-    fade: true,
-    beforeChange: (newIndex: number) => {
-      setActiveSlide(newIndex)
-    },
-  }
-
+    initialSlide: 0,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
-    <section className="section section-with-shape-divider border-0 py-0 m-0">
-      <div className="shape-divider shape-divider-bottom z-index-3" style={{ height: "136px" }}>
-        <svg
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 1920 136"
-          preserveAspectRatio="xMinYMin"
-        >
-          <path
-            d="M 0 0.11 L 0 136 L 1920 136 L 1920 1.9 C 1650.0482 79.0955 1327.0648 134 980 134 C 615.6218 134 277.7878 84.5059 0 0.11 Z"
-            fill="#ffffff"
-          />
-        </svg>
-      </div>
-      <div className="custom-slider">
-        <Slider ref={sliderRef} {...settings}>
-          {slides.map((slide, index) => (
-            <div key={slide.id}>
-              <div
-                className={`slide-overlay ${slide.overlayOpacity}`}
-                style={{
-                  backgroundImage: `url(${slide.backgroundImage})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  height: "100vh",
-                }}
-              >
-                <div className="slide-content">
-                  <div className="container h-100">
-                    <div className="row align-items-center justify-content-center h-100">
-                      <div className="col-lg-6 text-center">
-                        <div
-                          className={`slide-element ${activeSlide === index ? "fade-in-down animation-delay-100" : ""}`}
-                          style={{ visibility: activeSlide === index ? "visible" : "hidden" }}
+    <div className="slider-container">
+      <Slider {...settings}>
+        <div>
+          <div
+            className="owl-item position-relative overlay overlay-show overlay-op-8 removing animated active fadeIn"
+            style={{
+              backgroundImage: 'url(img/slides/slide-corporate-10-1.jpg)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              height: '100vh',
+            }}
+          >
+            <div className="container position-relative z-index-3 h-100">
+              <div className="row justify-content-center align-items-center h-100">
+                <div className="col-lg-6">
+                  <div className="d-flex flex-column align-items-center">
+                    <h3
+                      className="position-relative text-color-light text-4 line-height-5 font-weight-normal px-4 mb-2 appear-animation animated fadeInDownShorter appear-animation-visible"
+                      data-appear-animation="fadeInDownShorter"
+                      data-plugin-options="{'minWindowWidth': 0}"
+                      style={{ animationDelay: '100ms' }}
+                    >
+                      <span className="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+                        <img
+                          src="img/slides/slide-title-border.png"
+                          className="w-auto appear-animation animated fadeInLeftShorter appear-animation-visible"
+                          data-appear-animation="fadeInLeftShorter"
+                          data-appear-animation-delay="250"
+                          data-plugin-options="{'minWindowWidth': 0}"
+                          alt=""
+                          style={{ animationDelay: '250ms' }}
+                        />
+                      </span>
+                      WE CREATE DESIGNS, WE ARE
+                      <span className="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+                        <img
+                          src="img/slides/slide-title-border.png"
+                          className="w-auto appear-animation animated fadeInRightShorter appear-animation-visible"
+                          data-appear-animation="fadeInRightShorter"
+                          data-appear-animation-delay="250"
+                          data-plugin-options="{'minWindowWidth': 0}"
+                          alt=""
+                          style={{ animationDelay: '250ms' }}
+                        />
+                      </span>
+                    </h3>
+                    <h2
+                      className="porto-big-title text-color-light font-weight-extra-bold mb-3 initialized"
+                      data-plugin-animated-letters=""
+                      data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 300, 'animationName': 'fadeInRightShorterOpacity', 'letterClass': 'd-inline-block'}"
+                      style={{ minHeight: '115.2px' }}
+                    >
+                      <span className="animated-letters-wrapper ">
+                        <span
+                          className="animated-letters-item letter d-inline-block fadeInRightShorterOpacity animated"
+                          style={{ animationDelay: '0ms' }}
                         >
-                          <h3 className="position-relative text-color-light text-4 line-height-5 font-weight-normal px-4 mb-2 slide-title-border">
-                            <span className="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
-                              <Image
-                                src="/img/slides/slide-title-border.png"
-                                className="w-auto appear-animation"
-                                width={100}
-                                height={20}
-                                alt=""
-                              />
-                            </span>
-                            {slide.subtitle}
-                            <span className="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
-                              <Image
-                                src="/img/slides/slide-title-border.png"
-                                className="w-auto appear-animation"
-                                width={100}
-                                height={20}
-                                alt=""
-                              />
-                            </span>
-                          </h3>
-                        </div>
-
-                        <div
-                          className={`slide-element ${activeSlide === index ? "fade-in-down animation-delay-200" : ""}`}
-                          style={{ visibility: activeSlide === index ? "visible" : "hidden" }}
+                          P
+                        </span>
+                      </span>
+                      <span className="animated-letters-wrapper ">
+                        <span
+                          className="animated-letters-item letter d-inline-block fadeInRightShorterOpacity animated"
+                          style={{ animationDelay: '300ms' }}
                         >
-                          <h2 className="porto-big-title text-color-light font-weight-extra-bold mb-3">
-                            {slide.title}
-                          </h2>
-                        </div>
-
-                        <div
-                          className={`slide-element ${activeSlide === index ? "fade-in-down animation-delay-300" : ""}`}
-                          style={{ visibility: activeSlide === index ? "visible" : "hidden" }}
+                          O
+                        </span>
+                      </span>
+                      <span className="animated-letters-wrapper ">
+                        <span
+                          className="animated-letters-item letter d-inline-block fadeInRightShorterOpacity animated"
+                          style={{ animationDelay: '600ms' }}
                         >
-                          <p className="text-4 text-color-light font-weight-light mb-4">{slide.description}</p>
-                        </div>
-
-                        <div
-                          className={`slide-element ${activeSlide === index ? "fade-in-up animation-delay-300" : ""}`}
-                          style={{ visibility: activeSlide === index ? "visible" : "hidden" }}
+                          R
+                        </span>
+                      </span>
+                      <span className="animated-letters-wrapper ">
+                        <span
+                          className="animated-letters-item letter d-inline-block fadeInRightShorterOpacity animated"
+                          style={{ animationDelay: '900ms' }}
                         >
-                          <a
-                            href={slide.buttonLink}
-                            className="btn btn-primary btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-1"
-                          >
-                            {slide.buttonText}
-                            {index === 1 && <ChevronRight className="ms-2" size={16} />}
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                          T
+                        </span>
+                      </span>
+                      <span className="animated-letters-wrapper ">
+                        <span
+                          className="animated-letters-item letter d-inline-block fadeInRightShorterOpacity animated"
+                          style={{ animationDelay: '1200ms' }}
+                        >
+                          O
+                        </span>
+                      </span>
+                    </h2>
+                    <p
+                      className="text-4 text-color-light font-weight-light text-center mb-4 initialized"
+                      data-plugin-animated-letters=""
+                      data-plugin-options="{'startDelay': 2000, 'minWindowWidth': 0}"
+                      style={{ minHeight: '26px' }}
+                    ></p>
+                    <a
+                      href="#"
+                      className="btn btn-primary btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-1 appear-animation animated fadeInUpShorter appear-animation-visible"
+                      data-appear-animation="fadeInUpShorter"
+                      data-appear-animation-delay="1800"
+                      data-plugin-options="{'minWindowWidth': 0}"
+                      style={{ animationDelay: '1800ms' }}
+                    >
+                      GET STARTED NOW!
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-          ))}
-        </Slider>
-      </div>
-    </section>
-  )
+          </div>
+        </div>
+        <div>
+          <h3>2</h3>
+        </div>
+        <div>
+          <h3>3</h3>
+        </div>
+        <div>
+          <h3>4</h3>
+        </div>
+        <div>
+          <h3>5</h3>
+        </div>
+        <div>
+          <h3>6</h3>
+        </div>
+        <div>
+          <h3>7</h3>
+        </div>
+        <div>
+          <h3>8</h3>
+        </div>
+      </Slider>
+    </div>
+  );
 }

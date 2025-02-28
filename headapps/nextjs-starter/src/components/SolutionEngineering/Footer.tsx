@@ -20,37 +20,10 @@ const FooterDefaultComponent = (props: FooterProps): JSX.Element => (
 );
 
 export const Default = (props: FooterProps): JSX.Element => {
-  //const id = props.params.RenderingIdentifier;
-
-  // const [subject, setSubject] = useState('Contact Form');
-  // const [name, setName] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [phone, setPhone] = useState('');
-  // const [message, setMessage] = useState('');
-
-  // const handleChangeSubject = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //   setSubject(event.target.value);
-  // };
-
-  // const handleChangeName = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //   setName(event.target.value);
-  // };
-
-  // const handleChangePhone = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //   setPhone(event.target.value);
-  // };
-
-  // const handleChangeEmail = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //   setEmail(event.target.value);
-  // };
-
-  // const handleChangeMessage = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-  //   setMessage(event.target.value);
-  // };
-
-  // const handleSubmitClick = (event: React.MouseEvent<HTMLInputElement>) => {
-  //   event.preventDefault(); // Prevents form submission (optional)
-  // };
+  // Handle input click event
+  const handleInputClick = (event: React.MouseEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    console.log('Input clicked:', event.target);
+  };
 
   return (
     <>
@@ -85,6 +58,7 @@ export const Default = (props: FooterProps): JSX.Element => {
                     name="name"
                     id="name"
                     required
+                    onClick={handleInputClick} // Added onClick here
                   />
                 </div>
                 <div className="form-group col-md-6 ps-md-2">
@@ -98,6 +72,7 @@ export const Default = (props: FooterProps): JSX.Element => {
                     name="phone"
                     id="phone"
                     required
+                    onClick={handleInputClick} // Added onClick here
                   />
                 </div>
               </div>
@@ -113,6 +88,7 @@ export const Default = (props: FooterProps): JSX.Element => {
                   name="email"
                   id="email"
                   required
+                  onClick={handleInputClick} // Added onClick here
                 />
               </div>
               <div className="row">
@@ -127,6 +103,7 @@ export const Default = (props: FooterProps): JSX.Element => {
                     name="message"
                     id="message"
                     required
+                    onClick={handleInputClick} // Added onClick here
                   ></textarea>
                 </div>
               </div>
@@ -137,6 +114,7 @@ export const Default = (props: FooterProps): JSX.Element => {
                     value="SUBMIT"
                     className="btn btn-primary font-weight-semibold text-3 px-5 btn-py-2"
                     data-loading-text="Loading..."
+                    readOnly
                   />
                 </div>
               </div>

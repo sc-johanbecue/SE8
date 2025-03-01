@@ -30,7 +30,7 @@ export const Default = (props: HeroSliderProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   const phKey = `slide-container-${props.params.DynamicPlaceholderId}`;
 
-  var settings = {
+  const settings = {
     dots: true,
     infinite: false,
     speed: 500,

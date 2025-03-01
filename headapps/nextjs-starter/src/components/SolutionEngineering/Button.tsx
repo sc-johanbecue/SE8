@@ -30,7 +30,7 @@ export const Default = (props: ButtonProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
   // Use an array of animation class names instead of a key-value map
-  const animationClasses: string[] = [
+  const animations: string[] = [
     'animate__bounce',
     'animate__flash',
     'animate__headShake',
@@ -44,17 +44,30 @@ export const Default = (props: ButtonProps): JSX.Element => {
     'animate__tada',
     'animate__wobble',
   ];
-
+  
   // Find the first style that matches a class in the animationClasses array
   const animateClassName = props.params.styles
     .split(' ')
-    .find((style) => animationClasses.includes(style));
+    .find((style) => animations.includes(style));
+
+  const animationDelays: string[] = [
+    'animate__delay-1s',
+    'animate__delay-2s',
+    'animate__delay-3s',
+    'animate__delay-4s',
+    'animate__delay-5s',
+  ];
+
+  // Find the first style that matches a class in the animationClasses array
+  const animateDelayClassName = props.params.styles
+    .split(' ')
+    .find((style) => animationDelays.includes(style));
 
   if (props.fields) {
     return (
       //surrounding div added as  workaround for a bug, because classNames are not rendered on the <a> tag.
       <div
-        className={`btn btn-primary btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-1 appear-animation animated appear-animation-visible ${animateClassName}`}
+        className={`btn btn-primary btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-1 appear-animation animated appear-animation-visible ${animateClassName} ${animateDelayClassName}`}
       >
         <JssLink
           id={id ? id : undefined}

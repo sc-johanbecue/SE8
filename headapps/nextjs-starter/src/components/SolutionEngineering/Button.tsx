@@ -23,13 +23,15 @@ export const Default = (props: ButtonProps): JSX.Element => {
 
   if (props.fields) {
     return (
-      <JssLink
-        id={id ? id : undefined}
-        defaultValue="GET STARTED NOW!"
-        field={props.fields.Link}
-        className="btn btn-primary btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-1 appear-animation animated fadeInUpShorter appear-animation-visible"
-        style={{ animationDelay: '1800ms' }}
-      />
+      //surrounding div added as  workaround for a bug, because classNames are not rendered on the <a> tag.
+      <div className="btn btn-primary btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-1 appear-animation animated fadeInUpShorter appear-animation-visible">
+        <JssLink
+          id={id ? id : undefined}
+          defaultValue="GET STARTED NOW!"
+          field={props.fields.Link}
+          style={{ animationDelay: '1800ms' }}
+        />
+      </div>
     );
   }
 

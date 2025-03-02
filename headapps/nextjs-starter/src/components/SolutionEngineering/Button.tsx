@@ -29,7 +29,7 @@ const ButtonDefaultComponent = (props: ButtonProps): JSX.Element => (
 export const Default = (props: ButtonProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
-  // Use an array of animation class names instead of a key-value map
+  // Define all possible animation classes, delays, speeds, and iterations
   const animations: string[] = [
     'animate__bounce',
     'animate__flash',
@@ -44,11 +44,6 @@ export const Default = (props: ButtonProps): JSX.Element => {
     'animate__tada',
     'animate__wobble',
   ];
-  
-  // Find the first style that matches a class in the animationClasses array
-  const animateClassName = props.params.styles
-    .split(' ')
-    .find((style) => animations.includes(style));
 
   const animationDelays: string[] = [
     'animate__delay-1s',
@@ -58,16 +53,44 @@ export const Default = (props: ButtonProps): JSX.Element => {
     'animate__delay-5s',
   ];
 
-  // Find the first style that matches a class in the animationClasses array
-  const animateDelayClassName = props.params.styles
-    .split(' ')
-    .find((style) => animationDelays.includes(style));
+  const animationSpeed: string[] = [
+    'animate__slow',
+    'animate__slower',
+    'animate__faster',
+    'animate__fast',
+  ];
+
+  const animationIteration: string[] = [
+    'animate__repeat-1',
+    'animate__repeat-2',
+    'animate__repeat-3',
+    'animate__infinite',
+  ];
+
+  // Split the `props.params.styles` into an array of classes
+  const stylesArray = props.params.styles.split(' ');
+
+  // Find the matching classes for each category
+  const animateClassName = stylesArray.find((style) => animations.includes(style));
+  const animateDelayClassName = stylesArray.find((style) => animationDelays.includes(style));
+  const animateSpeedClassName = stylesArray.find((style) => animationSpeed.includes(style));
+  const animateIterationClassName = stylesArray.find((style) => animationIteration.includes(style));
+
+  // Combine all the found classes into a single string with spaces
+  const animationClassNames = [
+    animateClassName,
+    animateDelayClassName,
+    animateSpeedClassName,
+    animateIterationClassName,
+  ]
+    .filter(Boolean) // Remove any undefined values
+    .join(' '); // Join them with a space
 
   if (props.fields) {
     return (
       //surrounding div added as  workaround for a bug, because classNames are not rendered on the <a> tag.
       <div
-        className={`btn btn-primary btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-1 appear-animation animated appear-animation-visible ${animateClassName} ${animateDelayClassName}`}
+        className={`btn btn-primary btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-1 appear-animation animated appear-animation-visible ${animationClassNames}`}
       >
         <JssLink
           id={id ? id : undefined}

@@ -79,13 +79,13 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css"
           integrity="sha512-gFn7XRm5v3GlgOwAQ80SXDT8pyg6uaV9JbW2OkNx5Im2jR8zx2X/3DbHymcZnUraU+klZjRJqNfNkFN7SyR3fg=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
-        />
+        /> */}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"

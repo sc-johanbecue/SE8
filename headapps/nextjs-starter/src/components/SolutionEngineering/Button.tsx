@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import {
   Link as JssLink,
   LinkField,
@@ -28,6 +28,15 @@ const ButtonDefaultComponent = (props: ButtonProps): JSX.Element => (
 
 export const Default = (props: ButtonProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
+
+  // Create a ref to get the underlying <a> element.
+  const linkRef = useRef<HTMLAnchorElement>(null);
+  useEffect(() => {
+    if (linkRef.current && props.params.Disabled) {
+      linkRef.current.setAttribute('disabled', '');
+    }
+  });
+
   if (props.fields) {
     return (
       //surrounding div added as  workaround for a bug, because classNames are not rendered on the <a> tag.
@@ -35,12 +44,12 @@ export const Default = (props: ButtonProps): JSX.Element => {
       //   className={`btn btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-1 ${props.params.styles}`}
       // >
       <JssLink
+        ref={linkRef}
         id={id ? id : undefined}
         defaultValue="GET STARTED NOW!"
         field={props.fields.Link}
-        className={`btn btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-1 ${props.params.styles}`}
+        className={`btn font-weight-bold text-3 py-3 btn-px-5 mt-1 ${props.params.styles}`}
         style={{ animationDelay: '1800ms' }}
-        // {...(props.params.Disabled ? { disabled: true } : { disabled: false })}
       />
       // </div>
     );

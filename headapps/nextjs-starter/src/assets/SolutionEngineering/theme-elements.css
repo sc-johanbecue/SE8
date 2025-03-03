@@ -1535,7 +1535,7 @@ Theme Version:	12.0.0
 }
 
 .highlighted-word.highlighted-word-animation-1.highlighted-word-animation-1-dark:after {
-	background: url(/src/img/pencil-blue-line-dark.png);
+	background: url(/img/pencil-blue-line-dark.png);
 }
 
 .highlighted-word.highlighted-word-animation-1.highlighted-word-animation-1-no-rotate:after {
@@ -1550,12 +1550,12 @@ Theme Version:	12.0.0
 .highlighted-word.highlighted-word-animation-1.highlighted-word-animation-1-2:after {
 	animation-name: pencilAnimation2;
 	right: calc(100% - 115px);
-	background: url(/src/img/pencil-blue-line-2.png);
+	background: url(/img/pencil-blue-line-2.png);
 	background-repeat: no-repeat;
 }
 
 .highlighted-word.highlighted-word-animation-1.highlighted-word-animation-1-2-dark:after {
-	background-image: url(/src/img/pencil-blue-line-2-dark.png);
+	background-image: url(/img/pencil-blue-line-2-dark.png);
 }
 
 .highlighted-word.highlighted-word-rotate {
@@ -1606,7 +1606,7 @@ Theme Version:	12.0.0
 
 /* Arrows */
 .arrow {
-	background: transparent url(/src/img/arrows.png) no-repeat 0 0;
+	background: transparent url(/img/arrows.png) no-repeat 0 0;
 	width: 47px;
 	height: 120px;
 	display: inline-block;
@@ -1614,7 +1614,7 @@ Theme Version:	12.0.0
 }
 
 .arrow.arrow-light {
-	background-image: url(/src/img/arrows-dark.png);
+	background-image: url(/img/arrows-dark.png);
 }
 
 .arrow.vtl {
@@ -6310,7 +6310,7 @@ hr.pattern, .divider.pattern {
 }
 
 hr.pattern:after, .divider.pattern:after {
-	background: transparent url(/src/img/patterns/worn_dots.png) repeat 0 0;
+	background: transparent url(/img/patterns/worn_dots.png) repeat 0 0;
 	content: "";
 	display: block;
 	height: 15px;
@@ -6321,7 +6321,7 @@ hr.pattern:after, .divider.pattern:after {
 }
 
 hr.pattern.pattern-2:after, .divider.pattern.pattern-2:after {
-	background-image: url(/src/img/patterns/az_subtle.png);
+	background-image: url(/img/patterns/az_subtle.png);
 }
 
 @keyframes dividerProgress25 {
@@ -7891,7 +7891,7 @@ hr.pattern.pattern-2:after, .divider.pattern.pattern-2:after {
 .flag {
 	width: 16px;
 	height: 11px;
-	background: url(/src/img/flags.png) no-repeat;
+	background: url(/img/flags.png) no-repeat;
 }
 
 .flag.flag-ad {
@@ -10856,7 +10856,7 @@ i.pi.pi-close:after {
 /* Custom Image Icons */
 .icon-bg {
 	display: inline-block;
-	background: url(/src/img/icons/icons.png) no-repeat;
+	background: url(/img/icons/icons.png) no-repeat;
 	width: 80px;
 	height: 80px;
 }
@@ -11241,7 +11241,7 @@ ul.thumbnail-gallery li {
 
 /* Lazy */
 .lazy-bg {
-	background-image: url(/src/img/lazy.png);
+	background-image: url(/img/lazy.png);
 }
 
 /* Thumb Gallery */
@@ -13068,7 +13068,7 @@ p.drop-caps.drop-caps-style-2:first-letter {
 
 .curved-border:after {
 	content: '';
-	background-image: url(/src/img/curved-border.svg);
+	background-image: url(/img/curved-border.svg);
 	background-size: 100% 100%;
 	background-position: center;
 	position: absolute;
@@ -13792,8 +13792,8 @@ Credits: Codyhouse (https://codyhouse.co/gem/360-degrees-product-viewer)
 }
 
 .particle.particle-dots {
-	-webkit-mask-image: url(/src/img/particle-dot.svg);
-	mask-image: url(/src/img/particle-dot.svg);
+	-webkit-mask-image: url(/img/particle-dot.svg);
+	mask-image: url(/img/particle-dot.svg);
 	z-index: 0;
 	-webkit-mask-size: 18px;
 }
@@ -13960,7 +13960,7 @@ Credits: Codyhouse (https://codyhouse.co/gem/360-degrees-product-viewer)
 
 /* Vertical Lines */
 .vertical-lines:not(.vertical-lines-after) {
-	background-image: url(/src/img/vertical-lines.svg);
+	background-image: url(/img/vertical-lines.svg);
 	background-repeat: repeat;
 	background-position: 50%;
 	pointer-events: none;
@@ -13975,7 +13975,7 @@ Credits: Codyhouse (https://codyhouse.co/gem/360-degrees-product-viewer)
 	display: block;
 	position: absolute;
 	z-index: 1;
-	background-image: url(/src/img/vertical-lines.svg);
+	background-image: url(/img/vertical-lines.svg);
 	background-repeat: repeat;
 	background-position: 50%;
 	top: 0;
@@ -13986,11 +13986,11 @@ Credits: Codyhouse (https://codyhouse.co/gem/360-degrees-product-viewer)
 }
 
 .vertical-lines.vertical-lines-light:not(.vertical-lines-after) {
-	background-image: url(/src/img/vertical-lines-light.svg);
+	background-image: url(/img/vertical-lines-light.svg);
 }
 
 .vertical-lines.vertical-lines-light.vertical-lines-after:after {
-	background-image: url(/src/img/vertical-lines-light.svg);
+	background-image: url(/img/vertical-lines-light.svg);
 }
 
 /* OffCanvas */
@@ -15924,7 +15924,7 @@ section.section.section-overlay .section-angled-layer-bottom {
 }
 
 section.section.section-overlay-dot:before {
-	background: url(/src/img/overlay-dot.png) repeat scroll 0 0 transparent;
+	background: url(/img/overlay-dot.png) repeat scroll 0 0 transparent;
 }
 
 section.section.section-overlay-opacity {
@@ -22013,7 +22013,7 @@ section.video blockquote i.fa-quote-left {
 
 /* Custom Map */
 section.section-custom-map {
-	background: transparent url(/src/img/map.png) center 0 no-repeat;
+	background: transparent url(/img/map.png) center 0 no-repeat;
 	padding: 129px 0 0;
 	margin: 20px 0 0;
 	border: 0;
@@ -22227,7 +22227,7 @@ section.section-custom-map section.section {
 
 /* Home Concept */
 .home-concept {
-	background: transparent url(/src/img/home/home-concept.png) no-repeat center 0;
+	background: transparent url(/img/home/home-concept.png) no-repeat center 0;
 	width: 100%;
 	overflow: hidden;
 }
@@ -22246,7 +22246,7 @@ section.section-custom-map section.section {
 }
 
 .home-concept .process-image {
-	background: transparent url(/src/img/home/home-concept-item.png) no-repeat 0 0;
+	background: transparent url(/img/home/home-concept-item.png) no-repeat 0 0;
 	width: 160px;
 	margin: 120px auto 0 auto;
 	padding-bottom: 50px;
@@ -22275,7 +22275,7 @@ section.section-custom-map section.section {
 }
 
 .home-concept .project-image {
-	background: transparent url(/src/img/home/home-concept-item.png) no-repeat 100% 0;
+	background: transparent url(/img/home/home-concept-item.png) no-repeat 100% 0;
 	width: 350px;
 	margin: 20px 0 0 -30px;
 	padding-bottom: 45px;
@@ -22284,7 +22284,7 @@ section.section-custom-map section.section {
 }
 
 .home-concept .sun {
-	background: transparent url(/src/img/home/home-concept-icons.png) no-repeat 0 0;
+	background: transparent url(/img/home/home-concept-icons.png) no-repeat 0 0;
 	width: 60px;
 	height: 56px;
 	display: block;
@@ -22294,7 +22294,7 @@ section.section-custom-map section.section {
 }
 
 .home-concept .cloud {
-	background: transparent url(/src/img/home/home-concept-icons.png) no-repeat 100% 0;
+	background: transparent url(/img/home/home-concept-icons.png) no-repeat 100% 0;
 	width: 116px;
 	height: 56px;
 	display: block;

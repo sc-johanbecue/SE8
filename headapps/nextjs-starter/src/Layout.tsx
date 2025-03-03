@@ -126,16 +126,16 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
         {/* Theme CSS */}
-        {/* <link rel="stylesheet" href="/css/theme.css" />
-        <link rel="stylesheet" href="/css/theme-elements.css" />
-        <link rel="stylesheet" href="/css/theme-blog.css" />
-        <link rel="stylesheet" href="/css/theme-shop.css" /> */}
+        {/* <link rel="stylesheet" href="/css/theme.css" /> */}
+        {/* <link rel="stylesheet" href="/css/theme-elements.css" /> */}
+        {/* <link rel="stylesheet" href="/css/theme-blog.css" /> */}
+        {/* <link rel="stylesheet" href="/css/theme-shop.css" /> */}
 
         {/* Skin CSS */}
-        <link id="skinCSS" rel="stylesheet" href="/css/skins/skin-corporate-10.css" />
+        {/* <link id="skinCSS" rel="stylesheet" href="/css/skins/skin-corporate-10.css" /> */}
 
         {/* Theme Custom CSS */}
-        <link rel="stylesheet" href="/css/custom.css" />
+        {/* <link rel="stylesheet" href="/css/custom.css" /> */}
       </Head>
       {/* root placeholder for the app, which we add components to using route data */}
       <div className={'body ' + mainClassPageEditing}>

@@ -31,7 +31,7 @@ export const Default = (props: ButtonProps): JSX.Element => {
 
   if (props.fields) {
     return (
-      //surrounding div added as  workaround for a bug, because classNames are not rendered on the <a> tag.
+      //surrounding div added as  workaround for a bug, because classNames are not rendered on the <a> tag2.
       <div
         className={`btn btn-primary btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-1 ${props.params.styles}`}
       >

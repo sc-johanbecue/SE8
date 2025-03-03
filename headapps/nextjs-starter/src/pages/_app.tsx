@@ -9,7 +9,7 @@ import '/src/assets/SolutionEngineering/theme-elements.css';
 import '/src/assets/SolutionEngineering/theme-blog.css';
 import '/src/assets/SolutionEngineering/theme-shop.css';
 import '/src/assets/SolutionEngineering/custom.css';
-import '/src/assets/SolutionEngineering/skin/skin-corporate-10.css';
+import '/src/assets/SolutionEngineering/skins/skin-corporate-10.css';
 
 function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;

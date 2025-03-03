@@ -197,7 +197,7 @@ article.blog-single-post .post-meta {
 
 .post-author .img-thumbnail {
 	display: inline-block;
-	float: left;
+	/* float: left; */
 	margin-right: 20px;
 }
 

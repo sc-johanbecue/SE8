@@ -1,3 +1,5 @@
+'use server';
+
 import React from 'react';
 import {
   Link as JssLink,
@@ -28,18 +30,18 @@ const ButtonDefaultComponent = (props: ButtonProps): JSX.Element => (
 
 export const Default = (props: ButtonProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
-
   if (props.fields) {
     return (
-      //surrounding div added as  workaround for a bug, because classNames are not rendered on the <a> tag2.
+      //surrounding div added as  workaround for a bug, because classNames are not rendered on the <a> tag.
       <div
-        className={`btn btn-primary btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-1 ${props.params.styles}`}
+        className={`btn btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-1 ${props.params.styles}`}
       >
         <JssLink
           id={id ? id : undefined}
           defaultValue="GET STARTED NOW!"
           field={props.fields.Link}
           style={{ animationDelay: '1800ms' }}
+          data-disabled={props.params.Disabled}
         />
       </div>
     );

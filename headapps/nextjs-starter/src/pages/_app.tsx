@@ -4,6 +4,7 @@ import { SitecorePageProps } from 'lib/page-props';
 import Bootstrap from 'src/Bootstrap';
 
 import 'assets/main.scss';
+import '/src/assets/SolutionEngineering/theme-elements.css';
 
 function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;

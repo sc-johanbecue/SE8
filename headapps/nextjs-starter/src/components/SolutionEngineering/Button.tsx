@@ -41,7 +41,7 @@ export const Default = (props: ButtonProps): JSX.Element => {
           defaultValue="GET STARTED NOW!"
           field={props.fields.Link}
           style={{ animationDelay: '1800ms' }}
-          data-disabled={props.params.Disabled}
+          {...(props.params.Disabled ? { disabled: true } : {})}
         />
       </div>
     );

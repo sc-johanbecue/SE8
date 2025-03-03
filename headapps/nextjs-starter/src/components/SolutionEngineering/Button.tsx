@@ -27,7 +27,7 @@ const ButtonDefaultComponent = (props: ButtonProps): JSX.Element => (
   </div>
 );
 
-export const Default = (props: ButtonProps): JSX.Element => {
+export const DefaultGood = (props: ButtonProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   const { sitecoreContext } = useSitecoreContext();
 
@@ -77,6 +77,36 @@ export const Default = (props: ButtonProps): JSX.Element => {
     );
   } else {
     return <>{jssLinkComponent}</>;
+  }
+
+  return <ButtonDefaultComponent {...props} />;
+};
+
+export const Default = (props: ButtonProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+
+  // Create a ref to get the underlying <a> element.
+  const linkRef = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    // If the link should be disabled, set its attribute without a value.
+    if (linkRef.current && props.params.Disabled) {
+      linkRef.current.setAttribute('disabled', '');
+    }
+    // Assign the container's data-className attribute value to the link's className.
+  }, [props.params.Disabled, props.params.styles]);
+
+  if (props.fields) {
+    return (
+      <JssLink
+        ref={linkRef}
+        id={id ? id : undefined}
+        defaultValue="GET STARTED NOW!"
+        field={props.fields.Link}
+        className={`btn font-weight-bold text-3 py-3 btn-px-5 mt-1 ${props.params.styles}`}
+        style={{ animationDelay: '1800ms' }}
+      />
+    );
   }
 
   return <ButtonDefaultComponent {...props} />;

@@ -2452,78 +2452,78 @@ html body.body .btn:active {
 }
 
 /* Button Light */
-html body .btn-light,
-html body .btn-outline.btn-light {
+html body .btn-light a,
+html body .btn-outline.btn-light a {
 	border-color: #d9d9d9 #d9d9d9 #bfbfbf;
 	color: var(--default);
 }
 
-html body .btn-light.btn-outline-light-opacity-2,
-html body .btn-outline.btn-light.btn-outline-light-opacity-2 {
+html body .btn-light a.btn-outline-light-opacity-2,
+html body .btn-outline.btn-light a.btn-outline-light-opacity-2 {
 	border-color: rgba(255, 255, 255, 0.2);
 }
 
-html body .btn-light:hover, html body .btn-light.hover,
-html body .btn-outline.btn-light:hover,
-html body .btn-outline.btn-light.hover {
+html body .btn-light a:hover, html body .btn-light a.hover,
+html body .btn-outline.btn-light a:hover,
+html body .btn-outline.btn-light a.hover {
 	background-color: #f2f2f2;
 	border-color: #e6e5e5 #e6e5e5 #cccccc;
 	color: var(--default);
 }
 
-html body .btn-light:focus, html body .btn-light.focus,
-html body .btn-outline.btn-light:focus,
-html body .btn-outline.btn-light.focus {
+html body .btn-light a:focus, html body .btn-light a.focus,
+html body .btn-outline.btn-light a:focus,
+html body .btn-outline.btn-light a.focus {
 	box-shadow: 0 0 0 3px rgba(191, 191, 191, 0.5);
 }
 
-html body .btn-light.disabled, html body .btn-light:disabled,
-html body .btn-outline.btn-light.disabled,
-html body .btn-outline.btn-light:disabled {
+html body .btn-light a.disabled, html body .btn-light a:disabled,
+html body .btn-outline.btn-light a.disabled,
+html body .btn-outline.btn-light a:disabled {
 	border-color: #bfbfbf #bfbfbf #bfbfbf;
 }
 
-html body .btn-light:active, html body .btn-light.active,
-.show > html body .btn-light.dropdown-toggle,
-html body .btn-outline.btn-light:active,
-html body .btn-outline.btn-light.active,
+html body .btn-light a:active, html body .btn-light a.active,
+.show > html body .btn-light a.dropdown-toggle,
+html body .btn-outline.btn-light a:active,
+html body .btn-outline.btn-light a.active,
 .show >
-html body .btn-outline.btn-light.dropdown-toggle {
+html body .btn-outline.btn-light a.dropdown-toggle {
 	border-color: #bfbfbf #bfbfbf #bfbfbf;
 }
 
-html body .btn-light-2,
-html body .btn-outline.btn-light-2 {
+html body .btn-light a-2,
+html body .btn-outline.btn-light a-2 {
 	border-color: var(--light);
 	color: var(--light);
 }
 
-html body .btn-light-2:hover, html body .btn-light-2.hover,
-html body .btn-outline.btn-light-2:hover,
-html body .btn-outline.btn-light-2.hover {
+html body .btn-light a-2:hover, html body .btn-light a-2.hover,
+html body .btn-outline.btn-light a-2:hover,
+html body .btn-outline.btn-light a-2.hover {
 	background-color: var(--light);
 	border-color: var(--light);
 	color: #0e0e0e;
 }
 
-html body .btn-light-2:focus, html body .btn-light-2.focus,
-html body .btn-outline.btn-light-2:focus,
-html body .btn-outline.btn-light-2.focus {
+html body .btn-light a-2:focus, html body .btn-light a-2.focus,
+html body .btn-outline.btn-light a-2:focus,
+html body .btn-outline.btn-light a-2.focus {
 	box-shadow: 0 0 0 3px rgba(179, 178, 178, 0.5);
 }
 
-html body .btn-light-2.disabled, html body .btn-light-2:disabled,
-html body .btn-outline.btn-light-2.disabled,
-html body .btn-outline.btn-light-2:disabled {
+html body .btn-light a-2.disabled, html body .btn-light a-2:disabled,
+html body .btn-outline.btn-light a-2.disabled,
+html body .btn-outline.btn-light a-2:disabled {
 	border-color: #b3b2b2 #b3b2b2 #b3b2b2;
 }
 
-html body .btn-light-2:active, html body .btn-light-2.active,
-.show > html body .btn-light-2.dropdown-toggle,
-html body .btn-outline.btn-light-2:active,
-html body .btn-outline.btn-light-2.active,
+html body .btn-light a-2:active, html body .btn-light a-2.active,
+.show > html body .btn-light a-2.dropdown-toggle,
+html body .btn-outline.btn-light a-2:active,
+html body .btn-outline.btn-light a-2.active,
 .show >
-html body .btn-outline.btn-light-2.dropdown-toggle {
+html body .btn-outline.btn-light a-2.dropdown-toggle {
 	border-color: var(--light);
 }
 
@@ -2778,562 +2778,562 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 	color: var(--primary-100);
 }
 
-.btn-primary {
+.btn-primary a {
 	--hover: var(--primary--200);
 	background-color: var(--primary);
 	border-color: var(--primary) var(--primary) var(--primary-300);
 	color: var(--primary-inverse);
 }
 
-.btn-primary:hover, .btn-primary.hover {
+.btn-primary a:hover, .btn-primary a.hover {
 	border-color: var(--primary--200) var(--primary--200) var(--primary);
 	color: var(--primary-inverse);
 }
 
-.btn-primary:hover:not(.bg-transparent), .btn-primary.hover:not(.bg-transparent) {
+.btn-primary a:hover:not(.bg-transparent), .btn-primary a.hover:not(.bg-transparent) {
 	background-color: var(--primary--200);
 }
 
-.btn-primary:focus, .btn-primary.focus {
+.btn-primary a:focus, .btn-primary a.focus {
 	border-color: var(--primary-300) var(--primary-300) var(--primary-300);
 	color: var(--primary-inverse);
 	box-shadow: 0 0 0 3px var(--primary-rgba-50);
 }
 
-.btn-primary:focus:not(.bg-transparent), .btn-primary.focus:not(.bg-transparent) {
+.btn-primary a:focus:not(.bg-transparent), .btn-primary a.focus:not(.bg-transparent) {
 	background-color: var(--primary-200);
 }
 
-.btn-primary.disabled, .btn-primary:disabled {
+.btn-primary a.disabled, .btn-primary a:disabled {
 	border-color: var(--primary) var(--primary) var(--primary-300);
 }
 
-.btn-primary.disabled:not(.bg-transparent), .btn-primary:disabled:not(.bg-transparent) {
+.btn-primary a.disabled:not(.bg-transparent), .btn-primary a:disabled:not(.bg-transparent) {
 	background-color: var(--primary);
 }
 
-.btn-primary:active, .btn-primary.active {
+.btn-primary a:active, .btn-primary a.active {
 	border-color: var(--primary-300) var(--primary-300) var(--primary-300) !important;
 }
 
-.btn-primary:active:not(.bg-transparent), .btn-primary.active:not(.bg-transparent) {
+.btn-primary a:active:not(.bg-transparent), .btn-primary a.active:not(.bg-transparent) {
 	background-color: var(--primary-200) !important;
 	background-image: none !important;
 }
 
-.show > .btn-primary.dropdown-toggle {
+.show > .btn-primary a.dropdown-toggle {
 	background-color: var(--primary-200) !important;
 	background-image: none !important;
 	border-color: var(--primary-300) var(--primary-300) var(--primary-300) !important;
 }
 
-.btn-check:active + .btn-primary, .btn-check:checked + .btn-primary, .btn-check:focus + .btn-primary {
+.btn-check:active + .btn-primary a, .btn-check:checked + .btn-primary a, .btn-check:focus + .btn-primary a {
 	background-color: var(--primary-100);
 	border-color: var(--primary) var(--primary) var(--primary-100);
 	color: var(--primary-inverse);
 }
 
-.btn-secondary {
+.btn-secondary a {
 	--hover: var(--secondary--200);
 	background-color: var(--secondary);
 	border-color: var(--secondary) var(--secondary) var(--secondary-300);
 	color: var(--secondary-inverse);
 }
 
-.btn-secondary:hover, .btn-secondary.hover {
+.btn-secondary a:hover, .btn-secondary a.hover {
 	border-color: var(--secondary--200) var(--secondary--200) var(--secondary);
 	color: var(--secondary-inverse);
 }
 
-.btn-secondary:hover:not(.bg-transparent), .btn-secondary.hover:not(.bg-transparent) {
+.btn-secondary a:hover:not(.bg-transparent), .btn-secondary a.hover:not(.bg-transparent) {
 	background-color: var(--secondary--200);
 }
 
-.btn-secondary:focus, .btn-secondary.focus {
+.btn-secondary a:focus, .btn-secondary a.focus {
 	border-color: var(--secondary-300) var(--secondary-300) var(--secondary-300);
 	color: var(--secondary-inverse);
 	box-shadow: 0 0 0 3px var(--secondary-rgba-50);
 }
 
-.btn-secondary:focus:not(.bg-transparent), .btn-secondary.focus:not(.bg-transparent) {
+.btn-secondary a:focus:not(.bg-transparent), .btn-secondary a.focus:not(.bg-transparent) {
 	background-color: var(--secondary-200);
 }
 
-.btn-secondary.disabled, .btn-secondary:disabled {
+.btn-secondary a.disabled, .btn-secondary a:disabled {
 	border-color: var(--secondary) var(--secondary) var(--secondary-300);
 }
 
-.btn-secondary.disabled:not(.bg-transparent), .btn-secondary:disabled:not(.bg-transparent) {
+.btn-secondary a.disabled:not(.bg-transparent), .btn-secondary a:disabled:not(.bg-transparent) {
 	background-color: var(--secondary);
 }
 
-.btn-secondary:active, .btn-secondary.active {
+.btn-secondary a:active, .btn-secondary a.active {
 	border-color: var(--secondary-300) var(--secondary-300) var(--secondary-300) !important;
 }
 
-.btn-secondary:active:not(.bg-transparent), .btn-secondary.active:not(.bg-transparent) {
+.btn-secondary a:active:not(.bg-transparent), .btn-secondary a.active:not(.bg-transparent) {
 	background-color: var(--secondary-200) !important;
 	background-image: none !important;
 }
 
-.show > .btn-secondary.dropdown-toggle {
+.show > .btn-secondary a.dropdown-toggle {
 	background-color: var(--secondary-200) !important;
 	background-image: none !important;
 	border-color: var(--secondary-300) var(--secondary-300) var(--secondary-300) !important;
 }
 
-.btn-check:active + .btn-secondary, .btn-check:checked + .btn-secondary, .btn-check:focus + .btn-secondary {
+.btn-check:active + .btn-secondary a, .btn-check:checked + .btn-secondary a, .btn-check:focus + .btn-secondary a {
 	background-color: var(--secondary-100);
 	border-color: var(--secondary) var(--secondary) var(--secondary-100);
 	color: var(--secondary-inverse);
 }
 
-.btn-tertiary {
+.btn-tertiary a {
 	--hover: var(--tertiary--200);
 	background-color: var(--tertiary);
 	border-color: var(--tertiary) var(--tertiary) var(--tertiary-300);
 	color: var(--tertiary-inverse);
 }
 
-.btn-tertiary:hover, .btn-tertiary.hover {
+.btn-tertiary a:hover, .btn-tertiary a.hover {
 	border-color: var(--tertiary--200) var(--tertiary--200) var(--tertiary);
 	color: var(--tertiary-inverse);
 }
 
-.btn-tertiary:hover:not(.bg-transparent), .btn-tertiary.hover:not(.bg-transparent) {
+.btn-tertiary a:hover:not(.bg-transparent), .btn-tertiary a.hover:not(.bg-transparent) {
 	background-color: var(--tertiary--200);
 }
 
-.btn-tertiary:focus, .btn-tertiary.focus {
+.btn-tertiary a:focus, .btn-tertiary a.focus {
 	border-color: var(--tertiary-300) var(--tertiary-300) var(--tertiary-300);
 	color: var(--tertiary-inverse);
 	box-shadow: 0 0 0 3px var(--tertiary-rgba-50);
 }
 
-.btn-tertiary:focus:not(.bg-transparent), .btn-tertiary.focus:not(.bg-transparent) {
+.btn-tertiary a:focus:not(.bg-transparent), .btn-tertiary a.focus:not(.bg-transparent) {
 	background-color: var(--tertiary-200);
 }
 
-.btn-tertiary.disabled, .btn-tertiary:disabled {
+.btn-tertiary a.disabled, .btn-tertiary a:disabled {
 	border-color: var(--tertiary) var(--tertiary) var(--tertiary-300);
 }
 
-.btn-tertiary.disabled:not(.bg-transparent), .btn-tertiary:disabled:not(.bg-transparent) {
+.btn-tertiary a.disabled:not(.bg-transparent), .btn-tertiary a:disabled:not(.bg-transparent) {
 	background-color: var(--tertiary);
 }
 
-.btn-tertiary:active, .btn-tertiary.active {
+.btn-tertiary a:active, .btn-tertiary a.active {
 	border-color: var(--tertiary-300) var(--tertiary-300) var(--tertiary-300) !important;
 }
 
-.btn-tertiary:active:not(.bg-transparent), .btn-tertiary.active:not(.bg-transparent) {
+.btn-tertiary a:active:not(.bg-transparent), .btn-tertiary a.active:not(.bg-transparent) {
 	background-color: var(--tertiary-200) !important;
 	background-image: none !important;
 }
 
-.show > .btn-tertiary.dropdown-toggle {
+.show > .btn-tertiary a.dropdown-toggle {
 	background-color: var(--tertiary-200) !important;
 	background-image: none !important;
 	border-color: var(--tertiary-300) var(--tertiary-300) var(--tertiary-300) !important;
 }
 
-.btn-check:active + .btn-tertiary, .btn-check:checked + .btn-tertiary, .btn-check:focus + .btn-tertiary {
+.btn-check:active + .btn-tertiary a, .btn-check:checked + .btn-tertiary a, .btn-check:focus + .btn-tertiary a {
 	background-color: var(--tertiary-100);
 	border-color: var(--tertiary) var(--tertiary) var(--tertiary-100);
 	color: var(--tertiary-inverse);
 }
 
-.btn-quaternary {
+.btn-quaternary a {
 	--hover: var(--quaternary--200);
 	background-color: var(--quaternary);
 	border-color: var(--quaternary) var(--quaternary) var(--quaternary-300);
 	color: var(--quaternary-inverse);
 }
 
-.btn-quaternary:hover, .btn-quaternary.hover {
+.btn-quaternary a:hover, .btn-quaternary a.hover {
 	border-color: var(--quaternary--200) var(--quaternary--200) var(--quaternary);
 	color: var(--quaternary-inverse);
 }
 
-.btn-quaternary:hover:not(.bg-transparent), .btn-quaternary.hover:not(.bg-transparent) {
+.btn-quaternary a:hover:not(.bg-transparent), .btn-quaternary a.hover:not(.bg-transparent) {
 	background-color: var(--quaternary--200);
 }
 
-.btn-quaternary:focus, .btn-quaternary.focus {
+.btn-quaternary a:focus, .btn-quaternary a.focus {
 	border-color: var(--quaternary-300) var(--quaternary-300) var(--quaternary-300);
 	color: var(--quaternary-inverse);
 	box-shadow: 0 0 0 3px var(--quaternary-rgba-50);
 }
 
-.btn-quaternary:focus:not(.bg-transparent), .btn-quaternary.focus:not(.bg-transparent) {
+.btn-quaternary a:focus:not(.bg-transparent), .btn-quaternary a.focus:not(.bg-transparent) {
 	background-color: var(--quaternary-200);
 }
 
-.btn-quaternary.disabled, .btn-quaternary:disabled {
+.btn-quaternary a.disabled, .btn-quaternary a:disabled {
 	border-color: var(--quaternary) var(--quaternary) var(--quaternary-300);
 }
 
-.btn-quaternary.disabled:not(.bg-transparent), .btn-quaternary:disabled:not(.bg-transparent) {
+.btn-quaternary a.disabled:not(.bg-transparent), .btn-quaternary a:disabled:not(.bg-transparent) {
 	background-color: var(--quaternary);
 }
 
-.btn-quaternary:active, .btn-quaternary.active {
+.btn-quaternary a:active, .btn-quaternary a.active {
 	border-color: var(--quaternary-300) var(--quaternary-300) var(--quaternary-300) !important;
 }
 
-.btn-quaternary:active:not(.bg-transparent), .btn-quaternary.active:not(.bg-transparent) {
+.btn-quaternary a:active:not(.bg-transparent), .btn-quaternary a.active:not(.bg-transparent) {
 	background-color: var(--quaternary-200) !important;
 	background-image: none !important;
 }
 
-.show > .btn-quaternary.dropdown-toggle {
+.show > .btn-quaternary a.dropdown-toggle {
 	background-color: var(--quaternary-200) !important;
 	background-image: none !important;
 	border-color: var(--quaternary-300) var(--quaternary-300) var(--quaternary-300) !important;
 }
 
-.btn-check:active + .btn-quaternary, .btn-check:checked + .btn-quaternary, .btn-check:focus + .btn-quaternary {
+.btn-check:active + .btn-quaternary a, .btn-check:checked + .btn-quaternary a, .btn-check:focus + .btn-quaternary a {
 	background-color: var(--quaternary-100);
 	border-color: var(--quaternary) var(--quaternary) var(--quaternary-100);
 	color: var(--quaternary-inverse);
 }
 
-.btn-dark {
+.btn-dark a {
 	--hover: var(--dark--200);
 	background-color: var(--dark);
 	border-color: var(--dark) var(--dark) var(--dark-300);
 	color: var(--dark-inverse);
 }
 
-.btn-dark:hover, .btn-dark.hover {
+.btn-dark a:hover, .btn-dark a.hover {
 	border-color: var(--dark--200) var(--dark--200) var(--dark);
 	color: var(--dark-inverse);
 }
 
-.btn-dark:hover:not(.bg-transparent), .btn-dark.hover:not(.bg-transparent) {
+.btn-dark a:hover:not(.bg-transparent), .btn-dark a.hover:not(.bg-transparent) {
 	background-color: var(--dark--200);
 }
 
-.btn-dark:focus, .btn-dark.focus {
+.btn-dark a:focus, .btn-dark a.focus {
 	border-color: var(--dark-300) var(--dark-300) var(--dark-300);
 	color: var(--dark-inverse);
 	box-shadow: 0 0 0 3px var(--dark-rgba-50);
 }
 
-.btn-dark:focus:not(.bg-transparent), .btn-dark.focus:not(.bg-transparent) {
+.btn-dark a:focus:not(.bg-transparent), .btn-dark a.focus:not(.bg-transparent) {
 	background-color: var(--dark-200);
 }
 
-.btn-dark.disabled, .btn-dark:disabled {
+.btn-dark a.disabled, .btn-dark a:disabled {
 	border-color: var(--dark) var(--dark) var(--dark-300);
 }
 
-.btn-dark.disabled:not(.bg-transparent), .btn-dark:disabled:not(.bg-transparent) {
+.btn-dark a.disabled:not(.bg-transparent), .btn-dark a:disabled:not(.bg-transparent) {
 	background-color: var(--dark);
 }
 
-.btn-dark:active, .btn-dark.active {
+.btn-dark a:active, .btn-dark a.active {
 	border-color: var(--dark-300) var(--dark-300) var(--dark-300) !important;
 }
 
-.btn-dark:active:not(.bg-transparent), .btn-dark.active:not(.bg-transparent) {
+.btn-dark a:active:not(.bg-transparent), .btn-dark a.active:not(.bg-transparent) {
 	background-color: var(--dark-200) !important;
 	background-image: none !important;
 }
 
-.show > .btn-dark.dropdown-toggle {
+.show > .btn-dark a.dropdown-toggle {
 	background-color: var(--dark-200) !important;
 	background-image: none !important;
 	border-color: var(--dark-300) var(--dark-300) var(--dark-300) !important;
 }
 
-.btn-check:active + .btn-dark, .btn-check:checked + .btn-dark, .btn-check:focus + .btn-dark {
+.btn-check:active + .btn-dark a, .btn-check:checked + .btn-dark a, .btn-check:focus + .btn-dark a {
 	background-color: var(--dark-100);
 	border-color: var(--dark) var(--dark) var(--dark-100);
 	color: var(--dark-inverse);
 }
 
-.btn-light {
+.btn-light a {
 	--hover: var(--light--200);
 	background-color: var(--light);
 	border-color: var(--light) var(--light) var(--light-300);
 	color: var(--light-inverse);
 }
 
-.btn-light:hover, .btn-light.hover {
+.btn-light a:hover, .btn-light a.hover {
 	border-color: var(--light--200) var(--light--200) var(--light);
 	color: var(--light-inverse);
 }
 
-.btn-light:hover:not(.bg-transparent), .btn-light.hover:not(.bg-transparent) {
+.btn-light a:hover:not(.bg-transparent), .btn-light a.hover:not(.bg-transparent) {
 	background-color: var(--light--200);
 }
 
-.btn-light:focus, .btn-light.focus {
+.btn-light a:focus, .btn-light a.focus {
 	border-color: var(--light-300) var(--light-300) var(--light-300);
 	color: var(--light-inverse);
 	box-shadow: 0 0 0 3px var(--light-rgba-50);
 }
 
-.btn-light:focus:not(.bg-transparent), .btn-light.focus:not(.bg-transparent) {
+.btn-light a:focus:not(.bg-transparent), .btn-light a.focus:not(.bg-transparent) {
 	background-color: var(--light-200);
 }
 
-.btn-light.disabled, .btn-light:disabled {
+.btn-light a.disabled, .btn-light a:disabled {
 	border-color: var(--light) var(--light) var(--light-300);
 }
 
-.btn-light.disabled:not(.bg-transparent), .btn-light:disabled:not(.bg-transparent) {
+.btn-light a.disabled:not(.bg-transparent), .btn-light a:disabled:not(.bg-transparent) {
 	background-color: var(--light);
 }
 
-.btn-light:active, .btn-light.active {
+.btn-light a:active, .btn-light a.active {
 	border-color: var(--light-300) var(--light-300) var(--light-300) !important;
 }
 
-.btn-light:active:not(.bg-transparent), .btn-light.active:not(.bg-transparent) {
+.btn-light a:active:not(.bg-transparent), .btn-light a.active:not(.bg-transparent) {
 	background-color: var(--light-200) !important;
 	background-image: none !important;
 }
 
-.show > .btn-light.dropdown-toggle {
+.show > .btn-light a.dropdown-toggle {
 	background-color: var(--light-200) !important;
 	background-image: none !important;
 	border-color: var(--light-300) var(--light-300) var(--light-300) !important;
 }
 
-.btn-check:active + .btn-light, .btn-check:checked + .btn-light, .btn-check:focus + .btn-light {
+.btn-check:active + .btn-light a, .btn-check:checked + .btn-light a, .btn-check:focus + .btn-light a {
 	background-color: var(--light-100);
 	border-color: var(--light) var(--light) var(--light-100);
 	color: var(--light-inverse);
 }
 
-.btn-outline.btn-primary {
+.btn-outline.btn-primary a {
 	color: var(--primary);
 	background-color: transparent;
 	background-image: none;
 	border-color: var(--primary);
 }
 
-.btn-outline.btn-primary:hover, .btn-outline.btn-primary.hover {
+.btn-outline.btn-primary a:hover, .btn-outline.btn-primary a.hover {
 	color: var(--primary-inverse);
 	background-color: var(--primary);
 	border-color: var(--primary);
 }
 
-.btn-outline.btn-primary:focus, .btn-outline.btn-primary.focus {
+.btn-outline.btn-primary a:focus, .btn-outline.btn-primary a.focus {
 	box-shadow: 0 0 0 3px var(--primary-rgba-50);
 }
 
-.btn-outline.btn-primary.disabled, .btn-outline.btn-primary:disabled {
+.btn-outline.btn-primary a.disabled, .btn-outline.btn-primary a:disabled {
 	color: var(--primary);
 	background-color: transparent;
 }
 
-.btn-outline.btn-primary:active, .btn-outline.btn-primary.active {
+.btn-outline.btn-primary a:active, .btn-outline.btn-primary a.active {
 	color: var(--primary-inverse) !important;
 	background-color: var(--primary) !important;
 	border-color: var(--primary) !important;
 }
 
-.show > .btn-outline.btn-primary.dropdown-toggle {
+.show > .btn-outline.btn-primary a.dropdown-toggle {
 	color: var(--primary-inverse) !important;
 	background-color: var(--primary) !important;
 	border-color: var(--primary) !important;
 }
 
-.btn-outline.btn-secondary {
+.btn-outline.btn-secondary a {
 	color: var(--secondary);
 	background-color: transparent;
 	background-image: none;
 	border-color: var(--secondary);
 }
 
-.btn-outline.btn-secondary:hover, .btn-outline.btn-secondary.hover {
+.btn-outline.btn-secondary a:hover, .btn-outline.btn-secondary a.hover {
 	color: var(--secondary-inverse);
 	background-color: var(--secondary);
 	border-color: var(--secondary);
 }
 
-.btn-outline.btn-secondary:focus, .btn-outline.btn-secondary.focus {
+.btn-outline.btn-secondary a:focus, .btn-outline.btn-secondary a.focus {
 	box-shadow: 0 0 0 3px var(--secondary-rgba-50);
 }
 
-.btn-outline.btn-secondary.disabled, .btn-outline.btn-secondary:disabled {
+.btn-outline.btn-secondary a.disabled, .btn-outline.btn-secondary a:disabled {
 	color: var(--secondary);
 	background-color: transparent;
 }
 
-.btn-outline.btn-secondary:active, .btn-outline.btn-secondary.active {
+.btn-outline.btn-secondary a:active, .btn-outline.btn-secondary a.active {
 	color: var(--secondary-inverse) !important;
 	background-color: var(--secondary) !important;
 	border-color: var(--secondary) !important;
 }
 
-.show > .btn-outline.btn-secondary.dropdown-toggle {
+.show > .btn-outline.btn-secondary a.dropdown-toggle {
 	color: var(--secondary-inverse) !important;
 	background-color: var(--secondary) !important;
 	border-color: var(--secondary) !important;
 }
 
-.btn-outline.btn-tertiary {
+.btn-outline.btn-tertiary a {
 	color: var(--tertiary);
 	background-color: transparent;
 	background-image: none;
 	border-color: var(--tertiary);
 }
 
-.btn-outline.btn-tertiary:hover, .btn-outline.btn-tertiary.hover {
+.btn-outline.btn-tertiary a:hover, .btn-outline.btn-tertiary a.hover {
 	color: var(--tertiary-inverse);
 	background-color: var(--tertiary);
 	border-color: var(--tertiary);
 }
 
-.btn-outline.btn-tertiary:focus, .btn-outline.btn-tertiary.focus {
+.btn-outline.btn-tertiary a:focus, .btn-outline.btn-tertiary a.focus {
 	box-shadow: 0 0 0 3px var(--tertiary-rgba-50);
 }
 
-.btn-outline.btn-tertiary.disabled, .btn-outline.btn-tertiary:disabled {
+.btn-outline.btn-tertiary a.disabled, .btn-outline.btn-tertiary a:disabled {
 	color: var(--tertiary);
 	background-color: transparent;
 }
 
-.btn-outline.btn-tertiary:active, .btn-outline.btn-tertiary.active {
+.btn-outline.btn-tertiary a:active, .btn-outline.btn-tertiary a.active {
 	color: var(--tertiary-inverse) !important;
 	background-color: var(--tertiary) !important;
 	border-color: var(--tertiary) !important;
 }
 
-.show > .btn-outline.btn-tertiary.dropdown-toggle {
+.show > .btn-outline.btn-tertiary a.dropdown-toggle {
 	color: var(--tertiary-inverse) !important;
 	background-color: var(--tertiary) !important;
 	border-color: var(--tertiary) !important;
 }
 
-.btn-outline.btn-quaternary {
+.btn-outline.btn-quaternary a {
 	color: var(--quaternary);
 	background-color: transparent;
 	background-image: none;
 	border-color: var(--quaternary);
 }
 
-.btn-outline.btn-quaternary:hover, .btn-outline.btn-quaternary.hover {
+.btn-outline.btn-quaternary a:hover, .btn-outline.btn-quaternary a.hover {
 	color: var(--quaternary-inverse);
 	background-color: var(--quaternary);
 	border-color: var(--quaternary);
 }
 
-.btn-outline.btn-quaternary:focus, .btn-outline.btn-quaternary.focus {
+.btn-outline.btn-quaternary a:focus, .btn-outline.btn-quaternary a.focus {
 	box-shadow: 0 0 0 3px var(--quaternary-rgba-50);
 }
 
-.btn-outline.btn-quaternary.disabled, .btn-outline.btn-quaternary:disabled {
+.btn-outline.btn-quaternary a.disabled, .btn-outline.btn-quaternary a:disabled {
 	color: var(--quaternary);
 	background-color: transparent;
 }
 
-.btn-outline.btn-quaternary:active, .btn-outline.btn-quaternary.active {
+.btn-outline.btn-quaternary a:active, .btn-outline.btn-quaternary a.active {
 	color: var(--quaternary-inverse) !important;
 	background-color: var(--quaternary) !important;
 	border-color: var(--quaternary) !important;
 }
 
-.show > .btn-outline.btn-quaternary.dropdown-toggle {
+.show > .btn-outline.btn-quaternary a.dropdown-toggle {
 	color: var(--quaternary-inverse) !important;
 	background-color: var(--quaternary) !important;
 	border-color: var(--quaternary) !important;
 }
 
-.btn-outline.btn-dark {
+.btn-outline.btn-dark a {
 	color: var(--dark);
 	background-color: transparent;
 	background-image: none;
 	border-color: var(--dark);
 }
 
-.btn-outline.btn-dark:hover, .btn-outline.btn-dark.hover {
+.btn-outline.btn-dark a:hover, .btn-outline.btn-dark a.hover {
 	color: var(--dark-inverse);
 	background-color: var(--dark);
 	border-color: var(--dark);
 }
 
-.btn-outline.btn-dark:focus, .btn-outline.btn-dark.focus {
+.btn-outline.btn-dark a:focus, .btn-outline.btn-dark a.focus {
 	box-shadow: 0 0 0 3px var(--dark-rgba-50);
 }
 
-.btn-outline.btn-dark.disabled, .btn-outline.btn-dark:disabled {
+.btn-outline.btn-dark a.disabled, .btn-outline.btn-dark a:disabled {
 	color: var(--dark);
 	background-color: transparent;
 }
 
-.btn-outline.btn-dark:active, .btn-outline.btn-dark.active {
+.btn-outline.btn-dark a:active, .btn-outline.btn-dark a.active {
 	color: var(--dark-inverse) !important;
 	background-color: var(--dark) !important;
 	border-color: var(--dark) !important;
 }
 
-.show > .btn-outline.btn-dark.dropdown-toggle {
+.show > .btn-outline.btn-dark a.dropdown-toggle {
 	color: var(--dark-inverse) !important;
 	background-color: var(--dark) !important;
 	border-color: var(--dark) !important;
 }
 
-.btn-outline.btn-light {
+.btn-outline.btn-light a {
 	color: var(--light);
 	background-color: transparent;
 	background-image: none;
 	border-color: var(--light);
 }
 
-.btn-outline.btn-light:hover, .btn-outline.btn-light.hover {
+.btn-outline.btn-light a:hover, .btn-outline.btn-light a.hover {
 	color: var(--light-inverse);
 	background-color: var(--light);
 	border-color: var(--light);
 }
 
-.btn-outline.btn-light:focus, .btn-outline.btn-light.focus {
+.btn-outline.btn-light a:focus, .btn-outline.btn-light a.focus {
 	box-shadow: 0 0 0 3px var(--light-rgba-50);
 }
 
-.btn-outline.btn-light.disabled, .btn-outline.btn-light:disabled {
+.btn-outline.btn-light a.disabled, .btn-outline.btn-light a:disabled {
 	color: var(--light);
 	background-color: transparent;
 }
 
-.btn-outline.btn-light:active, .btn-outline.btn-light.active {
+.btn-outline.btn-light a:active, .btn-outline.btn-light a.active {
 	color: var(--light-inverse) !important;
 	background-color: var(--light) !important;
 	border-color: var(--light) !important;
 }
 
-.show > .btn-outline.btn-light.dropdown-toggle {
+.show > .btn-outline.btn-light a.dropdown-toggle {
 	color: var(--light-inverse) !important;
 	background-color: var(--light) !important;
 	border-color: var(--light) !important;
 }
 
-.btn-with-arrow.btn-primary {
+.btn-with-arrow.btn-primary a {
 	background-color: transparent;
 	border-color: transparent;
 	color: var(--primary);
 }
 
-.btn-with-arrow.btn-primary:active {
+.btn-with-arrow.btn-primary a:active {
 	background-color: transparent !important;
 	border-color: transparent !important;
 	color: var(--primary) !important;
 }
 
-.btn-with-arrow.btn-primary span {
+.btn-with-arrow.btn-primary a span {
 	background-color: var(--primary);
 	box-shadow: 2px 3px 18px -3px var(--primary);
 }
 
-.btn-with-arrow.btn-primary.btn-outline {
+.btn-with-arrow.btn-primary a.btn-outline {
 	border-color: var(--primary) !important;
 }
 
-.btn-with-arrow.btn-primary.btn-outline:hover span {
+.btn-with-arrow.btn-primary a.btn-outline:hover span {
 	background-color: var(--primary--100) !important;
 	box-shadow: none;
 }
@@ -3343,32 +3343,32 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 	border-color: transparent !important;
 }
 
-.btn-with-arrow-solid.btn-primary span {
+.btn-with-arrow-solid.btn-primary a span {
 	background-color: var(--primary-100);
 }
 
-.btn-with-arrow.btn-secondary {
+.btn-with-arrow.btn-secondary a {
 	background-color: transparent;
 	border-color: transparent;
 	color: var(--secondary);
 }
 
-.btn-with-arrow.btn-secondary:active {
+.btn-with-arrow.btn-secondary a:active {
 	background-color: transparent !important;
 	border-color: transparent !important;
 	color: var(--secondary) !important;
 }
 
-.btn-with-arrow.btn-secondary span {
+.btn-with-arrow.btn-secondary a span {
 	background-color: var(--secondary);
 	box-shadow: 2px 3px 18px -3px var(--secondary);
 }
 
-.btn-with-arrow.btn-secondary.btn-outline {
+.btn-with-arrow.btn-secondary a.btn-outline {
 	border-color: var(--secondary) !important;
 }
 
-.btn-with-arrow.btn-secondary.btn-outline:hover span {
+.btn-with-arrow.btn-secondary a.btn-outline:hover span {
 	background-color: var(--secondary--100) !important;
 	box-shadow: none;
 }
@@ -3378,32 +3378,32 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 	border-color: transparent !important;
 }
 
-.btn-with-arrow-solid.btn-secondary span {
+.btn-with-arrow-solid.btn-secondary a span {
 	background-color: var(--secondary-100);
 }
 
-.btn-with-arrow.btn-tertiary {
+.btn-with-arrow.btn-tertiary a {
 	background-color: transparent;
 	border-color: transparent;
 	color: var(--tertiary);
 }
 
-.btn-with-arrow.btn-tertiary:active {
+.btn-with-arrow.btn-tertiary a:active {
 	background-color: transparent !important;
 	border-color: transparent !important;
 	color: var(--tertiary) !important;
 }
 
-.btn-with-arrow.btn-tertiary span {
+.btn-with-arrow.btn-tertiary a span {
 	background-color: var(--tertiary);
 	box-shadow: 2px 3px 18px -3px var(--tertiary);
 }
 
-.btn-with-arrow.btn-tertiary.btn-outline {
+.btn-with-arrow.btn-tertiary a.btn-outline {
 	border-color: var(--tertiary) !important;
 }
 
-.btn-with-arrow.btn-tertiary.btn-outline:hover span {
+.btn-with-arrow.btn-tertiary a.btn-outline:hover span {
 	background-color: var(--tertiary--100) !important;
 	box-shadow: none;
 }
@@ -3413,32 +3413,32 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 	border-color: transparent !important;
 }
 
-.btn-with-arrow-solid.btn-tertiary span {
+.btn-with-arrow-solid.btn-tertiary a span {
 	background-color: var(--tertiary-100);
 }
 
-.btn-with-arrow.btn-quaternary {
+.btn-with-arrow.btn-quaternary a {
 	background-color: transparent;
 	border-color: transparent;
 	color: var(--quaternary);
 }
 
-.btn-with-arrow.btn-quaternary:active {
+.btn-with-arrow.btn-quaternary a:active {
 	background-color: transparent !important;
 	border-color: transparent !important;
 	color: var(--quaternary) !important;
 }
 
-.btn-with-arrow.btn-quaternary span {
+.btn-with-arrow.btn-quaternary a span {
 	background-color: var(--quaternary);
 	box-shadow: 2px 3px 18px -3px var(--quaternary);
 }
 
-.btn-with-arrow.btn-quaternary.btn-outline {
+.btn-with-arrow.btn-quaternary a.btn-outline {
 	border-color: var(--quaternary) !important;
 }
 
-.btn-with-arrow.btn-quaternary.btn-outline:hover span {
+.btn-with-arrow.btn-quaternary a.btn-outline:hover span {
 	background-color: var(--quaternary--100) !important;
 	box-shadow: none;
 }
@@ -3448,32 +3448,32 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 	border-color: transparent !important;
 }
 
-.btn-with-arrow-solid.btn-quaternary span {
+.btn-with-arrow-solid.btn-quaternary a span {
 	background-color: var(--quaternary-100);
 }
 
-.btn-with-arrow.btn-dark {
+.btn-with-arrow.btn-dark a {
 	background-color: transparent;
 	border-color: transparent;
 	color: var(--dark);
 }
 
-.btn-with-arrow.btn-dark:active {
+.btn-with-arrow.btn-dark a:active {
 	background-color: transparent !important;
 	border-color: transparent !important;
 	color: var(--dark) !important;
 }
 
-.btn-with-arrow.btn-dark span {
+.btn-with-arrow.btn-dark a span {
 	background-color: var(--dark);
 	box-shadow: 2px 3px 18px -3px var(--dark);
 }
 
-.btn-with-arrow.btn-dark.btn-outline {
+.btn-with-arrow.btn-dark a.btn-outline {
 	border-color: var(--dark) !important;
 }
 
-.btn-with-arrow.btn-dark.btn-outline:hover span {
+.btn-with-arrow.btn-dark a.btn-outline:hover span {
 	background-color: var(--dark--100) !important;
 	box-shadow: none;
 }
@@ -3483,32 +3483,32 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 	border-color: transparent !important;
 }
 
-.btn-with-arrow-solid.btn-dark span {
+.btn-with-arrow-solid.btn-dark a span {
 	background-color: var(--dark-100);
 }
 
-.btn-with-arrow.btn-light {
+.btn-with-arrow.btn-light a {
 	background-color: transparent;
 	border-color: transparent;
 	color: var(--light);
 }
 
-.btn-with-arrow.btn-light:active {
+.btn-with-arrow.btn-light a:active {
 	background-color: transparent !important;
 	border-color: transparent !important;
 	color: var(--light) !important;
 }
 
-.btn-with-arrow.btn-light span {
+.btn-with-arrow.btn-light a span {
 	background-color: var(--light);
 	box-shadow: 2px 3px 18px -3px var(--light);
 }
 
-.btn-with-arrow.btn-light.btn-outline {
+.btn-with-arrow.btn-light a.btn-outline {
 	border-color: var(--light) !important;
 }
 
-.btn-with-arrow.btn-light.btn-outline:hover span {
+.btn-with-arrow.btn-light a.btn-outline:hover span {
 	background-color: var(--light--100) !important;
 	box-shadow: none;
 }
@@ -3518,7 +3518,7 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 	border-color: transparent !important;
 }
 
-.btn-with-arrow-solid.btn-light span {
+.btn-with-arrow-solid.btn-light a span {
 	background-color: var(--light-100);
 }
 

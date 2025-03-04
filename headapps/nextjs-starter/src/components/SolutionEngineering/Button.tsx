@@ -27,7 +27,7 @@ const ButtonDefaultComponent = (props: ButtonProps): JSX.Element => (
   </div>
 );
 
-export const DefaultGood = (props: ButtonProps): JSX.Element => {
+export const Default = (props: ButtonProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   const { sitecoreContext } = useSitecoreContext();
 
@@ -58,8 +58,7 @@ export const DefaultGood = (props: ButtonProps): JSX.Element => {
         id={id ? id : undefined}
         defaultValue="GET STARTED NOW!"
         field={props.fields.Link}
-        className={`btn font-weight-bold text-3 py-3 btn-px-5 mt-1 ${props.params.styles}`}
-        style={{ animationDelay: '1800ms' }}
+        className={`btn font-weight-bold text-3 btn-px-5 mt-1 ${props.params.styles}`}
       />
     );
   }
@@ -70,7 +69,7 @@ export const DefaultGood = (props: ButtonProps): JSX.Element => {
       // Its data-className attribute is updated via useEffect based on the inner JssLink's className.
       <div
         ref={containerRef}
-        data-className={`btn font-weight-bold text-3 py-3 btn-px-5 mt-1 ${props.params.styles}`}
+        data-className={`btn font-weight-bold text-3 btn-px-5 mt-1 ${props.params.styles}`}
       >
         {jssLinkComponent}
       </div>
@@ -82,7 +81,7 @@ export const DefaultGood = (props: ButtonProps): JSX.Element => {
   return <ButtonDefaultComponent {...props} />;
 };
 
-export const Default = (props: ButtonProps): JSX.Element => {
+export const DefaultNotGood = (props: ButtonProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
   // Create a ref to get the underlying <a> element.

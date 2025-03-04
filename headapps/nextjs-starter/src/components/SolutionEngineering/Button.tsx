@@ -31,22 +31,48 @@ export const Default = (props: ButtonProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   const { sitecoreContext } = useSitecoreContext();
 
-  // Create a ref to get the underlying <a> element.
+  // Ref for the JssLink's underlying <a> element.
   const linkRef = useRef<HTMLAnchorElement>(null);
+  // Ref for the container div in editing mode.
   const containerRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    // If the link should be disabled, set its attribute without a value.
-    if (linkRef.current && props.params.Disabled) {
-      linkRef.current.setAttribute('disabled', '');
-    }
-    // Assign the container's data-className attribute value to the link's className.
+  // Function to update link's className from container's data-className.
+  const updateLinkClassName = () => {
     if (containerRef.current && linkRef.current) {
       const containerClassName = containerRef.current.getAttribute('data-className');
       if (containerClassName) {
         linkRef.current.className = containerClassName;
       }
     }
+  };
+
+  useEffect(() => {
+    // If the link should be disabled, set its disabled attribute without a value.
+    if (linkRef.current && props.params.Disabled) {
+      linkRef.current.setAttribute('disabled', '');
+    }
+    // Initial update of link className from container.
+    updateLinkClassName();
+
+    // Create a MutationObserver to detect changes in the container div.
+    let observer: MutationObserver;
+    if (containerRef.current) {
+      observer = new MutationObserver((mutationsList) => {
+        for (const mutation of mutationsList) {
+          if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+            updateLinkClassName();
+          }
+        }
+      });
+      observer.observe(containerRef.current, { childList: true, subtree: true });
+    }
+
+    // Cleanup on unmount.
+    return () => {
+      if (observer) {
+        observer.disconnect();
+      }
+    };
   }, [props.params.Disabled, props.params.styles]);
 
   let jssLinkComponent;
@@ -55,7 +81,7 @@ export const Default = (props: ButtonProps): JSX.Element => {
     jssLinkComponent = (
       <JssLink
         ref={linkRef}
-        id={id ? id : undefined}
+        id={id || undefined}
         defaultValue="GET STARTED NOW!"
         field={props.fields.Link}
         className={`btn font-weight-bold text-3 btn-px-5 mt-1 ${props.params.styles}`}
@@ -65,8 +91,8 @@ export const Default = (props: ButtonProps): JSX.Element => {
 
   if (sitecoreContext.pageEditing) {
     return (
-      // The container div is used as a workaround for a bug where classNames are not rendered on the <a> tag.
-      // Its data-className attribute is updated via useEffect based on the inner JssLink's className.
+      // In editing mode, wrap the link in a container div.
+      // The container's data-className attribute is used to update the link's className.
       <div
         ref={containerRef}
         data-className={`btn font-weight-bold text-3 btn-px-5 mt-1 ${props.params.styles}`}

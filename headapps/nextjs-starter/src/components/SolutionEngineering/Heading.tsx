@@ -2,13 +2,17 @@ import React from 'react';
 import {
   TextField,
   Text,
+  ImageField,
+  Image as JssImage,
   ComponentParams,
   ComponentRendering,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import 'animate.css';
 
 interface Fields {
+  PrefixImage: ImageField;
   Title: TextField;
+  SuffixImage: ImageField;
 }
 
 type HeadingProps = {
@@ -42,6 +46,7 @@ export const Default = (props: HeadingProps): JSX.Element => {
         style={{ animationDelay: '100ms' }}
       >
         <span className="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+          <JssImage field={props.fields.PrefixImage} />
           <img
             src="img/slides/slide-title-border.png"
             className="w-auto appear-animation animated fadeInLeftShorter appear-animation-visible"
@@ -54,6 +59,7 @@ export const Default = (props: HeadingProps): JSX.Element => {
         </span>
         <Text field={props.fields.Title} />
         <span className="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+          <JssImage field={props.fields.PrefixImage} />
           <img
             src="img/slides/slide-title-border.png"
             className="w-auto appear-animation animated fadeInRightShorter appear-animation-visible"

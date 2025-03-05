@@ -84,7 +84,7 @@ export const Default = (props: ButtonProps): JSX.Element => {
         id={id || undefined}
         defaultValue="GET STARTED NOW!"
         field={props.fields.Link}
-        className={`btn text-3 ${props.params.styles}`}
+        className={`btn ${props.params.styles}`}
       />
     );
   }
@@ -93,7 +93,7 @@ export const Default = (props: ButtonProps): JSX.Element => {
     return (
       // In editing mode, wrap the link in a container div.
       // The container's data-className attribute is used to update the link's className.
-      <div ref={containerRef} data-className={`btn text-3 ${props.params.styles}`}>
+      <div ref={containerRef} data-className={`btn ${props.params.styles}`}>
         {jssLinkComponent}
       </div>
     );

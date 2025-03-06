@@ -25,7 +25,7 @@ type HeadingProps = {
 const HeadingDefaultComponent = ({ params }: HeadingProps): JSX.Element => (
   <div className={`component Heading ${params.styles}`}>
     <div className="component-content">
-      <span className="is-empty-hint">Heading2</span>
+      <span className="is-empty-hint">Heading</span>
     </div>
   </div>
 );

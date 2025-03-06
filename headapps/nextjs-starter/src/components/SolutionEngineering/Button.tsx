@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useCallback } from 'react';
+import React, { useRef, useEffect } from 'react';
 import {
   Link as JssLink,
   LinkField,
@@ -6,6 +6,7 @@ import {
   ComponentRendering,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+
 import 'animate.css';
 
 interface Fields {
@@ -18,9 +19,8 @@ type ButtonProps = {
   fields: Fields;
 };
 
-// A fallback component to render when no valid fields are provided.
-const ButtonDefaultComponent = ({ params }: ButtonProps): JSX.Element => (
-  <div className={`component Button ${params.styles}`}>
+const ButtonDefaultComponent = (props: ButtonProps): JSX.Element => (
+  <div className={`component Button ${props.params.styles}`}>
     <div className="component-content">
       <span className="is-empty-hint">Button</span>
     </div>
@@ -28,40 +28,34 @@ const ButtonDefaultComponent = ({ params }: ButtonProps): JSX.Element => (
 );
 
 export const Default = (props: ButtonProps): JSX.Element => {
-  // Destructure props for easier access.
-  const { params, fields } = props;
-  const id = params.RenderingIdentifier;
+  const id = props.params.RenderingIdentifier;
   const { sitecoreContext } = useSitecoreContext();
 
-  // Create a constant for the shared class name value.
-  const commonClassName = `btn ${params.styles}`;
-
-  // Create refs for the link element and the container (used in editing mode).
+  // Ref for the JssLink's underlying <a> element.
   const linkRef = useRef<HTMLAnchorElement>(null);
+  // Ref for the container div in editing mode.
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Update the link's className based on the container's data attribute.
-  // This is useful in editing mode when the container may update its class.
-  const updateLinkClassName = useCallback(() => {
+  // Function to update link's className from container's data-className.
+  const updateLinkClassName = () => {
     if (containerRef.current && linkRef.current) {
       const containerClassName = containerRef.current.getAttribute('data-className');
       if (containerClassName) {
         linkRef.current.className = containerClassName;
       }
     }
-  }, []);
+  };
 
-  // Effect to initialize the link state and observe changes in the container.
   useEffect(() => {
-    // Disable the link if required.
-    if (linkRef.current && params.Disabled) {
+    // If the link should be disabled, set its disabled attribute without a value.
+    if (linkRef.current && props.params.Disabled) {
       linkRef.current.setAttribute('disabled', '');
     }
-    // Set initial className based on container's data.
+    // Initial update of link className from container.
     updateLinkClassName();
 
-    // Setup a MutationObserver to detect changes in the container and update the link.
-    let observer: MutationObserver | null = null;
+    // Create a MutationObserver to detect changes in the container div.
+    let observer: MutationObserver;
     if (containerRef.current) {
       observer = new MutationObserver((mutationsList) => {
         for (const mutation of mutationsList) {
@@ -73,37 +67,39 @@ export const Default = (props: ButtonProps): JSX.Element => {
       observer.observe(containerRef.current, { childList: true, subtree: true });
     }
 
-    // Cleanup the observer when the component unmounts.
+    // Cleanup on unmount.
     return () => {
-      observer?.disconnect();
+      if (observer) {
+        observer.disconnect();
+      }
     };
-  }, [params.Disabled, params.styles, updateLinkClassName]);
+  }, [props.params.Disabled, props.params.styles]);
 
-  // Render the link component if valid fields are provided.
-  if (fields) {
-    const jssLinkComponent = (
+  let jssLinkComponent;
+
+  if (props.fields) {
+    jssLinkComponent = (
       <JssLink
         ref={linkRef}
         id={id || undefined}
         defaultValue="GET STARTED NOW!"
-        field={fields.Link}
-        className={commonClassName}
+        field={props.fields.Link}
+        className={`btn ${props.params.styles}`}
       />
     );
-
-    // In editing mode, wrap the link in a container to allow live updates.
-    if (sitecoreContext.pageEditing) {
-      return (
-        <div ref={containerRef} data-className={commonClassName}>
-          {jssLinkComponent}
-        </div>
-      );
-    }
-
-    // Otherwise, render the link directly.
-    return jssLinkComponent;
   }
 
-  // Fallback component if no valid fields are available.
+  if (sitecoreContext.pageEditing) {
+    return (
+      // In editing mode, wrap the link in a container div.
+      // The container's data-className attribute is used to update the link's className.
+      <div ref={containerRef} data-className={`btn ${props.params.styles}`}>
+        {jssLinkComponent}
+      </div>
+    );
+  } else {
+    return <>{jssLinkComponent}</>;
+  }
+
   return <ButtonDefaultComponent {...props} />;
 };

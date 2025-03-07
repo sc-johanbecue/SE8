@@ -65,13 +65,13 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           type="text/css"
         />
         {/* Vendor CSS */}
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
           integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
-        />
+        /> */}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"

@@ -6,6 +6,7 @@ import {
   Image as JssImage,
   ComponentParams,
   ComponentRendering,
+  Placeholder,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import 'animate.css';
 
@@ -31,6 +32,8 @@ const HeadingDefaultComponent = (props: HeadingProps): JSX.Element => (
 
 export const Default = (props: HeadingProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
+  const phPrefixImage = `headingPrefixImage-${props.params.DynamicPlaceholderId}`;
+  const phSuffixImage = `headingSuffixImage-${props.params.DynamicPlaceholderId}`;
 
   return (
     <h3
@@ -41,6 +44,7 @@ export const Default = (props: HeadingProps): JSX.Element => {
       style={{ animationDelay: '100ms' }}
     >
       <span className="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+        <Placeholder name={phPrefixImage} rendering={props.rendering} />
         <JssImage field={props.fields.PrefixImage} />
         <img
           src="img/slides/slide-title-border.png"
@@ -54,6 +58,7 @@ export const Default = (props: HeadingProps): JSX.Element => {
       </span>
       <Text field={props.fields.Title} />
       <span className="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+        <Placeholder name={phPrefixImage} rendering={props.rendering} />
         <JssImage field={props.fields.PrefixImage} />
         <img
           src="img/slides/slide-title-border.png"

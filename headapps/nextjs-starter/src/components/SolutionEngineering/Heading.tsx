@@ -58,7 +58,7 @@ export const Default = (props: HeadingProps): JSX.Element => {
       </span>
       <Text field={props.fields.Title} />
       <span className="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
-        <Placeholder name={phPrefixImage} rendering={props.rendering} />
+        <Placeholder name={phSuffixImage} rendering={props.rendering} />
         <JssImage field={props.fields.PrefixImage} />
         <img
           src="img/slides/slide-title-border.png"

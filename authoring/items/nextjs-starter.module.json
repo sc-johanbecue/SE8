@@ -6,7 +6,7 @@
         "includes": [
             {
                 "name": "DefaultRenderingHost",
-                "path": "/sitecore/system/Settings/Services/Rendering Hosts/Default",
+                "path": "/sitecore/system/Settings/Services/Rendering Hosts/Default2",
                 "scope": "singleItem"
             }
         ]

@@ -1,0 +1,23 @@
+﻿---
+ID: "71a24c2c-0f6c-43ff-a39d-83cb2a6aa959"
+Parent: "301effc0-5e6d-498c-a46f-06105898cbce"
+Template: "301effc0-5e6d-498c-a46f-06105898cbce"
+Path: /sitecore/templates/Feature/Solution Engineers/Rendering Parameters/Page Header Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120629T104300Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5bd9b92a-a555-4916-b932-09f0788784c1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250221T142153Z

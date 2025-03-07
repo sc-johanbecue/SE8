@@ -1,0 +1,34 @@
+﻿---
+ID: "cb83bd34-aebb-4042-b655-37369dde6e69"
+Parent: "b1256f72-5fce-4d33-9d97-6e18fe830538"
+Template: "b1256f72-5fce-4d33-9d97-6e18fe830538"
+Path: /sitecore/templates/Feature/Solution Engineers/Header/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250220T000432Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "874b70f8-36af-4f20-98b4-29186530afb1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250220T000443Z
+    - ID: "e2c53138-d132-49a7-8cf3-335fd0faacc0"
+      Hint: Title
+      Value: $name

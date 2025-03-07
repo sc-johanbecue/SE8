@@ -1,0 +1,14 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "SolutionEngineers",
+    "items": {
+        "path": "templates",
+        "includes": [
+            {
+                "name": "Solution Engineers",
+                "path": "/sitecore/templates/Feature/Solution Engineers",
+                "scope": "ItemAndDescendants"
+            }
+        ]
+    }
+}

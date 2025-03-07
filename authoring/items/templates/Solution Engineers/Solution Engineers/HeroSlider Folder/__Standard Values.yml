@@ -1,0 +1,33 @@
+﻿---
+ID: "8d398d74-a1d3-46b3-b44c-0f3dc3327a93"
+Parent: "3a25b3ea-096f-4767-9cd3-b2f4a8d89083"
+Template: "3a25b3ea-096f-4767-9cd3-b2f4a8d89083"
+Path: /sitecore/templates/Feature/Solution Engineers/HeroSlider Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {65C0B71F-C17E-45A8-B84E-AD3381737CBC}
+    {3A25B3EA-096F-4767-9CD3-B2F4A8D89083}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f7758b60-4199-4722-9434-8f7a6440d9db"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250227T234516Z

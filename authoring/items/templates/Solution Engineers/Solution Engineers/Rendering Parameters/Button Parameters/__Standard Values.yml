@@ -1,0 +1,23 @@
+﻿---
+ID: "b3138d22-2a04-4be0-9a69-f8568da8a1f4"
+Parent: "07344744-f098-4465-8765-f4dcb3e4af2e"
+Template: "07344744-f098-4465-8765-f4dcb3e4af2e"
+Path: /sitecore/templates/Feature/Solution Engineers/Rendering Parameters/Button Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120629T104300Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "848c468e-09c7-4639-85b0-1a85a6ef21fb"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250302T003319Z

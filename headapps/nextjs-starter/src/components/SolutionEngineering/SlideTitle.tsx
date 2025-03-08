@@ -11,13 +11,13 @@ interface Fields {
   Title: TextField;
 }
 
-type HeadingProps = {
+type SlideTitleProps = {
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
   fields: Fields;
 };
 
-const HeadingDefaultComponent = (props: HeadingProps): JSX.Element => (
+const SlideTitleDefaultComponent = (props: SlideTitleProps): JSX.Element => (
   <div className={`component Main ${props.params.styles}`}>
     <div className="component-content">
       <span className="is-empty-hint">Main</span>
@@ -25,7 +25,7 @@ const HeadingDefaultComponent = (props: HeadingProps): JSX.Element => (
   </div>
 );
 
-export const Default = (props: HeadingProps): JSX.Element => {
+export const Default = (props: SlideTitleProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
   return (
@@ -62,5 +62,5 @@ export const Default = (props: HeadingProps): JSX.Element => {
     </h3>
   );
 
-  return <HeadingDefaultComponent {...props} />;
+  return <SlideTitleDefaultComponent {...props} />;
 };

@@ -112,8 +112,8 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
 
 export const WithPrefixSuffixPlaceholder = (props: SlideTitleProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
-  const phKeyHeadingPrefix = `headingPrefix-${props.params.DynamicPlaceholderId}`;
-  const phKeyHeadingSuffix = `headingSuffix-${props.params.DynamicPlaceholderId}`;
+  const phKeyHeadingPrefix = `heading-prefix-${props.params.DynamicPlaceholderId}`;
+  const phKeyHeadingSuffix = `heading-suffix-${props.params.DynamicPlaceholderId}`;
 
   if (props.fields) {
     return (

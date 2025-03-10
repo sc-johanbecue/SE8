@@ -60,7 +60,7 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
         {props.params.prefixImage && (
           <span className="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
             <img
-              src="/-/media/f0813138-85e8-4dde-b4e0-b1d9dcc3ca8d" // + {prefixImage.value.src}
+              src="/-/media/F081313885E84DDEB4E0B1D9DCC3CA8D.ashx" // + {prefixImage.value.src}
               className="w-auto appear-animation animated fadeInLeftShorter appear-animation-visible"
               data-appear-animation="fadeInLeftShorter"
               data-appear-animation-delay="250"
@@ -75,7 +75,7 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
         {props.params.suffixImage && (
           <span className="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
             <img
-              src="/-/media/f0813138-85e8-4dde-b4e0-b1d9dcc3ca8d"
+              src="/-/media/F081313885E84DDEB4E0B1D9DCC3CA8D.ashx"
               className="w-auto appear-animation animated fadeInRightShorter appear-animation-visible"
               data-appear-animation="fadeInRightShorter"
               data-appear-animation-delay="250"

@@ -29,8 +29,13 @@ const SlideTitleDefaultComponent = (props: SlideTitleProps): JSX.Element => (
 
 export const Default = (props: SlideTitleProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
-  const prefixImage: ImageField = JSON.parse(props.params.PrefixImage);
-  const suffixImage: ImageField = JSON.parse(props.params.SuffixImage);
+  const prefixImage: ImageField = props.params.PrefixImage
+    ? JSON.parse(props.params.PrefixImage)
+    : undefined;
+
+  const suffixImage: ImageField = props.params.SuffixImage
+    ? JSON.parse(props.params.SuffixImage)
+    : undefined;
 
   if (props.fields) {
     return (
@@ -41,7 +46,7 @@ export const Default = (props: SlideTitleProps): JSX.Element => {
         data-plugin-options="{'minWindowWidth': 0}"
         style={{ animationDelay: '100ms' }}
       >
-        {prefixImage.value && (
+        {prefixImage && prefixImage.value && (
           <span className="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
             <img
               src={prefixImage.value.src}
@@ -56,7 +61,7 @@ export const Default = (props: SlideTitleProps): JSX.Element => {
         )}
         <Text field={props.fields.Title} />
         <JssImage field={suffixImage} />
-        {suffixImage.value && (
+        {suffixImage && suffixImage.value && (
           <span className="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
             <img
               src={suffixImage.value.src}

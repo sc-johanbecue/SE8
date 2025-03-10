@@ -6,7 +6,6 @@ import {
   ComponentRendering,
   Placeholder,
 } from '@sitecore-jss/sitecore-jss-nextjs';
-import 'SE_Image';
 import 'animate.css';
 
 interface Fields {

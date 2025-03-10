@@ -50,14 +50,6 @@ export const Default = (props: SlideTitleProps): JSX.Element => {
 export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
-  const prefixImage: ImageField = props.params.PrefixImage
-    ? JSON.parse(props.params.PrefixImage)
-    : undefined;
-
-  const suffixImage: ImageField = props.params.SuffixImage
-    ? JSON.parse(props.params.SuffixImage)
-    : undefined;
-
   if (props.fields) {
     return (
       <h3
@@ -67,7 +59,7 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
         data-plugin-options="{'minWindowWidth': 0}"
         style={{ animationDelay: '100ms' }}
       >
-        {prefixImage && prefixImage.value && (
+        {props.params.prefixImage && (
           <span className="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
             <img
               src="/-/media/f0813138-85e8-4dde-b4e0-b1d9dcc3ca8d" // + {prefixImage.value.src}
@@ -81,11 +73,11 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
           </span>
         )}
         <Text field={props.fields.Title} />
-        <JssImage field={suffixImage} />
-        {suffixImage && suffixImage.value && (
+        {/* <JssImage field={suffixImage} /> */}
+        {props.params.suffixImage && (
           <span className="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
             <img
-              src={suffixImage.value.src}
+              src=""
               className="w-auto appear-animation animated fadeInRightShorter appear-animation-visible"
               data-appear-animation="fadeInRightShorter"
               data-appear-animation-delay="250"

@@ -70,7 +70,7 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
         {prefixImage && prefixImage.value && (
           <span className="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
             <img
-              src={prefixImage.value.src}
+              src="/-/media/f0813138-85e8-4dde-b4e0-b1d9dcc3ca8d" // + {prefixImage.value.src}
               className="w-auto appear-animation animated fadeInLeftShorter appear-animation-visible"
               data-appear-animation="fadeInLeftShorter"
               data-appear-animation-delay="250"

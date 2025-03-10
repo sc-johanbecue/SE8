@@ -2,8 +2,6 @@ import React from 'react';
 import {
   TextField,
   Text,
-  ImageField,
-  Image as JssImage,
   ComponentParams,
   ComponentRendering,
 } from '@sitecore-jss/sitecore-jss-nextjs';

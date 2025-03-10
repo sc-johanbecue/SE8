@@ -57,6 +57,7 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
         data-plugin-options="{'minWindowWidth': 0}"
         style={{ animationDelay: '100ms' }}
       >
+        <span>prefix:&quot;{props.params.prefixImage}&quot;</span>
         {props.params.prefixImage && (
           <span className="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
             <img

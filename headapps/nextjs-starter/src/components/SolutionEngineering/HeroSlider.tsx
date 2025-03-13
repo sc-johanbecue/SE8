@@ -119,7 +119,7 @@ export const Default = (props: HeroSliderProps): JSX.Element => {
                             />
                           </span>
                         </h3>
-                        <h2
+                        {/* <h2
                           className="porto-big-title text-color-light font-weight-extra-bold mb-3 initialized"
                           data-plugin-animated-letters=""
                           data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 300, 'animationName': 'fadeInRightShorterOpacity', 'letterClass': 'd-inline-block'}"
@@ -165,12 +165,12 @@ export const Default = (props: HeroSliderProps): JSX.Element => {
                               O
                             </span>
                           </span>
-                        </h2>
+                        </h2> */}
                         <p
                           className="text-4 text-color-light font-weight-light text-center mb-4 initialized"
                           data-plugin-animated-letters=""
                           data-plugin-options="{'startDelay': 2000, 'minWindowWidth': 0}"
-                          style={{ minHeight: '26px' }}
+                          style={{ minHeight: '25.9875px' }}
                         ></p>
                         <Placeholder name={phKey} rendering={props.rendering} />
                         <a

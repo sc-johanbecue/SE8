@@ -1,0 +1,23 @@
+﻿---
+ID: "2cf456c8-d50a-4834-9af5-03e78329af10"
+Parent: "17f3c177-3dd5-4b91-a831-9feadab4475f"
+Template: "65c0b71f-c17e-45a8-b84e-ad3381737cbc"
+Path: /sitecore/content/default/templates/Data/Hero Sliders/Default Hero Slider
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250227T234757Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f8d6cf59-b1db-4300-8d6e-27e8a6fc276a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250227T234757Z

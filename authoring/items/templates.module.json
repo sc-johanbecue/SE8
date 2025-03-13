@@ -1,11 +1,11 @@
 {
     "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
-    "namespace": "SolutionEngineers",
+    "namespace": "Templates",
     "items": {
-        "path": "templates",
+        "path": "Solution Engineering",
         "includes": [
             {
-                "name": "Solution Engineers",
+                "name": "templates",
                 "path": "/sitecore/templates/Feature/Solution Engineers",
                 "scope": "ItemAndDescendants"
             }

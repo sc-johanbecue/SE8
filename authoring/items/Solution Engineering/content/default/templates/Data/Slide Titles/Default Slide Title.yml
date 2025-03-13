@@ -1,0 +1,23 @@
+﻿---
+ID: "f93c0e6d-745c-4f47-8535-4cb4f0925a65"
+Parent: "e398469e-01bf-430d-87b3-3be1f74045ba"
+Template: "1bf216f2-ae0f-4b07-a7f1-d6f1d5de56b8"
+Path: /sitecore/content/default/templates/Data/Slide Titles/Default Slide Title
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250308T001719Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "297705eb-3739-4337-a8d4-926bf9e568cc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250308T001719Z

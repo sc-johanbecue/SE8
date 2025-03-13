@@ -1,0 +1,14 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Content",
+    "items": {
+        "path": "Solution Engineering",
+        "includes": [
+            {
+                "name": "content",
+                "path": "/sitecore/content/default",
+                "scope": "ItemAndDescendants"
+            }
+        ]
+    }
+}

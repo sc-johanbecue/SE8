@@ -1,0 +1,34 @@
+﻿---
+ID: "b36e08de-854b-48f8-9559-7abae1803c75"
+Parent: "6d0111f9-a66c-4236-8aea-859afe081a7c"
+Template: "6d0111f9-a66c-4236-8aea-859afe081a7c"
+Path: /sitecore/templates/Feature/Solution Engineers/Rendering Parameters/Slide Title Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250310T014153Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "728b1240-5d69-4706-b311-566e4504ffd5"
+      Hint: Text Color
+      Value: "{11830117-A4BA-4941-B1D5-69FE21C978C4}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3aefd68b-0dac-4e05-8015-d5b55738443f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250311T004539Z

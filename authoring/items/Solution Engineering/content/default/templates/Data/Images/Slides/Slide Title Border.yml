@@ -1,0 +1,27 @@
+﻿---
+ID: "8194080c-000f-40e4-9ff2-a0011fd4a3cd"
+Parent: "4cc86f7c-2aa5-4f18-acc0-bc99716c53d2"
+Template: "85930f3b-c869-452f-84c2-cda5ff1656f7"
+Path: /sitecore/content/default/templates/Data/Images/Slides/Slide Title Border
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "22580a1c-1583-4c6b-b232-5824ada97e63"
+      Hint: Image
+      Value: |
+        <image mediaid="{F0813138-85E8-4DDE-B4E0-B1D9DCC3CA8D}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250310T003933Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "73fb9bf6-6b0b-4604-ba3e-ae4009246697"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250310T004032Z

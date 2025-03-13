@@ -20,10 +20,10 @@ const FooterDefaultComponent = (props: FooterProps): JSX.Element => (
 );
 
 export const Default = (props: FooterProps): JSX.Element => {
-  // Handle input click event
-  const handleInputClick = (event: React.MouseEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    console.log('Input clicked:', event.target);
-  };
+  // // Handle input click event
+  // const handleInputClick = (event: React.MouseEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  //   console.log('Input clicked:', event.target);
+  // };
 
   return (
     <>
@@ -50,7 +50,6 @@ export const Default = (props: FooterProps): JSX.Element => {
                 <div className="form-group col-md-6 pe-md-2">
                   <input
                     type="text"
-                    value=""
                     data-msg-required="Please enter your name."
                     maxLength={100}
                     className="form-control h-auto py-2"
@@ -58,13 +57,11 @@ export const Default = (props: FooterProps): JSX.Element => {
                     name="name"
                     id="name"
                     required
-                    onClick={handleInputClick} // Added onClick here
                   />
                 </div>
                 <div className="form-group col-md-6 ps-md-2">
                   <input
                     type="text"
-                    value=""
                     data-msg-required="Please enter your phone."
                     maxLength={100}
                     className="form-control h-auto py-2"
@@ -72,14 +69,12 @@ export const Default = (props: FooterProps): JSX.Element => {
                     name="phone"
                     id="phone"
                     required
-                    onClick={handleInputClick} // Added onClick here
                   />
                 </div>
               </div>
               <div className="form-group">
                 <input
                   type="email"
-                  value=""
                   data-msg-required="Please enter your email address."
                   data-msg-email="Please enter a valid email address."
                   maxLength={100}
@@ -88,14 +83,12 @@ export const Default = (props: FooterProps): JSX.Element => {
                   name="email"
                   id="email"
                   required
-                  onClick={handleInputClick} // Added onClick here
                 />
               </div>
               <div className="row">
                 <div className="form-group col">
                   <textarea
                     maxLength={5000}
-                    value=""
                     data-msg-required="Please enter your message."
                     rows={4}
                     className="form-control"
@@ -103,7 +96,6 @@ export const Default = (props: FooterProps): JSX.Element => {
                     name="message"
                     id="message"
                     required
-                    onClick={handleInputClick} // Added onClick here
                   ></textarea>
                 </div>
               </div>
@@ -111,7 +103,7 @@ export const Default = (props: FooterProps): JSX.Element => {
                 <div className="form-group col text-center">
                   <input
                     type="submit"
-                    value="SUBMIT"
+                    defaultValue="SUBMIT"
                     className="btn btn-primary font-weight-semibold text-3 px-5 btn-py-2"
                     data-loading-text="Loading..."
                     readOnly

@@ -1,0 +1,23 @@
+﻿---
+ID: "911df32f-08a3-49a1-9dbc-8db0fcb3389c"
+Parent: "d614a91f-4a86-4aad-8915-71f34c3f892e"
+Template: "b65a7155-9a3f-4fa8-903d-b3636d5204e3"
+Path: /sitecore/content/default/templates/Presentation/Rendering Parameter Option Lists
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250221T141906Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4777c70d-d06b-403e-8aed-41ebbaa55762"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250221T141906Z

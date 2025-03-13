@@ -1,0 +1,27 @@
+﻿---
+ID: "ecb3f808-a5d2-4882-bbc1-1a22b337c667"
+Parent: "8f049e94-1d86-4bcc-ad2f-0c2ca16b72e8"
+Template: "b396b2cc-0e33-4de9-afe1-200035c67eb6"
+Path: /sitecore/content/default/templates/Presentation/Rendering Parameter Option Lists/Size/Large
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250221T142027Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "eea7a526-6168-41f1-a686-fbe69fff94c4"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250221T142030Z

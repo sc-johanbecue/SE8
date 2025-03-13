@@ -1,0 +1,23 @@
+﻿---
+ID: "e1d75d6a-a1a7-4429-8bcd-e987eea934d8"
+Parent: "8f049e94-1d86-4bcc-ad2f-0c2ca16b72e8"
+Template: "b396b2cc-0e33-4de9-afe1-200035c67eb6"
+Path: /sitecore/content/default/templates/Presentation/Rendering Parameter Option Lists/Size/Small
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250221T142010Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9eb571b6-16cf-461c-8d43-1cd8e80d90a4"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250221T142010Z

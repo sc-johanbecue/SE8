@@ -3613,7 +3613,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                           id="headerSearch"
                           name="q"
                           type="search"
-                          value={searchQuery}
+                          defaultValue={searchQuery}
                           onChange={handleSearchChange}
                           placeholder="Search..."
                         />

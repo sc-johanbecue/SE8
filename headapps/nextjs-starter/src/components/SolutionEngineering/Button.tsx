@@ -36,10 +36,10 @@ export const Default = (props: ButtonProps): JSX.Element => {
   // Ref for the container div in editing mode.
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Function to update link's className from container's data-className.
+  // Function to update link's className from container's data-classname.
   const updateLinkClassName = () => {
     if (containerRef.current && linkRef.current) {
-      const containerClassName = containerRef.current.getAttribute('data-className');
+      const containerClassName = containerRef.current.getAttribute('data-classname');
       if (containerClassName) {
         linkRef.current.className = containerClassName;
       }
@@ -92,43 +92,13 @@ export const Default = (props: ButtonProps): JSX.Element => {
   if (sitecoreContext.pageEditing) {
     return (
       // In editing mode, wrap the link in a container div.
-      // The container's data-className attribute is used to update the link's className.
-      <div ref={containerRef} data-className={`btn ${props.params.styles}`}>
+      // The container's data-classname attribute is used to update the link's className.
+      <div ref={containerRef} data-classname={`btn ${props.params.styles}`}>
         {jssLinkComponent}
       </div>
     );
   } else {
     return <>{jssLinkComponent}</>;
-  }
-
-  return <ButtonDefaultComponent {...props} />;
-};
-
-export const DefaultNotGood = (props: ButtonProps): JSX.Element => {
-  const id = props.params.RenderingIdentifier;
-
-  // Create a ref to get the underlying <a> element.
-  const linkRef = useRef<HTMLAnchorElement>(null);
-
-  useEffect(() => {
-    // If the link should be disabled, set its attribute without a value.
-    if (linkRef.current && props.params.Disabled) {
-      linkRef.current.setAttribute('disabled', '');
-    }
-    // Assign the container's data-className attribute value to the link's className.
-  }, [props.params.Disabled, props.params.styles]);
-
-  if (props.fields) {
-    return (
-      <JssLink
-        ref={linkRef}
-        id={id ? id : undefined}
-        defaultValue="GET STARTED NOW!"
-        field={props.fields.Link}
-        className={`btn font-weight-bold text-3 py-3 btn-px-5 mt-1 ${props.params.styles}`}
-        style={{ animationDelay: '1800ms' }}
-      />
-    );
   }
 
   return <ButtonDefaultComponent {...props} />;

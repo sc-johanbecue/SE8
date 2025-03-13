@@ -126,12 +126,9 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
               <Image
                 ref={leftHeadingBorderRef as React.RefObject<HTMLImageElement>}
                 src={prefixAttributes['mediaurl']}
-                className={`object-cover w-auto appear-animation animated fadeInLeftShorter appear-animation-visible`}
-                data-appear-animation="fadeInLeftShorter"
-                data-appear-animation-delay="250"
+                className={`object-cover w-auto`}
                 data-plugin-options="{'minWindowWidth': 0}"
                 alt=""
-                style={{ animationDelay: '250ms' }}
                 fill
                 sizes="37px" // Added sizes prop
               />

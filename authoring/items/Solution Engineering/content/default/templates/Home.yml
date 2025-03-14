@@ -5,6 +5,12 @@ Template: "8a79dc6f-af2e-46a2-8487-e4aabd358d2f"
 Path: /sitecore/content/default/templates/Home
 BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
 SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {8A79DC6F-AF2E-46A2-8487-E4AABD358D2F}
+    {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+    {DCDB4541-37D8-4DAD-8A56-958B7FB8AC37}
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
@@ -39,7 +45,7 @@ Languages:
               p:after="r[@uid='{2C859F07-46C1-47B9-BF05-F1BCDE3A37E3}']"
               s:ds="{F93C0E6D-745C-4F47-8535-4CB4F0925A65}"
               s:id="{513D2DF4-7C60-40B7-8F8D-C7F99FA59C0F}"
-              s:par="Reset Caching Options&amp;GridParameters=%7B2833FDF2-F52C-4E7A-B291-E220C684FB8B%7D%7C%7BD42B5828-71A1-4F73-B6C7-D3E666908857%7D%7C%7BE25B16F8-81E2-443F-B4B0-500E08F42815%7D&amp;PrefixImage=%3Cimage%20mediaid%3D%22f0813138-85e8-4dde-b4e0-b1d9dcc3ca8d%22%20%2F%3E&amp;SuffixImage=%3Cimage%20mediaid%3D%22f0813138-85e8-4dde-b4e0-b1d9dcc3ca8d%22%20%2F%3E&amp;FieldNames=%7B5803E86F-3D60-41F9-BC54-49C76FABCE56%7D&amp;Styles=%7C%7B88A02B6D-7DC9-46E4-8462-7BA7EB38B6EA%7D%7C%7BC172B69D-387A-4C49-B7D4-6482635A1D55%7D%7C%7B7DC93F03-BB09-4FF5-8B2E-DF300B183364%7D&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+              s:par="Reset Caching Options&amp;GridParameters=%7B2833FDF2-F52C-4E7A-B291-E220C684FB8B%7D%7C%7BD42B5828-71A1-4F73-B6C7-D3E666908857%7D%7C%7BE25B16F8-81E2-443F-B4B0-500E08F42815%7D&amp;PrefixImage=%3Cimage%20mediaid%3D%22f0813138-85e8-4dde-b4e0-b1d9dcc3ca8d%22%20%2F%3E&amp;SuffixImage=%3Cimage%20mediaid%3D%22f0813138-85e8-4dde-b4e0-b1d9dcc3ca8d%22%20%2F%3E&amp;FieldNames=%7B5803E86F-3D60-41F9-BC54-49C76FABCE56%7D&amp;Styles=%7C%7B17BC2949-66CF-4AE4-8DBC-3F3209E7B050%7D%7C%7B88C4AB36-F57D-4858-B936-D3D1A71F19AE%7D&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
               s:ph="/headless-main/slide-container-2" />
             <r
               uid="{936F1267-19B5-4835-9F97-C1D0F39A8846}"
@@ -66,14 +72,14 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9166ff56-c124-4b58-a9dd-e1fb59a9ca61"
+      Value: "4b8b230b-7991-4b05-8d4d-dbe552b86849"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250312T000212Z
+      Value: 20250313T124352Z
     - ID: "fd7c6a8b-0cb8-4eaa-8ed9-bd0e5209f98c"
       Hint: Title
       Value: Home Page

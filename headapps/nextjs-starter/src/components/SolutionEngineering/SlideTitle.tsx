@@ -94,8 +94,8 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
   useEffect(() => {
     console.log('useEffect triggered');
     const mappings: ClassMapping[] = [
-      { targetRef: leftHeadingBorderRef, prefix: '{{LeftHeadingBorderAnimation}}' },
-      { targetRef: rightHeadingBorderRef, prefix: '{{RightHeadingBorderAnimation}}' },
+      { targetRef: leftHeadingBorderRef, prefix: '{{LeftHeadingBorderImage}}' },
+      { targetRef: rightHeadingBorderRef, prefix: '{{RightHeadingBorderImage}}' },
     ];
 
     const observer = transferPrefixedClasses(containerRef, mappings, isPageEditing);

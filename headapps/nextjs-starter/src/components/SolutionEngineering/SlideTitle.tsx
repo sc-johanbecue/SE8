@@ -62,44 +62,48 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext.pageEditing;
-  // Use the helper function to extract attributes for PrefixImage
+
+  // Extract attributes for PrefixImage and SuffixImage if available.
   const prefixAttributes = props.params.PrefixImage
     ? extractAttributes(props.params.PrefixImage)
     : undefined;
-
-  // Similarly, extract attributes for SuffixImage if available
   const suffixAttributes = props.params.SuffixImage
     ? extractAttributes(props.params.SuffixImage)
     : undefined;
 
-  // Split the space-separated string into an array and filter out any empty strings
-  // const classArray = props.params.styles.split(' ').filter(Boolean);
+  // Assume the extracted heading has a "value" key with a string like "Heading 1"
+  const headingTag =
+    props.params.Heading === 'Heading 1'
+      ? 'h1'
+      : props.params.Heading === 'Heading 2'
+      ? 'h2'
+      : props.params.Heading === 'Heading 3'
+      ? 'h3'
+      : props.params.Heading === 'Heading 4'
+      ? 'h4'
+      : props.params.Heading === 'Heading 5'
+      ? 'h5'
+      : props.params.Heading === 'Heading 6'
+      ? 'h6'
+      : 'h3'; // default to h3 if no valid value is found
 
-  // Top-level classes: those that are not prefixed with "{{"
-  // const topLevelClasses = classArray.filter((cls) => !cls.startsWith('{{'));
-
-  // const leftHeadingBorderClasses = classArray
-  //   .filter((cls) => cls.startsWith('{{LeftHeadingBorderAnimation'))
-  //   .map((cls) => cls.replace('{{LeftHeadingBorderAnimation}}', ''));
-
-  // const rightHeadingBorderClasses = classArray
-  //   .filter((cls) => cls.startsWith('{{RightHeadingBorderAnimation'))
-  //   .map((cls) => cls.replace('{{RightHeadingBorderAnimation}}', ''));
+  // Create a variable component for the heading tag.
+  const HeadingTag = headingTag as keyof JSX.IntrinsicElements;
 
   // Refs for the container element and target elements.
   const containerRef = useRef<HTMLDivElement>(null);
+  const headingRef = useRef<HTMLElement>(null);
   const leftHeadingBorderRef = useRef<HTMLElement>(null);
   const rightHeadingBorderRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    console.log('useEffect triggered');
     const mappings: ClassMapping[] = [
+      { targetRef: headingRef, prefix: '{{Heading}}' },
       { targetRef: leftHeadingBorderRef, prefix: '{{LeftHeadingBorderImage}}' },
       { targetRef: rightHeadingBorderRef, prefix: '{{RightHeadingBorderImage}}' },
     ];
 
     const observer = transferPrefixedClasses(containerRef, mappings, isPageEditing);
-    console.log('After transfer, container classes:', containerRef.current?.className);
     return () => {
       observer?.disconnect();
     };
@@ -112,23 +116,19 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
         className={`component ${props.params.Styles}`}
         id={id ? id : undefined}
       >
-        <h3
-          className={`position-relative text-color-light text-4 line-height-5 font-weight-normal px-4 mb-2 appear-animation animated fadeInDownShorter appear-animation-visible`}
-          data-appear-animation="fadeInDownShorter"
-          data-plugin-options="{'minWindowWidth': 0}"
-          style={{ animationDelay: '100ms' }}
+        <HeadingTag
+          ref={headingRef}
+          className="position-relative text-color-light text-4 line-height-5 font-weight-normal px-4 mb-2"
         >
           {prefixAttributes && (
             <span
-              className={`position-absolute right-100pct top-50pct transform3dy-n50 opacity-3`}
+              className="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3"
               style={{ width: '37px', height: '10px' }}
             >
               <Image
                 ref={leftHeadingBorderRef as React.RefObject<HTMLImageElement>}
                 src={prefixAttributes['mediaurl']}
-                className={`object-cover w-auto`}
-                data-plugin-options="{'minWindowWidth': 0}"
-                alt=""
+                alt={prefixAttributes['alt']}
                 fill
                 sizes="37px" // Added sizes prop
               />
@@ -143,18 +143,13 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
               <Image
                 ref={rightHeadingBorderRef as React.RefObject<HTMLImageElement>}
                 src={suffixAttributes['mediaurl']}
-                className={`object-cover w-auto appear-animation animated fadeInRightShorter appear-animation-visible`}
-                data-appear-animation="fadeInRightShorter"
-                data-appear-animation-delay="250"
-                data-plugin-options="{'minWindowWidth': 0}"
-                alt=""
-                style={{ animationDelay: '250ms' }}
+                alt={suffixAttributes['alt']}
                 fill
                 sizes="37px" // Added sizes prop
               />
             </span>
           )}
-        </h3>
+        </HeadingTag>
       </div>
     );
   }

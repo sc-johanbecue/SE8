@@ -91,16 +91,119 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
   const HeadingTag = headingTag as keyof JSX.IntrinsicElements;
 
   // Refs for the container element and target elements.
+  const headingRef = useRef<HTMLDivElement>(null);
+  const leftHeadingBorderSpanRef = useRef<HTMLElement>(null);
+  const leftHeadingBorderImageRef = useRef<HTMLElement>(null);
+  const rightHeadingBorderSpanRef = useRef<HTMLElement>(null);
+  const rightHeadingBorderImageRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const mappings: ClassMapping[] = [
+      { targetRef: leftHeadingBorderSpanRef, prefix: '{{HeadingBorderSpan}}' },
+      { targetRef: leftHeadingBorderImageRef, prefix: '{{LeftHeadingBorderImage}}' },
+      { targetRef: rightHeadingBorderSpanRef, prefix: '{{HeadingBorderSpan}}' },
+      { targetRef: rightHeadingBorderImageRef, prefix: '{{RightHeadingBorderImage}}' },
+    ];
+
+    const observer = transferPrefixedClasses(headingRef, mappings, isPageEditing);
+    return () => {
+      observer?.disconnect();
+    };
+  }, [props.params.Styles, isPageEditing]);
+
+  if (props.fields) {
+    return (
+      <HeadingTag
+        ref={headingRef}
+        id={id ? id : undefined}
+        className={`component position-relative text-color-light line-height-5 px-4 mb-2 ${props.params.Styles}`}
+      >
+        {prefixAttributes && (
+          <span
+            ref={leftHeadingBorderSpanRef as React.RefObject<HTMLImageElement>}
+            className="position-absolute right-100pct top-50pct transform3dy-n50"
+            style={{ width: '37px', height: '10px' }}
+          >
+            <Image
+              ref={leftHeadingBorderImageRef as React.RefObject<HTMLImageElement>}
+              src={prefixAttributes['mediaurl']}
+              alt={prefixAttributes['alt']}
+              fill
+              sizes="37px" // Added sizes prop
+            />
+          </span>
+        )}
+        <Text field={props.fields.Title} />
+        {suffixAttributes && (
+          <span
+            ref={rightHeadingBorderSpanRef as React.RefObject<HTMLImageElement>}
+            className="position-absolute left-100pct top-50pct transform3dy-n50"
+            style={{ width: '37px', height: '10px' }}
+          >
+            <Image
+              ref={rightHeadingBorderImageRef as React.RefObject<HTMLImageElement>}
+              className="w-auto"
+              src={suffixAttributes['mediaurl']}
+              alt={suffixAttributes['alt']}
+              fill
+              sizes="37px" // Added sizes prop
+            />
+          </span>
+        )}
+      </HeadingTag>
+    );
+  }
+
+  return <SlideTitleDefaultComponent {...props} />;
+};
+
+export const WithPrefixSuffixImageGOOD = (props: SlideTitleProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+  const { sitecoreContext } = useSitecoreContext();
+  const isPageEditing = sitecoreContext.pageEditing;
+
+  // Extract attributes for PrefixImage and SuffixImage if available.
+  const prefixAttributes = props.params.PrefixImage
+    ? extractAttributes(props.params.PrefixImage)
+    : undefined;
+  const suffixAttributes = props.params.SuffixImage
+    ? extractAttributes(props.params.SuffixImage)
+    : undefined;
+
+  // Assume the extracted heading has a "value" key with a string like "Heading 1"
+  const headingTag =
+    props.params.Heading === 'Heading 1'
+      ? 'h1'
+      : props.params.Heading === 'Heading 2'
+      ? 'h2'
+      : props.params.Heading === 'Heading 3'
+      ? 'h3'
+      : props.params.Heading === 'Heading 4'
+      ? 'h4'
+      : props.params.Heading === 'Heading 5'
+      ? 'h5'
+      : props.params.Heading === 'Heading 6'
+      ? 'h6'
+      : 'h3'; // default to h3 if no valid value is found
+
+  // Create a variable component for the heading tag.
+  const HeadingTag = headingTag as keyof JSX.IntrinsicElements;
+
+  // Refs for the container element and target elements.
   const containerRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLElement>(null);
-  const leftHeadingBorderRef = useRef<HTMLElement>(null);
-  const rightHeadingBorderRef = useRef<HTMLElement>(null);
+  const leftHeadingBorderSpanRef = useRef<HTMLElement>(null);
+  const leftHeadingBorderImageRef = useRef<HTMLElement>(null);
+  const rightHeadingBorderSpanRef = useRef<HTMLElement>(null);
+  const rightHeadingBorderImageRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const mappings: ClassMapping[] = [
       { targetRef: headingRef, prefix: '{{Heading}}' },
-      { targetRef: leftHeadingBorderRef, prefix: '{{LeftHeadingBorderImage}}' },
-      { targetRef: rightHeadingBorderRef, prefix: '{{RightHeadingBorderImage}}' },
+      { targetRef: leftHeadingBorderSpanRef, prefix: '{{HeadingBorderSpan}}' },
+      { targetRef: leftHeadingBorderImageRef, prefix: '{{LeftHeadingBorderImage}}' },
+      { targetRef: rightHeadingBorderSpanRef, prefix: '{{HeadingBorderSpan}}' },
+      { targetRef: rightHeadingBorderImageRef, prefix: '{{RightHeadingBorderImage}}' },
     ];
 
     const observer = transferPrefixedClasses(containerRef, mappings, isPageEditing);
@@ -118,15 +221,16 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
       >
         <HeadingTag
           ref={headingRef}
-          className="position-relative text-color-light text-4 line-height-5 font-weight-normal px-4 mb-2"
+          className="position-relative text-color-light line-height-5 px-4"
         >
           {prefixAttributes && (
             <span
-              className="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3"
+              ref={leftHeadingBorderSpanRef as React.RefObject<HTMLImageElement>}
+              className="position-absolute right-100pct top-50pct transform3dy-n50"
               style={{ width: '37px', height: '10px' }}
             >
               <Image
-                ref={leftHeadingBorderRef as React.RefObject<HTMLImageElement>}
+                ref={leftHeadingBorderImageRef as React.RefObject<HTMLImageElement>}
                 src={prefixAttributes['mediaurl']}
                 alt={prefixAttributes['alt']}
                 fill
@@ -137,11 +241,13 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
           <Text field={props.fields.Title} />
           {suffixAttributes && (
             <span
-              className="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3"
+              ref={rightHeadingBorderSpanRef as React.RefObject<HTMLImageElement>}
+              className="position-absolute left-100pct top-50pct transform3dy-n50"
               style={{ width: '37px', height: '10px' }}
             >
               <Image
-                ref={rightHeadingBorderRef as React.RefObject<HTMLImageElement>}
+                ref={rightHeadingBorderImageRef as React.RefObject<HTMLImageElement>}
+                className="w-auto"
                 src={suffixAttributes['mediaurl']}
                 alt={suffixAttributes['alt']}
                 fill

@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import {
+  LinkField,
   TextField,
   Text,
   ComponentParams,
@@ -13,6 +14,7 @@ import 'animate.css';
 
 interface Fields {
   Title: TextField;
+  xx: LinkField;
 }
 
 type SlideTitleProps = {
@@ -116,7 +118,7 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
       <HeadingTag
         ref={headingRef}
         id={id ? id : undefined}
-        className={`component position-relative text-color-light line-height-5 px-4 mb-2 ${props.params.Styles}`}
+        className={`component position-relative text-color-light px-4 ${props.params.Styles}`}
       >
         {prefixAttributes && (
           <span

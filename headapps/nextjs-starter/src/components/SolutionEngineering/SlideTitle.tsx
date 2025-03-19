@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import {
-  LinkField,
   TextField,
   Text,
   ComponentParams,
@@ -14,8 +13,11 @@ import 'animate.css';
 
 interface Fields {
   Title: TextField;
-  xx: LinkField;
 }
+
+// interface StyleFields {
+//   Value: TextField;
+// }
 
 type SlideTitleProps = {
   rendering: ComponentRendering & { params: ComponentParams };

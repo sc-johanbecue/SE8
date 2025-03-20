@@ -72,9 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Config\Include\" />
-    <Content Include="App_Config\Include\zDetailedRenderingParametersPatch.config" />
-    <Content Include="App_Config\Environment\Sitecore.DetailedRenderingParametersPatch.config" />
-    <Folder Include="App_Config\Environment\" />
+    <Content Include="App_Config\Include\Sitecore.patch.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

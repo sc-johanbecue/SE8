@@ -128,6 +128,7 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
             className="position-absolute right-100pct top-50pct transform3dy-n50"
             style={{ width: '37px', height: '10px' }}
           >
+            <span>Johan</span>
             <Image
               ref={leftHeadingBorderImageRef as React.RefObject<HTMLImageElement>}
               src={prefixAttributes['mediaurl']}

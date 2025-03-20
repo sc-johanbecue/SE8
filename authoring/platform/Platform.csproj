@@ -72,8 +72,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Config\Include\" />
-    <None Include="App_Config\Include\zDetailedRenderingParametersPatch.config" />
-    <None Include="App_Config\Environment\Sitecore.DetailedRenderingParametersPatch.config" />
+    <Content Include="App_Config\Include\zDetailedRenderingParametersPatch.config" />
+    <Content Include="App_Config\Environment\Sitecore.DetailedRenderingParametersPatch.config" />
     <Folder Include="App_Config\Environment\" />
   </ItemGroup>
   <PropertyGroup>

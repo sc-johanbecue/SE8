@@ -9,7 +9,14 @@
             "name": "Run Script: start:connected",
             "request": "launch",
             "command": "npm run start:connected",
-            "cwd": "${workspaceFolder}\\headapps\\nextjs-starter"
+            "cwd": "${workspaceFolder}\\headapps\\nextjs-starter",
+"serverReadyAction": {
+        "action": "debugWithEdge",
+        "killOnServerStop": true,
+        "pattern": "- Local:.+(https?://.+)",
+        "uriFormat": "%s",
+        "webRoot": "${workspaceFolder}"
+      }
         }
     ]
 }

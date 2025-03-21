@@ -15,13 +15,21 @@ interface Fields {
   Title: TextField;
 }
 
-// interface StyleFields {
-//   Value: TextField;
-// }
+// Define a type for your TextColor object.
+interface CustomTextColor {
+  Value: {
+    value: string;
+  };
+}
+
+// Create a custom params type by overriding TextColor.
+type CustomParams = Omit<ComponentParams, 'TextColor'> & {
+  'Text Color': CustomTextColor;
+};
 
 type SlideTitleProps = {
   rendering: ComponentRendering & { params: ComponentParams };
-  params: ComponentParams;
+  params: CustomParams;
   fields: Fields;
 };
 
@@ -128,7 +136,6 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
             className="position-absolute right-100pct top-50pct transform3dy-n50"
             style={{ width: '37px', height: '10px' }}
           >
-            <span>Johan</span>
             <Image
               ref={leftHeadingBorderImageRef as React.RefObject<HTMLImageElement>}
               src={prefixAttributes['mediaurl']}
@@ -139,6 +146,7 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
           </span>
         )}
         <Text field={props.fields.Title} />
+        {props.params['Text Color']?.Value?.value}
         {suffixAttributes && (
           <span
             ref={rightHeadingBorderSpanRef as React.RefObject<HTMLImageElement>}

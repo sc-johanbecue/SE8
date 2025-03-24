@@ -1,3 +1,6 @@
+Client ID: NOogUSob4ejU1LgERtKpOP0yF40JvRii
+Client Secret: VXt5SCvgureEdCKagaWLtLtHNVqlD0_7LypcRPiFtvgpods9UlTB8jrhHzAz1O_Q
+
 import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import {
@@ -6,6 +9,8 @@ import {
   Text,
   ComponentParams,
   ComponentRendering,
+  GetStaticComponentProps,
+  constants,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { transferPrefixedClasses, ClassMapping } from './Utility/transferPrefixedClasses';
@@ -16,28 +21,6 @@ import 'animate.css';
 
 interface Fields {
   Title: TextField;
-}
-
-// Define types for the expected JSON structure
-interface PrefixImageValue {
-  src: string;
-  alt: string;
-  width: string;
-  height: string;
-}
-
-interface Field {
-  id: string;
-  name: string;
-  jsonValue: {
-    value: PrefixImageValue;
-  } | null;
-}
-
-interface GraphQLData {
-  item: {
-    fields: Field[];
-  };
 }
 
 // Define a type for your TextColor object.
@@ -54,62 +37,52 @@ type CustomParams = Omit<ComponentParams, 'TextColor' | 'Prefix Image' | 'Suffix
   SuffixImage: ImageField;
 };
 
-type ComponentProps = {
+type SlideTitleProps = {
+  altText: string;
   rendering: ComponentRendering & { params: ComponentParams };
   params: CustomParams;
-};
-
-type SlideTitleProps = ComponentProps & {
-  altPrefix: string;
   fields: Fields;
 };
 
-type SettingProps = {
-  altPrefix: string;
-};
-
-const getComponentSettings = async () => {
+export const getStaticProps: GetStaticComponentProps = async (rendering) => {
   //async (rendering, layoutData, context)
-  let altPrefix = 'initial';
+  const prefixAttributes =
+    rendering.params && rendering.params.PrefixImage
+      ? extractAttributes(rendering.params.PrefixImage as string)
+      : undefined;
+
+  const prefixMediaId = prefixAttributes?.mediaid;
+
+  let altPrefix = prefixAttributes?.alt;
+
+  if (process.env.JSS_MODE === constants.JSS_MODE.DISCONNECTED) {
+    return null;
+  }
 
   const graphQLClient = new GraphQLRequestClient(config.graphQLEndpoint, {
     apiKey: config.sitecoreApiKey,
   });
 
   const query = `
-  {
-    item(
-      path: "/sitecore/content/default/templates/Presentation/Rendering Configurations/Slide Title Configuration"
-      language: "en"
-    ) {
+    query GetMediaItem($id: String!) {
+      item(path: $id, language: "en") {
+       name
         fields {
-          id
-          name
-          jsonValue
+          name,
+          value
         }
       }
     }
-  }
   `;
 
   try {
-    // Tell the GraphQL client what shape to expect
-    const prefixResponse = await graphQLClient.request<{ data: GraphQLData }>(query);
-
-    console.log(prefixResponse);
-
-    // Find the field with the name "PrefixImage"
-    const prefixImageField = prefixResponse.data.item.fields.find(
-      (field) => field.name === 'PrefixImage'
-    );
-
-    // Use the alt value from the JSON or fallback to the previous altPrefix value
-    altPrefix = prefixImageField?.jsonValue?.value?.alt || altPrefix;
+    if (prefixMediaId) {
+      const prefixResponse = await graphQLClient.request(query, { id: prefixMediaId });
+      altPrefix = prefixResponse?.item?.fields?.alt?.value || altPrefix;
+    }
   } catch (error) {
     console.error('Error fetching prefix alt:', error);
   }
-
-  //altPrefix = 'JOHAN';
 
   return {
     props: {
@@ -156,11 +129,8 @@ export const Default = (props: SlideTitleProps): JSX.Element => {
   return <SlideTitleDefaultComponent {...props} />;
 };
 
-export const WithPrefixSuffixImage = (props: SlideTitleProps & SettingProps): JSX.Element => {
+export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
-  const componentSettings = getComponentSettings();
-  console.log(componentSettings);
-  console.dir(componentSettings);
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext.pageEditing;
 
@@ -228,7 +198,7 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps & SettingProps): JS
             <Image
               ref={leftHeadingBorderImageRef as React.RefObject<HTMLImageElement>}
               src={prefixAttributes['mediaurl']}
-              alt={props.altPrefix}
+              alt={props.altText}
               fill
               sizes="37px" // Added sizes prop
             />

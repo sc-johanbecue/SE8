@@ -9,7 +9,7 @@ SharedFields:
   Value: slider
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 1200
 Languages:
 - Language: en
   Fields:
@@ -32,11 +32,11 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7be62896-4a0d-48fb-9fe5-52c36404cf7d"
+      Value: "edada729-70f0-4d3d-9a98-4a08e9afd287"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250305T005652Z
+      Value: 20250318T124439Z

@@ -9,7 +9,7 @@ SharedFields:
   Value: droplist
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 300
 Languages:
 - Language: en
   Fields:
@@ -32,11 +32,11 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "274a99f6-562f-439b-bee9-f3311a3c7b0f"
+      Value: "80eb45b8-b352-45a4-a5ac-21f58955406c"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250304T011246Z
+      Value: 20250318T124438Z

@@ -4,9 +4,12 @@ Parent: "07ea41df-d75f-4647-b16e-babbb34f2809"
 Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
 Path: /sitecore/content/default/templates/Presentation/Styles/Solution Engineers/Bootstrap/Font Weight
 SharedFields:
+- ID: "62ca1c9e-71a4-465f-835e-55bda7bb270b"
+  Hint: Type
+  Value: droplist
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 200
+  Value: 2100
 Languages:
 - Language: en
   Versions:
@@ -25,11 +28,11 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3f065dfd-506b-4c99-8227-46a2ac44ee2c"
+      Value: "e3ee92c6-ab74-4eea-a818-d11be2bfa027"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250305T003657Z
+      Value: 20250318T124440Z

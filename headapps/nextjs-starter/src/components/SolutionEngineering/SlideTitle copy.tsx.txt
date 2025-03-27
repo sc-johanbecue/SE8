@@ -1,6 +1,3 @@
-Client ID: NOogUSob4ejU1LgERtKpOP0yF40JvRii
-Client Secret: VXt5SCvgureEdCKagaWLtLtHNVqlD0_7LypcRPiFtvgpods9UlTB8jrhHzAz1O_Q
-
 import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import {
@@ -9,9 +6,9 @@ import {
   Text,
   ComponentParams,
   ComponentRendering,
-  GetStaticComponentProps,
-  constants,
   useSitecoreContext,
+  useComponentProps,
+  GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { transferPrefixedClasses, ClassMapping } from './Utility/transferPrefixedClasses';
 import { GraphQLRequestClient } from '@sitecore-jss/sitecore-jss-nextjs/graphql';
@@ -23,83 +20,57 @@ interface Fields {
   Title: TextField;
 }
 
-// Define a type for your TextColor object.
+interface PrefixImageValue {
+  src: string;
+  alt: string;
+  width: string;
+  height: string;
+}
+
+interface Field {
+  id: string;
+  name: string;
+  jsonValue: {
+    value: PrefixImageValue;
+  } | null;
+}
+
+interface GraphQLData {
+  item: {
+    fields: Field[];
+  };
+}
+
 interface CustomTextColor {
   Value: {
     value: string;
   };
 }
 
-// Create a custom params type by overriding TextColor.
 type CustomParams = Omit<ComponentParams, 'TextColor' | 'Prefix Image' | 'Suffix Image'> & {
   'Text Color': CustomTextColor;
   PrefixImage: ImageField;
   SuffixImage: ImageField;
 };
 
-type SlideTitleProps = {
-  altText: string;
+type ComponentProps = {
   rendering: ComponentRendering & { params: ComponentParams };
   params: CustomParams;
+};
+
+type SlideTitleProps = ComponentProps & {
+  mything: string;
   fields: Fields;
 };
 
-export const getStaticProps: GetStaticComponentProps = async (rendering) => {
-  //async (rendering, layoutData, context)
-  const prefixAttributes =
-    rendering.params && rendering.params.PrefixImage
-      ? extractAttributes(rendering.params.PrefixImage as string)
-      : undefined;
-
-  const prefixMediaId = prefixAttributes?.mediaid;
-
-  let altPrefix = prefixAttributes?.alt;
-
-  if (process.env.JSS_MODE === constants.JSS_MODE.DISCONNECTED) {
-    return null;
-  }
-
-  const graphQLClient = new GraphQLRequestClient(config.graphQLEndpoint, {
-    apiKey: config.sitecoreApiKey,
-  });
-
-  const query = `
-    query GetMediaItem($id: String!) {
-      item(path: $id, language: "en") {
-       name
-        fields {
-          name,
-          value
-        }
-      }
-    }
-  `;
-
-  try {
-    if (prefixMediaId) {
-      const prefixResponse = await graphQLClient.request(query, { id: prefixMediaId });
-      altPrefix = prefixResponse?.item?.fields?.alt?.value || altPrefix;
-    }
-  } catch (error) {
-    console.error('Error fetching prefix alt:', error);
-  }
-
-  return {
-    props: {
-      altPrefix,
-      // ...other props you need
-    },
-  };
+type ComponentSettingsProps = {
+  altPrefix: Field['jsonValue'];
 };
 
-const SlideTitleDefaultComponent = (props: SlideTitleProps): JSX.Element => (
-  <div className={`component Main ${props.params.styles}`}>
-    <div className="component-content">
-      <span className="is-empty-hint">Main</span>
-    </div>
-  </div>
-);
-
+//
+// Helper function: Extract attributes from an XML-like string.
+// (Assuming your image field is stored as an XML string containing a mediaurl attribute.)
+//
 const extractAttributes = (xml: string): Record<string, string> => {
   const attributes: Record<string, string> = {};
   const regex = /(\w+)="([^"]*)"/g;
@@ -109,6 +80,14 @@ const extractAttributes = (xml: string): Record<string, string> => {
   }
   return attributes;
 };
+
+const SlideTitleDefaultComponent = (props: SlideTitleProps): JSX.Element => (
+  <div className={`component Main ${props.params.styles}`}>
+    <div className="component-content">
+      <span className="is-empty-hint">Main</span>
+    </div>
+  </div>
+);
 
 export const Default = (props: SlideTitleProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
@@ -125,12 +104,53 @@ export const Default = (props: SlideTitleProps): JSX.Element => {
       </h3>
     );
   }
-
   return <SlideTitleDefaultComponent {...props} />;
 };
 
+//export const getServerSideProps: GetServerSideComponentProps
+export const getStaticProps: GetStaticComponentProps = async () => {
+  console.log('Starting getStaticProps');
+  let altPrefix: Field['jsonValue'] | undefined;
+
+  const graphQLClient = new GraphQLRequestClient(config.graphQLEndpoint, {
+    apiKey: config.sitecoreApiKey,
+  });
+
+  const query = `
+   query {
+      item(
+        path: "/sitecore/content/default/templates/Presentation/Rendering Configurations/Slide Title Configuration"
+        language: "en"
+      ) {
+        fields {
+          id
+          name
+          jsonValue
+        }
+      }
+   }
+  `;
+
+  console.log('JBE_Inside getStaticProps, initial altPrefix:' + altPrefix);
+
+  try {
+    const prefixResponse = await graphQLClient.request<GraphQLData>(query);
+    const prefixImageField = prefixResponse.item.fields.find(
+      (field) => field.name === 'PrefixImage'
+    );
+    altPrefix = prefixImageField?.jsonValue;
+    console.log('JBE_Inside then_altPrefix:' + altPrefix);
+  } catch (error) {
+    console.error('Error fetching prefix alt:', error);
+  }
+
+  return { altPrefix: altPrefix };
+};
+
 export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
+  const externalData = useComponentProps<ComponentSettingsProps>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
+  console.log('altPrefix inside WithPrefixSuffixImage: ' + externalData?.altPrefix);
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext.pageEditing;
 
@@ -142,7 +162,7 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
     ? extractAttributes(props.params.SuffixImage as string)
     : undefined;
 
-  // Assume the extracted heading has a "value" key with a string like "Heading 1"
+  // Determine the heading tag.
   const headingTag =
     props.params.Heading === 'Heading 1'
       ? 'h1'
@@ -156,12 +176,10 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
       ? 'h5'
       : props.params.Heading === 'Heading 6'
       ? 'h6'
-      : 'h3'; // default to h3 if no valid value is found
-
-  // Create a variable component for the heading tag.
+      : 'h3';
   const HeadingTag = headingTag as keyof JSX.IntrinsicElements;
 
-  // Refs for the container element and target elements.
+  // Refs for transferPrefixedClasses utility.
   const headingRef = useRef<HTMLDivElement>(null);
   const leftHeadingBorderSpanRef = useRef<HTMLElement>(null);
   const leftHeadingBorderImageRef = useRef<HTMLElement>(null);
@@ -175,7 +193,6 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
       { targetRef: rightHeadingBorderSpanRef, prefix: '{{HeadingBorderSpan}}' },
       { targetRef: rightHeadingBorderImageRef, prefix: '{{RightHeadingBorderImage}}' },
     ];
-
     const observer = transferPrefixedClasses(headingRef, mappings, isPageEditing);
     return () => {
       observer?.disconnect();
@@ -198,14 +215,15 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
             <Image
               ref={leftHeadingBorderImageRef as React.RefObject<HTMLImageElement>}
               src={prefixAttributes['mediaurl']}
-              alt={props.altText}
-              fill
-              sizes="37px" // Added sizes prop
+              alt={externalData?.altPrefix?.value.alt as string}
+              fill={true}
+              sizes="37px"
             />
           </span>
         )}
         <Text field={props.fields.Title} />
-        {props.params['Text Color']?.Value?.value}
+        <span>{externalData?.altPrefix?.value.alt}dd</span>
+        {/* {props.params['Text Color']?.Value?.value} */}
         {suffixAttributes && (
           <span
             ref={rightHeadingBorderSpanRef as React.RefObject<HTMLImageElement>}
@@ -217,8 +235,8 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
               className="w-auto"
               src={suffixAttributes['mediaurl']}
               alt="right"
-              fill
-              sizes="37px" // Added sizes prop
+              fill={true}
+              sizes="37px"
             />
           </span>
         )}

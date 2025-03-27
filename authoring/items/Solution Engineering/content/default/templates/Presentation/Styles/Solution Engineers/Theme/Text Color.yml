@@ -3,6 +3,10 @@ ID: "dea2039d-7af3-47cb-8590-aa4a04f17098"
 Parent: "bb246e98-16bf-4bb3-9783-b364425b0af6"
 Template: "c6dc7393-15bb-4cd7-b798-ab63e77ebac4"
 Path: /sitecore/content/default/templates/Presentation/Styles/Solution Engineers/Theme/Text Color
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
 Languages:
 - Language: en
   Versions:
@@ -21,11 +25,11 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d4834017-421e-44d1-b71c-0f86e72e7870"
+      Value: "f16ed70a-e81b-45b6-a7e4-f590d925e08b"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250310T225611Z
+      Value: 20250317T000839Z

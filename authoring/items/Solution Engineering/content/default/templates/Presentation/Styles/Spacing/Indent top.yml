@@ -11,6 +11,9 @@ SharedFields:
 - ID: "39816442-74d9-4ce2-beb3-128b204efd40"
   Hint: Icon
   Value: "add-spacing-top"
+- ID: "69bb49f3-da64-4b0e-abd6-184b832ff6ab"
+  Hint: Allowed Renderings
+  Value: "{973E9C4D-76C1-47E9-A769-CDC03C371587}"
 - ID: "95579875-484e-41f0-b9c2-804eafaf3ccc"
   Hint: IsVerifiedStyle
   Value: 1
@@ -38,11 +41,11 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "254077cb-16e8-48f8-b1b5-1dbff648ecda"
+      Value: "717426d8-27d8-49e2-9fd2-24676d0dcc9e"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250218T223651Z
+      Value: 20250318T122124Z

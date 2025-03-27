@@ -3,6 +3,10 @@ ID: "b36e08de-854b-48f8-9559-7abae1803c75"
 Parent: "6d0111f9-a66c-4236-8aea-859afe081a7c"
 Template: "6d0111f9-a66c-4236-8aea-859afe081a7c"
 Path: /sitecore/templates/Feature/Solution Engineers/Rendering Parameters/Slide Title Parameters/__Standard Values
+SharedFields:
+- ID: "04cf61b4-08ed-463d-a54f-1e370785423b"
+  Hint: Styles
+  Value: "{17BC2949-66CF-4AE4-8DBC-3F3209E7B050}|{88C4AB36-F57D-4858-B936-D3D1A71F19AE}|{339AD067-D9D0-49D4-972B-2F63D60E1722}"
 Languages:
 - Language: en
   Versions:
@@ -24,11 +28,11 @@ Languages:
       Value: "{11830117-A4BA-4941-B1D5-69FE21C978C4}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3aefd68b-0dac-4e05-8015-d5b55738443f"
+      Value: "d1075f45-9224-4985-a97f-0ac7a29379d2"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250311T004539Z
+      Value: 20250314T030854Z

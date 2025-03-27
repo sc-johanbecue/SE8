@@ -44,7 +44,7 @@ export const Default = (props: HomeIntroProps): JSX.Element => {
                   className="btn btn-primary btn-lg text-3 font-weight-semibold px-4 py-3"
                 />
                 <div className="learn-more">
-                  or2 <JssLink field={props.fields.LearnMoreLink} />
+                  or <JssLink field={props.fields.LearnMoreLink} />
                 </div>
               </div>
             </div>

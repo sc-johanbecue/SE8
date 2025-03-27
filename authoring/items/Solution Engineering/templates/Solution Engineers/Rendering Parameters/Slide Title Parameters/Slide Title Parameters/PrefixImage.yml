@@ -18,7 +18,7 @@ Languages:
   Fields:
   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
     Hint: Title
-    Value: Prefix Image
+    Value: 
   Versions:
   - Version: 1
     Fields:
@@ -35,11 +35,11 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "54badcd0-b640-4c36-811c-4c9ab47b9837"
+      Value: "5fcf33eb-7fb4-4834-bc2f-41f3dea3398b"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250311T004358Z
+      Value: 20250323T003918Z

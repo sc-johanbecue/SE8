@@ -38,21 +38,14 @@ Languages:
               p:before="*"
               s:ds="2cf456c8-d50a-4834-9af5-03e78329af10"
               s:id="{7A8F9424-13D4-450A-8340-5C5E6AD75D92}"
-              s:par="Reset Caching Options&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+              s:par="FieldNames&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;Reset Caching Options=0&amp;DynamicPlaceholderId=2"
               s:ph="headless-main" />
             <r
-              uid="{874212AC-EF86-4652-B031-1071157944CE}"
-              p:after="r[@uid='{2C859F07-46C1-47B9-BF05-F1BCDE3A37E3}']"
-              s:ds="{F93C0E6D-745C-4F47-8535-4CB4F0925A65}"
-              s:id="{513D2DF4-7C60-40B7-8F8D-C7F99FA59C0F}"
-              s:par="Reset Caching Options&amp;GridParameters=%7B2833FDF2-F52C-4E7A-B291-E220C684FB8B%7D%7C%7BD42B5828-71A1-4F73-B6C7-D3E666908857%7D%7C%7BE25B16F8-81E2-443F-B4B0-500E08F42815%7D&amp;PrefixImage=%3Cimage%20mediaid%3D%22f0813138-85e8-4dde-b4e0-b1d9dcc3ca8d%22%20%2F%3E&amp;SuffixImage=%3Cimage%20mediaid%3D%22f0813138-85e8-4dde-b4e0-b1d9dcc3ca8d%22%20%2F%3E&amp;FieldNames=%7B5803E86F-3D60-41F9-BC54-49C76FABCE56%7D&amp;Styles=%7C%7B17BC2949-66CF-4AE4-8DBC-3F3209E7B050%7D%7C%7B88C4AB36-F57D-4858-B936-D3D1A71F19AE%7D&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
-              s:ph="/headless-main/slide-container-2" />
-            <r
-              uid="{936F1267-19B5-4835-9F97-C1D0F39A8846}"
+              uid="{ED9E32BB-0095-43F6-B438-8329E690DA52}"
               p:after="*[1=2]"
-              s:ds="f2ae32b1-8ebd-4c33-beb5-21c907200ea9"
-              s:id="{D3CBCCFC-A1D2-4DBE-BEF2-02E519C599F7}"
-              s:par="Disabled&amp;Reset Caching Options&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles=%7C%7BD2A6778F-D081-444A-895A-5DADB76B16B7%7D%7C%7B66A26025-8F82-4F9F-8EC1-125760ADFFBF%7D%7C%7B82959AE4-397D-448E-9A79-12758F009A58%7D%7C%7B3FF99C0B-8DB9-4453-85BC-670C6B8E8B20%7D%7C%7B2BCE346C-DF0C-45F0-9CFD-FAD67B05F07C%7D%7C%7B3A3C2A4D-A8F6-4A78-B9F5-0D36F2D0E5DF%7D%7C%7B5C743F43-6443-46CA-AEEB-3E3F83339153%7D&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+              s:ds="f93c0e6d-745c-4f47-8535-4cb4f0925a65"
+              s:id="{513D2DF4-7C60-40B7-8F8D-C7F99FA59C0F}"
+              s:par="Reset Caching Options=0&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;PrefixImage=%3Cimage%20mediaid%3D%22517b5ea0-021c-484b-bc0d-a165d789c7ac%22%20%2F%3E&amp;SuffixImage=%3Cimage%20mediaid%3D%22f0813138-85e8-4dde-b4e0-b1d9dcc3ca8d%22%20%2F%3E&amp;Text Color=%7BF6BEE786-94DB-4A41-A51A-607CE74B2C8B%7D&amp;Heading=Heading%206&amp;FieldNames=%7B5803E86F-3D60-41F9-BC54-49C76FABCE56%7D&amp;Styles=%7C%7B211322C9-7864-4FF3-ADDC-5D516132557F%7D%7C%7BEF3E9EEE-B0D0-4585-898E-E343C5436568%7D%7C%7B04DCC17C-5507-4597-9EBD-A88449620508%7D%7C%7BBCCAC45C-CFFE-48D8-9E91-53954FFDDBB3%7D%7C%7B16408A90-77D5-4089-AF2F-6B8F113372BE%7D%7C%7B696AF39A-0157-479D-8E60-294D2BDA1DD6%7D%7C%7BCAEAB4C6-634B-4CD2-B137-CF14F8FAF73C%7D%7C%7B11830117-A4BA-4941-B1D5-69FE21C978C4%7D&amp;RenderingIdentifier=jkjkjkklklkkllkl&amp;CSSStyles&amp;DynamicPlaceholderId=5&amp;TextColor=%7B80C926EC-1FEB-4C30-BDEC-216736BB41EA%7D&amp;Prefix Animation=%7BC1E32D7C-9C4A-429A-8A55-40674609A101%7D&amp;Suffix Animation=%7B496A77DB-3263-4572-8F04-5D69EFCEF26E%7D"
               s:ph="/headless-main/slide-container-2" />
           </d>
         </r>
@@ -72,14 +65,14 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4b8b230b-7991-4b05-8d4d-dbe552b86849"
+      Value: "8c04d880-92de-43a4-aad1-661f8269c868"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250313T124352Z
+      Value: 20250325T113119Z
     - ID: "fd7c6a8b-0cb8-4eaa-8ed9-bd0e5209f98c"
       Hint: Title
       Value: Home Page

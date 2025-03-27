@@ -9,7 +9,9 @@ SharedFields:
   Value: "mt-5"
 - ID: "69bb49f3-da64-4b0e-abd6-184b832ff6ab"
   Hint: Allowed Renderings
-  Value: "{973E9C4D-76C1-47E9-A769-CDC03C371587}"
+  Value: |
+    {973E9C4D-76C1-47E9-A769-CDC03C371587}
+    {513D2DF4-7C60-40B7-8F8D-C7F99FA59C0F}
 - ID: "95579875-484e-41f0-b9c2-804eafaf3ccc"
   Hint: IsVerifiedStyle
   Value: 1
@@ -34,11 +36,11 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ab50272c-2403-4527-976e-012b50b748f0"
+      Value: "ff03b08a-31a8-4961-ba98-7dde861745fe"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250304T010854Z
+      Value: 20250318T121820Z

@@ -10,6 +10,9 @@ SharedFields:
 - ID: "6fd695e7-7f6d-4ca5-8b49-a829e5950ae9"
   Hint: __Subitems Sorting
   Value: "{781247D2-9785-400F-8935-C818EC757967}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
 Languages:
 - Language: en
   Versions:
@@ -28,11 +31,11 @@ Languages:
         sitecore\johan.becue@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c431e123-f08c-4308-a6db-70a4cf793213"
+      Value: "44d6023a-9b23-48e6-86c0-30f09fd7d4d4"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\johan.becue@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250302T010103Z
+      Value: 20250314T025743Z

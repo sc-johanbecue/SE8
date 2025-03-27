@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 // FetchRenderingConfiguration.ts
 // ----------------------------------------------------------------------
 // This module contains utility functions for fetching and processing
@@ -22,9 +24,8 @@ export interface GraphQLData {
   };
 }
 export interface RenderingConfigurationFields {
-  RenderingConfigurationFields : RenderingConfigurationField;
+  RenderingConfigurationFields: RenderingConfigurationField;
 }
-
 
 export interface RenderingConfigurationField {
   [key: string]: any;
@@ -40,8 +41,8 @@ export interface RenderingConfigurationField {
  * @param field - The field object from which to extract the value.
  * @returns The extracted string value or an empty string.
  */
-export function getValueFromRenderingConfigurationDropLinkStyle(item : any) {
-  return item?.fields?.Value?.value || "";
+export function getValueFromRenderingConfigurationDropLinkStyle(item: any) {
+  return item?.fields?.Value?.value || '';
 }
 
 /**
@@ -53,13 +54,12 @@ export function getValueFromRenderingConfigurationDropLinkStyle(item : any) {
  * @param fields - A list of rendering configuration field objects.
  * @returns A concatenated string of the extracted values.
  */
-export function concatenateClassNames(...fields : string[]) {
+export function concatenateClassNames(...fields: string[]) {
   return fields
-    .map(field => getValueFromRenderingConfigurationDropLinkStyle(field))
+    .map((field) => getValueFromRenderingConfigurationDropLinkStyle(field))
     .filter(Boolean)
-    .join(" ");
+    .join(' ');
 }
-
 
 /**
  * Fetches rendering configuration data from Sitecore.
@@ -69,7 +69,10 @@ export function concatenateClassNames(...fields : string[]) {
  * @returns A promise that resolves to an object containing the rendering configuration fields.
  *
  */
-export async function fetchRenderingConfiguration(path: string, fieldNames: string[]): Promise<RenderingConfigurationField> {
+export async function fetchRenderingConfiguration(
+  path: string,
+  fieldNames: string[]
+): Promise<RenderingConfigurationField> {
   console.log('Starting fetchRenderingConfiguration');
   const graphQLClient = new GraphQLRequestClient(config.graphQLEndpoint, {
     apiKey: config.sitecoreApiKey,
@@ -109,5 +112,5 @@ export async function fetchRenderingConfiguration(path: string, fieldNames: stri
   // console.log(externalData);
   // console.log('Ended fetchRenderingConfiguration');
 
-  return {RenderingConfigurationFields : externalData};
+  return { RenderingConfigurationFields: externalData };
 }

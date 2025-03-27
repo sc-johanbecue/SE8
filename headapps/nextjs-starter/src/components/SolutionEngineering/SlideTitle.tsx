@@ -77,7 +77,6 @@ const getComponentSettings = async () => {
   });
 
   const query = `
-  {
     item(
       path: "/sitecore/content/default/templates/Presentation/Rendering Configurations/Slide Title Configuration"
       language: "en"
@@ -89,7 +88,6 @@ const getComponentSettings = async () => {
         }
       }
     }
-  }
   `;
 
   try {

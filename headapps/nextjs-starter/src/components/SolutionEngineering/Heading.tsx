@@ -167,7 +167,6 @@ export const WithPrefixSuffixImage = (props: SlideTitleProps): JSX.Element => {
     }),
   };
 
-
   if (props.fields) {
     return (
       <HeadingTag

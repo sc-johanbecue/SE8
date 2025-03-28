@@ -17,13 +17,13 @@ interface Fields {
   Title: TextField;
 }
 
-type PrefixOrSuffixImageProps = {
+type PrefixOrPrefixImageProps = {
   fields: Fields;
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
 };
 
-const PrefixOrSuffixImageDefaultComponent = (props: PrefixOrSuffixImageProps): JSX.Element => (
+const PrefixOrSuffixImageDefaultComponent = (props: PrefixOrPrefixImageProps): JSX.Element => (
   <div className={`component Main ${props.params.styles}`}>
     <div className="component-content">
       <span className="is-empty-hint">Main</span>
@@ -36,7 +36,7 @@ export const getStaticProps: GetStaticComponentProps = async () => {
 
   // Specify the path for the GraphQL query and the fields you need.
   const staticProps = await fetchRenderingConfiguration(
-    '/sitecore/content/default/templates/Presentation/Rendering Configurations/Heading PrefixOrSuffix Image Configuration',
+    '/sitecore/content/default/templates/Presentation/Rendering Configurations/Span Configuration',
     [
       'PrefixImage',
       'PrefixOpacity',
@@ -57,7 +57,7 @@ export const getStaticProps: GetStaticComponentProps = async () => {
 };
 
 // Helper function to render a heading with a dynamic tag
-export const Default = (props: PrefixOrSuffixImageProps): JSX.Element => {
+export const Default = (props: PrefixOrPrefixImageProps): JSX.Element => {
   const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
 
@@ -70,10 +70,10 @@ export const Default = (props: PrefixOrSuffixImageProps): JSX.Element => {
       >
         <Image
           className={`w-auto`}
-          src={staticProps?.RenderingConfigurationFields.SuffixImage.value.src}
-          alt={staticProps?.RenderingConfigurationFields.SuffixImage.value.alt as string}
+          src={staticProps?.RenderingConfigurationFields.PrefixImage.value.src}
+          alt={staticProps?.RenderingConfigurationFields.PrefixImage.value.alt as string}
           fill={true}
-          sizes={`${staticProps?.RenderingConfigurationFields.SuffixImage.value.width}px`}
+          sizes={`${staticProps?.RenderingConfigurationFields.PrefixImage.value.width}px`}
         />
       </span>
     );

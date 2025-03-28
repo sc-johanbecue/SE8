@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import {
   TextField,
-  ImageField,
   Text,
   ComponentParams,
   ComponentRendering,
@@ -20,25 +19,13 @@ interface Fields {
   Title: TextField;
 }
 
-interface CustomTextColor {
-  Value: {
-    value: string;
-  };
-}
-
-type CustomParams = Omit<ComponentParams, 'TextColor' | 'Prefix Image' | 'Suffix Image'> & {
-  'Text Color': CustomTextColor;
-  PrefixImage: ImageField;
-  SuffixImage: ImageField;
-};
-
-type SlideTitleProps = {
+type HeadingProps = {
   fields: Fields;
   rendering: ComponentRendering & { params: ComponentParams };
-  params: CustomParams;
+  params: ComponentParams;
 };
 
-const SlideTitleDefaultComponent = (props: SlideTitleProps): JSX.Element => (
+const HeadingDefaultComponent = (props: HeadingProps): JSX.Element => (
   <div className={`component Main ${props.params.styles}`}>
     <div className="component-content">
       <span className="is-empty-hint">Main</span>
@@ -46,7 +33,7 @@ const SlideTitleDefaultComponent = (props: SlideTitleProps): JSX.Element => (
   </div>
 );
 
-export const Default = (props: SlideTitleProps): JSX.Element => {
+export const Default = (props: HeadingProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   if (props.fields) {
     return (
@@ -61,7 +48,7 @@ export const Default = (props: SlideTitleProps): JSX.Element => {
       </h3>
     );
   }
-  return <SlideTitleDefaultComponent {...props} />;
+  return <HeadingDefaultComponent {...props} />;
 };
 
 //export const getServerSideProps: GetServerSideComponentProps
@@ -97,7 +84,7 @@ export const getStaticProps: GetStaticComponentProps = async () => {
 };
 
 // Helper function to render a heading with a dynamic tag
-const renderHeading = (props: SlideTitleProps, Tag: keyof JSX.IntrinsicElements): JSX.Element => {
+const renderHeading = (props: HeadingProps, Tag: keyof JSX.IntrinsicElements): JSX.Element => {
   const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
 
@@ -179,13 +166,13 @@ const renderHeading = (props: SlideTitleProps, Tag: keyof JSX.IntrinsicElements)
       </Tag>
     );
   }
-  return <SlideTitleDefaultComponent {...props} />;
+  return <HeadingDefaultComponent {...props} />;
 };
 
 // Export heading components with different tags
-export const Heading1 = (props: SlideTitleProps): JSX.Element => renderHeading(props, 'h1');
-export const Heading2 = (props: SlideTitleProps): JSX.Element => renderHeading(props, 'h2');
-export const Heading3 = (props: SlideTitleProps): JSX.Element => renderHeading(props, 'h3');
-export const Heading4 = (props: SlideTitleProps): JSX.Element => renderHeading(props, 'h4');
-export const Heading5 = (props: SlideTitleProps): JSX.Element => renderHeading(props, 'h5');
-export const Heading6 = (props: SlideTitleProps): JSX.Element => renderHeading(props, 'h6');
+export const Heading1 = (props: HeadingProps): JSX.Element => renderHeading(props, 'h1');
+export const Heading2 = (props: HeadingProps): JSX.Element => renderHeading(props, 'h2');
+export const Heading3 = (props: HeadingProps): JSX.Element => renderHeading(props, 'h3');
+export const Heading4 = (props: HeadingProps): JSX.Element => renderHeading(props, 'h4');
+export const Heading5 = (props: HeadingProps): JSX.Element => renderHeading(props, 'h5');
+export const Heading6 = (props: HeadingProps): JSX.Element => renderHeading(props, 'h6');

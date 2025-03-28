@@ -17,13 +17,13 @@ interface Fields {
   Title: TextField;
 }
 
-type PrefixOrPrefixImageProps = {
+type PrefixOrSuffixImageProps = {
   fields: Fields;
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
 };
 
-const PrefixOrSuffixImageDefaultComponent = (props: PrefixOrPrefixImageProps): JSX.Element => (
+const PrefixOrSuffixImageDefaultComponent = (props: PrefixOrSuffixImageProps): JSX.Element => (
   <div className={`component Main ${props.params.styles}`}>
     <div className="component-content">
       <span className="is-empty-hint">Main</span>
@@ -57,7 +57,7 @@ export const getStaticProps: GetStaticComponentProps = async () => {
 };
 
 // Helper function to render a heading with a dynamic tag
-export const Default = (props: PrefixOrPrefixImageProps): JSX.Element => {
+export const Default = (props: PrefixOrSuffixImageProps): JSX.Element => {
   const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
 
@@ -65,9 +65,10 @@ export const Default = (props: PrefixOrPrefixImageProps): JSX.Element => {
     return (
       <span
         id={id ? id : undefined}
-        className={`component position-absolute left-100pct top-50pct transform3dy-n50`}
+        className={`component position-absolute left-100pct top-50pct transform3dy-n50 opacity-3`}
         style={{ width: '37px', height: '10px' }}
       >
+        dsklgklkgdsl
         <Image
           className={`w-auto`}
           src={staticProps?.RenderingConfigurationFields.PrefixImage.value.src}

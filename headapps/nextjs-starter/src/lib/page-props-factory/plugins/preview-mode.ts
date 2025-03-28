@@ -36,7 +36,7 @@ class PreviewModePlugin implements Plugin {
         );
       }
 
-      props.site = data.layoutData.sitecore.context.site as SiteInfo;
+      props.site = data.layoutData.sitecore?.context.site as SiteInfo;
       props.locale = context.previewData.language;
       props.layoutData = data.layoutData;
       props.dictionary = data.dictionary;

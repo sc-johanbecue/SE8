@@ -66,7 +66,7 @@ export const getStaticProps: GetStaticComponentProps = async () => {
 };
 
 // Helper function to render a heading with a dynamic tag
-const renderHeading = (props: SliderHeaderProps, Tag: keyof JSX.IntrinsicElements): JSX.Element => {
+const RenderHeading = (props: SliderHeaderProps, Tag: keyof JSX.IntrinsicElements): JSX.Element => {
   const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
 
@@ -152,10 +152,10 @@ const renderHeading = (props: SliderHeaderProps, Tag: keyof JSX.IntrinsicElement
 };
 
 // Export heading components with different tags
-export const Default = (props: SliderHeaderProps): JSX.Element => renderHeading(props, 'h3');
-export const Heading1 = (props: SliderHeaderProps): JSX.Element => renderHeading(props, 'h1');
-export const Heading2 = (props: SliderHeaderProps): JSX.Element => renderHeading(props, 'h2');
-export const Heading3 = (props: SliderHeaderProps): JSX.Element => renderHeading(props, 'h3');
-export const Heading4 = (props: SliderHeaderProps): JSX.Element => renderHeading(props, 'h4');
-export const Heading5 = (props: SliderHeaderProps): JSX.Element => renderHeading(props, 'h5');
-export const Heading6 = (props: SliderHeaderProps): JSX.Element => renderHeading(props, 'h6');
+export const Default = (props: SliderHeaderProps): JSX.Element => RenderHeading(props, 'h3');
+export const Heading1 = (props: SliderHeaderProps): JSX.Element => RenderHeading(props, 'h1');
+export const Heading2 = (props: SliderHeaderProps): JSX.Element => RenderHeading(props, 'h2');
+export const Heading3 = (props: SliderHeaderProps): JSX.Element => RenderHeading(props, 'h3');
+export const Heading4 = (props: SliderHeaderProps): JSX.Element => RenderHeading(props, 'h4');
+export const Heading5 = (props: SliderHeaderProps): JSX.Element => RenderHeading(props, 'h5');
+export const Heading6 = (props: SliderHeaderProps): JSX.Element => RenderHeading(props, 'h6');

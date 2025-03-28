@@ -6,9 +6,7 @@ import {
   ComponentRendering,
   GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
-import {
-  fetchRenderingConfiguration,
-} from './Utility/RenderingConfigurationUtils';
+import { fetchRenderingConfiguration } from './Utility/RenderingConfigurationUtils';
 import 'animate.css';
 
 interface Fields {
@@ -80,7 +78,10 @@ export const getStaticProps: GetStaticComponentProps = async () => {
 };
 
 // Helper function to render a heading with a dynamic tag
-const renderHeading = (props: SliderHeadingProps, Tag: keyof JSX.IntrinsicElements): JSX.Element => {
+const renderHeading = (
+  props: SliderHeadingProps,
+  Tag: keyof JSX.IntrinsicElements
+): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
   if (props.fields) {

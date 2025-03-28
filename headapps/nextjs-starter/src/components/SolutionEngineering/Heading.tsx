@@ -84,7 +84,7 @@ export const getStaticProps: GetStaticComponentProps = async () => {
 };
 
 // Helper function to render a heading with a dynamic tag
-const renderHeading = (props: HeadingProps, Tag: keyof JSX.IntrinsicElements): JSX.Element => {
+export const renderHeading = (props: HeadingProps, Tag: keyof JSX.IntrinsicElements): JSX.Element => {
   const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
 

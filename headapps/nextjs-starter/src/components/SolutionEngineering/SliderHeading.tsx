@@ -1,25 +1,32 @@
 import React from 'react';
+import Image from 'next/image';
 import {
   TextField,
+  ImageField,
   Text,
   ComponentParams,
   ComponentRendering,
+  useComponentProps,
   GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
-import { fetchRenderingConfiguration } from './Utility/RenderingConfigurationUtils';
+import {
+  RenderingConfigurationFields,
+  fetchRenderingConfiguration,
+  concatenateClassNames,
+} from './Utility/RenderingConfigurationUtils';
 import 'animate.css';
 
 interface Fields {
   Title: TextField;
 }
 
-type SliderHeadingProps = {
+type SlideTitleProps = {
   fields: Fields;
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
 };
 
-const SliderHeadingDefaultComponent = (props: SliderHeadingProps): JSX.Element => (
+const SlideTitleDefaultComponent = (props: SlideTitleProps): JSX.Element => (
   <div className={`component Main ${props.params.styles}`}>
     <div className="component-content">
       <span className="is-empty-hint">Main</span>
@@ -27,7 +34,7 @@ const SliderHeadingDefaultComponent = (props: SliderHeadingProps): JSX.Element =
   </div>
 );
 
-export const Default = (props: SliderHeadingProps): JSX.Element => {
+export const Default = (props: SlideTitleProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   if (props.fields) {
     return (
@@ -42,7 +49,7 @@ export const Default = (props: SliderHeadingProps): JSX.Element => {
       </h3>
     );
   }
-  return <SliderHeadingDefaultComponent {...props} />;
+  return <SlideTitleDefaultComponent {...props} />;
 };
 
 //export const getServerSideProps: GetServerSideComponentProps
@@ -78,11 +85,49 @@ export const getStaticProps: GetStaticComponentProps = async () => {
 };
 
 // Helper function to render a heading with a dynamic tag
-const renderHeading = (
-  props: SliderHeadingProps,
-  Tag: keyof JSX.IntrinsicElements
-): JSX.Element => {
+const renderHeading = (props: SlideTitleProps, Tag: keyof JSX.IntrinsicElements): JSX.Element => {
+  const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
+
+  const prefixImageClassNames = concatenateClassNames(
+    staticProps?.RenderingConfigurationFields.PrefixAnimation,
+    staticProps?.RenderingConfigurationFields.PrefixAnimationDelay,
+    staticProps?.RenderingConfigurationFields.PrefixAnimationIteration,
+    staticProps?.RenderingConfigurationFields.PrefixAnimationSpeed
+  );
+
+  const suffixImageClassNames = concatenateClassNames(
+    staticProps?.RenderingConfigurationFields.SuffixAnimation,
+    staticProps?.RenderingConfigurationFields.SuffixAnimationDelay,
+    staticProps?.RenderingConfigurationFields.SuffixAnimationIteration,
+    staticProps?.RenderingConfigurationFields.SuffixAnimationSpeed
+  );
+
+  const prefixSpanClassNames = concatenateClassNames(
+    staticProps?.RenderingConfigurationFields.PrefixOpacity
+  );
+
+  const suffixSpanClassNames = concatenateClassNames(
+    staticProps?.RenderingConfigurationFields.SuffixOpacity
+  );
+
+  const prefixSpanStyle = {
+    ...(staticProps?.RenderingConfigurationFields.PrefixImage.value.width && {
+      width: `${staticProps.RenderingConfigurationFields.PrefixImage.value.width}px`,
+    }),
+    ...(staticProps?.RenderingConfigurationFields.PrefixImage.value.height && {
+      height: `${staticProps.RenderingConfigurationFields.PrefixImage.value.height}px`,
+    }),
+  };
+
+  const suffixSpanStyle = {
+    ...(staticProps?.RenderingConfigurationFields.SuffixImage.value.width && {
+      width: `${staticProps.RenderingConfigurationFields.SuffixImage.value.width}px`,
+    }),
+    ...(staticProps?.RenderingConfigurationFields.SuffixImage.value.height && {
+      height: `${staticProps.RenderingConfigurationFields.SuffixImage.value.height}px`,
+    }),
+  };
 
   if (props.fields) {
     return (
@@ -90,17 +135,45 @@ const renderHeading = (
         id={id ? id : undefined}
         className={`component position-relative ${props.params.Styles}`}
       >
+        {staticProps?.RenderingConfigurationFields.PrefixImage && (
+          <span
+            className={`position-absolute right-100pct top-50pct transform3dy-n50 ${prefixSpanClassNames}`}
+            style={prefixSpanStyle}
+          >
+            <Image
+              className={`w-auto ${prefixImageClassNames}`}
+              src={staticProps?.RenderingConfigurationFields.PrefixImage.value.src}
+              alt={staticProps?.RenderingConfigurationFields.PrefixImage.value.alt as string}
+              fill={true}
+              sizes={`${staticProps?.RenderingConfigurationFields.PrefixImage.value.width}px`}
+            />
+          </span>
+        )}
         <Text field={props.fields.Title} />
+        {staticProps?.RenderingConfigurationFields.SuffixImage && (
+          <span
+            className={`position-absolute left-100pct top-50pct transform3dy-n50 ${suffixSpanClassNames}`}
+            style={suffixSpanStyle}
+          >
+            <Image
+              className={`w-auto ${suffixImageClassNames}`}
+              src={staticProps?.RenderingConfigurationFields.SuffixImage.value.src}
+              alt={staticProps?.RenderingConfigurationFields.SuffixImage.value.alt as string}
+              fill={true}
+              sizes={`${staticProps?.RenderingConfigurationFields.SuffixImage.value.width}px`}
+            />
+          </span>
+        )}
       </Tag>
     );
   }
-  return <SliderHeadingDefaultComponent {...props} />;
+  return <SlideTitleDefaultComponent {...props} />;
 };
 
 // Export heading components with different tags
-export const Heading1 = (props: SliderHeadingProps): JSX.Element => renderHeading(props, 'h1');
-export const Heading2 = (props: SliderHeadingProps): JSX.Element => renderHeading(props, 'h2');
-export const Heading3 = (props: SliderHeadingProps): JSX.Element => renderHeading(props, 'h3');
-export const Heading4 = (props: SliderHeadingProps): JSX.Element => renderHeading(props, 'h4');
-export const Heading5 = (props: SliderHeadingProps): JSX.Element => renderHeading(props, 'h5');
-export const Heading6 = (props: SliderHeadingProps): JSX.Element => renderHeading(props, 'h6');
+export const Heading1 = (props: SlideTitleProps): JSX.Element => renderHeading(props, 'h1');
+export const Heading2 = (props: SlideTitleProps): JSX.Element => renderHeading(props, 'h2');
+export const Heading3 = (props: SlideTitleProps): JSX.Element => renderHeading(props, 'h3');
+export const Heading4 = (props: SlideTitleProps): JSX.Element => renderHeading(props, 'h4');
+export const Heading5 = (props: SlideTitleProps): JSX.Element => renderHeading(props, 'h5');
+export const Heading6 = (props: SlideTitleProps): JSX.Element => renderHeading(props, 'h6');

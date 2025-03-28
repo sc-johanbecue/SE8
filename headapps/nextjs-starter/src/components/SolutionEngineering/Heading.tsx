@@ -25,26 +25,11 @@ const HeadingDefaultComponent = (props: HeadingProps): JSX.Element => (
   </div>
 );
 
-export const Default = (props: HeadingProps): JSX.Element => {
-  const id = props.params.RenderingIdentifier;
-  if (props.fields) {
-    return (
-      <h3
-        id={id || undefined}
-        className="position-relative text-color-light text-4 line-height-5 font-weight-normal px-4 mb-2 appear-animation animated fadeInDownShorter appear-animation-visible"
-        data-appear-animation="fadeInDownShorter"
-        data-plugin-options="{'minWindowWidth': 0}"
-        style={{ animationDelay: '100ms' }}
-      >
-        <Text field={props.fields.Title} />
-      </h3>
-    );
-  }
-  return <HeadingDefaultComponent {...props} />;
-};
-
 // Helper function to render a heading with a dynamic tag
-export const renderHeading = (props: HeadingProps, Tag: keyof JSX.IntrinsicElements): JSX.Element => {
+export const renderHeading = (
+  props: HeadingProps,
+  Tag: keyof JSX.IntrinsicElements
+): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
   if (props.fields) {
@@ -61,6 +46,7 @@ export const renderHeading = (props: HeadingProps, Tag: keyof JSX.IntrinsicEleme
 };
 
 // Export heading components with different tags
+export const Default = (props: HeadingProps): JSX.Element => renderHeading(props, 'h3');
 export const Heading1 = (props: HeadingProps): JSX.Element => renderHeading(props, 'h1');
 export const Heading2 = (props: HeadingProps): JSX.Element => renderHeading(props, 'h2');
 export const Heading3 = (props: HeadingProps): JSX.Element => renderHeading(props, 'h3');

@@ -34,27 +34,39 @@ const SliderHeaderDefaultComponent = (props: SliderHeaderProps): JSX.Element => 
 );
 
 //export const getServerSideProps: GetServerSideComponentProps
-export const getStaticProps: GetStaticComponentProps = async () => {
+export const getStaticProps: GetStaticComponentProps = async (context) => {
   console.log('Starting getStaticProps');
 
-  // Specify the path for the GraphQL query and the fields you need.
-  const staticProps = await fetchRenderingConfiguration(
-    '/sitecore/content/default/templates/Presentation/Rendering Configurations/Slider Heading Configuration',
-    [
-      'PrefixImage',
-      'PrefixOpacity',
-      'PrefixAnimation',
-      'PrefixAnimationDelay',
-      'PrefixAnimationIteration',
-      'PrefixAnimationSpeed',
-      'SuffixImage',
-      'SuffixOpacity',
-      'SuffixAnimation',
-      'SuffixAnimationDelay',
-      'SuffixAnimationIteration',
-      'SuffixAnimationSpeed',
-    ]
-  );
+  // Extract the renderingConfiguration GUID from the context params.
+  // Note: if the field is nested differently, adjust accordingly.
+  const renderingConfigurationGuid = context?.params?.RenderingConfiguration as string;
+
+  const staticProps = await fetchRenderingConfiguration(renderingConfigurationGuid, [
+    'LineHeight',
+    'TextColor',
+    'FontWeight',
+    'FontSize',
+    'PaddingStart',
+    'PaddingEnd',
+    'PaddingTop',
+    'PaddingBottom',
+    'MarginStart',
+    'MarginEnd',
+    'MarginTop',
+    'MarginBottom',
+    'PrefixImage',
+    'PrefixOpacity',
+    'PrefixAnimation',
+    'PrefixAnimationDelay',
+    'PrefixAnimationIteration',
+    'PrefixAnimationSpeed',
+    'SuffixImage',
+    'SuffixOpacity',
+    'SuffixAnimation',
+    'SuffixAnimationDelay',
+    'SuffixAnimationIteration',
+    'SuffixAnimationSpeed',
+  ]);
 
   console.log(
     ('getStaticProps - FieldName: PrefixImage' +
@@ -66,9 +78,27 @@ export const getStaticProps: GetStaticComponentProps = async () => {
 };
 
 // Helper function to render a heading with a dynamic tag
-const RenderHeading = (props: SliderHeaderProps, Tag: keyof JSX.IntrinsicElements): JSX.Element => {
+const RenderHeading = (
+  props: SliderHeaderProps,
+  HeadingTag: keyof JSX.IntrinsicElements
+): JSX.Element => {
   const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
+
+  const headingClassNames = concatenateClassNames(
+    staticProps?.RenderingConfigurationFields.LineHeight,
+    staticProps?.RenderingConfigurationFields.TextColor,
+    staticProps?.RenderingConfigurationFields.FontWeight,
+    staticProps?.RenderingConfigurationFields.FontSize,
+    staticProps?.RenderingConfigurationFields.PaddingStart,
+    staticProps?.RenderingConfigurationFields.PaddingEnd,
+    staticProps?.RenderingConfigurationFields.PaddingTop,
+    staticProps?.RenderingConfigurationFields.PaddingBottom,
+    staticProps?.RenderingConfigurationFields.MarginStart,
+    staticProps?.RenderingConfigurationFields.MarginEnd,
+    staticProps?.RenderingConfigurationFields.MarginTop,
+    staticProps?.RenderingConfigurationFields.MarginBottom
+  );
 
   const prefixImageClassNames = concatenateClassNames(
     staticProps?.RenderingConfigurationFields.PrefixAnimation,
@@ -112,9 +142,9 @@ const RenderHeading = (props: SliderHeaderProps, Tag: keyof JSX.IntrinsicElement
 
   if (props.fields) {
     return (
-      <Tag
+      <HeadingTag
         id={id ? id : undefined}
-        className={`component position-relative ${props.params.Styles}`}
+        className={`component position-relative ${headingClassNames} ${props.params.Styles}`}
       >
         {staticProps?.RenderingConfigurationFields.PrefixImage && (
           <span
@@ -145,7 +175,7 @@ const RenderHeading = (props: SliderHeaderProps, Tag: keyof JSX.IntrinsicElement
             />
           </span>
         )}
-      </Tag>
+      </HeadingTag>
     );
   }
   return <SliderHeaderDefaultComponent {...props} />;

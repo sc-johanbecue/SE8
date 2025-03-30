@@ -1,11 +1,17 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import {
-  Link as JssLink,
   LinkField,
+  Link as JssLink,
   ComponentParams,
   ComponentRendering,
-  useSitecoreContext,
+  useComponentProps,
+  GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  RenderingConfigurationFields,
+  fetchRenderingConfiguration,
+  concatenateClassNames,
+} from './Utility/RenderingConfigurationUtils';
 
 import 'animate.css';
 
@@ -14,92 +20,83 @@ interface Fields {
 }
 
 type ButtonProps = {
+  fields: Fields;
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
-  fields: Fields;
+};
+
+//export const getServerSideProps: GetServerSideComponentProps
+export const getStaticProps: GetStaticComponentProps = async (context) => {
+  console.log('Starting getStaticProps');
+
+  // Extract the renderingConfiguration GUID from the context params.
+  // Note: if the field is nested differently, adjust accordingly.
+  const renderingConfigurationGuid = context?.params?.RenderingConfiguration as string;
+
+  const staticProps = await fetchRenderingConfiguration(renderingConfigurationGuid, [
+    'ButtonType',
+    'ButtonColor',
+    'ButtonHorizontalPadding',
+    'ButtonVerticalPadding',
+    'FontWeight',
+    'FontSize',
+    'PaddingStart',
+    'PaddingEnd',
+    'PaddingTop',
+    'PaddingBottom',
+    'MarginStart',
+    'MarginEnd',
+    'MarginTop',
+    'MarginBottom',
+  ]);
+
+  console.log(
+    ('getStaticProps - FieldName: PrefixImage' +
+      ' - Value: ' +
+      staticProps.PrefixImage?.value.src) as string
+  );
+  console.log('Ended getStaticProps');
+  return staticProps;
 };
 
 const ButtonDefaultComponent = (props: ButtonProps): JSX.Element => (
-  <div className={`component Button ${props.params.styles}`}>
+  <div className={`component Main ${props.params.styles}`}>
     <div className="component-content">
-      <span className="is-empty-hint">Button</span>
+      <span className="is-empty-hint">Main</span>
     </div>
   </div>
 );
 
+// Helper function to render a Button with a dynamic tag
 export const Default = (props: ButtonProps): JSX.Element => {
+  const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
-  const { sitecoreContext } = useSitecoreContext();
 
-  // Ref for the JssLink's underlying <a> element.
-  const linkRef = useRef<HTMLAnchorElement>(null);
-  // Ref for the container div in editing mode.
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  // Function to update link's className from container's data-classname.
-  const updateLinkClassName = () => {
-    if (containerRef.current && linkRef.current) {
-      const containerClassName = containerRef.current.getAttribute('data-classname');
-      if (containerClassName) {
-        linkRef.current.className = containerClassName;
-      }
-    }
-  };
-
-  useEffect(() => {
-    // If the link should be disabled, set its disabled attribute without a value.
-    if (linkRef.current && props.params.Disabled) {
-      linkRef.current.setAttribute('disabled', '');
-    }
-    // Initial update of link className from container.
-    updateLinkClassName();
-
-    // Create a MutationObserver to detect changes in the container div.
-    let observer: MutationObserver;
-    if (containerRef.current) {
-      observer = new MutationObserver((mutationsList) => {
-        for (const mutation of mutationsList) {
-          if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
-            updateLinkClassName();
-          }
-        }
-      });
-      observer.observe(containerRef.current, { childList: true, subtree: true });
-    }
-
-    // Cleanup on unmount.
-    return () => {
-      if (observer) {
-        observer.disconnect();
-      }
-    };
-  }, [props.params.Disabled, props.params.styles]);
-
-  let jssLinkComponent;
+  const linkClassNames = concatenateClassNames(
+    staticProps?.RenderingConfigurationFields.ButtonType,
+    staticProps?.RenderingConfigurationFields.ButtonColor,
+    staticProps?.RenderingConfigurationFields.ButtonHorizontalPadding,
+    staticProps?.RenderingConfigurationFields.ButtonVerticalPadding,
+    staticProps?.RenderingConfigurationFields.FontWeight,
+    staticProps?.RenderingConfigurationFields.FontSize,
+    staticProps?.RenderingConfigurationFields.PaddingStart,
+    staticProps?.RenderingConfigurationFields.PaddingEnd,
+    staticProps?.RenderingConfigurationFields.PaddingTop,
+    staticProps?.RenderingConfigurationFields.PaddingBottom,
+    staticProps?.RenderingConfigurationFields.MarginStart,
+    staticProps?.RenderingConfigurationFields.MarginEnd,
+    staticProps?.RenderingConfigurationFields.MarginTop,
+    staticProps?.RenderingConfigurationFields.MarginBottom
+  );
 
   if (props.fields) {
-    jssLinkComponent = (
+    return (
       <JssLink
-        ref={linkRef}
         id={id || undefined}
-        defaultValue="GET STARTED NOW!"
         field={props.fields.Link}
-        className={`btn ${props.params.styles}`}
+        className={`component btn ${linkClassNames} ${props.params.styles}`}
       />
     );
   }
-
-  if (sitecoreContext.pageEditing) {
-    return (
-      // In editing mode, wrap the link in a container div.
-      // The container's data-classname attribute is used to update the link's className.
-      <div ref={containerRef} data-classname={`btn ${props.params.styles}`}>
-        {jssLinkComponent}
-      </div>
-    );
-  } else {
-    return <>{jssLinkComponent}</>;
-  }
-
   return <ButtonDefaultComponent {...props} />;
 };

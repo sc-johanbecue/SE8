@@ -1,17 +1,5 @@
 import React from 'react';
-import {
-  TextField,
-  //Text,
-  ComponentParams,
-  ComponentRendering,
-  //useComponentProps,
-  GetStaticComponentProps,
-} from '@sitecore-jss/sitecore-jss-nextjs';
-import {
-  //RenderingConfigurationFields,
-  fetchRenderingConfiguration,
-  //concatenateClassNames,
-} from './Utility/RenderingConfigurationUtils';
+import { TextField, ComponentParams, ComponentRendering } from '@sitecore-jss/sitecore-jss-nextjs';
 import 'animate.css';
 
 interface Fields {
@@ -22,38 +10,6 @@ type BigTitleProps = {
   fields: Fields;
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
-};
-
-//export const getServerSideProps: GetServerSideComponentProps
-export const getStaticProps: GetStaticComponentProps = async (context) => {
-  console.log('Starting getStaticProps');
-
-  // Extract the renderingConfiguration GUID from the context params.
-  // Note: if the field is nested differently, adjust accordingly.
-  const renderingConfigurationGuid = context?.params?.RenderingConfiguration as string;
-
-  const staticProps = await fetchRenderingConfiguration(renderingConfigurationGuid, [
-    'LineHeight',
-    'TextColor',
-    'FontWeight',
-    'FontSize',
-    'PaddingStart',
-    'PaddingEnd',
-    'PaddingTop',
-    'PaddingBottom',
-    'MarginStart',
-    'MarginEnd',
-    'MarginTop',
-    'MarginBottom',
-  ]);
-
-  console.log(
-    ('getStaticProps - FieldName: PrefixImage' +
-      ' - Value: ' +
-      staticProps.PrefixImage?.value.src) as string
-  );
-  console.log('Ended getStaticProps');
-  return staticProps;
 };
 
 const BigTitleDefaultComponent = (props: BigTitleProps): JSX.Element => (

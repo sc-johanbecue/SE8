@@ -12777,6 +12777,10 @@ h6 .inverted {
 	line-height: initial !important;
 }
 
+.line-height-0-8 {
+	line-height: 0.8 !important;
+}
+
 .line-height-1 {
 	line-height: 1 !important;
 }

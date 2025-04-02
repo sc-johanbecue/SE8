@@ -23,6 +23,11 @@ export interface GraphQLData {
     }[];
   };
 }
+
+export interface RenderingConfigurationFields {
+  RenderingConfigurationFields: RenderingConfigurationField;
+}
+
 export interface RenderingConfigurationFields {
   RenderingConfigurationFields: RenderingConfigurationField;
 }

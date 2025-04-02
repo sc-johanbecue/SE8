@@ -89,83 +89,6 @@ export const Default = (props: HeroSliderProps): JSX.Element => {
                   <div className="row justify-content-center align-items-center h-100">
                     <div className="col-lg-6">
                       <div className="d-flex flex-column align-items-center">
-                        <h3
-                          className="position-relative text-color-light text-4 line-height-5 font-weight-normal px-4 mb-2 appear-animation animated fadeInDownShorter appear-animation-visible"
-                          data-appear-animation="fadeInDownShorter"
-                          data-plugin-options="{'minWindowWidth': 0}"
-                          style={{ animationDelay: '100ms' }}
-                        >
-                          <span className="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
-                            <img
-                              src="img/slides/slide-title-border.png"
-                              className="w-auto appear-animation animated fadeInLeftShorter appear-animation-visible"
-                              data-appear-animation="fadeInLeftShorter"
-                              data-appear-animation-delay="250"
-                              data-plugin-options="{'minWindowWidth': 0}"
-                              alt=""
-                              style={{ animationDelay: '250ms' }}
-                            />
-                          </span>
-                          WE CREATE DESIGNS, WE ARE222
-                          <span className="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
-                            <img
-                              src="img/slides/slide-title-border.png"
-                              className="w-auto appear-animation animated fadeInRightShorter appear-animation-visible"
-                              data-appear-animation="fadeInRightShorter"
-                              data-appear-animation-delay="250"
-                              data-plugin-options="{'minWindowWidth': 0}"
-                              alt=""
-                              style={{ animationDelay: '250ms' }}
-                            />
-                          </span>
-                        </h3>
-                        {/* <h2
-                          className="porto-big-title text-color-light font-weight-extra-bold mb-3 initialized"
-                          data-plugin-animated-letters=""
-                          data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 300, 'animationName': 'fadeInRightShorterOpacity', 'letterClass': 'd-inline-block'}"
-                          style={{ minHeight: '115.2px' }}
-                        >
-                          <span className="animated-letters-wrapper ">
-                            <span
-                              className="animated-letters-item letter d-inline-block fadeInRightShorterOpacity animated"
-                              style={{ animationDelay: '0ms' }}
-                            >
-                              P
-                            </span>
-                          </span>
-                          <span className="animated-letters-wrapper ">
-                            <span
-                              className="animated-letters-item letter d-inline-block fadeInRightShorterOpacity animated"
-                              style={{ animationDelay: '300ms' }}
-                            >
-                              O
-                            </span>
-                          </span>
-                          <span className="animated-letters-wrapper ">
-                            <span
-                              className="animated-letters-item letter d-inline-block fadeInRightShorterOpacity animated"
-                              style={{ animationDelay: '600ms' }}
-                            >
-                              R
-                            </span>
-                          </span>
-                          <span className="animated-letters-wrapper ">
-                            <span
-                              className="animated-letters-item letter d-inline-block fadeInRightShorterOpacity animated"
-                              style={{ animationDelay: '900ms' }}
-                            >
-                              T
-                            </span>
-                          </span>
-                          <span className="animated-letters-wrapper ">
-                            <span
-                              className="animated-letters-item letter d-inline-block fadeInRightShorterOpacity animated"
-                              style={{ animationDelay: '1200ms' }}
-                            >
-                              O
-                            </span>
-                          </span>
-                        </h2> */}
                         <p
                           className="text-4 text-color-light font-weight-light text-center mb-4 initialized"
                           data-plugin-animated-letters=""
@@ -173,16 +96,6 @@ export const Default = (props: HeroSliderProps): JSX.Element => {
                           style={{ minHeight: '25.9875px' }}
                         ></p>
                         <Placeholder name={phKey} rendering={props.rendering} />
-                        <a
-                          href="#"
-                          className="btn btn-primary btn-modern font-weight-bold text-3 py-3 btn-px-5 mt-1 appear-animation animated fadeInUpShorter appear-animation-visible"
-                          data-appear-animation="fadeInUpShorter"
-                          data-appear-animation-delay="1800"
-                          data-plugin-options="{'minWindowWidth': 0}"
-                          style={{ animationDelay: '1800ms' }}
-                        >
-                          GET STARTED NOW!
-                        </a>
                       </div>
                     </div>
                   </div>

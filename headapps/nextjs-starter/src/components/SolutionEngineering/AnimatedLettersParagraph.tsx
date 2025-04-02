@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Text,
   TextField,
   ComponentParams,
   ComponentRendering,
@@ -12,14 +13,13 @@ import {
   concatenateClassNames,
 } from './Utility/RenderingConfigurationUtils';
 import AnimatedLetters from './Utility/AnimatedLetters'; // Import the generic component
-
 import 'animate.css';
 
 interface Fields {
   Title: TextField;
 }
 
-type BigTitleProps = {
+type AnimatedLettersParagraphProps = {
   fields: Fields;
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
@@ -27,7 +27,7 @@ type BigTitleProps = {
 
 //export const getServerSideProps: GetServerSideComponentProps
 export const getStaticProps: GetStaticComponentProps = async (context) => {
-  console.log('Big Title - Starting getStaticProps');
+  console.log('AnimatedLettersParagraph - Starting getStaticProps');
 
   // Extract the renderingConfiguration GUID from the context params.
   // Note: if the field is nested differently, adjust accordingly.
@@ -48,14 +48,20 @@ export const getStaticProps: GetStaticComponentProps = async (context) => {
     'MarginEnd',
     'MarginTop',
     'MarginBottom',
-    'WrapText',
   ]);
 
-  console.log('Big Title - Ended getStaticProps');
+  console.log(
+    ('getStaticProps - FieldName: PrefixImage' +
+      ' - Value: ' +
+      staticProps.PrefixImage?.value.src) as string
+  );
+  console.log('AnimatedLettersParagraph - Ended getStaticProps');
   return staticProps;
 };
 
-const BigTitleDefaultComponent = (props: BigTitleProps): JSX.Element => (
+const AnimatedLettersParagraphDefaultComponent = (
+  props: AnimatedLettersParagraphProps
+): JSX.Element => (
   <div className={`component Main ${props.params.styles}`}>
     <div className="component-content">
       <span className="is-empty-hint">Main</span>
@@ -64,10 +70,7 @@ const BigTitleDefaultComponent = (props: BigTitleProps): JSX.Element => (
 );
 
 // Helper function to render a heading with a dynamic tag
-export const RenderBigTitle = (
-  props: BigTitleProps,
-  BigTitleTag: keyof JSX.IntrinsicElements
-): JSX.Element => {
+export const Default = (props: AnimatedLettersParagraphProps): JSX.Element => {
   const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
 
@@ -86,30 +89,24 @@ export const RenderBigTitle = (
 
   if (props.fields) {
     return (
-      <BigTitleTag
+      <p
         id={id ? id : undefined}
-        className={`component position-relative big-title d-inline-flex ${headingClassNames} ${
+        className={`component text-center ${headingClassNames} ${
           props.params.Styles ? props.params.Styles : ''
         }`}
       >
-        <AnimatedLetters
-          text={props.fields.Title?.value as string}
-          characterAnimationConfiguration={
-            staticProps?.RenderingConfigurationFields.CharacterAnimationConfiguration
-          }
-        />
-      </BigTitleTag>
+        {staticProps?.RenderingConfigurationFields.CharacterAnimationConfiguration != undefined ? (
+          <AnimatedLetters
+            text={props.fields.Title?.value as string}
+            characterAnimationConfiguration={
+              staticProps?.RenderingConfigurationFields.CharacterAnimationConfiguration
+            }
+          />
+        ) : (
+          <Text field={props.fields.Title} />
+        )}
+      </p>
     );
   }
-
-  return <BigTitleDefaultComponent {...props} />;
+  return <AnimatedLettersParagraphDefaultComponent {...props} />;
 };
-
-// Export BigTitle components with different tags
-export const Default = (props: BigTitleProps): JSX.Element => RenderBigTitle(props, 'h3');
-export const Heading1 = (props: BigTitleProps): JSX.Element => RenderBigTitle(props, 'h1');
-export const Heading2 = (props: BigTitleProps): JSX.Element => RenderBigTitle(props, 'h2');
-export const Heading3 = (props: BigTitleProps): JSX.Element => RenderBigTitle(props, 'h3');
-export const Heading4 = (props: BigTitleProps): JSX.Element => RenderBigTitle(props, 'h4');
-export const Heading5 = (props: BigTitleProps): JSX.Element => RenderBigTitle(props, 'h5');
-export const Heading6 = (props: BigTitleProps): JSX.Element => RenderBigTitle(props, 'h6');

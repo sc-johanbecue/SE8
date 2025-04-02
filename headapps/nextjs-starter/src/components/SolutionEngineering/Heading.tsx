@@ -91,7 +91,9 @@ export const RenderHeading = (
     return (
       <HeadingTag
         id={id ? id : undefined}
-        className={`component position-relative ${headingClassNames} ${props.params.Styles}`}
+        className={`component position-relative ${headingClassNames} ${
+          props.params.Styles ? props.params.Styles : ''
+        }`}
       >
         <Text field={props.fields.Title} />
       </HeadingTag>

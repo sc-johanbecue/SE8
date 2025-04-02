@@ -13365,19 +13365,26 @@ Credits: Codyhouse (https://codyhouse.co/gem/360-degrees-product-viewer)
 }
 
 /* PORTO Big Title */
-.porto-big-title {
-	letter-spacing: -22px;
-	font-size: 144px;
+.big-title {
+	letter-spacing: -18px;
 	font-size: 9rem;
-	line-height: 0.8;
+	line-height: 1.0;
+}
+
+@media (max-width: 768px) {
+	.big-title {
+		letter-spacing: -15px;
+		font-size: 6rem;
+	}
 }
 
 @media (max-width: 575px) {
-	.porto-big-title {
-		letter-spacing: -18px;
-		font-size: 7rem;
+	.big-title {
+		letter-spacing: -10px;
+		font-size: 4rem;
 	}
 }
+
 
 /* Read More Rendered (JS Plugin) */
 .readmore-rendered {

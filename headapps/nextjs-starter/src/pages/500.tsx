@@ -5,7 +5,7 @@ import {
   ErrorPages,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { SitecorePageProps } from 'lib/page-props';
-import Layout from 'src/Layout';
+import Layout from 'src/Layout.customgood';
 import { componentBuilder } from 'temp/componentBuilder';
 import { GetStaticProps } from 'next';
 import config from 'temp/config';

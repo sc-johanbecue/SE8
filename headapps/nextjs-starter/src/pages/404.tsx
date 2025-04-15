@@ -7,7 +7,7 @@ import {
 import { SitecorePageProps } from 'lib/page-props';
 import NotFound from 'src/NotFound';
 import { componentBuilder } from 'temp/componentBuilder';
-import Layout from 'src/Layout';
+import Layout from 'src/Layout.customgood';
 import { GetStaticProps } from 'next';
 import { siteResolver } from 'lib/site-resolver';
 import clientFactory from 'lib/graphql-client-factory';

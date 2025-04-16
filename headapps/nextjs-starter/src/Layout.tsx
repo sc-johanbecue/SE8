@@ -6477,7 +6477,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               <div className="wrapper cruises-block">
                 <div data-ga-index="0" className="item-grid item-cruise-line">
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Line-Brand-Image-–-Cunard.jpg"
+                    style={{
+                      backgroundImage:
+                        'url(https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Line-Brand-Image-–-Cunard.jpg)',
+                    }}
                     className="img-block background rocket-lazyload"
                   ></div>
                   <div className="meta-data-flex flex flex-direction-column">
@@ -6528,7 +6531,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 </div>
                 <div data-ga-index="1" className="item-grid item-cruise-line">
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/ss6198-scaled.jpg"
+                    style={{
+                      backgroundImage:
+                        'url(https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/ss6198-scaled.jpg)',
+                    }}
                     className="img-block background rocket-lazyload"
                   ></div>
                   <div className="meta-data-flex flex flex-direction-column">
@@ -6579,7 +6585,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 </div>
                 <div data-ga-index="2" className="item-grid item-cruise-line">
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/Celebrity-Cruise-Line-Page.jpg"
+                    style={{
+                      backgroundImage:
+                        'url(https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/Celebrity-Cruise-Line-Page.jpg)',
+                    }}
                     className="img-block background rocket-lazyload"
                   ></div>
                   <div className="meta-data-flex flex flex-direction-column">
@@ -7023,7 +7032,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Home</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Home-nav-images-mobile-desktop-300x158-.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Home-nav-images-mobile-desktop-300x158-.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7039,7 +7051,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Cruise Deals</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise-Deals-nav-images-mobile-desktop-300x158-1-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise-Deals-nav-images-mobile-desktop-300x158-1-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7057,7 +7072,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     Holiday Types <i className="fa-solid fa-chevron-right"></i>
                   </span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/shutterstock_1917467366-holiday_types.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/shutterstock_1917467366-holiday_types.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7073,7 +7091,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Cruise from the UK</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7089,7 +7110,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>River Cruising</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-River-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-River-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7107,7 +7131,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     Cruise Lines <i className="fa-solid fa-chevron-right"></i>
                   </span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise-Lines-nav-images-mobile-desktop-300x158-OCo-2-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise-Lines-nav-images-mobile-desktop-300x158-OCo-2-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7125,7 +7152,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     Destinations <i className="fa-solid fa-chevron-right"></i>
                   </span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7141,14 +7171,20 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>About us</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-About-us-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-About-us-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
               </Link>
             </li>
             <div
-              data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Manage-my-Booking_320x179-1.jpg"
+              style={{
+                backgroundImage:
+                  'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Manage-my-Booking_320x179-1.jpg',
+              }}
               className="header-right rocket-lazyload"
             >
               <div className="dark-overlay absolute-zero"></div>
@@ -7185,7 +7221,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Cruise & Touring</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Touring.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Touring.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7196,7 +7235,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Cruise & Rail</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-1.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-1.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7207,7 +7249,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Cruise & Stay</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-OCo-1-1-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-OCo-1-1-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7218,7 +7263,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Cruise & Event</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Event-300x136.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Event-300x136.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7229,7 +7277,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Cruise from the UK</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7250,7 +7301,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Azamara</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Azamara-OCo-1-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Azamara-OCo-1-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7261,7 +7315,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Celebrity </span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Celebrity-OCo-1-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Celebrity-OCo-1-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7272,7 +7329,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Cunard</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cunard-OCo-1-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cunard-OCo-1-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7283,7 +7343,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Holland America Line</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-HAL-OCo-1-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-HAL-OCo-1-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7294,7 +7357,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>P&O</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-PO-OCo-1-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-PO-OCo-1-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7305,7 +7371,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Princess</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Princess-OCo-1-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Princess-OCo-1-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7316,7 +7385,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Silversea</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Silversea-1-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Silversea-1-300x158.jpg"',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7327,7 +7399,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>View all </span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-Line-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-Line-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7348,7 +7423,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Africa</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Africa.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Africa.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7359,7 +7437,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Asia</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Asia-nav-images-mobile-desktop-300x158-Destination.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Asia-nav-images-mobile-desktop-300x158-Destination.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7370,7 +7451,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Australia & New Zealand</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Australia-nav-images-mobile-desktop-300x158-Destination-OCo-1.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Australia-nav-images-mobile-desktop-300x158-Destination-OCo-1.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7381,7 +7465,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Caribbean</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Caribbean-nav-images-mobile-desktop-300x158-Destination-OCo-2.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Caribbean-nav-images-mobile-desktop-300x158-Destination-OCo-2.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7392,7 +7479,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Europe</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Europe-nav-images-mobile-desktop-300x158-Destination-OCo-4-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Europe-nav-images-mobile-desktop-300x158-Destination-OCo-4-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7403,7 +7493,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Indian Ocean</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Indian-Ocean-nav-images-mobile-desktop-300x158-Destination-OCo-5-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Indian-Ocean-nav-images-mobile-desktop-300x158-Destination-OCo-5-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7414,7 +7507,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Indian Subcontinent </span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Indian-sub-1-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Indian-sub-1-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7425,7 +7521,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Middle East</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Middle-East-nav-images-mobile-desktop-300x158-Destination-OCo-6-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Middle-East-nav-images-mobile-desktop-300x158-Destination-OCo-6-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7436,7 +7535,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>North America</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/North-America-1.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/North-America-1.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7447,7 +7549,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>South America</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/South-America-nav-images-mobile-desktop-300x158-Destination-OCo-7-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/South-America-nav-images-mobile-desktop-300x158-Destination-OCo-7-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7462,7 +7567,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>Cruise from the UK</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7477,7 +7585,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 <div className="child-name">
                   <span>View all</span>
                   <div
-                    data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg"
+                    style={{
+                      backgroundImage:
+                        'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg',
+                    }}
                     className="menu-img rocket-lazyload"
                   ></div>
                 </div>
@@ -7526,9 +7637,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         <div className="bg-spacer"></div>
         <div className="timed-wrapper">
           <div
-            data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Frame-6-2-768x610.jpg"
+            style={{
+              backgroundSize: 'cover',
+              backgroundImage:
+                'https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Frame-6-2-768x610.jpg',
+            }}
             className="timed-form rocket-lazyload"
-            style={{ backgroundSize: 'cover' }}
           >
             <div className="form-overlay"></div>
             <span data-ga-element="timed-popup-close" className="timed-close">

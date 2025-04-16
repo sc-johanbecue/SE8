@@ -110,11 +110,11 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
         <style>{`img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }`}</style>
-        <script
+        {/* <script
           id="cookieyes"
           type="text/javascript"
           src="https://cdn-cookieyes.com/client_data/c80a4c6c78ab375ab177ff76/script.js"
-        ></script>
+        ></script> */}
         <meta
           name="description"
           content="At Imagine Cruising our cruise holidays offer much more than just a cruise. Discover unforgettable experiences &amp; book your once in a lifetime adventure now."
@@ -144,13 +144,13 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           type="application/ld+json"
           className="yoast-schema-graph"
         >{`{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.imaginecruising.co.uk/","url":"https://www.imaginecruising.co.uk/","name":"Imagine Cruising | Cruise Holidays & Packages 2025/2026","isPartOf":{"@id":"https://www.imaginecruising.co.uk/#website"},"primaryImageOfPage":{"@id":"https://www.imaginecruising.co.uk/#primaryimage"},"image":{"@id":"https://www.imaginecruising.co.uk/#primaryimage"},"thumbnailUrl":"https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/MSC20Cruises20MSC20Opera20Exterior204-scaled-1.jpg","datePublished":"2025-04-15T09:37:55+00:00","description":"At Imagine Cruising our cruise holidays offer much more than just a cruise. Discover unforgettable experiences & book your once in a lifetime adventure now.","breadcrumb":{"@id":"https://www.imaginecruising.co.uk/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://www.imaginecruising.co.uk/"]}]},{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.imaginecruising.co.uk/#primaryimage","url":"https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/MSC20Cruises20MSC20Opera20Exterior204-scaled-1.jpg","contentUrl":"https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/MSC20Cruises20MSC20Opera20Exterior204-scaled-1.jpg","width":2560,"height":1706},{"@type":"BreadcrumbList","@id":"https://www.imaginecruising.co.uk/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.imaginecruising.co.uk/#website","url":"https://www.imaginecruising.co.uk/","name":"Imagine Cruising","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.imaginecruising.co.uk/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-GB"}]}`}</script>
-        <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
-        <link rel="dns-prefetch" href="//kit.fontawesome.com" />
-        <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
-        <link rel="dns-prefetch" href="//unpkg.com" />
-        <link rel="dns-prefetch" href="//widget.trustpilot.com" />
-        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="//use.typekit.net" />
+        <link rel="dns-prefetch" href="https://www.imaginecruising.co.uk//cdn.jsdelivr.net" />
+        <link rel="dns-prefetch" href="https://www.imaginecruising.co.uk//kit.fontawesome.com" />
+        <link rel="dns-prefetch" href="https://www.imaginecruising.co.uk//cdnjs.cloudflare.com" />
+        <link rel="dns-prefetch" href="https://www.imaginecruising.co.uk//unpkg.com" />
+        <link rel="dns-prefetch" href="https://www.imaginecruising.co.uk//widget.trustpilot.com" />
+        <link rel="dns-prefetch" href="https://www.imaginecruising.co.uk//fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://www.imaginecruising.co.uk//use.typekit.net" />
         <style id="wp-emoji-styles-inline-css" type="text/css">
           {`
          img.wp-smiley, img.emoji {
@@ -581,7 +581,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <div className="favourites-top">
                     <Link
                       className="favourites-count"
-                      href="/favourites/"
+                      href="https://www.imaginecruising.co.uk/favourites/"
                       data-favourites-count="0"
                     >
                       <span>
@@ -1079,7 +1079,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <Link href="https://www.imaginecruising.co.uk/about-us/">About us</Link>
                 </li>
                 <li data-ga-element="manage-my-booking">
-                  <Link className="" href="/manage-my-booking/" target="_blank" rel="noopener">
+                  <Link
+                    className=""
+                    href="https://www.imaginecruising.co.uk/manage-my-booking/"
+                    target="_blank"
+                    rel="noopener"
+                  >
                     <img
                       src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                       data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/passenger_icon_white.svg"
@@ -4682,7 +4687,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 >
                   <Link
                     data-ga-element="cta-blocks-1-block-link"
-                    href="/holiday-types/"
+                    href="https://www.imaginecruising.co.uk/holiday-types/"
                     title="Holiday Types"
                   >
                     <img
@@ -4748,7 +4753,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 >
                   <Link
                     data-ga-element="cta-blocks-1-block-link"
-                    href="/cruise-deals/"
+                    href="https://www.imaginecruising.co.uk/cruise-deals/"
                     title="Cruise Deals"
                   >
                     <img
@@ -4883,7 +4888,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <Link
                     data-ga-element="cruise-offers-cover-link"
                     className="test-cg cover-link"
-                    href="/search/?cruise_reference[]=AME7943"
+                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=AME7943"
                   ></Link>
                   <div className="cruise-img-block">
                     <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Celebrity-Equinox-EZE-EZE-31JAN26-Iguazu-Falls-Machu-Picchu-TZOO-Tile-1-1-1-3-768x525.jpg" />
@@ -4943,7 +4948,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <Link
                         data-ga-element="cruise-offers-single-related-cta"
-                        href="/search/?cruise_reference[]AME7943"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]AME7943"
                         className="default-cta"
                       >
                         Discover more{' '}
@@ -5408,7 +5413,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <Link
                     data-ga-element="cruise-offers-cover-link"
                     className="test-cg cover-link"
-                    href="/search/?cruise_reference[]=EUR2253"
+                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=EUR2253"
                   ></Link>
                   <div className="cruise-img-block">
                     <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/Silversea-Muse-VCE-VCE-SEP2026-OCT2026-Italian-Lakes-Tile-2-768x525.jpg" />
@@ -5468,7 +5473,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <Link
                         data-ga-element="cruise-offers-single-related-cta"
-                        href="/search/?cruise_reference[]EUR2253"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]EUR2253"
                         className="default-cta"
                       >
                         Discover more{' '}
@@ -5633,7 +5638,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <Link
                     data-ga-element="cruise-offers-cover-link"
                     className="test-cg cover-link"
-                    href="/search/?cruise_reference[]=AME7965"
+                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=AME7965"
                   ></Link>
                   <div className="cruise-img-block">
                     <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/02/Silverseaspirit-BGI-FLL-FLL-BGI-Tile-768x525.jpg" />
@@ -5692,7 +5697,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <Link
                         data-ga-element="cruise-offers-single-related-cta"
-                        href="/search/?cruise_reference[]AME7965"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]AME7965"
                         className="default-cta"
                       >
                         Discover more{' '}
@@ -6010,7 +6015,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <Link
                     data-ga-element="cruise-offers-cover-link"
                     className="test-cg cover-link"
-                    href="/search/?cruise_reference[]=AME7945"
+                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=AME7945"
                   ></Link>
                   <div className="cruise-img-block">
                     <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Cunard-Caribbean-Retail-Tile-768x525.jpg" />
@@ -6069,7 +6074,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <Link
                         data-ga-element="cruise-offers-single-related-cta"
-                        href="/search/?cruise_reference[]AME7945"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]AME7945"
                         className="default-cta"
                       >
                         Discover more{' '}
@@ -6081,7 +6086,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <Link
                     data-ga-element="cruise-offers-cover-link"
                     className="test-cg cover-link"
-                    href="/search/?cruise_reference[]=ASA8463"
+                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=ASA8463"
                   ></Link>
                   <div className="cruise-img-block">
                     <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/RCCL-Ovation-SIN-SIN-OCT25-MAR26-Bali-Stay-Tile_67555218a06-16-768x525.jpg" />
@@ -6140,7 +6145,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <Link
                         data-ga-element="cruise-offers-single-related-cta"
-                        href="/search/?cruise_reference[]ASA8463"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]ASA8463"
                         className="default-cta"
                       >
                         Discover more{' '}
@@ -6152,7 +6157,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <Link
                     data-ga-element="cruise-offers-cover-link"
                     className="test-cg cover-link"
-                    href="/search/?cruise_reference[]=ASA8462"
+                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=ASA8462"
                   ></Link>
                   <div className="cruise-img-block">
                     <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/MSC-Euribia-DXB-DXB-NOV2025-FEB2026-Mauritius-Dubai-Tile-7-768x525.jpg" />
@@ -6211,7 +6216,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <Link
                         data-ga-element="cruise-offers-single-related-cta"
-                        href="/search/?cruise_reference[]ASA8462"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]ASA8462"
                         className="default-cta"
                       >
                         Discover more{' '}
@@ -6234,7 +6239,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <Link
                     data-ga-element="cruise-offers-cover-link"
                     className="test-cg cover-link"
-                    href="/search/?cruise_reference[]=ASA2229"
+                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=ASA2229"
                   ></Link>
                   <div className="cruise-img-block">
                     <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/Lotus-Mekong-Navigator-SIE-MYT-MYT-SIE-DEC2024-APR2025-RESELL-Tile_6482194a1c8-6-1-1-768x525.jpg" />
@@ -6293,7 +6298,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <Link
                         data-ga-element="cruise-offers-single-related-cta"
-                        href="/search/?cruise_reference[]ASA2229"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]ASA2229"
                         className="default-cta"
                       >
                         Discover more{' '}
@@ -6305,7 +6310,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <Link
                     data-ga-element="cruise-offers-cover-link"
                     className="test-cg cover-link"
-                    href="/search/?cruise_reference[]=AFR2224"
+                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=AFR2224"
                   ></Link>
                   <div className="cruise-img-block">
                     <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Zambezi-Header-Stay-Tile_608495b9a96-10-1_644817b7e72-8-1-1-768x525.jpg" />
@@ -6364,7 +6369,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <Link
                         data-ga-element="cruise-offers-single-related-cta"
-                        href="/search/?cruise_reference[]AFR2224"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]AFR2224"
                         className="default-cta"
                       >
                         Discover more{' '}
@@ -6376,7 +6381,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <Link
                     data-ga-element="cruise-offers-cover-link"
                     className="test-cg cover-link"
-                    href="/search/?cruise_reference[]=RVR2223"
+                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=RVR2223"
                   ></Link>
                   <div className="cruise-img-block">
                     <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/Taste-of-Bordeaux-JUL-AUG24-Tile_6493491a494-4-1-768x525.jpg" />
@@ -6425,7 +6430,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <Link
                         data-ga-element="cruise-offers-single-related-cta"
-                        href="/search/?cruise_reference[]RVR2223"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]RVR2223"
                         className="default-cta"
                       >
                         Discover more{' '}
@@ -6496,7 +6501,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       >
                         Discover More
                       </Link>
-                      {/* <Link href="/search/?cruiseline[]=Cunard+Line" className="button button-gold cruise-search">View Offers<i className="fa fa-chevron-right" aria-hidden="true"></i></Link> */}
+                      {/* <Link href="https://www.imaginecruising.co.uk/search/?cruiseline[]=Cunard+Line" className="button button-gold cruise-search">View Offers<i className="fa fa-chevron-right" aria-hidden="true"></i></Link> */}
                     </div>
                   </div>
                 </div>
@@ -6675,7 +6680,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         data-ga-index="0"
                         className="footer-link "
                         aria-label="Home"
-                        href="/"
+                        href="https://www.imaginecruising.co.uk/"
                       >
                         Home
                       </Link>
@@ -6684,7 +6689,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         data-ga-index="1"
                         className="footer-link "
                         aria-label="About us"
-                        href="/about/"
+                        href="https://www.imaginecruising.co.uk/about/"
                       >
                         About us
                       </Link>
@@ -6702,7 +6707,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         data-ga-index="3"
                         className="footer-link "
                         aria-label="FAQs"
-                        href="/faqs/"
+                        href="https://www.imaginecruising.co.uk/faqs/"
                       >
                         FAQs
                       </Link>
@@ -6711,7 +6716,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         data-ga-index="4"
                         className="footer-link "
                         aria-label="Contact us"
-                        href="/contact-us/"
+                        href="https://www.imaginecruising.co.uk/contact-us/"
                       >
                         Contact us
                       </Link>
@@ -6720,7 +6725,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         data-ga-index="5"
                         className="footer-link "
                         aria-label="Careers"
-                        href="/career-opportunities/"
+                        href="https://www.imaginecruising.co.uk/career-opportunities/"
                       >
                         Careers
                       </Link>
@@ -6738,7 +6743,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         data-ga-index="0"
                         className="footer-link "
                         aria-label="Cookie Policy"
-                        href="/cookie-policy/"
+                        href="https://www.imaginecruising.co.uk/cookie-policy/"
                       >
                         Cookie Policy
                       </Link>
@@ -6774,7 +6779,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         data-ga-index="4"
                         className="footer-link "
                         aria-label="Privacy Notice"
-                        href="/privacy-policy/"
+                        href="https://www.imaginecruising.co.uk/privacy-policy/"
                       >
                         Privacy Notice
                       </Link>
@@ -6783,7 +6788,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         data-ga-index="5"
                         className="footer-link "
                         aria-label="Terms and Conditions"
-                        href="/terms-conditions/"
+                        href="https://www.imaginecruising.co.uk/terms-conditions/"
                       >
                         Terms and Conditions
                       </Link>
@@ -6801,7 +6806,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         data-ga-index="0"
                         className="footer-link "
                         aria-label="Cruise & Touring"
-                        href="/holiday-types/cruise-touring/"
+                        href="https://www.imaginecruising.co.uk/holiday-types/cruise-touring/"
                       >
                         Cruise & Touring
                       </Link>
@@ -6810,7 +6815,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         data-ga-index="1"
                         className="footer-link "
                         aria-label="Cruise & Rail"
-                        href="/holiday-types/cruise-rail/"
+                        href="https://www.imaginecruising.co.uk/holiday-types/cruise-rail/"
                       >
                         Cruise & Rail
                       </Link>
@@ -6819,7 +6824,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         data-ga-index="2"
                         className="footer-link "
                         aria-label="Cruise & Stay"
-                        href="/holiday-types/cruise-stay/"
+                        href="https://www.imaginecruising.co.uk/holiday-types/cruise-stay/"
                       >
                         Cruise & Stay
                       </Link>
@@ -6828,7 +6833,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         data-ga-index="3"
                         className="footer-link "
                         aria-label="Cruise & Event"
-                        href="/holiday-types/cruise-event/"
+                        href="https://www.imaginecruising.co.uk/holiday-types/cruise-event/"
                       >
                         Cruise & Event
                       </Link>
@@ -6837,7 +6842,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         data-ga-index="4"
                         className="footer-link "
                         aria-label="River Cruising"
-                        href="/river-cruise-collection/"
+                        href="https://www.imaginecruising.co.uk/river-cruise-collection/"
                       >
                         River Cruising
                       </Link>
@@ -7128,7 +7133,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               </div>
               <div className="schedule">Mon - Sun 9am-8pm</div>
               <div data-ga-element="mobile-manage-my-booking" className="manage-booking">
-                <Link className="" href="/manage-my-booking/" target="_blank" rel="noopener">
+                <Link
+                  className=""
+                  href="https://www.imaginecruising.co.uk/manage-my-booking/"
+                  target="_blank"
+                  rel="noopener"
+                >
                   Manage my booking
                 </Link>
               </div>
@@ -7596,8 +7606,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               <br />
               <p className="popup-copyright">
                 By clicking subscribe you agree to our{' '}
-                <Link href="/cookie-policy">Cookie Policy</Link> and{' '}
-                <Link href="/privacy-policy">Privacy Policy</Link>
+                <Link href="https://www.imaginecruising.co.uk/cookie-policy">Cookie Policy</Link>{' '}
+                and{' '}
+                <Link href="https://www.imaginecruising.co.uk/privacy-policy">Privacy Policy</Link>
               </p>
               <script type="rocketlazyloadscript">
                 {`

@@ -7884,12 +7884,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         data-rocket-defer
         defer
       ></script>
-      <script type="text/javascript" id="moment-js-after">
-        {`
-         /* <![CDATA[ */
-         moment.updateLocale( 'en_GB', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":1},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"j F Y H:i","LLLL":null}} );
-         /* ]]> */`}
-      </script>
       {/* <script
         type="rocketlazyloadscript"
         data-minify="1"

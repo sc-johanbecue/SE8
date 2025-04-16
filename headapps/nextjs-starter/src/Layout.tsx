@@ -478,11 +478,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           id="jquery-migrate-js"
         ></script>
         <script
-         //  type="rocketlazyloadscript"
           data-rocket-type="text/javascript"
           data-rocket-src="https://kit.fontawesome.com/df89c64e34.js?ver=6.7.2"
           id="fontawesome-js"
-         //  data-rocket-defer
           defer
         ></script>
         {/* <script

@@ -49,7 +49,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         />
         <link
           rel="preload"
-          data-rocket-preload
           as="image"
           href="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/homepage-train-frame.png"
         />
@@ -143,27 +142,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           type="application/ld+json"
           className="yoast-schema-graph"
         >{`{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.imaginecruising.co.uk/","url":"https://www.imaginecruising.co.uk/","name":"Imagine Cruising | Cruise Holidays & Packages 2025/2026","isPartOf":{"@id":"https://www.imaginecruising.co.uk/#website"},"primaryImageOfPage":{"@id":"https://www.imaginecruising.co.uk/#primaryimage"},"image":{"@id":"https://www.imaginecruising.co.uk/#primaryimage"},"thumbnailUrl":"https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/MSC20Cruises20MSC20Opera20Exterior204-scaled-1.jpg","datePublished":"2025-04-15T09:37:55+00:00","description":"At Imagine Cruising our cruise holidays offer much more than just a cruise. Discover unforgettable experiences & book your once in a lifetime adventure now.","breadcrumb":{"@id":"https://www.imaginecruising.co.uk/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://www.imaginecruising.co.uk/"]}]},{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://www.imaginecruising.co.uk/#primaryimage","url":"https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/MSC20Cruises20MSC20Opera20Exterior204-scaled-1.jpg","contentUrl":"https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/MSC20Cruises20MSC20Opera20Exterior204-scaled-1.jpg","width":2560,"height":1706},{"@type":"BreadcrumbList","@id":"https://www.imaginecruising.co.uk/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.imaginecruising.co.uk/#website","url":"https://www.imaginecruising.co.uk/","name":"Imagine Cruising","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.imaginecruising.co.uk/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-GB"}]}`}</script>
-        <link rel="dns-prefetch" href="https://www.imaginecruising.co.uk//cdn.jsdelivr.net" />
-        <link rel="dns-prefetch" href="https://www.imaginecruising.co.uk//kit.fontawesome.com" />
-        <link rel="dns-prefetch" href="https://www.imaginecruising.co.uk//cdnjs.cloudflare.com" />
-        <link rel="dns-prefetch" href="https://www.imaginecruising.co.uk//unpkg.com" />
-        <link rel="dns-prefetch" href="https://www.imaginecruising.co.uk//widget.trustpilot.com" />
-        <link rel="dns-prefetch" href="https://www.imaginecruising.co.uk//fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="https://www.imaginecruising.co.uk//use.typekit.net" />
-        <style id="wp-emoji-styles-inline-css" type="text/css">
+        <style id="wp-emoji-styles-inline-css" type="text/css" jsx>
           {`
-         img.wp-smiley, img.emoji {
-         display: inline !important;
-         border: none !important;
-         box-shadow: none !important;
-         height: 1em !important;
-         width: 1em !important;
-         margin: 0 0.07em !important;
-         vertical-align: -0.1em !important;
-         background: none !important;
-         padding: 0 !important;
-         }
-         `}
+            img.wp-smiley,
+            img.emoji {
+              display: inline !important;
+              border: none !important;
+              box-shadow: none !important;
+              height: 1em !important;
+              width: 1em !important;
+              margin: 0 0.07em !important;
+              vertical-align: -0.1em !important;
+              background: none !important;
+              padding: 0 !important;
+            }
+          `}
         </style>
         <link
           rel="stylesheet"
@@ -172,18 +165,347 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           type="text/css"
           media="all"
         />
-        <style id="classic-theme-styles-inline-css" type="text/css">
+        <style id="classic-theme-styles-inline-css" type="text/css" jsx>
           {`
-         /*! This file is auto-generated */
-         .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-      `}
+            /*! This file is auto-generated */
+            .wp-block-button__link {
+              color: #fff;
+              background-color: #32373c;
+              border-radius: 9999px;
+              box-shadow: none;
+              text-decoration: none;
+              padding: calc(0.667em + 2px) calc(1.333em + 2px);
+              font-size: 1.125em;
+            }
+            .wp-block-file__button {
+              background: #32373c;
+              color: #fff;
+              text-decoration: none;
+            }
+          `}
         </style>
-        <style id="global-styles-inline-css" type="text/css">
-          {`  :root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-         :where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-         :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-         :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
-      `}
+        <style id="global-styles-inline-css" type="text/css" jsx>
+          {`
+            :root {
+              --wp--preset--aspect-ratio--square: 1;
+              --wp--preset--aspect-ratio--4-3: 4/3;
+              --wp--preset--aspect-ratio--3-4: 3/4;
+              --wp--preset--aspect-ratio--3-2: 3/2;
+              --wp--preset--aspect-ratio--2-3: 2/3;
+              --wp--preset--aspect-ratio--16-9: 16/9;
+              --wp--preset--aspect-ratio--9-16: 9/16;
+              --wp--preset--color--black: #000000;
+              --wp--preset--color--cyan-bluish-gray: #abb8c3;
+              --wp--preset--color--white: #ffffff;
+              --wp--preset--color--pale-pink: #f78da7;
+              --wp--preset--color--vivid-red: #cf2e2e;
+              --wp--preset--color--luminous-vivid-orange: #ff6900;
+              --wp--preset--color--luminous-vivid-amber: #fcb900;
+              --wp--preset--color--light-green-cyan: #7bdcb5;
+              --wp--preset--color--vivid-green-cyan: #00d084;
+              --wp--preset--color--pale-cyan-blue: #8ed1fc;
+              --wp--preset--color--vivid-cyan-blue: #0693e3;
+              --wp--preset--color--vivid-purple: #9b51e0;
+              --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+                135deg,
+                rgba(6, 147, 227, 1) 0%,
+                rgb(155, 81, 224) 100%
+              );
+              --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+                135deg,
+                rgb(122, 220, 180) 0%,
+                rgb(0, 208, 130) 100%
+              );
+              --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+                135deg,
+                rgba(252, 185, 0, 1) 0%,
+                rgba(255, 105, 0, 1) 100%
+              );
+              --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+                135deg,
+                rgba(255, 105, 0, 1) 0%,
+                rgb(207, 46, 46) 100%
+              );
+              --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+                135deg,
+                rgb(238, 238, 238) 0%,
+                rgb(169, 184, 195) 100%
+              );
+              --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+                135deg,
+                rgb(74, 234, 220) 0%,
+                rgb(151, 120, 209) 20%,
+                rgb(207, 42, 186) 40%,
+                rgb(238, 44, 130) 60%,
+                rgb(251, 105, 98) 80%,
+                rgb(254, 248, 76) 100%
+              );
+              --wp--preset--gradient--blush-light-purple: linear-gradient(
+                135deg,
+                rgb(255, 206, 236) 0%,
+                rgb(152, 150, 240) 100%
+              );
+              --wp--preset--gradient--blush-bordeaux: linear-gradient(
+                135deg,
+                rgb(254, 205, 165) 0%,
+                rgb(254, 45, 45) 50%,
+                rgb(107, 0, 62) 100%
+              );
+              --wp--preset--gradient--luminous-dusk: linear-gradient(
+                135deg,
+                rgb(255, 203, 112) 0%,
+                rgb(199, 81, 192) 50%,
+                rgb(65, 88, 208) 100%
+              );
+              --wp--preset--gradient--pale-ocean: linear-gradient(
+                135deg,
+                rgb(255, 245, 203) 0%,
+                rgb(182, 227, 212) 50%,
+                rgb(51, 167, 181) 100%
+              );
+              --wp--preset--gradient--electric-grass: linear-gradient(
+                135deg,
+                rgb(202, 248, 128) 0%,
+                rgb(113, 206, 126) 100%
+              );
+              --wp--preset--gradient--midnight: linear-gradient(
+                135deg,
+                rgb(2, 3, 129) 0%,
+                rgb(40, 116, 252) 100%
+              );
+              --wp--preset--font-size--small: 13px;
+              --wp--preset--font-size--medium: 20px;
+              --wp--preset--font-size--large: 36px;
+              --wp--preset--font-size--x-large: 42px;
+              --wp--preset--spacing--20: 0.44rem;
+              --wp--preset--spacing--30: 0.67rem;
+              --wp--preset--spacing--40: 1rem;
+              --wp--preset--spacing--50: 1.5rem;
+              --wp--preset--spacing--60: 2.25rem;
+              --wp--preset--spacing--70: 3.38rem;
+              --wp--preset--spacing--80: 5.06rem;
+              --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+              --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+              --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+              --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+                6px 6px rgba(0, 0, 0, 1);
+              --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+            }
+            :where(.is-layout-flex) {
+              gap: 0.5em;
+            }
+            :where(.is-layout-grid) {
+              gap: 0.5em;
+            }
+            body .is-layout-flex {
+              display: flex;
+            }
+            .is-layout-flex {
+              flex-wrap: wrap;
+              align-items: center;
+            }
+            .is-layout-flex > :is(*, div) {
+              margin: 0;
+            }
+            body .is-layout-grid {
+              display: grid;
+            }
+            .is-layout-grid > :is(*, div) {
+              margin: 0;
+            }
+            :where(.wp-block-columns.is-layout-flex) {
+              gap: 2em;
+            }
+            :where(.wp-block-columns.is-layout-grid) {
+              gap: 2em;
+            }
+            :where(.wp-block-post-template.is-layout-flex) {
+              gap: 1.25em;
+            }
+            :where(.wp-block-post-template.is-layout-grid) {
+              gap: 1.25em;
+            }
+            .has-black-color {
+              color: var(--wp--preset--color--black) !important;
+            }
+            .has-cyan-bluish-gray-color {
+              color: var(--wp--preset--color--cyan-bluish-gray) !important;
+            }
+            .has-white-color {
+              color: var(--wp--preset--color--white) !important;
+            }
+            .has-pale-pink-color {
+              color: var(--wp--preset--color--pale-pink) !important;
+            }
+            .has-vivid-red-color {
+              color: var(--wp--preset--color--vivid-red) !important;
+            }
+            .has-luminous-vivid-orange-color {
+              color: var(--wp--preset--color--luminous-vivid-orange) !important;
+            }
+            .has-luminous-vivid-amber-color {
+              color: var(--wp--preset--color--luminous-vivid-amber) !important;
+            }
+            .has-light-green-cyan-color {
+              color: var(--wp--preset--color--light-green-cyan) !important;
+            }
+            .has-vivid-green-cyan-color {
+              color: var(--wp--preset--color--vivid-green-cyan) !important;
+            }
+            .has-pale-cyan-blue-color {
+              color: var(--wp--preset--color--pale-cyan-blue) !important;
+            }
+            .has-vivid-cyan-blue-color {
+              color: var(--wp--preset--color--vivid-cyan-blue) !important;
+            }
+            .has-vivid-purple-color {
+              color: var(--wp--preset--color--vivid-purple) !important;
+            }
+            .has-black-background-color {
+              background-color: var(--wp--preset--color--black) !important;
+            }
+            .has-cyan-bluish-gray-background-color {
+              background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+            }
+            .has-white-background-color {
+              background-color: var(--wp--preset--color--white) !important;
+            }
+            .has-pale-pink-background-color {
+              background-color: var(--wp--preset--color--pale-pink) !important;
+            }
+            .has-vivid-red-background-color {
+              background-color: var(--wp--preset--color--vivid-red) !important;
+            }
+            .has-luminous-vivid-orange-background-color {
+              background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+            }
+            .has-luminous-vivid-amber-background-color {
+              background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+            }
+            .has-light-green-cyan-background-color {
+              background-color: var(--wp--preset--color--light-green-cyan) !important;
+            }
+            .has-vivid-green-cyan-background-color {
+              background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+            }
+            .has-pale-cyan-blue-background-color {
+              background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+            }
+            .has-vivid-cyan-blue-background-color {
+              background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+            }
+            .has-vivid-purple-background-color {
+              background-color: var(--wp--preset--color--vivid-purple) !important;
+            }
+            .has-black-border-color {
+              border-color: var(--wp--preset--color--black) !important;
+            }
+            .has-cyan-bluish-gray-border-color {
+              border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+            }
+            .has-white-border-color {
+              border-color: var(--wp--preset--color--white) !important;
+            }
+            .has-pale-pink-border-color {
+              border-color: var(--wp--preset--color--pale-pink) !important;
+            }
+            .has-vivid-red-border-color {
+              border-color: var(--wp--preset--color--vivid-red) !important;
+            }
+            .has-luminous-vivid-orange-border-color {
+              border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+            }
+            .has-luminous-vivid-amber-border-color {
+              border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+            }
+            .has-light-green-cyan-border-color {
+              border-color: var(--wp--preset--color--light-green-cyan) !important;
+            }
+            .has-vivid-green-cyan-border-color {
+              border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+            }
+            .has-pale-cyan-blue-border-color {
+              border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+            }
+            .has-vivid-cyan-blue-border-color {
+              border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+            }
+            .has-vivid-purple-border-color {
+              border-color: var(--wp--preset--color--vivid-purple) !important;
+            }
+            .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+              background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+            }
+            .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+              background: var(
+                --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+              ) !important;
+            }
+            .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+              background: var(
+                --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+              ) !important;
+            }
+            .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+              background: var(
+                --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+              ) !important;
+            }
+            .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+              background: var(
+                --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+              ) !important;
+            }
+            .has-cool-to-warm-spectrum-gradient-background {
+              background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+            }
+            .has-blush-light-purple-gradient-background {
+              background: var(--wp--preset--gradient--blush-light-purple) !important;
+            }
+            .has-blush-bordeaux-gradient-background {
+              background: var(--wp--preset--gradient--blush-bordeaux) !important;
+            }
+            .has-luminous-dusk-gradient-background {
+              background: var(--wp--preset--gradient--luminous-dusk) !important;
+            }
+            .has-pale-ocean-gradient-background {
+              background: var(--wp--preset--gradient--pale-ocean) !important;
+            }
+            .has-electric-grass-gradient-background {
+              background: var(--wp--preset--gradient--electric-grass) !important;
+            }
+            .has-midnight-gradient-background {
+              background: var(--wp--preset--gradient--midnight) !important;
+            }
+            .has-small-font-size {
+              font-size: var(--wp--preset--font-size--small) !important;
+            }
+            .has-medium-font-size {
+              font-size: var(--wp--preset--font-size--medium) !important;
+            }
+            .has-large-font-size {
+              font-size: var(--wp--preset--font-size--large) !important;
+            }
+            .has-x-large-font-size {
+              font-size: var(--wp--preset--font-size--x-large) !important;
+            }
+            :where(.wp-block-post-template.is-layout-flex) {
+              gap: 1.25em;
+            }
+            :where(.wp-block-post-template.is-layout-grid) {
+              gap: 1.25em;
+            }
+            :where(.wp-block-columns.is-layout-flex) {
+              gap: 2em;
+            }
+            :where(.wp-block-columns.is-layout-grid) {
+              gap: 2em;
+            }
+            :root :where(.wp-block-pullquote) {
+              font-size: 1.5em;
+              line-height: 1.6;
+            }
+          `}
         </style>
         <link
           data-minify="1"
@@ -478,57 +800,20 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           id="jquery-migrate-js"
         ></script>
         <script
-          data-rocket-type="text/javascript"
-          data-rocket-src="https://kit.fontawesome.com/df89c64e34.js?ver=6.7.2"
+          type="text/javascript"
+          src="https://kit.fontawesome.com/df89c64e34.js?ver=6.7.2"
           id="fontawesome-js"
           defer
         ></script>
-        {/* <script
-          type="rocketlazyloadscript"
-          data-minify="1"
-          data-rocket-type="text/javascript"
-          data-rocket-src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/leaflet@1.6.0/dist/leaflet.js?ver=1744621466"
-          id="leaflet-js"
-          data-rocket-defer
-          defer
-        ></script> */}
-        <link rel="https://api.w.org/" href="https://www.imaginecruising.co.uk/wp-json/" />
-        <link
-          rel="alternate"
-          title="JSON"
-          type="application/json"
-          href="https://www.imaginecruising.co.uk/wp-json/wp/v2/pages/972"
-        />
         <link rel="shortlink" href="https://www.imaginecruising.co.uk/" />
-        <link
-          rel="alternate"
-          title="oEmbed (JSON)"
-          type="application/json+oembed"
-          href="https://www.imaginecruising.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.imaginecruising.co.uk%2F"
-        />
-        <link
-          rel="alternate"
-          title="oEmbed (XML)"
-          type="text/xml+oembed"
-          href="https://www.imaginecruising.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.imaginecruising.co.uk%2F&#038;format=xml"
-        />
-        {/* <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
-          {`
-         (function(c,l,a,r,i,t,y){
-         	c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;
-         	t.src="https://www.clarity.ms/tag/"+i+"?ref=wordpress";y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-         })(window, document, "clarity", "script", "kqus9aw9za");
-         `}
-        </script> */}
-        {/* <script type="rocketlazyloadscript">{`document.documentElement.className += " js";`}</script> */}
         <noscript>
-          <style id="rocket-lazyload-nojs-css">{`.rll-youtube-player, [data-lazy-src]{display:none !important;}`}</style>
+          <style id="rocket-lazyload-nojs-css" jsx>{`
+            .rll-youtube-player,
+            [data-lazy-src] {
+              display: none !important;
+            }
+          `}</style>
         </noscript>
-        <meta
-          name="generator"
-          content="WP Rocket 3.18.3"
-          data-wpr-features="wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_oci wpr_minify_css wpr_desktop"
-        />
       </Head>
 
       {/* root placeholder for the app, which we add components to using route data */}
@@ -7124,20 +7409,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         data-rocket-defer
         defer
       ></script>
-      {/* <script type="text/javascript" id="moment-js-after">        
-          <![CDATA[ 
-         moment.updateLocale( 'en_GB', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":1},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"j F Y H:i","LLLL":null}} );
-          ]]> 
-      </script> */}
-      {/* <script
-        type="rocketlazyloadscript"
-        data-minify="1"
-        data-rocket-type="text/javascript"
-        data-rocket-src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/npm/luxon@3.2.1/build/global/luxon.min.js?ver=1744621466"
-        id="luxon-js"
-        data-rocket-defer
-        defer
-      ></script> */}
       <script
         type="text/javascript"
         src="https://www.imaginecruising.co.uk/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"
@@ -7159,31 +7430,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js?ver=1744621466"
         id="jquery-ui-touch-js"
       ></script>
-      {/* <script
-        type="rocketlazyloadscript"
-        data-minify="1"
-        data-rocket-type="text/javascript"
-        data-rocket-src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/npm/litepicker@2.0.11/dist/litepicker.min.js?ver=1744621466"
-        id="litepicker-js"
-        data-rocket-defer
-        defer
-      ></script> */}
-      {/* <script
-        type="rocketlazyloadscript"
-        data-minify="1"
-        data-rocket-type="text/javascript"
-        data-rocket-src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/npm/litepicker@2.0.11/dist/plugins/mobilefriendly.min.js?ver=1744621466"
-        id="litepicker-mobile-js"
-        data-rocket-defer
-        defer
-      ></script> */}
-      {/* <script type="text/javascript" id="search-form-js-extra">
-        {`
-          <![CDATA[ 
-         var cruiseappy = {"ajax_url":"https:\/\/www.imaginecruising.co.uk\/wp-admin\/admin-ajax.php","logged_in":"","website":"https:\/\/www.imaginecruising.co.uk","active_language":"en","theme":"https:\/\/www.imaginecruising.co.uk\/wp-content\/themes\/imagine-rebrand","plugin":"https:\/\/www.imaginecruising.co.uk\/wp-content\/plugins\/cruiseappy-widgety","currency":{"code":"GBP","symbol":"&pound;","decimals":"0","decimal_separator":".","thousand_separator":","},"guarantee_cabins":["guar","wlt","gty","garantiert","garantiehut"],"language":"en-GB","locale":"en_GB","js_locale":"en","booking":{"success":"https:\/\/www.imaginecruising.co.uk\/wp-content\/plugins\/cruiseappy-widgety\/actions\/booking\/","error":false},"labels":{"apply":"Apply","cancel":"Cancel","error":"Error","call_for_price":"Sold Out","enquire_button":"Enquire Now","book_button":"Book Now","loading_prices":"Finding the latest prices","loading_search":"Finding the latest cruises","select_cabin":"Select","find_cabin":"Find Cabin","view_cabin":"Find Cabin","book_cabin":"Book Cabin","enquire_cabin":"Enquire","no_cabins":"No Cabins Found","back_to_cabins":"Back to Cabins","cabins_subtitle":"","cabins":false,"cabin_name":"Cabin Name \/ Grade","deck":"Deck","occupancy":"Occupancy","price":"Price","filters":"Filters","deal_type":"Deal type","nights":"Nights","night":"Night","from":"From","to":"To","position":"Position","search":"Search","choose_your_deal":"Choose your deal","choose_your_flight":"Choose your flight","indirect_flights":"Show indirect flights","choose_airport":"Choose your airport","cruise_found":"cruise found","cruises_found":"results found","departing_ports":"Departing Ports","adults":"Adults","children":"Children","up_to":"Up to","reset":"Reset","regional":"","no_prices_found":null,"date":"Date","duration":"Duration","cruise_number":"Cruise No","ship":"Ship","cruiselines":"Cruise Lines","itinerary":"Itinerary","no_cruises_found":"There were no cruises found for your search options","enquire_now":"Enquire Now","view_details":"View Details","cruise":"cruise","cruises":"cruises","back_to_hotels":"Back to Hotels","price_included":"Included","price_includes":"Price includes","view_rooms":"View Rooms","selected":"Selected","select":"Select","cruiseline":"Cruise Line","destination":"Destination","depart_port":"Depart Port","travel_type":"Holiday Type","no_deckplan":""},"translations":{"search":{"itinerary":{"more":"View Full Itinerary","less":"Less"}}},"search":{"pagination":{"first":"<i className=\"fa-regular fa-chevrons-left\"><\/i> First","previous":"<i className=\"fa-regular fa-chevron-left\"><\/i> Previous","pages":"2","next":"Next <i className=\"fa-regular fa-chevron-right\"><\/i>","last":"Last <i className=\"fa-regular fa-chevrons-right\"><\/i>"},"filter_order":"alpha","results_limit":"12","results_limit_mobile":null},"custom":{"all_destinations":"All destinations","all_cruise_companies":"All cruise companies","all_cruise_ships":"All cruise ships","all_depart_ports":"All depart ports","all_visit_ports":"All visit ports","all_durations":"All durations","all_cruise_types":"All cruise types","show_filters":"Show Filters","hide_filters":"Hide Filters","cabin_from":"Cabin from","pp":"pp","call_for_price":"Continue for price","more_details":"More Details","share_results":"Share results","select":"Select","price":"Price","cabin_type":"Cabin Type","deck":"Deck","cabin_number":"Cabin Number","cabin_name":"Cabin Name","position":"Position","price_pp":"Price (pp)","back_to_cabins":"Back to Cabins","select_this":"Select This","your_cabin":"Your Cabin","select_the_deck":"Select the deck and cabin number below","filters":"Filters","any":"Any","any_position":"Any position","any_deck":"Any deck","more_info":"Details","more_info_mobile":"Discover more","inside_cabine_from":"INSIDE CABIN FROM","inside":"Inside","outside":"Outside","balcony":"Balcony","suite":"Suite","multiple_selected":"Multiple selected","price_from":"Prices from","durations_order":"name","chosen_banner_type":"static","static_banners":[{"desktop":"https:\/\/www.imaginecruising.co.uk\/wp-content\/uploads\/2024\/12\/Canaries-Sailcation_Search-Disrupter-scaled.jpg","mobile":"https:\/\/www.imaginecruising.co.uk\/wp-content\/uploads\/2024\/12\/Canaries-Sailcation_Mob_1080_1080-3.jpg","tablet":"https:\/\/www.imaginecruising.co.uk\/wp-content\/uploads\/2025\/03\/Canaries-Sailcation_Tab-scaled.jpg","link":"https:\/\/www.imaginecruising.co.uk\/holidays\/a-captivating-voyage-exclusive-canaries-sailcation\/","position":"1"},{"desktop":"https:\/\/www.imaginecruising.co.uk\/wp-content\/uploads\/2024\/12\/Sailcation-RB-\u2013-Disruptor-2.jpg","mobile":"https:\/\/www.imaginecruising.co.uk\/wp-content\/uploads\/2024\/12\/Sailcation-RB-\u2013-Disruptor-\u2013-Mobile.jpg","tablet":"","link":"https:\/\/www.imaginecruising.co.uk\/holidays\/a-magical-voyage-exclusive-mediterranean-sailcation\/","position":"3"}],"product_banners":[]}};
-          ]]> 
-      `}
-      </script> */}
       <script
         type="rocketlazyloadscript"
         data-minify="1"
@@ -7193,24 +7439,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         data-rocket-defer
         defer
       ></script>
-      {/* <script
-        type="rocketlazyloadscript"
-        data-minify="1"
-        data-rocket-type="text/javascript"
-        data-rocket-src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/wp-content/plugins/cruiseappy-widgety/js/public.toolbox.js?ver=1744621466"
-        id="public_toolbox-js"
-        data-rocket-defer
-        defer
-      ></script> */}
-      {/* <script
-        type="rocketlazyloadscript"
-        data-minify="1"
-        data-rocket-type="text/javascript"
-        data-rocket-src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/wp-content/plugins/cruiseappy-widgety/js/public.search.js?ver=1744621466"
-        id="public_search-js"
-        data-rocket-defer
-        defer
-      ></script> */}
       <script
         data-minify="1"
         type="text/javascript"
@@ -7223,15 +7451,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js?ver=1744621466"
         id="magnific-popup-js"
       ></script>
-      {/* <script
-        type="rocketlazyloadscript"
-        data-minify="1"
-        data-rocket-type="text/javascript"
-        data-rocket-src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/ajax/libs/slick-carousel/1.9.0/slick.min.js?ver=1744621466"
-        id="slick-js"
-        data-rocket-defer
-        defer
-      ></script> */}
       <script
         data-minify="1"
         type="text/javascript"
@@ -7251,30 +7470,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         id="flexslider-js"
       ></script>
       <script
-        data-minify="1"
-        type="text/javascript"
-        src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js?ver=1744621467"
-        id="cookie-js-js"
-      ></script>
-      {/* <script
-        type="rocketlazyloadscript"
-        data-minify="1"
-        data-rocket-type="text/javascript"
-        data-rocket-src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/wp-content/themes/imagine-rebrand/js/custom.js?ver=1744621467"
-        id="iprogress-custom-js"
-        data-rocket-defer
-        defer
-      ></script> */}
-      {/* <script
-        type="rocketlazyloadscript"
-        data-minify="1"
-        data-rocket-type="text/javascript"
-        data-rocket-src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/wp-content/themes/imagine-rebrand/js/custom-craig.js?ver=1744621467"
-        id="iprogress-custom-craig-js"
-        data-rocket-defer
-        defer
-      ></script> */}
-      <script
         type="text/javascript"
         src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/js/jquery.mCustomScrollbar.concat.min.js?ver=1734947792"
         id="custom-scroll-js"
@@ -7284,45 +7479,8 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         type="text/javascript"
         src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/bootstrap/v5/tp.widget.bootstrap.min.js?ver=1744621467"
         id="tp-widget-js"
-        data-rocket-defer
         defer
       ></script>
-      {/* <script
-        type="rocketlazyloadscript"
-        data-minify="1"
-        data-rocket-type="text/javascript"
-        data-rocket-src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/wp-content/themes/imagine-rebrand/js/produce-agent2.js?ver=1744621467"
-        id="single-agent2-js-js"
-        data-rocket-defer
-        defer
-      ></script> */}
-      {/* <script>
-        {`
-         window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
-         if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
-         images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
-         if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)
-        `}
-      </script> */}
-      {/* <script
-        data-no-minify="1"
-        async
-        src="https://www.imaginecruising.co.uk/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"
-      /> */}
-      {/* <script type="rocketlazyloadscript" data-cfasync="false">
-        {`
-         (function(W, i, s, e, P, o, p) {
-             W['WisePopsObject'] = P;
-             W[P] = W[P] || function() {
-                 (W[P].q = W[P].q || []).push(arguments)
-             }, W[P].l = 1 * new Date();
-             o = i.createElement(s), p = i.getElementsByTagName(s)[0];
-             o.defer = 1;
-             o.src = e;
-             p.parentNode.insertBefore(o, p)
-         })(window, document, 'script', '//loader.wisepops.com/get-loader.js?v=1&site=SuDnceWuyw', 'wisepops');
-         `}
-      </script> */}
     </>
   );
 };

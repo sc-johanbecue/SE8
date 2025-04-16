@@ -235,12 +235,10 @@ export const Default = (props: FooterProps): JSX.Element => {
                 </p>
                 <p>
                   <img
-                    decoding="async"
                     alt="Abta Logo"
                     src="https://res.cloudinary.com/deh6eqgn0/images/v1686302092/abta-logo_254747d9e1a/abta-logo_254747d9e1a.png?_i=AA"
                   />
                   <img
-                    decoding="async"
                     alt="ATOL Logo"
                     width="77"
                     height="75"

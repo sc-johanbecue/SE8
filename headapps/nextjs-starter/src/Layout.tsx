@@ -806,14 +806,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           defer
         ></script>
         <link rel="shortlink" href="https://www.imaginecruising.co.uk/" />
-        <noscript>
-          <style id="rocket-lazyload-nojs-css" jsx>{`
-            .rll-youtube-player,
-            [data-lazy-src] {
-              display: none !important;
-            }
-          `}</style>
-        </noscript>
       </Head>
 
       {/* root placeholder for the app, which we add components to using route data */}

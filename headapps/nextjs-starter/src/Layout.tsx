@@ -537,522 +537,83 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           <div id="header">{route && <Placeholder name="headless-header" rendering={route} />}</div>
         </header>
         <main>
-          <div id="content">{route && <Placeholder name="headless-main" rendering={route} />}</div>
-        </main>
-        <footer>
-          <div id="footer">{route && <Placeholder name="headless-footer" rendering={route} />}</div>
-        </footer>
-      </div>
-
-      {/* <body className="home page-template-default page page-id-972"> */}
-      <div id="container">
-        <header>
-          <div
-            data-ga-element="header-content"
-            id="header-content"
-            className="flex flex-justify-between content-margin"
-          >
-            <div className="header-left">
-              <div className="header-logo-cont">
-                <div data-ga-element="header-logo" id="logo">
-                  <Link href="https://www.imaginecruising.co.uk" title="Imagine Cruising">
-                    <img
-                      id="dark-logo--image"
-                      className=""
-                      alt="Imagine Cruising"
-                      src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/logos/black-white-no-reg.png"
+          <div id="container">
+            <div id="content">
+              <div className="home-intro-wrap ">
+                <div
+                  id="home-video"
+                  data-ga-content="Home Page Video"
+                  data-ga-index="0"
+                  className="video-background"
+                >
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    disablePictureInPicture
+                    disableRemotePlayback
+                    preload="auto"
+                    id="background-video"
+                    poster="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/homepage-train-frame.png"
+                  >
+                    <source
+                      src="https://player.vimeo.com/progressive_redirect/playback/1039713923/rendition/1080p/file.mp4?loc=external&signature=63c620da5e2de6ff9143fe724968edabda4d179e1a69a28b0cb6a7cad8a21178#t=5"
+                      type="video/mp4"
                     />
-                    <noscript>
-                      <img
-                        id="dark-logo--image"
-                        className=""
-                        src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/logos/black-white-no-reg.png"
-                        alt="Imagine Cruising"
-                      />
-                    </noscript>
-                    {/* <span className="visuallyhidden">Imagine Cruising</span> */}
-                  </Link>
-                </div>
-                <div className="header-favourites">
-                  <div className="favourites-top">
-                    <Link
-                      className="favourites-count"
-                      href="https://www.imaginecruising.co.uk/favourites/"
-                      data-favourites-count="0"
-                    >
-                      <span>
-                        Favourites <i className="fa-regular fa-heart"></i>
-                      </span>
-                    </Link>
+                    Your browser does not support the video tag.
+                  </video>
+                  <div className="video-overlay">
+                    <div className="video-content">
+                      <h1>More Than Just A Cruise</h1>
+                    </div>
+                    <div className="video-scroll">
+                      <Link
+                        href="#home-video-lower"
+                        data-ga-element="home-video-scroll"
+                        className="scroll-down"
+                      >
+                        <span>SCROLL</span>
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            {/* header-left */}
-            <div className="header-right">
-              <div className="phone-title">
-                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/phone_icon.svg" />
-                Holiday Enquiries
-              </div>
-              <div data-ga-element="header-telephone" className="header-telephone">
-                <Link
-                  className="fsource__tel"
-                  href=""
-                  data-default="0800 840 5801 "
-                  aria-label="Telephone"
-                ></Link>
-              </div>
-              <div className="schedule">Mon - Sun: 9am - 8pm</div>
-            </div>
-            {/* header-right */}
-            <div data-ga-element="mobile-nav-block" id="mobile-nav-block">
-              <div className="item-menu">
-                <Link
-                  className="fsource__tel no-text"
-                  href="tel:0800 840 5801"
-                  aria-label="Telephone"
-                >
-                  <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/phone_icon.svg" />
-                </Link>
-              </div>
-              <div data-ga-element="mobile-logo" className="mobile-logo">
-                <Link href="https://www.imaginecruising.co.uk">
-                  <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/logos/black-white-no-reg-mobile.png" />
-                </Link>
-              </div>
-              <div className="item-menu" id="mobile-navigation-control">
-                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/hamburger_menu_icon.svg" />
-              </div>
-            </div>
-          </div>
-          <div data-ga-element="header-navigation-container" className="header-nav-cont">
-            <nav className="header-nav">
-              <ul
-                data-ga-element="header-nav-list"
-                id="custom-nav"
-                className="flex flex-justify-between flex-align-left"
-              >
-                <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="0">
-                  <Link href="https://www.imaginecruising.co.uk/">Home</Link>
-                </li>
-                <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="1">
-                  <Link href="https://www.imaginecruising.co.uk/cruise-deals/">Cruise Deals</Link>
-                </li>
-                <li
-                  data-ga-element="header-nav-list-item"
-                  className="top-level has-children"
-                  data-ga-index="2"
-                >
-                  <Link href="https://www.imaginecruising.co.uk/holiday-types/">
-                    Holiday Types <i className="fa-solid fa-chevron-down"></i>
-                  </Link>
-                  <ul className="custom-sub-nav">
-                    <li className="sub-page" data-ga-index="0">
-                      <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-touring/">
-                        <div className="child-name">
-                          <span>Cruise & Touring</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Touring.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Touring.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="1">
-                      <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-rail/">
-                        <div className="child-name">
-                          <span>Cruise & Rail</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-1.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-1.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="2">
-                      <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-stay/">
-                        <div className="child-name">
-                          <span>Cruise & Stay</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-OCo-1-1-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-OCo-1-1-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="3">
-                      <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-event/">
-                        <div className="child-name">
-                          <span>Cruise & Event</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Event-300x136.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Event-300x136.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="4">
-                      <Link href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
-                        <div className="child-name">
-                          <span>Cruise from the UK</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="3">
-                  <Link href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
-                    Cruise from the UK
-                  </Link>
-                </li>
-                <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="4">
-                  <Link href="https://www.imaginecruising.co.uk/river-cruise-collection/">
-                    River Cruising
-                  </Link>
-                </li>
-                <li
-                  data-ga-element="header-nav-list-item"
-                  className="top-level has-children"
-                  data-ga-index="5"
-                >
-                  <Link href="https://www.imaginecruising.co.uk/cruise-lines/">
-                    Cruise Lines <i className="fa-solid fa-chevron-down"></i>
-                  </Link>
-                  <ul className="custom-sub-nav">
-                    <li className="sub-page" data-ga-index="0">
-                      <Link href="https://www.imaginecruising.co.uk/cruise-lines/azamara/">
-                        <div className="child-name">
-                          <span>Azamara</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Azamara-OCo-1-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Azamara-OCo-1-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="1">
-                      <Link href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/">
-                        <div className="child-name">
-                          <span>Celebrity </span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Celebrity-OCo-1-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Celebrity-OCo-1-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="2">
-                      <Link href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/">
-                        <div className="child-name">
-                          <span>Cunard</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cunard-OCo-1-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cunard-OCo-1-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="3">
-                      <Link href="https://www.imaginecruising.co.uk/cruise-lines/holland-america-line/">
-                        <div className="child-name">
-                          <span>Holland America Line</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-HAL-OCo-1-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-HAL-OCo-1-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="4">
-                      <Link href="https://www.imaginecruising.co.uk/cruise-lines/po-cruises/">
-                        <div className="child-name">
-                          <span>P&O</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-PO-OCo-1-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-PO-OCo-1-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="5">
-                      <Link href="https://www.imaginecruising.co.uk/cruise-lines/princess-cruises/">
-                        <div className="child-name">
-                          <span>Princess</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Princess-OCo-1-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Princess-OCo-1-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="6">
-                      <Link href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/">
-                        <div className="child-name">
-                          <span>Silversea</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Silversea-1-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Silversea-1-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="7">
-                      <Link href="https://www.imaginecruising.co.uk/cruise-lines/">
-                        <div className="child-name">
-                          <span>View all </span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-Line-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-Line-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li
-                  data-ga-element="header-nav-list-item"
-                  className="top-level has-children"
-                  data-ga-index="6"
-                >
-                  <Link href="https://www.imaginecruising.co.uk/destinations/">
-                    Destinations <i className="fa-solid fa-chevron-down"></i>
-                  </Link>
-                  <ul className="custom-sub-nav">
-                    <li className="sub-page" data-ga-index="0">
-                      <Link href="https://www.imaginecruising.co.uk/destinations/africa/">
-                        <div className="child-name">
-                          <span>Africa</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Africa.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Africa.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="1">
-                      <Link href="https://www.imaginecruising.co.uk/destinations/asia/">
-                        <div className="child-name">
-                          <span>Asia</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Asia-nav-images-mobile-desktop-300x158-Destination.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Asia-nav-images-mobile-desktop-300x158-Destination.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="2">
-                      <Link href="https://www.imaginecruising.co.uk/australia-and-new-zealand/">
-                        <div className="child-name">
-                          <span>Australia & New Zealand</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Australia-nav-images-mobile-desktop-300x158-Destination-OCo-1.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Australia-nav-images-mobile-desktop-300x158-Destination-OCo-1.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="3">
-                      <Link href="https://www.imaginecruising.co.uk/destinations/caribbean/">
-                        <div className="child-name">
-                          <span>Caribbean</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Caribbean-nav-images-mobile-desktop-300x158-Destination-OCo-2.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Caribbean-nav-images-mobile-desktop-300x158-Destination-OCo-2.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="4">
-                      <Link href="https://www.imaginecruising.co.uk/destinations/europe/">
-                        <div className="child-name">
-                          <span>Europe</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Europe-nav-images-mobile-desktop-300x158-Destination-OCo-4-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Europe-nav-images-mobile-desktop-300x158-Destination-OCo-4-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="5">
-                      <Link href="https://www.imaginecruising.co.uk/destinations/indian-ocean/">
-                        <div className="child-name">
-                          <span>Indian Ocean</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Indian-Ocean-nav-images-mobile-desktop-300x158-Destination-OCo-5-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Indian-Ocean-nav-images-mobile-desktop-300x158-Destination-OCo-5-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="6">
-                      <Link href="https://www.imaginecruising.co.uk/destinations/indian-subcontinent/">
-                        <div className="child-name">
-                          <span>Indian Subcontinent </span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Indian-sub-1-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Indian-sub-1-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="7">
-                      <Link href="https://www.imaginecruising.co.uk/destinations/middle-east/">
-                        <div className="child-name">
-                          <span>Middle East</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Middle-East-nav-images-mobile-desktop-300x158-Destination-OCo-6-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Middle-East-nav-images-mobile-desktop-300x158-Destination-OCo-6-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="8">
-                      <Link href="https://www.imaginecruising.co.uk/north-america/">
-                        <div className="child-name">
-                          <span>North America</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/North-America-1.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/North-America-1.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="9">
-                      <Link href="https://www.imaginecruising.co.uk/destinations/south-america/">
-                        <div className="child-name">
-                          <span>South America</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/South-America-nav-images-mobile-desktop-300x158-Destination-OCo-7-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/South-America-nav-images-mobile-desktop-300x158-Destination-OCo-7-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="10">
-                      <Link href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
-                        <div className="child-name">
-                          <span>Cruise from the UK</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                    <li className="sub-page" data-ga-index="11">
-                      <Link href="https://www.imaginecruising.co.uk/destinations/">
-                        <div className="child-name">
-                          <span>View all</span>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg" />
-                          </noscript>
-                        </div>
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="7">
-                  <Link href="https://www.imaginecruising.co.uk/about-us/">About us</Link>
-                </li>
-                <li data-ga-element="manage-my-booking">
-                  <Link
-                    className=""
-                    href="https://www.imaginecruising.co.uk/manage-my-booking/"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/passenger_icon_white.svg" />
-                    <noscript>
-                      <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/passenger_icon_white.svg" />
-                    </noscript>
-                    Manage my booking
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-        <div id="content">
-          <div className="home-intro-wrap ">
-            <div
-              id="home-video"
-              data-ga-content="Home Page Video"
-              data-ga-index="0"
-              className="video-background"
-            >
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                disablePictureInPicture
-                disableRemotePlayback
-                preload="auto"
-                id="background-video"
-                poster="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/homepage-train-frame.png"
-              >
-                <source
-                  src="https://player.vimeo.com/progressive_redirect/playback/1039713923/rendition/1080p/file.mp4?loc=external&signature=63c620da5e2de6ff9143fe724968edabda4d179e1a69a28b0cb6a7cad8a21178#t=5"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-              </video>
-              <div className="video-overlay">
-                <div className="video-content">
-                  <h1>More Than Just A Cruise</h1>
-                </div>
-                <div className="video-scroll">
-                  <Link
-                    href="#home-video-lower"
-                    data-ga-element="home-video-scroll"
-                    className="scroll-down"
-                  >
-                    <span>SCROLL</span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div id="home-video-lower" data-ga-index="1">
-              <div className="content-margin">
-                <h2>Expert Creators of World-Class Cruise Holidays</h2>
-                <p>
-                  <b>
-                    <span data-teams="true">
-                      <strong>
-                        Established in 2011, we are a leading travel provider with offices across
-                        the globe, specialising in exceptional cruise holidays brimming with
-                        enriching experiences that offer so much more than just a cruise.
-                      </strong>
-                    </span>
-                  </b>
-                </p>
-                <p>
-                  We create outstanding cruise holidays, seamlessly paired with immersive tours of
-                  the world’s most <span data-teams="true">desirable </span>natural and man-made
-                  marvels, enchanting rail journeys, exclusive events in unexpected locations, and
-                  fabulous hotel stays at hand-picked accommodations.
-                </p>
-              </div>
-            </div>
-            <section data-ga-index="2" id="quick-search-section" className="">
-              <div className="container">
-                <div id="holiday-search-form">
-                  <div className="inner">
-                    <div className="form-wrap flex">
-                      <div>
-                        <span className="search-form-text">
-                          Already seen something you like? Enter a code to lookup one of our
-                          holidays
+                <div id="home-video-lower" data-ga-index="1">
+                  <div className="content-margin">
+                    <h2>Expert Creators of World-Class Cruise Holidays</h2>
+                    <p>
+                      <b>
+                        <span data-teams="true">
+                          <strong>
+                            Established in 2011, we are a leading travel provider with offices
+                            across the globe, specialising in exceptional cruise holidays brimming
+                            with enriching experiences that offer so much more than just a cruise.
+                          </strong>
                         </span>
-                      </div>
-                      <div data-ga-element="holiday-search-form">
-                        <div id="search-form">
-                          {/* <form action="https://www.imaginecruising.co.uk/search/" method="get">
+                      </b>
+                    </p>
+                    <p>
+                      We create outstanding cruise holidays, seamlessly paired with immersive tours
+                      of the world’s most <span data-teams="true">desirable </span>natural and
+                      man-made marvels, enchanting rail journeys, exclusive events in unexpected
+                      locations, and fabulous hotel stays at hand-picked accommodations.
+                    </p>
+                  </div>
+                </div>
+                <section data-ga-index="2" id="quick-search-section" className="">
+                  <div className="container">
+                    <div id="holiday-search-form">
+                      <div className="inner">
+                        <div className="form-wrap flex">
+                          <div>
+                            <span className="search-form-text">
+                              Already seen something you like? Enter a code to lookup one of our
+                              holidays
+                            </span>
+                          </div>
+                          <div data-ga-element="holiday-search-form">
+                            <div id="search-form">
+                              {/* <form action="https://www.imaginecruising.co.uk/search/" method="get">
                             <div id="search-form-container">
                               <div
                                 className="search-form-autocomplete"
@@ -4877,2118 +4438,1797 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                             </div>
                             <div id="search-form-overlay"></div>
                           </form> */}
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </section>
               </div>
-            </section>
-          </div>
-          {/* home intro background */}
-          <section
-            data-ga-index="3"
-            className="white-block  grid-area-3 cta-blocks-one"
-            data-ga-context="holiday_types"
-          >
-            <div className="inner">
-              <h3>Explore</h3>
-              <div className="gallery-grid-items visible-rows-two ">
-                <div
-                  data-ga-element="cta-blocks-1-block"
-                  data-ga-index="0"
-                  className="img-item img-item-0"
-                >
-                  <Link
-                    data-ga-element="cta-blocks-1-block-link"
-                    href="https://www.imaginecruising.co.uk/holiday-types/"
-                    title="Holiday Types"
-                  >
-                    <img
-                      title=""
-                      alt=""
-                      src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/HolidayTypes_CategoryTileHP.jpg"
-                    />
-                    <noscript>
-                      <img
-                        src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/HolidayTypes_CategoryTileHP.jpg"
-                        title=""
-                        alt=""
-                      />
-                    </noscript>
-                    <div className="wrapper-text">
-                      <div className="small-text">Explore </div>
-                      <div className="large-text">Our Holiday Types</div>
-                      <div className="description">
-                        Discover more than just a cruise – from scenic rail journeys to immersive
-                        tours
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div
-                  data-ga-element="cta-blocks-1-block"
-                  data-ga-index="1"
-                  className="img-item img-item-1"
-                >
-                  <Link
-                    data-ga-element="cta-blocks-1-block-link"
-                    href="https://online.fliphtml5.com/lbmak/hrdr/"
-                    title="Discover more"
-                  >
-                    <img
-                      title=""
-                      alt=""
-                      src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/April-Brochure-1.jpg"
-                    />
-                    <noscript>
-                      <img
-                        src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/April-Brochure-1.jpg"
-                        title=""
-                        alt=""
-                      />
-                    </noscript>
-                    <div className="wrapper-text">
-                      <div className="small-text">Explore</div>
-                      <div className="large-text">Our Brochure</div>
-                      <div className="description">
-                        Explore extraordinary cruise holidays filled with unique experiences around
-                        the globe
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div
-                  data-ga-element="cta-blocks-1-block"
-                  data-ga-index="2"
-                  className="img-item img-item-2"
-                >
-                  <Link
-                    data-ga-element="cta-blocks-1-block-link"
-                    href="https://www.imaginecruising.co.uk/cruise-deals/"
-                    title="Cruise Deals"
-                  >
-                    <img
-                      title=""
-                      alt=""
-                      src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/cruise_deals_explore_card@2x-1_6474192de6d_647539e2550.jpg"
-                    />
-                    <noscript>
-                      <img
-                        src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/cruise_deals_explore_card@2x-1_6474192de6d_647539e2550.jpg"
-                        title=""
-                        alt=""
-                      />
-                    </noscript>
-                    <div className="wrapper-text">
-                      <div className="small-text">Explore</div>
-                      <div className="large-text">Our Cruise Deals</div>
-                      <div className="description">
-                        Discover exclusive deals and promotions from the world&#8217;s top cruise
-                        lines for your next getaway
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div
-                  data-ga-element="cta-blocks-1-block"
-                  data-ga-index="3"
-                  className="img-item img-item-3"
-                >
-                  <Link
-                    data-ga-element="cta-blocks-1-block-link"
-                    href="https://imaginecruising.co.uk/galapagos/"
-                    title="Galapagos"
-                  >
-                    <img
-                      title=""
-                      alt=""
-                      src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Galapogos-Homepage.jpg"
-                    />
-                    <noscript>
-                      <img
-                        src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Galapogos-Homepage.jpg"
-                        title=""
-                        alt=""
-                      />
-                    </noscript>
-                    <div className="wrapper-text">
-                      <div className="small-text">Discover the</div>
-                      <div className="large-text">Galapagos Islands</div>
-                      <div className="description">
-                        a wildlife paradise boasting unparallel natural beauty and adventure
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div
-                  data-ga-element="cta-blocks-1-block"
-                  data-ga-index="4"
-                  className="img-item img-item-4"
-                >
-                  <Link
-                    data-ga-element="cta-blocks-1-block-link"
-                    href="https://imaginecruising.co.uk/abu-dhabi-grand-prix-collection/"
-                    title="Transcend"
-                  >
-                    <img
-                      title=""
-                      alt=""
-                      src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/ADGP-Homepage.jpg"
-                    />
-                    <noscript>
-                      <img
-                        src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/ADGP-Homepage.jpg"
-                        title=""
-                        alt=""
-                      />
-                    </noscript>
-                    <div className="wrapper-text">
-                      <div className="small-text">Experience </div>
-                      <div className="large-text">the Thrilling</div>
-                      <div className="description">Abu Dhabi Grand Prix™ with Guenther Steiner</div>
-                    </div>
-                  </Link>
-                </div>
-                <div
-                  data-ga-element="cta-blocks-1-block"
-                  data-ga-index="5"
-                  className="img-item img-item-5"
-                >
-                  <Link
-                    data-ga-element="cta-blocks-1-block-link"
-                    href="https://imaginecruising.co.uk/cruises-from-the-uk/"
-                    title="Cruise from the UK"
-                  >
-                    <img
-                      title=""
-                      alt=""
-                      src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/shutterstock_2475796677-scaled.jpg"
-                    />
-                    <noscript>
-                      <img
-                        src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/shutterstock_2475796677-scaled.jpg"
-                        title=""
-                        alt=""
-                      />
-                    </noscript>
-                    <div className="wrapper-text">
-                      <div className="small-text">Discover</div>
-                      <div className="large-text">Cruises from the UK</div>
-                      <div className="description">
-                        Set sail on an unforgettable adventure from a port right on your doorstep!
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section
-            data-ga-index="4"
-            data-ga-context="our_customer_favourites"
-            className=" mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-0"
-          >
-            <div className="inner">
-              <h3 data-ga-element="cruise-offers-title">Our Customer Favourites</h3>
-              <div className="cruises-block cruises-block-slider mobile-center-slider">
-                <div data-ga-index="0" className="item-cruise cruise-719572 slide-position-1">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=AME7943"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Celebrity-Equinox-EZE-EZE-31JAN26-Iguazu-Falls-Machu-Picchu-TZOO-Tile-1-1-1-3-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Complimentary Tours of Machu Picchu & Sacred Valley</span>
-                    </div>
-                    <span className="fave" data-favourite="719572">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        All-Inclusive Ultimate South America Voyage, Machu Picchu &#038; Iguazu
-                        Falls
-                      </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Touring
-                        </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          January 2026 | 30 - 32 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Celebrity Cruises
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;6,999</span>
-                          <span className="pp"> pp</span>
-                        </div>
-                      </div>
+              {/* home intro background */}
+              <section
+                data-ga-index="3"
+                className="white-block  grid-area-3 cta-blocks-one"
+                data-ga-context="holiday_types"
+              >
+                <div className="inner">
+                  <h3>Explore</h3>
+                  <div className="gallery-grid-items visible-rows-two ">
+                    <div
+                      data-ga-element="cta-blocks-1-block"
+                      data-ga-index="0"
+                      className="img-item img-item-0"
+                    >
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
-                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]AME7943"
-                        className="default-cta"
+                        data-ga-element="cta-blocks-1-block-link"
+                        href="https://www.imaginecruising.co.uk/holiday-types/"
+                        title="Holiday Types"
                       >
-                        Discover more{' '}
+                        <img
+                          title=""
+                          alt=""
+                          src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/HolidayTypes_CategoryTileHP.jpg"
+                        />
+                        <noscript>
+                          <img
+                            src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/HolidayTypes_CategoryTileHP.jpg"
+                            title=""
+                            alt=""
+                          />
+                        </noscript>
+                        <div className="wrapper-text">
+                          <div className="small-text">Explore </div>
+                          <div className="large-text">Our Holiday Types</div>
+                          <div className="description">
+                            Discover more than just a cruise – from scenic rail journeys to
+                            immersive tours
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                    <div
+                      data-ga-element="cta-blocks-1-block"
+                      data-ga-index="1"
+                      className="img-item img-item-1"
+                    >
+                      <Link
+                        data-ga-element="cta-blocks-1-block-link"
+                        href="https://online.fliphtml5.com/lbmak/hrdr/"
+                        title="Discover more"
+                      >
+                        <img
+                          title=""
+                          alt=""
+                          src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/April-Brochure-1.jpg"
+                        />
+                        <noscript>
+                          <img
+                            src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/April-Brochure-1.jpg"
+                            title=""
+                            alt=""
+                          />
+                        </noscript>
+                        <div className="wrapper-text">
+                          <div className="small-text">Explore</div>
+                          <div className="large-text">Our Brochure</div>
+                          <div className="description">
+                            Explore extraordinary cruise holidays filled with unique experiences
+                            around the globe
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                    <div
+                      data-ga-element="cta-blocks-1-block"
+                      data-ga-index="2"
+                      className="img-item img-item-2"
+                    >
+                      <Link
+                        data-ga-element="cta-blocks-1-block-link"
+                        href="https://www.imaginecruising.co.uk/cruise-deals/"
+                        title="Cruise Deals"
+                      >
+                        <img
+                          title=""
+                          alt=""
+                          src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/cruise_deals_explore_card@2x-1_6474192de6d_647539e2550.jpg"
+                        />
+                        <noscript>
+                          <img
+                            src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/cruise_deals_explore_card@2x-1_6474192de6d_647539e2550.jpg"
+                            title=""
+                            alt=""
+                          />
+                        </noscript>
+                        <div className="wrapper-text">
+                          <div className="small-text">Explore</div>
+                          <div className="large-text">Our Cruise Deals</div>
+                          <div className="description">
+                            Discover exclusive deals and promotions from the world&#8217;s top
+                            cruise lines for your next getaway
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                    <div
+                      data-ga-element="cta-blocks-1-block"
+                      data-ga-index="3"
+                      className="img-item img-item-3"
+                    >
+                      <Link
+                        data-ga-element="cta-blocks-1-block-link"
+                        href="https://imaginecruising.co.uk/galapagos/"
+                        title="Galapagos"
+                      >
+                        <img
+                          title=""
+                          alt=""
+                          src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Galapogos-Homepage.jpg"
+                        />
+                        <noscript>
+                          <img
+                            src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Galapogos-Homepage.jpg"
+                            title=""
+                            alt=""
+                          />
+                        </noscript>
+                        <div className="wrapper-text">
+                          <div className="small-text">Discover the</div>
+                          <div className="large-text">Galapagos Islands</div>
+                          <div className="description">
+                            a wildlife paradise boasting unparallel natural beauty and adventure
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                    <div
+                      data-ga-element="cta-blocks-1-block"
+                      data-ga-index="4"
+                      className="img-item img-item-4"
+                    >
+                      <Link
+                        data-ga-element="cta-blocks-1-block-link"
+                        href="https://imaginecruising.co.uk/abu-dhabi-grand-prix-collection/"
+                        title="Transcend"
+                      >
+                        <img
+                          title=""
+                          alt=""
+                          src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/ADGP-Homepage.jpg"
+                        />
+                        <noscript>
+                          <img
+                            src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/ADGP-Homepage.jpg"
+                            title=""
+                            alt=""
+                          />
+                        </noscript>
+                        <div className="wrapper-text">
+                          <div className="small-text">Experience </div>
+                          <div className="large-text">the Thrilling</div>
+                          <div className="description">
+                            Abu Dhabi Grand Prix™ with Guenther Steiner
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                    <div
+                      data-ga-element="cta-blocks-1-block"
+                      data-ga-index="5"
+                      className="img-item img-item-5"
+                    >
+                      <Link
+                        data-ga-element="cta-blocks-1-block-link"
+                        href="https://imaginecruising.co.uk/cruises-from-the-uk/"
+                        title="Cruise from the UK"
+                      >
+                        <img
+                          title=""
+                          alt=""
+                          src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/shutterstock_2475796677-scaled.jpg"
+                        />
+                        <noscript>
+                          <img
+                            src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/shutterstock_2475796677-scaled.jpg"
+                            title=""
+                            alt=""
+                          />
+                        </noscript>
+                        <div className="wrapper-text">
+                          <div className="small-text">Discover</div>
+                          <div className="large-text">Cruises from the UK</div>
+                          <div className="description">
+                            Set sail on an unforgettable adventure from a port right on your
+                            doorstep!
+                          </div>
+                        </div>
                       </Link>
                     </div>
                   </div>
                 </div>
-                <div data-ga-index="1" className="item-cruise cruise-690002 slide-position-2">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/holidays/ultimate-australia-all-inclusive-indian-pacific-rail-journey-and-princess-new-zealand-voyage/"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/02/UK-Princess-Crown-BNE-BNE-16FEB26-Indian-Pacific-NEW-PRICING-Tile-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Complimentary Hotel Stays in Brisbane, Sydney & Perth </span>
-                    </div>
-                    <span className="fave" data-favourite="690002">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        Ultimate Australia: All-Inclusive Indian Pacific Rail Journey &#038;
-                        Princess New Zealand Voyage
-                      </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Rail
-                        </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          14 February 2026 | 23 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Princess Cruises
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;4,999</span>
-                          <span className="pp"> pp</span>
-                        </div>
-                      </div>
+              </section>
+              <section
+                data-ga-index="4"
+                data-ga-context="our_customer_favourites"
+                className=" mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-0"
+              >
+                <div className="inner">
+                  <h3 data-ga-element="cruise-offers-title">Our Customer Favourites</h3>
+                  <div className="cruises-block cruises-block-slider mobile-center-slider">
+                    <div data-ga-index="0" className="item-cruise cruise-719572 slide-position-1">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=AME7943"
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Celebrity-Equinox-EZE-EZE-31JAN26-Iguazu-Falls-Machu-Picchu-TZOO-Tile-1-1-1-3-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Complimentary Tours of Machu Picchu & Sacred Valley</span>
+                        </div>
+                        <span className="fave" data-favourite="719572">
+                          <i className="far fa-heart"></i>
+                        </span>
+                      </div>
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            All-Inclusive Ultimate South America Voyage, Machu Picchu &#038; Iguazu
+                            Falls
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Touring
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              January 2026 | 30 - 32 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Celebrity Cruises
+                            </div>
+                          </div>
+                        </div>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;6,999</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/search/?cruise_reference[]AME7943"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-ga-index="1" className="item-cruise cruise-690002 slide-position-2">
+                      <Link
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
                         href="https://www.imaginecruising.co.uk/holidays/ultimate-australia-all-inclusive-indian-pacific-rail-journey-and-princess-new-zealand-voyage/"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="2" className="item-cruise cruise-679008 slide-position-3">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/holidays/luxury-cunard-voyage-from-southampton-to-cape-town-with-victoria-falls-and-pilanesberg-safari/"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/Cunard-QA-SOU-CPT-11JAN2026-Vic-Falls-Pilanesberg-Event-Tile-1-1-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Complimentary Oceanview to Balcony Upgrade</span>
-                    </div>
-                    <span className="fave" data-favourite="679008">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        Luxury Cunard Voyage from Southampton to Cape Town with Victoria Falls
-                        &#038; Pilanesberg Safari
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/02/UK-Princess-Crown-BNE-BNE-16FEB26-Indian-Pacific-NEW-PRICING-Tile-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Complimentary Hotel Stays in Brisbane, Sydney & Perth </span>
+                        </div>
+                        <span className="fave" data-favourite="690002">
+                          <i className="far fa-heart"></i>
+                        </span>
                       </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Touring
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            Ultimate Australia: All-Inclusive Indian Pacific Rail Journey &#038;
+                            Princess New Zealand Voyage
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Rail
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              14 February 2026 | 23 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Princess Cruises
+                            </div>
+                          </div>
                         </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          11 January 2026 | 30 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Cunard Line
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;4,999</span>
-                          <span className="pp"> pp</span>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;4,999</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/holidays/ultimate-australia-all-inclusive-indian-pacific-rail-journey-and-princess-new-zealand-voyage/"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
                         </div>
                       </div>
+                    </div>
+                    <div data-ga-index="2" className="item-cruise cruise-679008 slide-position-3">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
                         href="https://www.imaginecruising.co.uk/holidays/luxury-cunard-voyage-from-southampton-to-cape-town-with-victoria-falls-and-pilanesberg-safari/"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/Cunard-QA-SOU-CPT-11JAN2026-Vic-Falls-Pilanesberg-Event-Tile-1-1-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Complimentary Oceanview to Balcony Upgrade</span>
+                        </div>
+                        <span className="fave" data-favourite="679008">
+                          <i className="far fa-heart"></i>
+                        </span>
+                      </div>
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            Luxury Cunard Voyage from Southampton to Cape Town with Victoria Falls
+                            &#038; Pilanesberg Safari
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Touring
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              11 January 2026 | 30 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Cunard Line
+                            </div>
+                          </div>
+                        </div>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;4,999</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/holidays/luxury-cunard-voyage-from-southampton-to-cape-town-with-victoria-falls-and-pilanesberg-safari/"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-          <section
-            data-ga-index="5"
-            data-ga-context="Cruise_and_rail"
-            className=" mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-1"
-          >
-            <div className="inner">
-              <h3 data-ga-element="cruise-offers-title">Cruise & Rail Holidays</h3>
-              <div className="cruises-block cruises-block-slider mobile-center-slider">
-                <div data-ga-index="0" className="item-cruise cruise-693396 slide-position-1">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/holidays/mediterranean-cunard-voyage-italian-lakes-and-all-inclusive-venice-simplon-orient-express-2/"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/05/Cunard-QA-CIV-SOU-25AUG25-No-Fly-VSOE-Florence-Tile_57300766ca7-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Complimentary 7-NIGHT Italian Lakes Escape </span>
-                    </div>
-                    <span className="fave" data-favourite="693396">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        Mediterranean Cunard Voyage, Italian Lakes &#038; All-Inclusive Venice
-                        Simplon-Orient-Express
-                      </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Rail
-                        </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          20 June 2026 | 16 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Cunard Line
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;6,999</span>
-                          <span className="pp"> pp</span>
-                        </div>
-                      </div>
+              </section>
+              <section
+                data-ga-index="5"
+                data-ga-context="Cruise_and_rail"
+                className=" mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-1"
+              >
+                <div className="inner">
+                  <h3 data-ga-element="cruise-offers-title">Cruise & Rail Holidays</h3>
+                  <div className="cruises-block cruises-block-slider mobile-center-slider">
+                    <div data-ga-index="0" className="item-cruise cruise-693396 slide-position-1">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
                         href="https://www.imaginecruising.co.uk/holidays/mediterranean-cunard-voyage-italian-lakes-and-all-inclusive-venice-simplon-orient-express-2/"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="1" className="item-cruise cruise-662281 slide-position-2">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/holidays/celebrity-all-inclusive-asia-voyage-and-japan-rail-discovery-4aug26/"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Celebrity-Millenium-TYO-TYO-MAY-AUG2026-Japan-Rail-Tile-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>COMPLIMENTARY CLASSIC DRINKS PACKAGE & WI-FI</span>
-                    </div>
-                    <span className="fave" data-favourite="662281">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        Celebrity All-Inclusive Asia Voyage &#038; Japan Rail Discovery
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/05/Cunard-QA-CIV-SOU-25AUG25-No-Fly-VSOE-Florence-Tile_57300766ca7-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Complimentary 7-NIGHT Italian Lakes Escape </span>
+                        </div>
+                        <span className="fave" data-favourite="693396">
+                          <i className="far fa-heart"></i>
+                        </span>
                       </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Rail
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            Mediterranean Cunard Voyage, Italian Lakes &#038; All-Inclusive Venice
+                            Simplon-Orient-Express
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Rail
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              20 June 2026 | 16 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Cunard Line
+                            </div>
+                          </div>
                         </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          04 August 2026 | 26 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Celebrity Cruises
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;5,999</span>
-                          <span className="pp"> pp</span>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;6,999</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/holidays/mediterranean-cunard-voyage-italian-lakes-and-all-inclusive-venice-simplon-orient-express-2/"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
                         </div>
                       </div>
+                    </div>
+                    <div data-ga-index="1" className="item-cruise cruise-662281 slide-position-2">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
                         href="https://www.imaginecruising.co.uk/holidays/celebrity-all-inclusive-asia-voyage-and-japan-rail-discovery-4aug26/"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="2" className="item-cruise cruise-646327 slide-position-3">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/holidays/all-inclusive-celebrity-voyage-and-ultimate-indian-experience-tigers-the-himalayas-and-golden-triangle-tour-12mar26/"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/10/Celebrity-Solstice-SIN-HKG-HKG-SIN-NOV2025-JAN2026-Shimla-Golden-Triangle-Tile-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Complimentary 13-Night Fully Escorted Golden Triangle Tour</span>
-                    </div>
-                    <span className="fave" data-favourite="646327">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        All-Inclusive Celebrity Voyage &#038; Ultimate Indian Experience: Tigers,
-                        The Himalayas &#038; Golden Triangle Tour
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Celebrity-Millenium-TYO-TYO-MAY-AUG2026-Japan-Rail-Tile-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>COMPLIMENTARY CLASSIC DRINKS PACKAGE & WI-FI</span>
+                        </div>
+                        <span className="fave" data-favourite="662281">
+                          <i className="far fa-heart"></i>
+                        </span>
                       </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Touring
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            Celebrity All-Inclusive Asia Voyage &#038; Japan Rail Discovery
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Rail
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              04 August 2026 | 26 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Celebrity Cruises
+                            </div>
+                          </div>
                         </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          12 March 2026 | 29 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Celebrity Cruises
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;4,999</span>
-                          <span className="pp"> pp</span>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;5,999</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/holidays/celebrity-all-inclusive-asia-voyage-and-japan-rail-discovery-4aug26/"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
                         </div>
                       </div>
+                    </div>
+                    <div data-ga-index="2" className="item-cruise cruise-646327 slide-position-3">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
                         href="https://www.imaginecruising.co.uk/holidays/all-inclusive-celebrity-voyage-and-ultimate-indian-experience-tigers-the-himalayas-and-golden-triangle-tour-12mar26/"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/10/Celebrity-Solstice-SIN-HKG-HKG-SIN-NOV2025-JAN2026-Shimla-Golden-Triangle-Tile-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Complimentary 13-Night Fully Escorted Golden Triangle Tour</span>
+                        </div>
+                        <span className="fave" data-favourite="646327">
+                          <i className="far fa-heart"></i>
+                        </span>
+                      </div>
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            All-Inclusive Celebrity Voyage &#038; Ultimate Indian Experience:
+                            Tigers, The Himalayas &#038; Golden Triangle Tour
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Touring
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              12 March 2026 | 29 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Celebrity Cruises
+                            </div>
+                          </div>
+                        </div>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;4,999</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/holidays/all-inclusive-celebrity-voyage-and-ultimate-indian-experience-tigers-the-himalayas-and-golden-triangle-tour-12mar26/"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-          <section
-            data-ga-index="6"
-            data-ga-context="cruise_and_touring"
-            className=" mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-2"
-          >
-            <div className="inner">
-              <h3 data-ga-element="cruise-offers-title">Cruise & Touring Holidays</h3>
-              <div className="cruises-block cruises-block-slider mobile-center-slider">
-                <div data-ga-index="0" className="item-cruise cruise-723529 slide-position-1">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/holidays/ultimate-vietnam-and-cambodia-discovery-with-all-inclusive-celebrity-asia-voyage/"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/Celebrity-Millennium-SIN-SIN-20FEB2026-Vietnam-Cambodia-Tour-Tile-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Complimentary 13-Night Tour of Vietnam & Cambodia</span>
-                    </div>
-                    <span className="fave" data-favourite="723529">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        Ultimate Vietnam &#038; Cambodia Discovery with All-Inclusive Celebrity Asia
-                        Voyage
-                      </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Touring
-                        </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          05 February 2026 | 27 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Celebrity Cruises
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;4,499</span>
-                          <span className="pp"> pp</span>
-                        </div>
-                      </div>
+              </section>
+              <section
+                data-ga-index="6"
+                data-ga-context="cruise_and_touring"
+                className=" mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-2"
+              >
+                <div className="inner">
+                  <h3 data-ga-element="cruise-offers-title">Cruise & Touring Holidays</h3>
+                  <div className="cruises-block cruises-block-slider mobile-center-slider">
+                    <div data-ga-index="0" className="item-cruise cruise-723529 slide-position-1">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
                         href="https://www.imaginecruising.co.uk/holidays/ultimate-vietnam-and-cambodia-discovery-with-all-inclusive-celebrity-asia-voyage/"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="1" className="item-cruise cruise-699869 slide-position-2">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=EUR2253"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/Silversea-Muse-VCE-VCE-SEP2026-OCT2026-Italian-Lakes-Tile-2-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Complimentary 6-Night Italian Lakes Escape</span>
-                    </div>
-                    <span className="fave" data-favourite="699869">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        All-Inclusive Mediterranean Silversea Voyage, Trio of Italian Lakes and
-                        Scenic Rail Journey
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/Celebrity-Millennium-SIN-SIN-20FEB2026-Vietnam-Cambodia-Tour-Tile-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Complimentary 13-Night Tour of Vietnam & Cambodia</span>
+                        </div>
+                        <span className="fave" data-favourite="723529">
+                          <i className="far fa-heart"></i>
+                        </span>
                       </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Touring
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            Ultimate Vietnam &#038; Cambodia Discovery with All-Inclusive Celebrity
+                            Asia Voyage
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Touring
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              05 February 2026 | 27 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Celebrity Cruises
+                            </div>
+                          </div>
                         </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          Sep - Oct 2026 | 15 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Silversea
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;4,999</span>
-                          <span className="pp"> pp</span>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;4,499</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/holidays/ultimate-vietnam-and-cambodia-discovery-with-all-inclusive-celebrity-asia-voyage/"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
                         </div>
                       </div>
+                    </div>
+                    <div data-ga-index="1" className="item-cruise cruise-699869 slide-position-2">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
-                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]EUR2253"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="2" className="item-cruise cruise-723106 slide-position-3">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/holidays/princess-new-zealand-voyage-and-ultimate-australia-tour-v2/"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/11/Princess-Crown-BNE-BNE-02FEB2026-Australia-Tour-Tile-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Includes tour of the Great Barrier Reef</span>
-                    </div>
-                    <span className="fave" data-favourite="723106">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        Princess New Zealand Voyage &#038; Ultimate Australia Tour
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=EUR2253"
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/Silversea-Muse-VCE-VCE-SEP2026-OCT2026-Italian-Lakes-Tile-2-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Complimentary 6-Night Italian Lakes Escape</span>
+                        </div>
+                        <span className="fave" data-favourite="699869">
+                          <i className="far fa-heart"></i>
+                        </span>
                       </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Touring
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            All-Inclusive Mediterranean Silversea Voyage, Trio of Italian Lakes and
+                            Scenic Rail Journey
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Touring
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              Sep - Oct 2026 | 15 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Silversea
+                            </div>
+                          </div>
                         </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          25 January 2026 | 23 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Princess Cruises
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;4,999</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/search/?cruise_reference[]EUR2253"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
                         </div>
                       </div>
                     </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;4,999</span>
-                          <span className="pp"> pp</span>
-                        </div>
-                      </div>
+                    <div data-ga-index="2" className="item-cruise cruise-723106 slide-position-3">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
                         href="https://www.imaginecruising.co.uk/holidays/princess-new-zealand-voyage-and-ultimate-australia-tour-v2/"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/11/Princess-Crown-BNE-BNE-02FEB2026-Australia-Tour-Tile-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Includes tour of the Great Barrier Reef</span>
+                        </div>
+                        <span className="fave" data-favourite="723106">
+                          <i className="far fa-heart"></i>
+                        </span>
+                      </div>
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            Princess New Zealand Voyage &#038; Ultimate Australia Tour
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Touring
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              25 January 2026 | 23 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Princess Cruises
+                            </div>
+                          </div>
+                        </div>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;4,999</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/holidays/princess-new-zealand-voyage-and-ultimate-australia-tour-v2/"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-          <section
-            data-ga-index="7"
-            data-ga-context="cruise_and_stay"
-            className=" mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-3"
-          >
-            <div className="inner">
-              <h3 data-ga-element="cruise-offers-title">Cruise & Stay Holidays</h3>
-              <div className="cruises-block cruises-block-slider mobile-center-slider">
-                <div data-ga-index="0" className="item-cruise cruise-717645 slide-position-1">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/holidays/luxury-cunard-queen-anne-voyage-from-sydney-to-southampton/"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Cunard-QA-SYD-SOU-17MAR2026-Sydney-Stay-TILETile-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Complimentary 3-night Hotel stay in Sydney</span>
-                    </div>
-                    <span className="fave" data-favourite="717645">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        Luxury Cunard Queen Anne Voyage from Sydney to Southampton
-                      </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Stay
-                        </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          13 March 2026 | 49 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Cunard Line
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;4,999</span>
-                          <span className="pp"> pp</span>
-                        </div>
-                      </div>
+              </section>
+              <section
+                data-ga-index="7"
+                data-ga-context="cruise_and_stay"
+                className=" mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-3"
+              >
+                <div className="inner">
+                  <h3 data-ga-element="cruise-offers-title">Cruise & Stay Holidays</h3>
+                  <div className="cruises-block cruises-block-slider mobile-center-slider">
+                    <div data-ga-index="0" className="item-cruise cruise-717645 slide-position-1">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
                         href="https://www.imaginecruising.co.uk/holidays/luxury-cunard-queen-anne-voyage-from-sydney-to-southampton/"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="1" className="item-cruise cruise-673874 slide-position-2">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=AME7965"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/02/Silverseaspirit-BGI-FLL-FLL-BGI-Tile-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Complimentary All-inclusive hotel stay in Barbados</span>
-                    </div>
-                    <span className="fave" data-favourite="673874">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        Luxury All-Inclusive Silversea Caribbean Voyage &#038; Barbados Escape
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Cunard-QA-SYD-SOU-17MAR2026-Sydney-Stay-TILETile-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Complimentary 3-night Hotel stay in Sydney</span>
+                        </div>
+                        <span className="fave" data-favourite="717645">
+                          <i className="far fa-heart"></i>
+                        </span>
                       </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Stay
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            Luxury Cunard Queen Anne Voyage from Sydney to Southampton
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Stay
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              13 March 2026 | 49 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Cunard Line
+                            </div>
+                          </div>
                         </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          Nov 2025 - Feb 2026 | 15 - 17 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Silversea
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;4,999</span>
-                          <span className="pp"> pp</span>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;4,999</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/holidays/luxury-cunard-queen-anne-voyage-from-sydney-to-southampton/"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
                         </div>
                       </div>
+                    </div>
+                    <div data-ga-index="1" className="item-cruise cruise-673874 slide-position-2">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
-                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]AME7965"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="2" className="item-cruise cruise-616537 slide-position-3">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/holidays/celebrity-voyage-all-inclusive-new-year-in-the-maldives-and-bali-retreat/"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Luxury-Celebrity-Voyage-All-Inclusive-New-Year-in-the-Maldives-Bali-Retreat-Tile-–-10-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Complimentary 5★ All-Inclusive Hotel Stay in Bali</span>
-                    </div>
-                    <span className="fave" data-favourite="616537">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        Celebrity Voyage, All-Inclusive New Year in the Maldives &#038; Bali Retreat
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=AME7965"
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/02/Silverseaspirit-BGI-FLL-FLL-BGI-Tile-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Complimentary All-inclusive hotel stay in Barbados</span>
+                        </div>
+                        <span className="fave" data-favourite="673874">
+                          <i className="far fa-heart"></i>
+                        </span>
                       </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Stay
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            Luxury All-Inclusive Silversea Caribbean Voyage &#038; Barbados Escape
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Stay
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              Nov 2025 - Feb 2026 | 15 - 17 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Silversea
+                            </div>
+                          </div>
                         </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          27 December 2025 | 25 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Celebrity Cruises
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;5,499</span>
-                          <span className="pp"> pp</span>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;4,999</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/search/?cruise_reference[]AME7965"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
                         </div>
                       </div>
+                    </div>
+                    <div data-ga-index="2" className="item-cruise cruise-616537 slide-position-3">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
                         href="https://www.imaginecruising.co.uk/holidays/celebrity-voyage-all-inclusive-new-year-in-the-maldives-and-bali-retreat/"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Luxury-Celebrity-Voyage-All-Inclusive-New-Year-in-the-Maldives-Bali-Retreat-Tile-–-10-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Complimentary 5★ All-Inclusive Hotel Stay in Bali</span>
+                        </div>
+                        <span className="fave" data-favourite="616537">
+                          <i className="far fa-heart"></i>
+                        </span>
+                      </div>
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            Celebrity Voyage, All-Inclusive New Year in the Maldives &#038; Bali
+                            Retreat
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Stay
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              27 December 2025 | 25 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Celebrity Cruises
+                            </div>
+                          </div>
+                        </div>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;5,499</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/holidays/celebrity-voyage-all-inclusive-new-year-in-the-maldives-and-bali-retreat/"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-          <section
-            data-ga-index="8"
-            data-ga-context="cruise_and_event"
-            className=" mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-4"
-          >
-            <div className="inner">
-              <h3 data-ga-element="cruise-offers-title">Cruise & Event Holidays</h3>
-              <div className="cruises-block cruises-block-slider mobile-center-slider">
-                <div data-ga-index="0" className="item-cruise cruise-587261 slide-position-1">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/holidays/a-captivating-voyage-exclusive-canaries-sailcation/"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/PrincessSky_SOU-SOU_Nov25-Tile_579484fc228-2_635871d72a2-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Complimentary Oceanview to Balcony Upgrade</span>
-                    </div>
-                    <span className="fave" data-favourite="587261">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        A Captivating Voyage: Exclusive Canaries Sailcation
-                      </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Event
-                        </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          02 November 2025 | 12 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Princess Cruises
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;999</span>
-                          <span className="pp"> pp</span>
-                        </div>
-                      </div>
+              </section>
+              <section
+                data-ga-index="8"
+                data-ga-context="cruise_and_event"
+                className=" mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-4"
+              >
+                <div className="inner">
+                  <h3 data-ga-element="cruise-offers-title">Cruise & Event Holidays</h3>
+                  <div className="cruises-block cruises-block-slider mobile-center-slider">
+                    <div data-ga-index="0" className="item-cruise cruise-587261 slide-position-1">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
                         href="https://www.imaginecruising.co.uk/holidays/a-captivating-voyage-exclusive-canaries-sailcation/"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="1" className="item-cruise cruise-646407 slide-position-2">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/holidays/a-magical-voyage-exclusive-mediterranean-sailcation/"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Product-Tile-A-Magical-Voyage-Exclusive-Mediterranean-Sailcation-Ship-and-celebs-New-Rory-Bremner-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>EXCLUSIVE PERFORMANCES FROM A STAR-STUDDED LINE-UP</span>
-                    </div>
-                    <span className="fave" data-favourite="646407">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        A Magical Voyage: Exclusive Mediterranean Sailcation
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/PrincessSky_SOU-SOU_Nov25-Tile_579484fc228-2_635871d72a2-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Complimentary Oceanview to Balcony Upgrade</span>
+                        </div>
+                        <span className="fave" data-favourite="587261">
+                          <i className="far fa-heart"></i>
+                        </span>
                       </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Event
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            A Captivating Voyage: Exclusive Canaries Sailcation
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Event
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              02 November 2025 | 12 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Princess Cruises
+                            </div>
+                          </div>
                         </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          03 May 2025 | 14 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Princess Cruises
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;1,199</span>
-                          <span className="pp"> pp</span>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;999</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/holidays/a-captivating-voyage-exclusive-canaries-sailcation/"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
                         </div>
                       </div>
+                    </div>
+                    <div data-ga-index="1" className="item-cruise cruise-646407 slide-position-2">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
                         href="https://www.imaginecruising.co.uk/holidays/a-magical-voyage-exclusive-mediterranean-sailcation/"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="2" className="item-cruise cruise-669994 slide-position-3">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/holidays/danubes-ballroom-serenade-exclusive-river-cruise-experience/"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/Mobile-Image-1152-x-788px-4-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Includes Exclusive event with Anton Du Bec & Erin Boag</span>
-                    </div>
-                    <span className="fave" data-favourite="669994">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        Danube&#8217;s Ballroom Serenade: Exclusive River Cruise Experience
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Product-Tile-A-Magical-Voyage-Exclusive-Mediterranean-Sailcation-Ship-and-celebs-New-Rory-Bremner-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>EXCLUSIVE PERFORMANCES FROM A STAR-STUDDED LINE-UP</span>
+                        </div>
+                        <span className="fave" data-favourite="646407">
+                          <i className="far fa-heart"></i>
+                        </span>
                       </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Event
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            A Magical Voyage: Exclusive Mediterranean Sailcation
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Event
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              03 May 2025 | 14 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Princess Cruises
+                            </div>
+                          </div>
                         </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          27 June 2026 | 7 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Transcend Cruises™
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;2,999</span>
-                          <span className="pp"> pp</span>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;1,199</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/holidays/a-magical-voyage-exclusive-mediterranean-sailcation/"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
                         </div>
                       </div>
+                    </div>
+                    <div data-ga-index="2" className="item-cruise cruise-669994 slide-position-3">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
                         href="https://www.imaginecruising.co.uk/holidays/danubes-ballroom-serenade-exclusive-river-cruise-experience/"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/Mobile-Image-1152-x-788px-4-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Includes Exclusive event with Anton Du Bec & Erin Boag</span>
+                        </div>
+                        <span className="fave" data-favourite="669994">
+                          <i className="far fa-heart"></i>
+                        </span>
+                      </div>
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            Danube&#8217;s Ballroom Serenade: Exclusive River Cruise Experience
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Event
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              27 June 2026 | 7 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Transcend Cruises™
+                            </div>
+                          </div>
+                        </div>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;2,999</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/holidays/danubes-ballroom-serenade-exclusive-river-cruise-experience/"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-          <section
-            data-ga-index="9"
-            data-ga-context="cruise_deals"
-            className=" mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-5"
-          >
-            <div className="inner">
-              <h3 data-ga-element="cruise-offers-title">Cruise Deals</h3>
-              <div className="cruises-block cruises-block-slider mobile-center-slider">
-                <div data-ga-index="0" className="item-cruise cruise-646571 slide-position-1">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=AME7945"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Cunard-Caribbean-Retail-Tile-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Exclusive to Imagine Cruising</span>
-                    </div>
-                    <span className="fave" data-favourite="646571">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        Luxury Cunard Queen Elizabeth Caribbean Voyage &#038; Miami Escape
-                      </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Stay
-                        </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          Oct 2025 - Apr 2026 | 14 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Cunard Line
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;1,499</span>
-                          <span className="pp"> pp</span>
-                        </div>
-                      </div>
+              </section>
+              <section
+                data-ga-index="9"
+                data-ga-context="cruise_deals"
+                className=" mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-5"
+              >
+                <div className="inner">
+                  <h3 data-ga-element="cruise-offers-title">Cruise Deals</h3>
+                  <div className="cruises-block cruises-block-slider mobile-center-slider">
+                    <div data-ga-index="0" className="item-cruise cruise-646571 slide-position-1">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
-                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]AME7945"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="1" className="item-cruise cruise-699803 slide-position-2">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=ASA8463"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/RCCL-Ovation-SIN-SIN-OCT25-MAR26-Bali-Stay-Tile_67555218a06-16-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Includes 5-Night 5★ Hotel Stay in Bali</span>
-                    </div>
-                    <span className="fave" data-favourite="699803">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        Southeast Asia Voyage &#038; Five-Star Bali Retreat
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=AME7945"
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Cunard-Caribbean-Retail-Tile-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Exclusive to Imagine Cruising</span>
+                        </div>
+                        <span className="fave" data-favourite="646571">
+                          <i className="far fa-heart"></i>
+                        </span>
                       </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Stay
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            Luxury Cunard Queen Elizabeth Caribbean Voyage &#038; Miami Escape
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Stay
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              Oct 2025 - Apr 2026 | 14 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Cunard Line
+                            </div>
+                          </div>
                         </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          Oct 2025 - Mar 2026 | 12 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Royal Caribbean International
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;1,999</span>
-                          <span className="pp"> pp</span>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;1,499</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/search/?cruise_reference[]AME7945"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
                         </div>
                       </div>
+                    </div>
+                    <div data-ga-index="1" className="item-cruise cruise-699803 slide-position-2">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
-                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]ASA8463"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="2" className="item-cruise cruise-699830 slide-position-3">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=ASA8462"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/MSC-Euribia-DXB-DXB-NOV2025-FEB2026-Mauritius-Dubai-Tile-7-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Includes all-inclusive 5-night Hotel Stay in Mauritius</span>
-                    </div>
-                    <span className="fave" data-favourite="699830">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        All-Inclusive Mauritius Escape, Dubai &#038; Arabian Gulf Adventure
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=ASA8463"
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/RCCL-Ovation-SIN-SIN-OCT25-MAR26-Bali-Stay-Tile_67555218a06-16-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Includes 5-Night 5★ Hotel Stay in Bali</span>
+                        </div>
+                        <span className="fave" data-favourite="699803">
+                          <i className="far fa-heart"></i>
+                        </span>
                       </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          Cruise &#038; Stay
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            Southeast Asia Voyage &#038; Five-Star Bali Retreat
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Stay
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              Oct 2025 - Mar 2026 | 12 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Royal Caribbean International
+                            </div>
+                          </div>
                         </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          Nov 2025 - Feb 2026 | 15 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          MSC Cruises
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;2,599</span>
-                          <span className="pp"> pp</span>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;1,999</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/search/?cruise_reference[]ASA8463"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
                         </div>
                       </div>
+                    </div>
+                    <div data-ga-index="2" className="item-cruise cruise-699830 slide-position-3">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
-                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]ASA8462"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=ASA8462"
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/MSC-Euribia-DXB-DXB-NOV2025-FEB2026-Mauritius-Dubai-Tile-7-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Includes all-inclusive 5-night Hotel Stay in Mauritius</span>
+                        </div>
+                        <span className="fave" data-favourite="699830">
+                          <i className="far fa-heart"></i>
+                        </span>
+                      </div>
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            All-Inclusive Mauritius Escape, Dubai &#038; Arabian Gulf Adventure
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              Cruise &#038; Stay
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              Nov 2025 - Feb 2026 | 15 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              MSC Cruises
+                            </div>
+                          </div>
+                        </div>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;2,599</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/search/?cruise_reference[]ASA8462"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-          <section
-            data-ga-index="10"
-            data-ga-context="river_cruise"
-            className=" mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-6"
-          >
-            <div className="inner">
-              <h3 data-ga-element="cruise-offers-title">River Cruise Holidays</h3>
-              <div className="cruises-block cruises-block-slider mobile-center-slider">
-                <div data-ga-index="0" className="item-cruise cruise-584610 slide-position-1">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=ASA2229"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/Lotus-Mekong-Navigator-SIE-MYT-MYT-SIE-DEC2024-APR2025-RESELL-Tile_6482194a1c8-6-1-1-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Limited availability</span>
-                    </div>
-                    <span className="fave" data-favourite="584610">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        All-Inclusive Luxury Mekong River Cruise with Vietnam &#038; Cambodia Tour
-                      </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          River Cruising
-                        </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          Sep 2025 - Apr 2026 | 15 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Lotus Cruises
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;3,299</span>
-                          <span className="pp"> pp</span>
-                        </div>
-                      </div>
+              </section>
+              <section
+                data-ga-index="10"
+                data-ga-context="river_cruise"
+                className=" mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-6"
+              >
+                <div className="inner">
+                  <h3 data-ga-element="cruise-offers-title">River Cruise Holidays</h3>
+                  <div className="cruises-block cruises-block-slider mobile-center-slider">
+                    <div data-ga-index="0" className="item-cruise cruise-584610 slide-position-1">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
-                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]ASA2229"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="1" className="item-cruise cruise-649622 slide-position-2">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=AFR2224"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Zambezi-Header-Stay-Tile_608495b9a96-10-1_644817b7e72-8-1-1-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>Limited Availability</span>
-                    </div>
-                    <span className="fave" data-favourite="649622">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        Zambezi River Cruise, Game Safaris, Victoria Falls and Cape Town Stay
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=ASA2229"
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/Lotus-Mekong-Navigator-SIE-MYT-MYT-SIE-DEC2024-APR2025-RESELL-Tile_6482194a1c8-6-1-1-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Limited availability</span>
+                        </div>
+                        <span className="fave" data-favourite="584610">
+                          <i className="far fa-heart"></i>
+                        </span>
                       </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          River Cruising
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            All-Inclusive Luxury Mekong River Cruise with Vietnam &#038; Cambodia
+                            Tour
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              River Cruising
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              Sep 2025 - Apr 2026 | 15 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Lotus Cruises
+                            </div>
+                          </div>
                         </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          Jan - Apr 2026 | 13 Nights
-                        </div>
-                        <div className="holiday-operator">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
-                          </noscript>
-                          Zambezi Queen Collection
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;3,299</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/search/?cruise_reference[]ASA2229"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
                         </div>
                       </div>
                     </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;5,599</span>
-                          <span className="pp"> pp</span>
-                        </div>
-                      </div>
+                    <div data-ga-index="1" className="item-cruise cruise-649622 slide-position-2">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
-                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]AFR2224"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="2" className="item-cruise cruise-717779 slide-position-3">
-                  <Link
-                    data-ga-element="cruise-offers-cover-link"
-                    className="test-cg cover-link"
-                    href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=RVR2223"
-                  ></Link>
-                  <div className="cruise-img-block">
-                    <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/Taste-of-Bordeaux-JUL-AUG24-Tile_6493491a494-4-1-768x525.jpg" />
-                    <div className="cruise-exclusive exclusive">
-                      <span>includes drinks with meals on board</span>
-                    </div>
-                    <span className="fave" data-favourite="717779">
-                      <i className="far fa-heart"></i>
-                    </span>
-                  </div>
-                  <div className="cruise-content-block">
-                    <div className="cruise-top-content">
-                      <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-                        Flavours of Bordeaux
-                      </div>
-                      <div className="cruise-meta-block">
-                        <div className="holiday-type">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
-                          </noscript>
-                          River Cruising
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=AFR2224"
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Zambezi-Header-Stay-Tile_608495b9a96-10-1_644817b7e72-8-1-1-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>Limited Availability</span>
                         </div>
-                        <div className="holiday-dates">
-                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          <noscript>
-                            <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                          </noscript>
-                          Apr - Aug 2025 | 7 Nights
+                        <span className="fave" data-favourite="649622">
+                          <i className="far fa-heart"></i>
+                        </span>
+                      </div>
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            Zambezi River Cruise, Game Safaris, Victoria Falls and Cape Town Stay
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              River Cruising
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              Jan - Apr 2026 | 13 Nights
+                            </div>
+                            <div className="holiday-operator">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
+                              </noscript>
+                              Zambezi Queen Collection
+                            </div>
+                          </div>
+                        </div>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;5,599</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/search/?cruise_reference[]AFR2224"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
                         </div>
                       </div>
                     </div>
-                    <div className="cruise-button-block">
-                      <div className="price-block">
-                        <div className="cruise-price">
-                          <span className="price-from">From</span>{' '}
-                          <span className="the-price">&pound;1,799</span>
-                          <span className="pp"> pp</span>
-                        </div>
-                      </div>
+                    <div data-ga-index="2" className="item-cruise cruise-717779 slide-position-3">
                       <Link
-                        data-ga-element="cruise-offers-single-related-cta"
-                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]RVR2223"
-                        className="default-cta"
-                      >
-                        Discover more{' '}
-                      </Link>
+                        data-ga-element="cruise-offers-cover-link"
+                        className="test-cg cover-link"
+                        href="https://www.imaginecruising.co.uk/search/?cruise_reference[]=RVR2223"
+                      ></Link>
+                      <div className="cruise-img-block">
+                        <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/Taste-of-Bordeaux-JUL-AUG24-Tile_6493491a494-4-1-768x525.jpg" />
+                        <div className="cruise-exclusive exclusive">
+                          <span>includes drinks with meals on board</span>
+                        </div>
+                        <span className="fave" data-favourite="717779">
+                          <i className="far fa-heart"></i>
+                        </span>
+                      </div>
+                      <div className="cruise-content-block">
+                        <div className="cruise-top-content">
+                          <div data-ga-element="cruise-offers-single-name" className="cruise-name">
+                            Flavours of Bordeaux
+                          </div>
+                          <div className="cruise-meta-block">
+                            <div className="holiday-type">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
+                              </noscript>
+                              River Cruising
+                            </div>
+                            <div className="holiday-dates">
+                              <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              <noscript>
+                                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
+                              </noscript>
+                              Apr - Aug 2025 | 7 Nights
+                            </div>
+                          </div>
+                        </div>
+                        <div className="cruise-button-block">
+                          <div className="price-block">
+                            <div className="cruise-price">
+                              <span className="price-from">From</span>{' '}
+                              <span className="the-price">&pound;1,799</span>
+                              <span className="pp"> pp</span>
+                            </div>
+                          </div>
+                          <Link
+                            data-ga-element="cruise-offers-single-related-cta"
+                            href="https://www.imaginecruising.co.uk/search/?cruise_reference[]RVR2223"
+                            className="default-cta"
+                          >
+                            Discover more{' '}
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-          <section
-            data-ga-index="11"
-            data-ga-context="cruiseline_offers"
-            className="cruise-lines-section builder-cruise-lines-block builder-cruise-lines-block-default slider-version"
-          >
-            <div className="inner">
-              <span className="cruise-lines-section-under-h3-p">
-                <h3 data-ga-element="cruiselines-block-title" className="">
-                  Cruise Line Deals
-                </h3>
-              </span>
-              <div className="wrapper cruises-block">
-                <div data-ga-index="0" className="item-grid item-cruise-line">
-                  <div
-                    style={{
-                      backgroundImage:
-                        'url(https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Line-Brand-Image-–-Cunard.jpg)',
-                    }}
-                    className="img-block background rocket-lazyload"
-                  ></div>
-                  <div className="meta-data-flex flex flex-direction-column">
-                    <div className="meta-data">
-                      <div data-ga-element="cruiseslines-block-name" className="cruise-line-name">
-                        Cunard Line
-                      </div>
+              </section>
+              <section
+                data-ga-index="11"
+                data-ga-context="cruiseline_offers"
+                className="cruise-lines-section builder-cruise-lines-block builder-cruise-lines-block-default slider-version"
+              >
+                <div className="inner">
+                  <span className="cruise-lines-section-under-h3-p">
+                    <h3 data-ga-element="cruiselines-block-title" className="">
+                      Cruise Line Deals
+                    </h3>
+                  </span>
+                  <div className="wrapper cruises-block">
+                    <div data-ga-index="0" className="item-grid item-cruise-line">
                       <div
-                        data-ga-element="cruiselines-block-desc"
-                        className="cruise-line-description"
-                      >
-                        The Cunard cruise line is synonymous with luxury cruising and boasts an
-                        unrivalled maritime heritage dating back almost two centuries.
+                        style={{
+                          backgroundImage:
+                            'url(https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Line-Brand-Image-–-Cunard.jpg)',
+                        }}
+                        className="img-block background rocket-lazyload"
+                      ></div>
+                      <div className="meta-data-flex flex flex-direction-column">
+                        <div className="meta-data">
+                          <div
+                            data-ga-element="cruiseslines-block-name"
+                            className="cruise-line-name"
+                          >
+                            Cunard Line
+                          </div>
+                          <div
+                            data-ga-element="cruiselines-block-desc"
+                            className="cruise-line-description"
+                          >
+                            The Cunard cruise line is synonymous with luxury cruising and boasts an
+                            unrivalled maritime heritage dating back almost two centuries.
+                          </div>
+                        </div>
+                        <div className="cruise-line-logo">
+                          <Link
+                            data-ga-element="cruiselines-block-logo-link"
+                            href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/"
+                          >
+                            <img
+                              width="300"
+                              height="65"
+                              alt="Cunard Line"
+                              src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/07/Logo_Cunard_Horizontal_FC_CrestOnLeft_h7wxdw-300x65.png"
+                            />
+                            <noscript>
+                              <img
+                                src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/07/Logo_Cunard_Horizontal_FC_CrestOnLeft_h7wxdw-300x65.png"
+                                width="300"
+                                height="65"
+                                alt="Cunard Line"
+                              />
+                            </noscript>
+                          </Link>
+                        </div>
+                        <div className="button-block">
+                          <Link
+                            data-ga-element="cruiselines-block-discover-link"
+                            href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/"
+                            className="button default-cta cruise-line-detail"
+                          >
+                            Discover More
+                          </Link>
+                          {/* <Link href="https://www.imaginecruising.co.uk/search/?cruiseline[]=Cunard+Line" className="button button-gold cruise-search">View Offers<i className="fa fa-chevron-right" aria-hidden="true"></i></Link> */}
+                        </div>
                       </div>
                     </div>
-                    <div className="cruise-line-logo">
-                      <Link
-                        data-ga-element="cruiselines-block-logo-link"
-                        href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/"
-                      >
-                        <img
-                          width="300"
-                          height="65"
-                          alt="Cunard Line"
-                          src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/07/Logo_Cunard_Horizontal_FC_CrestOnLeft_h7wxdw-300x65.png"
-                        />
-                        <noscript>
-                          <img
-                            src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/07/Logo_Cunard_Horizontal_FC_CrestOnLeft_h7wxdw-300x65.png"
-                            width="300"
-                            height="65"
-                            alt="Cunard Line"
-                          />
-                        </noscript>
-                      </Link>
-                    </div>
-                    <div className="button-block">
-                      <Link
-                        data-ga-element="cruiselines-block-discover-link"
-                        href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/"
-                        className="button default-cta cruise-line-detail"
-                      >
-                        Discover More
-                      </Link>
-                      {/* <Link href="https://www.imaginecruising.co.uk/search/?cruiseline[]=Cunard+Line" className="button button-gold cruise-search">View Offers<i className="fa fa-chevron-right" aria-hidden="true"></i></Link> */}
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="1" className="item-grid item-cruise-line">
-                  <div
-                    style={{
-                      backgroundImage:
-                        'url(https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/ss6198-scaled.jpg)',
-                    }}
-                    className="img-block background rocket-lazyload"
-                  ></div>
-                  <div className="meta-data-flex flex flex-direction-column">
-                    <div className="meta-data">
-                      <div data-ga-element="cruiseslines-block-name" className="cruise-line-name">
-                        Silversea
-                      </div>
+                    <div data-ga-index="1" className="item-grid item-cruise-line">
                       <div
-                        data-ga-element="cruiselines-block-desc"
-                        className="cruise-line-description"
-                      >
-                        Intimate, stylish ships, an all-inclusive basis and in-suite butlers to
-                        attend to your every desire – this is what it means to embark on a Silversea
-                        cruise.
+                        style={{
+                          backgroundImage:
+                            'url(https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/ss6198-scaled.jpg)',
+                        }}
+                        className="img-block background rocket-lazyload"
+                      ></div>
+                      <div className="meta-data-flex flex flex-direction-column">
+                        <div className="meta-data">
+                          <div
+                            data-ga-element="cruiseslines-block-name"
+                            className="cruise-line-name"
+                          >
+                            Silversea
+                          </div>
+                          <div
+                            data-ga-element="cruiselines-block-desc"
+                            className="cruise-line-description"
+                          >
+                            Intimate, stylish ships, an all-inclusive basis and in-suite butlers to
+                            attend to your every desire – this is what it means to embark on a
+                            Silversea cruise.
+                          </div>
+                        </div>
+                        <div className="cruise-line-logo">
+                          <Link
+                            data-ga-element="cruiselines-block-logo-link"
+                            href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/"
+                          >
+                            <img
+                              width="210"
+                              height="40"
+                              alt="Silversea"
+                              src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Silversea_ColourLogo.png"
+                            />
+                            <noscript>
+                              <img
+                                src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Silversea_ColourLogo.png"
+                                width="210"
+                                height="40"
+                                alt="Silversea"
+                              />
+                            </noscript>
+                          </Link>
+                        </div>
+                        <div className="button-block">
+                          <Link
+                            data-ga-element="cruiselines-block-discover-link"
+                            href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/"
+                            className="button default-cta cruise-line-detail"
+                          >
+                            Discover More
+                          </Link>
+                        </div>
                       </div>
                     </div>
-                    <div className="cruise-line-logo">
-                      <Link
-                        data-ga-element="cruiselines-block-logo-link"
-                        href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/"
-                      >
-                        <img
-                          width="210"
-                          height="40"
-                          alt="Silversea"
-                          src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Silversea_ColourLogo.png"
-                        />
-                        <noscript>
-                          <img
-                            src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Silversea_ColourLogo.png"
-                            width="210"
-                            height="40"
-                            alt="Silversea"
-                          />
-                        </noscript>
-                      </Link>
-                    </div>
-                    <div className="button-block">
-                      <Link
-                        data-ga-element="cruiselines-block-discover-link"
-                        href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/"
-                        className="button default-cta cruise-line-detail"
-                      >
-                        Discover More
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-index="2" className="item-grid item-cruise-line">
-                  <div
-                    style={{
-                      backgroundImage:
-                        'url(https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/Celebrity-Cruise-Line-Page.jpg)',
-                    }}
-                    className="img-block background rocket-lazyload"
-                  ></div>
-                  <div className="meta-data-flex flex flex-direction-column">
-                    <div className="meta-data">
-                      <div data-ga-element="cruiseslines-block-name" className="cruise-line-name">
-                        Celebrity Cruises
-                      </div>
+                    <div data-ga-index="2" className="item-grid item-cruise-line">
                       <div
-                        data-ga-element="cruiselines-block-desc"
-                        className="cruise-line-description"
-                      >
-                        Celebrity Cruises truly embodies “relaxed luxury”, having been providing
-                        unforgettable moments for guests since its establishment in Greece in 1988.
+                        style={{
+                          backgroundImage:
+                            'url(https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/Celebrity-Cruise-Line-Page.jpg)',
+                        }}
+                        className="img-block background rocket-lazyload"
+                      ></div>
+                      <div className="meta-data-flex flex flex-direction-column">
+                        <div className="meta-data">
+                          <div
+                            data-ga-element="cruiseslines-block-name"
+                            className="cruise-line-name"
+                          >
+                            Celebrity Cruises
+                          </div>
+                          <div
+                            data-ga-element="cruiselines-block-desc"
+                            className="cruise-line-description"
+                          >
+                            Celebrity Cruises truly embodies “relaxed luxury”, having been providing
+                            unforgettable moments for guests since its establishment in Greece in
+                            1988.
+                          </div>
+                        </div>
+                        <div className="cruise-line-logo">
+                          <Link
+                            data-ga-element="cruiselines-block-logo-link"
+                            href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/"
+                          >
+                            <img
+                              width="300"
+                              height="63"
+                              alt="Celebrity Cruises"
+                              src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/Celebrity20Cruises20Logo20Dec202021200-300x63.png"
+                            />
+                            <noscript>
+                              <img
+                                src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/Celebrity20Cruises20Logo20Dec202021200-300x63.png"
+                                width="300"
+                                height="63"
+                                alt="Celebrity Cruises"
+                              />
+                            </noscript>
+                          </Link>
+                        </div>
+                        <div className="button-block">
+                          <Link
+                            data-ga-element="cruiselines-block-discover-link"
+                            href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/"
+                            className="button default-cta cruise-line-detail"
+                          >
+                            Discover More
+                          </Link>
+                        </div>
                       </div>
-                    </div>
-                    <div className="cruise-line-logo">
-                      <Link
-                        data-ga-element="cruiselines-block-logo-link"
-                        href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/"
-                      >
-                        <img
-                          width="300"
-                          height="63"
-                          alt="Celebrity Cruises"
-                          src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/Celebrity20Cruises20Logo20Dec202021200-300x63.png"
-                        />
-                        <noscript>
-                          <img
-                            src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/Celebrity20Cruises20Logo20Dec202021200-300x63.png"
-                            width="300"
-                            height="63"
-                            alt="Celebrity Cruises"
-                          />
-                        </noscript>
-                      </Link>
-                    </div>
-                    <div className="button-block">
-                      <Link
-                        data-ga-element="cruiselines-block-discover-link"
-                        href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/"
-                        className="button default-cta cruise-line-detail"
-                      >
-                        Discover More
-                      </Link>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-          <section data-ga-index="12" id="home-categories" data-ga-context="landholidays_tiles">
-            <div className="inner"></div>
-          </section>
-        </div>
-        {/* <footer id="main-footer">
-          <div
-            data-ga-element="subscribe-toolbar"
-            id="subscribe-toolbar"
-            className="subscribe-toolbar-disrupter"
-          >
-            <div className="content-margin">
-              <p data-ga-element="toolbar-header" className="toolbar-header">
-                Latest Offers from Imagine Cruising
-              </p>
-              <p>
-                The world is your oyster. Subscribe to our newsletter to uncover hidden gems,
-                inspiring destinations, and insider tips from our knowledgeable team
-              </p>
-              <div className="signup-row flex">
-                <input
-                  onChange={(e) => console.log(e.target.value)}
-                  type="email"
-                  id="form-first-email"
-                  placeholder="Enter Email Address"
-                />
-                <button data-ga-element="subscribe-cta" className="footer-newsletter aqua-button">
-                  Subscribe
-                </button>
-              </div>
+              </section>
+              <section data-ga-index="12" id="home-categories" data-ga-context="landholidays_tiles">
+                <div className="inner"></div>
+              </section>
             </div>
           </div>
-          <div id="footer-lower">
-            <div
-              data-ga-element="mobile-footer-sticky"
-              id="footer-sticky-number"
-              className="mobile-only fixed"
-            >
-              <div className="flex">
-                <Link
-                  className="absolute-zero fsource__tel no-text"
-                  href="tel:0800 840 5801"
-                ></Link>
-                <p>
-                  Speak to a cruise expert{' '}
-                  <span style={{ color: '#0CC0CC' }}>We&#8217;re open</span>
-                </p>
-                <Link
-                  data-ga-element="sticky-footer-telephone-link"
-                  href="tel:0800 840 5801"
-                  className="phone__number fsource__tel"
-                >
-                  0800 840 5801
-                </Link>
-              </div>
-            </div>
-            <div className="content-margin center">
-              <div className="flex flex-wrap flex-direction-column">
-                <div
-                  data-ga-element="footer-links"
-                  id="footer-links"
-                  className="flex flex-align-start flex-justify-center desktop"
-                >
-                  <div
-                    data-ga-element="footer-link-column"
-                    data-ga-index="0"
-                    className="links-column   links-column-1"
-                  >
-                    <p className="links-title">Useful Links</p>
-                    <div className="footer-link-holder">
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="0"
-                        className="footer-link "
-                        aria-label="Home"
-                        href="https://www.imaginecruising.co.uk/"
-                      >
-                        Home
-                      </Link>
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="1"
-                        className="footer-link "
-                        aria-label="About us"
-                        href="https://www.imaginecruising.co.uk/about/"
-                      >
-                        About us
-                      </Link>
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="2"
-                        className="footer-link "
-                        aria-label="Holiday Extras"
-                        href="https://www.holidayextras.com/imaginecruising/hotels.html#"
-                      >
-                        Holiday Extras
-                      </Link>
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="3"
-                        className="footer-link "
-                        aria-label="FAQs"
-                        href="https://www.imaginecruising.co.uk/faqs/"
-                      >
-                        FAQs
-                      </Link>
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="4"
-                        className="footer-link "
-                        aria-label="Contact us"
-                        href="https://www.imaginecruising.co.uk/contact-us/"
-                      >
-                        Contact us
-                      </Link>
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="5"
-                        className="footer-link "
-                        aria-label="Careers"
-                        href="https://www.imaginecruising.co.uk/career-opportunities/"
-                      >
-                        Careers
-                      </Link>
-                    </div>
-                  </div>
-                  <div
-                    data-ga-element="footer-link-column"
-                    data-ga-index="1"
-                    className="links-column   links-column-2"
-                  >
-                    <p className="links-title">Legal</p>
-                    <div className="footer-link-holder">
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="0"
-                        className="footer-link "
-                        aria-label="Cookie Policy"
-                        href="https://www.imaginecruising.co.uk/cookie-policy/"
-                      >
-                        Cookie Policy
-                      </Link>
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="1"
-                        className="footer-link "
-                        aria-label="Group Tax Strategy"
-                        href="https://res.cloudinary.com/deh6eqgn0/image/upload/v1739896521/dnata-Emirates-UK-tax-strategy-_2024-25.pdf"
-                      >
-                        Group Tax Strategy
-                      </Link>
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="2"
-                        className="footer-link "
-                        aria-label="Modern Slavery Transparency Statement"
-                        href="https://res.cloudinary.com/deh6eqgn0/image/upload/v1734018241/Imagine-Modern-Slavery-Statement-FY23-24-SS_Rebrand_1.pdf"
-                      >
-                        Modern Slavery Transparency Statement
-                      </Link>
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="3"
-                        className="footer-link "
-                        aria-label="Anti-Slavery and Human Trafficking Policy"
-                        href="https://res.cloudinary.com/deh6eqgn0/images/v1689758498/Anti-Slavery_and_Human_Trafficking_Policy/Anti-Slavery_and_Human_Trafficking_Policy.pdf?_i=AA"
-                      >
-                        Anti-Slavery and Human Trafficking Policy
-                      </Link>
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="4"
-                        className="footer-link "
-                        aria-label="Privacy Notice"
-                        href="https://www.imaginecruising.co.uk/privacy-policy/"
-                      >
-                        Privacy Notice
-                      </Link>
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="5"
-                        className="footer-link "
-                        aria-label="Terms and Conditions"
-                        href="https://www.imaginecruising.co.uk/terms-conditions/"
-                      >
-                        Terms and Conditions
-                      </Link>
-                    </div>
-                  </div>
-                  <div
-                    data-ga-element="footer-link-column"
-                    data-ga-index="2"
-                    className="links-column   links-column-3"
-                  >
-                    <p className="links-title">Holiday Types</p>
-                    <div className="footer-link-holder">
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="0"
-                        className="footer-link "
-                        aria-label="Cruise & Touring"
-                        href="https://www.imaginecruising.co.uk/holiday-types/cruise-touring/"
-                      >
-                        Cruise & Touring
-                      </Link>
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="1"
-                        className="footer-link "
-                        aria-label="Cruise & Rail"
-                        href="https://www.imaginecruising.co.uk/holiday-types/cruise-rail/"
-                      >
-                        Cruise & Rail
-                      </Link>
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="2"
-                        className="footer-link "
-                        aria-label="Cruise & Stay"
-                        href="https://www.imaginecruising.co.uk/holiday-types/cruise-stay/"
-                      >
-                        Cruise & Stay
-                      </Link>
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="3"
-                        className="footer-link "
-                        aria-label="Cruise & Event"
-                        href="https://www.imaginecruising.co.uk/holiday-types/cruise-event/"
-                      >
-                        Cruise & Event
-                      </Link>
-                      <Link
-                        data-ga-element="footer-link"
-                        data-ga-index="4"
-                        className="footer-link "
-                        aria-label="River Cruising"
-                        href="https://www.imaginecruising.co.uk/river-cruise-collection/"
-                      >
-                        River Cruising
-                      </Link>
-                    </div>
-                  </div>
-                  <div data-ga-element="footer-link-column" className="links-column links-column-4">
-                    <div
-                      data-ga-element="trustpilot"
-                      className="trustpilot-widget ml-2 mt-2 first-wiget"
-                      data-locale="en-GB"
-                      data-template-id="5406e65db0d04a09e042d5fc"
-                      data-businessunit-id="58b690190000ff00059d93e2"
-                      data-style-height="20px"
-                      data-style-width="100px"
-                      data-theme="dark"
-                    >
-                      <Link
-                        href="https://uk.trustpilot.com/review/imaginecruising.co.uk"
-                        target="_blank"
-                        rel="noopener"
-                      ></Link>
-                    </div>
-                    <div
-                      data-ga-element="trustpilot"
-                      className="trustpilot-widget"
-                      data-locale="en-GB"
-                      data-template-id="5419b637fa0340045cd0c936"
-                      data-businessunit-id="58b690190000ff00059d93e2"
-                      data-style-height="28px"
-                      data-style-width="230px"
-                      data-theme="dark"
-                    >
-                      <Link
-                        href="https://uk.trustpilot.com/review/imaginecruising.co.uk"
-                        target="_blank"
-                        rel="noopener"
-                      ></Link>
-                    </div>
-                    <div className="footer-socials flex flex-justify-end flex-align-center">
-                      <Link
-                        data-ga-element="footer-social-link"
-                        data-ga-index="0"
-                        href="https://www.facebook.com/imaginecruising"
-                      >
-                        <i
-                          className="fa-classic fa-brands fa-square-facebook"
-                          aria-hidden="true"
-                        ></i>
-                      </Link>
-                      <Link
-                        data-ga-element="footer-social-link"
-                        data-ga-index="1"
-                        href="https://www.instagram.com/imaginecruising/"
-                      >
-                        <i
-                          className="fa-classic fa-brands fa-square-instagram"
-                          aria-hidden="true"
-                        ></i>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div data-ga-element="footer-copyright" id="footer-copyright">
-                  <p>
-                    Portland House, Bincknoll Lane, Interface Business Park, Royal Wootton Bassett,
-                    Wiltshire, SN4 8SY. Copyright © 2025 Imagine Cruising Ltd. All rights reserved.
-                    <br />
-                    Please check{' '}
-                    <Link
-                      href="https://travelaware.campaign.gov.uk/"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      travelaware.campaign.gov.uk
-                    </Link>{' '}
-                    regularly for updates ahead of travel, as the advice can change.
-                  </p>
-                  <p>
-                    <img
-                      decoding="async"
-                      alt="Abta Logo"
-                      src="https://res.cloudinary.com/deh6eqgn0/images/v1686302092/abta-logo_254747d9e1a/abta-logo_254747d9e1a.png?_i=AA"
-                    />
-                    <noscript>
-                      <img
-                        decoding="async"
-                        src="https://res.cloudinary.com/deh6eqgn0/images/v1686302092/abta-logo_254747d9e1a/abta-logo_254747d9e1a.png?_i=AA"
-                        alt="Abta Logo"
-                      />
-                    </noscript>
-                    <img
-                      decoding="async"
-                      alt="ATOL Logo"
-                      width="77"
-                      height="75"
-                      src="https://res.cloudinary.com/deh6eqgn0/images/v1686302084/atol-logo/atol-logo.png?_i=AA"
-                    />
-                    <noscript>
-                      <img
-                        decoding="async"
-                        src="https://res.cloudinary.com/deh6eqgn0/images/v1686302084/atol-logo/atol-logo.png?_i=AA"
-                        alt="ATOL Logo"
-                        width="77"
-                        height="75"
-                      />
-                    </noscript>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer> */}
+          <div id="content">{route && <Placeholder name="headless-main" rendering={route} />}</div>
+        </main>
+        <footer>
+          <div id="footer">{route && <Placeholder name="headless-footer" rendering={route} />}</div>
+        </footer>
       </div>
+
+      {/* <body className="home page-template-default page page-id-972"> */}
+
       <div id="search">
         {/* <form action="/" method="get">
           <input

@@ -52,7 +52,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           data-rocket-preload
           as="image"
           href="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/homepage-train-frame.png"
-          fetchPriority="high"
         />
         <meta
           name="viewport"
@@ -594,50 +593,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
             {/* header-left */}
             <div className="header-right">
               <div className="phone-title">
-                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/phone_icon.svg" />{' '}
+                <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/phone_icon.svg" />
                 Holiday Enquiries
               </div>
               <div data-ga-element="header-telephone" className="header-telephone">
-                <script id="header-fsources">
-                  {`
-                       window.addEventListener('DOMContentLoaded', function() {
-                        function updatePhoneNumber($fsource,$phoneNumber){
-                         jQuery.cookie("fsource", $fsource, {path: "/", expires: 30});
-                         jQuery.cookie("fsource_number", $phoneNumber, {path: "/", expires: 30});
-                             jQuery('.fsource__tel').attr('href','tel:'+$phoneNumber);
-                             jQuery('.fsource__tel:not(.no-text)').text($phoneNumber);
-                         }
-                          jQuery(document).ready(function(){
-                             searchparams = new URLSearchParams(window.location.search);
-                             if (searchparams.has('fsource')){
-                                 getFsource = searchparams.get('fsource');
-                                 siteURL = window.location.protocol + "//" + window.location.hostname;
-                                 jQuery.ajax({
-                                     type:"GET",
-                                     url: siteURL+"/fsource.php?fsource="+getFsource,
-                                     success: function(data){
-                                         if(data){
-                                             var fsource = data.fsource;
-                                             var phoneNumber = data.phone_number;
-                                             updatePhoneNumber(fsource,phoneNumber);
-                                         } else {
-                                             $defaultNum = jQuery('.header-telephone a').data('default');
-                                             jQuery('.fsource__tel').attr('href','tel:'+$defaultNum);
-                                             jQuery('.fsource__tel:not(.no-text)').text($defaultNum);
-                                         }
-                                     }
-                                 });
-                             } else if(typeof jQuery.cookie('fsource_number') != 'undefined' && typeof jQuery.cookie('fsource') != 'undefined'){
-                                 updatePhoneNumber(jQuery.cookie('fsource'),jQuery.cookie('fsource_number'));
-                             } else {
-                                 $defaultNum = jQuery('.header-telephone a').data('default');
-                                 jQuery('.fsource__tel').attr('href','tel:'+$defaultNum);
-                                 jQuery('.fsource__tel:not(.no-text)').text($defaultNum);
-                             }
-                         });
-                        });
-                        `}
-                </script>
                 <Link
                   className="fsource__tel"
                   href=""

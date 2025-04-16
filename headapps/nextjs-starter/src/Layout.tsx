@@ -562,9 +562,8 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     <img
                       id="dark-logo--image"
                       className=""
-                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                       alt="Imagine Cruising"
-                      data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/logos/black-white-no-reg.png"
+                      src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/logos/black-white-no-reg.png"
                     />
                     <noscript>
                       <img
@@ -695,10 +694,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-touring/">
                         <div className="child-name">
                           <span>Cruise & Touring</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Touring.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Touring.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Touring.jpg" />
                           </noscript>
@@ -709,10 +705,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-rail/">
                         <div className="child-name">
                           <span>Cruise & Rail</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-1.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-1.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-1.jpg" />
                           </noscript>
@@ -723,10 +716,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-stay/">
                         <div className="child-name">
                           <span>Cruise & Stay</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-OCo-1-1-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-OCo-1-1-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-OCo-1-1-300x158.jpg" />
                           </noscript>
@@ -737,10 +727,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-event/">
                         <div className="child-name">
                           <span>Cruise & Event</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Event-300x136.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Event-300x136.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Event-300x136.jpg" />
                           </noscript>
@@ -751,10 +738,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
                         <div className="child-name">
                           <span>Cruise from the UK</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" />
                           </noscript>
@@ -786,10 +770,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/cruise-lines/azamara/">
                         <div className="child-name">
                           <span>Azamara</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Azamara-OCo-1-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Azamara-OCo-1-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Azamara-OCo-1-300x158.jpg" />
                           </noscript>
@@ -800,10 +781,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/">
                         <div className="child-name">
                           <span>Celebrity </span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Celebrity-OCo-1-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Celebrity-OCo-1-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Celebrity-OCo-1-300x158.jpg" />
                           </noscript>
@@ -814,10 +792,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/">
                         <div className="child-name">
                           <span>Cunard</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cunard-OCo-1-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cunard-OCo-1-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cunard-OCo-1-300x158.jpg" />
                           </noscript>
@@ -828,10 +803,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/cruise-lines/holland-america-line/">
                         <div className="child-name">
                           <span>Holland America Line</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-HAL-OCo-1-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-HAL-OCo-1-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-HAL-OCo-1-300x158.jpg" />
                           </noscript>
@@ -842,10 +814,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/cruise-lines/po-cruises/">
                         <div className="child-name">
                           <span>P&O</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-PO-OCo-1-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-PO-OCo-1-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-PO-OCo-1-300x158.jpg" />
                           </noscript>
@@ -856,10 +825,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/cruise-lines/princess-cruises/">
                         <div className="child-name">
                           <span>Princess</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Princess-OCo-1-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Princess-OCo-1-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Princess-OCo-1-300x158.jpg" />
                           </noscript>
@@ -870,10 +836,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/">
                         <div className="child-name">
                           <span>Silversea</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Silversea-1-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Silversea-1-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Silversea-1-300x158.jpg" />
                           </noscript>
@@ -884,10 +847,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/cruise-lines/">
                         <div className="child-name">
                           <span>View all </span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-Line-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-Line-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-Line-300x158.jpg" />
                           </noscript>
@@ -909,10 +869,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/destinations/africa/">
                         <div className="child-name">
                           <span>Africa</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Africa.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Africa.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Africa.jpg" />
                           </noscript>
@@ -923,10 +880,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/destinations/asia/">
                         <div className="child-name">
                           <span>Asia</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Asia-nav-images-mobile-desktop-300x158-Destination.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Asia-nav-images-mobile-desktop-300x158-Destination.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Asia-nav-images-mobile-desktop-300x158-Destination.jpg" />
                           </noscript>
@@ -937,10 +891,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/australia-and-new-zealand/">
                         <div className="child-name">
                           <span>Australia & New Zealand</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Australia-nav-images-mobile-desktop-300x158-Destination-OCo-1.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Australia-nav-images-mobile-desktop-300x158-Destination-OCo-1.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Australia-nav-images-mobile-desktop-300x158-Destination-OCo-1.jpg" />
                           </noscript>
@@ -951,10 +902,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/destinations/caribbean/">
                         <div className="child-name">
                           <span>Caribbean</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Caribbean-nav-images-mobile-desktop-300x158-Destination-OCo-2.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Caribbean-nav-images-mobile-desktop-300x158-Destination-OCo-2.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Caribbean-nav-images-mobile-desktop-300x158-Destination-OCo-2.jpg" />
                           </noscript>
@@ -965,10 +913,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/destinations/europe/">
                         <div className="child-name">
                           <span>Europe</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Europe-nav-images-mobile-desktop-300x158-Destination-OCo-4-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Europe-nav-images-mobile-desktop-300x158-Destination-OCo-4-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Europe-nav-images-mobile-desktop-300x158-Destination-OCo-4-300x158.jpg" />
                           </noscript>
@@ -979,10 +924,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/destinations/indian-ocean/">
                         <div className="child-name">
                           <span>Indian Ocean</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Indian-Ocean-nav-images-mobile-desktop-300x158-Destination-OCo-5-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Indian-Ocean-nav-images-mobile-desktop-300x158-Destination-OCo-5-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Indian-Ocean-nav-images-mobile-desktop-300x158-Destination-OCo-5-300x158.jpg" />
                           </noscript>
@@ -993,10 +935,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/destinations/indian-subcontinent/">
                         <div className="child-name">
                           <span>Indian Subcontinent </span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Indian-sub-1-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Indian-sub-1-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Indian-sub-1-300x158.jpg" />
                           </noscript>
@@ -1007,10 +946,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/destinations/middle-east/">
                         <div className="child-name">
                           <span>Middle East</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Middle-East-nav-images-mobile-desktop-300x158-Destination-OCo-6-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Middle-East-nav-images-mobile-desktop-300x158-Destination-OCo-6-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Middle-East-nav-images-mobile-desktop-300x158-Destination-OCo-6-300x158.jpg" />
                           </noscript>
@@ -1021,10 +957,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/north-america/">
                         <div className="child-name">
                           <span>North America</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/North-America-1.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/North-America-1.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/North-America-1.jpg" />
                           </noscript>
@@ -1035,10 +968,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/destinations/south-america/">
                         <div className="child-name">
                           <span>South America</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/South-America-nav-images-mobile-desktop-300x158-Destination-OCo-7-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/South-America-nav-images-mobile-desktop-300x158-Destination-OCo-7-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/South-America-nav-images-mobile-desktop-300x158-Destination-OCo-7-300x158.jpg" />
                           </noscript>
@@ -1049,10 +979,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
                         <div className="child-name">
                           <span>Cruise from the UK</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" />
                           </noscript>
@@ -1063,10 +990,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <Link href="https://www.imaginecruising.co.uk/destinations/">
                         <div className="child-name">
                           <span>View all</span>
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg" />
                           </noscript>
@@ -1085,10 +1009,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     target="_blank"
                     rel="noopener"
                   >
-                    <img
-                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                      data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/passenger_icon_white.svg"
-                    />
+                    <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/passenger_icon_white.svg" />
                     <noscript>
                       <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/passenger_icon_white.svg" />
                     </noscript>
@@ -4691,10 +4612,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     title="Holiday Types"
                   >
                     <img
-                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                       title=""
                       alt=""
-                      data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/HolidayTypes_CategoryTileHP.jpg"
+                      src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/HolidayTypes_CategoryTileHP.jpg"
                     />
                     <noscript>
                       <img
@@ -4724,10 +4644,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     title="Discover more"
                   >
                     <img
-                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                       title=""
                       alt=""
-                      data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/April-Brochure-1.jpg"
+                      src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/April-Brochure-1.jpg"
                     />
                     <noscript>
                       <img
@@ -4757,10 +4676,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     title="Cruise Deals"
                   >
                     <img
-                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                       title=""
                       alt=""
-                      data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/cruise_deals_explore_card@2x-1_6474192de6d_647539e2550.jpg"
+                      src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/cruise_deals_explore_card@2x-1_6474192de6d_647539e2550.jpg"
                     />
                     <noscript>
                       <img
@@ -4790,10 +4708,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     title="Galapagos"
                   >
                     <img
-                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                       title=""
                       alt=""
-                      data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Galapogos-Homepage.jpg"
+                      src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Galapogos-Homepage.jpg"
                     />
                     <noscript>
                       <img
@@ -4822,10 +4739,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     title="Transcend"
                   >
                     <img
-                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                       title=""
                       alt=""
-                      data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/ADGP-Homepage.jpg"
+                      src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/ADGP-Homepage.jpg"
                     />
                     <noscript>
                       <img
@@ -4852,10 +4768,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     title="Cruise from the UK"
                   >
                     <img
-                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                       title=""
                       alt=""
-                      data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/shutterstock_2475796677-scaled.jpg"
+                      src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/shutterstock_2475796677-scaled.jpg"
                     />
                     <noscript>
                       <img
@@ -4907,30 +4822,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Touring
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           January 2026 | 30 - 32 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -4979,30 +4885,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Rail
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           14 February 2026 | 23 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -5051,30 +4948,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Touring
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           11 January 2026 | 30 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -5134,30 +5022,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Rail
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           20 June 2026 | 16 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -5205,30 +5084,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Rail
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           04 August 2026 | 26 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -5277,30 +5147,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Touring
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           12 March 2026 | 29 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -5360,30 +5221,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Touring
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           05 February 2026 | 27 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -5432,30 +5284,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Touring
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           Sep - Oct 2026 | 15 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -5503,30 +5346,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Touring
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           25 January 2026 | 23 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -5585,30 +5419,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Stay
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           13 March 2026 | 49 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -5656,30 +5481,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Stay
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           Nov 2025 - Feb 2026 | 15 - 17 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -5727,30 +5543,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Stay
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           27 December 2025 | 25 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -5809,30 +5616,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Event
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           02 November 2025 | 12 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -5880,30 +5678,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Event
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           03 May 2025 | 14 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -5951,30 +5740,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Event
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           27 June 2026 | 7 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -6033,30 +5813,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Stay
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           Oct 2025 - Apr 2026 | 14 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -6104,30 +5875,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Stay
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           Oct 2025 - Mar 2026 | 12 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -6175,30 +5937,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           Cruise &#038; Stay
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           Nov 2025 - Feb 2026 | 15 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -6257,30 +6010,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           River Cruising
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           Sep 2025 - Apr 2026 | 15 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -6328,30 +6072,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           River Cruising
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
                           Jan - Apr 2026 | 13 Nights
                         </div>
                         <div className="holiday-operator">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
                           </noscript>
@@ -6399,20 +6134,14 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div className="cruise-meta-block">
                         <div className="holiday-type">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/luggage.svg" />
                           </noscript>
                           River Cruising
                         </div>
                         <div className="holiday-dates">
-                          <img
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg"
-                          />
+                          <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           <noscript>
                             <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
                           </noscript>
@@ -6477,11 +6206,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/"
                       >
                         <img
-                          src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%2065'%3E%3C/svg%3E"
                           width="300"
                           height="65"
                           alt="Cunard Line"
-                          data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/07/Logo_Cunard_Horizontal_FC_CrestOnLeft_h7wxdw-300x65.png"
+                          src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/07/Logo_Cunard_Horizontal_FC_CrestOnLeft_h7wxdw-300x65.png"
                         />
                         <noscript>
                           <img
@@ -6530,11 +6258,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/"
                       >
                         <img
-                          src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20210%2040'%3E%3C/svg%3E"
                           width="210"
                           height="40"
                           alt="Silversea"
-                          data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Silversea_ColourLogo.png"
+                          src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Silversea_ColourLogo.png"
                         />
                         <noscript>
                           <img
@@ -6581,11 +6308,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/"
                       >
                         <img
-                          src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%2063'%3E%3C/svg%3E"
                           width="300"
                           height="63"
                           alt="Celebrity Cruises"
-                          data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/Celebrity20Cruises20Logo20Dec202021200-300x63.png"
+                          src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/Celebrity20Cruises20Logo20Dec202021200-300x63.png"
                         />
                         <noscript>
                           <img
@@ -6923,9 +6649,8 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <p>
                     <img
                       decoding="async"
-                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
                       alt="Abta Logo"
-                      data-lazy-src="https://res.cloudinary.com/deh6eqgn0/images/v1686302092/abta-logo_254747d9e1a/abta-logo_254747d9e1a.png?_i=AA"
+                      src="https://res.cloudinary.com/deh6eqgn0/images/v1686302092/abta-logo_254747d9e1a/abta-logo_254747d9e1a.png?_i=AA"
                     />
                     <noscript>
                       <img
@@ -6936,11 +6661,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     </noscript>
                     <img
                       decoding="async"
-                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2077%2075'%3E%3C/svg%3E"
                       alt="ATOL Logo"
                       width="77"
                       height="75"
-                      data-lazy-src="https://res.cloudinary.com/deh6eqgn0/images/v1686302084/atol-logo/atol-logo.png?_i=AA"
+                      src="https://res.cloudinary.com/deh6eqgn0/images/v1686302084/atol-logo/atol-logo.png?_i=AA"
                     />
                     <noscript>
                       <img
@@ -6970,8 +6694,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         <div data-ga-element="mobile-nav-close" className="close">
           <img
             className=""
-            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-            data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/close-white.svg"
+            src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/close-white.svg"
           />
           <noscript>
             <img
@@ -7507,8 +7230,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
             <span data-ga-element="timed-popup-close" className="timed-close">
               <img
                 className="close-white"
-                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/close-white.svg"
+                src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/close-white.svg"
               />
               <noscript>
                 <img
@@ -7518,8 +7240,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               </noscript>
               <img
                 className="close-hover"
-                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
-                data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/close-gold.svg"
+                src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/close-gold.svg"
               />
               <noscript>
                 <img

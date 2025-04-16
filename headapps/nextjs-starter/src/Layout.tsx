@@ -1065,6 +1065,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   <div className="search-form-autocomplete-selected"></div>
                                   <div className="search-form-autocomplete-input">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       data-ga-element="search-form-autocomplete"
                                       id="cruiseappy-autocomplete"
                                       name="cruise_reference[]"
@@ -1107,6 +1108,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_0"
@@ -1124,6 +1126,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_1"
@@ -1141,6 +1144,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_2"
@@ -1158,6 +1162,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_3"
@@ -1175,6 +1180,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_4"
@@ -1192,6 +1198,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_5"
@@ -1209,6 +1216,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_6"
@@ -1226,6 +1234,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_7"
@@ -1243,6 +1252,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_8"
@@ -1260,6 +1270,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_9"
@@ -1277,6 +1288,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_10"
@@ -1295,6 +1307,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_11"
@@ -1313,6 +1326,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_12"
@@ -1331,6 +1345,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_13"
@@ -1350,6 +1365,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="destination[]"
                                       id="sf_destination_14"
@@ -1371,6 +1387,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                 <div className="search-options-container">
                                   <label htmlFor="sf_cruise_type_0" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="traveltype[]"
                                       id="sf_cruise_type_0"
@@ -1381,6 +1398,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruise_type_1" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="traveltype[]"
                                       id="sf_cruise_type_1"
@@ -1391,6 +1409,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruise_type_2" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="traveltype[]"
                                       id="sf_cruise_type_2"
@@ -1401,6 +1420,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruise_type_3" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="traveltype[]"
                                       id="sf_cruise_type_3"
@@ -1411,6 +1431,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruise_type_4" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="traveltype[]"
                                       id="sf_cruise_type_4"
@@ -1421,6 +1442,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruise_type_5" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="traveltype[]"
                                       id="sf_cruise_type_5"
@@ -1431,6 +1453,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruise_type_6" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="traveltype[]"
                                       id="sf_cruise_type_6"
@@ -1441,6 +1464,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruise_type_7" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="traveltype[]"
                                       id="sf_cruise_type_7"
@@ -1459,6 +1483,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                 <div className="search-options-container">
                                   <label htmlFor="sf_cruiseline_0" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_0"
@@ -1469,6 +1494,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_1" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_1"
@@ -1479,6 +1505,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_2" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_2"
@@ -1489,6 +1516,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_3" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_3"
@@ -1499,6 +1527,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_4" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_4"
@@ -1509,6 +1538,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_5" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_5"
@@ -1519,6 +1549,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_6" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_6"
@@ -1529,6 +1560,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_7" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_7"
@@ -1539,6 +1571,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_8" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_8"
@@ -1549,6 +1582,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_9" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_9"
@@ -1559,6 +1593,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_10" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_10"
@@ -1569,6 +1604,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_12" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_12"
@@ -1579,6 +1615,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_13" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_13"
@@ -1589,6 +1626,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_14" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_14"
@@ -1599,6 +1637,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_15" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_15"
@@ -1609,6 +1648,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_16" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_16"
@@ -1619,6 +1659,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_17" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_17"
@@ -1629,6 +1670,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_18" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_18"
@@ -1639,6 +1681,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_19" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_19"
@@ -1649,6 +1692,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_20" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_20"
@@ -1659,6 +1703,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_21" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_21"
@@ -1669,6 +1714,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_22" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_22"
@@ -1679,6 +1725,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_cruiseline_23" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="cruiseline[]"
                                       id="sf_cruiseline_23"
@@ -1712,6 +1759,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2025-04-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2025-04-01"
@@ -1722,6 +1770,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2025-05-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2025-05-01"
@@ -1732,6 +1781,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2025-06-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2025-06-01"
@@ -1742,6 +1792,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2025-07-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2025-07-01"
@@ -1752,6 +1803,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2025-08-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2025-08-01"
@@ -1762,6 +1814,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2025-09-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2025-09-01"
@@ -1772,6 +1825,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2025-10-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2025-10-01"
@@ -1782,6 +1836,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2025-11-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2025-11-01"
@@ -1792,6 +1847,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2025-12-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2025-12-01"
@@ -1807,6 +1863,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     <div className="month-group">
                                       <label htmlFor="sf_date_2026-01-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2026-01-01"
@@ -1817,6 +1874,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2026-02-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2026-02-01"
@@ -1827,6 +1885,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2026-03-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2026-03-01"
@@ -1837,6 +1896,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2026-04-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2026-04-01"
@@ -1847,6 +1907,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2026-05-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2026-05-01"
@@ -1857,6 +1918,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2026-06-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2026-06-01"
@@ -1867,6 +1929,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2026-07-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2026-07-01"
@@ -1877,6 +1940,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2026-08-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2026-08-01"
@@ -1887,6 +1951,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2026-09-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2026-09-01"
@@ -1897,6 +1962,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2026-10-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2026-10-01"
@@ -1907,6 +1973,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2026-11-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2026-11-01"
@@ -1917,6 +1984,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2026-12-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2026-12-01"
@@ -1932,6 +2000,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     <div className="month-group">
                                       <label htmlFor="sf_date_2027-01-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2027-01-01"
@@ -1942,6 +2011,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2027-02-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2027-02-01"
@@ -1952,6 +2022,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2027-03-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2027-03-01"
@@ -1962,6 +2033,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2027-04-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2027-04-01"
@@ -1972,6 +2044,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2027-05-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2027-05-01"
@@ -1982,6 +2055,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2027-06-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2027-06-01"
@@ -1992,6 +2066,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2027-07-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2027-07-01"
@@ -2002,6 +2077,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2027-08-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2027-08-01"
@@ -2012,6 +2088,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2027-09-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2027-09-01"
@@ -2022,6 +2099,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                       <label htmlFor="sf_date_2027-10-01" className="">
                                         <input
+                                          onChange={(e) => console.log(e.target.value)}
                                           type="checkbox"
                                           name=""
                                           id="sf_date_2027-10-01"
@@ -2040,8 +2118,20 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                       </label>
                                     </div>
                                   </div>
-                                  <input type="hidden" name="date_from" value="" readOnly />
-                                  <input type="hidden" name="date_to" value="" readOnly />
+                                  <input
+                                    onChange={(e) => console.log(e.target.value)}
+                                    type="hidden"
+                                    name="date_from"
+                                    value=""
+                                    readOnly
+                                  />
+                                  <input
+                                    onChange={(e) => console.log(e.target.value)}
+                                    type="hidden"
+                                    name="date_to"
+                                    value=""
+                                    readOnly
+                                  />
                                 </div>
                               </div>
                               <div
@@ -2056,6 +2146,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="duration[]"
                                       id="sf_duration_0"
@@ -2070,6 +2161,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="duration[]"
                                       id="sf_duration_1"
@@ -2084,6 +2176,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="duration[]"
                                       id="sf_duration_2"
@@ -2098,6 +2191,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                     className=""
                                   >
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="duration[]"
                                       id="sf_duration_3"
@@ -2117,6 +2211,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                 <div className="search-options-container">
                                   <label htmlFor="sf_depart_port_0" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_0"
@@ -2127,6 +2222,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_1" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_1"
@@ -2137,6 +2233,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_2" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_2"
@@ -2147,6 +2244,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_3" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_3"
@@ -2157,6 +2255,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_4" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_4"
@@ -2167,6 +2266,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_5" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_5"
@@ -2177,6 +2277,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_6" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_6"
@@ -2187,6 +2288,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_7" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_7"
@@ -2197,6 +2299,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_8" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_8"
@@ -2207,6 +2310,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_9" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_9"
@@ -2217,6 +2321,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_10" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_10"
@@ -2227,6 +2332,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_11" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_11"
@@ -2237,6 +2343,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_12" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_12"
@@ -2247,6 +2354,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_13" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_13"
@@ -2257,6 +2365,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_14" className="">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_14"
@@ -2267,6 +2376,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_15" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_15"
@@ -2277,6 +2387,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_16" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_16"
@@ -2287,6 +2398,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_17" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_17"
@@ -2297,6 +2409,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_18" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_18"
@@ -2307,6 +2420,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_19" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_19"
@@ -2317,6 +2431,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_20" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_20"
@@ -2327,6 +2442,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_21" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_21"
@@ -2337,6 +2453,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_22" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_22"
@@ -2347,6 +2464,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_23" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_23"
@@ -2357,6 +2475,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_24" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_24"
@@ -2367,6 +2486,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_25" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_25"
@@ -2377,6 +2497,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_26" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_26"
@@ -2387,6 +2508,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_27" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_27"
@@ -2397,6 +2519,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_28" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_28"
@@ -2407,6 +2530,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_29" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_29"
@@ -2417,6 +2541,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_30" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_30"
@@ -2427,6 +2552,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_31" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_31"
@@ -2437,6 +2563,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_32" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_32"
@@ -2447,6 +2574,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_33" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_33"
@@ -2457,6 +2585,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_34" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_34"
@@ -2467,6 +2596,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_35" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_35"
@@ -2477,6 +2607,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_36" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_36"
@@ -2487,6 +2618,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_37" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_37"
@@ -2497,6 +2629,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_38" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_38"
@@ -2507,6 +2640,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_39" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_39"
@@ -2517,6 +2651,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_40" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_40"
@@ -2527,6 +2662,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_41" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_41"
@@ -2537,6 +2673,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_42" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_42"
@@ -2547,6 +2684,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_43" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_43"
@@ -2557,6 +2695,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_44" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_44"
@@ -2567,6 +2706,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_45" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_45"
@@ -2577,6 +2717,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_46" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_46"
@@ -2587,6 +2728,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_47" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_47"
@@ -2597,6 +2739,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_48" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_48"
@@ -2607,6 +2750,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_49" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_49"
@@ -2617,6 +2761,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_50" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_50"
@@ -2627,6 +2772,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_51" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_51"
@@ -2637,6 +2783,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_52" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_52"
@@ -2647,6 +2794,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_53" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_53"
@@ -2657,6 +2805,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_54" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_54"
@@ -2667,6 +2816,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_55" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_55"
@@ -2677,6 +2827,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_56" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_56"
@@ -2687,6 +2838,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_57" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_57"
@@ -2697,6 +2849,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_58" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_58"
@@ -2707,6 +2860,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_59" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_59"
@@ -2717,6 +2871,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_60" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_60"
@@ -2727,6 +2882,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_61" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_61"
@@ -2737,6 +2893,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_62" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_62"
@@ -2747,6 +2904,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_63" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_63"
@@ -2757,6 +2915,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_64" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_64"
@@ -2767,6 +2926,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_65" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_65"
@@ -2777,6 +2937,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_66" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_66"
@@ -2787,6 +2948,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_67" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_67"
@@ -2797,6 +2959,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_68" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_68"
@@ -2807,6 +2970,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_69" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_69"
@@ -2817,6 +2981,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_70" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_70"
@@ -2827,6 +2992,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_71" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_71"
@@ -2837,6 +3003,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_72" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_72"
@@ -2847,6 +3014,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_73" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_73"
@@ -2857,6 +3025,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_74" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_74"
@@ -2867,6 +3036,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_75" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_75"
@@ -2877,6 +3047,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_76" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_76"
@@ -2887,6 +3058,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_77" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_77"
@@ -2897,6 +3069,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_78" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_78"
@@ -2907,6 +3080,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_79" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_79"
@@ -2917,6 +3091,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_80" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_80"
@@ -2927,6 +3102,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_81" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_81"
@@ -2937,6 +3113,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_82" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_82"
@@ -2947,6 +3124,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_83" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_83"
@@ -2957,6 +3135,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_84" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_84"
@@ -2967,6 +3146,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_85" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_85"
@@ -2977,6 +3157,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_86" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_86"
@@ -2987,6 +3168,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_87" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_87"
@@ -2997,6 +3179,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_88" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_88"
@@ -3007,6 +3190,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_89" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_89"
@@ -3017,6 +3201,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_90" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_90"
@@ -3027,6 +3212,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_91" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_91"
@@ -3037,6 +3223,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_92" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_92"
@@ -3047,6 +3234,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_93" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_93"
@@ -3057,6 +3245,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_94" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_94"
@@ -3067,6 +3256,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_95" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_95"
@@ -3077,6 +3267,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_96" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_96"
@@ -3087,6 +3278,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_97" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_97"
@@ -3097,6 +3289,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_98" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_98"
@@ -3107,6 +3300,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_99" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_99"
@@ -3117,6 +3311,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_100" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_100"
@@ -3127,6 +3322,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_101" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_101"
@@ -3137,6 +3333,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_102" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_102"
@@ -3147,6 +3344,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_103" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_103"
@@ -3157,6 +3355,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_104" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_104"
@@ -3167,6 +3366,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_105" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_105"
@@ -3177,6 +3377,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_106" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_106"
@@ -3187,6 +3388,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_107" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_107"
@@ -3197,6 +3399,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_108" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_108"
@@ -3207,6 +3410,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_109" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_109"
@@ -3217,6 +3421,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_110" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_110"
@@ -3227,6 +3432,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_111" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_111"
@@ -3237,6 +3443,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_112" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_112"
@@ -3247,6 +3454,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_113" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_113"
@@ -3257,6 +3465,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_114" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_114"
@@ -3267,6 +3476,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_115" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_115"
@@ -3277,6 +3487,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_116" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_116"
@@ -3287,6 +3498,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_117" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_117"
@@ -3297,6 +3509,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_118" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_118"
@@ -3307,6 +3520,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_119" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_119"
@@ -3317,6 +3531,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_120" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_120"
@@ -3327,6 +3542,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_121" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_121"
@@ -3337,6 +3553,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_122" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_122"
@@ -3347,6 +3564,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_123" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_123"
@@ -3357,6 +3575,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_124" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_124"
@@ -3367,6 +3586,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_125" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_125"
@@ -3377,6 +3597,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_126" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_126"
@@ -3387,6 +3608,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_127" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_127"
@@ -3397,6 +3619,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_128" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_128"
@@ -3407,6 +3630,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_129" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_129"
@@ -3417,6 +3641,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_130" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_130"
@@ -3427,6 +3652,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_131" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_131"
@@ -3437,6 +3663,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_132" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_132"
@@ -3447,6 +3674,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_133" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_133"
@@ -3457,6 +3685,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_134" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_134"
@@ -3467,6 +3696,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_135" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_135"
@@ -3477,6 +3707,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_136" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_136"
@@ -3487,6 +3718,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_137" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_137"
@@ -3497,6 +3729,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_138" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_138"
@@ -3507,6 +3740,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_139" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_139"
@@ -3517,6 +3751,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_140" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_140"
@@ -3527,6 +3762,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_141" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_141"
@@ -3537,6 +3773,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_142" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_142"
@@ -3547,6 +3784,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_143" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_143"
@@ -3557,6 +3795,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_144" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_144"
@@ -3567,6 +3806,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_145" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_145"
@@ -3577,6 +3817,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_146" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_146"
@@ -3587,6 +3828,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_147" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_147"
@@ -3597,6 +3839,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_148" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_148"
@@ -3607,6 +3850,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_149" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_149"
@@ -3617,6 +3861,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_150" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_150"
@@ -3627,6 +3872,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_151" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_151"
@@ -3637,6 +3883,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_152" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_152"
@@ -3647,6 +3894,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_153" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_153"
@@ -3657,6 +3905,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_154" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_154"
@@ -3667,6 +3916,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_155" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_155"
@@ -3677,6 +3927,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_156" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_156"
@@ -3687,6 +3938,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_157" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_157"
@@ -3697,6 +3949,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_158" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_158"
@@ -3707,6 +3960,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_159" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_159"
@@ -3717,6 +3971,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_160" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_160"
@@ -3727,6 +3982,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_161" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_161"
@@ -3737,6 +3993,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_162" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_162"
@@ -3747,6 +4004,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_163" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_163"
@@ -3757,6 +4015,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_164" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_164"
@@ -3767,6 +4026,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_165" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_165"
@@ -3777,6 +4037,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_166" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_166"
@@ -3787,6 +4048,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_167" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_167"
@@ -3797,6 +4059,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_168" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_168"
@@ -3807,6 +4070,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_169" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_169"
@@ -3817,6 +4081,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_170" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_170"
@@ -3827,6 +4092,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_171" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_171"
@@ -3837,6 +4103,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_172" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_172"
@@ -3847,6 +4114,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_173" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_173"
@@ -3857,6 +4125,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_174" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_174"
@@ -3867,6 +4136,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_175" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_175"
@@ -3877,6 +4147,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_176" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_176"
@@ -3887,6 +4158,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_177" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_177"
@@ -3897,6 +4169,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_178" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_178"
@@ -3907,6 +4180,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_179" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_179"
@@ -3917,6 +4191,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_180" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_180"
@@ -3927,6 +4202,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_181" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_181"
@@ -3937,6 +4213,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_182" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_182"
@@ -3947,6 +4224,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_183" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_183"
@@ -3957,6 +4235,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_184" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_184"
@@ -3967,6 +4246,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_185" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_185"
@@ -3977,6 +4257,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_186" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_186"
@@ -3987,6 +4268,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_187" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_187"
@@ -3997,6 +4279,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_188" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_188"
@@ -4007,6 +4290,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_189" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_189"
@@ -4017,6 +4301,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_190" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_190"
@@ -4027,6 +4312,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_191" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_191"
@@ -4037,6 +4323,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_192" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_192"
@@ -4047,6 +4334,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_193" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_193"
@@ -4057,6 +4345,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_194" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_194"
@@ -4067,6 +4356,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_195" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_195"
@@ -4077,6 +4367,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_196" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_196"
@@ -4087,6 +4378,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_197" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_197"
@@ -4097,6 +4389,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_198" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_198"
@@ -4107,6 +4400,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_199" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_199"
@@ -4117,6 +4411,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_200" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_200"
@@ -4127,6 +4422,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_201" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_201"
@@ -4137,6 +4433,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_202" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_202"
@@ -4147,6 +4444,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_203" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_203"
@@ -4157,6 +4455,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_204" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_204"
@@ -4167,6 +4466,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_205" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_205"
@@ -4177,6 +4477,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_206" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_206"
@@ -4187,6 +4488,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_207" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_207"
@@ -4197,6 +4499,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_208" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_208"
@@ -4207,6 +4510,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_209" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_209"
@@ -4217,6 +4521,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_210" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_210"
@@ -4227,6 +4532,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_211" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_211"
@@ -4237,6 +4543,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_212" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_212"
@@ -4247,6 +4554,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_213" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_213"
@@ -4257,6 +4565,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_214" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_214"
@@ -4267,6 +4576,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_215" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_215"
@@ -4277,6 +4587,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_216" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_216"
@@ -4287,6 +4598,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_217" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_217"
@@ -4297,6 +4609,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_218" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_218"
@@ -4307,6 +4620,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_219" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_219"
@@ -4317,6 +4631,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_220" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_220"
@@ -4327,6 +4642,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_221" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_221"
@@ -4337,6 +4653,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_222" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_222"
@@ -4347,6 +4664,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_223" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_223"
@@ -4357,6 +4675,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_224" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_224"
@@ -4367,6 +4686,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_225" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_225"
@@ -4377,6 +4697,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_226" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_226"
@@ -4387,6 +4708,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_227" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_227"
@@ -4397,6 +4719,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_228" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_228"
@@ -4407,6 +4730,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_229" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_229"
@@ -4417,6 +4741,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_230" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_230"
@@ -4427,6 +4752,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_231" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_231"
@@ -4437,6 +4763,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_232" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_232"
@@ -4447,6 +4774,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_233" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_233"
@@ -4457,6 +4785,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_234" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_234"
@@ -4467,6 +4796,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_235" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_235"
@@ -4477,6 +4807,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_236" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_236"
@@ -4487,6 +4818,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_237" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_237"
@@ -4497,6 +4829,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_238" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_238"
@@ -4507,6 +4840,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_239" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_239"
@@ -4517,6 +4851,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_240" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_240"
@@ -4527,6 +4862,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </label>
                                   <label htmlFor="sf_depart_port_241" className="more">
                                     <input
+                                      onChange={(e) => console.log(e.target.value)}
                                       type="checkbox"
                                       name="departport[]"
                                       id="sf_depart_port_241"
@@ -6315,7 +6651,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 inspiring destinations, and insider tips from our knowledgeable team
               </p>
               <div className="signup-row flex">
-                <input type="email" id="form-first-email" placeholder="Enter Email Address" />
+                <input
+                  onChange={(e) => console.log(e.target.value)}
+                  type="email"
+                  id="form-first-email"
+                  placeholder="Enter Email Address"
+                />
                 <button data-ga-element="subscribe-cta" className="footer-newsletter aqua-button">
                   Subscribe
                 </button>
@@ -6643,7 +6984,13 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
       </div>
       <div id="search">
         <form action="/" method="get">
-          <input type="text" name="s" value="" placeholder="Search" />
+          <input
+            onChange={(e) => console.log(e.target.value)}
+            type="text"
+            name="s"
+            value=""
+            placeholder="Search"
+          />
           <button type="submit">
             <i className="fa fa-search"></i>
           </button>
@@ -7213,28 +7560,86 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               method="post"
               id="frm1"
             >
-              <input type="hidden" name="accName" value="Imagine_Cruising_UK" />
-              <input type="hidden" name="listName" value="ImagineCruising_UK" />
               <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="accName"
+                value="Imagine_Cruising_UK"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="listName"
+                value="ImagineCruising_UK"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
                 type="hidden"
                 name="successUrl"
                 value="https://imaginecruising.co.uk/thank-you-for-signing-up"
               />
-              <input type="hidden" name="errorUrl" value="" />
-              <input type="hidden" name="DMDtask" value="subscribe" />
-              <input type="hidden" name="contactsource1" value="Web" />
-              <input type="hidden" name="contactsource2" value="IC Web" />
-              <input className="fsourceField" type="hidden" name="webfsource" value="" />
-              <input type="hidden" name="looker" value="Yes" />
-              <input type="hidden" name="bau" value="Yes" />
-              <input type="hidden" name="testfield" value="A" />
-              <input type="hidden" name="doubleOptin" value="false" />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="errorUrl"
+                value=""
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="DMDtask"
+                value="subscribe"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="contactsource1"
+                value="Web"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="contactsource2"
+                value="IC Web"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                className="fsourceField"
+                type="hidden"
+                name="webfsource"
+                value=""
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="looker"
+                value="Yes"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="bau"
+                value="Yes"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="testfield"
+                value="A"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="doubleOptin"
+                value="false"
+              />
               <p className="standard-text">
                 Sign up to our mailing list and stay
                 <br className="desktop-only" /> up-to date with our latest offers.
                 <br />
               </p>
               <input
+                onChange={(e) => console.log(e.target.value)}
                 data-ga-element="popup-email-field"
                 id="popup-email"
                 className="verify-email"
@@ -7244,6 +7649,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               />
               <br />
               <input
+                onChange={(e) => console.log(e.target.value)}
                 data-ga-element="popup-firstname-field"
                 type="text"
                 name="FirstName"
@@ -7251,24 +7657,85 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               />
               <br />
               <input
+                onChange={(e) => console.log(e.target.value)}
                 data-ga-element="popup-surname-field"
                 type="text"
                 name="LastName"
                 placeholder="Last Name"
               />
               <br />
-              <input type="hidden" name="EngagedContact" value="Yes" />
-              <input type="hidden" name="ContactSource1" value="Web" />
-              <input type="hidden" name="AlwaysExclude" value="No" />
-              <input type="hidden" name="Pure_Parallel_Run_Flag" value="N" />
-              <input type="hidden" name="InterestedInCruise" value="Yes" />
-              <input type="hidden" name="InterestedInHoliday" value="Yes" />
-              <input type="hidden" name="ContactSource2" value="IC Web" />
-              <input type="hidden" name="WebSignup_AB" value="popup_original" />
-              <input type="hidden" name=" AB_April2023" value="A" />
-              <input type="hidden" name="InterestedInSailcationNov25" value="N" />
-              <input type="hidden" name="InterestedInF1" value="N" />
-              <input type="hidden" name="InterestedInMusic" value="N" />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="EngagedContact"
+                value="Yes"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="ContactSource1"
+                value="Web"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="AlwaysExclude"
+                value="No"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="Pure_Parallel_Run_Flag"
+                value="N"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="InterestedInCruise"
+                value="Yes"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="InterestedInHoliday"
+                value="Yes"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="ContactSource2"
+                value="IC Web"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="WebSignup_AB"
+                value="popup_original"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name=" AB_April2023"
+                value="A"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="InterestedInSailcationNov25"
+                value="N"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="InterestedInF1"
+                value="N"
+              />
+              <input
+                onChange={(e) => console.log(e.target.value)}
+                type="hidden"
+                name="InterestedInMusic"
+                value="N"
+              />
               <script src="https://www.google.com/recaptcha/api.js" />
               <div
                 className="g-recaptcha"
@@ -7276,6 +7743,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               ></div>
               <div className="popup-form-buttons">
                 <input
+                  onChange={(e) => console.log(e.target.value)}
                   data-ga-element="popup-form-submit-button"
                   className="orange-button "
                   type="submit"

@@ -1052,7 +1052,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </div>
                       <div data-ga-element="holiday-search-form">
                         <div id="search-form">
-                          <form action="https://www.imaginecruising.co.uk/search/" method="get">
+                          {/* <form action="https://www.imaginecruising.co.uk/search/" method="get">
                             <div id="search-form-container">
                               <div
                                 className="search-form-autocomplete"
@@ -4876,7 +4876,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               </button>
                             </div>
                             <div id="search-form-overlay"></div>
-                          </form>
+                          </form> */}
                         </div>
                       </div>
                     </div>
@@ -6643,7 +6643,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
             <div className="inner"></div>
           </section>
         </div>
-        <footer id="main-footer">
+        {/* <footer id="main-footer">
           <div
             data-ga-element="subscribe-toolbar"
             id="subscribe-toolbar"
@@ -6987,10 +6987,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               </div>
             </div>
           </div>
-        </footer>
+        </footer> */}
       </div>
       <div id="search">
-        <form action="/" method="get">
+        {/* <form action="/" method="get">
           <input
             onChange={(e) => console.log(e.target.value)}
             type="text"
@@ -7001,7 +7001,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           <button type="submit">
             <i className="fa fa-search"></i>
           </button>
-        </form>
+        </form> */}
       </div>
       <div data-ga-element="mobile-navigation" id="mobile-navigation">
         <div data-ga-element="mobile-nav-close" className="close">
@@ -7667,7 +7667,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 />
               </noscript>
             </span>
-            <form
+            {/* <form
               action="https://mp.imaginecruising.co.uk/x/plugin/?pName=subscribe&MIDRID=S7Y1AgAA82&pLang=en&Z=-521571858"
               method="post"
               id="frm1"
@@ -7870,32 +7870,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 and{' '}
                 <Link href="https://www.imaginecruising.co.uk/privacy-policy">Privacy Policy</Link>
               </p>
-              {/* <script type="rocketlazyloadscript">
-                {`
-                     window.VerifaliaWidgetConfig = {
-                         inputBindings: {
-                             appendHiddenFields: true,
-                             autoWireup: true,
-                             debounceTime: 1500,
-                             squiggles: false,
-                             selector: '//input[@id="popup-email"]',
-                             styling: true
-                         }
-                     };
-                     `}
-              </script> */}
               <div style={{ display: 'none' }}>
                 Powered by Verifalia <Link href="https://verifalia.com/">email verification</Link>
               </div>
-              {/* <script
-                type="rocketlazyloadscript"
-                data-minify="1"
-                defer
-                data-rocket-src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/verifalia-widget@1.9.0/dist/verifalia-widget.js?ver=1744621466"
-                data-verifalia-appkey="5ae7fd39a4ca4e37a6c0679d29b00d7c"
-                crossOrigin="anonymous"
-              /> */}
-            </form>
+            </form> */}
           </div>
         </div>
       </div>

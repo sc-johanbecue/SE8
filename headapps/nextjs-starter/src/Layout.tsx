@@ -2,6 +2,7 @@
  * This Layout is needed for Starter Kit.
  */
 import React from 'react';
+import Link from 'next/link';
 import Head from 'next/head';
 import { Placeholder, LayoutServiceData, Field, HTMLLink } from '@sitecore-jss/sitecore-jss-nextjs';
 import config from 'temp/config';
@@ -58,17 +59,17 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                <div className="header-left">
                   <div className="header-logo-cont">
                      <div data-ga-element="header-logo" id="logo">
-                        <a href="https://www.imaginecruising.co.uk" title="Imagine Cruising">
+                        <Link href="https://www.imaginecruising.co.uk" title="Imagine Cruising">
                            <img id="dark-logo--image" className="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Imagine Cruising" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/logos/black-white-no-reg.png" />
                            <noscript><img id="dark-logo--image" className="" src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/logos/black-white-no-reg.png" alt="Imagine Cruising" /></noscript>
                            {/* <span className="visuallyhidden">Imagine Cruising</span> */}
-                        </a>
+                        </Link>
                      </div>
                      <div className="header-favourites">
                         <div className="favourites-top">
-                           <a className="favourites-count" href="/favourites/" data-favourites-count="0">
+                           <Link className="favourites-count" href="/favourites/" data-favourites-count="0">
                            <span>Favourites <i className="fa-regular fa-heart"></i></span>
-                           </a>
+                           </Link>
                         </div>
                      </div>
                   </div>
@@ -116,17 +117,17 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         });
                         `}
                      </script>
-                     <a className="fsource__tel" href="" data-default="0800 840 5801 "aria-label="Telephone"></a>
+                     <Link className="fsource__tel" href="" data-default="0800 840 5801 "aria-label="Telephone"></Link>
                   </div>
                   <div className="schedule">Mon - Sun: 9am - 8pm</div>
                </div>
                {/* header-right */}
                <div data-ga-element="mobile-nav-block" id="mobile-nav-block">
                   <div className="item-menu">
-                     <a className="fsource__tel no-text" href="tel:0800 840 5801" aria-label="Telephone"><img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/phone_icon.svg" /></a>
+                     <Link className="fsource__tel no-text" href="tel:0800 840 5801" aria-label="Telephone"><img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/phone_icon.svg" /></Link>
                   </div>
                   <div data-ga-element="mobile-logo" className="mobile-logo">
-                     <a href="https://www.imaginecruising.co.uk"><img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/logos/black-white-no-reg-mobile.png" /></a>
+                     <Link href="https://www.imaginecruising.co.uk"><img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/logos/black-white-no-reg-mobile.png" /></Link>
                   </div>
                   <div className="item-menu" id="mobile-navigation-control"><img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/hamburger_menu_icon.svg" /></div>
                </div>
@@ -135,266 +136,266 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                <nav className="header-nav">
                   <ul data-ga-element="header-nav-list" id="custom-nav" className="flex flex-justify-between flex-align-left">
                      <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="0">
-                        <a href="https://www.imaginecruising.co.uk/">Home</a>
+                        <Link href="https://www.imaginecruising.co.uk/">Home</Link>
                      </li>
                      <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="1">
-                        <a href="https://www.imaginecruising.co.uk/cruise-deals/">Cruise Deals</a>
+                        <Link href="https://www.imaginecruising.co.uk/cruise-deals/">Cruise Deals</Link>
                      </li>
                      <li data-ga-element="header-nav-list-item" className="top-level has-children" data-ga-index="2">
-                        <a href="https://www.imaginecruising.co.uk/holiday-types/">Holiday Types <i className="fa-solid fa-chevron-down"></i></a>
+                        <Link href="https://www.imaginecruising.co.uk/holiday-types/">Holiday Types <i className="fa-solid fa-chevron-down"></i></Link>
                         <ul className="custom-sub-nav">
                            <li className="sub-page" data-ga-index="0">
-                              <a href="https://www.imaginecruising.co.uk/holiday-types/cruise-touring/">
+                              <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-touring/">
                                  <div className="child-name">
                                     <span>Cruise & Touring</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Touring.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Touring.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="1">
-                              <a href="https://www.imaginecruising.co.uk/holiday-types/cruise-rail/">
+                              <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-rail/">
                                  <div className="child-name">
                                     <span>Cruise & Rail</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-1.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-1.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="2">
-                              <a href="https://www.imaginecruising.co.uk/holiday-types/cruise-stay/">
+                              <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-stay/">
                                  <div className="child-name">
                                     <span>Cruise & Stay</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-OCo-1-1-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-OCo-1-1-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="3">
-                              <a href="https://www.imaginecruising.co.uk/holiday-types/cruise-event/">
+                              <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-event/">
                                  <div className="child-name">
                                     <span>Cruise & Event</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Event-300x136.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Event-300x136.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="4">
-                              <a href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
+                              <Link href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
                                  <div className="child-name">
                                     <span>Cruise from the UK</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                         </ul>
                      </li>
                      <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="3">
-                        <a href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">Cruise from the UK</a>
+                        <Link href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">Cruise from the UK</Link>
                      </li>
                      <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="4">
-                        <a href="https://www.imaginecruising.co.uk/river-cruise-collection/">River Cruising</a>
+                        <Link href="https://www.imaginecruising.co.uk/river-cruise-collection/">River Cruising</Link>
                      </li>
                      <li data-ga-element="header-nav-list-item" className="top-level has-children" data-ga-index="5">
-                        <a href="https://www.imaginecruising.co.uk/cruise-lines/">Cruise Lines <i className="fa-solid fa-chevron-down"></i></a>
+                        <Link href="https://www.imaginecruising.co.uk/cruise-lines/">Cruise Lines <i className="fa-solid fa-chevron-down"></i></Link>
                         <ul className="custom-sub-nav">
                            <li className="sub-page" data-ga-index="0">
-                              <a href="https://www.imaginecruising.co.uk/cruise-lines/azamara/">
+                              <Link href="https://www.imaginecruising.co.uk/cruise-lines/azamara/">
                                  <div className="child-name">
                                     <span>Azamara</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Azamara-OCo-1-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Azamara-OCo-1-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="1">
-                              <a href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/">
+                              <Link href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/">
                                  <div className="child-name">
                                     <span>Celebrity </span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Celebrity-OCo-1-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Celebrity-OCo-1-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="2">
-                              <a href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/">
+                              <Link href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/">
                                  <div className="child-name">
                                     <span>Cunard</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cunard-OCo-1-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cunard-OCo-1-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="3">
-                              <a href="https://www.imaginecruising.co.uk/cruise-lines/holland-america-line/">
+                              <Link href="https://www.imaginecruising.co.uk/cruise-lines/holland-america-line/">
                                  <div className="child-name">
                                     <span>Holland America Line</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-HAL-OCo-1-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-HAL-OCo-1-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="4">
-                              <a href="https://www.imaginecruising.co.uk/cruise-lines/po-cruises/">
+                              <Link href="https://www.imaginecruising.co.uk/cruise-lines/po-cruises/">
                                  <div className="child-name">
                                     <span>P&O</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-PO-OCo-1-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-PO-OCo-1-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="5">
-                              <a href="https://www.imaginecruising.co.uk/cruise-lines/princess-cruises/">
+                              <Link href="https://www.imaginecruising.co.uk/cruise-lines/princess-cruises/">
                                  <div className="child-name">
                                     <span>Princess</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Princess-OCo-1-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Princess-OCo-1-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="6">
-                              <a href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/">
+                              <Link href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/">
                                  <div className="child-name">
                                     <span>Silversea</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Silversea-1-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Silversea-1-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="7">
-                              <a href="https://www.imaginecruising.co.uk/cruise-lines/">
+                              <Link href="https://www.imaginecruising.co.uk/cruise-lines/">
                                  <div className="child-name">
                                     <span>View all </span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-Line-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-Line-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                         </ul>
                      </li>
                      <li data-ga-element="header-nav-list-item" className="top-level has-children" data-ga-index="6">
-                        <a href="https://www.imaginecruising.co.uk/destinations/">Destinations <i className="fa-solid fa-chevron-down"></i></a>
+                        <Link href="https://www.imaginecruising.co.uk/destinations/">Destinations <i className="fa-solid fa-chevron-down"></i></Link>
                         <ul className="custom-sub-nav">
                            <li className="sub-page" data-ga-index="0">
-                              <a href="https://www.imaginecruising.co.uk/destinations/africa/">
+                              <Link href="https://www.imaginecruising.co.uk/destinations/africa/">
                                  <div className="child-name">
                                     <span>Africa</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Africa.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Africa.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="1">
-                              <a href="https://www.imaginecruising.co.uk/destinations/asia/">
+                              <Link href="https://www.imaginecruising.co.uk/destinations/asia/">
                                  <div className="child-name">
                                     <span>Asia</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Asia-nav-images-mobile-desktop-300x158-Destination.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Asia-nav-images-mobile-desktop-300x158-Destination.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="2">
-                              <a href="https://www.imaginecruising.co.uk/australia-and-new-zealand/">
+                              <Link href="https://www.imaginecruising.co.uk/australia-and-new-zealand/">
                                  <div className="child-name">
                                     <span>Australia & New Zealand</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Australia-nav-images-mobile-desktop-300x158-Destination-OCo-1.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Australia-nav-images-mobile-desktop-300x158-Destination-OCo-1.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="3">
-                              <a href="https://www.imaginecruising.co.uk/destinations/caribbean/">
+                              <Link href="https://www.imaginecruising.co.uk/destinations/caribbean/">
                                  <div className="child-name">
                                     <span>Caribbean</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Caribbean-nav-images-mobile-desktop-300x158-Destination-OCo-2.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Caribbean-nav-images-mobile-desktop-300x158-Destination-OCo-2.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="4">
-                              <a href="https://www.imaginecruising.co.uk/destinations/europe/">
+                              <Link href="https://www.imaginecruising.co.uk/destinations/europe/">
                                  <div className="child-name">
                                     <span>Europe</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Europe-nav-images-mobile-desktop-300x158-Destination-OCo-4-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Europe-nav-images-mobile-desktop-300x158-Destination-OCo-4-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="5">
-                              <a href="https://www.imaginecruising.co.uk/destinations/indian-ocean/">
+                              <Link href="https://www.imaginecruising.co.uk/destinations/indian-ocean/">
                                  <div className="child-name">
                                     <span>Indian Ocean</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Indian-Ocean-nav-images-mobile-desktop-300x158-Destination-OCo-5-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Indian-Ocean-nav-images-mobile-desktop-300x158-Destination-OCo-5-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="6">
-                              <a href="https://www.imaginecruising.co.uk/destinations/indian-subcontinent/">
+                              <Link href="https://www.imaginecruising.co.uk/destinations/indian-subcontinent/">
                                  <div className="child-name">
                                     <span>Indian Subcontinent </span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Indian-sub-1-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Indian-sub-1-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="7">
-                              <a href="https://www.imaginecruising.co.uk/destinations/middle-east/">
+                              <Link href="https://www.imaginecruising.co.uk/destinations/middle-east/">
                                  <div className="child-name">
                                     <span>Middle East</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Middle-East-nav-images-mobile-desktop-300x158-Destination-OCo-6-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Middle-East-nav-images-mobile-desktop-300x158-Destination-OCo-6-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="8">
-                              <a href="https://www.imaginecruising.co.uk/north-america/">
+                              <Link href="https://www.imaginecruising.co.uk/north-america/">
                                  <div className="child-name">
                                     <span>North America</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/North-America-1.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/North-America-1.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="9">
-                              <a href="https://www.imaginecruising.co.uk/destinations/south-america/">
+                              <Link href="https://www.imaginecruising.co.uk/destinations/south-america/">
                                  <div className="child-name">
                                     <span>South America</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/South-America-nav-images-mobile-desktop-300x158-Destination-OCo-7-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/South-America-nav-images-mobile-desktop-300x158-Destination-OCo-7-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="10">
-                              <a href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
+                              <Link href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
                                  <div className="child-name">
                                     <span>Cruise from the UK</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                            <li className="sub-page" data-ga-index="11">
-                              <a href="https://www.imaginecruising.co.uk/destinations/">
+                              <Link href="https://www.imaginecruising.co.uk/destinations/">
                                  <div className="child-name">
                                     <span>View all</span>
                                     <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg" />
                                     <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg" /></noscript>
                                  </div>
-                              </a>
+                              </Link>
                            </li>
                         </ul>
                      </li>
                      <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="7">
-                        <a href="https://www.imaginecruising.co.uk/about-us/">About us</a>
+                        <Link href="https://www.imaginecruising.co.uk/about-us/">About us</Link>
                      </li>
                      <li data-ga-element="manage-my-booking">
-                        <a className="" href="/manage-my-booking/" target="_blank" rel="noopener">
+                        <Link className="" href="/manage-my-booking/" target="_blank" rel="noopener">
                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/passenger_icon_white.svg" />
                            <noscript><img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/passenger_icon_white.svg" /></noscript>
                            Manage my booking
-                        </a>
+                        </Link>
                      </li>
                   </ul>
                </nav>
@@ -412,9 +413,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         <h1>More Than Just A Cruise</h1>
                      </div>
                      <div className="video-scroll">
-                        <a href="#home-video-lower" data-ga-element="home-video-scroll" className="scroll-down">
+                        <Link href="#home-video-lower" data-ga-element="home-video-scroll" className="scroll-down">
                         <span>SCROLL</span>
-                        </a>
+                        </Link>
                      </div>
                   </div>
                </div>
@@ -2157,7 +2158,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <h3>Explore</h3>
                   <div className="gallery-grid-items visible-rows-two ">
                      <div data-ga-element="cta-blocks-1-block" data-ga-index="0" className="img-item img-item-0">
-                        <a data-ga-element="cta-blocks-1-block-link" href="/holiday-types/" title="Holiday Types">
+                        <Link data-ga-element="cta-blocks-1-block-link" href="/holiday-types/" title="Holiday Types">
                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" title="" alt="" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/HolidayTypes_CategoryTileHP.jpg" />
                            <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/HolidayTypes_CategoryTileHP.jpg" title="" alt="" /></noscript>
                            <div className="wrapper-text">
@@ -2165,10 +2166,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="large-text">Our Holiday Types</div>
                               <div className="description">Discover more than just a cruise – from scenic rail journeys to immersive tours</div>
                            </div>
-                        </a>
+                        </Link>
                      </div>
                      <div data-ga-element="cta-blocks-1-block" data-ga-index="1" className="img-item img-item-1">
-                        <a data-ga-element="cta-blocks-1-block-link" href="https://online.fliphtml5.com/lbmak/hrdr/" title="Discover more">
+                        <Link data-ga-element="cta-blocks-1-block-link" href="https://online.fliphtml5.com/lbmak/hrdr/" title="Discover more">
                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" title="" alt="" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/April-Brochure-1.jpg" />
                            <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/April-Brochure-1.jpg" title="" alt="" /></noscript>
                            <div className="wrapper-text">
@@ -2176,10 +2177,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="large-text">Our Brochure</div>
                               <div className="description">Explore extraordinary cruise holidays filled with unique experiences around the globe</div>
                            </div>
-                        </a>
+                        </Link>
                      </div>
                      <div data-ga-element="cta-blocks-1-block" data-ga-index="2" className="img-item img-item-2">
-                        <a data-ga-element="cta-blocks-1-block-link" href="/cruise-deals/" title="Cruise Deals">
+                        <Link data-ga-element="cta-blocks-1-block-link" href="/cruise-deals/" title="Cruise Deals">
                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" title="" alt="" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/cruise_deals_explore_card@2x-1_6474192de6d_647539e2550.jpg" />
                            <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/cruise_deals_explore_card@2x-1_6474192de6d_647539e2550.jpg" title="" alt="" /></noscript>
                            <div className="wrapper-text">
@@ -2187,10 +2188,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="large-text">Our Cruise Deals</div>
                               <div className="description">Discover exclusive deals and promotions from the world&#8217;s top cruise lines for your next getaway</div>
                            </div>
-                        </a>
+                        </Link>
                      </div>
                      <div data-ga-element="cta-blocks-1-block" data-ga-index="3" className="img-item img-item-3">
-                        <a data-ga-element="cta-blocks-1-block-link" href="https://imaginecruising.co.uk/galapagos/" title="Galapagos">
+                        <Link data-ga-element="cta-blocks-1-block-link" href="https://imaginecruising.co.uk/galapagos/" title="Galapagos">
                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" title="" alt="" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Galapogos-Homepage.jpg" />
                            <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Galapogos-Homepage.jpg" title="" alt="" /></noscript>
                            <div className="wrapper-text">
@@ -2198,10 +2199,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="large-text">Galapagos Islands</div>
                               <div className="description">a wildlife paradise boasting unparallel natural beauty and adventure</div>
                            </div>
-                        </a>
+                        </Link>
                      </div>
                      <div data-ga-element="cta-blocks-1-block" data-ga-index="4" className="img-item img-item-4">
-                        <a data-ga-element="cta-blocks-1-block-link" href="https://imaginecruising.co.uk/abu-dhabi-grand-prix-collection/" title="Transcend">
+                        <Link data-ga-element="cta-blocks-1-block-link" href="https://imaginecruising.co.uk/abu-dhabi-grand-prix-collection/" title="Transcend">
                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" title="" alt="" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/ADGP-Homepage.jpg" />
                            <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/ADGP-Homepage.jpg" title="" alt="" /></noscript>
                            <div className="wrapper-text">
@@ -2209,10 +2210,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="large-text">the Thrilling</div>
                               <div className="description">Abu Dhabi Grand Prix™ with Guenther Steiner</div>
                            </div>
-                        </a>
+                        </Link>
                      </div>
                      <div data-ga-element="cta-blocks-1-block" data-ga-index="5" className="img-item img-item-5">
-                        <a data-ga-element="cta-blocks-1-block-link" href="https://imaginecruising.co.uk/cruises-from-the-uk/" title="Cruise from the UK">
+                        <Link data-ga-element="cta-blocks-1-block-link" href="https://imaginecruising.co.uk/cruises-from-the-uk/" title="Cruise from the UK">
                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" title="" alt="" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/shutterstock_2475796677-scaled.jpg" />
                            <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/shutterstock_2475796677-scaled.jpg" title="" alt="" /></noscript>
                            <div className="wrapper-text">
@@ -2220,7 +2221,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="large-text">Cruises from the UK</div>
                               <div className="description">Set sail on an unforgettable adventure from a port right on your doorstep!</div>
                            </div>
-                        </a>
+                        </Link>
                      </div>
                   </div>
                </div>
@@ -2230,7 +2231,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <h3 data-ga-element="cruise-offers-title">Our Customer Favourites</h3>
                   <div className="cruises-block cruises-block-slider mobile-center-slider">
                      <div data-ga-index="0" className="item-cruise cruise-719572 slide-position-1">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=AME7943"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=AME7943"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Celebrity-Equinox-EZE-EZE-31JAN26-Iguazu-Falls-Machu-Picchu-TZOO-Tile-1-1-1-3-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Complimentary Tours of Machu Picchu & Sacred Valley</span></div>
@@ -2265,12 +2266,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;6,999</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]AME7943" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]AME7943" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-index="1" className="item-cruise cruise-690002 slide-position-2">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/ultimate-australia-all-inclusive-indian-pacific-rail-journey-and-princess-new-zealand-voyage/"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/ultimate-australia-all-inclusive-indian-pacific-rail-journey-and-princess-new-zealand-voyage/"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/02/UK-Princess-Crown-BNE-BNE-16FEB26-Indian-Pacific-NEW-PRICING-Tile-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Complimentary Hotel Stays in Brisbane, Sydney & Perth </span></div>
@@ -2305,12 +2306,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;4,999</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/ultimate-australia-all-inclusive-indian-pacific-rail-journey-and-princess-new-zealand-voyage/" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/ultimate-australia-all-inclusive-indian-pacific-rail-journey-and-princess-new-zealand-voyage/" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-index="2" className="item-cruise cruise-679008 slide-position-3">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/luxury-cunard-voyage-from-southampton-to-cape-town-with-victoria-falls-and-pilanesberg-safari/"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/luxury-cunard-voyage-from-southampton-to-cape-town-with-victoria-falls-and-pilanesberg-safari/"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/Cunard-QA-SOU-CPT-11JAN2026-Vic-Falls-Pilanesberg-Event-Tile-1-1-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Complimentary Oceanview to Balcony Upgrade</span></div>
@@ -2345,7 +2346,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;4,999</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/luxury-cunard-voyage-from-southampton-to-cape-town-with-victoria-falls-and-pilanesberg-safari/" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/luxury-cunard-voyage-from-southampton-to-cape-town-with-victoria-falls-and-pilanesberg-safari/" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
@@ -2357,7 +2358,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <h3 data-ga-element="cruise-offers-title">Cruise & Rail Holidays</h3>
                   <div className="cruises-block cruises-block-slider mobile-center-slider">
                      <div data-ga-index="0" className="item-cruise cruise-693396 slide-position-1">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/mediterranean-cunard-voyage-italian-lakes-and-all-inclusive-venice-simplon-orient-express-2/"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/mediterranean-cunard-voyage-italian-lakes-and-all-inclusive-venice-simplon-orient-express-2/"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/05/Cunard-QA-CIV-SOU-25AUG25-No-Fly-VSOE-Florence-Tile_57300766ca7-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Complimentary 7-NIGHT Italian Lakes Escape </span></div>
@@ -2392,12 +2393,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;6,999</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/mediterranean-cunard-voyage-italian-lakes-and-all-inclusive-venice-simplon-orient-express-2/" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/mediterranean-cunard-voyage-italian-lakes-and-all-inclusive-venice-simplon-orient-express-2/" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-index="1" className="item-cruise cruise-662281 slide-position-2">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/celebrity-all-inclusive-asia-voyage-and-japan-rail-discovery-4aug26/"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/celebrity-all-inclusive-asia-voyage-and-japan-rail-discovery-4aug26/"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Celebrity-Millenium-TYO-TYO-MAY-AUG2026-Japan-Rail-Tile-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>COMPLIMENTARY CLASSIC DRINKS PACKAGE & WI-FI</span></div>
@@ -2432,12 +2433,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;5,999</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/celebrity-all-inclusive-asia-voyage-and-japan-rail-discovery-4aug26/" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/celebrity-all-inclusive-asia-voyage-and-japan-rail-discovery-4aug26/" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-index="2" className="item-cruise cruise-646327 slide-position-3">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/all-inclusive-celebrity-voyage-and-ultimate-indian-experience-tigers-the-himalayas-and-golden-triangle-tour-12mar26/"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/all-inclusive-celebrity-voyage-and-ultimate-indian-experience-tigers-the-himalayas-and-golden-triangle-tour-12mar26/"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/10/Celebrity-Solstice-SIN-HKG-HKG-SIN-NOV2025-JAN2026-Shimla-Golden-Triangle-Tile-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Complimentary 13-Night Fully Escorted Golden Triangle Tour</span></div>
@@ -2472,7 +2473,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;4,999</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/all-inclusive-celebrity-voyage-and-ultimate-indian-experience-tigers-the-himalayas-and-golden-triangle-tour-12mar26/" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/all-inclusive-celebrity-voyage-and-ultimate-indian-experience-tigers-the-himalayas-and-golden-triangle-tour-12mar26/" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
@@ -2484,7 +2485,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <h3 data-ga-element="cruise-offers-title">Cruise & Touring Holidays</h3>
                   <div className="cruises-block cruises-block-slider mobile-center-slider">
                      <div data-ga-index="0" className="item-cruise cruise-723529 slide-position-1">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/ultimate-vietnam-and-cambodia-discovery-with-all-inclusive-celebrity-asia-voyage/"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/ultimate-vietnam-and-cambodia-discovery-with-all-inclusive-celebrity-asia-voyage/"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/Celebrity-Millennium-SIN-SIN-20FEB2026-Vietnam-Cambodia-Tour-Tile-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Complimentary 13-Night Tour of Vietnam & Cambodia</span></div>
@@ -2520,12 +2521,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;4,499</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/ultimate-vietnam-and-cambodia-discovery-with-all-inclusive-celebrity-asia-voyage/" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/ultimate-vietnam-and-cambodia-discovery-with-all-inclusive-celebrity-asia-voyage/" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-index="1" className="item-cruise cruise-699869 slide-position-2">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=EUR2253"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=EUR2253"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/Silversea-Muse-VCE-VCE-SEP2026-OCT2026-Italian-Lakes-Tile-2-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Complimentary 6-Night Italian Lakes Escape</span></div>
@@ -2561,12 +2562,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;4,999</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]EUR2253" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]EUR2253" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-index="2" className="item-cruise cruise-723106 slide-position-3">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/princess-new-zealand-voyage-and-ultimate-australia-tour-v2/"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/princess-new-zealand-voyage-and-ultimate-australia-tour-v2/"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/11/Princess-Crown-BNE-BNE-02FEB2026-Australia-Tour-Tile-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Includes tour of the Great Barrier Reef</span></div>
@@ -2602,7 +2603,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;4,999</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/princess-new-zealand-voyage-and-ultimate-australia-tour-v2/" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/princess-new-zealand-voyage-and-ultimate-australia-tour-v2/" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
@@ -2614,7 +2615,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <h3 data-ga-element="cruise-offers-title">Cruise & Stay Holidays</h3>
                   <div className="cruises-block cruises-block-slider mobile-center-slider">
                      <div data-ga-index="0" className="item-cruise cruise-717645 slide-position-1">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/luxury-cunard-queen-anne-voyage-from-sydney-to-southampton/"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/luxury-cunard-queen-anne-voyage-from-sydney-to-southampton/"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Cunard-QA-SYD-SOU-17MAR2026-Sydney-Stay-TILETile-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Complimentary 3-night Hotel stay in Sydney</span></div>
@@ -2650,12 +2651,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;4,999</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/luxury-cunard-queen-anne-voyage-from-sydney-to-southampton/" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/luxury-cunard-queen-anne-voyage-from-sydney-to-southampton/" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-index="1" className="item-cruise cruise-673874 slide-position-2">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=AME7965"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=AME7965"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/02/Silverseaspirit-BGI-FLL-FLL-BGI-Tile-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Complimentary All-inclusive hotel stay in Barbados</span></div>
@@ -2691,12 +2692,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;4,999</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]AME7965" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]AME7965" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-index="2" className="item-cruise cruise-616537 slide-position-3">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/celebrity-voyage-all-inclusive-new-year-in-the-maldives-and-bali-retreat/"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/celebrity-voyage-all-inclusive-new-year-in-the-maldives-and-bali-retreat/"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Luxury-Celebrity-Voyage-All-Inclusive-New-Year-in-the-Maldives-Bali-Retreat-Tile-–-10-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Complimentary 5★ All-Inclusive Hotel Stay in Bali</span></div>
@@ -2732,7 +2733,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;5,499</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/celebrity-voyage-all-inclusive-new-year-in-the-maldives-and-bali-retreat/" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/celebrity-voyage-all-inclusive-new-year-in-the-maldives-and-bali-retreat/" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
@@ -2744,7 +2745,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <h3 data-ga-element="cruise-offers-title">Cruise & Event Holidays</h3>
                   <div className="cruises-block cruises-block-slider mobile-center-slider">
                      <div data-ga-index="0" className="item-cruise cruise-587261 slide-position-1">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/a-captivating-voyage-exclusive-canaries-sailcation/"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/a-captivating-voyage-exclusive-canaries-sailcation/"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/PrincessSky_SOU-SOU_Nov25-Tile_579484fc228-2_635871d72a2-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Complimentary Oceanview to Balcony Upgrade</span></div>
@@ -2780,12 +2781,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;999</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/a-captivating-voyage-exclusive-canaries-sailcation/" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/a-captivating-voyage-exclusive-canaries-sailcation/" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-index="1" className="item-cruise cruise-646407 slide-position-2">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/a-magical-voyage-exclusive-mediterranean-sailcation/"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/a-magical-voyage-exclusive-mediterranean-sailcation/"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Product-Tile-A-Magical-Voyage-Exclusive-Mediterranean-Sailcation-Ship-and-celebs-New-Rory-Bremner-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>EXCLUSIVE PERFORMANCES FROM A STAR-STUDDED LINE-UP</span></div>
@@ -2821,12 +2822,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;1,199</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/a-magical-voyage-exclusive-mediterranean-sailcation/" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/a-magical-voyage-exclusive-mediterranean-sailcation/" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-index="2" className="item-cruise cruise-669994 slide-position-3">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/danubes-ballroom-serenade-exclusive-river-cruise-experience/"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="https://www.imaginecruising.co.uk/holidays/danubes-ballroom-serenade-exclusive-river-cruise-experience/"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/Mobile-Image-1152-x-788px-4-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Includes Exclusive event with Anton Du Bec & Erin Boag</span></div>
@@ -2862,7 +2863,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;2,999</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/danubes-ballroom-serenade-exclusive-river-cruise-experience/" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="https://www.imaginecruising.co.uk/holidays/danubes-ballroom-serenade-exclusive-river-cruise-experience/" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
@@ -2874,7 +2875,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <h3 data-ga-element="cruise-offers-title">Cruise Deals</h3>
                   <div className="cruises-block cruises-block-slider mobile-center-slider">
                      <div data-ga-index="0" className="item-cruise cruise-646571 slide-position-1">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=AME7945"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=AME7945"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/Cunard-Caribbean-Retail-Tile-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Exclusive to Imagine Cruising</span></div>
@@ -2910,12 +2911,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;1,499</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]AME7945" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]AME7945" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-index="1" className="item-cruise cruise-699803 slide-position-2">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=ASA8463"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=ASA8463"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/03/RCCL-Ovation-SIN-SIN-OCT25-MAR26-Bali-Stay-Tile_67555218a06-16-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Includes 5-Night 5★ Hotel Stay in Bali</span></div>
@@ -2951,12 +2952,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;1,999</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]ASA8463" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]ASA8463" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-index="2" className="item-cruise cruise-699830 slide-position-3">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=ASA8462"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=ASA8462"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/MSC-Euribia-DXB-DXB-NOV2025-FEB2026-Mauritius-Dubai-Tile-7-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Includes all-inclusive 5-night Hotel Stay in Mauritius</span></div>
@@ -2992,7 +2993,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;2,599</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]ASA8462" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]ASA8462" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
@@ -3004,7 +3005,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <h3 data-ga-element="cruise-offers-title">River Cruise Holidays</h3>
                   <div className="cruises-block cruises-block-slider mobile-center-slider">
                      <div data-ga-index="0" className="item-cruise cruise-584610 slide-position-1">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=ASA2229"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=ASA2229"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/04/Lotus-Mekong-Navigator-SIE-MYT-MYT-SIE-DEC2024-APR2025-RESELL-Tile_6482194a1c8-6-1-1-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Limited availability</span></div>
@@ -3040,12 +3041,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;3,299</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]ASA2229" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]ASA2229" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-index="1" className="item-cruise cruise-649622 slide-position-2">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=AFR2224"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=AFR2224"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Zambezi-Header-Stay-Tile_608495b9a96-10-1_644817b7e72-8-1-1-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>Limited Availability</span></div>
@@ -3081,12 +3082,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;5,599</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]AFR2224" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]AFR2224" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-index="2" className="item-cruise cruise-717779 slide-position-3">
-                        <a data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=RVR2223"></a>
+                        <Link data-ga-element="cruise-offers-cover-link" className="test-cg cover-link" href="/search/?cruise_reference[]=RVR2223"></Link>
                         <div className="cruise-img-block">
                            <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2025/01/Taste-of-Bordeaux-JUL-AUG24-Tile_6493491a494-4-1-768x525.jpg" />
                            <div className="cruise-exclusive exclusive"><span>includes drinks with meals on board</span></div>
@@ -3117,7 +3118,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div className="price-block">
                                  <div className="cruise-price"><span className="price-from">From</span> <span className="the-price">&pound;1,799</span><span className="pp"> pp</span></div>
                               </div>
-                              <a data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]RVR2223" className="default-cta">Discover more </a>
+                              <Link data-ga-element="cruise-offers-single-related-cta" href="/search/?cruise_reference[]RVR2223" className="default-cta">Discover more </Link>
                            </div>
                         </div>
                      </div>
@@ -3138,14 +3139,14 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div data-ga-element="cruiselines-block-desc" className="cruise-line-description">The Cunard cruise line is synonymous with luxury cruising and boasts an unrivalled maritime heritage dating back almost two centuries.</div>
                            </div>
                            <div className="cruise-line-logo">
-                              <a data-ga-element="cruiselines-block-logo-link" href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/">
+                              <Link data-ga-element="cruiselines-block-logo-link" href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/">
                                  <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%2065'%3E%3C/svg%3E" width="300" height="65" alt="Cunard Line" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/07/Logo_Cunard_Horizontal_FC_CrestOnLeft_h7wxdw-300x65.png" />
                                  <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/07/Logo_Cunard_Horizontal_FC_CrestOnLeft_h7wxdw-300x65.png" width="300" height="65" alt="Cunard Line" /></noscript>
-                              </a>
+                              </Link>
                            </div>
                            <div className="button-block">
-                              <a data-ga-element="cruiselines-block-discover-link" href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/" className="button default-cta cruise-line-detail">Discover More</a>
-                              {/* <a href="/search/?cruiseline[]=Cunard+Line" className="button button-gold cruise-search">View Offers<i className="fa fa-chevron-right" aria-hidden="true"></i></a> */}
+                              <Link data-ga-element="cruiselines-block-discover-link" href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/" className="button default-cta cruise-line-detail">Discover More</Link>
+                              {/* <Link href="/search/?cruiseline[]=Cunard+Line" className="button button-gold cruise-search">View Offers<i className="fa fa-chevron-right" aria-hidden="true"></i></Link> */}
                            </div>
                         </div>
                      </div>
@@ -3157,13 +3158,13 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div data-ga-element="cruiselines-block-desc" className="cruise-line-description">Intimate, stylish ships, an all-inclusive basis and in-suite butlers to attend to your every desire – this is what it means to embark on a Silversea cruise.</div>
                            </div>
                            <div className="cruise-line-logo">
-                              <a data-ga-element="cruiselines-block-logo-link" href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/">
+                              <Link data-ga-element="cruiselines-block-logo-link" href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/">
                                  <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20210%2040'%3E%3C/svg%3E" width="210" height="40" alt="Silversea" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Silversea_ColourLogo.png" />
                                  <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Silversea_ColourLogo.png" width="210" height="40" alt="Silversea" /></noscript>
-                              </a>
+                              </Link>
                            </div>
                            <div className="button-block">
-                              <a data-ga-element="cruiselines-block-discover-link" href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/" className="button default-cta cruise-line-detail">Discover More</a>
+                              <Link data-ga-element="cruiselines-block-discover-link" href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/" className="button default-cta cruise-line-detail">Discover More</Link>
                            </div>
                         </div>
                      </div>
@@ -3175,13 +3176,13 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               <div data-ga-element="cruiselines-block-desc" className="cruise-line-description">Celebrity Cruises truly embodies “relaxed luxury”, having been providing unforgettable moments for guests since its establishment in Greece in 1988.</div>
                            </div>
                            <div className="cruise-line-logo">
-                              <a data-ga-element="cruiselines-block-logo-link" href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/">
+                              <Link data-ga-element="cruiselines-block-logo-link" href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/">
                                  <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%2063'%3E%3C/svg%3E" width="300" height="63" alt="Celebrity Cruises" data-lazy-src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/Celebrity20Cruises20Logo20Dec202021200-300x63.png" />
                                  <noscript><img src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/04/Celebrity20Cruises20Logo20Dec202021200-300x63.png" width="300" height="63" alt="Celebrity Cruises" /></noscript>
-                              </a>
+                              </Link>
                            </div>
                            <div className="button-block">
-                              <a data-ga-element="cruiselines-block-discover-link" href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/" className="button default-cta cruise-line-detail">Discover More</a>
+                              <Link data-ga-element="cruiselines-block-discover-link" href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/" className="button default-cta cruise-line-detail">Discover More</Link>
                            </div>
                         </div>
                      </div>
@@ -3207,9 +3208,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
             <div id="footer-lower">
                <div data-ga-element="mobile-footer-sticky" id="footer-sticky-number" className="mobile-only fixed">
                   <div className="flex">
-                     <a className="absolute-zero fsource__tel no-text" href="tel:0800 840 5801"></a>
+                     <Link className="absolute-zero fsource__tel no-text" href="tel:0800 840 5801"></Link>
                      <p>Speak to a cruise expert  <span style={{color: "#0CC0CC"}}>We&#8217;re open</span></p>
-                     <a data-ga-element="sticky-footer-telephone-link" href="tel:0800 840 5801" className="phone__number fsource__tel">0800 840 5801</a>
+                     <Link data-ga-element="sticky-footer-telephone-link" href="tel:0800 840 5801" className="phone__number fsource__tel">0800 840 5801</Link>
                   </div>
                </div>
                <div className="content-margin center">
@@ -3218,51 +3219,51 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         <div data-ga-element="footer-link-column" data-ga-index="0" className="links-column   links-column-1">
                            <p className="links-title">Useful Links</p>
                            <div className="footer-link-holder">
-                              <a data-ga-element="footer-link" data-ga-index="0" className="footer-link " aria-label="Home" href="/">Home</a>
-                              <a data-ga-element="footer-link" data-ga-index="1" className="footer-link " aria-label="About us" href="/about/">About us</a>
-                              <a data-ga-element="footer-link" data-ga-index="2" className="footer-link " aria-label="Holiday Extras" href="https://www.holidayextras.com/imaginecruising/hotels.html#">Holiday Extras</a>
-                              <a data-ga-element="footer-link" data-ga-index="3" className="footer-link " aria-label="FAQs" href="/faqs/">FAQs</a>
-                              <a data-ga-element="footer-link" data-ga-index="4" className="footer-link " aria-label="Contact us" href="/contact-us/">Contact us</a>
-                              <a data-ga-element="footer-link" data-ga-index="5" className="footer-link " aria-label="Careers" href="/career-opportunities/">Careers</a>
+                              <Link data-ga-element="footer-link" data-ga-index="0" className="footer-link " aria-label="Home" href="/">Home</Link>
+                              <Link data-ga-element="footer-link" data-ga-index="1" className="footer-link " aria-label="About us" href="/about/">About us</Link>
+                              <Link data-ga-element="footer-link" data-ga-index="2" className="footer-link " aria-label="Holiday Extras" href="https://www.holidayextras.com/imaginecruising/hotels.html#">Holiday Extras</Link>
+                              <Link data-ga-element="footer-link" data-ga-index="3" className="footer-link " aria-label="FAQs" href="/faqs/">FAQs</Link>
+                              <Link data-ga-element="footer-link" data-ga-index="4" className="footer-link " aria-label="Contact us" href="/contact-us/">Contact us</Link>
+                              <Link data-ga-element="footer-link" data-ga-index="5" className="footer-link " aria-label="Careers" href="/career-opportunities/">Careers</Link>
                            </div>
                         </div>
                         <div data-ga-element="footer-link-column" data-ga-index="1" className="links-column   links-column-2">
                            <p className="links-title">Legal</p>
                            <div className="footer-link-holder">
-                              <a data-ga-element="footer-link" data-ga-index="0" className="footer-link " aria-label="Cookie Policy" href="/cookie-policy/">Cookie Policy</a>
-                              <a data-ga-element="footer-link" data-ga-index="1" className="footer-link " aria-label="Group Tax Strategy" href="https://res.cloudinary.com/deh6eqgn0/image/upload/v1739896521/dnata-Emirates-UK-tax-strategy-_2024-25.pdf">Group Tax Strategy</a>
-                              <a data-ga-element="footer-link" data-ga-index="2" className="footer-link " aria-label="Modern Slavery Transparency Statement" href="https://res.cloudinary.com/deh6eqgn0/image/upload/v1734018241/Imagine-Modern-Slavery-Statement-FY23-24-SS_Rebrand_1.pdf">Modern Slavery Transparency Statement</a>
-                              <a data-ga-element="footer-link" data-ga-index="3" className="footer-link " aria-label="Anti-Slavery and Human Trafficking Policy" href="https://res.cloudinary.com/deh6eqgn0/images/v1689758498/Anti-Slavery_and_Human_Trafficking_Policy/Anti-Slavery_and_Human_Trafficking_Policy.pdf?_i=AA">Anti-Slavery and Human Trafficking Policy</a>
-                              <a data-ga-element="footer-link" data-ga-index="4" className="footer-link " aria-label="Privacy Notice" href="/privacy-policy/">Privacy Notice</a>
-                              <a data-ga-element="footer-link" data-ga-index="5" className="footer-link " aria-label="Terms and Conditions" href="/terms-conditions/">Terms and Conditions</a>
+                              <Link data-ga-element="footer-link" data-ga-index="0" className="footer-link " aria-label="Cookie Policy" href="/cookie-policy/">Cookie Policy</Link>
+                              <Link data-ga-element="footer-link" data-ga-index="1" className="footer-link " aria-label="Group Tax Strategy" href="https://res.cloudinary.com/deh6eqgn0/image/upload/v1739896521/dnata-Emirates-UK-tax-strategy-_2024-25.pdf">Group Tax Strategy</Link>
+                              <Link data-ga-element="footer-link" data-ga-index="2" className="footer-link " aria-label="Modern Slavery Transparency Statement" href="https://res.cloudinary.com/deh6eqgn0/image/upload/v1734018241/Imagine-Modern-Slavery-Statement-FY23-24-SS_Rebrand_1.pdf">Modern Slavery Transparency Statement</Link>
+                              <Link data-ga-element="footer-link" data-ga-index="3" className="footer-link " aria-label="Anti-Slavery and Human Trafficking Policy" href="https://res.cloudinary.com/deh6eqgn0/images/v1689758498/Anti-Slavery_and_Human_Trafficking_Policy/Anti-Slavery_and_Human_Trafficking_Policy.pdf?_i=AA">Anti-Slavery and Human Trafficking Policy</Link>
+                              <Link data-ga-element="footer-link" data-ga-index="4" className="footer-link " aria-label="Privacy Notice" href="/privacy-policy/">Privacy Notice</Link>
+                              <Link data-ga-element="footer-link" data-ga-index="5" className="footer-link " aria-label="Terms and Conditions" href="/terms-conditions/">Terms and Conditions</Link>
                            </div>
                         </div>
                         <div data-ga-element="footer-link-column" data-ga-index="2" className="links-column   links-column-3">
                            <p className="links-title">Holiday Types</p>
                            <div className="footer-link-holder">
-                              <a data-ga-element="footer-link" data-ga-index="0" className="footer-link " aria-label="Cruise & Touring" href="/holiday-types/cruise-touring/">Cruise & Touring</a>
-                              <a data-ga-element="footer-link" data-ga-index="1" className="footer-link " aria-label="Cruise & Rail" href="/holiday-types/cruise-rail/">Cruise & Rail</a>
-                              <a data-ga-element="footer-link" data-ga-index="2" className="footer-link " aria-label="Cruise & Stay" href="/holiday-types/cruise-stay/">Cruise & Stay</a>
-                              <a data-ga-element="footer-link" data-ga-index="3" className="footer-link " aria-label="Cruise & Event" href="/holiday-types/cruise-event/">Cruise & Event</a>
-                              <a data-ga-element="footer-link" data-ga-index="4" className="footer-link " aria-label="River Cruising" href="/river-cruise-collection/">River Cruising</a>
+                              <Link data-ga-element="footer-link" data-ga-index="0" className="footer-link " aria-label="Cruise & Touring" href="/holiday-types/cruise-touring/">Cruise & Touring</Link>
+                              <Link data-ga-element="footer-link" data-ga-index="1" className="footer-link " aria-label="Cruise & Rail" href="/holiday-types/cruise-rail/">Cruise & Rail</Link>
+                              <Link data-ga-element="footer-link" data-ga-index="2" className="footer-link " aria-label="Cruise & Stay" href="/holiday-types/cruise-stay/">Cruise & Stay</Link>
+                              <Link data-ga-element="footer-link" data-ga-index="3" className="footer-link " aria-label="Cruise & Event" href="/holiday-types/cruise-event/">Cruise & Event</Link>
+                              <Link data-ga-element="footer-link" data-ga-index="4" className="footer-link " aria-label="River Cruising" href="/river-cruise-collection/">River Cruising</Link>
                            </div>
                         </div>
                         <div data-ga-element="footer-link-column" className="links-column links-column-4">
                            <div data-ga-element="trustpilot" className="trustpilot-widget ml-2 mt-2 first-wiget" data-locale="en-GB" data-template-id="5406e65db0d04a09e042d5fc" data-businessunit-id="58b690190000ff00059d93e2" data-style-height="20px" data-style-width="100px" data-theme="dark">
-                              <a href="https://uk.trustpilot.com/review/imaginecruising.co.uk" target="_blank" rel="noopener"></a>
+                              <Link href="https://uk.trustpilot.com/review/imaginecruising.co.uk" target="_blank" rel="noopener"></Link>
                            </div>
                            <div data-ga-element="trustpilot" className="trustpilot-widget" data-locale="en-GB" data-template-id="5419b637fa0340045cd0c936" data-businessunit-id="58b690190000ff00059d93e2" data-style-height="28px" data-style-width="230px" data-theme="dark">
-                              <a href="https://uk.trustpilot.com/review/imaginecruising.co.uk" target="_blank" rel="noopener"></a>
+                              <Link href="https://uk.trustpilot.com/review/imaginecruising.co.uk" target="_blank" rel="noopener"></Link>
                            </div>
                            <div className="footer-socials flex flex-justify-end flex-align-center">
-                              <a data-ga-element="footer-social-link" data-ga-index="0" href="https://www.facebook.com/imaginecruising"><i className="fa-classic fa-brands fa-square-facebook" aria-hidden="true"></i></a>
-                              <a data-ga-element="footer-social-link" data-ga-index="1" href="https://www.instagram.com/imaginecruising/"><i className="fa-classic fa-brands fa-square-instagram" aria-hidden="true"></i></a>
+                              <Link data-ga-element="footer-social-link" data-ga-index="0" href="https://www.facebook.com/imaginecruising"><i className="fa-classic fa-brands fa-square-facebook" aria-hidden="true"></i></Link>
+                              <Link data-ga-element="footer-social-link" data-ga-index="1" href="https://www.instagram.com/imaginecruising/"><i className="fa-classic fa-brands fa-square-instagram" aria-hidden="true"></i></Link>
                            </div>
                         </div>
                      </div>
                      <div data-ga-element="footer-copyright" id="footer-copyright">
                         <p>Portland House, Bincknoll Lane, Interface Business Park, Royal Wootton Bassett, Wiltshire, SN4 8SY. Copyright ©  2025 Imagine Cruising Ltd. All rights reserved.<br />
-                           Please check <a href="https://travelaware.campaign.gov.uk/" target="_blank" rel="noopener">travelaware.campaign.gov.uk</a> regularly for updates ahead of travel, as the advice can change.
+                           Please check <Link href="https://travelaware.campaign.gov.uk/" target="_blank" rel="noopener">travelaware.campaign.gov.uk</Link> regularly for updates ahead of travel, as the advice can change.
                         </p>
                         <p><img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Abta Logo" data-lazy-src="https://res.cloudinary.com/deh6eqgn0/images/v1686302092/abta-logo_254747d9e1a/abta-logo_254747d9e1a.png?_i=AA" />
                         <noscript><img decoding="async" src="https://res.cloudinary.com/deh6eqgn0/images/v1686302092/abta-logo_254747d9e1a/abta-logo_254747d9e1a.png?_i=AA" alt="Abta Logo" /></noscript>
@@ -3289,294 +3290,294 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
          <div  className="custom-menus">
             <ul data-ga-element="mobile-custom-links" id="custom-nav" className="flex flex-justify-between flex-align-left">
                <li data-ga-element="mobile-custom-link" data-ga-index="0" className="top-level " data-menu="Home">
-                  <a href="https://www.imaginecruising.co.uk/">
+                  <Link href="https://www.imaginecruising.co.uk/">
                      <div className="child-name">
                         <span>Home</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Home-nav-images-mobile-desktop-300x158-.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-link" data-ga-index="1" className="top-level " data-menu="Cruise Deals">
-                  <a href="https://www.imaginecruising.co.uk/cruise-deals/">
+                  <Link href="https://www.imaginecruising.co.uk/cruise-deals/">
                      <div className="child-name">
                         <span>Cruise Deals</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise-Deals-nav-images-mobile-desktop-300x158-1-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-link" data-ga-index="2" className="top-level has-children" data-menu="Holiday Types">
-                  <a href="https://www.imaginecruising.co.uk/holiday-types/">
+                  <Link href="https://www.imaginecruising.co.uk/holiday-types/">
                      <div className="child-name">
                         <span>Holiday Types <i className="fa-solid fa-chevron-right"></i></span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/shutterstock_1917467366-holiday_types.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-link" data-ga-index="3" className="top-level " data-menu="Cruise from the UK">
-                  <a href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
+                  <Link href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
                      <div className="child-name">
                         <span>Cruise from the UK</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-link" data-ga-index="4" className="top-level " data-menu="River Cruising">
-                  <a href="https://www.imaginecruising.co.uk/river-cruise-collection/">
+                  <Link href="https://www.imaginecruising.co.uk/river-cruise-collection/">
                      <div className="child-name">
                         <span>River Cruising</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-River-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-link" data-ga-index="5" className="top-level has-children" data-menu="Cruise Lines">
-                  <a href="https://www.imaginecruising.co.uk/cruise-lines/">
+                  <Link href="https://www.imaginecruising.co.uk/cruise-lines/">
                      <div className="child-name">
                         <span>Cruise Lines <i className="fa-solid fa-chevron-right"></i></span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise-Lines-nav-images-mobile-desktop-300x158-OCo-2-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-link" data-ga-index="6" className="top-level has-children" data-menu="Destinations">
-                  <a href="https://www.imaginecruising.co.uk/destinations/">
+                  <Link href="https://www.imaginecruising.co.uk/destinations/">
                      <div className="child-name">
                         <span>Destinations <i className="fa-solid fa-chevron-right"></i></span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-link" data-ga-index="7" className="top-level " data-menu="About us">
-                  <a href="https://www.imaginecruising.co.uk/about-us/">
+                  <Link href="https://www.imaginecruising.co.uk/about-us/">
                      <div className="child-name">
                         <span>About us</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-About-us-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Manage-my-Booking_320x179-1.jpg" className="header-right rocket-lazyload"  >
                   <div className="dark-overlay absolute-zero"></div>
                   <div className="phone-title">Holiday Enquiries</div>
                   <div className="header-telephone">
-                     <a className="fsource__tel" href="tel:0800 840 5801" aria-label="Telephone">0800 840 5801</a>
+                     <Link className="fsource__tel" href="tel:0800 840 5801" aria-label="Telephone">0800 840 5801</Link>
                   </div>
                   <div className="schedule">Mon - Sun 9am-8pm</div>
                   <div data-ga-element="mobile-manage-my-booking" className="manage-booking">
-                     <a className="" href="/manage-my-booking/" target="_blank" rel="noopener">Manage my booking</a>
+                     <Link className="" href="/manage-my-booking/" target="_blank" rel="noopener">Manage my booking</Link>
                   </div>
                </div>
             </ul>
             <ul data-ga-element="mobile-custom-sub-nav" data-ga-index="2" className="custom-sub-nav" data-parent="Holiday Types">
                <div className="custom-sub-prev"><i className="fa-solid fa-chevron-left"></i> Holiday Types</div>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="0" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/holiday-types/cruise-touring/">
+                  <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-touring/">
                      <div className="child-name">
                         <span>Cruise & Touring</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Touring.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="1" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/holiday-types/cruise-rail/">
+                  <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-rail/">
                      <div className="child-name">
                         <span>Cruise & Rail</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-1.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="2" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/holiday-types/cruise-stay/">
+                  <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-stay/">
                      <div className="child-name">
                         <span>Cruise & Stay</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-OCo-1-1-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="3" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/holiday-types/cruise-event/">
+                  <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-event/">
                      <div className="child-name">
                         <span>Cruise & Event</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Event-300x136.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="4" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
+                  <Link href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
                      <div className="child-name">
                         <span>Cruise from the UK</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
             </ul>
             <ul data-ga-element="mobile-custom-sub-nav" data-ga-index="5" className="custom-sub-nav" data-parent="Cruise Lines">
                <div className="custom-sub-prev"><i className="fa-solid fa-chevron-left"></i> Cruise Lines</div>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="0" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/cruise-lines/azamara/">
+                  <Link href="https://www.imaginecruising.co.uk/cruise-lines/azamara/">
                      <div className="child-name">
                         <span>Azamara</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Azamara-OCo-1-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="1" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/">
+                  <Link href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/">
                      <div className="child-name">
                         <span>Celebrity </span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Celebrity-OCo-1-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="2" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/">
+                  <Link href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/">
                      <div className="child-name">
                         <span>Cunard</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cunard-OCo-1-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="3" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/cruise-lines/holland-america-line/">
+                  <Link href="https://www.imaginecruising.co.uk/cruise-lines/holland-america-line/">
                      <div className="child-name">
                         <span>Holland America Line</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-HAL-OCo-1-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="4" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/cruise-lines/po-cruises/">
+                  <Link href="https://www.imaginecruising.co.uk/cruise-lines/po-cruises/">
                      <div className="child-name">
                         <span>P&O</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-PO-OCo-1-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="5" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/cruise-lines/princess-cruises/">
+                  <Link href="https://www.imaginecruising.co.uk/cruise-lines/princess-cruises/">
                      <div className="child-name">
                         <span>Princess</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Princess-OCo-1-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="6" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/">
+                  <Link href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/">
                      <div className="child-name">
                         <span>Silversea</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Silversea-1-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="7" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/cruise-lines/">
+                  <Link href="https://www.imaginecruising.co.uk/cruise-lines/">
                      <div className="child-name">
                         <span>View all </span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-Line-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
             </ul>
             <ul data-ga-element="mobile-custom-sub-nav" data-ga-index="6" className="custom-sub-nav" data-parent="Destinations">
                <div className="custom-sub-prev"><i className="fa-solid fa-chevron-left"></i> Destinations</div>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="0" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/destinations/africa/">
+                  <Link href="https://www.imaginecruising.co.uk/destinations/africa/">
                      <div className="child-name">
                         <span>Africa</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Africa.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="1" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/destinations/asia/">
+                  <Link href="https://www.imaginecruising.co.uk/destinations/asia/">
                      <div className="child-name">
                         <span>Asia</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Asia-nav-images-mobile-desktop-300x158-Destination.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="2" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/australia-and-new-zealand/">
+                  <Link href="https://www.imaginecruising.co.uk/australia-and-new-zealand/">
                      <div className="child-name">
                         <span>Australia & New Zealand</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Australia-nav-images-mobile-desktop-300x158-Destination-OCo-1.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="3" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/destinations/caribbean/">
+                  <Link href="https://www.imaginecruising.co.uk/destinations/caribbean/">
                      <div className="child-name">
                         <span>Caribbean</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Caribbean-nav-images-mobile-desktop-300x158-Destination-OCo-2.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="4" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/destinations/europe/">
+                  <Link href="https://www.imaginecruising.co.uk/destinations/europe/">
                      <div className="child-name">
                         <span>Europe</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Europe-nav-images-mobile-desktop-300x158-Destination-OCo-4-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="5" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/destinations/indian-ocean/">
+                  <Link href="https://www.imaginecruising.co.uk/destinations/indian-ocean/">
                      <div className="child-name">
                         <span>Indian Ocean</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Indian-Ocean-nav-images-mobile-desktop-300x158-Destination-OCo-5-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="6" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/destinations/indian-subcontinent/">
+                  <Link href="https://www.imaginecruising.co.uk/destinations/indian-subcontinent/">
                      <div className="child-name">
                         <span>Indian Subcontinent </span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Indian-sub-1-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="7" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/destinations/middle-east/">
+                  <Link href="https://www.imaginecruising.co.uk/destinations/middle-east/">
                      <div className="child-name">
                         <span>Middle East</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Middle-East-nav-images-mobile-desktop-300x158-Destination-OCo-6-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="8" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/north-america/">
+                  <Link href="https://www.imaginecruising.co.uk/north-america/">
                      <div className="child-name">
                         <span>North America</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/North-America-1.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="9" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/destinations/south-america/">
+                  <Link href="https://www.imaginecruising.co.uk/destinations/south-america/">
                      <div className="child-name">
                         <span>South America</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/South-America-nav-images-mobile-desktop-300x158-Destination-OCo-7-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="10" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
+                  <Link href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
                      <div className="child-name">
                         <span>Cruise from the UK</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
                <li data-ga-element="mobile-custom-sub-nav-link" data-ga-index="11" className="sub-page">
-                  <a href="https://www.imaginecruising.co.uk/destinations/">
+                  <Link href="https://www.imaginecruising.co.uk/destinations/">
                      <div className="child-name">
                         <span>View all</span>
                         <div data-bg="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg" className="menu-img rocket-lazyload"></div>
                      </div>
-                  </a>
+                  </Link>
                </li>
             </ul>
          </div>
          <ul data-ga-element="mobile-socials" className="mobile-socials">
-            <li data-ga-element="mobile-socials-link" data-ga-index="0"><a href="https://www.facebook.com/imaginecruising"><i className="fa-classic fa-brands fa-square-facebook" aria-hidden="true"></i></a></li>
-            <li data-ga-element="mobile-socials-link" data-ga-index="1"><a href="https://www.instagram.com/imaginecruising/"><i className="fa-classic fa-brands fa-square-instagram" aria-hidden="true"></i></a></li>
+            <li data-ga-element="mobile-socials-link" data-ga-index="0"><Link href="https://www.facebook.com/imaginecruising"><i className="fa-classic fa-brands fa-square-facebook" aria-hidden="true"></i></Link></li>
+            <li data-ga-element="mobile-socials-link" data-ga-index="1"><Link href="https://www.instagram.com/imaginecruising/"><i className="fa-classic fa-brands fa-square-instagram" aria-hidden="true"></i></Link></li>
          </ul>
       </div>
       <div  id="mobile-background"></div>
@@ -3647,7 +3648,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   </div>
                   <br />
                   <p className="popup-copyright">
-                    By clicking subscribe you agree to our <a href="/cookie-policy">Cookie Policy</a> and <a href="/privacy-policy">Privacy Policy</a>
+                    By clicking subscribe you agree to our <Link href="/cookie-policy">Cookie Policy</Link> and <Link href="/privacy-policy">Privacy Policy</Link>
                   </p>
                   <script type="rocketlazyloadscript">
                     {`
@@ -3664,7 +3665,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                      `}
                   </script>
                   <div style={{display: "none"}}>
-                    Powered by Verifalia <a href="https://verifalia.com/">email verification</a>
+                    Powered by Verifalia <Link href="https://verifalia.com/">email verification</Link>
                   </div>
                   <script type="rocketlazyloadscript" data-minify="1" defer
                      data-rocket-src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/verifalia-widget@1.9.0/dist/verifalia-widget.js?ver=1744621466"

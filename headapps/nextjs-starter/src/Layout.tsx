@@ -478,14 +478,14 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           id="jquery-migrate-js"
         ></script>
         <script
-          type="rocketlazyloadscript"
+         //  type="rocketlazyloadscript"
           data-rocket-type="text/javascript"
           data-rocket-src="https://kit.fontawesome.com/df89c64e34.js?ver=6.7.2"
           id="fontawesome-js"
-          data-rocket-defer
+         //  data-rocket-defer
           defer
         ></script>
-        <script
+        {/* <script
           type="rocketlazyloadscript"
           data-minify="1"
           data-rocket-type="text/javascript"
@@ -493,7 +493,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           id="leaflet-js"
           data-rocket-defer
           defer
-        ></script>
+        ></script> */}
         <link rel="https://api.w.org/" href="https://www.imaginecruising.co.uk/wp-json/" />
         <link
           rel="alternate"
@@ -514,15 +514,15 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           type="text/xml+oembed"
           href="https://www.imaginecruising.co.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.imaginecruising.co.uk%2F&#038;format=xml"
         />
-        <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        {/* <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
           {`
          (function(c,l,a,r,i,t,y){
          	c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;
          	t.src="https://www.clarity.ms/tag/"+i+"?ref=wordpress";y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
          })(window, document, "clarity", "script", "kqus9aw9za");
          `}
-        </script>
-        <script type="rocketlazyloadscript">{`document.documentElement.className += " js";`}</script>
+        </script> */}
+        {/* <script type="rocketlazyloadscript">{`document.documentElement.className += " js";`}</script> */}
         <noscript>
           <style id="rocket-lazyload-nojs-css">{`.rll-youtube-player, [data-lazy-src]{display:none !important;}`}</style>
         </noscript>
@@ -7758,7 +7758,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                 and{' '}
                 <Link href="https://www.imaginecruising.co.uk/privacy-policy">Privacy Policy</Link>
               </p>
-              <script type="rocketlazyloadscript">
+              {/* <script type="rocketlazyloadscript">
                 {`
                      window.VerifaliaWidgetConfig = {
                          inputBindings: {
@@ -7771,18 +7771,18 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                          }
                      };
                      `}
-              </script>
+              </script> */}
               <div style={{ display: 'none' }}>
                 Powered by Verifalia <Link href="https://verifalia.com/">email verification</Link>
               </div>
-              <script
+              {/* <script
                 type="rocketlazyloadscript"
                 data-minify="1"
                 defer
                 data-rocket-src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/verifalia-widget@1.9.0/dist/verifalia-widget.js?ver=1744621466"
                 data-verifalia-appkey="5ae7fd39a4ca4e37a6c0679d29b00d7c"
                 crossOrigin="anonymous"
-              />
+              /> */}
             </form>
           </div>
         </div>
@@ -7800,7 +7800,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
          moment.updateLocale( 'en_GB', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":1},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"j F Y H:i","LLLL":null}} );
          /* ]]> */`}
       </script>
-      <script
+      {/* <script
         type="rocketlazyloadscript"
         data-minify="1"
         data-rocket-type="text/javascript"
@@ -7808,7 +7808,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         id="luxon-js"
         data-rocket-defer
         defer
-      ></script>
+      ></script> */}
       <script
         type="text/javascript"
         src="https://www.imaginecruising.co.uk/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"
@@ -7830,7 +7830,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js?ver=1744621466"
         id="jquery-ui-touch-js"
       ></script>
-      <script
+      {/* <script
         type="rocketlazyloadscript"
         data-minify="1"
         data-rocket-type="text/javascript"
@@ -7838,8 +7838,8 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         id="litepicker-js"
         data-rocket-defer
         defer
-      ></script>
-      <script
+      ></script> */}
+      {/* <script
         type="rocketlazyloadscript"
         data-minify="1"
         data-rocket-type="text/javascript"
@@ -7847,7 +7847,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         id="litepicker-mobile-js"
         data-rocket-defer
         defer
-      ></script>
+      ></script> */}
       <script type="text/javascript" id="search-form-js-extra">
         {`
          /* <![CDATA[ */
@@ -7864,7 +7864,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         data-rocket-defer
         defer
       ></script>
-      <script
+      {/* <script
         type="rocketlazyloadscript"
         data-minify="1"
         data-rocket-type="text/javascript"
@@ -7872,8 +7872,8 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         id="public_toolbox-js"
         data-rocket-defer
         defer
-      ></script>
-      <script
+      ></script> */}
+      {/* <script
         type="rocketlazyloadscript"
         data-minify="1"
         data-rocket-type="text/javascript"
@@ -7881,7 +7881,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         id="public_search-js"
         data-rocket-defer
         defer
-      ></script>
+      ></script> */}
       <script
         data-minify="1"
         type="text/javascript"
@@ -7894,7 +7894,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js?ver=1744621466"
         id="magnific-popup-js"
       ></script>
-      <script
+      {/* <script
         type="rocketlazyloadscript"
         data-minify="1"
         data-rocket-type="text/javascript"
@@ -7902,7 +7902,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         id="slick-js"
         data-rocket-defer
         defer
-      ></script>
+      ></script> */}
       <script
         data-minify="1"
         type="text/javascript"
@@ -7927,7 +7927,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         src="https://www.imaginecruising.co.uk/wp-content/cache/min/1/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js?ver=1744621467"
         id="cookie-js-js"
       ></script>
-      <script
+      {/* <script
         type="rocketlazyloadscript"
         data-minify="1"
         data-rocket-type="text/javascript"
@@ -7935,8 +7935,8 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         id="iprogress-custom-js"
         data-rocket-defer
         defer
-      ></script>
-      <script
+      ></script> */}
+      {/* <script
         type="rocketlazyloadscript"
         data-minify="1"
         data-rocket-type="text/javascript"
@@ -7944,7 +7944,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         id="iprogress-custom-craig-js"
         data-rocket-defer
         defer
-      ></script>
+      ></script> */}
       <script
         type="text/javascript"
         src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/js/jquery.mCustomScrollbar.concat.min.js?ver=1734947792"
@@ -7958,7 +7958,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         data-rocket-defer
         defer
       ></script>
-      <script
+      {/* <script
         type="rocketlazyloadscript"
         data-minify="1"
         data-rocket-type="text/javascript"
@@ -7966,21 +7966,21 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         id="single-agent2-js-js"
         data-rocket-defer
         defer
-      ></script>
-      <script>
+      ></script> */}
+      {/* <script>
         {`
          window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
          if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
          images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
          if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)
         `}
-      </script>
-      <script
+      </script> */}
+      {/* <script
         data-no-minify="1"
         async
         src="https://www.imaginecruising.co.uk/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"
-      />
-      <script type="rocketlazyloadscript" data-cfasync="false">
+      /> */}
+      {/* <script type="rocketlazyloadscript" data-cfasync="false">
         {`
          (function(W, i, s, e, P, o, p) {
              W['WisePopsObject'] = P;
@@ -7993,7 +7993,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
              p.parentNode.insertBefore(o, p)
          })(window, document, 'script', '//loader.wisepops.com/get-loader.js?v=1&site=SuDnceWuyw', 'wisepops');
          `}
-      </script>
+      </script> */}
     </>
   );
 };

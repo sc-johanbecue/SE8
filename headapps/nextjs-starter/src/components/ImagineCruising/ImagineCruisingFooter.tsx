@@ -194,12 +194,7 @@ export const Default = (props: FooterProps): JSX.Element => {
                 <div className="links-column links-column-4">
                   <div
                     className="trustpilot-widget ml-2 mt-2 first-wiget"
-                    data-locale="en-GB"
-                    data-template-id="5406e65db0d04a09e042d5fc"
-                    data-businessunit-id="58b690190000ff00059d93e2"
-                    data-style-height="20px"
-                    data-style-width="100px"
-                    data-theme="dark"
+                    style={{ height: '20px', width: '100px' }}
                   >
                     <Link
                       href="https://uk.trustpilot.com/review/imaginecruising.co.uk"
@@ -207,15 +202,7 @@ export const Default = (props: FooterProps): JSX.Element => {
                       rel="noopener"
                     ></Link>
                   </div>
-                  <div
-                    className="trustpilot-widget"
-                    data-locale="en-GB"
-                    data-template-id="5419b637fa0340045cd0c936"
-                    data-businessunit-id="58b690190000ff00059d93e2"
-                    data-style-height="28px"
-                    data-style-width="230px"
-                    data-theme="dark"
-                  >
+                  <div style={{ height: '28px', width: '230px' }} className="trustpilot-widget">
                     <Link
                       href="https://uk.trustpilot.com/review/imaginecruising.co.uk"
                       target="_blank"
@@ -224,7 +211,7 @@ export const Default = (props: FooterProps): JSX.Element => {
                   </div>
                   <div className="footer-socials flex flex-justify-end flex-align-center">
                     <Link href="https://www.facebook.com/imaginecruising">
-                      <i className="fa-classic fa-brands fa-square-facebook" aria-hidden="true"></i>
+                      <i className="fa-classic fa-brands fa-square-facebook"></i>
                     </Link>
                     <Link href="https://www.instagram.com/imaginecruising/">
                       <i

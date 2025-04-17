@@ -8,6 +8,7 @@ import {
   LinkField,
   Image as JssImage,
   Link as JssLink,
+  useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
@@ -39,11 +40,16 @@ const CruiseOfferDefaultComponent = (props: CruiseOfferProps): JSX.Element => (
 
 export const Default = (props: CruiseOfferProps): JSX.Element => {
   const id = 'CruiseOffer-content'; //props.params.RenderingIdentifier;
+  const { sitecoreContext } = useSitecoreContext();
 
   if (props.fields) {
     return (
       <div className="item-cruise cruise-719572 slide-position-1" id={id ? id : undefined}>
-        <JssLink field={props.fields.Link} className="test-cg cover-link" />
+        {!sitecoreContext.pageEditing ? (
+          <JssLink field={props.fields.Link} className="test-cg cover-link" />
+        ) : (
+          <></>
+        )}
         <div className="cruise-img-block">
           <JssImage field={props.fields.Image} />
           <div className="cruise-exclusive exclusive">
@@ -58,7 +64,7 @@ export const Default = (props: CruiseOfferProps): JSX.Element => {
         <div className="cruise-content-block">
           <div className="cruise-top-content">
             <div data-ga-element="cruise-offers-single-name" className="cruise-name">
-              All-Inclusive Ultimate South America Voyage, Machu Picchu &#038; Iguazu Falls
+              <Text field={props.fields.Name} />
             </div>
             <div className="cruise-meta-block">
               <div className="holiday-type">
@@ -67,7 +73,10 @@ export const Default = (props: CruiseOfferProps): JSX.Element => {
               </div>
               <div className="holiday-dates">
                 <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/calendar-icon.svg" />
-                <Text field={props.fields.Date} /> | <Text field={props.fields.Nights} /> Nights
+                <Text field={props.fields.Date} />
+                &nbsp;|&nbsp;
+                <Text field={props.fields.Nights} />
+                &nbsp;Nights
               </div>
               <div className="holiday-operator">
                 <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/ship.svg" />
@@ -80,10 +89,10 @@ export const Default = (props: CruiseOfferProps): JSX.Element => {
               <div className="cruise-price">
                 <span className="price-from">From</span>
                 <span className="the-price">
-                  &pound; <Text field={props.fields.Price} />
+                  &pound;
+                  <Text field={props.fields.Price} />
                 </span>
                 <span className="pp">
-                  {' '}
                   <Text field={props.fields.PriceUnit} />
                 </span>
               </div>

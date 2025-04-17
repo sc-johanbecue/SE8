@@ -42,14 +42,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                     alt="Imagine Cruising"
                     src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/logos/black-white-no-reg.png"
                   />
-                  <noscript>
-                    <img
-                      id="dark-logo--image"
-                      className=""
-                      src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/logos/black-white-no-reg.png"
-                      alt="Imagine Cruising"
-                    />
-                  </noscript>
+
                   {/* <span className="visuallyhidden">Imagine Cruising</span> */}
                 </Link>
               </div>
@@ -107,339 +100,248 @@ export const Default = (props: HeaderProps): JSX.Element => {
         </div>
         <div data-ga-element="header-navigation-container" className="header-nav-cont">
           <nav className="header-nav">
-            <ul
-              data-ga-element="header-nav-list"
-              id="custom-nav"
-              className="flex flex-justify-between flex-align-left"
-            >
-              <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="0">
+            <ul id="custom-nav" className="flex flex-justify-between flex-align-left">
+              <li className="top-level " key="0">
                 <Link href="https://www.imaginecruising.co.uk/">Home</Link>
               </li>
-              <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="1">
+              <li className="top-level " key="1">
                 <Link href="https://www.imaginecruising.co.uk/cruise-deals/">Cruise Deals</Link>
               </li>
-              <li
-                data-ga-element="header-nav-list-item"
-                className="top-level has-children"
-                data-ga-index="2"
-              >
+              <li className="top-level has-children" key="2">
                 <Link href="https://www.imaginecruising.co.uk/holiday-types/">
                   Holiday Types <i className="fa-solid fa-chevron-down"></i>
                 </Link>
                 <ul className="custom-sub-nav">
-                  <li className="sub-page" data-ga-index="0">
+                  <li className="sub-page" key="0">
                     <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-touring/">
                       <div className="child-name">
                         <span>Cruise & Touring</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Touring.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Touring.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="1">
+                  <li className="sub-page" key="1">
                     <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-rail/">
                       <div className="child-name">
                         <span>Cruise & Rail</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-1.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-1.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="2">
+                  <li className="sub-page" key="2">
                     <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-stay/">
                       <div className="child-name">
                         <span>Cruise & Stay</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-OCo-1-1-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-and-Rail-OCo-1-1-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="3">
+                  <li className="sub-page" key="3">
                     <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-event/">
                       <div className="child-name">
                         <span>Cruise & Event</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Event-300x136.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2023/10/Cruise-Event-300x136.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="4">
+                  <li className="sub-page" key="4">
                     <Link href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
                       <div className="child-name">
                         <span>Cruise from the UK</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
                 </ul>
               </li>
-              <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="3">
+              <li className="top-level " key="3">
                 <Link href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
                   Cruise from the UK
                 </Link>
               </li>
-              <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="4">
+              <li className="top-level " key="4">
                 <Link href="https://www.imaginecruising.co.uk/river-cruise-collection/">
                   River Cruising
                 </Link>
               </li>
-              <li
-                data-ga-element="header-nav-list-item"
-                className="top-level has-children"
-                data-ga-index="5"
-              >
+              <li className="top-level has-children" key="5">
                 <Link href="https://www.imaginecruising.co.uk/cruise-lines/">
                   Cruise Lines <i className="fa-solid fa-chevron-down"></i>
                 </Link>
                 <ul className="custom-sub-nav">
-                  <li className="sub-page" data-ga-index="0">
+                  <li className="sub-page" key="0">
                     <Link href="https://www.imaginecruising.co.uk/cruise-lines/azamara/">
                       <div className="child-name">
                         <span>Azamara</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Azamara-OCo-1-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Azamara-OCo-1-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="1">
+                  <li className="sub-page" key="1">
                     <Link href="https://www.imaginecruising.co.uk/cruise-lines/celebrity-cruises/">
                       <div className="child-name">
                         <span>Celebrity </span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Celebrity-OCo-1-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Celebrity-OCo-1-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="2">
+                  <li className="sub-page" key="2">
                     <Link href="https://www.imaginecruising.co.uk/cruise-lines/cunard-line/">
                       <div className="child-name">
                         <span>Cunard</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cunard-OCo-1-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cunard-OCo-1-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="3">
+                  <li className="sub-page" key="3">
                     <Link href="https://www.imaginecruising.co.uk/cruise-lines/holland-america-line/">
                       <div className="child-name">
                         <span>Holland America Line</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-HAL-OCo-1-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-HAL-OCo-1-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="4">
+                  <li className="sub-page" key="4">
                     <Link href="https://www.imaginecruising.co.uk/cruise-lines/po-cruises/">
                       <div className="child-name">
                         <span>P&O</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-PO-OCo-1-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-PO-OCo-1-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="5">
+                  <li className="sub-page" key="5">
                     <Link href="https://www.imaginecruising.co.uk/cruise-lines/princess-cruises/">
                       <div className="child-name">
                         <span>Princess</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Princess-OCo-1-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Princess-OCo-1-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="6">
+                  <li className="sub-page" key="6">
                     <Link href="https://www.imaginecruising.co.uk/cruise-lines/silversea-cruises/">
                       <div className="child-name">
                         <span>Silversea</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Silversea-1-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Silversea-1-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="7">
+                  <li className="sub-page" key="7">
                     <Link href="https://www.imaginecruising.co.uk/cruise-lines/">
                       <div className="child-name">
                         <span>View all </span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-Line-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Cruise-Line-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
                 </ul>
               </li>
-              <li
-                data-ga-element="header-nav-list-item"
-                className="top-level has-children"
-                data-ga-index="6"
-              >
+              <li className="top-level has-children" key="6">
                 <Link href="https://www.imaginecruising.co.uk/destinations/">
                   Destinations <i className="fa-solid fa-chevron-down"></i>
                 </Link>
                 <ul className="custom-sub-nav">
-                  <li className="sub-page" data-ga-index="0">
+                  <li className="sub-page" key="0">
                     <Link href="https://www.imaginecruising.co.uk/destinations/africa/">
                       <div className="child-name">
                         <span>Africa</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Africa.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Africa.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="1">
+                  <li className="sub-page" key="1">
                     <Link href="https://www.imaginecruising.co.uk/destinations/asia/">
                       <div className="child-name">
                         <span>Asia</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Asia-nav-images-mobile-desktop-300x158-Destination.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Asia-nav-images-mobile-desktop-300x158-Destination.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="2">
+                  <li className="sub-page" key="2">
                     <Link href="https://www.imaginecruising.co.uk/australia-and-new-zealand/">
                       <div className="child-name">
                         <span>Australia & New Zealand</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Australia-nav-images-mobile-desktop-300x158-Destination-OCo-1.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Australia-nav-images-mobile-desktop-300x158-Destination-OCo-1.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="3">
+                  <li className="sub-page" key="3">
                     <Link href="https://www.imaginecruising.co.uk/destinations/caribbean/">
                       <div className="child-name">
                         <span>Caribbean</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Caribbean-nav-images-mobile-desktop-300x158-Destination-OCo-2.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Caribbean-nav-images-mobile-desktop-300x158-Destination-OCo-2.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="4">
+                  <li className="sub-page" key="4">
                     <Link href="https://www.imaginecruising.co.uk/destinations/europe/">
                       <div className="child-name">
                         <span>Europe</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Europe-nav-images-mobile-desktop-300x158-Destination-OCo-4-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Europe-nav-images-mobile-desktop-300x158-Destination-OCo-4-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="5">
+                  <li className="sub-page" key="5">
                     <Link href="https://www.imaginecruising.co.uk/destinations/indian-ocean/">
                       <div className="child-name">
                         <span>Indian Ocean</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Indian-Ocean-nav-images-mobile-desktop-300x158-Destination-OCo-5-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Indian-Ocean-nav-images-mobile-desktop-300x158-Destination-OCo-5-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="6">
+                  <li className="sub-page" key="6">
                     <Link href="https://www.imaginecruising.co.uk/destinations/indian-subcontinent/">
                       <div className="child-name">
                         <span>Indian Subcontinent </span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Indian-sub-1-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/nav-images-mobile-desktop-300x158-Indian-sub-1-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="7">
+                  <li className="sub-page" key="7">
                     <Link href="https://www.imaginecruising.co.uk/destinations/middle-east/">
                       <div className="child-name">
                         <span>Middle East</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Middle-East-nav-images-mobile-desktop-300x158-Destination-OCo-6-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Middle-East-nav-images-mobile-desktop-300x158-Destination-OCo-6-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="8">
+                  <li className="sub-page" key="8">
                     <Link href="https://www.imaginecruising.co.uk/north-america/">
                       <div className="child-name">
                         <span>North America</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/North-America-1.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/North-America-1.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="9">
+                  <li className="sub-page" key="9">
                     <Link href="https://www.imaginecruising.co.uk/destinations/south-america/">
                       <div className="child-name">
                         <span>South America</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/South-America-nav-images-mobile-desktop-300x158-Destination-OCo-7-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/South-America-nav-images-mobile-desktop-300x158-Destination-OCo-7-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="10">
+                  <li className="sub-page" key="10">
                     <Link href="https://www.imaginecruising.co.uk/cruise-from-the-uk/">
                       <div className="child-name">
                         <span>Cruise from the UK</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/Cruise_From_UK_Tile.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
-                  <li className="sub-page" data-ga-index="11">
+                  <li className="sub-page" key="11">
                     <Link href="https://www.imaginecruising.co.uk/destinations/">
                       <div className="child-name">
                         <span>View all</span>
                         <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg" />
-                        <noscript>
-                          <img src="https://www.imaginecruising.co.uk/wp-content/uploads/2024/12/View-all-nav-images-mobile-desktop-300x158-Destination-OCo-3-300x158.jpg" />
-                        </noscript>
                       </div>
                     </Link>
                   </li>
                 </ul>
               </li>
-              <li data-ga-element="header-nav-list-item" className="top-level " data-ga-index="7">
+              <li data-ga-element="header-nav-list-item" className="top-level " key="7">
                 <Link href="https://www.imaginecruising.co.uk/about-us/">About us</Link>
               </li>
-              <li data-ga-element="manage-my-booking">
+              <li data-ga-element="manage-my-booking" key="8">
                 <Link
                   className=""
                   href="https://www.imaginecruising.co.uk/manage-my-booking/"
@@ -447,9 +349,6 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   rel="noopener"
                 >
                   <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/passenger_icon_white.svg" />
-                  <noscript>
-                    <img src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/images/passenger_icon_white.svg" />
-                  </noscript>
                   Manage my booking
                 </Link>
               </li>

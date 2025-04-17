@@ -24,7 +24,7 @@ export const Default = (props: FooterProps): JSX.Element => {
   if (props.fields) {
     return (
       <>
-        <div id="subscribe-toolbar" className="subscribe-toolbar-disrupter">
+        {/* <div id="subscribe-toolbar" className="subscribe-toolbar-disrupter">
           <div className="content-margin">
             <p className="toolbar-header">Latest Offers from Imagine Cruising</p>
             <p>
@@ -41,7 +41,7 @@ export const Default = (props: FooterProps): JSX.Element => {
               <button className="footer-newsletter aqua-button">Subscribe</button>
             </div>
           </div>
-        </div>
+        </div> */}
         <div id="footer-lower">
           <div id="footer-sticky-number" className="mobile-only fixed">
             <div className="flex">
@@ -214,10 +214,7 @@ export const Default = (props: FooterProps): JSX.Element => {
                       <i className="fa-classic fa-brands fa-square-facebook"></i>
                     </Link>
                     <Link href="https://www.instagram.com/imaginecruising/">
-                      <i
-                        className="fa-classic fa-brands fa-square-instagram"
-                        aria-hidden="true"
-                      ></i>
+                      <i className="fa-classic fa-brands fa-square-instagram"></i>
                     </Link>
                   </div>
                 </div>

@@ -7,6 +7,7 @@ import {
   ComponentRendering,
   Placeholder,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import 'animate.css';
 
 interface Fields {
   Title: TextField;
@@ -34,7 +35,7 @@ export const Default = (props: CruiseLinesProps): JSX.Element => {
   if (props.fields) {
     return (
       <section
-        className="cruise-lines-section builder-cruise-lines-block builder-cruise-lines-block-default slider-version"
+        className={`cruise-lines-section builder-cruise-lines-block builder-cruise-lines-block-default slider-version ${props.params.styles}`}
         id={id ? id : undefined}
       >
         <div className="inner">

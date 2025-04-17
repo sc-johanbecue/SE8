@@ -7,6 +7,7 @@ import {
   ComponentRendering,
   Placeholder,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import 'animate.css';
 
 interface Fields {
   Title: TextField;
@@ -33,7 +34,10 @@ export const Default = (props: CruiseLinesProps): JSX.Element => {
 
   if (props.fields) {
     return (
-      <section className="white-block grid-area-3 cta-blocks-one" id={id ? id : undefined}>
+      <section
+        className={`white-block grid-area-3 cta-blocks-one ${props.params.styles}`}
+        id={id ? id : undefined}
+      >
         <div className="inner">
           <h3>
             <Text field={props.fields.Title} />

@@ -10,6 +10,7 @@ import {
   Link as JssLink,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import 'animate.css';
 
 interface Fields {
   Name: TextField;
@@ -38,7 +39,7 @@ export const Default = (props: CruiseLineProps): JSX.Element => {
 
   if (props.fields) {
     return (
-      <div className="item-grid item-cruise-line" id={id ? id : undefined}>
+      <div className={`item-grid item-cruise-line ${props.params.styles}`} id={id ? id : undefined}>
         <div
           style={{
             backgroundImage: `url(${props.fields.Image.value?.src})`,

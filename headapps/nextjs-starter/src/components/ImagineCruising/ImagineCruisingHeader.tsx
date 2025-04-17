@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { TextField } from '@sitecore-jss/sitecore-jss-nextjs';
+import 'animate.css';
 
 interface Fields {
   Title: TextField;
@@ -30,7 +31,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
         <div
           data-ga-element="header-content"
           id={id ? id : undefined}
-          className="flex flex-justify-between content-margin"
+          className={`flex flex-justify-between content-margin ${props.params.styles}`}
         >
           <div className="header-left">
             <div className="header-logo-cont">

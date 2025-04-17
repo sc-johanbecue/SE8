@@ -9,6 +9,7 @@ import {
   Link as JssLink,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import 'animate.css';
 
 interface Fields {
   SmallText: TextField;

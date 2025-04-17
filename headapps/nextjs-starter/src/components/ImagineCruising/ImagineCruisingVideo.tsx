@@ -1,6 +1,7 @@
 import React from 'react';
 import { ImageField, TextField, Text, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
 import Link from 'next/link';
+import 'animate.css';
 
 interface Fields {
   Poster: ImageField;
@@ -26,7 +27,7 @@ export const Default = (props: VideoProps): JSX.Element => {
   //const id = props.params.RenderingIdentifier;
   if (props.fields) {
     return (
-      <div id="home-video" className="video-background">
+      <div id="home-video" className={`video-background ${props.params.styles}`}>
         <video
           autoPlay
           muted

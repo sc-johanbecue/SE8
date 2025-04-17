@@ -1,6 +1,7 @@
 import React from 'react'; //{ useState }
 import { TextField } from '@sitecore-jss/sitecore-jss-nextjs';
 import Link from 'next/link';
+import 'animate.css';
 
 interface Fields {
   Title: TextField;
@@ -42,7 +43,7 @@ export const Default = (props: FooterProps): JSX.Element => {
             </div>
           </div>
         </div> */}
-        <div id="footer-lower">
+        <div id="footer-lower" className={`${props.params.styles}`}>
           <div id="footer-sticky-number" className="mobile-only fixed">
             <div className="flex">
               <Link className="absolute-zero fsource__tel no-text" href="tel:0800 840 5801"></Link>

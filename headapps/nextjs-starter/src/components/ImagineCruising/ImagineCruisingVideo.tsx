@@ -5,6 +5,7 @@ import Link from 'next/link';
 interface Fields {
   Poster: ImageField;
   VideoLink: LinkField;
+  Video: TextField;
   Title: TextField;
 }
 
@@ -35,9 +36,8 @@ export const Default = (props: VideoProps): JSX.Element => {
           disableRemotePlayback
           preload="auto"
           id="background-video"
-          poster={props.fields.Poster.value?.src}
         >
-          <source src={props.fields.VideoLink.value.href} type="video/mp4" />
+          <source src={props.fields.Video.value as string} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="video-overlay">

@@ -11,11 +11,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const aK = '45f4a1f4-d407-42d9-9aba-47751f3cd788'; //'2565bc11-c6e6-4ec3-85f7-64a6f9e4fdde'; // replace with real key
 
   const payload = {
-    Firstname: firstname,
     Name: name,
     Email: email,
     HasExternalDoubleOptIn: false,
-    CustomFields: [`Persona=${persona}`, `Operator=${operator}`],
+    CustomFields: [`firstname=${firstname}`, `persona=${persona}`, `operator=${operator}`],
   };
 
   try {

@@ -100,12 +100,8 @@ export const Default = (props: HeaderProps): JSX.Element => {
             </div>
           </div>
         </div>
-        <div
-          data-ga-element="header-navigation-container"
-          className="header-nav-cont"
-          style={{ width: '100%' }}
-        >
-          <nav className="header-nav">
+        <div data-ga-element="header-navigation-container" className="header-nav-cont">
+          <nav className="header-nav" style={{ width: '100%' }}>
             <ul id="custom-nav" className="flex flex-justify-between flex-align-left">
               <li className="top-level " key="0">
                 <Link href="https://www.imaginecruising.co.uk/">Home</Link>

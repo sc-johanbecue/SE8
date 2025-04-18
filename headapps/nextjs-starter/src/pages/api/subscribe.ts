@@ -7,8 +7,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const { firstname, name, email, persona, operator } = req.body;
 
-  //   const MailingListID = 'your-mailing-list-id'; // replace with real ID
-  //   const aK = '2565bc11-c6e6-4ec3-85f7-64a6f9e4fdde'; // replace with real key
+  const MailingListID = '9f03e75a-d064-4be9-ae6c-a111eb7d1630'; // replace with real ID
+  const aK = '45f4a1f4-d407-42d9-9aba-47751f3cd788'; //'2565bc11-c6e6-4ec3-85f7-64a6f9e4fdde'; // replace with real key
 
   const payload = {
     Firstname: firstname,
@@ -20,14 +20,24 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   try {
     console.log('subscribe.ts - start try');
-    //`https://demoaccount2023.sitecoresend.io/v3/subscribers/${MailingListID}/subscribe.json?apikey=${aK}`
-    const response = await fetch(`https://sitecore.requestcatcher.com/test`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(payload),
-    });
+    // const response = await fetch(`https://sitecore.requestcatcher.com/test`, {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify(payload),
+    // });
+
+    const response = await fetch(
+      `https://sitecoresendemo.sitecoresend.io/v3/subscribers/${MailingListID}/subscribe.json?apikey=${aK}`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      }
+    );
 
     const result = await response.json();
 

@@ -57,6 +57,7 @@ export const Default = (props: ExploreProps): JSX.Element => {
     return (
       <div
         className={`component img-item img-item-0 ${props.params.styles}`}
+        key={id ? id : undefined}
         id={id ? id : undefined}
       >
         {!sitecoreContext.pageEditing ? (

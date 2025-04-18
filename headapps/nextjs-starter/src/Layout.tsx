@@ -1483,7 +1483,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           </div>
         </div>
       </div>
-      <script
+      {/* <script
         type="text/javascript"
         src="https://www.imaginecruising.co.uk/wp-includes/js/dist/vendor/moment.min.js?ver=2.30.1"
         id="moment-js"
@@ -1554,7 +1554,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         type="text/javascript"
         src="https://www.imaginecruising.co.uk/wp-content/themes/imagine-rebrand/js/jquery.mCustomScrollbar.concat.min.js?ver=1734947792"
         id="custom-scroll-js"
-      ></script>
+      ></script> */}
       {/* <script
         data-minify="1"
         type="text/javascript"

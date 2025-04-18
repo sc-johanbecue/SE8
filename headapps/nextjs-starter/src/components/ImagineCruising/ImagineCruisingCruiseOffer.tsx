@@ -47,6 +47,7 @@ export const Default = (props: CruiseOfferProps): JSX.Element => {
     return (
       <div
         className={`component item-cruise cruise-719572 slide-position-1 ${props.params.styles}`}
+        key={id ? id : undefined}
         id={id ? id : undefined}
       >
         {!sitecoreContext.pageEditing ? (

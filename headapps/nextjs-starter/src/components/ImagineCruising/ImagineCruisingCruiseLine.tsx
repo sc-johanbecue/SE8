@@ -41,6 +41,7 @@ export const Default = (props: CruiseLineProps): JSX.Element => {
     return (
       <div
         className={`component item-grid item-cruise-line ${props.params.styles}`}
+        key={id ? id : undefined}
         id={id ? id : undefined}
       >
         <div

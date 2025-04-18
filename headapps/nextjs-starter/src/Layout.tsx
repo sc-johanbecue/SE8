@@ -4,12 +4,13 @@
 /**
  * This Layout is needed for Starter Kit.
  */
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import { Placeholder, LayoutServiceData, Field, HTMLLink } from '@sitecore-jss/sitecore-jss-nextjs';
 import config from 'temp/config';
 import Scripts from 'src/Scripts';
+//import SubscribeButton from 'components/ImagineCruising/SubscribeButton';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
@@ -30,6 +31,51 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const fields = route?.fields as RouteFields;
   const isPageEditing = layoutData.sitecore.context.pageEditing;
   const mainClassPageEditing = isPageEditing ? 'editing-mode' : 'prod-mode';
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const button = Array.from(document.querySelectorAll('button')).find(
+        (btn) => btn.textContent?.trim() === 'Subscribe'
+      );
+
+      if (button) {
+        const handleClick = async () => {
+          try {
+            const response = await fetch('/api/subscribe', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                firstname: 'Paul',
+                name: 'Lastname',
+                email: 'someEmail@email.com',
+                persona: 'Looker',
+                operator: 'Princess',
+              }),
+            });
+
+            const result = await response.json();
+            console.log('Result:', result);
+          } catch (err) {
+            console.error('Error subscribing:', err);
+          }
+        };
+
+        button.addEventListener('click', handleClick);
+        console.log('✅ Listener attached to Subscribe button');
+        clearInterval(interval); // stop checking once we found it
+
+        // Optional cleanup if the component unmounts
+        return () => {
+          button.removeEventListener('click', handleClick);
+        };
+      }
+    }, 200); // check every 200ms
+
+    // Stop checking after 10s (safety net)
+    setTimeout(() => clearInterval(interval), 10000);
+  }, []);
 
   return (
     <>
@@ -789,7 +835,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           type="text/css"
           media="all"
         />
-        <script
+        {/* <script
           type="text/javascript"
           src="https://www.imaginecruising.co.uk/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
           id="jquery-core-js"
@@ -798,7 +844,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           type="text/javascript"
           src="https://www.imaginecruising.co.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
           id="jquery-migrate-js"
-        ></script>
+        ></script> */}
         <script
           type="text/javascript"
           src="https://kit.fontawesome.com/df89c64e34.js?ver=6.7.2"
@@ -807,7 +853,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         ></script>
         <link rel="shortlink" href="https://www.imaginecruising.co.uk/" />
       </Head>
-
       {/* root placeholder for the app, which we add components to using route data */}
       <div className={mainClassPageEditing}>
         <header>

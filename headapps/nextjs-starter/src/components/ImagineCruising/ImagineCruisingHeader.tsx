@@ -56,7 +56,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                     data-favourites-count="0"
                   >
                     <span>
-                      Favourites <i className="fa-regular fa-heart"></i>
+                      Favourites <i className="fa-regular fa-heart" aria-hidden></i>
                     </span>
                   </Link>
                 </div>
@@ -111,7 +111,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
               </li>
               <li className="top-level has-children" key="2">
                 <Link href="https://www.imaginecruising.co.uk/holiday-types/">
-                  Holiday Types <i className="fa-solid fa-chevron-down"></i>
+                  Holiday Types <i className="fa-solid fa-chevron-down" aria-hidden></i>
                 </Link>
                 <ul className="custom-sub-nav">
                   <li className="sub-page" key="0">
@@ -168,7 +168,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
               </li>
               <li className="top-level has-children" key="5">
                 <Link href="https://www.imaginecruising.co.uk/cruise-lines/">
-                  Cruise Lines <i className="fa-solid fa-chevron-down"></i>
+                  Cruise Lines <i className="fa-solid fa-chevron-down" aria-hidden></i>
                 </Link>
                 <ul className="custom-sub-nav">
                   <li className="sub-page" key="0">
@@ -239,7 +239,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
               </li>
               <li className="top-level has-children" key="6">
                 <Link href="https://www.imaginecruising.co.uk/destinations/">
-                  Destinations <i className="fa-solid fa-chevron-down"></i>
+                  Destinations <i className="fa-solid fa-chevron-down" aria-hidden></i>
                 </Link>
                 <ul className="custom-sub-nav">
                   <li className="sub-page" key="0">

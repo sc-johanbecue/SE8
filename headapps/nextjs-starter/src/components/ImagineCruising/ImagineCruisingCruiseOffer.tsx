@@ -62,7 +62,7 @@ export const Default = (props: CruiseOfferProps): JSX.Element => {
             </span>
           </div>
           <span className="fave" data-favourite="719572">
-            <i className="far fa-heart"></i>
+            <i className="far fa-heart" aria-hidden></i>
           </span>
         </div>
         <div className="cruise-content-block">

@@ -212,10 +212,10 @@ export const Default = (props: FooterProps): JSX.Element => {
                   </div>
                   <div className="footer-socials flex flex-justify-end flex-align-center">
                     <Link href="https://www.facebook.com/imaginecruising">
-                      <i className="fa-classic fa-brands fa-square-facebook"></i>
+                      <i className="fa-classic fa-brands fa-square-facebook" aria-hidden></i>
                     </Link>
                     <Link href="https://www.instagram.com/imaginecruising/">
-                      <i className="fa-classic fa-brands fa-square-instagram"></i>
+                      <i className="fa-classic fa-brands fa-square-instagram" aria-hidden></i>
                     </Link>
                   </div>
                 </div>

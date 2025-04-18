@@ -901,7 +901,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               <Link href="https://www.imaginecruising.co.uk/holiday-types/">
                 <div className="child-name">
                   <span>
-                    Holiday Types <i className="fa-solid fa-chevron-right"></i>
+                    Holiday Types <i className="fa-solid fa-chevron-right" aria-hidden></i>
                   </span>
                   <div
                     style={{
@@ -960,7 +960,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               <Link href="https://www.imaginecruising.co.uk/cruise-lines/">
                 <div className="child-name">
                   <span>
-                    Cruise Lines <i className="fa-solid fa-chevron-right"></i>
+                    Cruise Lines <i className="fa-solid fa-chevron-right" aria-hidden></i>
                   </span>
                   <div
                     style={{
@@ -981,7 +981,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               <Link href="https://www.imaginecruising.co.uk/destinations/">
                 <div className="child-name">
                   <span>
-                    Destinations <i className="fa-solid fa-chevron-right"></i>
+                    Destinations <i className="fa-solid fa-chevron-right" aria-hidden></i>
                   </span>
                   <div
                     style={{
@@ -1046,7 +1046,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
             data-parent="Holiday Types"
           >
             <div className="custom-sub-prev">
-              <i className="fa-solid fa-chevron-left"></i> Holiday Types
+              <i className="fa-solid fa-chevron-left" aria-hidden></i> Holiday Types
             </div>
             <li data-ga-element="mobile-custom-sub-nav-link" key="0" className="sub-page">
               <Link href="https://www.imaginecruising.co.uk/holiday-types/cruise-touring/">
@@ -1126,7 +1126,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
             data-parent="Cruise Lines"
           >
             <div className="custom-sub-prev">
-              <i className="fa-solid fa-chevron-left"></i> Cruise Lines
+              <i className="fa-solid fa-chevron-left" aria-hidden></i> Cruise Lines
             </div>
             <li data-ga-element="mobile-custom-sub-nav-link" key="0" className="sub-page">
               <Link href="https://www.imaginecruising.co.uk/cruise-lines/azamara/">
@@ -1248,7 +1248,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
             data-parent="Destinations"
           >
             <div className="custom-sub-prev">
-              <i className="fa-solid fa-chevron-left"></i> Destinations
+              <i className="fa-solid fa-chevron-left" aria-hidden></i> Destinations
             </div>
             <li data-ga-element="mobile-custom-sub-nav-link" key="0" className="sub-page">
               <Link href="https://www.imaginecruising.co.uk/destinations/africa/">
@@ -1423,12 +1423,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         <ul data-ga-element="mobile-socials" className="mobile-socials">
           <li data-ga-element="mobile-socials-link" key="0">
             <Link href="https://www.facebook.com/imaginecruising">
-              <i className="fa-classic fa-brands fa-square-facebook"></i>
+              <i className="fa-classic fa-brands fa-square-facebook" aria-hidden></i>
             </Link>
           </li>
           <li data-ga-element="mobile-socials-link" key="1">
             <Link href="https://www.instagram.com/imaginecruising/">
-              <i className="fa-classic fa-brands fa-square-instagram"></i>
+              <i className="fa-classic fa-brands fa-square-instagram" aria-hidden></i>
             </Link>
           </li>
         </ul>

@@ -27,7 +27,7 @@ export const Default = (props: VideoProps): JSX.Element => {
   //const id = props.params.RenderingIdentifier;
   if (props.fields) {
     return (
-      <div id="home-video" className={`video-background ${props.params.styles}`}>
+      <div id="home-video" className={`component video-background ${props.params.styles}`}>
         <video
           autoPlay
           muted

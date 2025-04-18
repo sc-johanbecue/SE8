@@ -55,7 +55,10 @@ export const Default = (props: ExploreProps): JSX.Element => {
 
   if (props.fields) {
     return (
-      <div className="img-item img-item-0" id={id ? id : undefined}>
+      <div
+        className={`component img-item img-item-0 ${props.params.styles}`}
+        id={id ? id : undefined}
+      >
         {!sitecoreContext.pageEditing ? (
           <JssLink field={props.fields.Link}>
             <InnerComponent {...props} />

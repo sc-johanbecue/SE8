@@ -26,7 +26,7 @@ export const Default = (props: ContentWithTitleProps): JSX.Element => {
 
   if (props.fields) {
     return (
-      <div id="home-video-lower">
+      <div id="home-video-lower" className={`component ${props.params.styles}`}>
         <div className="content-margin" id={id ? id : undefined}>
           <h2>
             <Text field={props.fields.Title} />

@@ -31,7 +31,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
         <div
           data-ga-element="header-content"
           id={id ? id : undefined}
-          className={`flex flex-justify-between content-margin ${props.params.styles}`}
+          className={`component flex flex-justify-between content-margin ${props.params.styles}`}
         >
           <div className="header-left">
             <div className="header-logo-cont">

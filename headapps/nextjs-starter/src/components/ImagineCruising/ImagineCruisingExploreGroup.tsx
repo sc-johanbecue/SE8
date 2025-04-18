@@ -35,7 +35,7 @@ export const Default = (props: CruiseLinesProps): JSX.Element => {
   if (props.fields) {
     return (
       <section
-        className={`white-block grid-area-3 cta-blocks-one ${props.params.styles}`}
+        className={`component white-block grid-area-3 cta-blocks-one ${props.params.styles}`}
         id={id ? id : undefined}
       >
         <div className="inner">

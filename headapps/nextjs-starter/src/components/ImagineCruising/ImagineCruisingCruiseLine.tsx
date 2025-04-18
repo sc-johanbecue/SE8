@@ -39,7 +39,10 @@ export const Default = (props: CruiseLineProps): JSX.Element => {
 
   if (props.fields) {
     return (
-      <div className={`item-grid item-cruise-line ${props.params.styles}`} id={id ? id : undefined}>
+      <div
+        className={`component item-grid item-cruise-line ${props.params.styles}`}
+        id={id ? id : undefined}
+      >
         <div
           style={{
             backgroundImage: `url(${props.fields.Image.value?.src})`,

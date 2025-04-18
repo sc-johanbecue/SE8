@@ -43,7 +43,7 @@ export const Default = (props: FooterProps): JSX.Element => {
             </div>
           </div>
         </div> */}
-        <div id="footer-lower" className={`${props.params.styles}`}>
+        <div id="footer-lower" className={`component ${props.params.styles}`}>
           <div id="footer-sticky-number" className="mobile-only fixed">
             <div className="flex">
               <Link className="absolute-zero fsource__tel no-text" href="tel:0800 840 5801"></Link>

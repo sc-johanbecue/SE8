@@ -36,7 +36,7 @@ export const Default = (props: CruiseOffersProps): JSX.Element => {
     return (
       <section
         id={id ? id : undefined}
-        className={`mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-0 ${props.params.styles}`}
+        className={`component mobile-no-padding cruise-offers builder-section builder-cruise-offers  slider-position-0 ${props.params.styles}`}
       >
         <div className="inner">
           <h3 data-ga-element="cruise-offers-title">

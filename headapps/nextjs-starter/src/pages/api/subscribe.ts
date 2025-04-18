@@ -42,6 +42,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const result = await response.json();
 
     if (!response.ok) {
+      console.log('subscribe.ts - success');
       return res.status(response.status).json({ error: result });
     }
     console.log('subscribe.ts - after try');

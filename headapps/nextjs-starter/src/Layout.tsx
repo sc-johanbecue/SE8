@@ -71,6 +71,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           button.removeEventListener('click', handleClick);
         };
       }
+      return;
     }, 200); // check every 200ms
 
     // Stop checking after 10s (safety net)

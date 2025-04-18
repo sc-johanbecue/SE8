@@ -8,7 +8,7 @@ import {
   LinkField,
   Image as JssImage,
   Link as JssLink,
-  useSitecoreContext,
+  // useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import 'animate.css';
 
@@ -41,7 +41,7 @@ const CruiseOfferDefaultComponent = (props: CruiseOfferProps): JSX.Element => (
 
 export const Default = (props: CruiseOfferProps): JSX.Element => {
   const id = 'CruiseOffer-content'; //props.params.RenderingIdentifier;
-  const { sitecoreContext } = useSitecoreContext();
+  // const { sitecoreContext } = useSitecoreContext();
 
   if (props.fields) {
     return (
@@ -50,11 +50,11 @@ export const Default = (props: CruiseOfferProps): JSX.Element => {
         key={id ? id : undefined}
         id={id ? id : undefined}
       >
-        {!sitecoreContext.pageEditing ? (
+        {/* {!sitecoreContext.pageEditing ? (
           <JssLink field={props.fields.Link} className="test-cg cover-link" />
         ) : (
           <></>
-        )}
+        )} */}
         <div className="cruise-img-block">
           <JssImage field={props.fields.Image} />
           <div className="cruise-exclusive exclusive">

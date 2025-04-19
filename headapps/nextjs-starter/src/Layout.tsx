@@ -49,10 +49,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               'input[data-type="text_input"][placeholder="First Name"]'
             ) as HTMLInputElement;
             console.log('firstname:', firstname?.value);
-            const name = document.querySelector(
+            const lastname = document.querySelector(
               'input[data-type="text_input"][placeholder="Last Name"]'
             ) as HTMLInputElement;
-            console.log('name:', name?.value);
+            console.log('name:', lastname?.value);
             const response = await fetch('/api/subscribe', {
               method: 'POST',
               headers: {
@@ -60,7 +60,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               },
               body: JSON.stringify({
                 firstname: `${firstname?.value}`,
-                name: `${name?.value}`,
+                lastname: `${lastname?.value}`,
                 email: `${email?.value}`,
                 persona: 'Looker',
                 operator: 'Princess',

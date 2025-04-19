@@ -4,7 +4,7 @@
 /**
  * This Layout is needed for Starter Kit.
  */
-import React, { useEffect } from 'react';
+import React, { InputHTMLAttributes, useEffect } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import { Placeholder, LayoutServiceData, Field, HTMLLink } from '@sitecore-jss/sitecore-jss-nextjs';
@@ -43,25 +43,25 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           try {
             const email = document.querySelector(
               'input[data-type="email_input"][placeholder="Email"]'
-            );
-            console.log('email:', email);
+            ) as HTMLInputElement;
+            console.log('email:', email?.value);
             const firstname = document.querySelector(
               'input[data-type="text_input"][placeholder="First Name"]'
-            );
-            console.log('firstname:', firstname);
+            ) as HTMLInputElement;
+            console.log('firstname:', firstname?.value);
             const name = document.querySelector(
               'input[data-type="text_input"][placeholder="Last Name"]'
-            );
-            console.log('name:', name);
+            ) as HTMLInputElement;
+            console.log('name:', name?.value);
             const response = await fetch('/api/subscribe', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
               },
               body: JSON.stringify({
-                firstname: `${firstname}`,
-                name: `${name}`,
-                email: `${email}`,
+                firstname: `${firstname?.value}`,
+                name: `${name?.value}`,
+                email: `${email?.value}`,
                 persona: 'Looker',
                 operator: 'Princess',
               }),

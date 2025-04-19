@@ -4,7 +4,7 @@
 /**
  * This Layout is needed for Starter Kit.
  */
-import React, { InputHTMLAttributes, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import { Placeholder, LayoutServiceData, Field, HTMLLink } from '@sitecore-jss/sitecore-jss-nextjs';

@@ -41,15 +41,27 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
       if (button) {
         const handleClick = async () => {
           try {
+            const email = document.querySelector(
+              'input[data-type="email_input"][placeholder="Email"]'
+            );
+            console.log('email:', email);
+            const firstname = document.querySelector(
+              'input[data-type="text_input"][placeholder="First Name"]'
+            );
+            console.log('firstname:', firstname);
+            const name = document.querySelector(
+              'input[data-type="text_input"][placeholder="Last Name"]'
+            );
+            console.log('name:', name);
             const response = await fetch('/api/subscribe', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
               },
               body: JSON.stringify({
-                firstname: 'Paul',
-                name: 'Lastname',
-                email: 'someEmail@email.com',
+                firstname: `${firstname}`,
+                name: `${name}`,
+                email: `${email}`,
                 persona: 'Looker',
                 operator: 'Princess',
               }),

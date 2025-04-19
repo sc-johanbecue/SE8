@@ -28,7 +28,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     // });
 
     const response = await fetch(
-      `https://sitecoresendemo.sitecoresend.io/v3/subscribers/${MailingListID}/subscribe.json?apikey=${aK}`,
+      `https://api.sitecoresend.io/v3/subscribers/${MailingListID}/subscribe.json?apikey=${aK}`,
       {
         method: 'POST',
         headers: {
@@ -39,6 +39,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     );
 
     const result = await response.json();
+    console.log('subscribe.ts - result:' + result);
 
     if (!response.ok) {
       console.log('subscribe.ts - success');
@@ -47,6 +48,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     console.log('subscribe.ts - after try');
     return res.status(200).json({ success: true, data: result });
   } catch (err) {
+    console.log('subscribe.ts - catcherror:' + err);
     return res.status(500).json({ error: 'Internal Server Error' });
   }
 }

@@ -20,6 +20,7 @@ interface Fields {
 }
 
 interface RenderingConfigurationParam {
+  CharacterAnimationConfiguration?: never;
   PrefixAnimationIteration: StyleItem | null;
   PrefixOpacity: StyleItem | null;
   PrefixImage: ImageItem | null;
@@ -120,17 +121,18 @@ const AnimatedLettersParagraphDefaultComponent = (
 export const Default = (props: AnimatedLettersParagraphProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
+  const z = props.params.RenderingConfiguration as RenderingConfigurationParam;
   const headingClassNames = concatenateClassNames(
-    props.params.RenderingConfiguration.TextColor?.Value,
-    props.params.RenderingConfiguration.FontWeight?.Value,
-    props.params.RenderingConfiguration.PaddingStart?.Value,
-    props.params.RenderingConfiguration.PaddingEnd?.Value,
-    props.params.RenderingConfiguration.PaddingTop?.Value,
-    props.params.RenderingConfiguration.PaddingBottom?.Value,
-    props.params.RenderingConfiguration.MarginStart?.Value,
-    props.params.RenderingConfiguration.MarginEnd?.Value,
-    props.params.RenderingConfiguration.MarginTop?.Value,
-    props.params.RenderingConfiguration.MarginBottom?.Value
+    z.TextColor?.fields.Value?.value as string,
+    z.FontWeight?.fields.Value?.value as string,
+    z.PaddingStart?.fields.Value?.value as string,
+    z.PaddingEnd?.fields.Value?.value as string,
+    z.PaddingTop?.fields.Value?.value as string,
+    z.PaddingBottom?.fields.Value?.value as string,
+    z.MarginStart?.fields.Value?.value as string,
+    z.MarginEnd?.fields.Value?.value as string,
+    z.MarginTop?.fields.Value?.value as string,
+    z.MarginBottom?.fields.Value?.value as string
   );
 
   if (props.fields) {
@@ -141,12 +143,10 @@ export const Default = (props: AnimatedLettersParagraphProps): JSX.Element => {
           props.params.Styles ? props.params.Styles : ''
         }`}
       >
-        {props.params.RenderingConfiguration.CharacterAnimationConfiguration != undefined ? (
+        {z.CharacterAnimationConfiguration != undefined ? (
           <AnimatedLetters
             text={props.fields.Title?.value as string}
-            characterAnimationConfiguration={
-              props.params.RenderingConfiguration.CharacterAnimationConfiguration
-            }
+            characterAnimationConfiguration={z.CharacterAnimationConfiguration}
           />
         ) : (
           <Text field={props.fields.Title} />

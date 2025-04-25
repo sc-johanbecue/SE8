@@ -26,7 +26,7 @@ interface RenderingConfigurationParam {
 type AnimatedLettersParagraphProps = {
   fields: Fields;
   rendering: ComponentRendering & { params: RenderingConfigurationParam & ComponentParams };
-  params: ComponentParams;
+  params: RenderingConfigurationParam & ComponentParams;
 };
 
 // //export const getServerSideProps: GetServerSideComponentProps

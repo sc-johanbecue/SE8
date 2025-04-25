@@ -22,21 +22,21 @@ interface Fields {
 
 interface RenderingConfigurationParam {
   RenderingConfiguration: {
-    TextColor: { Value: { value: string } };
-    FontWeight: { Value: { value: string } };
-    FontSize: { Value: { value: string } };
-    LineHeight: { Value: { value: string } };
-    CharacterSpacing: { Value: { value: string } };
-    CharacterAnimationConfiguration: { Value: { value: string } };
-    PaddingStart: { Value: { value: string } };
-    PaddingEnd: { Value: { value: string } };
-    PaddingTop: { Value: { value: string } };
-    PaddingBottom: { Value: { value: string } };
-    MarginStart: { Value: { value: string } };
-    MarginEnd: { Value: { value: string } };
-    MarginTop: { Value: { value: string } };
-    MarginBottom: { Value: { value: string } };
-    WrapText: { Value: { value: string } };
+    TextColor?: { Value: { value: string } };
+    FontWeight?: { Value: { value: string } };
+    FontSize?: { Value: { value: string } };
+    LineHeight?: { Value: { value: string } };
+    CharacterSpacing?: { Value: { value: string } };
+    CharacterAnimationConfiguration?: { Value: { value: string } };
+    PaddingStart?: { Value: { value: string } };
+    PaddingEnd?: { Value: { value: string } };
+    PaddingTop?: { Value: { value: string } };
+    PaddingBottom?: { Value: { value: string } };
+    MarginStart?: { Value: { value: string } };
+    MarginEnd?: { Value: { value: string } };
+    MarginTop?: { Value: { value: string } };
+    MarginBottom?: { Value: { value: string } };
+    WrapText?: { Value: { value: string } };
   };
 }
 

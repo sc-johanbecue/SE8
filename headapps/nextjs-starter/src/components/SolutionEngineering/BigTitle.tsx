@@ -3,7 +3,7 @@ import {
   TextField,
   ComponentParams,
   ComponentRendering,
-  LinkField,
+  Field,
   // useComponentProps,
   // GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
@@ -22,21 +22,21 @@ interface Fields {
 
 interface RenderingConfigurationParam {
   RenderingConfiguration: {
-    TextColor: LinkField;
-    FontWeight: LinkField;
-    FontSize: LinkField;
-    LineHeight: LinkField;
-    CharacterSpacing: LinkField;
-    CharacterAnimationConfiguration: LinkField;
-    PaddingStart: LinkField;
-    PaddingEnd: LinkField;
-    PaddingTop: LinkField;
-    PaddingBottom: LinkField;
-    MarginStart: LinkField;
-    MarginEnd: LinkField;
-    MarginTop: LinkField;
-    MarginBottom: LinkField;
-    WrapText: LinkField;
+    TextColor: Field;
+    FontWeight: Field;
+    FontSize: Field;
+    LineHeight: Field;
+    CharacterSpacing: Field;
+    CharacterAnimationConfiguration: Field;
+    PaddingStart: Field;
+    PaddingEnd: Field;
+    PaddingTop: Field;
+    PaddingBottom: Field;
+    MarginStart: Field;
+    MarginEnd: Field;
+    MarginTop: Field;
+    MarginBottom: Field;
+    WrapText: Field;
   };
 }
 

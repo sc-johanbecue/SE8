@@ -20,30 +20,56 @@ interface Fields {
   Title: TextField;
 }
 
-interface RenderingConfigurationParam {
-  RenderingConfiguration: {
-    TextColor?: { fields: { Value: string } };
-    FontWeight?: { fields: { Value: string } };
-    FontSize?: { fields: { Value: string } };
-    LineHeight?: { fields: { Value: string } };
-    CharacterSpacing?: { fields: { Value: string } };
-    CharacterAnimationConfiguration?: { fields: { Value: string } };
-    PaddingStart?: { fields: { Value: string } };
-    PaddingEnd?: { fields: { Value: string } };
-    PaddingTop?: { fields: { Value: string } };
-    PaddingBottom?: { fields: { Value: string } };
-    MarginStart?: { fields: { Value: string } };
-    MarginEnd?: { fields: { Value: string } };
-    MarginTop?: { fields: { Value: string } };
-    MarginBottom?: { fields: { Value: string } };
-    WrapText?: { fields: { Value: string } };
-  };
+interface RenderingConfiguration {
+  PrefixAnimationIteration: StyleItem | null;
+  PrefixOpacity: StyleItem | null;
+  PrefixImage: ImageItem | null;
+  PrefixAnimation: StyleItem | null;
+  PrefixAnimationDelay: StyleItem | null;
+  PrefixAnimationSpeed: StyleItem | null;
+  TextColor: StyleItem | null;
+  LineHeight: StyleItem | null;
+  MarginStart: StyleItem | null;
+  MarginEnd: StyleItem | null;
+  MarginTop: StyleItem | null;
+  MarginBottom: StyleItem | null;
+  PaddingStart: StyleItem | null;
+  PaddingEnd: StyleItem | null;
+  PaddingTop: StyleItem | null;
+  PaddingBottom: StyleItem | null;
+  FontWeight: StyleItem | null;
+  FontSize: StyleItem | null;
+  SuffixOpacity: StyleItem | null;
+  SuffixImage: ImageItem | null;
+  SuffixAnimation: StyleItem | null;
+  SuffixAnimationDelay: StyleItem | null;
+  SuffixAnimationIteration: StyleItem | null;
+  SuffixAnimationSpeed: StyleItem | null;
 }
 
+interface ImageItem {
+  value: {
+    src: string;
+    alt: string;
+    width: string;
+    height: string;
+  };
+}
+interface StyleItem {
+  id: string;
+  url: string;
+  name: string;
+  displayName: string;
+  fields: {
+    IsVerifiedStyle?: { value: boolean };
+    Value?: { value: string };
+    Icon?: { value: string };
+  };
+}
 type BigTitleProps = {
   fields: Fields;
-  rendering: ComponentRendering & { params: RenderingConfigurationParam & ComponentParams };
-  params: RenderingConfigurationParam & ComponentParams;
+  rendering: ComponentRendering & { params: RenderingConfiguration & ComponentParams };
+  params: RenderingConfiguration & ComponentParams;
 };
 
 // //export const getServerSideProps: GetServerSideComponentProps

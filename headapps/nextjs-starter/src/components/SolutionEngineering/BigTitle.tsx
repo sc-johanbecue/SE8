@@ -106,16 +106,16 @@ export const RenderBigTitle = (
   // );
 
   const headingClassNames = concatenateClassNames(
-    props.params.RenderingConfiguration.TextColor?.Value,
-    props.params.RenderingConfiguration.FontWeight?.Value,
-    props.params.RenderingConfiguration.PaddingStart?.Value,
-    props.params.RenderingConfiguration.PaddingEnd?.Value,
-    props.params.RenderingConfiguration.PaddingTop?.Value,
-    props.params.RenderingConfiguration.PaddingBottom?.Value,
-    props.params.RenderingConfiguration.MarginStart?.Value,
-    props.params.RenderingConfiguration.MarginEnd?.Value,
-    props.params.RenderingConfiguration.MarginTop?.Value,
-    props.params.RenderingConfiguration.MarginBottom?.Value
+    props.params.RenderingConfiguration.TextColor?.Value.value,
+    props.params.RenderingConfiguration.FontWeight?.Value.value,
+    props.params.RenderingConfiguration.PaddingStart?.Value.value,
+    props.params.RenderingConfiguration.PaddingEnd?.Value.value,
+    props.params.RenderingConfiguration.PaddingTop?.Value.value,
+    props.params.RenderingConfiguration.PaddingBottom?.Value.value,
+    props.params.RenderingConfiguration.MarginStart?.Value.value,
+    props.params.RenderingConfiguration.MarginEnd?.Value.value,
+    props.params.RenderingConfiguration.MarginTop?.Value.value,
+    props.params.RenderingConfiguration.MarginBottom?.Value.value
   );
 
   if (props.fields) {

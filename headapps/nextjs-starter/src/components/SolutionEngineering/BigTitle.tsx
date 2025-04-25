@@ -30,30 +30,30 @@ interface RenderingConfigurationParam {
         AnimationDelay: { value: number };
       };
     };
-    PrefixAnimationIteration: StyleItem | null;
-    PrefixOpacity: StyleItem | null;
+    PrefixAnimationIteration: string;
+    PrefixOpacity: string;
     PrefixImage: ImageItem | null;
-    PrefixAnimation: StyleItem | null;
-    PrefixAnimationDelay: StyleItem | null;
-    PrefixAnimationSpeed: StyleItem | null;
-    TextColor: StyleItem | null;
-    LineHeight: StyleItem | null;
-    MarginStart: StyleItem | null;
-    MarginEnd: StyleItem | null;
-    MarginTop: StyleItem | null;
-    MarginBottom: StyleItem | null;
-    PaddingStart: StyleItem | null;
-    PaddingEnd: StyleItem | null;
-    PaddingTop: StyleItem | null;
-    PaddingBottom: StyleItem | null;
-    FontWeight: StyleItem | null;
-    FontSize: StyleItem | null;
-    SuffixOpacity: StyleItem | null;
+    PrefixAnimation: string;
+    PrefixAnimationDelay: string;
+    PrefixAnimationSpeed: string;
+    TextColor: string;
+    LineHeight: string;
+    MarginStart: string;
+    MarginEnd: string;
+    MarginTop: string;
+    MarginBottom: string;
+    PaddingStart: string;
+    PaddingEnd: string;
+    PaddingTop: string;
+    PaddingBottom: string;
+    FontWeight: string;
+    FontSize: string;
+    SuffixOpacity: string;
     SuffixImage: ImageItem | null;
-    SuffixAnimation: StyleItem | null;
-    SuffixAnimationDelay: StyleItem | null;
-    SuffixAnimationIteration: StyleItem | null;
-    SuffixAnimationSpeed: StyleItem | null;
+    SuffixAnimation: string;
+    SuffixAnimationDelay: string;
+    SuffixAnimationIteration: string;
+    SuffixAnimationSpeed: string;
   };
 }
 
@@ -65,17 +65,7 @@ interface ImageItem {
     height: string;
   };
 }
-interface StyleItem {
-  id: string;
-  url: string;
-  name: string;
-  displayName: string;
-  fields: {
-    IsVerifiedStyle?: { value: boolean };
-    Value?: { value: string };
-    Icon?: { value: string };
-  };
-}
+
 type BigTitleProps = {
   fields: Fields;
   rendering: ComponentRendering & { params: RenderingConfigurationParam & ComponentParams };
@@ -143,16 +133,16 @@ export const RenderBigTitle = (
 
   const z = props.params.RenderingConfiguration;
   const headingClassNames = concatenateClassNames(
-    z.TextColor?.fields.Value?.value as string,
-    z.FontWeight?.fields.Value?.value as string,
-    z.PaddingStart?.fields.Value?.value as string,
-    z.PaddingEnd?.fields.Value?.value as string,
-    z.PaddingTop?.fields.Value?.value as string,
-    z.PaddingBottom?.fields.Value?.value as string,
-    z.MarginStart?.fields.Value?.value as string,
-    z.MarginEnd?.fields.Value?.value as string,
-    z.MarginTop?.fields.Value?.value as string,
-    z.MarginBottom?.fields.Value?.value as string
+    z.TextColor,
+    z.FontWeight,
+    z.PaddingStart,
+    z.PaddingEnd,
+    z.PaddingTop,
+    z.PaddingBottom,
+    z.MarginStart,
+    z.MarginEnd,
+    z.MarginTop,
+    z.MarginBottom
   );
 
   if (props.fields) {

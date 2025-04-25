@@ -30,14 +30,7 @@ interface RenderingConfigurationParam {
         AnimationDelay: { value: number };
       };
     };
-    PrefixAnimationIteration: string;
-    PrefixOpacity: string;
-    PrefixImage: ImageItem | null;
-    PrefixAnimation: string;
-    PrefixAnimationDelay: string;
-    PrefixAnimationSpeed: string;
     TextColor: string;
-    LineHeight: string;
     MarginStart: string;
     MarginEnd: string;
     MarginTop: string;
@@ -47,22 +40,6 @@ interface RenderingConfigurationParam {
     PaddingTop: string;
     PaddingBottom: string;
     FontWeight: string;
-    FontSize: string;
-    SuffixOpacity: string;
-    SuffixImage: ImageItem | null;
-    SuffixAnimation: string;
-    SuffixAnimationDelay: string;
-    SuffixAnimationIteration: string;
-    SuffixAnimationSpeed: string;
-  };
-}
-
-interface ImageItem {
-  value: {
-    src: string;
-    alt: string;
-    width: string;
-    height: string;
   };
 }
 

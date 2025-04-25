@@ -3,12 +3,12 @@ import {
   TextField,
   ComponentParams,
   ComponentRendering,
-  useComponentProps,
-  GetStaticComponentProps,
+  // useComponentProps,
+  // GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import {
-  RenderingConfigurationFields,
-  fetchRenderingConfiguration,
+  // RenderingConfigurationFields,
+  // fetchRenderingConfiguration,
   concatenateClassNames,
 } from './Utility/RenderingConfigurationUtils';
 import AnimatedLetters from './Utility/AnimatedLetters'; // Import the generic component
@@ -19,41 +19,45 @@ interface Fields {
   Title: TextField;
 }
 
+interface RenderingConfigurationParam {
+  RenderingConfiguration: unknown;
+}
+
 type BigTitleProps = {
   fields: Fields;
-  rendering: ComponentRendering & { params: ComponentParams };
+  rendering: ComponentRendering & { params: RenderingConfigurationParam & ComponentParams };
   params: ComponentParams;
 };
 
-//export const getServerSideProps: GetServerSideComponentProps
-export const getStaticProps: GetStaticComponentProps = async (context) => {
-  console.log('Big Title - Starting getStaticProps');
+// //export const getServerSideProps: GetServerSideComponentProps
+// export const getStaticProps: GetStaticComponentProps = async (context) => {
+//   console.log('Big Title - Starting getStaticProps');
 
-  // Extract the renderingConfiguration GUID from the context params.
-  // Note: if the field is nested differently, adjust accordingly.
-  const renderingConfigurationGuid = context?.params?.RenderingConfiguration as string;
+//   // Extract the renderingConfiguration GUID from the context params.
+//   // Note: if the field is nested differently, adjust accordingly.
+//   const renderingConfigurationGuid = context?.params?.RenderingConfiguration as string;
 
-  const staticProps = await fetchRenderingConfiguration(renderingConfigurationGuid, [
-    'LineHeight',
-    'TextColor',
-    'CharacterSpacing',
-    'CharacterAnimationConfiguration',
-    'FontWeight',
-    'FontSize',
-    'PaddingStart',
-    'PaddingEnd',
-    'PaddingTop',
-    'PaddingBottom',
-    'MarginStart',
-    'MarginEnd',
-    'MarginTop',
-    'MarginBottom',
-    'WrapText',
-  ]);
+//   const staticProps = await fetchRenderingConfiguration(renderingConfigurationGuid, [
+//     'LineHeight',
+//     'TextColor',
+//     'CharacterSpacing',
+//     'CharacterAnimationConfiguration',
+//     'FontWeight',
+//     'FontSize',
+//     'PaddingStart',
+//     'PaddingEnd',
+//     'PaddingTop',
+//     'PaddingBottom',
+//     'MarginStart',
+//     'MarginEnd',
+//     'MarginTop',
+//     'MarginBottom',
+//     'WrapText',
+//   ]);
 
-  console.log('Big Title - Ended getStaticProps');
-  return staticProps;
-};
+//   console.log('Big Title - Ended getStaticProps');
+//   return staticProps;
+// };
 
 const BigTitleDefaultComponent = (props: BigTitleProps): JSX.Element => (
   <div className={`component Main ${props.params.styles}`}>
@@ -68,20 +72,33 @@ export const RenderBigTitle = (
   props: BigTitleProps,
   BigTitleTag: keyof JSX.IntrinsicElements
 ): JSX.Element => {
-  const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
+  // const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
 
+  // const headingClassNames = concatenateClassNames(
+  //   staticProps?.RenderingConfigurationFields.TextColor,
+  //   staticProps?.RenderingConfigurationFields.FontWeight,
+  //   staticProps?.RenderingConfigurationFields.PaddingStart,
+  //   staticProps?.RenderingConfigurationFields.PaddingEnd,
+  //   staticProps?.RenderingConfigurationFields.PaddingTop,
+  //   staticProps?.RenderingConfigurationFields.PaddingBottom,
+  //   staticProps?.RenderingConfigurationFields.MarginStart,
+  //   staticProps?.RenderingConfigurationFields.MarginEnd,
+  //   staticProps?.RenderingConfigurationFields.MarginTop,
+  //   staticProps?.RenderingConfigurationFields.MarginBottom
+  // );
+
   const headingClassNames = concatenateClassNames(
-    staticProps?.RenderingConfigurationFields.TextColor,
-    staticProps?.RenderingConfigurationFields.FontWeight,
-    staticProps?.RenderingConfigurationFields.PaddingStart,
-    staticProps?.RenderingConfigurationFields.PaddingEnd,
-    staticProps?.RenderingConfigurationFields.PaddingTop,
-    staticProps?.RenderingConfigurationFields.PaddingBottom,
-    staticProps?.RenderingConfigurationFields.MarginStart,
-    staticProps?.RenderingConfigurationFields.MarginEnd,
-    staticProps?.RenderingConfigurationFields.MarginTop,
-    staticProps?.RenderingConfigurationFields.MarginBottom
+    props.params.RenderingConfiguration.TextColor?.fields.Value,
+    props.params.RenderingConfiguration.FontWeight?.fields.Value,
+    props.params.RenderingConfiguration.PaddingStart?.fields.Value,
+    props.params.RenderingConfiguration.PaddingEnd?.fields.Value,
+    props.params.RenderingConfiguration.PaddingTop?.fields.Value,
+    props.params.RenderingConfiguration.PaddingBottom?.fields.Value,
+    props.params.RenderingConfiguration.MarginStart?.fields.Value,
+    props.params.RenderingConfiguration.MarginEnd?.fields.Value,
+    props.params.RenderingConfiguration.MarginTop?.fields.Value,
+    props.params.RenderingConfiguration.MarginBottom?.fields.Value
   );
 
   if (props.fields) {
@@ -95,7 +112,7 @@ export const RenderBigTitle = (
         <AnimatedLetters
           text={props.fields.Title?.value as string}
           characterAnimationConfiguration={
-            staticProps?.RenderingConfigurationFields.CharacterAnimationConfiguration
+            props.params.RenderingConfiguration.CharacterAnimationConfiguration
           }
         />
       </BigTitleTag>

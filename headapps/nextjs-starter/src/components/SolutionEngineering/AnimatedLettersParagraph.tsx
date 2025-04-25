@@ -4,7 +4,6 @@ import {
   TextField,
   ComponentParams,
   ComponentRendering,
-  Field,
   // useComponentProps,
   // GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
@@ -22,21 +21,21 @@ interface Fields {
 
 interface RenderingConfigurationParam {
   RenderingConfiguration: {
-    TextColor: { Value: Field };
-    FontWeight: { Value: Field };
-    FontSize: { Value: Field };
-    LineHeight: { Value: Field };
-    CharacterSpacing: { Value: Field };
-    CharacterAnimationConfiguration: { Value: Field };
-    PaddingStart: { Value: Field };
-    PaddingEnd: { Value: Field };
-    PaddingTop: { Value: Field };
-    PaddingBottom: { Value: Field };
-    MarginStart: { Value: Field };
-    MarginEnd: { Value: Field };
-    MarginTop: { Value: Field };
-    MarginBottom: { Value: Field };
-    WrapText: { Value: Field };
+    TextColor: { Value: { value: string } };
+    FontWeight: { Value: { value: string } };
+    FontSize: { Value: { value: string } };
+    LineHeight: { Value: { value: string } };
+    CharacterSpacing: { Value: { value: string } };
+    CharacterAnimationConfiguration: { Value: { value: string } };
+    PaddingStart: { Value: { value: string } };
+    PaddingEnd: { Value: { value: string } };
+    PaddingTop: { Value: { value: string } };
+    PaddingBottom: { Value: { value: string } };
+    MarginStart: { Value: { value: string } };
+    MarginEnd: { Value: { value: string } };
+    MarginTop: { Value: { value: string } };
+    MarginBottom: { Value: { value: string } };
+    WrapText: { Value: { value: string } };
   };
 }
 
@@ -95,8 +94,8 @@ export const Default = (props: AnimatedLettersParagraphProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
   const headingClassNames = concatenateClassNames(
-    props.params.RenderingConfiguration.TextColor?.Value.Value.value,
-    props.params.RenderingConfiguration.FontWeight?.Value.Value.value,
+    props.params.RenderingConfiguration.TextColor?.Value.value,
+    props.params.RenderingConfiguration.FontWeight?.Value.value,
     props.params.RenderingConfiguration.PaddingStart?.Value.value,
     props.params.RenderingConfiguration.PaddingEnd?.Value.value,
     props.params.RenderingConfiguration.PaddingTop?.Value.value,

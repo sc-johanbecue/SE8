@@ -21,30 +21,32 @@ interface Fields {
 }
 
 interface RenderingConfigurationParam {
-  PrefixAnimationIteration: StyleItem | null;
-  PrefixOpacity: StyleItem | null;
-  PrefixImage: ImageItem | null;
-  PrefixAnimation: StyleItem | null;
-  PrefixAnimationDelay: StyleItem | null;
-  PrefixAnimationSpeed: StyleItem | null;
-  TextColor: StyleItem | null;
-  LineHeight: StyleItem | null;
-  MarginStart: StyleItem | null;
-  MarginEnd: StyleItem | null;
-  MarginTop: StyleItem | null;
-  MarginBottom: StyleItem | null;
-  PaddingStart: StyleItem | null;
-  PaddingEnd: StyleItem | null;
-  PaddingTop: StyleItem | null;
-  PaddingBottom: StyleItem | null;
-  FontWeight: StyleItem | null;
-  FontSize: StyleItem | null;
-  SuffixOpacity: StyleItem | null;
-  SuffixImage: ImageItem | null;
-  SuffixAnimation: StyleItem | null;
-  SuffixAnimationDelay: StyleItem | null;
-  SuffixAnimationIteration: StyleItem | null;
-  SuffixAnimationSpeed: StyleItem | null;
+  renderingConfiguration: {
+    PrefixAnimationIteration: StyleItem | null;
+    PrefixOpacity: StyleItem | null;
+    PrefixImage: ImageItem | null;
+    PrefixAnimation: StyleItem | null;
+    PrefixAnimationDelay: StyleItem | null;
+    PrefixAnimationSpeed: StyleItem | null;
+    TextColor: StyleItem | null;
+    LineHeight: StyleItem | null;
+    MarginStart: StyleItem | null;
+    MarginEnd: StyleItem | null;
+    MarginTop: StyleItem | null;
+    MarginBottom: StyleItem | null;
+    PaddingStart: StyleItem | null;
+    PaddingEnd: StyleItem | null;
+    PaddingTop: StyleItem | null;
+    PaddingBottom: StyleItem | null;
+    FontWeight: StyleItem | null;
+    FontSize: StyleItem | null;
+    SuffixOpacity: StyleItem | null;
+    SuffixImage: ImageItem | null;
+    SuffixAnimation: StyleItem | null;
+    SuffixAnimationDelay: StyleItem | null;
+    SuffixAnimationIteration: StyleItem | null;
+    SuffixAnimationSpeed: StyleItem | null;
+  };
 }
 
 interface ImageItem {

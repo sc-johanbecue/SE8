@@ -74,7 +74,7 @@ type AnimatedLettersParagraphProps = {
 //   console.log(
 //     ('getStaticProps - FieldName: PrefixImage' +
 //       ' - Value: ' +
-//       staticProps.PrefixImage?.value.src) as string
+//       staticProps.PrefixImage?.Value.src) as string
 //   );
 //   console.log('AnimatedLettersParagraph - Ended getStaticProps');
 //   return staticProps;
@@ -95,16 +95,16 @@ export const Default = (props: AnimatedLettersParagraphProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
   const headingClassNames = concatenateClassNames(
-    props.params.RenderingConfiguration.TextColor?.Value,
-    props.params.RenderingConfiguration.FontWeight?.Value,
-    props.params.RenderingConfiguration.PaddingStart?.Value,
-    props.params.RenderingConfiguration.PaddingEnd?.Value,
-    props.params.RenderingConfiguration.PaddingTop?.Value,
-    props.params.RenderingConfiguration.PaddingBottom?.Value,
-    props.params.RenderingConfiguration.MarginStart?.Value,
-    props.params.RenderingConfiguration.MarginEnd?.Value,
-    props.params.RenderingConfiguration.MarginTop?.Value,
-    props.params.RenderingConfiguration.MarginBottom?.Value
+    props.params.RenderingConfiguration.TextColor?.value,
+    props.params.RenderingConfiguration.FontWeight?.value,
+    props.params.RenderingConfiguration.PaddingStart?.value,
+    props.params.RenderingConfiguration.PaddingEnd?.value,
+    props.params.RenderingConfiguration.PaddingTop?.value,
+    props.params.RenderingConfiguration.PaddingBottom?.value,
+    props.params.RenderingConfiguration.MarginStart?.value,
+    props.params.RenderingConfiguration.MarginEnd?.value,
+    props.params.RenderingConfiguration.MarginTop?.value,
+    props.params.RenderingConfiguration.MarginBottom?.value
   );
 
   if (props.fields) {

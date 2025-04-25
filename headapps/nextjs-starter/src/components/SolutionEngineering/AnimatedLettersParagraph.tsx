@@ -121,7 +121,7 @@ const AnimatedLettersParagraphDefaultComponent = (
 export const Default = (props: AnimatedLettersParagraphProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
-  const z = props.params.RenderingConfiguration as RenderingConfigurationParam;
+  const z = props.params.RenderingConfiguration;
   const headingClassNames = concatenateClassNames(
     z.TextColor?.fields.Value?.value as string,
     z.FontWeight?.fields.Value?.value as string,

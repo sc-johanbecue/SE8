@@ -20,7 +20,7 @@ interface Fields {
   Title: TextField;
 }
 
-interface RenderingConfiguration {
+interface RenderingConfigurationParam {
   PrefixAnimationIteration: StyleItem | null;
   PrefixOpacity: StyleItem | null;
   PrefixImage: ImageItem | null;
@@ -68,8 +68,8 @@ interface StyleItem {
 }
 type BigTitleProps = {
   fields: Fields;
-  rendering: ComponentRendering & { params: RenderingConfiguration & ComponentParams };
-  params: RenderingConfiguration & ComponentParams;
+  rendering: ComponentRendering & { params: RenderingConfigurationParam & ComponentParams };
+  params: RenderingConfigurationParam & ComponentParams;
 };
 
 // //export const getServerSideProps: GetServerSideComponentProps

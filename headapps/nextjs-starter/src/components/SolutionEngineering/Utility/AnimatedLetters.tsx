@@ -1,6 +1,6 @@
 // AnimatedLetters.tsx
 import React from 'react';
-import { concatenateClassNames } from '../Utility/RenderingConfigurationUtils';
+import { concatenateClassNames } from './RenderingConfigurationUtils';
 
 interface AnimatedLettersProps {
   text: string;

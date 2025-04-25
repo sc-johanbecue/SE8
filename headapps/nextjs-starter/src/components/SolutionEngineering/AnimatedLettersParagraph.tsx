@@ -21,21 +21,21 @@ interface Fields {
 
 interface RenderingConfigurationParam {
   RenderingConfiguration: {
-    TextColor?: { fields: { Value: { value: string } } };
-    FontWeight?: { fields: { Value: { value: string } } };
-    FontSize?: { fields: { Value: { value: string } } };
-    LineHeight?: { fields: { Value: { value: string } } };
-    CharacterSpacing?: { fields: { Value: { value: string } } };
-    CharacterAnimationConfiguration?: { fields: { Value: { value: string } } };
-    PaddingStart?: { fields: { Value: { value: string } } };
-    PaddingEnd?: { fields: { Value: { value: string } } };
-    PaddingTop?: { fields: { Value: { value: string } } };
-    PaddingBottom?: { fields: { Value: { value: string } } };
-    MarginStart?: { fields: { Value: { value: string } } };
-    MarginEnd?: { fields: { Value: { value: string } } };
-    MarginTop?: { fields: { Value: { value: string } } };
-    MarginBottom?: { fields: { Value: { value: string } } };
-    WrapText?: { fields: { Value: { value: string } } };
+    TextColor?: { fields: { Value: string } };
+    FontWeight?: { fields: { Value: string } };
+    FontSize?: { fields: { Value: string } };
+    LineHeight?: { fields: { Value: string } };
+    CharacterSpacing?: { fields: { Value: string } };
+    CharacterAnimationConfiguration?: { fields: { Value: string } };
+    PaddingStart?: { fields: { Value: string } };
+    PaddingEnd?: { fields: { Value: string } };
+    PaddingTop?: { fields: { Value: string } };
+    PaddingBottom?: { fields: { Value: string } };
+    MarginStart?: { fields: { Value: string } };
+    MarginEnd?: { fields: { Value: string } };
+    MarginTop?: { fields: { Value: string } };
+    MarginBottom?: { fields: { Value: string } };
+    WrapText?: { fields: { Value: string } };
   };
 }
 

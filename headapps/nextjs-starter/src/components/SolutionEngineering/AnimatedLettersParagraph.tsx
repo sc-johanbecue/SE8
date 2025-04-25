@@ -22,21 +22,21 @@ interface Fields {
 
 interface RenderingConfigurationParam {
   RenderingConfiguration: {
-    TextColor: Field;
-    FontWeight: Field;
-    FontSize: Field;
-    LineHeight: Field;
-    CharacterSpacing: Field;
-    CharacterAnimationConfiguration: Field;
-    PaddingStart: Field;
-    PaddingEnd: Field;
-    PaddingTop: Field;
-    PaddingBottom: Field;
-    MarginStart: Field;
-    MarginEnd: Field;
-    MarginTop: Field;
-    MarginBottom: Field;
-    WrapText: Field;
+    TextColor: { Value: Field };
+    FontWeight: { Value: Field };
+    FontSize: { Value: Field };
+    LineHeight: { Value: Field };
+    CharacterSpacing: { Value: Field };
+    CharacterAnimationConfiguration: { Value: Field };
+    PaddingStart: { Value: Field };
+    PaddingEnd: { Value: Field };
+    PaddingTop: { Value: Field };
+    PaddingBottom: { Value: Field };
+    MarginStart: { Value: Field };
+    MarginEnd: { Value: Field };
+    MarginTop: { Value: Field };
+    MarginBottom: { Value: Field };
+    WrapText: { Value: Field };
   };
 }
 
@@ -95,16 +95,16 @@ export const Default = (props: AnimatedLettersParagraphProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
   const headingClassNames = concatenateClassNames(
-    props.params.RenderingConfiguration.TextColor?.fields.Value,
-    props.params.RenderingConfiguration.FontWeight?.fields.Value,
-    props.params.RenderingConfiguration.PaddingStart?.fields.Value,
-    props.params.RenderingConfiguration.PaddingEnd?.fields.Value,
-    props.params.RenderingConfiguration.PaddingTop?.fields.Value,
-    props.params.RenderingConfiguration.PaddingBottom?.fields.Value,
-    props.params.RenderingConfiguration.MarginStart?.fields.Value,
-    props.params.RenderingConfiguration.MarginEnd?.fields.Value,
-    props.params.RenderingConfiguration.MarginTop?.fields.Value,
-    props.params.RenderingConfiguration.MarginBottom?.fields.Value
+    props.params.RenderingConfiguration.TextColor?.Value,
+    props.params.RenderingConfiguration.FontWeight?.Value,
+    props.params.RenderingConfiguration.PaddingStart?.Value,
+    props.params.RenderingConfiguration.PaddingEnd?.Value,
+    props.params.RenderingConfiguration.PaddingTop?.Value,
+    props.params.RenderingConfiguration.PaddingBottom?.Value,
+    props.params.RenderingConfiguration.MarginStart?.Value,
+    props.params.RenderingConfiguration.MarginEnd?.Value,
+    props.params.RenderingConfiguration.MarginTop?.Value,
+    props.params.RenderingConfiguration.MarginBottom?.Value
   );
 
   if (props.fields) {

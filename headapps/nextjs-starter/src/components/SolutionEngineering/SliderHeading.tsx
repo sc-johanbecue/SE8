@@ -19,10 +19,56 @@ interface Fields {
   Title: TextField;
 }
 
+interface RenderingConfigurationParam {
+  RenderingConfiguration: {
+    CharacterAnimationConfiguration: {
+      fields: {
+        Animation: string;
+        AnimationIteration: string;
+        AnimationSpeed: string;
+        AnimationDelay: { value: number };
+      };
+    };
+    PrefixAnimationIteration: string;
+    PrefixOpacity: string;
+    PrefixImage: ImageItem | null;
+    PrefixAnimation: string;
+    PrefixAnimationDelay: string;
+    PrefixAnimationSpeed: string;
+    TextColor: string;
+    LineHeight: string;
+    MarginStart: string;
+    MarginEnd: string;
+    MarginTop: string;
+    MarginBottom: string;
+    PaddingStart: string;
+    PaddingEnd: string;
+    PaddingTop: string;
+    PaddingBottom: string;
+    FontWeight: string;
+    FontSize: string;
+    SuffixOpacity: string;
+    SuffixImage: ImageItem | null;
+    SuffixAnimation: string;
+    SuffixAnimationDelay: string;
+    SuffixAnimationIteration: string;
+    SuffixAnimationSpeed: string;
+  };
+}
+
+interface ImageItem {
+  value: {
+    src: string;
+    alt: string;
+    width: string;
+    height: string;
+  };
+}
+
 type SliderHeaderProps = {
   fields: Fields;
-  rendering: ComponentRendering & { params: ComponentParams };
-  params: ComponentParams;
+  rendering: ComponentRendering & { params: RenderingConfigurationParam & ComponentParams };
+  params: RenderingConfigurationParam & ComponentParams;
 };
 
 const SliderHeaderDefaultComponent = (props: SliderHeaderProps): JSX.Element => (
@@ -123,19 +169,19 @@ const RenderHeading = (
   );
 
   const prefixSpanStyle = {
-    ...(props.params.RenderingConfiguration.PrefixImage.value.width && {
+    ...(props.params.RenderingConfiguration.PrefixImage?.value.width && {
       width: `${props.params.RenderingConfiguration.PrefixImage.value.width}px`,
     }),
-    ...(props.params.RenderingConfiguration.PrefixImage.value.height && {
+    ...(props.params.RenderingConfiguration.PrefixImage?.value.height && {
       height: `${props.params.RenderingConfiguration.PrefixImage.value.height}px`,
     }),
   };
 
   const suffixSpanStyle = {
-    ...(props.params.RenderingConfiguration.SuffixImage.value.width && {
+    ...(props.params.RenderingConfiguration.SuffixImage?.value.width && {
       width: `${props.params.RenderingConfiguration.SuffixImage.value.width}px`,
     }),
-    ...(props.params.RenderingConfiguration.SuffixImage.value.height && {
+    ...(props.params.RenderingConfiguration.SuffixImage?.value.height && {
       height: `${props.params.RenderingConfiguration.SuffixImage.value.height}px`,
     }),
   };

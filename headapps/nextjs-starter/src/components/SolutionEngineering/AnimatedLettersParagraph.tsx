@@ -4,6 +4,7 @@ import {
   TextField,
   ComponentParams,
   ComponentRendering,
+  LinkField,
   // useComponentProps,
   // GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
@@ -20,7 +21,23 @@ interface Fields {
 }
 
 interface RenderingConfigurationParam {
-  RenderingConfiguration: unknown;
+  RenderingConfiguration: {
+    TextColor: LinkField;
+    FontWeight: LinkField;
+    FontSize: LinkField;
+    LineHeight: LinkField;
+    CharacterSpacing: LinkField;
+    CharacterAnimationConfiguration: LinkField;
+    PaddingStart: LinkField;
+    PaddingEnd: LinkField;
+    PaddingTop: LinkField;
+    PaddingBottom: LinkField;
+    MarginStart: LinkField;
+    MarginEnd: LinkField;
+    MarginTop: LinkField;
+    MarginBottom: LinkField;
+    WrapText: LinkField;
+  };
 }
 
 type AnimatedLettersParagraphProps = {

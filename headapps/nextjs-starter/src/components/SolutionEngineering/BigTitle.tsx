@@ -21,30 +21,40 @@ interface Fields {
 }
 
 interface RenderingConfigurationParam {
-  PrefixAnimationIteration: StyleItem | null;
-  PrefixOpacity: StyleItem | null;
-  PrefixImage: ImageItem | null;
-  PrefixAnimation: StyleItem | null;
-  PrefixAnimationDelay: StyleItem | null;
-  PrefixAnimationSpeed: StyleItem | null;
-  TextColor: StyleItem | null;
-  LineHeight: StyleItem | null;
-  MarginStart: StyleItem | null;
-  MarginEnd: StyleItem | null;
-  MarginTop: StyleItem | null;
-  MarginBottom: StyleItem | null;
-  PaddingStart: StyleItem | null;
-  PaddingEnd: StyleItem | null;
-  PaddingTop: StyleItem | null;
-  PaddingBottom: StyleItem | null;
-  FontWeight: StyleItem | null;
-  FontSize: StyleItem | null;
-  SuffixOpacity: StyleItem | null;
-  SuffixImage: ImageItem | null;
-  SuffixAnimation: StyleItem | null;
-  SuffixAnimationDelay: StyleItem | null;
-  SuffixAnimationIteration: StyleItem | null;
-  SuffixAnimationSpeed: StyleItem | null;
+  RenderingConfiguration: {
+    CharacterAnimationConfiguration: {
+      fields: {
+        Animation: string;
+        AnimationIteration: string;
+        AnimationSpeed: string;
+        AnimationDelay: { value: number };
+      };
+    };
+    PrefixAnimationIteration: StyleItem | null;
+    PrefixOpacity: StyleItem | null;
+    PrefixImage: ImageItem | null;
+    PrefixAnimation: StyleItem | null;
+    PrefixAnimationDelay: StyleItem | null;
+    PrefixAnimationSpeed: StyleItem | null;
+    TextColor: StyleItem | null;
+    LineHeight: StyleItem | null;
+    MarginStart: StyleItem | null;
+    MarginEnd: StyleItem | null;
+    MarginTop: StyleItem | null;
+    MarginBottom: StyleItem | null;
+    PaddingStart: StyleItem | null;
+    PaddingEnd: StyleItem | null;
+    PaddingTop: StyleItem | null;
+    PaddingBottom: StyleItem | null;
+    FontWeight: StyleItem | null;
+    FontSize: StyleItem | null;
+    SuffixOpacity: StyleItem | null;
+    SuffixImage: ImageItem | null;
+    SuffixAnimation: StyleItem | null;
+    SuffixAnimationDelay: StyleItem | null;
+    SuffixAnimationIteration: StyleItem | null;
+    SuffixAnimationSpeed: StyleItem | null;
+  };
 }
 
 interface ImageItem {
@@ -133,16 +143,16 @@ export const RenderBigTitle = (
 
   const z = props.params.RenderingConfiguration;
   const headingClassNames = concatenateClassNames(
-    z.TextColor?.Value,
-    z.FontWeight?.Value,
-    z.PaddingStart?.Value,
-    z.PaddingEnd?.Value,
-    z.PaddingTop?.Value,
-    z.PaddingBottom?.Value,
-    z.MarginStart?.Value,
-    z.MarginEnd?.Value,
-    z.MarginTop?.Value,
-    z.MarginBottom?.Value
+    z.TextColor?.fields.Value?.value as string,
+    z.FontWeight?.fields.Value?.value as string,
+    z.PaddingStart?.fields.Value?.value as string,
+    z.PaddingEnd?.fields.Value?.value as string,
+    z.PaddingTop?.fields.Value?.value as string,
+    z.PaddingBottom?.fields.Value?.value as string,
+    z.MarginStart?.fields.Value?.value as string,
+    z.MarginEnd?.fields.Value?.value as string,
+    z.MarginTop?.fields.Value?.value as string,
+    z.MarginBottom?.fields.Value?.value as string
   );
 
   if (props.fields) {

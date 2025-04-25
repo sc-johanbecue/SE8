@@ -131,17 +131,18 @@ export const RenderBigTitle = (
   //   staticProps?.RenderingConfigurationFields.MarginBottom
   // );
 
+  const z = props.params.RenderingConfiguration;
   const headingClassNames = concatenateClassNames(
-    props.params.RenderingConfiguration.TextColor?.Value,
-    props.params.RenderingConfiguration.FontWeight?.Value,
-    props.params.RenderingConfiguration.PaddingStart?.Value,
-    props.params.RenderingConfiguration.PaddingEnd?.Value,
-    props.params.RenderingConfiguration.PaddingTop?.Value,
-    props.params.RenderingConfiguration.PaddingBottom?.Value,
-    props.params.RenderingConfiguration.MarginStart?.Value,
-    props.params.RenderingConfiguration.MarginEnd?.Value,
-    props.params.RenderingConfiguration.MarginTop?.Value,
-    props.params.RenderingConfiguration.MarginBottom?.Value
+    z.TextColor?.Value,
+    z.FontWeight?.Value,
+    z.PaddingStart?.Value,
+    z.PaddingEnd?.Value,
+    z.PaddingTop?.Value,
+    z.PaddingBottom?.Value,
+    z.MarginStart?.Value,
+    z.MarginEnd?.Value,
+    z.MarginTop?.Value,
+    z.MarginBottom?.Value
   );
 
   if (props.fields) {
@@ -154,9 +155,7 @@ export const RenderBigTitle = (
       >
         <AnimatedLetters
           text={props.fields.Title?.value as string}
-          characterAnimationConfiguration={
-            props.params.RenderingConfiguration.CharacterAnimationConfiguration
-          }
+          characterAnimationConfiguration={z.CharacterAnimationConfiguration}
         />
       </BigTitleTag>
     );

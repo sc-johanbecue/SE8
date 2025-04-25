@@ -4,12 +4,12 @@ import {
   TextField,
   ComponentParams,
   ComponentRendering,
-  useComponentProps,
-  GetStaticComponentProps,
+  // useComponentProps,
+  // GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import {
-  RenderingConfigurationFields,
-  fetchRenderingConfiguration,
+  // RenderingConfigurationFields,
+  // fetchRenderingConfiguration,
   concatenateClassNames,
 } from './Utility/RenderingConfigurationUtils';
 import AnimatedLetters from './Utility/AnimatedLetters'; // Import the generic component
@@ -19,45 +19,49 @@ interface Fields {
   Title: TextField;
 }
 
+interface RenderingConfigurationParam {
+  RenderingConfiguration: unknown;
+}
+
 type AnimatedLettersParagraphProps = {
   fields: Fields;
-  rendering: ComponentRendering & { params: ComponentParams };
+  rendering: ComponentRendering & { params: RenderingConfigurationParam & ComponentParams };
   params: ComponentParams;
 };
 
-//export const getServerSideProps: GetServerSideComponentProps
-export const getStaticProps: GetStaticComponentProps = async (context) => {
-  console.log('AnimatedLettersParagraph - Starting getStaticProps');
+// //export const getServerSideProps: GetServerSideComponentProps
+// export const getStaticProps: GetStaticComponentProps = async (context) => {
+//   console.log('AnimatedLettersParagraph - Starting getStaticProps');
 
-  // Extract the renderingConfiguration GUID from the context params.
-  // Note: if the field is nested differently, adjust accordingly.
-  const renderingConfigurationGuid = context?.params?.RenderingConfiguration as string;
+//   // Extract the renderingConfiguration GUID from the context params.
+//   // Note: if the field is nested differently, adjust accordingly.
+//   const renderingConfigurationGuid = context?.params?.RenderingConfiguration as string;
 
-  const staticProps = await fetchRenderingConfiguration(renderingConfigurationGuid, [
-    'LineHeight',
-    'TextColor',
-    'CharacterSpacing',
-    'CharacterAnimationConfiguration',
-    'FontWeight',
-    'FontSize',
-    'PaddingStart',
-    'PaddingEnd',
-    'PaddingTop',
-    'PaddingBottom',
-    'MarginStart',
-    'MarginEnd',
-    'MarginTop',
-    'MarginBottom',
-  ]);
+//   const staticProps = await fetchRenderingConfiguration(renderingConfigurationGuid, [
+//     'LineHeight',
+//     'TextColor',
+//     'CharacterSpacing',
+//     'CharacterAnimationConfiguration',
+//     'FontWeight',
+//     'FontSize',
+//     'PaddingStart',
+//     'PaddingEnd',
+//     'PaddingTop',
+//     'PaddingBottom',
+//     'MarginStart',
+//     'MarginEnd',
+//     'MarginTop',
+//     'MarginBottom',
+//   ]);
 
-  console.log(
-    ('getStaticProps - FieldName: PrefixImage' +
-      ' - Value: ' +
-      staticProps.PrefixImage?.value.src) as string
-  );
-  console.log('AnimatedLettersParagraph - Ended getStaticProps');
-  return staticProps;
-};
+//   console.log(
+//     ('getStaticProps - FieldName: PrefixImage' +
+//       ' - Value: ' +
+//       staticProps.PrefixImage?.value.src) as string
+//   );
+//   console.log('AnimatedLettersParagraph - Ended getStaticProps');
+//   return staticProps;
+// };
 
 const AnimatedLettersParagraphDefaultComponent = (
   props: AnimatedLettersParagraphProps
@@ -71,20 +75,19 @@ const AnimatedLettersParagraphDefaultComponent = (
 
 // Helper function to render a heading with a dynamic tag
 export const Default = (props: AnimatedLettersParagraphProps): JSX.Element => {
-  const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
 
   const headingClassNames = concatenateClassNames(
-    staticProps?.RenderingConfigurationFields.TextColor,
-    staticProps?.RenderingConfigurationFields.FontWeight,
-    staticProps?.RenderingConfigurationFields.PaddingStart,
-    staticProps?.RenderingConfigurationFields.PaddingEnd,
-    staticProps?.RenderingConfigurationFields.PaddingTop,
-    staticProps?.RenderingConfigurationFields.PaddingBottom,
-    staticProps?.RenderingConfigurationFields.MarginStart,
-    staticProps?.RenderingConfigurationFields.MarginEnd,
-    staticProps?.RenderingConfigurationFields.MarginTop,
-    staticProps?.RenderingConfigurationFields.MarginBottom
+    props.params.RenderingConfiguration.TextColor,
+    props.params.RenderingConfiguration.FontWeight,
+    props.params.RenderingConfiguration.PaddingStart,
+    props.params.RenderingConfiguration.PaddingEnd,
+    props.params.RenderingConfiguration.PaddingTop,
+    props.params.RenderingConfiguration.PaddingBottom,
+    props.params.RenderingConfiguration.MarginStart,
+    props.params.RenderingConfiguration.MarginEnd,
+    props.params.RenderingConfiguration.MarginTop,
+    props.params.RenderingConfiguration.MarginBottom
   );
 
   if (props.fields) {
@@ -95,11 +98,11 @@ export const Default = (props: AnimatedLettersParagraphProps): JSX.Element => {
           props.params.Styles ? props.params.Styles : ''
         }`}
       >
-        {staticProps?.RenderingConfigurationFields.CharacterAnimationConfiguration != undefined ? (
+        {props.params.RenderingConfiguration.CharacterAnimationConfiguration != undefined ? (
           <AnimatedLetters
             text={props.fields.Title?.value as string}
             characterAnimationConfiguration={
-              staticProps?.RenderingConfigurationFields.CharacterAnimationConfiguration
+              props.params.RenderingConfiguration.CharacterAnimationConfiguration
             }
           />
         ) : (

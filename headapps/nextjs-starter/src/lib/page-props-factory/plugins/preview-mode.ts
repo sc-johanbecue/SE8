@@ -43,7 +43,7 @@ class PreviewModePlugin implements Plugin {
       props.headLinks = [];
       const personalizeData = getGroomedVariantIds(variantIds);
       personalizeLayout(
-        data.layoutData, //Sales Engineers - originally props.layoutData  - but this hopefully solveds error in Siteore Pages
+        props.layoutData,
         personalizeData.variantId,
         personalizeData.componentVariantIds
       );

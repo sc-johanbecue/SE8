@@ -211,7 +211,7 @@ export const OldModernLarge = (props: PageHeaderProps): JSX.Element => {
 
 export const ClassicSmall = (props: PageHeaderProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
-  const { sitecoreContext } = useSitecoreContext();
+  // const { sitecoreContext } = useSitecoreContext();
 
   if (props.fields) {
     return (
@@ -219,7 +219,7 @@ export const ClassicSmall = (props: PageHeaderProps): JSX.Element => {
         className={`page-header page-header-classic ${props.params.styles}`}
         id={id ? id : undefined}
       >
-        <div className="container">
+        {/* <div className="container">
           <div className="row">
             <div className="col-md-8 order-2 order-md-1 align-self-center p-static">
               <span
@@ -241,7 +241,7 @@ export const ClassicSmall = (props: PageHeaderProps): JSX.Element => {
               <Breadcrumbs />
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     );
   }

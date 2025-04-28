@@ -146,45 +146,42 @@ const RenderHeading = (
     props.params.RenderingConfiguration.MarginBottom
   );
 
+  const z = props.params.RenderingConfiguration;
   const prefixImageClassNames = concatenateClassNames(
-    props.params.RenderingConfiguration.PrefixAnimation,
-    props.params.RenderingConfiguration.PrefixAnimationDelay,
-    props.params.RenderingConfiguration.PrefixAnimationIteration,
-    props.params.RenderingConfiguration.PrefixAnimationSpeed
+    z.PrefixAnimation,
+    z.PrefixAnimationDelay,
+    z.PrefixAnimationIteration,
+    z.PrefixAnimationSpeed
   );
 
   const suffixImageClassNames = concatenateClassNames(
-    props.params.RenderingConfiguration.SuffixAnimation,
-    props.params.RenderingConfiguration.SuffixAnimationDelay,
-    props.params.RenderingConfiguration.SuffixAnimationIteration,
-    props.params.RenderingConfiguration.SuffixAnimationSpeed
+    z.SuffixAnimation,
+    z.SuffixAnimationDelay,
+    z.SuffixAnimationIteration,
+    z.SuffixAnimationSpeed
   );
 
-  const prefixSpanClassNames = concatenateClassNames(
-    props.params.RenderingConfiguration.PrefixOpacity
-  );
+  const prefixSpanClassNames = concatenateClassNames(z.PrefixOpacity);
 
-  const suffixSpanClassNames = concatenateClassNames(
-    props.params.RenderingConfiguration.SuffixOpacity
-  );
+  const suffixSpanClassNames = concatenateClassNames(z.SuffixOpacity);
 
-  const prefixSpanStyle = {
-    ...(props.params.RenderingConfiguration.PrefixImage?.value.width && {
-      width: `${props.params.RenderingConfiguration.PrefixImage.value.width}px`,
-    }),
-    ...(props.params.RenderingConfiguration.PrefixImage?.value.height && {
-      height: `${props.params.RenderingConfiguration.PrefixImage.value.height}px`,
-    }),
-  };
+  // const prefixSpanStyle = {
+  //   ...(z.PrefixImage?.value.width && {
+  //     width: `${z.PrefixImage.value.width}px`,
+  //   }),
+  //   ...(z.PrefixImage?.value.height && {
+  //     height: `${z.PrefixImage.value.height}px`,
+  //   }),
+  // };
 
-  const suffixSpanStyle = {
-    ...(props.params.RenderingConfiguration.SuffixImage?.value.width && {
-      width: `${props.params.RenderingConfiguration.SuffixImage.value.width}px`,
-    }),
-    ...(props.params.RenderingConfiguration.SuffixImage?.value.height && {
-      height: `${props.params.RenderingConfiguration.SuffixImage.value.height}px`,
-    }),
-  };
+  // const suffixSpanStyle = {
+  //   ...(z.SuffixImage?.value.width && {
+  //     width: `${z.SuffixImage.value.width}px`,
+  //   }),
+  //   ...(z.SuffixImage?.value.height && {
+  //     height: `${z.SuffixImage.value.height}px`,
+  //   }),
+  // };
 
   if (props.fields) {
     return (
@@ -197,7 +194,7 @@ const RenderHeading = (
         {props.params.RenderingConfiguration.PrefixImage && (
           <span
             className={`position-absolute right-100pct top-50pct transform3dy-n50 ${prefixSpanClassNames}`}
-            style={prefixSpanStyle}
+            //style={prefixSpanStyle}
           >
             <Image
               className={`w-auto ${prefixImageClassNames}`}
@@ -212,7 +209,7 @@ const RenderHeading = (
         {props.params.RenderingConfiguration.SuffixImage && (
           <span
             className={`position-absolute left-100pct top-50pct transform3dy-n50 ${suffixSpanClassNames}`}
-            style={suffixSpanStyle}
+            //style={suffixSpanStyle}
           >
             <Image
               className={`w-auto ${suffixImageClassNames}`}

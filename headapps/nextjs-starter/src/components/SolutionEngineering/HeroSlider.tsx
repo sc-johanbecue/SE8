@@ -7,13 +7,13 @@ import {
   ComponentRendering,
   Placeholder,
   GetStaticComponentProps,
-  // useComponentProps,
+  useComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
-// import {
-//   getValueFromRenderingConfigurationDropLinkStyle,
-//   RenderingConfigurationFields,
-// } from './Utility/RenderingConfigurationUtils';
-import { fetchDropLinkItem } from './Utility/DropLinkUtils';
+import {
+  fetchRenderingConfiguration,
+  getValueFromRenderingConfigurationDropLinkStyle,
+  RenderingConfigurationFields,
+} from './Utility/RenderingConfigurationUtils';
 
 interface Fields {
   Title: TextField;
@@ -34,8 +34,11 @@ export const getStaticProps: GetStaticComponentProps = async (context) => {
   const renderingConfigurationGuid = context?.params?.RenderingConfiguration as string;
   console.log('HeroSlider - renderingConfigurationGuid' + renderingConfigurationGuid);
 
-  const staticProps = await fetchDropLinkItem(context?.params?.appearAnimation as string, [
-    'Value',
+  const staticProps = await fetchRenderingConfiguration(renderingConfigurationGuid, [
+    'AppearAnimation',
+    'AppearAnimationSpeed',
+    'AppearAnimationIteration',
+    'AppearAnimationDelay',
   ]);
 
   console.log(
@@ -56,22 +59,22 @@ const HeroSliderDefaultComponent = (props: HeroSliderProps): JSX.Element => (
 );
 
 export const Default = (props: HeroSliderProps): JSX.Element => {
-  // const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
+  const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
   const phKey = `slide-container-${props.params.DynamicPlaceholderId}`;
 
-  // const appearAnimation = get(
-  //   staticProps?.RenderingConfigurationFields.AppearAnimation
-  // // );
-  // const appearAnimationSpeed = getValueFromRenderingConfigurationDropLinkStyle(
-  //   staticProps?.RenderingConfigurationFields.AppearAnimationSpeed
-  // );
-  // const appearAnimationIteration = getValueFromRenderingConfigurationDropLinkStyle(
-  //   staticProps?.RenderingConfigurationFields.AppearAnimationIteration
-  // );
-  // const appearAnimationDelay = getValueFromRenderingConfigurationDropLinkStyle(
-  //   staticProps?.RenderingConfigurationFields.AppearAnimationDelay
-  // );
+  const appearAnimation = getValueFromRenderingConfigurationDropLinkStyle(
+    staticProps?.RenderingConfigurationFields.AppearAnimation
+  );
+  const appearAnimationSpeed = getValueFromRenderingConfigurationDropLinkStyle(
+    staticProps?.RenderingConfigurationFields.AppearAnimationSpeed
+  );
+  const appearAnimationIteration = getValueFromRenderingConfigurationDropLinkStyle(
+    staticProps?.RenderingConfigurationFields.AppearAnimationIteration
+  );
+  const appearAnimationDelay = getValueFromRenderingConfigurationDropLinkStyle(
+    staticProps?.RenderingConfigurationFields.AppearAnimationDelay
+  );
 
   const settings = {
     dots: true,
@@ -97,10 +100,10 @@ export const Default = (props: HeroSliderProps): JSX.Element => {
     return (
       <section
         className="section bbb section-with-shape-divider border-0 py-0 m-0"
-        data-appear-animation={props.params.appearAnimation}
-        data-appear-animation-speed={props.params.appearAnimationSpeed}
-        data-appear-animation-delay={props.params.appearAnimationDelay}
-        data-appear-animation-iteration={props.params.appearAnimationIteration}
+        data-appear-animation={appearAnimation}
+        data-appear-animation-speed={appearAnimationSpeed}
+        data-appear-animation-delay={appearAnimationDelay}
+        data-appear-animation-iteration={appearAnimationIteration}
         id={id ? id : undefined}
       >
         <div className="shape-divider shape-divider-bottom z-index-3" style={{ height: '136px' }}>

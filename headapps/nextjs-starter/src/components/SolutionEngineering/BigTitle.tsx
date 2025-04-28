@@ -3,13 +3,12 @@ import {
   TextField,
   ComponentParams,
   ComponentRendering,
-
-  // useComponentProps,
-  // GetStaticComponentProps,
+  useComponentProps,
+  GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import {
-  // RenderingConfigurationFields,
-  // fetchRenderingConfiguration,
+  RenderingConfigurationFields,
+  fetchRenderingConfiguration,
   concatenateClassNames,
 } from './Utility/RenderingConfigurationUtils';
 import AnimatedLetters from './Utility/AnimatedLetters'; // Import the generic component
@@ -20,87 +19,41 @@ interface Fields {
   Title: TextField;
 }
 
-interface RenderingConfigurationParam {
-  RenderingConfiguration: {
-    CharacterAnimationConfiguration: {
-      fields: {
-        Animation: string;
-        AnimationIteration: string;
-        AnimationSpeed: string;
-        AnimationDelay: { value: number };
-      };
-    };
-    PrefixAnimationIteration: string;
-    PrefixOpacity: string;
-    PrefixImage: ImageItem | null;
-    PrefixAnimation: string;
-    PrefixAnimationDelay: string;
-    PrefixAnimationSpeed: string;
-    TextColor: string;
-    LineHeight: string;
-    MarginStart: string;
-    MarginEnd: string;
-    MarginTop: string;
-    MarginBottom: string;
-    PaddingStart: string;
-    PaddingEnd: string;
-    PaddingTop: string;
-    PaddingBottom: string;
-    FontWeight: string;
-    FontSize: string;
-    SuffixOpacity: string;
-    SuffixImage: ImageItem | null;
-    SuffixAnimation: string;
-    SuffixAnimationDelay: string;
-    SuffixAnimationIteration: string;
-    SuffixAnimationSpeed: string;
-  };
-}
-
-interface ImageItem {
-  value: {
-    src: string;
-    alt: string;
-    width: string;
-    height: string;
-  };
-}
-
 type BigTitleProps = {
   fields: Fields;
-  rendering: ComponentRendering & { params: RenderingConfigurationParam & ComponentParams };
-  params: RenderingConfigurationParam & ComponentParams;
+  rendering: ComponentRendering & { params: ComponentParams };
+  params: ComponentParams;
 };
 
-// //export const getServerSideProps: GetServerSideComponentProps
-// export const getStaticProps: GetStaticComponentProps = async (context) => {
-//   console.log('Big Title - Starting getStaticProps');
+//export const getServerSideProps: GetServerSideComponentProps
+export const getStaticProps: GetStaticComponentProps = async (context) => {
+  console.log('Big Title - Starting getStaticProps');
 
-//   // Extract the renderingConfiguration GUID from the context params.
-//   // Note: if the field is nested differently, adjust accordingly.
-//   const renderingConfigurationGuid = context?.params?.RenderingConfiguration as string;
+  // Extract the renderingConfiguration GUID from the context params.
+  // Note: if the field is nested differently, adjust accordingly.
+  const renderingConfigurationGuid = context?.params?.RenderingConfiguration as string;
 
-//   const staticProps = await fetchRenderingConfiguration(renderingConfigurationGuid, [
-//     'LineHeight',
-//     'TextColor',
-//     'CharacterSpacing',
-//     'CharacterAnimationConfiguration',
-//     'FontWeight',
-//     'FontSize',
-//     'PaddingStart',
-//     'PaddingEnd',
-//     'PaddingTop',
-//     'PaddingBottom',
-//     'MarginStart',
-//     'MarginEnd',
-//     'MarginTop',
-//     'MarginBottom',
-//     'WrapText',
-//   ]);
+  const staticProps = await fetchRenderingConfiguration(renderingConfigurationGuid, [
+    'LineHeight',
+    'TextColor',
+    'CharacterSpacing',
+    'CharacterAnimationConfiguration',
+    'FontWeight',
+    'FontSize',
+    'PaddingStart',
+    'PaddingEnd',
+    'PaddingTop',
+    'PaddingBottom',
+    'MarginStart',
+    'MarginEnd',
+    'MarginTop',
+    'MarginBottom',
+    'WrapText',
+  ]);
 
-//   console.log('Big Title - Ended getStaticProps');
-//   return staticProps;
-// };
+  console.log('Big Title - Ended getStaticProps');
+  return staticProps;
+};
 
 const BigTitleDefaultComponent = (props: BigTitleProps): JSX.Element => (
   <div className={`component Main ${props.params.styles}`}>
@@ -115,34 +68,20 @@ export const RenderBigTitle = (
   props: BigTitleProps,
   BigTitleTag: keyof JSX.IntrinsicElements
 ): JSX.Element => {
-  // const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
+  const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
 
-  // const headingClassNames = concatenateClassNames(
-  //   staticProps?.RenderingConfigurationFields.TextColor,
-  //   staticProps?.RenderingConfigurationFields.FontWeight,
-  //   staticProps?.RenderingConfigurationFields.PaddingStart,
-  //   staticProps?.RenderingConfigurationFields.PaddingEnd,
-  //   staticProps?.RenderingConfigurationFields.PaddingTop,
-  //   staticProps?.RenderingConfigurationFields.PaddingBottom,
-  //   staticProps?.RenderingConfigurationFields.MarginStart,
-  //   staticProps?.RenderingConfigurationFields.MarginEnd,
-  //   staticProps?.RenderingConfigurationFields.MarginTop,
-  //   staticProps?.RenderingConfigurationFields.MarginBottom
-  // );
-
-  const z = props.params.RenderingConfiguration;
   const headingClassNames = concatenateClassNames(
-    z.TextColor,
-    z.FontWeight,
-    z.PaddingStart,
-    z.PaddingEnd,
-    z.PaddingTop,
-    z.PaddingBottom,
-    z.MarginStart,
-    z.MarginEnd,
-    z.MarginTop,
-    z.MarginBottom
+    staticProps?.RenderingConfigurationFields.TextColor,
+    staticProps?.RenderingConfigurationFields.FontWeight,
+    staticProps?.RenderingConfigurationFields.PaddingStart,
+    staticProps?.RenderingConfigurationFields.PaddingEnd,
+    staticProps?.RenderingConfigurationFields.PaddingTop,
+    staticProps?.RenderingConfigurationFields.PaddingBottom,
+    staticProps?.RenderingConfigurationFields.MarginStart,
+    staticProps?.RenderingConfigurationFields.MarginEnd,
+    staticProps?.RenderingConfigurationFields.MarginTop,
+    staticProps?.RenderingConfigurationFields.MarginBottom
   );
 
   if (props.fields) {
@@ -155,7 +94,9 @@ export const RenderBigTitle = (
       >
         <AnimatedLetters
           text={props.fields.Title?.value as string}
-          characterAnimationConfiguration={z.CharacterAnimationConfiguration}
+          characterAnimationConfiguration={
+            staticProps?.RenderingConfigurationFields.CharacterAnimationConfiguration
+          }
         />
       </BigTitleTag>
     );

@@ -5,12 +5,12 @@ import {
   Text,
   ComponentParams,
   ComponentRendering,
-  //useComponentProps,
-  //GetStaticComponentProps,
+  useComponentProps,
+  GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import {
-  //RenderingConfigurationFields,
-  //fetchRenderingConfiguration,
+  RenderingConfigurationFields,
+  fetchRenderingConfiguration,
   concatenateClassNames,
 } from './Utility/RenderingConfigurationUtils';
 import 'animate.css';
@@ -19,56 +19,10 @@ interface Fields {
   Title: TextField;
 }
 
-interface RenderingConfigurationParam {
-  RenderingConfiguration: {
-    CharacterAnimationConfiguration: {
-      fields: {
-        Animation: string;
-        AnimationIteration: string;
-        AnimationSpeed: string;
-        AnimationDelay: { value: number };
-      };
-    };
-    PrefixAnimationIteration: string;
-    PrefixOpacity: string;
-    PrefixImage: ImageItem | null;
-    PrefixAnimation: string;
-    PrefixAnimationDelay: string;
-    PrefixAnimationSpeed: string;
-    TextColor: string;
-    LineHeight: string;
-    MarginStart: string;
-    MarginEnd: string;
-    MarginTop: string;
-    MarginBottom: string;
-    PaddingStart: string;
-    PaddingEnd: string;
-    PaddingTop: string;
-    PaddingBottom: string;
-    FontWeight: string;
-    FontSize: string;
-    SuffixOpacity: string;
-    SuffixImage: ImageItem | null;
-    SuffixAnimation: string;
-    SuffixAnimationDelay: string;
-    SuffixAnimationIteration: string;
-    SuffixAnimationSpeed: string;
-  };
-}
-
-interface ImageItem {
-  value: {
-    src: string;
-    alt: string;
-    width: string;
-    height: string;
-  };
-}
-
 type SliderHeaderProps = {
   fields: Fields;
-  rendering: ComponentRendering & { params: RenderingConfigurationParam & ComponentParams };
-  params: RenderingConfigurationParam & ComponentParams;
+  rendering: ComponentRendering & { params: ComponentParams };
+  params: ComponentParams;
 };
 
 const SliderHeaderDefaultComponent = (props: SliderHeaderProps): JSX.Element => (
@@ -79,109 +33,112 @@ const SliderHeaderDefaultComponent = (props: SliderHeaderProps): JSX.Element => 
   </div>
 );
 
-// //export const getServerSideProps: GetServerSideComponentProps
-// export const getStaticProps: GetStaticComponentProps = async (context) => {
-//   console.log('Starting getStaticProps');
+//export const getServerSideProps: GetServerSideComponentProps
+export const getStaticProps: GetStaticComponentProps = async (context) => {
+  console.log('Starting getStaticProps');
 
-//   // Extract the renderingConfiguration GUID from the context params.
-//   // Note: if the field is nested differently, adjust accordingly.
-//   const renderingConfigurationGuid = context?.params?.RenderingConfiguration as string;
+  // Extract the renderingConfiguration GUID from the context params.
+  // Note: if the field is nested differently, adjust accordingly.
+  const renderingConfigurationGuid = context?.params?.RenderingConfiguration as string;
 
-//   const staticProps = await fetchRenderingConfiguration(renderingConfigurationGuid, [
-//     'LineHeight',
-//     'TextColor',
-//     'FontWeight',
-//     'FontSize',
-//     'PaddingStart',
-//     'PaddingEnd',
-//     'PaddingTop',
-//     'PaddingBottom',
-//     'MarginStart',
-//     'MarginEnd',
-//     'MarginTop',
-//     'MarginBottom',
-//     'PrefixImage',
-//     'PrefixOpacity',
-//     'PrefixAnimation',
-//     'PrefixAnimationDelay',
-//     'PrefixAnimationIteration',
-//     'PrefixAnimationSpeed',
-//     'SuffixImage',
-//     'SuffixOpacity',
-//     'SuffixAnimation',
-//     'SuffixAnimationDelay',
-//     'SuffixAnimationIteration',
-//     'SuffixAnimationSpeed',
-//   ]);
+  const staticProps = await fetchRenderingConfiguration(renderingConfigurationGuid, [
+    'LineHeight',
+    'TextColor',
+    'FontWeight',
+    'FontSize',
+    'PaddingStart',
+    'PaddingEnd',
+    'PaddingTop',
+    'PaddingBottom',
+    'MarginStart',
+    'MarginEnd',
+    'MarginTop',
+    'MarginBottom',
+    'PrefixImage',
+    'PrefixOpacity',
+    'PrefixAnimation',
+    'PrefixAnimationDelay',
+    'PrefixAnimationIteration',
+    'PrefixAnimationSpeed',
+    'SuffixImage',
+    'SuffixOpacity',
+    'SuffixAnimation',
+    'SuffixAnimationDelay',
+    'SuffixAnimationIteration',
+    'SuffixAnimationSpeed',
+  ]);
 
-//   console.log(
-//     ('getStaticProps - FieldName: PrefixImage' +
-//       ' - Value: ' +
-//       staticProps.PrefixImage?.value.src) as string
-//   );
-//   console.log('Ended getStaticProps');
-//   return staticProps;
-// };
+  console.log(
+    ('getStaticProps - FieldName: PrefixImage' +
+      ' - Value: ' +
+      staticProps.PrefixImage?.value.src) as string
+  );
+  console.log('Ended getStaticProps');
+  return staticProps;
+};
 
 // Helper function to render a heading with a dynamic tag
 const RenderHeading = (
   props: SliderHeaderProps,
   HeadingTag: keyof JSX.IntrinsicElements
 ): JSX.Element => {
-  //const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
+  const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
 
   const headingClassNames = concatenateClassNames(
-    props.params.RenderingConfiguration.LineHeight,
-    props.params.RenderingConfiguration.TextColor,
-    props.params.RenderingConfiguration.FontWeight,
-    props.params.RenderingConfiguration.FontSize,
-    props.params.RenderingConfiguration.PaddingStart,
-    props.params.RenderingConfiguration.PaddingEnd,
-    props.params.RenderingConfiguration.PaddingTop,
-    props.params.RenderingConfiguration.PaddingBottom,
-    props.params.RenderingConfiguration.MarginStart,
-    props.params.RenderingConfiguration.MarginEnd,
-    props.params.RenderingConfiguration.MarginTop,
-    props.params.RenderingConfiguration.MarginBottom
+    staticProps?.RenderingConfigurationFields.LineHeight,
+    staticProps?.RenderingConfigurationFields.TextColor,
+    staticProps?.RenderingConfigurationFields.FontWeight,
+    staticProps?.RenderingConfigurationFields.FontSize,
+    staticProps?.RenderingConfigurationFields.PaddingStart,
+    staticProps?.RenderingConfigurationFields.PaddingEnd,
+    staticProps?.RenderingConfigurationFields.PaddingTop,
+    staticProps?.RenderingConfigurationFields.PaddingBottom,
+    staticProps?.RenderingConfigurationFields.MarginStart,
+    staticProps?.RenderingConfigurationFields.MarginEnd,
+    staticProps?.RenderingConfigurationFields.MarginTop,
+    staticProps?.RenderingConfigurationFields.MarginBottom
   );
 
-  const z = props.params.RenderingConfiguration;
   const prefixImageClassNames = concatenateClassNames(
-    z.PrefixAnimation,
-    z.PrefixAnimationDelay,
-    z.PrefixAnimationIteration,
-    z.PrefixAnimationSpeed
+    staticProps?.RenderingConfigurationFields.PrefixAnimation,
+    staticProps?.RenderingConfigurationFields.PrefixAnimationDelay,
+    staticProps?.RenderingConfigurationFields.PrefixAnimationIteration,
+    staticProps?.RenderingConfigurationFields.PrefixAnimationSpeed
   );
 
   const suffixImageClassNames = concatenateClassNames(
-    z.SuffixAnimation,
-    z.SuffixAnimationDelay,
-    z.SuffixAnimationIteration,
-    z.SuffixAnimationSpeed
+    staticProps?.RenderingConfigurationFields.SuffixAnimation,
+    staticProps?.RenderingConfigurationFields.SuffixAnimationDelay,
+    staticProps?.RenderingConfigurationFields.SuffixAnimationIteration,
+    staticProps?.RenderingConfigurationFields.SuffixAnimationSpeed
   );
 
-  const prefixSpanClassNames = concatenateClassNames(z.PrefixOpacity);
+  const prefixSpanClassNames = concatenateClassNames(
+    staticProps?.RenderingConfigurationFields.PrefixOpacity
+  );
 
-  const suffixSpanClassNames = concatenateClassNames(z.SuffixOpacity);
+  const suffixSpanClassNames = concatenateClassNames(
+    staticProps?.RenderingConfigurationFields.SuffixOpacity
+  );
 
-  // const prefixSpanStyle = {
-  //   ...(z.PrefixImage?.value.width && {
-  //     width: `${z.PrefixImage.value.width}px`,
-  //   }),
-  //   ...(z.PrefixImage?.value.height && {
-  //     height: `${z.PrefixImage.value.height}px`,
-  //   }),
-  // };
+  const prefixSpanStyle = {
+    ...(staticProps?.RenderingConfigurationFields.PrefixImage.value.width && {
+      width: `${staticProps.RenderingConfigurationFields.PrefixImage.value.width}px`,
+    }),
+    ...(staticProps?.RenderingConfigurationFields.PrefixImage.value.height && {
+      height: `${staticProps.RenderingConfigurationFields.PrefixImage.value.height}px`,
+    }),
+  };
 
-  // const suffixSpanStyle = {
-  //   ...(z.SuffixImage?.value.width && {
-  //     width: `${z.SuffixImage.value.width}px`,
-  //   }),
-  //   ...(z.SuffixImage?.value.height && {
-  //     height: `${z.SuffixImage.value.height}px`,
-  //   }),
-  // };
+  const suffixSpanStyle = {
+    ...(staticProps?.RenderingConfigurationFields.SuffixImage.value.width && {
+      width: `${staticProps.RenderingConfigurationFields.SuffixImage.value.width}px`,
+    }),
+    ...(staticProps?.RenderingConfigurationFields.SuffixImage.value.height && {
+      height: `${staticProps.RenderingConfigurationFields.SuffixImage.value.height}px`,
+    }),
+  };
 
   if (props.fields) {
     return (
@@ -191,32 +148,32 @@ const RenderHeading = (
           props.params.Styles ? props.params.Styles : ''
         }`}
       >
-        {props.params.RenderingConfiguration.PrefixImage && (
+        {staticProps?.RenderingConfigurationFields.PrefixImage && (
           <span
             className={`position-absolute right-100pct top-50pct transform3dy-n50 ${prefixSpanClassNames}`}
-            //style={prefixSpanStyle}
+            style={prefixSpanStyle}
           >
             <Image
               className={`w-auto ${prefixImageClassNames}`}
-              src={props.params.RenderingConfiguration.PrefixImage.value.src}
-              alt={props.params.RenderingConfiguration.PrefixImage.value.alt as string}
+              src={staticProps?.RenderingConfigurationFields.PrefixImage.value.src}
+              alt={staticProps?.RenderingConfigurationFields.PrefixImage.value.alt as string}
               fill={true}
-              sizes={`${props.params.RenderingConfiguration.PrefixImage.value.width}px`}
+              sizes={`${staticProps?.RenderingConfigurationFields.PrefixImage.value.width}px`}
             />
           </span>
         )}
         <Text field={props.fields.Title} />
-        {props.params.RenderingConfiguration.SuffixImage && (
+        {staticProps?.RenderingConfigurationFields.SuffixImage && (
           <span
             className={`position-absolute left-100pct top-50pct transform3dy-n50 ${suffixSpanClassNames}`}
-            //style={suffixSpanStyle}
+            style={suffixSpanStyle}
           >
             <Image
               className={`w-auto ${suffixImageClassNames}`}
-              src={props.params.RenderingConfiguration.SuffixImage.value.src}
-              alt={props.params.RenderingConfiguration.SuffixImage.value.alt as string}
+              src={staticProps?.RenderingConfigurationFields.SuffixImage.value.src}
+              alt={staticProps?.RenderingConfigurationFields.SuffixImage.value.alt as string}
               fill={true}
-              sizes={`${props.params.RenderingConfiguration.SuffixImage.value.width}px`}
+              sizes={`${staticProps?.RenderingConfigurationFields.SuffixImage.value.width}px`}
             />
           </span>
         )}

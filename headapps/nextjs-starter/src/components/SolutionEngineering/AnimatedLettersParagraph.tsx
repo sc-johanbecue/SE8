@@ -18,11 +18,19 @@ import 'animate.css';
 interface Fields {
   Title: TextField;
 }
+
 interface RenderingConfigurationParam {
   RenderingConfiguration: {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    CharacterAnimationConfiguration: any;
+    CharacterAnimationConfiguration: {
+      fields: {
+        Animation: string;
+        AnimationIteration: string;
+        AnimationSpeed: string;
+        AnimationDelay: { value: number };
+      };
+    };
     TextColor: string;
+    LineHeight: string;
     MarginStart: string;
     MarginEnd: string;
     MarginTop: string;
@@ -32,6 +40,7 @@ interface RenderingConfigurationParam {
     PaddingTop: string;
     PaddingBottom: string;
     FontWeight: string;
+    FontSize: string;
   };
 }
 
@@ -111,10 +120,12 @@ export const Default = (props: AnimatedLettersParagraphProps): JSX.Element => {
           props.params.Styles ? props.params.Styles : ''
         }`}
       >
-        {z.CharacterAnimationConfiguration != undefined ? (
+        {props.params.RenderingConfiguration.CharacterAnimationConfiguration != undefined ? (
           <AnimatedLetters
             text={props.fields.Title?.value as string}
-            characterAnimationConfiguration={z.CharacterAnimationConfiguration}
+            characterAnimationConfiguration={
+              props.params.RenderingConfiguration.CharacterAnimationConfiguration
+            }
           />
         ) : (
           <Text field={props.fields.Title} />

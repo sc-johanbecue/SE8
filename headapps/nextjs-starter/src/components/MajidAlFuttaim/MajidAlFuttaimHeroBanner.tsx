@@ -62,17 +62,6 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   </ul>
                 </div>
               </div>
-              {/* <script type="application/ld+json">
-                    {`
-                        {
-                        "@context": "https://schema.org",
-                          "@type": "BreadcrumbList",
-                          "itemListElement": [
-                                     [{"@type":"ListItem","position":"1","name":"Home","item":"https://www.majidalfuttaim.com/en"},{"@type":"ListItem","position":"2","name":"\r\nWhat We Do","item":"https://www.majidalfuttaim.com/en/what-we-do"},{"@type":"ListItem","position":"3","name":"\r\nOur Industries","item":"https://www.majidalfuttaim.com/en/what-we-do/our-industries"},{"@type":"ListItem","position":"4","name":"Lifestyle","item":"https://www.majidalfuttaim.com/en/what-we-do/our-industries/industry/lifestyle"}]
-                          ]
-                        }
-                          `}
-                  </script> */}
               <div
                 role="banner"
                 className="main-slide

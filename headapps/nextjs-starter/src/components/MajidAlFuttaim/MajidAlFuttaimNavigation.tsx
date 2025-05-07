@@ -34,7 +34,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   <span>Menu</span>
                 </div>
                 <div className="close-menu" id="close-menu">
-                  <Link href="javascript:void(0)" className="closebtn">
+                  <Link href="" className="closebtn">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="23"
@@ -44,7 +44,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                     >
                       <path
                         fill="#8A1538"
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M12.207 10.96L22.46 21.213l-.707.707L11.5 11.667 1.247 21.92l-.707-.707L10.793 10.96.54.707 1.247 0 11.5 10.253 21.753 0l.707.707L12.207 10.96z"
                       ></path>
                     </svg>
@@ -152,7 +152,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   >
                     <path
                       fill="#8A1538"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M12.207 10.96L22.46 21.213l-.707.707L11.5 11.667 1.247 21.92l-.707-.707L10.793 10.96.54.707 1.247 0 11.5 10.253 21.753 0l.707.707L12.207 10.96z"
                     ></path>
                   </svg>
@@ -272,7 +272,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   >
                     <path
                       fill="#8A1538"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M12.207 10.96L22.46 21.213l-.707.707L11.5 11.667 1.247 21.92l-.707-.707L10.793 10.96.54.707 1.247 0 11.5 10.253 21.753 0l.707.707L12.207 10.96z"
                     ></path>
                   </svg>
@@ -376,7 +376,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   >
                     <path
                       fill="#8A1538"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M12.207 10.96L22.46 21.213l-.707.707L11.5 11.667 1.247 21.92l-.707-.707L10.793 10.96.54.707 1.247 0 11.5 10.253 21.753 0l.707.707L12.207 10.96z"
                     ></path>
                   </svg>
@@ -431,7 +431,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   >
                     <path
                       fill="#8A1538"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M12.207 10.96L22.46 21.213l-.707.707L11.5 11.667 1.247 21.92l-.707-.707L10.793 10.96.54.707 1.247 0 11.5 10.253 21.753 0l.707.707L12.207 10.96z"
                     ></path>
                   </svg>
@@ -560,7 +560,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   >
                     <path
                       fill="#8A1538"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M12.207 10.96L22.46 21.213l-.707.707L11.5 11.667 1.247 21.92l-.707-.707L10.793 10.96.54.707 1.247 0 11.5 10.253 21.753 0l.707.707L12.207 10.96z"
                     ></path>
                   </svg>
@@ -602,7 +602,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   >
                     <path
                       fill="#8A1538"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M12.207 10.96L22.46 21.213l-.707.707L11.5 11.667 1.247 21.92l-.707-.707L10.793 10.96.54.707 1.247 0 11.5 10.253 21.753 0l.707.707L12.207 10.96z"
                     ></path>
                   </svg>
@@ -719,7 +719,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   >
                     <path
                       fill="#8A1538"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M12.207 10.96L22.46 21.213l-.707.707L11.5 11.667 1.247 21.92l-.707-.707L10.793 10.96.54.707 1.247 0 11.5 10.253 21.753 0l.707.707L12.207 10.96z"
                     ></path>
                   </svg>
@@ -810,7 +810,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   >
                     <path
                       fill="#8A1538"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M12.207 10.96L22.46 21.213l-.707.707L11.5 11.667 1.247 21.92l-.707-.707L10.793 10.96.54.707 1.247 0 11.5 10.253 21.753 0l.707.707L12.207 10.96z"
                     ></path>
                   </svg>
@@ -969,7 +969,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                       alt="MAFsearch"
                     />
                   </li>
-                  <li className="header-link">
+                  <li>
                     <Link
                       href="https://www.majidalfuttaim.com/en/contact-us"
                       target="_self"
@@ -978,7 +978,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                       Contact Us
                     </Link>
                   </li>
-                  <li className="text-resizer">
+                  <li>
                     <span id="increaseFont" className="large-text">
                       A
                     </span>
@@ -987,8 +987,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                     </span>
                     <span id="contrast" className="rectangle"></span>
                   </li>
-
-                  <li id="desctop-language-switcher" className="language-switcher">
+                  <li>
                     <Link
                       href=""
                       onClick={(e) => {
@@ -1567,7 +1566,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   <title>06A6CC11-1010-4A1F-B4D5-BD351DD48199</title>
                   <desc>Created with sketchtool.</desc>
                   <defs></defs>
-                  <g id="symbol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="symbol" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                     <g id="menu" transform="translate(-1096.000000, -8.000000)" fill="#FFFFFF">
                       <g id="search" transform="translate(1096.000000, 8.000000)">
                         <path

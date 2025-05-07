@@ -92,6 +92,7 @@ export const Default = (props: ButtonProps): JSX.Element => {
   if (props.fields) {
     return (
       <JssLink
+        key={id || undefined}
         id={id || undefined}
         field={props.fields.Link}
         className={`component btn ${linkClassNames} ${props.params.styles}`}

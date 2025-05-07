@@ -90,6 +90,7 @@ export const RenderHeading = (
   if (props.fields) {
     return (
       <HeadingTag
+        key={id ? id : undefined}
         id={id ? id : undefined}
         className={`component position-relative ${headingClassNames} ${
           props.params.Styles ? props.params.Styles : ''

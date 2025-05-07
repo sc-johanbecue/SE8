@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { TextField } from '@sitecore-jss/sitecore-jss-nextjs';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faSearch, faTimes } from '@fortawesome/free-solid-svg-icons';
+
 interface Fields {
   Title: TextField;
   Text: TextField;
@@ -30,7 +33,11 @@ export const Default = (props: HeaderProps): JSX.Element => {
   };
 
   return (
-    <div className="header-body border-top-0 bg-dark box-shadow-none" id={id ? id : undefined}>
+    <div
+      className={`component header-body border-top-0 bg-dark box-shadow-none ${props.params.styles}`}
+      id={id ? id : undefined}
+      key={id ? id : undefined}
+    >
       <div className="header-container container container-xl-custom">
         <div className="header-row">
           <div className="header-column">
@@ -3589,7 +3596,8 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   data-bs-toggle="collapse"
                   data-bs-target=".header-nav-main nav"
                 >
-                  <i className="fas fa-bars"></i>
+                  <FontAwesomeIcon icon={faBars} />
+                  {/* <i className="fas fa-bars"></i> */}
                 </button>
               </div>
               <div className="header-nav-features header-nav-features-light header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
@@ -3600,7 +3608,8 @@ export const Default = (props: HeaderProps): JSX.Element => {
                     data-focus="headerSearch"
                     aria-label="Search"
                   >
-                    <i className="fas fa-search header-nav-top-icon"></i>
+                    <FontAwesomeIcon icon={faSearch} className="header-nav-top-icon" />
+                    {/* <i className="fas fa-search "></i> */}
                   </a>
                   <div
                     className="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed"
@@ -3618,7 +3627,8 @@ export const Default = (props: HeaderProps): JSX.Element => {
                           placeholder="Search..."
                         />
                         <button className="btn" type="submit" aria-label="Search">
-                          <i className="fas fa-search header-nav-top-icon"></i>
+                          <FontAwesomeIcon icon={faSearch} className="header-nav-top-icon" />
+                          {/* <i className="fas fa-search header-nav-top-icon"></i> */}
                         </button>
                       </div>
                     </form>
@@ -3650,7 +3660,8 @@ export const Default = (props: HeaderProps): JSX.Element => {
                             1X <span className="price">$890</span>
                           </p>
                           <a href="#" title="Remove This Item" className="btn-remove">
-                            <i className="fas fa-times"></i>
+                            <FontAwesomeIcon icon={faTimes} />
+                            {/* <i className="fas fa-times"></i> */}
                           </a>
                         </div>
                       </li>

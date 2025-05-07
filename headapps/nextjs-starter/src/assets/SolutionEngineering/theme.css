@@ -4,6 +4,9 @@ Written by: 	Okler Themes - (http://www.okler.net)
 Theme Version:	12.0.0
 */
 /* Base */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap');
+
 html {
 	direction: ltr;
 	overflow-x: hidden;

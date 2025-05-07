@@ -26,10 +26,10 @@ const HomeIntroDefaultComponent = (props: HomeIntroProps): JSX.Element => (
 );
 
 export const Default = (props: HomeIntroProps): JSX.Element => {
-  // const id = props.params.RenderingIdentifier;
+  const id = props.params.RenderingIdentifier;
   if (props.fields) {
     return (
-      <div className="home-intro mb-0" id="home-intro">
+      <div className="home-intro mb-0" id="home-intro" key={id ? id : undefined}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-8">

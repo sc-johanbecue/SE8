@@ -10,6 +10,7 @@ import '/src/assets/SolutionEngineering/theme-blog.css';
 import '/src/assets/SolutionEngineering/theme-shop.css';
 import '/src/assets/SolutionEngineering/custom.css';
 import '/src/assets/SolutionEngineering/skins/skin-corporate-10.css';
+import 'simple-line-icons/css/simple-line-icons.css';
 
 function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;

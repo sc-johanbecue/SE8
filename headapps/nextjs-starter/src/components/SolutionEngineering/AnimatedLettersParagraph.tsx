@@ -90,6 +90,7 @@ export const Default = (props: AnimatedLettersParagraphProps): JSX.Element => {
   if (props.fields) {
     return (
       <p
+        key={id ? id : undefined}
         id={id ? id : undefined}
         className={`component text-center ${headingClassNames} ${
           props.params.Styles ? props.params.Styles : ''

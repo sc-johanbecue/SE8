@@ -87,6 +87,7 @@ export const RenderBigTitle = (
   if (props.fields) {
     return (
       <BigTitleTag
+        key={id ? id : undefined}
         id={id ? id : undefined}
         className={`component position-relative big-title d-inline-flex ${headingClassNames} ${
           props.params.Styles ? props.params.Styles : ''

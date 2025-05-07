@@ -20,6 +20,7 @@ const FooterDefaultComponent = (props: FooterProps): JSX.Element => (
 );
 
 export const Default = (props: FooterProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
   // // Handle input click event
   // const handleInputClick = (event: React.MouseEvent<HTMLInputElement | HTMLTextAreaElement>) => {
   //   console.log('Input clicked:', event.target);
@@ -27,7 +28,7 @@ export const Default = (props: FooterProps): JSX.Element => {
 
   return (
     <>
-      <div className="container pb-5 mb-5">
+      <div className="container pb-5 mb-5" key={id ? id : undefined}>
         <div className="row justify-content-center">
           <div className="col-md-9 col-lg-6">
             <h2 className="font-weight-normal text-color-dark text-center text-8 mb-4">

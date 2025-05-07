@@ -31,6 +31,9 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@sitecore-cloudsdk/core": "^0.4.2",
     "@sitecore-cloudsdk/events": "^0.4.2",
     "@sitecore-feaas/clientside": "^0.5.19",
@@ -39,6 +42,7 @@
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.3",
     "font-awesome": "^4.7.0",
+    "framer-motion": "^12.9.2",
     "graphql": "~15.8.0",
     "graphql-tag": "^2.12.6",
     "lucide-react": "^0.476.0",
@@ -51,7 +55,9 @@
     "sass": "^1.52.3",
     "sass-alias": "^1.0.5",
     "sharp": "0.32.6",
-    "slick-carousel": "^1.8.1"
+    "simple-line-icons": "^2.5.5",
+    "slick-carousel": "^1.8.1",
+    "yet-another-react-lightbox": "^3.23.0"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^5.0.0",

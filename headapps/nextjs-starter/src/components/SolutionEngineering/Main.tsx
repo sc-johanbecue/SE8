@@ -1,5 +1,7 @@
 import React from 'react';
 import { TextField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 interface Fields {
   Title: TextField;
@@ -20,11 +22,14 @@ const MainDefaultComponent = (props: MainProps): JSX.Element => (
 );
 
 export const Default = (props: MainProps): JSX.Element => {
-  //const id = props.params.RenderingIdentifier;
+  const id = props.params.RenderingIdentifier;
 
   return (
     <>
-      <section className="section section-with-shape-divider border-0 py-0 m-0">
+      <section
+        key={id ? id : undefined}
+        className="section section-with-shape-divider border-0 py-0 m-0"
+      >
         <div className="shape-divider shape-divider-bottom z-index-3" style={{ height: '136px' }}>
           <svg
             version="1.1"
@@ -180,7 +185,9 @@ export const Default = (props: MainProps): JSX.Element => {
                           data-appear-animation-delay="1800"
                           data-plugin-options="{'minWindowWidth': 0}"
                         >
-                          GET STARTED NOW <i className="fas fa-arrow-right ms-2"></i>
+                          GET STARTED NOW
+                          <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
+                          {/* <i className="fas fa-arrow-right ms-2"></i> */}
                         </a>
                       </div>
                     </div>
@@ -226,7 +233,9 @@ export const Default = (props: MainProps): JSX.Element => {
               consectetur adipiscing elit. Phasellus blandit massa enim.
             </p>
             <a href="#" className="learn-more text-primary font-weight-semibold text-2">
-              VIEW MORE <i className="fas fa-chevron-right text-3 ms-2"></i>
+              VIEW MORE
+              <FontAwesomeIcon icon={faChevronRight} className="text-3 ms-2" />
+              {/* <i className="fas fa-chevron-right text-3 ms-2"></i> */}
             </a>
           </div>
           <div className="col-md-10 col-lg-5">

@@ -218,6 +218,7 @@ export const ClassicSmall = (props: PageHeaderProps): JSX.Element => {
       <section
         className={`page-header page-header-classic ${props.params.styles}`}
         id={id ? id : undefined}
+        key={id ? id : undefined}
       >
         {/* <div className="container">
           <div className="row">

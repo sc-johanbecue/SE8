@@ -65,6 +65,7 @@ export const Default = (props: PrefixOrSuffixImageProps): JSX.Element => {
     return (
       <span
         id={id ? id : undefined}
+        key={id ? id : undefined}
         className={`component position-absolute left-100pct top-50pct transform3dy-n50 opacity-3`}
         style={{ width: '37px', height: '10px' }}
       >

@@ -14,6 +14,7 @@ import {
   getValueFromRenderingConfigurationDropLinkStyle,
   RenderingConfigurationFields,
 } from './Utility/RenderingConfigurationUtils';
+import { useAppearAnimation } from "./Utility/useAppearAnimation";
 
 interface Fields {
   Title: TextField;
@@ -63,6 +64,8 @@ export const Default = (props: HeroSliderProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
   const phKey = `slide-container-${props.params.DynamicPlaceholderId}`;
 
+  useAppearAnimation();
+  
   const appearAnimation = getValueFromRenderingConfigurationDropLinkStyle(
     staticProps?.RenderingConfigurationFields.AppearAnimation
   );
@@ -99,13 +102,16 @@ export const Default = (props: HeroSliderProps): JSX.Element => {
   if (props.fields) {
     return (
       <section
-        className="section bbb section-with-shape-divider border-0 py-0 m-0"
-        data-appear-animation={appearAnimation}
+        className={`component section section-with-shape-divider border-0 py-0 m-0`}
+        data-appear-animation={`${appearAnimation}`}
         data-appear-animation-speed={appearAnimationSpeed}
         data-appear-animation-delay={appearAnimationDelay}
         data-appear-animation-iteration={appearAnimationIteration}
         id={id ? id : undefined}
+        key={id ? id : undefined}
       >
+              <h1>JJJJ</h1>
+
         <div className="shape-divider shape-divider-bottom z-index-3" style={{ height: '136px' }}>
           <svg
             version="1.1"
@@ -124,7 +130,7 @@ export const Default = (props: HeroSliderProps): JSX.Element => {
         </div>
         <div className="slider-container" style={{ height: '100vh', opacity: '1' }}>
           <Slider {...settings}>
-            <div>
+            <div key="1">
               <div
                 className="owl-item position-relative overlay overlay-show overlay-op-8 removing animated active fadeIn"
                 style={{
@@ -152,25 +158,25 @@ export const Default = (props: HeroSliderProps): JSX.Element => {
                 </div>
               </div>
             </div>
-            <div>
+            <div key="2">
               <h3>2</h3>
             </div>
-            <div>
+            <div key="3">
               <h3>3</h3>
             </div>
-            <div>
+            <div key="4">
               <h3>4</h3>
             </div>
-            <div>
+            <div key="5">
               <h3>5</h3>
             </div>
-            <div>
+            <div key="6">
               <h3>6</h3>
             </div>
-            <div>
+            <div key="7">
               <h3>7</h3>
             </div>
-            <div>
+            <div key="8">
               <h3>8</h3>
             </div>
           </Slider>

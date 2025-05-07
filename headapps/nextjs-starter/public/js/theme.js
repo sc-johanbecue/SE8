@@ -1238,76 +1238,76 @@ window.theme.fn = {
 					self.animate();
 				});
 			} else {
-				self.animate();
+				//self.animate();
 			}
 
 			return this;
 		}
 
-        animate() {
-            const self = this;
-            const $el = this.options.wrapper;
-            let delay = 0;
-            let duration = this.options.duration;
-            const elTopDistance = $el.offset().top;
-            const windowTopDistance = $(window).scrollTop();
+        // animate() {
+        //     const self = this;
+        //     const $el = this.options.wrapper;
+        //     let delay = 0;
+        //     let duration = this.options.duration;
+        //     const elTopDistance = $el.offset().top;
+        //     const windowTopDistance = $(window).scrollTop();
 
-            // If has appear animation elements inside a SVG. 
-            // Intersection Observer API do not check elements inside SVG's, so we need initialize trough top parent SVG
-            if( $el.data('appear-animation-svg') ) {
-				$el.find('[data-appear-animation]').each(function(){
-                    const $this = $(this);
-                    let opts;
+        //     // If has appear animation elements inside a SVG. 
+        //     // Intersection Observer API do not check elements inside SVG's, so we need initialize trough top parent SVG
+        //     if( $el.data('appear-animation-svg') ) {
+		// 		$el.find('[data-appear-animation]').each(function(){
+        //             const $this = $(this);
+        //             let opts;
 
-                    const pluginOptions = theme.fn.getOptions($this.data('plugin-options'));
-                    if (pluginOptions)
-						opts = pluginOptions;
+        //             const pluginOptions = theme.fn.getOptions($this.data('plugin-options'));
+        //             if (pluginOptions)
+		// 				opts = pluginOptions;
 
-                    $this.themePluginAnimate(opts);
-                });
+        //             $this.themePluginAnimate(opts);
+        //         });
 
-				return this;
-			}
+		// 		return this;
+		// 	}
 
-            // No animation at the first load of page. This is good for performance
-            if( self.options.firstLoadNoAnim ) {
-				$el.removeClass('appear-animation');
+        //     // No animation at the first load of page. This is good for performance
+        //     if( self.options.firstLoadNoAnim ) {
+		// 		$el.removeClass('appear-animation');
 
-				// Inside Carousel
-				if( $el.closest('.owl-carousel').get(0) ) {
-					setTimeout(() => {
-						$el.closest('.owl-carousel').on('change.owl.carousel', () => {
-							self.options.firstLoadNoAnim = false;
-							$el.removeData('__animate');
-							$el.themePluginAnimate( self.options );
-						});
-					}, 500);
-				}
+		// 		// Inside Carousel
+		// 		if( $el.closest('.owl-carousel').get(0) ) {
+		// 			setTimeout(() => {
+		// 				$el.closest('.owl-carousel').on('change.owl.carousel', () => {
+		// 					self.options.firstLoadNoAnim = false;
+		// 					$el.removeData('__animate');
+		// 					$el.themePluginAnimate( self.options );
+		// 				});
+		// 			}, 500);
+		// 		}
 
-				return this;
-			}
+		// 		return this;
+		// 	}
 
-            $el.addClass('appear-animation animated');
+        //     $el.addClass('appear-animation animated');
 
-            if (!$('html').hasClass('no-csstransitions') && $(window).width() > self.options.minWindowWidth && elTopDistance >= windowTopDistance || self.options.forceAnimation == true) {
-				delay = ($el.attr('data-appear-animation-delay') ? $el.attr('data-appear-animation-delay') : self.options.delay);
-				duration = ($el.attr('data-appear-animation-duration') ? $el.attr('data-appear-animation-duration') : self.options.duration);
+        //     if (!$('html').hasClass('no-csstransitions') && $(window).width() > self.options.minWindowWidth && elTopDistance >= windowTopDistance || self.options.forceAnimation == true) {
+		// 		delay = ($el.attr('data-appear-animation-delay') ? $el.attr('data-appear-animation-delay') : self.options.delay);
+		// 		duration = ($el.attr('data-appear-animation-duration') ? $el.attr('data-appear-animation-duration') : self.options.duration);
 
-				if (duration != '750ms') {
-					$el.css('animation-duration', duration);
-				}
+		// 		if (duration != '750ms') {
+		// 			$el.css('animation-duration', duration);
+		// 		}
 
-				$el.css('animation-delay', delay + 'ms');
-				$el.addClass($el.attr('data-appear-animation') + ' appear-animation-visible');
+		// 		$el.css('animation-delay', delay + 'ms');
+		// 		$el.addClass($el.attr('data-appear-animation') + ' appear-animation-visible');
 				
-				$el.trigger('animation:show');
+		// 		$el.trigger('animation:show');
 
-			} else {
-				$el.addClass('appear-animation-visible');
-			}
+		// 	} else {
+		// 		$el.addClass('appear-animation-visible');
+		// 	}
 
-            return this;
-        }
+        //     return this;
+        // }
     }
 
     PluginAnimate.defaults = {
@@ -8211,10 +8211,11 @@ window.theme.fn = {
 					});
 				}
 
-                // Header Nav Main Mobile Dark
-                if($('.header-nav-main-mobile-dark').length) {
-					$('#header:not(.header-transparent-dark-bottom-border):not(.header-transparent-light-bottom-border)').addClass('header-no-border-bottom');
-				}
+				// Removed for SalesEngineers
+                // // Header Nav Main Mobile Dark
+                // if($('.header-nav-main-mobile-dark').length) {
+				// 	$('#header:not(.header-transparent-dark-bottom-border):not(.header-transparent-light-bottom-border)').addClass('header-no-border-bottom');
+				// }
 
                 // Keyboard Navigation / Accessibility
                 if( $(window).width() > 991 ) {

@@ -1,12 +1,13 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import Link from 'next/link';
-import { TextField, Text } from '@sitecore-jss/sitecore-jss-nextjs';
+import { TextField, Text, Image as JssImage, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
 import 'animate.css';
 
 interface Fields {
   Header: TextField;
   Text: TextField;
+  Image: ImageField;
 }
 
 type HeaderProps = {
@@ -87,11 +88,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                         media="(max-width: 767px)"
                         srcSet="https://www.majidalfuttaim.com/images/default-source/banners/whowearecreatingimpactcopy-(1).jpg?sfvrsn=229e4c2f_4"
                       />
-                      <img
-                        loading="lazy"
-                        src="https://www.majidalfuttaim.com/images/default-source/banners/brandfashion.jpg?sfvrsn=521d5b41_4"
-                        alt="brandfashion"
-                      />
+                      <JssImage field={props.fields.Image} loading="lazy" />
                     </picture>
                   </div>
                   <div className="banner-content row">

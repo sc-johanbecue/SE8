@@ -14,7 +14,7 @@ import {
   getValueFromRenderingConfigurationDropLinkStyle,
   RenderingConfigurationFields,
 } from './Utility/RenderingConfigurationUtils';
-import { useAppearAnimation } from "./Utility/useAppearAnimation";
+import { useAppearAnimation } from './Utility/useAppearAnimation';
 
 interface Fields {
   Title: TextField;
@@ -65,7 +65,7 @@ export const Default = (props: HeroSliderProps): JSX.Element => {
   const phKey = `slide-container-${props.params.DynamicPlaceholderId}`;
 
   useAppearAnimation();
-  
+
   const appearAnimation = getValueFromRenderingConfigurationDropLinkStyle(
     staticProps?.RenderingConfigurationFields.AppearAnimation
   );
@@ -110,7 +110,7 @@ export const Default = (props: HeroSliderProps): JSX.Element => {
         id={id ? id : undefined}
         key={id ? id : undefined}
       >
-              <h1>JJJJ</h1>
+        <h1>JJJJ</h1>
 
         <div className="shape-divider shape-divider-bottom z-index-3" style={{ height: '136px' }}>
           <svg

@@ -10,6 +10,7 @@ import Head from 'next/head';
 import { Placeholder, LayoutServiceData, Field, HTMLLink } from '@sitecore-jss/sitecore-jss-nextjs';
 import config from 'temp/config';
 import Scripts from 'src/Scripts';
+import Link from 'next/link';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
@@ -194,9 +195,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         className="
       normal-mode corporate-site"
       >
-        <a href="#content" className="skip-to-content" id="skip-link">
+        <Link href="#content" className="skip-to-content" id="skip-link">
           Skip to Content
-        </a>
+        </Link>
         <script type="application/ld+json">
           {`
          {
@@ -311,7 +312,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     <span>Menu</span>
                   </div>
                   <div className="close-menu" id="close-menu">
-                    <a href="javascript:void(0)" className="closebtn">
+                    <Link href="javascript:void(0)" className="closebtn">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="23"
@@ -325,75 +326,75 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                           d="M12.207 10.96L22.46 21.213l-.707.707L11.5 11.667 1.247 21.92l-.707-.707L10.793 10.96.54.707 1.247 0 11.5 10.253 21.753 0l.707.707L12.207 10.96z"
                         ></path>
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="navigation">
                   <ul>
                     <li>
                       <div className="main-menu-item has-sub-nav">
-                        <a
+                        <Link
                           href="/en/who-we-are"
                           target="_self"
                           data-target="second-level-nav-target-1"
                         >
                           Who we are
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item has-sub-nav">
-                        <a
+                        <Link
                           href="/en/what-we-do"
                           target="_self"
                           data-target="second-level-nav-target-2"
                         >
                           What We Do
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item has-sub-nav">
-                        <a
+                        <Link
                           href="/en/people-and-careers"
                           target="_self"
                           data-target="second-level-nav-target-3"
                         >
                           People &amp; Careers
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item has-sub-nav">
-                        <a
+                        <Link
                           href="/en/investor-relations"
                           target="_self"
                           data-target="second-level-nav-target-4"
                         >
                           Investor Relations
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item ">
-                        <a
+                        <Link
                           href="/en/the-leadership-institute"
                           target="_self"
                           data-target="second-level-nav-target-5"
                         >
                           The Leadership Institute
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item has-sub-nav">
-                        <a
+                        <Link
                           href="/en/media-centre"
                           target="_self"
                           data-target="second-level-nav-target-6"
                         >
                           Media Centre
-                        </a>
+                        </Link>
                       </div>
                     </li>
                   </ul>
@@ -442,79 +443,79 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <ul>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/who-we-are/overview"
                           aria-label="Who we are Overview"
                           target="_self"
                         >
                           Overview
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/who-we-are#visionvalues"
                           aria-label="Who we are Vision &amp; Values"
                           target="_self"
                         >
                           Vision &amp; Values
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/who-we-are/our-journey"
                           aria-label="Who we are Our Journey"
                           target="_self"
                         >
                           Our Journey
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item has-sub-nav">
-                        <a
+                        <Link
                           href="/en/who-we-are/sustainability-and-esg"
                           target="_self"
                           data-target="third-level-nav-target-1-1"
                         >
                           Sustainability &amp; ESG
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/who-we-are/corporate-compliance"
                           aria-label="Who we are Corporate Compliance"
                           target="_self"
                         >
                           Corporate Compliance
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/who-we-are/board-of-directors"
                           aria-label="Who we are Board of Directors"
                           target="_self"
                         >
                           Board of Directors
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/who-we-are/management"
                           aria-label="Who we are Management"
                           target="_self"
                         >
                           Management
-                        </a>
+                        </Link>
                       </div>
                     </li>
                   </ul>
@@ -562,7 +563,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <ul>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/what-we-do/overview"
                           aria-label="
                                  What We Do 
@@ -570,35 +571,35 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                           target="_self"
                         >
                           Overview
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/what-we-do/unique-experiences"
                           aria-label="
                                  What We Do Unique Experiences"
                           target="_self"
                         >
                           Unique Experiences
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item has-sub-nav">
-                        <a
+                        <Link
                           href="/en/what-we-do/our-industries"
                           target="_self"
                           data-target="third-level-nav-target-2-1"
                         >
                           Our Industries
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/what-we-do/brand-family"
                           aria-label="
                                  What We Do 
@@ -606,19 +607,19 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                           target="_self"
                         >
                           Our Brand Family
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/what-we-do/partner-with-us"
                           aria-label="
                                  What We Do Partner with us"
                           target="_self"
                         >
                           Partner with us
-                        </a>
+                        </Link>
                       </div>
                     </li>
                   </ul>
@@ -666,14 +667,14 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <ul>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="https://careers.majidalfuttaim.com/global/en/home?utm_campaign=Careers&amp;utm_medium=referal&amp;utm_source=corporate_website"
                           aria-label="
                                  People &amp; Careers Careers Portal"
                           target="_blank"
                         >
                           Careers Portal
-                        </a>
+                        </Link>
                       </div>
                     </li>
                   </ul>
@@ -721,7 +722,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <ul>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/investor-relations/overview"
                           aria-label="
                                  Investor Relations
@@ -729,60 +730,60 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                           target="_self"
                         >
                           Overview
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/investor-relations/bond-and-credit-rating"
                           aria-label="
                                  Investor Relations Bonds &amp; Credit Rating"
                           target="_self"
                         >
                           Bonds &amp; Credit Rating
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/investor-relations/funding-strategy"
                           aria-label="
                                  Investor Relations Funding Strategy"
                           target="_self"
                         >
                           Funding Strategy
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/investor-relations/financial-summary"
                           aria-label="
                                  Investor Relations Financial Summary"
                           target="_self"
                         >
                           Financial Summary
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/investor-relations#pressreleases"
                           aria-label="
                                  Investor Relations Announcements &amp; Updates"
                           target="_self"
                         >
                           Announcements &amp; Updates
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/investor-relations#investor-relations-contacts"
                           aria-label="
                                  Investor Relations 
@@ -790,19 +791,19 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                           target="_self"
                         >
                           Investor Relations Contacts
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/investor-relations/tax-strategy"
                           aria-label="
                                  Investor Relations Tax Strategy"
                           target="_self"
                         >
                           Tax Strategy
-                        </a>
+                        </Link>
                       </div>
                     </li>
                   </ul>
@@ -892,7 +893,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <ul>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/media-centre/overview"
                           aria-label="
                                  Media Centre 
@@ -900,48 +901,48 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                           target="_self"
                         >
                           Overview
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/media-centre/press-releases"
                           aria-label="
                                  Media Centre Press Releases"
                           target="_self"
                         >
                           Press Releases
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/media-centre/blog-posts"
                           aria-label="
                                  Media Centre Blog Posts"
                           target="_self"
                         >
                           Blog Posts
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/media-centre/media-kits-downloads"
                           aria-label="
                                  Media Centre Media Kits &amp; Downloads"
                           target="_self"
                         >
                           Media Kits &amp; Downloads
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/media-centre#media-contacts"
                           aria-label="
                                  Media Centre 
@@ -949,19 +950,19 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                           target="_self"
                         >
                           Media Relations Contact
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/media-centre/trends-and-insights"
                           aria-label="
                                  Media Centre Reports"
                           target="_self"
                         >
                           Reports
-                        </a>
+                        </Link>
                       </div>
                     </li>
                   </ul>
@@ -1009,50 +1010,50 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <ul>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/who-we-are/sustainability-and-esg/esg-overview"
                           aria-label="
                                  Sustainability &amp; ESG ESG Overview"
                           target="_self"
                         >
                           ESG Overview
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/who-we-are/sustainability-and-esg/sustainability"
                           aria-label="
                                  Sustainability &amp; ESG Sustainability"
                           target="_self"
                         >
                           Sustainability
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/who-we-are/sustainability-and-esg/impact-stories"
                           aria-label="
                                  Sustainability &amp; ESG Impact Stories"
                           target="_self"
                         >
                           Impact Stories
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/who-we-are/sustainability-and-esg/reports"
                           aria-label="
                                  Sustainability &amp; ESG Reports"
                           target="_self"
                         >
                           Reports
-                        </a>
+                        </Link>
                       </div>
                     </li>
                   </ul>
@@ -1100,110 +1101,110 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <ul>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/what-we-do/our-industries/overview"
                           aria-label="
                                  Our Industries Overview"
                           target="_self"
                         >
                           Overview
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/what-we-do/our-industries/industry/shopping-malls"
                           aria-label="
                                  Our Industries Shopping Malls"
                           target="_self"
                         >
                           Shopping Malls
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="https://communities.majidalfuttaim.com/en/index.html"
                           aria-label="
                                  Our Industries Communities"
                           target="_self"
                         >
                           Communities
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/what-we-do/our-industries/industry/hotels"
                           aria-label="
                                  Our Industries Hotels"
                           target="_self"
                         >
                           Hotels
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/what-we-do/our-industries/industry/leisure-entertainment-and-cinemas"
                           aria-label="
                                  Our Industries Entertainment"
                           target="_self"
                         >
                           Entertainment
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/what-we-do/our-industries/industry/lifestyle"
                           aria-label="
                                  Our Industries Lifestyle"
                           target="_self"
                         >
                           Lifestyle
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/what-we-do/our-industries/industry/retail"
                           aria-label="
                                  Our Industries Retail"
                           target="_self"
                         >
                           Retail
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/what-we-do/our-industries/industry/project-management"
                           aria-label="
                                  Our Industries Project Management"
                           target="_self"
                         >
                           Project Management
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li>
                       <div className="main-menu-item">
-                        <a
+                        <Link
                           href="/en/what-we-do/our-industries/industry/energy-and-facilities-management"
                           aria-label="
                                  Our Industries Energy &amp; Facilities Management"
                           target="_self"
                         >
                           Energy &amp; Facilities Management
-                        </a>
+                        </Link>
                       </div>
                     </li>
                   </ul>
@@ -1247,9 +1248,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         />
                       </li>
                       <li className="header-link">
-                        <a href="/en/contact-us" target="_self" className="menu-item ">
+                        <Link href="/en/contact-us" target="_self" className="menu-item ">
                           Contact Us
-                        </a>
+                        </Link>
                       </li>
                       <li className="text-resizer">
                         <span id="increaseFont" className="large-text">
@@ -1262,7 +1263,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       </li>
 
                       <li id="desctop-language-switcher" className="language-switcher">
-                        <a
+                        <Link
                           href=""
                           onClick={(e) => {
                             e.preventDefault();
@@ -1271,7 +1272,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                           className="switcher-anchor"
                         >
                           <span>العربية</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -1290,7 +1291,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     data-sf-element="logo"
                     data-placeholder-label="logo"
                   >
-                    <a href="/en" title="Open image in original size">
+                    <Link href="/en" title="Open image in original size">
                       <img
                         loading="lazy"
                         className="mw-100 h-auto"
@@ -1298,7 +1299,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         title="logo"
                         alt="Logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div
                     id="MainTop_TE21B85AC002_Col02"
@@ -1310,92 +1311,92 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       <ul className="nav-list">
                         <li>
                           <div className="header-menu">
-                            <a href="/en/who-we-are" target="_self" className="menu-item ">
+                            <Link href="/en/who-we-are" target="_self" className="menu-item ">
                               Who we are
-                            </a>
+                            </Link>
                             <div className="menu-sublist-dropdown">
                               <div className="sub-nav-level-2">
                                 <ul className="menu-list-level-2">
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/who-we-are/overview"
                                         target="_self"
                                         className="sub-category"
                                         aria-label="Overview of Who we are"
                                       >
                                         Overview
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/who-we-are#visionvalues"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Vision &amp; Values
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/who-we-are/our-journey"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Our Journey
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item has-sub-menu">
-                                      <a
+                                      <Link
                                         href="/en/who-we-are/sustainability-and-esg"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Sustainability &amp; ESG
-                                      </a>
+                                      </Link>
                                       <div className="menu-level-3">
                                         <ul>
                                           <li>
-                                            <a
+                                            <Link
                                               href="/en/who-we-are/sustainability-and-esg/esg-overview"
                                               target="_self"
                                               className="third-level-menu-item"
                                             >
                                               ESG Overview
-                                            </a>
+                                            </Link>
                                           </li>
                                           <li>
-                                            <a
+                                            <Link
                                               href="/en/who-we-are/sustainability-and-esg/sustainability"
                                               target="_self"
                                               className="third-level-menu-item"
                                             >
                                               Sustainability
-                                            </a>
+                                            </Link>
                                           </li>
                                           <li>
-                                            <a
+                                            <Link
                                               href="/en/who-we-are/sustainability-and-esg/impact-stories"
                                               target="_self"
                                               className="third-level-menu-item"
                                             >
                                               Impact Stories
-                                            </a>
+                                            </Link>
                                           </li>
                                           <li>
-                                            <a
+                                            <Link
                                               href="/en/who-we-are/sustainability-and-esg/reports"
                                               target="_self"
                                               className="third-level-menu-item"
                                             >
                                               Reports
-                                            </a>
+                                            </Link>
                                           </li>
                                         </ul>
                                       </div>
@@ -1403,35 +1404,35 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/who-we-are/corporate-compliance"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Corporate Compliance
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/who-we-are/board-of-directors"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Board of Directors
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/who-we-are/management"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Management
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                 </ul>
@@ -1441,15 +1442,15 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         </li>
                         <li>
                           <div className="header-menu">
-                            <a href="/en/what-we-do" target="_self" className="menu-item active">
+                            <Link href="/en/what-we-do" target="_self" className="menu-item active">
                               What We Do
-                            </a>
+                            </Link>
                             <div className="menu-sublist-dropdown">
                               <div className="sub-nav-level-2">
                                 <ul className="menu-list-level-2">
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/what-we-do/overview"
                                         target="_self"
                                         className="sub-category"
@@ -1457,111 +1458,111 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                                       What We Do"
                                       >
                                         Overview
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/what-we-do/unique-experiences"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Unique Experiences
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item has-sub-menu">
-                                      <a
+                                      <Link
                                         href="/en/what-we-do/our-industries"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Our Industries
-                                      </a>
+                                      </Link>
                                       <div className="menu-level-3">
                                         <ul>
                                           <li>
-                                            <a
+                                            <Link
                                               href="/en/what-we-do/our-industries/overview"
                                               target="_self"
                                               className="third-level-menu-item"
                                             >
                                               Overview
-                                            </a>
+                                            </Link>
                                           </li>
                                           <li>
-                                            <a
+                                            <Link
                                               href="/en/what-we-do/our-industries/industry/shopping-malls"
                                               target="_self"
                                               className="third-level-menu-item"
                                             >
                                               Shopping Malls
-                                            </a>
+                                            </Link>
                                           </li>
                                           <li>
-                                            <a
+                                            <Link
                                               href="https://communities.majidalfuttaim.com/en/index.html"
                                               target="_self"
                                               className="third-level-menu-item"
                                             >
                                               Communities
-                                            </a>
+                                            </Link>
                                           </li>
                                           <li>
-                                            <a
+                                            <Link
                                               href="/en/what-we-do/our-industries/industry/hotels"
                                               target="_self"
                                               className="third-level-menu-item"
                                             >
                                               Hotels
-                                            </a>
+                                            </Link>
                                           </li>
                                           <li>
-                                            <a
+                                            <Link
                                               href="/en/what-we-do/our-industries/industry/leisure-entertainment-and-cinemas"
                                               target="_self"
                                               className="third-level-menu-item"
                                             >
                                               Entertainment
-                                            </a>
+                                            </Link>
                                           </li>
                                           <li>
-                                            <a
+                                            <Link
                                               href="/en/what-we-do/our-industries/industry/lifestyle"
                                               target="_self"
                                               className="third-level-menu-item"
                                             >
                                               Lifestyle
-                                            </a>
+                                            </Link>
                                           </li>
                                           <li>
-                                            <a
+                                            <Link
                                               href="/en/what-we-do/our-industries/industry/retail"
                                               target="_self"
                                               className="third-level-menu-item"
                                             >
                                               Retail
-                                            </a>
+                                            </Link>
                                           </li>
                                           <li>
-                                            <a
+                                            <Link
                                               href="/en/what-we-do/our-industries/industry/project-management"
                                               target="_self"
                                               className="third-level-menu-item"
                                             >
                                               Project Management
-                                            </a>
+                                            </Link>
                                           </li>
                                           <li>
-                                            <a
+                                            <Link
                                               href="/en/what-we-do/our-industries/industry/energy-and-facilities-management"
                                               target="_self"
                                               className="third-level-menu-item"
                                             >
                                               Energy &amp; Facilities Management
-                                            </a>
+                                            </Link>
                                           </li>
                                         </ul>
                                       </div>
@@ -1569,24 +1570,24 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/what-we-do/brand-family"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Our Brand Family
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/what-we-do/partner-with-us"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Partner with us
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                 </ul>
@@ -1596,15 +1597,19 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         </li>
                         <li>
                           <div className="header-menu">
-                            <a href="/en/people-and-careers" target="_self" className="menu-item ">
+                            <Link
+                              href="/en/people-and-careers"
+                              target="_self"
+                              className="menu-item "
+                            >
                               People &amp; Careers
-                            </a>
+                            </Link>
                             <div className="menu-sublist-dropdown">
                               <div className="sub-nav-level-2">
                                 <ul className="menu-list-level-2">
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="https://careers.majidalfuttaim.com/global/en/home?utm_campaign=Careers&amp;utm_medium=referal&amp;utm_source=corporate_website"
                                         target="_blank"
                                         className="sub-category"
@@ -1612,7 +1617,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                                       People &amp; Careers"
                                       >
                                         Careers Portal
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                 </ul>
@@ -1622,15 +1627,19 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         </li>
                         <li>
                           <div className="header-menu">
-                            <a href="/en/investor-relations" target="_self" className="menu-item ">
+                            <Link
+                              href="/en/investor-relations"
+                              target="_self"
+                              className="menu-item "
+                            >
                               Investor Relations
-                            </a>
+                            </Link>
                             <div className="menu-sublist-dropdown">
                               <div className="sub-nav-level-2">
                                 <ul className="menu-list-level-2">
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/investor-relations/overview"
                                         target="_self"
                                         className="sub-category"
@@ -1638,73 +1647,73 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                                       Investor Relations"
                                       >
                                         Overview
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/investor-relations/bond-and-credit-rating"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Bonds &amp; Credit Rating
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/investor-relations/funding-strategy"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Funding Strategy
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/investor-relations/financial-summary"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Financial Summary
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/investor-relations#pressreleases"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Announcements &amp; Updates
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/investor-relations#investor-relations-contacts"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Investor Relations Contacts
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/investor-relations/tax-strategy"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Tax Strategy
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                 </ul>
@@ -1714,26 +1723,26 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         </li>
                         <li>
                           <div className="header-menu">
-                            <a
+                            <Link
                               href="/en/the-leadership-institute"
                               target="_self"
                               className="menu-item "
                             >
                               The Leadership Institute
-                            </a>
+                            </Link>
                           </div>
                         </li>
                         <li>
                           <div className="header-menu">
-                            <a href="/en/media-centre" target="_self" className="menu-item ">
+                            <Link href="/en/media-centre" target="_self" className="menu-item ">
                               Media Centre
-                            </a>
+                            </Link>
                             <div className="menu-sublist-dropdown">
                               <div className="sub-nav-level-2">
                                 <ul className="menu-list-level-2">
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/media-centre/overview"
                                         target="_self"
                                         className="sub-category"
@@ -1741,62 +1750,62 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                                                       Media Centre"
                                       >
                                         Overview
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/media-centre/press-releases"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Press Releases
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/media-centre/blog-posts"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Blog Posts
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/media-centre/media-kits-downloads"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Media Kits &amp; Downloads
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/media-centre#media-contacts"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Media Relations Contact
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                   <li className="">
                                     <div className="menu-item ">
-                                      <a
+                                      <Link
                                         href="/en/media-centre/trends-and-insights"
                                         target="_self"
                                         className="sub-category"
                                       >
                                         Reports
-                                      </a>
+                                      </Link>
                                     </div>
                                   </li>
                                 </ul>
@@ -1852,15 +1861,15 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     <div className="breadcrumbs">
                       <ul>
                         <li>
-                          <a href="/en">Home</a>
+                          <Link href="/en">Home</Link>
                           <span>&nbsp;|&nbsp;</span>
                         </li>
                         <li>
-                          <a href="/en/what-we-do">What We Do</a>
+                          <Link href="/en/what-we-do">What We Do</Link>
                           <span>&nbsp;|&nbsp;</span>
                         </li>
                         <li>
-                          <a href="/en/what-we-do/our-industries">Our Industries</a>
+                          <Link href="/en/what-we-do/our-industries">Our Industries</Link>
                           <span>&nbsp;|&nbsp;</span>
                         </li>
                         <li>
@@ -1997,7 +2006,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   <div className="other-malls">
                     <div className="other-mall-main">
                       <div className="other-mall">
-                        <a href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/abercrombie-and-fitch">
+                        <Link href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/abercrombie-and-fitch">
                           <div className="mall-img">
                             <img
                               src="https://www.majidalfuttaim.com/images/default-source/brand-images/abercrombie-and-fitch-b-logo.png?sfvrsn=ee501679_3"
@@ -2006,7 +2015,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               loading="lazy"
                             />
                           </div>
-                        </a>
+                        </Link>
                       </div>
                       <div className="mall-name">
                         <span>Abercrombie &amp; Fitch</span>
@@ -2014,7 +2023,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     </div>
                     <div className="other-mall-main">
                       <div className="other-mall">
-                        <a href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/allsaints">
+                        <Link href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/allsaints">
                           <div className="mall-img">
                             <img
                               src="https://www.majidalfuttaim.com/images/default-source/brand-images/allsaints8cc29aa5c67d4d848bed64e3062a7157.png?sfvrsn=8f600dfd_4"
@@ -2023,7 +2032,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               loading="lazy"
                             />
                           </div>
-                        </a>
+                        </Link>
                       </div>
                       <div className="mall-name">
                         <span>AllSaints</span>
@@ -2031,7 +2040,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     </div>
                     <div className="other-mall-main">
                       <div className="other-mall">
-                        <a href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/cb2">
+                        <Link href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/cb2">
                           <div className="mall-img">
                             <img
                               src="https://www.majidalfuttaim.com/images/default-source/brand-images/cb21db439000772462891b1a3847f1d7f26.png?sfvrsn=162114b9_4"
@@ -2040,7 +2049,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               loading="lazy"
                             />
                           </div>
-                        </a>
+                        </Link>
                       </div>
                       <div className="mall-name">
                         <span>CB2</span>
@@ -2048,7 +2057,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     </div>
                     <div className="other-mall-main">
                       <div className="other-mall">
-                        <a href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/crate-and-barrel">
+                        <Link href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/crate-and-barrel">
                           <div className="mall-img">
                             <img
                               src="https://www.majidalfuttaim.com/images/default-source/brand-images/crate-and-barrela6b52ee5a3da442992475216d145b0eb.png?sfvrsn=5f1203ab_4"
@@ -2057,7 +2066,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               loading="lazy"
                             />
                           </div>
-                        </a>
+                        </Link>
                       </div>
                       <div className="mall-name">
                         <span>Crate and Barrel</span>
@@ -2065,7 +2074,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     </div>
                     <div className="other-mall-main">
                       <div className="other-mall">
-                        <a href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/that-concept-store">
+                        <Link href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/that-concept-store">
                           <div className="mall-img">
                             <img
                               src="https://www.majidalfuttaim.com/images/default-source/brand-images/that-concept-storea477e5ba5ede472d8f41b6b8d267d464.png?sfvrsn=23e3c437_4"
@@ -2074,7 +2083,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               loading="lazy"
                             />
                           </div>
-                        </a>
+                        </Link>
                       </div>
                       <div className="mall-name">
                         <span>THAT Concept Store</span>
@@ -2082,7 +2091,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     </div>
                     <div className="other-mall-main">
                       <div className="other-mall">
-                        <a href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/lululemon-athletica">
+                        <Link href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/lululemon-athletica">
                           <div className="mall-img">
                             <img
                               src="https://www.majidalfuttaim.com/images/default-source/brand-images/lululemon-athleticaf55eff6341c642448aee02e18ac39852.png?sfvrsn=e72600ea_4"
@@ -2091,7 +2100,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               loading="lazy"
                             />
                           </div>
-                        </a>
+                        </Link>
                       </div>
                       <div className="mall-name">
                         <span>Lululemon Athletica</span>
@@ -2099,7 +2108,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     </div>
                     <div className="other-mall-main">
                       <div className="other-mall">
-                        <a href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/hollister">
+                        <Link href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/hollister">
                           <div className="mall-img">
                             <img
                               src="https://www.majidalfuttaim.com/images/default-source/brand-images/hollister02ee6d05415842c4a15ac3577523b883.png?sfvrsn=cfa204df_4"
@@ -2108,7 +2117,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               loading="lazy"
                             />
                           </div>
-                        </a>
+                        </Link>
                       </div>
                       <div className="mall-name">
                         <span>Hollister</span>
@@ -2116,7 +2125,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     </div>
                     <div className="other-mall-main">
                       <div className="other-mall">
-                        <a href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/lego-store">
+                        <Link href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/lego-store">
                           <div className="mall-img">
                             <img
                               src="https://www.majidalfuttaim.com/images/default-source/brand-images/lego-store320994acdd2a4f7c9c50b9c350af3d1f.png?sfvrsn=c7a3b96e_4"
@@ -2125,7 +2134,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               loading="lazy"
                             />
                           </div>
-                        </a>
+                        </Link>
                       </div>
                       <div className="mall-name">
                         <span>LEGO Certified Stores</span>
@@ -2133,7 +2142,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     </div>
                     <div className="other-mall-main">
                       <div className="other-mall">
-                        <a href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/ceccotti-collezioni">
+                        <Link href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/ceccotti-collezioni">
                           <div className="mall-img">
                             <img
                               src="https://www.majidalfuttaim.com/images/default-source/brand-images/logo-ceccotti-collezioni.png?sfvrsn=eb4f8547_3"
@@ -2142,7 +2151,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               loading="lazy"
                             />
                           </div>
-                        </a>
+                        </Link>
                       </div>
                       <div className="mall-name">
                         <span>Ceccotti Collezioni</span>
@@ -2150,7 +2159,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     </div>
                     <div className="other-mall-main">
                       <div className="other-mall">
-                        <a href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/poltrona-frau">
+                        <Link href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/poltrona-frau">
                           <div className="mall-img">
                             <img
                               src="https://www.majidalfuttaim.com/images/default-source/brand-images/poltrona-frau-logo.png?sfvrsn=33e1e00e_3"
@@ -2159,7 +2168,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                               loading="lazy"
                             />
                           </div>
-                        </a>
+                        </Link>
                       </div>
                       <div className="mall-name">
                         <span>Poltrona Frau</span>
@@ -2219,7 +2228,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                     data-sf-element="logo"
                     data-placeholder-label="logo"
                   >
-                    <a href="/en/home" title="Open image in original size">
+                    <Link href="/en/home" title="Open image in original size">
                       <img
                         loading="lazy"
                         className="mw-100 h-auto"
@@ -2227,7 +2236,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                         title="footer logo"
                         alt="Footer logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="social-icons">
                     <div
@@ -2245,7 +2254,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       data-placeholder-label="social-icons-icons"
                     >
                       <li>
-                        <a
+                        <Link
                           className="svg-image"
                           href="/en/redirects/social-links/facebook"
                           target="_blank"
@@ -2257,10 +2266,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                             title="ficon"
                             alt="ficon"
                           />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="svg-image"
                           href="/en/redirects/social-links/instagram"
                           target="_blank"
@@ -2272,10 +2281,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                             title="instaicon"
                             alt="instagram icon"
                           />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="svg-image"
                           href="/en/redirects/social-links/tiktok"
                           target="_blank"
@@ -2287,10 +2296,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                             title="Tiktok_MAF"
                             alt="tictok icon"
                           />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="svg-image"
                           href="/en/redirects/social-links/youtube"
                           target="_blank"
@@ -2302,10 +2311,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                             title="youtubeicon"
                             alt="youtube icon"
                           />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="svg-image"
                           href="/en/redirects/social-links/twitter"
                           target="_blank"
@@ -2317,10 +2326,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                             title="twittericon"
                             alt="twitter icon"
                           />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="svg-image"
                           href="/en/redirects/social-links/linkedin"
                           target="_blank"
@@ -2332,10 +2341,10 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                             title="linkedin"
                             alt="linkedin icon"
                           />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="svg-image"
                           href="/en/redirects/social-links/medium"
                           target="_blank"
@@ -2347,7 +2356,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                             title="mediumicon"
                             alt="medium icon"
                           />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -2388,24 +2397,24 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       data-placeholder-label="footer-link-items"
                     >
                       <li>
-                        <a href="/who-we-are/vision-values" target="_self">
+                        <Link href="/who-we-are/vision-values" target="_self">
                           Vision &amp; Values
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/en/who-we-are/our-journey" target="_self">
+                        <Link href="/en/who-we-are/our-journey" target="_self">
                           Our Journey
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/en/who-we-are/sustainability-and-esg" target="_self">
+                        <Link href="/en/who-we-are/sustainability-and-esg" target="_self">
                           Sustainability &amp; ESG
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/en/who-we-are/corporate-compliance" target="_self">
+                        <Link href="/en/who-we-are/corporate-compliance" target="_self">
                           Corporate Compliance
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -2425,24 +2434,24 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       data-placeholder-label="footer-link-items"
                     >
                       <li>
-                        <a href="/en/what-we-do/unique-experiences" target="_self">
+                        <Link href="/en/what-we-do/unique-experiences" target="_self">
                           Unique Experiences
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/en/what-we-do/our-industries" target="_self">
+                        <Link href="/en/what-we-do/our-industries" target="_self">
                           Our Industries
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/en/what-we-do/brand-family" target="_self">
+                        <Link href="/en/what-we-do/brand-family" target="_self">
                           Our Brand Family
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/en/what-we-do/partner-with-us" target="_self">
+                        <Link href="/en/what-we-do/partner-with-us" target="_self">
                           Partner with us
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -2462,47 +2471,47 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                       data-placeholder-label="footer-link-items"
                     >
                       <li>
-                        <a href="/en/contact-us" target="_self">
+                        <Link href="/en/contact-us" target="_self">
                           Contact Us
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/en/media-centre" target="_self">
+                        <Link href="/en/media-centre" target="_self">
                           Media Centre
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="https://careers.majidalfuttaim.com/global/en/home?utm_campaign=Careers&amp;utm_medium=referal&amp;utm_source=corporate_website"
                           target="_blank"
                         >
                           People &amp; Careers
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/en/investor-relations" target="_self">
+                        <Link href="/en/investor-relations" target="_self">
                           Investor Relations
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/en/redirects/footer/privacy-center" target="_self">
+                        <Link href="/en/redirects/footer/privacy-center" target="_self">
                           PRIVACY CENTER
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/en/anti-fraud-disclaimer" target="_self">
+                        <Link href="/en/anti-fraud-disclaimer" target="_self">
                           Anti Fraud Disclaimer
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/en/responsible-disclosure-policy" target="_self">
+                        <Link href="/en/responsible-disclosure-policy" target="_self">
                           Responsible Disclosure Policy
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/en/sitemap" target="_self">
+                        <Link href="/en/sitemap" target="_self">
                           Sitemap
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

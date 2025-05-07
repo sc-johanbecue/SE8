@@ -10,9 +10,9 @@ import 'animate.css';
 import Link from 'next/link';
 
 interface Fields {
-  BrandName: TextField;
-  BrandLogo: ImageField;
-  BrandDetailLink: LinkField;
+  Name: TextField;
+  Logo: ImageField;
+  DetailLink: LinkField;
 }
 
 type CruiseOfferProps = {
@@ -41,13 +41,25 @@ export const Default = (props: CruiseOfferProps): JSX.Element => {
         <div className="other-mall">
           <Link href="https://www.majidalfuttaim.com/en/what-we-do/our-industries/brand/abercrombie-and-fitch">
             <div className="mall-img">
-              <JssImage field={props.fields.BrandLogo} loading="lazy" />
+              <style>
+                {`
+                  .other-malls .other-mall .mall-img img {
+                      max-width: 150px;
+                      max-height: 150px;
+                      width: 100%;  }
+                `}
+              </style>
+              <JssImage
+                field={props.fields.Logo}
+                loading="lazy"
+                // style={{ maxWidth: '150px', maxHeight: '150px' }}
+              />
             </div>
           </Link>
         </div>
         <div className="mall-name">
-          <span>
-            <Text field={props.fields.BrandName} />
+          <span style={{ display: 'flex', justifyContent: 'center' }}>
+            <Text field={props.fields.Name} />
           </span>
         </div>
       </div>

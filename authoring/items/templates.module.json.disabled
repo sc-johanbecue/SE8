@@ -5,8 +5,8 @@
         "path": "Solution Engineering",
         "includes": [
             {
-                "name": "templates",
-                "path": "/sitecore/templates/Feature/Solution Engineers",
+                "name": "Majidalfuttaim Data",
+                "path": "/sitecore/content/default/templates/Data/Big Titles",
                 "scope": "ItemAndDescendants"
             }
         ]

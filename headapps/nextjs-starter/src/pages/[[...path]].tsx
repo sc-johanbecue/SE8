@@ -48,8 +48,6 @@ const SitecorePage = ({
           // This is the default layout for the app
           <Layout layoutData={layoutData} headLinks={headLinks} />
         )}
-
-        <Layout layoutData={layoutData} headLinks={headLinks} />
       </SitecoreContext>
     </ComponentPropsContext>
   );

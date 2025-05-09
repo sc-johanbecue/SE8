@@ -3,15 +3,15 @@ import { I18nProvider } from 'next-localization';
 import { SitecorePageProps } from 'lib/page-props';
 import Bootstrap from 'src/Bootstrap';
 
-// import 'assets/MajidAlFuttaim/main.css';
-import 'assets/main.scss';
-import '/src/assets/SolutionEngineering/theme.css';
-import '/src/assets/SolutionEngineering/theme-elements.css';
-import '/src/assets/SolutionEngineering/theme-blog.css';
-import '/src/assets/SolutionEngineering/theme-shop.css';
-import '/src/assets/SolutionEngineering/custom.css';
-import '/src/assets/SolutionEngineering/skins/skin-corporate-10.css';
+//import 'assets/main.scss';
+// import '/src/assets/SolutionEngineering/theme.css';
+// import '/src/assets/SolutionEngineering/theme-elements.css';
+// import '/src/assets/SolutionEngineering/theme-blog.css';
+// import '/src/assets/SolutionEngineering/theme-shop.css';
+// import '/src/assets/SolutionEngineering/custom.css';
+// import '/src/assets/SolutionEngineering/skins/skin-corporate-10.css';
 
+// import 'assets/MajidAlFuttaim/main.css';
 function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;
 

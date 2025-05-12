@@ -55,7 +55,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
               </div>
               <div className="content-with-heading">
                 <div className="component-heading">
-                  <div className="section-heading" style={{ backgroundColor: 'red' }}>
+                  <div className="section-heading">
                     <h3>
                       <Text field={props.fields.Heading} />
                     </h3>

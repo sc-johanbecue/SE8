@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { Text, TextField } from '@sitecore-jss/sitecore-jss-nextjs';
+import 'animate.css';
 
 interface Fields {
   Title: TextField;
@@ -61,7 +62,7 @@ export const Default = (props: ProductListProps): JSX.Element => {
     if (!products.length) return <div>Loading products...</div>;
 
     return (
-      <div className="container mt-4">
+      <div className={`component container mt-4 ${props.params.styles}`}>
         <div>
           <h3>
             <Text field={props.fields.Title} />

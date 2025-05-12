@@ -74,11 +74,11 @@ export const Default = (props: ProductListProps): JSX.Element => {
               className="col-12 col-sm-6 col-lg-4 mb-4"
             >
               <div className="card h-100 shadow-sm">
-                <div className="position-relative" style={{ height: '200px' }}>
+                <div className="position-relative" style={{ alignSelf: 'center' }}>
                   <img
                     src={product.image_link}
                     alt={product.item_name || 'Product'}
-                    style={{ maxHeight: '200px' }}
+                    style={{ maxHeight: '200px', maxWidth: 'max-content' }}
                     className="card-img-top object-fit-cover"
                   />
                 </div>

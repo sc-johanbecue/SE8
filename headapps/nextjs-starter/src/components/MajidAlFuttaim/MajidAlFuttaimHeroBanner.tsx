@@ -88,7 +88,11 @@ export const Default = (props: HeaderProps): JSX.Element => {
                         media="(max-width: 767px)"
                         srcSet="https://www.majidalfuttaim.com/images/default-source/banners/whowearecreatingimpactcopy-(1).jpg?sfvrsn=229e4c2f_4"
                       />
-                      <JssImage field={props.fields.Image} loading="lazy" />
+                      <JssImage
+                        field={props.fields.Image}
+                        loading="lazy"
+                        style={{ height: 'auto' }}
+                      />
                     </picture>
                   </div>
                   <div className="banner-content row">

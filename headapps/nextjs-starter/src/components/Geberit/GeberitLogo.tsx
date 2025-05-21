@@ -52,6 +52,13 @@ export const Default = (props: LogoProps): JSX.Element => {
         id={id ? id : undefined}
       >
         {sitecoreContext.pageEditing ? (
+          <>
+            <JssImage field={props.fields.Logo} className="image" />
+            <span className="claim">
+              <Text field={props.fields.Claim} />
+            </span>
+          </>
+        ) : (
           <Link
             tabIndex={0}
             id="logo"
@@ -64,13 +71,6 @@ export const Default = (props: LogoProps): JSX.Element => {
               <Text field={props.fields.Claim} />
             </span>
           </Link>
-        ) : (
-          <>
-            <JssImage field={props.fields.Logo} className="image" />
-            <span className="claim">
-              <Text field={props.fields.Claim} />
-            </span>
-          </>
         )}
       </div>
     );

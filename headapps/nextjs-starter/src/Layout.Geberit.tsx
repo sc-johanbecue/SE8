@@ -39,7 +39,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
 
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="preload" as="image" href="/images/geberit_logo.svg" />
+        <link rel="preload" as="image" href="https://www.geberit.co.uk/images/geberit_logo.svg" />
         <link
           rel="preload"
           as="image"
@@ -83,88 +83,88 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         <link
           rel="preload"
           as="image"
-          href="/_assetsmaster/global-media/pictures/logo-und-awards/pictos/whirl-spray-grey-cmyk-original.svg"
+          href="https://www.geberit.co.uk/_assetsmaster/global-media/pictures/logo-und-awards/pictos/whirl-spray-grey-cmyk-original.svg"
         />
         <link
           rel="stylesheet"
-          href="/public/css/Geberit/36f9c5f2ef350a84.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/36f9c5f2ef350a84.css"
           data-precedence="next"
         />
         <link
           rel="stylesheet"
-          href="/public/css/Geberit/5f7c1d1f52eda09b.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/5f7c1d1f52eda09b.css"
           data-precedence="next"
         />
         <link
           rel="stylesheet"
-          href="/public/css/Geberit/d83254217b54d7a1.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/d83254217b54d7a1.css"
           data-precedence="next"
         />
         <link
           rel="stylesheet"
-          href="/public/css/Geberit/e88fa211fc869aeb.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/e88fa211fc869aeb.css"
           data-precedence="next"
         />
         <link
           rel="stylesheet"
-          href="/public/css/Geberit/126a8151cdb37eec.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/126a8151cdb37eec.css"
           data-precedence="next"
         />
         <link
           rel="stylesheet"
-          href="/public/css/Geberit/4457375927306b32.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/4457375927306b32.css"
           data-precedence="next"
         />
         <link
           rel="stylesheet"
-          href="/public/css/Geberit/cfa6ac4318bb0476.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/cfa6ac4318bb0476.css"
           data-precedence="next"
         />
         <link
           rel="stylesheet"
-          href="/public/css/Geberit/5a553e3e6341fd6a.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/5a553e3e6341fd6a.css"
           data-precedence="next"
         />
         <link
           rel="stylesheet"
-          href="/public/css/Geberit/fd8785b93b846603.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/fd8785b93b846603.css"
           data-precedence="next"
         />
         <link
           rel="stylesheet"
-          href="/public/css/Geberit/56d302d4800a6bd9.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/56d302d4800a6bd9.css"
           data-precedence="next"
         />
         <link
           rel="stylesheet"
-          href="/public/css/Geberit/ad36e5257962f408.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/ad36e5257962f408.css"
           data-precedence="next"
         />
         <link
           rel="stylesheet"
-          href="/public/css/Geberit/cf00e74488947ccd.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/cf00e74488947ccd.css"
           data-precedence="next"
         />
         <link
-          href="/public/css/Geberit/3650e54c2d7d6f1a.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/3650e54c2d7d6f1a.css"
           rel="stylesheet"
           as="style"
           data-precedence="dynamic"
         />
         <link
-          href="/public/css/Geberit/86ffad896fec29d2.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/86ffad896fec29d2.css"
           rel="stylesheet"
           as="style"
           data-precedence="dynamic"
         />
         <link
-          href="/public/css/Geberit/8bca84fe55517758.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/8bca84fe55517758.css"
           rel="stylesheet"
           as="style"
           data-precedence="dynamic"
         />
         <link
-          href="/public/css/Geberit/fb926d789ec1272f.css"
+          href="https://www.geberit.co.uk/public/css/Geberit/fb926d789ec1272f.css"
           rel="stylesheet"
           as="style"
           data-precedence="dynamic"
@@ -173,48 +173,48 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           rel="preload"
           as="script"
           fetchPriority="low"
-          href="/_next/static/chunks/webpack-a088078cd583fc17.js"
+          href="https://www.geberit.co.uk/public/js/Geberit/webpack-a088078cd583fc17.js"
         />
-        <script src="/_next/static/chunks/4bd1b696-e29cff45ad8bb6af.js" async></script>
-        <script src="/_next/static/chunks/1684-aa39c495466949b6.js" async></script>
-        <script src="/_next/static/chunks/main-app-7143f0d627919eb6.js" async></script>
-        <script src="/_next/static/chunks/6707-02b290b26d8af29c.js" async></script>
-        <script src="/_next/static/chunks/8636-1e0658675a80a617.js" async></script>
-        <script src="/_next/static/chunks/app/global-error-0f2a53e7cd05053c.js" async></script>
-        <script src="/_next/static/chunks/8cc6faea-5f388f244a6561de.js" async></script>
-        <script src="/_next/static/chunks/d648eb28-c1297205378274b8.js" async></script>
-        <script src="/_next/static/chunks/6867-1f7dac40f71f8f91.js" async></script>
-        <script src="/_next/static/chunks/351-94fb6b16abaf34e6.js" async></script>
-        <script src="/_next/static/chunks/7727-17524fe44a30dfd9.js" async></script>
-        <script src="/_next/static/chunks/6407-087c83c3ea841daa.js" async></script>
-        <script src="/_next/static/chunks/6629-ea397d76ec445c02.js" async></script>
-        <script src="/_next/static/chunks/8194-4362823f57a64cf2.js" async></script>
-        <script src="/_next/static/chunks/2855-f98996f4f265ae63.js" async></script>
-        <script src="/_next/static/chunks/7830-804fc7ed658f2a51.js" async></script>
-        <script src="/_next/static/chunks/9507-ee5749cf9cd1e600.js" async></script>
-        <script src="/_next/static/chunks/4452-ce61a9ec43d61dc3.js" async></script>
-        <script src="/_next/static/chunks/7538-56cceaf3e51d6274.js" async></script>
-        <script src="/_next/static/chunks/9166-9e044c127455a16a.js" async></script>
-        <script src="/_next/static/chunks/6213-2e495adb8589be47.js" async></script>
+        <script src="/public/js/Geberit/4bd1b696-e29cff45ad8bb6af.js" async></script>
+        <script src="/public/js/Geberit/1684-aa39c495466949b6.js" async></script>
+        <script src="/public/js/Geberit/main-app-7143f0d627919eb6.js" async></script>
+        <script src="/public/js/Geberit/6707-02b290b26d8af29c.js" async></script>
+        <script src="/public/js/Geberit/8636-1e0658675a80a617.js" async></script>
+        <script src="/public/js/Geberit/app/global-error-0f2a53e7cd05053c.js" async></script>
+        <script src="/public/js/Geberit/8cc6faea-5f388f244a6561de.js" async></script>
+        <script src="/public/js/Geberit/d648eb28-c1297205378274b8.js" async></script>
+        <script src="/public/js/Geberit/6867-1f7dac40f71f8f91.js" async></script>
+        <script src="/public/js/Geberit/351-94fb6b16abaf34e6.js" async></script>
+        <script src="/public/js/Geberit/7727-17524fe44a30dfd9.js" async></script>
+        <script src="/public/js/Geberit/6407-087c83c3ea841daa.js" async></script>
+        <script src="/public/js/Geberit/6629-ea397d76ec445c02.js" async></script>
+        <script src="/public/js/Geberit/8194-4362823f57a64cf2.js" async></script>
+        <script src="/public/js/Geberit/2855-f98996f4f265ae63.js" async></script>
+        <script src="/public/js/Geberit/7830-804fc7ed658f2a51.js" async></script>
+        <script src="/public/js/Geberit/9507-ee5749cf9cd1e600.js" async></script>
+        <script src="/public/js/Geberit/4452-ce61a9ec43d61dc3.js" async></script>
+        <script src="/public/js/Geberit/7538-56cceaf3e51d6274.js" async></script>
+        <script src="/public/js/Geberit/9166-9e044c127455a16a.js" async></script>
+        <script src="/public/js/Geberit/6213-2e495adb8589be47.js" async></script>
         <script
-          src="/_next/static/chunks/app/%5B%5B...slug%5D%5D/template-377aebae9a02d3dd.js"
+          src="/public/js/Geberit/app/template-377aebae9a02d3dd.js"
           async
         ></script>
-        <script src="/_next/static/chunks/3161-65c0635445389317.js" async></script>
-        <script src="/_next/static/chunks/4265-30f466ae6cf935be.js" async></script>
-        <script src="/_next/static/chunks/7923-37d8f3ca459d32f5.js" async></script>
-        <script src="/_next/static/chunks/9546-99f28031052d73b7.js" async></script>
-        <script src="/_next/static/chunks/7393-91cc214e749213df.js" async></script>
-        <script src="/_next/static/chunks/app/layout-c66844dc2bbf54b6.js" async></script>
-        <script src="/_next/static/chunks/app/error-79e5185abc16c90e.js" async></script>
-        <script src="/_next/static/chunks/c16f53c3-d2d21fb0c6531174.js" async></script>
-        <script src="/_next/static/chunks/13633bf0-a1c2fe1d2bf4113a.js" async></script>
-        <script src="/_next/static/chunks/4e6af11a-5f798b936e03c0be.js" async></script>
-        <script src="/_next/static/chunks/6920-aa50730a0a6ed731.js" async></script>
-        <script src="/_next/static/chunks/5476-82f35b0ca8e6c11c.js" async></script>
-        <script src="/_next/static/chunks/7012-0a9f2b4f9a4f708b.js" async></script>
+        <script src="/public/js/Geberit/3161-65c0635445389317.js" async></script>
+        <script src="/public/js/Geberit/4265-30f466ae6cf935be.js" async></script>
+        <script src="/public/js/Geberit/7923-37d8f3ca459d32f5.js" async></script>
+        <script src="/public/js/Geberit/9546-99f28031052d73b7.js" async></script>
+        <script src="/public/js/Geberit/7393-91cc214e749213df.js" async></script>
+        <script src="/public/js/Geberit/app/layout-c66844dc2bbf54b6.js" async></script>
+        <script src="/public/js/Geberit/app/error-79e5185abc16c90e.js" async></script>
+        <script src="/public/js/Geberit/c16f53c3-d2d21fb0c6531174.js" async></script>
+        <script src="/public/js/Geberit/13633bf0-a1c2fe1d2bf4113a.js" async></script>
+        <script src="/public/js/Geberit/4e6af11a-5f798b936e03c0be.js" async></script>
+        <script src="/public/js/Geberit/6920-aa50730a0a6ed731.js" async></script>
+        <script src="/public/js/Geberit/5476-82f35b0ca8e6c11c.js" async></script>
+        <script src="/public/js/Geberit/7012-0a9f2b4f9a4f708b.js" async></script>
         <script
-          src="/_next/static/chunks/app/%5B%5B...slug%5D%5D/page-1579195e35095298.js"
+          src="/public/js/Geberit/app/page-1579195e35095298.js"
           async
         ></script>
         <script
@@ -224,147 +224,8 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           data-settings-id="WHgWKTTW3jS744"
           async
         ></script>
-        <link
-          rel="preload"
-          href="https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/eur/FormLoader/FormLoader.bundle.js"
-          as="script"
-        />
-        <link
-          rel="preload"
-          href="/_next/static/chunks/4052.64206ed6406a0ec5.js"
-          as="script"
-          fetchPriority="low"
-        />
-        <link
-          rel="preload"
-          href="/_next/static/chunks/4520.cb3fff85b77ecfa5.js"
-          as="script"
-          fetchPriority="low"
-        />
-        <link
-          rel="preload"
-          href="/_next/static/chunks/4876.fa8d16c1ba9f3966.js"
-          as="script"
-          fetchPriority="low"
-        />
-        <link
-          rel="preload"
-          href="/_next/static/chunks/2733.988cd7fd79e5745b.js"
-          as="script"
-          fetchPriority="low"
-        />
-        <link
-          rel="preload"
-          href="/_next/static/chunks/870.7c4186c90340c379.js"
-          as="script"
-          fetchPriority="low"
-        />
-        <link
-          rel="preload"
-          href="/_next/static/chunks/5120.db02dc0eca9090d6.js"
-          as="script"
-          fetchPriority="low"
-        />
-        <link
-          rel="preload"
-          href="/_next/static/chunks/3547.71cfd9cbe5841175.js"
-          as="script"
-          fetchPriority="low"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/_assetsmaster/global-media/pictures/logo-und-awards/pictos/turbo-flush-pos.svg"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/_assetsmaster/global-media/pictures/logo-und-awards/pictos/remote-control-pos.svg"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/_assetsmaster/global-media/pictures/logo-und-awards/pictos/universal-pos.svg"
-        />
-        <link
-          rel="preload"
-          href="/_next/static/chunks/7673.8b1024a1be78fe50.js"
-          as="script"
-          fetchPriority="low"
-        />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assetsmaster/global-media/pictures/gac/products/24-aquaclean-feature-mera-seat-heating-380-214.jpg 1x, /_assetsmaster/global-media/pictures/gac/products/24-aquaclean-feature-mera-seat-heating-790-444.jpg 2x, /_assetsmaster/global-media/pictures/gac/products/24-aquaclean-feature-mera-seat-heating-16-9.jpg 3x"
-        />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assetsmaster/global-media/pictures/gac/products/24-aquaclean-feature-mera-odour-extraction-380-214.jpg 1x, /_assetsmaster/global-media/pictures/gac/products/24-aquaclean-feature-mera-odour-extraction-790-444.jpg 2x, /_assetsmaster/global-media/pictures/gac/products/24-aquaclean-feature-mera-odour-extraction-16-9.jpg 3x"
-        />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-sela-white-with-remote-control-sigma20-380-214.png 1x, /_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-sela-white-with-remote-control-sigma20-790-444.png 2x, /_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-sela-white-with-remote-control-sigma20-16-9.png 3x"
-        />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-tuma-comfort-with-remote-control-sigma20-380-214.jpg 1x, /_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-tuma-comfort-with-remote-control-sigma20-790-444.jpg 2x, /_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-tuma-comfort-with-remote-control-sigma20-16-9.jpg 3x"
-        />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assetsmaster/global-media/pictures/gac/products/2024-geberit-aquaclean-alba-private-sigma20-grey-380-214.png 1x, /_assetsmaster/global-media/pictures/gac/products/2024-geberit-aquaclean-alba-private-sigma20-grey-790-444.png 2x, /_assetsmaster/global-media/pictures/gac/products/2024-geberit-aquaclean-alba-private-sigma20-grey-16-9.png 3x"
-        />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-mera-comfort-chrome-with-remote-control-sigma70-original-380-214.png 1x, /_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-mera-comfort-chrome-with-remote-control-sigma70-original-790-444.png 2x, /_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-mera-comfort-chrome-with-remote-control-sigma70-original-16-9.png 3x"
-        />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assetsmaster/global-media/pictures/installationssysteme/2023-geberit-aquaclean-mera-white-with-remote-control-sigma70-380-214.jpg 1x, /_assetsmaster/global-media/pictures/installationssysteme/2023-geberit-aquaclean-mera-white-with-remote-control-sigma70-790-444.jpg 2x, /_assetsmaster/global-media/pictures/installationssysteme/2023-geberit-aquaclean-mera-white-with-remote-control-sigma70-16-9.jpg 3x"
-        />
-        <link
-          rel="preload"
-          href="/_next/static/chunks/5096.9f6965f5b93a9dec.js"
-          as="script"
-          fetchPriority="low"
-        />
-        <link
-          rel="preload"
-          href="/_next/static/chunks/117.691f3ac90b888dd7.js"
-          as="script"
-          fetchPriority="low"
-        />
-        <link rel="preload" as="image" href="/images/social/facebook.svg" />
-        <link rel="preload" as="image" href="/images/social/instagram.svg" />
-        <link rel="preload" as="image" href="/images/social/linkedin.svg" />
-        <link rel="preload" as="image" href="/images/social/pinterest.svg" />
-        <link rel="preload" as="image" href="/images/social/twitter.svg" />
-        <link rel="preload" as="image" href="/images/social/youtube.svg" />
-        <link rel="preconnect" href="https://app.usercentrics.eu" />
-        <link rel="preconnect" href="https://api.usercentrics.eu" />
-        <link
-          rel="preload"
-          href="https://app.usercentrics.eu/browser-ui/latest/loader.js"
-          as="script"
-        />
-        <link rel="dns-prefetch" href="https://app.usercentrics.eu" />
-        <link rel="dns-prefetch" href="https://api.usercentrics.eu" />
-        <link rel="manifest" href="/images/fav/site.webmanifest" crossOrigin="use-credentials" />
-        <link rel="mask-icon" href="/images/fav/safari-pinned-tab.svg" color="#5bbad5" />
-        <link rel="preconnect" href="https://app.usercentrics.eu" />
-        <link rel="preconnect" href="https://api.usercentrics.eu" />
-        <link
-          rel="preload"
-          href="https://app.usercentrics.eu/browser-ui/latest/loader.js"
-          as="script"
-        />
-        <link rel="dns-prefetch" href="https://app.usercentrics.eu" />
-        <link rel="dns-prefetch" href="https://api.usercentrics.eu" />
+        <link rel="manifest" href="https://www.geberit.co.uk/images/fav/site.webmanifest" crossOrigin="use-credentials" />
+        <link rel="mask-icon" href="https://www.geberit.co.uk/images/fav/safari-pinned-tab.svg" color="#5bbad5" />
         <meta property="og:image" content="https://www.geberit.co.uk/images/geberit-logo.jpg" />
         <meta
           itemProp="name"
@@ -415,12 +276,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           name="twitter:description"
           content="Shower toilets from Geberit: Convenience and hygiene in the bathroom as a complete solution or enhancement ► Discover our products"
         />
-        <link rel="shortcut icon" href="/images/fav/favicon-128x128.png" sizes="128x128" />
-        <link rel="icon" href="/images/fav/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" href="/images/fav/favicon-16x16.png" sizes="16x16" />
-        <link rel="apple-touch-icon" href="/images/fav/apple-touch-icon.png" sizes="180x180" />
+        <link rel="shortcut icon" href="https://www.geberit.co.uk/images/fav/favicon-128x128.png" sizes="128x128" />
+        <link rel="icon" href="https://www.geberit.co.uk/images/fav/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" href="https://www.geberit.co.uk/images/fav/favicon-16x16.png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="https://www.geberit.co.uk/images/fav/apple-touch-icon.png" sizes="180x180" />
         <script>{`document.querySelectorAll('body link[rel="icon"], body link[rel="apple-touch-icon"]').forEach(el => document.head.appendChild(el))`}</script>
-        <script async src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule />
+        <script async src="/public/js/Geberit/polyfills-42372ed130431b0a.js" noModule />
         <style data-styled="" data-styled-version="5.3.11">
           {`.dRbgvV{display:block;line-height:0;}/*!sc*/
          @media (hover:none) and (pointer:coarse) and (min-width:0) and (max-width:48rem){}/*!sc*/

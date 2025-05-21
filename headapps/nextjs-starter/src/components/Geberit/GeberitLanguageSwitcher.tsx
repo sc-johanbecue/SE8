@@ -46,6 +46,8 @@ const LanguageDefaultComponent = (props: LanguageProps): JSX.Element => (
  * the language switching logic using Sitecore's language API.
  */
 export const Default = (props: LanguageProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+
   const { sitecoreContext } = useSitecoreContext();
 
   const availableLanguages = [
@@ -69,7 +71,11 @@ export const Default = (props: LanguageProps): JSX.Element => {
 
   if (props.fields) {
     return (
-      <Dropdown className="language-switcher">
+      <Dropdown
+        className={`component language-switcher ${props.params.styles}`}
+        key={id ? id : undefined}
+        id={id ? id : undefined}
+      >
         <Dropdown.Toggle variant="link" id="language-dropdown" className="text-decoration-none">
           {currentLanguage?.name}
           {/* {currentLanguage}  */}

@@ -29,12 +29,18 @@ const HeaderTopDefaultComponent = (props: HeaderTopProps): JSX.Element => (
  * - No fields are needed at the HeaderTop level
  */
 export const Default = (props: HeaderTopProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+
   const phKeyLogo = `GeberitLogo-${props.params.DynamicPlaceholderId}`;
   const phKeyLanguageSwitcher = `GeberitLanguageSwitcher-${props.params.DynamicPlaceholderId}`;
   const phKeyTopMenu = `GeberitTopMenu-${props.params.DynamicPlaceholderId}`;
 
   return (
-    <div className="header-top py-2 border-bottom">
+    <div
+      className={`component header-top py-2 border-bottom ${props.params.styles}`}
+      key={id ? id : undefined}
+      id={id ? id : undefined}
+    >
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={4}>

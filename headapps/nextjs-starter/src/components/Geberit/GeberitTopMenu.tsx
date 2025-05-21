@@ -19,6 +19,8 @@ const TopMenuDefaultComponent = (props: TopMenuProps): JSX.Element => (
 );
 
 export const Default = (props: TopMenuProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+
   const items = [
     { text: 'Professional', href: '/professional' },
     { text: 'About Us', href: '/about-us' },
@@ -26,7 +28,11 @@ export const Default = (props: TopMenuProps): JSX.Element => {
     { text: 'My Geberit', href: '/my-geberit' },
   ];
   return (
-    <Nav className="top-menu justify-content-end">
+    <Nav
+      className={`component top-menu justify-content-end ${props.params.styles}`}
+      key={id ? id : undefined}
+      id={id ? id : undefined}
+    >
       {items.map((item, index) => (
         <Nav.Item key={index}>
           <Link href={item.href} passHref legacyBehavior>

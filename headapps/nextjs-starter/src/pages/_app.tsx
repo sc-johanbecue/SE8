@@ -3,6 +3,10 @@ import { I18nProvider } from 'next-localization';
 import { SitecorePageProps } from 'lib/page-props';
 import Bootstrap from 'src/Bootstrap';
 
+import '/src/assets/Geberit/global.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap-icons/font/bootstrap-icons.css';
+
 //import 'assets/main.scss';
 // import '/src/assets/SolutionEngineering/theme.css';
 // import '/src/assets/SolutionEngineering/theme-elements.css';

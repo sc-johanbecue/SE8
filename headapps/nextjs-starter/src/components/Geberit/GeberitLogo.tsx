@@ -1,12 +1,13 @@
 import React from 'react';
 import {
-  Link as JssLink,
+  useSitecoreContext,
   Image as JssImage,
   LinkField,
   ImageField,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import 'animate.css';
+import Link from 'next/link';
 
 interface Fields {
   Href: LinkField;
@@ -32,17 +33,28 @@ const LogoDefaultComponent = (props: LogoProps): JSX.Element => (
  * Sitecore XM Cloud Configuration:
  * - Template: "Logo"
  * - Fields:
- *   - logo: Image field (stores the logo image)
- *   - alt: Single-Line Text field (stores the alt text for the logo)
- *   - href: Single-Line Text field (stores the link URL for the logo)
+ *   - Logo: Image field (stores the logo image)
+ *   - Href: Single-Line Text field (stores the link URL for the logo)
  */
 export const Default = (props: LogoProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+  const href = props.fields?.Href?.value?.href || '';
+  const { sitecoreContext } = useSitecoreContext();
+
   if (props.fields) {
     return (
-      <div className="logo">
-        <JssLink field={props.fields.Href}>
-          <JssImage field={props.fields.Logo} priority />
-        </JssLink>
+      <div
+        className={`component logo ${props.params.styles}`}
+        key={id ? id : undefined}
+        id={id ? id : undefined}
+      >
+        {sitecoreContext.pageEditing ? (
+          <JssImage field={props.fields.Logo} />
+        ) : (
+          <Link href={href}>
+            <JssImage field={props.fields.Logo} />
+          </Link>
+        )}
       </div>
     );
   }

@@ -3,6 +3,8 @@ import { GetStaticPaths, GetStaticProps } from 'next'; //getStaticProps
 import NotFound from 'src/NotFound';
 import Layout from 'src/Layout';
 import LayoutImagineCruising from 'src/Layout.ImagineCruising';
+import LayoutGeberit from 'src/Layout.Geberit';
+
 import {
   SitecoreContext,
   ComponentPropsContext,
@@ -35,6 +37,11 @@ const SitecorePage = ({
   const imagineCruisingSite1 = layoutData.sitecore.context.site?.name == 'europe';
   const imagineCruisingSite2 = layoutData.sitecore.context.site?.name == 'us';
 
+  const geberitGermany = layoutData.sitecore.context.site?.name == 'germany';
+  const geberitSingapore = layoutData.sitecore.context.site?.name == 'singapore';
+  const geberitSwitserland = layoutData.sitecore.context.site?.name == 'switserland';
+  const geberitMaster = layoutData.sitecore.context.site?.name == 'master-website';
+
   return (
     <ComponentPropsContext value={componentProps}>
       <SitecoreContext
@@ -44,6 +51,8 @@ const SitecorePage = ({
         {imagineCruisingSite1 || imagineCruisingSite2 ? (
           // This is the layout for the Imagine Cruising sites
           <LayoutImagineCruising layoutData={layoutData} headLinks={headLinks} />
+        ) : geberitMaster || geberitGermany || geberitSingapore || geberitSwitserland ? (
+          <LayoutGeberit layoutData={layoutData} headLinks={headLinks} />
         ) : (
           // This is the default layout for the app
           <Layout layoutData={layoutData} headLinks={headLinks} />

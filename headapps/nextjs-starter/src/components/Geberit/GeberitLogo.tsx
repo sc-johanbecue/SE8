@@ -60,12 +60,16 @@ export const Default = (props: LogoProps): JSX.Element => {
           >
             <JssImage field={props.fields.Logo} className="image" />
 
-            <span className="claim"><Text field={props.fields.Claim} /></span>
+            <span className="claim">
+              <Text field={props.fields.Claim} />
+            </span>
           </Link>
         ) : (
           <>
             <JssImage field={props.fields.Logo} className="image" />
-            <span className="claim"><Text field={props.fields.Claim} /></span>
+            <span className="claim">
+              <Text field={props.fields.Claim} />
+            </span>
           </>
         )}
       </div>

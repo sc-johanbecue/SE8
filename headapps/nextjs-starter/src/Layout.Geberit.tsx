@@ -196,10 +196,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         <script src="/public/js/Geberit/7538-56cceaf3e51d6274.js" async></script>
         <script src="/public/js/Geberit/9166-9e044c127455a16a.js" async></script>
         <script src="/public/js/Geberit/6213-2e495adb8589be47.js" async></script>
-        <script
-          src="/public/js/Geberit/app/template-377aebae9a02d3dd.js"
-          async
-        ></script>
+        <script src="/public/js/Geberit/app/template-377aebae9a02d3dd.js" async></script>
         <script src="/public/js/Geberit/3161-65c0635445389317.js" async></script>
         <script src="/public/js/Geberit/4265-30f466ae6cf935be.js" async></script>
         <script src="/public/js/Geberit/7923-37d8f3ca459d32f5.js" async></script>
@@ -213,10 +210,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         <script src="/public/js/Geberit/6920-aa50730a0a6ed731.js" async></script>
         <script src="/public/js/Geberit/5476-82f35b0ca8e6c11c.js" async></script>
         <script src="/public/js/Geberit/7012-0a9f2b4f9a4f708b.js" async></script>
-        <script
-          src="/public/js/Geberit/app/page-1579195e35095298.js"
-          async
-        ></script>
+        <script src="/public/js/Geberit/app/page-1579195e35095298.js" async></script>
         <script
           type="application/javascript"
           id="usercentrics-cmp"
@@ -224,8 +218,16 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           data-settings-id="WHgWKTTW3jS744"
           async
         ></script>
-        <link rel="manifest" href="https://www.geberit.co.uk/images/fav/site.webmanifest" crossOrigin="use-credentials" />
-        <link rel="mask-icon" href="https://www.geberit.co.uk/images/fav/safari-pinned-tab.svg" color="#5bbad5" />
+        <link
+          rel="manifest"
+          href="https://www.geberit.co.uk/images/fav/site.webmanifest"
+          crossOrigin="use-credentials"
+        />
+        <link
+          rel="mask-icon"
+          href="https://www.geberit.co.uk/images/fav/safari-pinned-tab.svg"
+          color="#5bbad5"
+        />
         <meta property="og:image" content="https://www.geberit.co.uk/images/geberit-logo.jpg" />
         <meta
           itemProp="name"
@@ -276,10 +278,26 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           name="twitter:description"
           content="Shower toilets from Geberit: Convenience and hygiene in the bathroom as a complete solution or enhancement ► Discover our products"
         />
-        <link rel="shortcut icon" href="https://www.geberit.co.uk/images/fav/favicon-128x128.png" sizes="128x128" />
-        <link rel="icon" href="https://www.geberit.co.uk/images/fav/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" href="https://www.geberit.co.uk/images/fav/favicon-16x16.png" sizes="16x16" />
-        <link rel="apple-touch-icon" href="https://www.geberit.co.uk/images/fav/apple-touch-icon.png" sizes="180x180" />
+        <link
+          rel="shortcut icon"
+          href="https://www.geberit.co.uk/images/fav/favicon-128x128.png"
+          sizes="128x128"
+        />
+        <link
+          rel="icon"
+          href="https://www.geberit.co.uk/images/fav/favicon-32x32.png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          href="https://www.geberit.co.uk/images/fav/favicon-16x16.png"
+          sizes="16x16"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="https://www.geberit.co.uk/images/fav/apple-touch-icon.png"
+          sizes="180x180"
+        />
         <script>{`document.querySelectorAll('body link[rel="icon"], body link[rel="apple-touch-icon"]').forEach(el => document.head.appendChild(el))`}</script>
         <script async src="/public/js/Geberit/polyfills-42372ed130431b0a.js" noModule />
         <style data-styled="" data-styled-version="5.3.11">

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 import {
   Placeholder,
@@ -46,27 +47,30 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                 <div className="sc-446dc962-0 gYlZIO">
                   <ul className="sc-446dc962-1 llYepF">
                     <li className="sc-821ebc6d-1 hkLOLM with-border">
-                      <a
+                      <Link
                         className="sc-28a4cd60-0 jaagoI gtm-utm-ignored-link"
                         href="/service-support/contact/"
                       >
                         Contact
-                      </a>
+                      </Link>
                     </li>
                     <li className="sc-821ebc6d-1 hkLOLM with-border">
-                      <a className="sc-28a4cd60-0 jaagoI gtm-utm-ignored-link" href="/about-us/">
+                      <Link className="sc-28a4cd60-0 jaagoI gtm-utm-ignored-link" href="/about-us/">
                         About us
-                      </a>
+                      </Link>
                     </li>
                     <li className="sc-821ebc6d-1 hkLOLM with-border">
-                      <a className="sc-28a4cd60-0 jaagoI gtm-utm-ignored-link" href="/career/">
+                      <Link className="sc-28a4cd60-0 jaagoI gtm-utm-ignored-link" href="/career/">
                         Careers
-                      </a>
+                      </Link>
                     </li>
                     <li className="sc-821ebc6d-1 hkLOLM with-border">
-                      <a className="sc-28a4cd60-0 jaagoI gtm-utm-ignored-link" href="/media/press/">
+                      <Link
+                        className="sc-28a4cd60-0 jaagoI gtm-utm-ignored-link"
+                        href="/media/press/"
+                      >
                         Media
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -90,8 +94,7 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                       <div className="sc-d464b8f3-0 cvGnjx">
                         <input
                           className="sc-d464b8f3-1 kHQuJG mobile-search"
-                          placeholder="What are you looking for?
-                              "
+                          placeholder="What are you looking for?"
                           autoFocus
                           value=""
                         />
@@ -140,7 +143,7 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                     <div className="sc-eb953e09-4 inwfsW">
                       <div className="sc-sLsrZ fWhegE">
                         <span role="button" style={{ outline: 'none' }} tabIndex={0}>
-                          <a
+                          <Link
                             className="sc-2097f723-0 fkMPpU"
                             aria-label=""
                             href="/find-dealer/showrooms/"
@@ -160,7 +163,7 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                             <div className="sc-eb953e09-6 fhigZi">
                               <span className="label">Find bathroom showrooms</span>
                             </div>
-                          </a>
+                          </Link>
                         </span>
                       </div>
                     </div>
@@ -170,7 +173,7 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                       aria-labelledby="downshift-«R18ldb»-label"
                       className="sc-c0aec0-0 fwGqIk"
                     >
-                      <a
+                      <Link
                         className="sc-2097f723-0 gfpXHQ gtm-utm-ignored-link"
                         aria-label="Find bathroom showrooms"
                         tabIndex={-1}
@@ -186,12 +189,12 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                           </svg>
                         </span>
                         Find bathroom showrooms
-                      </a>
+                      </Link>
                     </div>
                     <div className="sc-821ebc6d-8 cgoKAP">
                       <div className="sc-gFqAkR pBsox">
                         <div className="sc-821ebc6d-7 hfqKdm">
-                          <a
+                          <Link
                             className="sc-28a4cd60-0 iGocAk gtm-utm-ignored-link"
                             aria-label="Find bathroom showrooms"
                             tabIndex={-1}
@@ -206,7 +209,7 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                               </svg>
                             </span>
                             Find bathroom showrooms
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -248,7 +251,7 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                         aria-labelledby="downshift-«R9oldb»-label"
                         className="sc-4b5a4535-0 ibLwzK"
                       >
-                        <a
+                        <Link
                           className="sc-2097f723-0 fkMPpU gtm-utm-ignored-link"
                           tabIndex={-1}
                           aria-disabled="false"
@@ -270,7 +273,7 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                             </svg>
                           </span>
                           My profile
-                        </a>
+                        </Link>
                         <div className="sc-821ebc6d-5 flRCiV">
                           <hr className="sc-dtBdUo hiCRZc" />
                         </div>
@@ -326,86 +329,86 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                 <ul className="sc-2abe06a4-0 bbOiuQ">
                   <div className="sc-821ebc6d-6 eMqlDi">
                     <li className="sc-821ebc6d-1 hkLOLM">
-                      <a className="sc-5b3e516d-0 dJecPp gtm-utm-ignored-link" href="#">
+                      <Link className="sc-5b3e516d-0 dJecPp gtm-utm-ignored-link" href="#">
                         <span className="label">Bathroom Products</span>
                         <span style={{ width: '1rem' }} className="sc-aXZVg dRbgvV icon last-icon">
                           <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.29 8.00001L4.79001 13.5L5.50001 14.21L11.71 8.00001L5.50001 1.79001L4.79001 2.50001L10.29 8.00001Z"></path>
                           </svg>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="sc-821ebc6d-1 hkLOLM">
-                      <a className="sc-5b3e516d-0 dJecPp gtm-utm-ignored-link" href="#">
+                      <Link className="sc-5b3e516d-0 dJecPp gtm-utm-ignored-link" href="#">
                         <span className="label">Sanitary &amp; Piping Systems</span>
                         <span style={{ width: '1rem' }} className="sc-aXZVg dRbgvV icon last-icon">
                           <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.29 8.00001L4.79001 13.5L5.50001 14.21L11.71 8.00001L5.50001 1.79001L4.79001 2.50001L10.29 8.00001Z"></path>
                           </svg>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="sc-821ebc6d-1 hkLOLM">
-                      <a className="sc-5b3e516d-0 dJecPp gtm-utm-ignored-link" href="#">
+                      <Link className="sc-5b3e516d-0 dJecPp gtm-utm-ignored-link" href="#">
                         <span className="label">Know-how</span>
                         <span style={{ width: '1rem' }} className="sc-aXZVg dRbgvV icon last-icon">
                           <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.29 8.00001L4.79001 13.5L5.50001 14.21L11.71 8.00001L5.50001 1.79001L4.79001 2.50001L10.29 8.00001Z"></path>
                           </svg>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="sc-821ebc6d-1 hkLOLM">
-                      <a className="sc-5b3e516d-0 dJecPp gtm-utm-ignored-link" href="#">
+                      <Link className="sc-5b3e516d-0 dJecPp gtm-utm-ignored-link" href="#">
                         <span className="label">Service &amp; Support</span>
                         <span style={{ width: '1rem' }} className="sc-aXZVg dRbgvV icon last-icon">
                           <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.29 8.00001L4.79001 13.5L5.50001 14.21L11.71 8.00001L5.50001 1.79001L4.79001 2.50001L10.29 8.00001Z"></path>
                           </svg>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="sc-821ebc6d-1 hkLOLM">
-                      <a className="sc-5b3e516d-0 dJecPp gtm-utm-ignored-link" href="#">
+                      <Link className="sc-5b3e516d-0 dJecPp gtm-utm-ignored-link" href="#">
                         <span className="label">Trainings &amp; Events</span>
                         <span style={{ width: '1rem' }} className="sc-aXZVg dRbgvV icon last-icon">
                           <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.29 8.00001L4.79001 13.5L5.50001 14.21L11.71 8.00001L5.50001 1.79001L4.79001 2.50001L10.29 8.00001Z"></path>
                           </svg>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                   </div>
                 </ul>
                 <ul className="sc-42f4379a-1 hRofbz first-level">
                   <li className="sc-821ebc6d-1 hkLOLM">
-                    <a className="sc-955e2100-0 kJMsPW gtm-utm-ignored-link" href="#">
+                    <Link className="sc-955e2100-0 kJMsPW gtm-utm-ignored-link" href="#">
                       Bathroom Products
-                    </a>
+                    </Link>
                     <div className="sc-42f4379a-2 iyEqST"></div>
                   </li>
                   <li className="sc-821ebc6d-1 hkLOLM">
-                    <a className="sc-955e2100-0 kJMsPW gtm-utm-ignored-link" href="#">
+                    <Link className="sc-955e2100-0 kJMsPW gtm-utm-ignored-link" href="#">
                       Sanitary &amp; Piping Systems
-                    </a>
+                    </Link>
                     <div className="sc-42f4379a-2 iyEqST"></div>
                   </li>
                   <li className="sc-821ebc6d-1 hkLOLM">
-                    <a className="sc-955e2100-0 kJMsPW gtm-utm-ignored-link" href="#">
+                    <Link className="sc-955e2100-0 kJMsPW gtm-utm-ignored-link" href="#">
                       Know-how
-                    </a>
+                    </Link>
                     <div className="sc-42f4379a-2 iyEqST"></div>
                   </li>
                   <li className="sc-821ebc6d-1 hkLOLM">
-                    <a className="sc-955e2100-0 kJMsPW gtm-utm-ignored-link" href="#">
+                    <Link className="sc-955e2100-0 kJMsPW gtm-utm-ignored-link" href="#">
                       Service &amp; Support
-                    </a>
+                    </Link>
                     <div className="sc-42f4379a-2 iyEqST"></div>
                   </li>
                   <li className="sc-821ebc6d-1 hkLOLM">
-                    <a className="sc-955e2100-0 kJMsPW gtm-utm-ignored-link" href="#">
+                    <Link className="sc-955e2100-0 kJMsPW gtm-utm-ignored-link" href="#">
                       Trainings &amp; Events
-                    </a>
+                    </Link>
                     <div className="sc-42f4379a-2 iyEqST"></div>
                   </li>
                 </ul>
@@ -428,8 +431,7 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                         <div className="sc-d464b8f3-0 cvGnjx">
                           <input
                             className="sc-d464b8f3-1 kHQuJG desktop-search"
-                            placeholder="What are you looking for?
-                                 "
+                            placeholder="What are you looking for?"
                             autoFocus
                             value=""
                           />
@@ -452,7 +454,7 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
               <div className="sc-821ebc6d-6 eMqlDi">
                 <div className="sc-gFqAkR pBsox">
                   <div className="sc-86e8dd6c-0 kSknSn">
-                    <a
+                    <Link
                       className="sc-28a4cd60-0 ZgqtA trigger gtm-utm-ignored-link"
                       aria-label="Find bathroom showrooms"
                       href="/find-dealer/showrooms/"
@@ -467,7 +469,7 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                         </svg>
                       </span>
                       <span className="label">Find bathroom showrooms</span>
-                    </a>
+                    </Link>
                     <div className="sc-821ebc6d-5 flRCiV">
                       <hr className="sc-dtBdUo hiCRZc" />
                     </div>
@@ -491,40 +493,40 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                   </button>
                   <ul className="sc-6df84c7d-2 kxtfEE">
                     <li className="sc-821ebc6d-1 hkLOLM">
-                      <a
+                      <Link
                         className="sc-28a4cd60-0 jaagoI gtm-utm-ignored-link"
                         target="_self"
                         href="/service-support/contact/"
                       >
                         Contact
-                      </a>
+                      </Link>
                     </li>
                     <li className="sc-821ebc6d-1 hkLOLM">
-                      <a
+                      <Link
                         className="sc-28a4cd60-0 jaagoI gtm-utm-ignored-link"
                         target="_self"
                         href="/about-us/"
                       >
                         About us
-                      </a>
+                      </Link>
                     </li>
                     <li className="sc-821ebc6d-1 hkLOLM">
-                      <a
+                      <Link
                         className="sc-28a4cd60-0 jaagoI gtm-utm-ignored-link"
                         target="_self"
                         href="/career/"
                       >
                         Careers
-                      </a>
+                      </Link>
                     </li>
                     <li className="sc-821ebc6d-1 hkLOLM">
-                      <a
+                      <Link
                         className="sc-28a4cd60-0 jaagoI gtm-utm-ignored-link"
                         target="_self"
                         href="/media/press/"
                       >
                         Media
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -533,7 +535,7 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                 <div className="sc-821ebc6d-7 hfqKdm">
                   <div className="sc-gFqAkR pBsox">
                     <div className="sc-4b5a4535-0 ibLwzK">
-                      <a className="sc-28a4cd60-0 ZgqtA gtm-utm-ignored-link" href="">
+                      <Link className="sc-28a4cd60-0 ZgqtA gtm-utm-ignored-link" href="">
                         <span style={{ width: '1rem' }} className="sc-aXZVg dRbgvV icon first-icon">
                           <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -544,7 +546,7 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                           </svg>
                         </span>
                         My profile
-                      </a>
+                      </Link>
                       <div className="sc-821ebc6d-5 flRCiV">
                         <hr className="sc-dtBdUo hiCRZc" />
                       </div>

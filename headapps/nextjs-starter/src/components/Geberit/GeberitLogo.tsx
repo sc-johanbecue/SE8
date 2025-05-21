@@ -9,8 +9,8 @@ import {
 import 'animate.css';
 
 interface Fields {
-  href: LinkField;
-  logo: ImageField;
+  Href: LinkField;
+  Logo: ImageField;
 }
 
 type LogoProps = {
@@ -40,8 +40,8 @@ export const Default = (props: LogoProps): JSX.Element => {
   if (props.fields) {
     return (
       <div className="logo">
-        <JssLink field={props.fields.href}>
-          <JssImage field={props.fields.logo} priority />
+        <JssLink field={props.fields.Href}>
+          <JssImage field={props.fields.Logo} priority />
         </JssLink>
       </div>
     );

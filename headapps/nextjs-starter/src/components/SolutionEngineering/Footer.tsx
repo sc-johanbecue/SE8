@@ -1,9 +1,11 @@
 import React from 'react'; //{ useState }
-import { TextField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Item, RouteData, TextField, Text } from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
   Title: TextField;
   Text: TextField;
+  FooterItem: Item & { fields: { Title: TextField } };
+  FooterItems: RouteData & { fields: { Items: Item & { fields: { Title: TextField } } } };
 }
 
 type FooterProps = {
@@ -28,7 +30,8 @@ export const Default = (props: FooterProps): JSX.Element => {
 
   return (
     <>
-      <div className="container pb-5 mb-5" key={id ? id : undefined}>
+      <div className="component container pb-5 mb-5" key={id ? id : undefined}>
+        {props.fields.FooterItem && <Text field={props.fields.FooterItem.fields.Title} />}
         <div className="row justify-content-center">
           <div className="col-md-9 col-lg-6">
             <h2 className="font-weight-normal text-color-dark text-center text-8 mb-4">

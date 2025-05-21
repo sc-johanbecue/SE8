@@ -4,6 +4,8 @@ import {
   Image as JssImage,
   LinkField,
   ImageField,
+  TextField,
+  Text,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import 'animate.css';
@@ -12,6 +14,7 @@ import Link from 'next/link';
 interface Fields {
   Href: LinkField;
   Logo: ImageField;
+  Claim: TextField;
 }
 
 type LogoProps = {
@@ -44,16 +47,26 @@ export const Default = (props: LogoProps): JSX.Element => {
   if (props.fields) {
     return (
       <div
-        className={`component logo ${props.params.styles}`}
+        className={`component sc-eb953e09-2 dLnDNk ${props.params.styles}`}
         key={id ? id : undefined}
         id={id ? id : undefined}
       >
         {sitecoreContext.pageEditing ? (
-          <JssImage field={props.fields.Logo} />
-        ) : (
-          <Link href={href}>
-            <JssImage field={props.fields.Logo} />
+          <Link
+            tabIndex={0}
+            id="logo"
+            className="sc-f8ba61a8-1 bITiMD gtm-utm-ignored-link"
+            href={href}
+          >
+            <JssImage field={props.fields.Logo} className="image" />
+
+            <span className="claim"><Text field={props.fields.Claim} /></span>
           </Link>
+        ) : (
+          <>
+            <JssImage field={props.fields.Logo} className="image" />
+            <span className="claim"><Text field={props.fields.Claim} /></span>
+          </>
         )}
       </div>
     );

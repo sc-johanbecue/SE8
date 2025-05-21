@@ -29,9 +29,9 @@ const HeaderTopDefaultComponent = (props: HeaderTopProps): JSX.Element => (
  * - No fields are needed at the HeaderTop level
  */
 export const Default = (props: HeaderTopProps): JSX.Element => {
-  const phKeyLogo = `Logo-${props.params.DynamicPlaceholderId}`;
-  const phKeyLanguageSwitcher = `LanguageSwitcher-${props.params.DynamicPlaceholderId}`;
-  const phKeyTopMenu = `TopMenu-${props.params.DynamicPlaceholderId}`;
+  const phKeyLogo = `GeberitLogo-${props.params.DynamicPlaceholderId}`;
+  const phKeyLanguageSwitcher = `GeberitLanguageSwitcher-${props.params.DynamicPlaceholderId}`;
+  const phKeyTopMenu = `GeberitTopMenu-${props.params.DynamicPlaceholderId}`;
 
   return (
     <div className="header-top py-2 border-bottom">

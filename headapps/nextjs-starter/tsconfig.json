@@ -33,6 +33,6 @@
     "incremental": true,
     "forceConsistentCasingInFileNames": false
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/Layout.tsx.original"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/Layout.tsx.original", "src/components/Geberit/GebeirSocialIcons.tsx.tmp", "src/components/Geberit/GeberitMainHero.tsx.tmp", "src/components/Geberit/GebeirFooterNavigation.tsx.tmp", "src/components/Geberit/GeberitFooter.tsx.tmp"],
   "exclude": ["node_modules"]
 }

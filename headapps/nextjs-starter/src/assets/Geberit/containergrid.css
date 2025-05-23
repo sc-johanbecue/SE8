@@ -1,0 +1,6 @@
+.constrained-img {
+  width: 100%;
+  max-height: 214px;
+  object-fit: cover; /* or use 'contain' if you want it fully visible */
+  display: block;
+}

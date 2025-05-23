@@ -61,7 +61,10 @@ export const Default = (props: GridContainerProps): JSX.Element => {
           <div className="row align-items-center">
             {/* Image Column on right for desktop, on top for mobile */}
             <div className="col-md-6 order-md-2 mb-4 mb-md-0">
-              <Image field={props.fields.Image} className="img-img-fluid constrained-img" />
+              <Image
+                field={props.fields.Image}
+                className="img-img-fluid introtextconstrained-img"
+              />
             </div>
 
             {/* Text Column */}

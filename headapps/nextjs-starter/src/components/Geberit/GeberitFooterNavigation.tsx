@@ -1,24 +1,28 @@
-import React from 'react';
-import Link from 'next/link';
-import { Row, Col } from 'react-bootstrap';
+import type React from 'react';
+import {
+  TextField,
+  LinkField,
+  Text,
+  Link as JssLink,
+  ComponentRendering,
+  ComponentParams,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 
 import 'animate.css';
 
-interface FooterNavSection {
-  title: string;
-  links: Array<{
-    text: string;
-    href: string;
-  }>;
-}
-
-interface Fields {
-  Sections: FooterNavSection[];
+interface FooterNavigationItem {
+  fields: {
+    Text: TextField;
+    Href: LinkField;
+  };
 }
 
 type FooterNavigationProps = {
+  rendering: ComponentRendering & { params: ComponentParams };
   params: { [key: string]: string };
-  fields: Fields;
+  fields: {
+    NavigationItems: FooterNavigationItem[];
+  };
 };
 
 const FooterNavigationDefaultComponent = (props: FooterNavigationProps): JSX.Element => (
@@ -31,68 +35,24 @@ const FooterNavigationDefaultComponent = (props: FooterNavigationProps): JSX.Ele
 
 export const Default = (props: FooterNavigationProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
+  const items = props.fields.NavigationItems || [];
 
-  const sections = [
-    {
-      title: 'Products',
-      links: [
-        { text: 'Bathroom Series', href: '/products/bathroom-series' },
-        { text: 'Shower Toilets', href: '/products/shower-toilets' },
-        { text: 'Installation Systems', href: '/products/installation-systems' },
-      ],
-    },
-    {
-      title: 'Services',
-      links: [
-        { text: 'Spare Parts', href: '/services/spare-parts' },
-        { text: 'Technical Support', href: '/services/technical-support' },
-        { text: 'Downloads', href: '/services/downloads' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About Us', href: '/about-us' },
-        { text: 'Careers', href: '/careers' },
-        { text: 'Press', href: '/press' },
-        { text: 'Contact', href: '/contact' },
-      ],
-    },
-    {
-      title: 'Legal',
-      links: [
-        { text: 'Terms & Conditions', href: '/terms' },
-        { text: 'Privacy Policy', href: '/privacy' },
-        { text: 'Cookie Policy', href: '/cookies' },
-      ],
-    },
-  ];
+  return (
+    <>
+      {/* div style={{display: "flex", flexBasis: "100%", flexWrap: "wrap"}} */}
+      {items.map((item, index) => (
+        <JssLink
+          className={`component noArrow gtm-utm-ignored-link ${props.params.styles}`}
+          key={index}
+          id={id ? id : undefined}
+          field={item.fields.Href}
+          aria-label={item.fields.Text.value?.toString()}
+        >
+          <Text field={item.fields.Text} />
+        </JssLink>
+      ))}
+    </>
+  );
 
-  if (props.fields) {
-    return (
-      <div
-        className={`component footer-navigation ${props.params.styles}`}
-        key={id ? id : undefined}
-        id={id ? id : undefined}
-      >
-        <Row>
-          {sections.map((section, sectionIndex) => (
-            <Col key={sectionIndex} xs={12} sm={6} md={3} className="mb-4">
-              <h5 className="mb-3">{section.title}</h5>
-              <ul className="list-unstyled">
-                {section.links.map((link, linkIndex) => (
-                  <li key={linkIndex} className="mb-2">
-                    <Link href={link.href} className="text-decoration-none">
-                      {link.text}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </Col>
-          ))}
-        </Row>
-      </div>
-    );
-  }
   return <FooterNavigationDefaultComponent {...props} />;
 };

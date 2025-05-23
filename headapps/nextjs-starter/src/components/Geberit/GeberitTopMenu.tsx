@@ -1,13 +1,28 @@
 import type React from 'react';
-import Link from 'next/link';
-import { Nav } from 'react-bootstrap';
-import { ComponentRendering, ComponentParams } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  TextField,
+  LinkField,
+  Text,
+  Link as JssLink,
+  ComponentRendering,
+  ComponentParams,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 
 import 'animate.css';
+
+interface TopMenuItem {
+  fields: {
+    Text: TextField;
+    Href: LinkField;
+  };
+}
 
 type TopMenuProps = {
   rendering: ComponentRendering & { params: ComponentParams };
   params: { [key: string]: string };
+  fields: {
+    MenuItems: TopMenuItem[];
+  };
 };
 
 const TopMenuDefaultComponent = (props: TopMenuProps): JSX.Element => (
@@ -20,27 +35,24 @@ const TopMenuDefaultComponent = (props: TopMenuProps): JSX.Element => (
 
 export const Default = (props: TopMenuProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
+  const items = props.fields.MenuItems || [];
 
-  const items = [
-    { text: 'Professional', href: '/professional' },
-    { text: 'About Us', href: '/about-us' },
-    { text: 'Contact', href: '/contact' },
-    { text: 'My Geberit', href: '/my-geberit' },
-  ];
   return (
-    <Nav
-      className={`component top-menu justify-content-end ${props.params.styles}`}
+    <div
+      className={`component sc-446dc962-0 gYlZIO`}
       key={id ? id : undefined}
       id={id ? id : undefined}
     >
-      {items.map((item, index) => (
-        <Nav.Item key={index}>
-          <Link href={item.href} passHref legacyBehavior>
-            <Nav.Link className="px-3 py-1">{item.text}</Nav.Link>
-          </Link>
-        </Nav.Item>
-      ))}
-    </Nav>
+      <ul className="sc-446dc962-1 llYepF">
+        {items.map((item, index) => (
+          <li className="sc-821ebc6d-1 hkLOLM with-border" key={index}>
+            <JssLink className="sc-28a4cd60-0 jaagoI gtm-utm-ignored-link" field={item.fields.Href}>
+              <Text field={item.fields.Text} />
+            </JssLink>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 
   return <TopMenuDefaultComponent {...props} />;

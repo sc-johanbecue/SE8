@@ -1,16 +1,21 @@
 import React from 'react'; //{ useState }
-import { Container, Row, Col } from 'react-bootstrap';
 import {
   Placeholder,
   ComponentRendering,
   ComponentParams,
-  Text,
   TextField,
+  LinkField,
+  Text,
+  Link as JssLink,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import 'animate.css';
+import Link from 'next/link';
 
 interface Fields {
   Copyright: TextField;
+  CurrentCountryLabel: TextField;
+  Country: TextField;
+  CountryLink: LinkField;
 }
 
 type FooterProps = {
@@ -30,42 +35,42 @@ const FooterDefaultComponent = (props: FooterProps): JSX.Element => (
 export const Default = (props: FooterProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
-  const phKeyLogo = `GeberitLogo-${props.params.DynamicPlaceholderId}`;
   const phKeySocialIcons = `GeberitSocialIcons-${props.params.DynamicPlaceholderId}`;
   const phKeyFooterNavigation = `GeberitFooterNavigation-${props.params.DynamicPlaceholderId}`;
 
   if (props.fields) {
     return (
-      <Container>
-        <div
-          className={`component footer-top pb-4 border-bottom ${props.params.styles}`}
+      <>
+        <section
+          className={`component grid-container ${props.params.styles}`}
           key={id ? id : undefined}
           id={id ? id : undefined}
         >
-          <Row className="align-items-center">
-            <Col xs={12} md={6}>
-              <Placeholder name={phKeyLogo} rendering={props.rendering} />
-            </Col>
-            <Col xs={12} md={6} className="mt-3 mt-md-0">
-              <div className="d-flex justify-content-md-end">
-                <Placeholder name={phKeySocialIcons} rendering={props.rendering} />
-              </div>
-            </Col>
-          </Row>
-        </div>
-
-        <div className="footer-middle py-5">
-          <Placeholder name={phKeyFooterNavigation} rendering={props.rendering} />
-        </div>
-
-        <div className="footer-bottom py-3">
-          <Row>
-            <Col>
-              <Text field={props.fields.Copyright} tag="p" className="mb-0 text-muted" />
-            </Col>
-          </Row>
-        </div>
-      </Container>
+          <div className="c-footer__wrapper">
+            <div className="c-footer__country-change">
+              <p>
+                <strong>
+                  <Text field={props.fields.CurrentCountryLabel} />
+                </strong>
+                <JssLink className="noArrow gtm-utm-ignored-link" field={props.fields.CountryLink}>
+                  <Text field={props.fields.Country} />
+                </JssLink>
+              </p>
+            </div>
+            <Placeholder name={phKeySocialIcons} rendering={props.rendering} />
+            <div className="c-footer__nav">
+              <p>
+                <Text field={props.fields.Copyright} />
+              </p>
+              <Placeholder name={phKeyFooterNavigation} rendering={props.rendering} />
+            </div>
+          </div>
+        </section>
+        <Link href="#to-top" aria-label="to the top s" className="sc-d40cdb30-0 gptVcn">
+          <i className="icon web20-icon web20-icon-chevron-large-up"></i>
+        </Link>
+        <div className="sc-d40cdb30-1 bFVQh"></div>
+      </>
     );
   }
   return <FooterDefaultComponent {...props} />;

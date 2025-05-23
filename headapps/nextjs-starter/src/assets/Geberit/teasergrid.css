@@ -1,0 +1,194 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* xmc-teaser Grid Layout */
+.xmc-teaser-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* xmc-teaser Tile Base Styles */
+.xmc-teaser-tile {
+  position: relative;
+  min-height: 250px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tile Layout Variations */
+.xmc-teaser-tile.square {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.xmc-teaser-tile.horizontal {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.xmc-teaser-tile.vertical {
+  grid-column: span 1;
+  grid-row: span 2;
+  min-height: 520px; /* Approximately double the height of a square tile */
+}
+
+/* xmc-teaser Content Styles */
+.xmc-teaser-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.xmc-teaser-header {
+  margin-bottom: auto;
+}
+
+.xmc-teaser-category {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.xmc-teaser-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.xmc-teaser-footer {
+  margin-top: 20px;
+}
+
+/* Link Styles */
+.xmc-teaser-link {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.xmc-teaser-link:hover {
+  text-decoration: underline;
+}
+
+/* Badge Styles */
+.xmc-teaser-badge {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: white;
+  color: #0066b3;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 5px 8px;
+  text-transform: uppercase;
+}
+
+.badge.gray {
+  background-color: #e6e6e6;
+  color: #666;
+}
+
+/* Image Tile Styles */
+.image-tile {
+  position: relative;
+}
+
+.xmc-teaser-image {
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Search Container Styles */
+.search-container {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-button {
+  background-color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+  color: #666;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .xmc-teaser-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .xmc-teaser-tile.horizontal {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .xmc-teaser-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .xmc-teaser-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.LightgreyTile {
+  background-color: #e4e4e4;
+}
+.DarkgreyTile {
+  background-color: #84909d;
+}
+.BlueTile {
+  background-color: #376eb4;
+}
+.BlackTile {
+  background-color: #000;
+  color:white;
+}
+
+.BlackTile h1, .BlackTile p, .BlackTile span {
+    color:white;
+}

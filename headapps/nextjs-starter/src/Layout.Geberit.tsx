@@ -39,52 +39,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
 
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="preload" as="image" href="https://www.geberit.co.uk/images/geberit_logo.svg" />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-mera-comfort-chrome-with-remote-control-sigma70-original-570-322.png 1x, /_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-mera-comfort-chrome-with-remote-control-sigma70-original-16-9.png 2x, /_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-mera-comfort-chrome-with-remote-control-sigma70-original-16-9.png 3x"
-        />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-sela-white-with-remote-control-sigma20-570-322.png 1x, /_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-sela-white-with-remote-control-sigma20-16-9.png 2x, /_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-sela-white-with-remote-control-sigma20-16-9.png 3x"
-        />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-tuma-comfort-with-remote-control-sigma20-570-322.jpg 1x, /_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-tuma-comfort-with-remote-control-sigma20-16-9.jpg 2x, /_assetsmaster/global-media/pictures/gac/products/2023-geberit-aquaclean-tuma-comfort-with-remote-control-sigma20-16-9.jpg 3x"
-        />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assetsmaster/global-media/pictures/webshop/img-gac-tuma-tile-572418-380-214.jpg 1x, /_assetsmaster/global-media/pictures/webshop/img-gac-tuma-tile-572418-790-444.jpg 2x, /_assetsmaster/global-media/pictures/webshop/img-gac-tuma-tile-572418-16-9.jpg 3x"
-        />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assetsmaster/global-media/pictures/webshop/img-gac-tuma-aufsatz-tile-572424-380-214.jpg 1x, /_assetsmaster/global-media/pictures/webshop/img-gac-tuma-aufsatz-tile-572424-790-444.jpg 2x, /_assetsmaster/global-media/pictures/webshop/img-gac-tuma-aufsatz-tile-572424-16-9.jpg 3x"
-        />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assetsmaster/global-media/pictures/gac/products/2024-geberit-aquaclean-alba-private-sigma20-grey-570-322.png 1x, /_assetsmaster/global-media/pictures/gac/products/2024-geberit-aquaclean-alba-private-sigma20-grey-16-9.png 2x, /_assetsmaster/global-media/pictures/gac/products/2024-geberit-aquaclean-alba-private-sigma20-grey-16-9.png 3x"
-        />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assetsmaster/global-media/pictures/gac/products/4000/geberit-aquaclean-4000-with-design-cover-big-size-570-322.jpg 1x, /_assetsmaster/global-media/pictures/gac/products/4000/geberit-aquaclean-4000-with-design-cover-big-size-16-9.jpg 2x, /_assetsmaster/global-media/pictures/gac/products/4000/geberit-aquaclean-4000-with-design-cover-big-size-16-9.jpg 3x"
-        />
-        <link
-          rel="preload"
-          as="image"
-          imageSrcSet="/_assets/local-media/geberit-alpha-roomset-5-inspiration-98cm-with-gac-option-2-final-570-322.jpg 1x, /_assets/local-media/geberit-alpha-roomset-5-inspiration-98cm-with-gac-option-2-final-16-9.jpg 2x, /_assets/local-media/geberit-alpha-roomset-5-inspiration-98cm-with-gac-option-2-final-16-9.jpg 3x"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="https://www.geberit.co.uk/_assetsmaster/global-media/pictures/logo-und-awards/pictos/whirl-spray-grey-cmyk-original.svg"
-        />
         <link
           rel="stylesheet"
           href="https://www.geberit.co.uk/public/css/Geberit/36f9c5f2ef350a84.css"
@@ -169,65 +123,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           as="style"
           data-precedence="dynamic"
         />
-        <link
-          rel="preload"
-          as="script"
-          fetchPriority="low"
-          href="https://www.geberit.co.uk/public/js/Geberit/webpack-a088078cd583fc17.js"
-        />
-        <script src="/public/js/Geberit/4bd1b696-e29cff45ad8bb6af.js" async></script>
-        <script src="/public/js/Geberit/1684-aa39c495466949b6.js" async></script>
-        <script src="/public/js/Geberit/main-app-7143f0d627919eb6.js" async></script>
-        <script src="/public/js/Geberit/6707-02b290b26d8af29c.js" async></script>
-        <script src="/public/js/Geberit/8636-1e0658675a80a617.js" async></script>
-        <script src="/public/js/Geberit/app/global-error-0f2a53e7cd05053c.js" async></script>
-        <script src="/public/js/Geberit/8cc6faea-5f388f244a6561de.js" async></script>
-        <script src="/public/js/Geberit/d648eb28-c1297205378274b8.js" async></script>
-        <script src="/public/js/Geberit/6867-1f7dac40f71f8f91.js" async></script>
-        <script src="/public/js/Geberit/351-94fb6b16abaf34e6.js" async></script>
-        <script src="/public/js/Geberit/7727-17524fe44a30dfd9.js" async></script>
-        <script src="/public/js/Geberit/6407-087c83c3ea841daa.js" async></script>
-        <script src="/public/js/Geberit/6629-ea397d76ec445c02.js" async></script>
-        <script src="/public/js/Geberit/8194-4362823f57a64cf2.js" async></script>
-        <script src="/public/js/Geberit/2855-f98996f4f265ae63.js" async></script>
-        <script src="/public/js/Geberit/7830-804fc7ed658f2a51.js" async></script>
-        <script src="/public/js/Geberit/9507-ee5749cf9cd1e600.js" async></script>
-        <script src="/public/js/Geberit/4452-ce61a9ec43d61dc3.js" async></script>
-        <script src="/public/js/Geberit/7538-56cceaf3e51d6274.js" async></script>
-        <script src="/public/js/Geberit/9166-9e044c127455a16a.js" async></script>
-        <script src="/public/js/Geberit/6213-2e495adb8589be47.js" async></script>
-        <script src="/public/js/Geberit/app/template-377aebae9a02d3dd.js" async></script>
-        <script src="/public/js/Geberit/3161-65c0635445389317.js" async></script>
-        <script src="/public/js/Geberit/4265-30f466ae6cf935be.js" async></script>
-        <script src="/public/js/Geberit/7923-37d8f3ca459d32f5.js" async></script>
-        <script src="/public/js/Geberit/9546-99f28031052d73b7.js" async></script>
-        <script src="/public/js/Geberit/7393-91cc214e749213df.js" async></script>
-        <script src="/public/js/Geberit/app/layout-c66844dc2bbf54b6.js" async></script>
-        <script src="/public/js/Geberit/app/error-79e5185abc16c90e.js" async></script>
-        <script src="/public/js/Geberit/c16f53c3-d2d21fb0c6531174.js" async></script>
-        <script src="/public/js/Geberit/13633bf0-a1c2fe1d2bf4113a.js" async></script>
-        <script src="/public/js/Geberit/4e6af11a-5f798b936e03c0be.js" async></script>
-        <script src="/public/js/Geberit/6920-aa50730a0a6ed731.js" async></script>
-        <script src="/public/js/Geberit/5476-82f35b0ca8e6c11c.js" async></script>
-        <script src="/public/js/Geberit/7012-0a9f2b4f9a4f708b.js" async></script>
-        <script src="/public/js/Geberit/app/page-1579195e35095298.js" async></script>
-        <script
-          type="application/javascript"
-          id="usercentrics-cmp"
-          src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
-          data-settings-id="WHgWKTTW3jS744"
-          async
-        ></script>
-        <link
-          rel="manifest"
-          href="https://www.geberit.co.uk/images/fav/site.webmanifest"
-          crossOrigin="use-credentials"
-        />
-        <link
-          rel="mask-icon"
-          href="https://www.geberit.co.uk/images/fav/safari-pinned-tab.svg"
-          color="#5bbad5"
-        />
         <meta property="og:image" content="https://www.geberit.co.uk/images/geberit-logo.jpg" />
         <meta
           itemProp="name"
@@ -298,8 +193,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           href="https://www.geberit.co.uk/images/fav/apple-touch-icon.png"
           sizes="180x180"
         />
-        <script>{`document.querySelectorAll('body link[rel="icon"], body link[rel="apple-touch-icon"]').forEach(el => document.head.appendChild(el))`}</script>
-        <script async src="/public/js/Geberit/polyfills-42372ed130431b0a.js" noModule />
         <style data-styled="" data-styled-version="5.3.11">
           {`.dRbgvV{display:block;line-height:0;}/*!sc*/
          @media (hover:none) and (pointer:coarse) and (min-width:0) and (max-width:48rem){}/*!sc*/
@@ -742,6 +635,244 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
          @-webkit-keyframes dXAZWi{0%{opacity:1;margin:0;}100%{opacity:0;margin:0 -2rem 0 2rem;}}/*!sc*/
          @keyframes dXAZWi{0%{opacity:1;margin:0;}100%{opacity:0;margin:0 -2rem 0 2rem;}}/*!sc*/
          data-styled.g396[id="sc-keyframes-dXAZWi"]{content:"dXAZWi,"}/*!sc*/
+         .fYeZsz span.icon {
+    width: 32px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.fYeZsz span.icon, .fYeZsz span.no-icon {
+    display: flex
+;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 40px;
+    width: 40px !important;
+}
+
+.OuYSi button span {
+    transform: rotate(0deg);
+}
+.dRbgvV {
+    display: block;
+    line-height: 0;
+}
+.fYeZsz {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-family: AktivGrotesk, helvetica, arial, sans-serif;
+    font-weight: 500;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    white-space: nowrap;
+    height: 40px;
+    min-width: 3.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0px 0px 0px 16px;
+}
+    .c-footer {
+  border-top: 1px solid #d9d9d9;
+  min-height: 13.75rem;
+  padding: 5rem 0 6.25rem 0;
+  position: relative;
+  width: 100%;
+}
+
+.c-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 48rem) {
+  .c-footer__wrapper {
+    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.c-footer__logo {
+  margin-bottom: 2.5em;
+}
+
+.c-footer__logo img {
+  height: 1.3125rem;
+  width: 9.75rem;
+  vertical-align: middle;
+}
+
+@media (min-width: 48rem) {
+  .c-footer__logo {
+    margin-bottom: 0;
+  }
+}
+
+.c-footer__country-change {
+  margin-bottom: 2.75rem;
+}
+
+@media (min-width: 48rem) {
+  .c-footer__country-change {
+    margin-bottom: 0;
+  }
+}
+
+.c-footer__country-change p {
+  font-size: 0.9375rem;
+}
+
+.c-footer__country-change p strong {
+  display: block;
+  margin-bottom: 0.625rem;
+  font-weight: 700;
+}
+
+.c-footer__country-change p a {
+  padding: 0 0 0.125rem;
+  border-bottom: 1px solid var(--gb-brand-primary-light);
+  text-decoration: none;
+}
+
+.c-footer__social {
+  margin-bottom: 1.25rem;
+}
+
+.c-footer__social a {
+  margin: 0 1.25rem 1.25rem 0;
+}
+
+.c-footer__social a::before {
+  display: none;
+}
+
+.c-footer__social img {
+  width: 1.5625rem;
+  height: 1.5625rem;
+  vertical-align: middle;
+}
+
+@media (min-width: 48rem) {
+  .c-footer__social {
+    margin-bottom: 0;
+  }
+
+  .c-footer__social a {
+    margin: 0 0 0 1.25rem;
+  }
+}
+
+.c-footer__nav {
+  -ms-word-break: normal;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.c-footer__nav a,
+.c-footer__nav button,
+.c-footer__nav p {
+  margin-bottom: 0.9375rem;
+  display: block;
+  color: #000;
+  font-size: 1rem;
+}
+
+.c-footer__nav a::before,
+.c-footer__nav button::before,
+.c-footer__nav p::before {
+  display: none;
+}
+
+.c-footer__nav a,
+.c-footer__nav button {
+  text-decoration: none !important;
+}
+
+.c-footer__nav a:hover,
+.c-footer__nav button:hover {
+  text-decoration: underline !important;
+}
+
+.c-footer__nav a:last-child,
+.c-footer__nav button:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 48rem) {
+  .c-footer__nav {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+
+  .c-footer__nav a,
+  .c-footer__nav button,
+  .c-footer__nav p {
+    font-size: 0.8125rem;
+  }
+
+  .c-footer__nav a,
+  .c-footer__nav button {
+    margin-right: 1.25rem;
+  }
+
+  .c-footer__nav p {
+    margin-right: 4.375rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .c-footer__nav {
+    justify-content: flex-end;
+  }
+
+  .c-footer__nav a,
+  .c-footer__nav button,
+  .c-footer__nav p {
+    margin: 0 0 0 1.25rem;
+  }
+
+  .c-footer__nav p {
+    margin-right: 5.625rem;
+  }
+}
+
+.back-to-top-anchor {
+  right: 2rem;
+  bottom: calc(-3rem + calc(var(--chat-height, 0px) + var(--chat-controls-height, 0px)));
+  opacity: 0;
+  position: fixed;
+  z-index: 99;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 1, 1), opacity 0.2s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.back-to-top-anchor.isStatic {
+  position: absolute;
+  bottom: unset;
+  top: -4.625rem;
+  transition: none;
+  opacity: 1;
+}
+
+.back-to-top-anchor.isFixed {
+  opacity: 1;
+  transform: translateY(-5rem);
+}
+  
+
          `}
         </style>
       </Head>
@@ -754,7 +885,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         <main>
           <div id="content">{route && <Placeholder name="headless-main" rendering={route} />}</div>
         </main>
-        <footer className="bg-light pt-5">
+        <footer className="c-footer">
           <div id="footer">{route && <Placeholder name="headless-footer" rendering={route} />}</div>
         </footer>
       </div>

@@ -1,0 +1,72 @@
+.indent-top {
+  margin-top: 1.5rem;
+}
+.indent-bottom {
+  margin-bottom: 1.5rem;
+}
+
+
+.box-dark-100 .box {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+}
+
+.box-dark-80 .box {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.box-dark-60 .box {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+
+.box-dark .box a.btn {
+  border-color: white;
+  color: white;
+}
+.box-dark .box h1 {
+  color: white;
+}
+
+.box-dark .box h2 {
+  color: white;
+}
+
+.box-light-100 .box {
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+
+}
+
+.box-light-80 .box {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+
+}
+
+.box-light-60 .box {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+
+}
+
+.box-light .box a.btn {
+  border-color: black;
+  color: black;
+}
+
+.box-light .box a.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.box-light .box h1 {
+  color: black;
+}
+.box-light .box h2 {
+  color: black;
+}
+
+

@@ -33,6 +33,6 @@
     "incremental": true,
     "forceConsistentCasingInFileNames": false
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/Layout.tsx.original", "src/components/Geberit/GebeirSocialIcons.tsx", "src/components/Geberit/GeberitMainHero.tsx.tmp", "src/src/components/Geberit/GeberitFooterNavigation.tsxsrc/components/Geberit/GeberitFooter.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/Layout.tsx.original", "src/components/Geberit/GebeirSocialIcons.tsx", "src/components/Geberit/GeberitMainHero.tsx", "src/src/components/Geberit/GeberitFooterNavigation.tsxsrc/components/Geberit/GeberitFooter.tsx"],
   "exclude": ["node_modules"]
 }

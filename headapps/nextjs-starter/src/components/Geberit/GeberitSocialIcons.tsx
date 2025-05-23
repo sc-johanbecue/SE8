@@ -1,22 +1,28 @@
 import type React from 'react';
-import { TextField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  ImageField,
+  LinkField,
+  ComponentRendering,
+  ComponentParams,
+  Image as JssImage,
+  Link as JssLink,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
 import 'animate.css';
-import Link from 'next/link';
 
 interface Fields {
-  icons: SocialIcon[];
-  size: TextField;
+  Socials: Social[];
 }
 
-interface SocialIcon {
-  name: TextField;
-  icon: TextField;
-  url: LinkField;
+interface Social {
+  fields: {
+    Image: ImageField;
+    Href: LinkField;
+  }
 }
 
 interface MainHeroProps {
+  rendering: ComponentRendering & { params: ComponentParams };
   params: { [key: string]: string };
   fields: Fields;
 }
@@ -32,39 +38,26 @@ const MainHeroDefaultComponent = (props: MainHeroProps): JSX.Element => (
 export const Default = (props: MainHeroProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
-  const icons = [
-    { name: 'Facebook', icon: 'facebook', url: 'https://facebook.com' },
-    { name: 'Twitter', icon: 'twitter', url: 'https://twitter.com' },
-    { name: 'Instagram', icon: 'instagram', url: 'https://instagram.com' },
-    { name: 'YouTube', icon: 'youtube', url: 'https://youtube.com' },
-    { name: 'LinkedIn', icon: 'linkedin', url: 'https://linkedin.com' },
-  ];
-  const iconSize = (props.fields?.size?.value as 'sm' | 'md' | 'lg') || 'sm';
-
-  const sizeClass = {
-    sm: 'fs-6',
-    md: 'fs-5',
-    lg: 'fs-4',
-  }[iconSize];
+  const socials = props.fields.Socials || [];
 
   if (props.fields) {
     return (
       <div
-        className={`component social-icons d-flex gap-3 ${props.params.styles}`}
+        className={`component c-footer__social ${props.params.styles}`}
         key={id ? id : undefined}
         id={id ? id : undefined}
       >
-        {icons.map((icon, index) => (
-          <Link
+        {socials.map((social, index) => (
+          <JssLink
             key={index}
-            href={icon.url}
+            field={social.fields.Href}
             target="_blank"
+            className="noArrow gtm-utm-ignored-link"
             rel="noopener noreferrer"
-            className="text-decoration-none"
+            aria-label="_blank"
           >
-            <i className={`bi bi-${icon.icon} ${sizeClass}`}></i>
-            <span className="visually-hidden">{icon.name}</span>
-          </Link>
+            <JssImage field={social.fields.Image} />
+          </JssLink>
         ))}
       </div>
     );

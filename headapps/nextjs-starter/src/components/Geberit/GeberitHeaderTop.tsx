@@ -71,7 +71,7 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                     className="sc-4a82434-1 hCtieL"
                     style={{ display: 'none' }}
                   >
-                    <a
+                    <Link
                       className="sc-2097f723-0 cfgsyl selected gtm-utm-ignored-link"
                       tabIndex={-1}
                       aria-disabled="false"
@@ -86,8 +86,8 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                         </svg>
                       </span>
                       NL – Nederlands
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="sc-2097f723-0 gfpXHQ gtm-utm-ignored-link"
                       tabIndex={-1}
                       aria-disabled="false"
@@ -102,7 +102,7 @@ export const Default = (props: HeaderTopProps): JSX.Element => {
                         </svg>
                       </span>
                       FR – Frans
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <Placeholder name={phKeyTopMenu} rendering={props.rendering} />

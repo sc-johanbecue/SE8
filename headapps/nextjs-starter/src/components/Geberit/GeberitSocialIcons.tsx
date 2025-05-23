@@ -18,7 +18,7 @@ interface Social {
   fields: {
     Image: ImageField;
     Href: LinkField;
-  }
+  };
 }
 
 interface MainHeroProps {

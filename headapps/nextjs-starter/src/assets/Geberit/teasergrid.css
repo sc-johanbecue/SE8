@@ -189,6 +189,35 @@ body {
   color:white;
 }
 
-.BlackTile h1, .BlackTile p, .BlackTile span {
+.gridcontaineritem  a, .gridcontaineritem  a:visited, .gridcontaineritem {
+    color:376eb4;
+}
+
+.BlueTile .gridcontaineritem  a, .BlueTile .gridcontaineritem  a:visited {
     color:white;
 }
+
+
+.link-arrow:before {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    font-family: 200!important;
+    font-style: normal;
+    font-weight: 400!important;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    content: ">";
+    font-size: .6875rem;
+    padding: 0 9px 0 0;
+    position: relative;
+    top: -1px;
+}
+
+.BlackTile h1, .BlackTile p, .BlackTile span, .BlackTile a {
+    color:white;
+}
+
+

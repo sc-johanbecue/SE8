@@ -40,7 +40,7 @@ export const Default = (props: GridContainerProps): JSX.Element => {
   if (props.fields) {
     return (
       <div
-        className={`component col-md-4 mb-4 ${props.params.styles}`}
+        className={`component gridcontaineritem col-md-4 mb-4 ${props.params.styles}`}
         key={id ? id : undefined}
         id={id ? id : undefined}
       >
@@ -49,7 +49,8 @@ export const Default = (props: GridContainerProps): JSX.Element => {
           <Text field={props.fields.Title} />
         </h5>
         <RichText field={props.fields.Text} />
-        <span className="link">
+        <br />
+        <span className="link link-arrow">
           <JssLink field={props.fields.Link} />
         </span>
       </div>

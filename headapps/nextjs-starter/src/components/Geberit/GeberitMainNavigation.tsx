@@ -51,7 +51,7 @@ export const Default = (props: MainNavigationProps): JSX.Element => {
       key={id ? id : undefined}
       id={id ? id : undefined}
     >
-      <div className="sc-587a74fb-0 hvXFzQ">
+      <div className="sc-587a74fb-0 hvXFzQ" style={{ display: 'none' }}>
         <div className="sc-gFqAkR pBsox">
           <ul className="sc-2abe06a4-0 bbOiuQ">
             <div className="sc-821ebc6d-6 eMqlDi">
@@ -126,7 +126,8 @@ export const Default = (props: MainNavigationProps): JSX.Element => {
       </div>
       <div className="sc-6df84c7d-0 kkEfFy">
         <div className="sc-821ebc6d-6 eMqlDi">
-          <div className="sc-gFqAkR pBsox">
+          <div className="sc-gFqAkR pBsox" style={{ display: 'none' }}>
+            {/* Dit is het menu */}
             <div className="sc-86e8dd6c-0 kSknSn">
               <Link
                 className="sc-28a4cd60-0 ZgqtA trigger gtm-utm-ignored-link"

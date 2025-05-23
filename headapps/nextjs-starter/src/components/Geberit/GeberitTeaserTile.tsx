@@ -77,6 +77,7 @@ export const SquareImage = (props: MainHeroProps): JSX.Element => {
         key={id ? id : undefined}
         id={id ? id : undefined}
         style={{
+          marginTop: '0',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -85,6 +86,7 @@ export const SquareImage = (props: MainHeroProps): JSX.Element => {
         <div
           className="xmc-teaser-footer"
           style={{
+            marginTop: '0',
             flex: '1',
             position: 'relative',
             display: 'flex',
@@ -129,7 +131,7 @@ export const Vertical = (props: MainHeroProps): JSX.Element => {
         id={id ? id : undefined}
         style={{ display: 'flex', flexDirection: 'column' }}
       >
-        <div className="xmc-teaser-content text-dark" style={{ flex: 1 }}>
+        <div className="xmc-teaser-content text-dark" style={{ flex: 1, maxHeight: '50%' }}>
           <div className="xmc-teaser-header">
             <p className="xmc-teaser-category">
               <Text field={props.fields.Headnote} />
@@ -196,6 +198,7 @@ export const Horizontal = (props: MainHeroProps): JSX.Element => {
         <div
           className="xmc-teaser-content text-dark"
           style={{
+            maxWidth: '50%',
             flex: '1',
             padding: '2rem',
             display: 'flex',
@@ -222,6 +225,7 @@ export const Horizontal = (props: MainHeroProps): JSX.Element => {
           className="xmc-teaser-footer"
           style={{
             flex: '1',
+            marginTop: '0',
             position: 'relative',
             display: 'flex',
             alignItems: 'stretch',

@@ -4,3 +4,10 @@
   object-fit: cover; /* or use 'contain' if you want it fully visible */
   display: block;
 }
+
+.cta {
+  margin-top: 1rem;
+  background-color: #005a9c;
+  border-color: #005a9c;
+  font-weight: bold;
+}

@@ -79,3 +79,35 @@ export const Default = (props: GridContainerProps): JSX.Element => {
   }
   return <GridContainerDefaultComponent {...props} />;
 };
+
+export const NoImage = (props: GridContainerProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+
+  if (props.fields) {
+    return (
+      <div
+        className={`component bg-light-grey-teaser ${props.params.styles}`}
+        key={id ? id : undefined}
+        id={id ? id : undefined}
+      >
+        <div className="container py-5">
+          <h1 className="fw-bold">
+            <Text field={props.fields.Title} />
+          </h1>
+          <h2 className="mb-4">
+            <Text field={props.fields.TitleTag} />
+          </h2>
+
+          <div className="row align-items-center">
+
+            {/* Text Column */}
+            <div className="col-md-12 order-md-1">
+              <RichText field={props.fields.Text} />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  return <GridContainerDefaultComponent {...props} />;
+};

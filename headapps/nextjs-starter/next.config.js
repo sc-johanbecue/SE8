@@ -45,6 +45,11 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'geberit.sitecoresandbox.cloud',
+        port: '',
+      },
+      {
+        protocol: 'https',
         hostname: 'xmc-*.**',
         port: '',
       },

@@ -1,7 +1,32 @@
 @import "@sass/abstracts/vars";
 @import "@sass/abstracts/mixins";
 
+.small-icon{
+    .component-content{
+        display: flex;
+        .field-promoicon{
+            max-width: 30px;
+        }
+        .promo-text{
+            width: -webkit-fill-available;
+        }
+    }
+    
+}
+
 .promo {
+    &.small-icon{
+        padding: 50px;
+        .component-content{
+            display: flex;
+        }
+        .field-promoicon{
+            max-width: 30px;
+        }
+        .promo-text{
+            width: -webkit-fill-available;
+        }
+    }
     background: $promo-bg;
     padding: 15px;
     overflow: hidden;
@@ -26,6 +51,7 @@
         img {
             width: 100%;
             height: auto;
+            max-width: -webkit-fill-available;
         }
     }
     .field-promolink {

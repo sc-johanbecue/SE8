@@ -56,7 +56,7 @@ export const Default = (props: ProductListProps): JSX.Element => {
         .catch(() => {
           setError('Failed to fetch products');
         });
-    }, []);
+    }, [props.fields.Brand.value]);
 
     if (error) return <div className="alert alert-danger">{error}</div>;
     if (!products.length) return <div>Loading products...</div>;

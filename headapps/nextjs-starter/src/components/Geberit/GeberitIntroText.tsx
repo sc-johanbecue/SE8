@@ -47,14 +47,14 @@ export const Default = (props: GridContainerProps): JSX.Element => {
         id={id ? id : undefined}
       >
         <div className="container py-5">
-          <h1 className="fw-bold">
+          <h1 className="fw-bold first-headline">
             <Text field={props.fields.Title} />
           </h1>
-          <h2 className="mb-4">
+          <h2 className="mb-4 second-headline">
             <Text field={props.fields.TitleTag} />
           </h2>
 
-          <h3 className="fw-bold mb-4">
+          <h3 className="fw-bold mb-4 third-headline">
             <Text field={props.fields.SubTitle} />
           </h3>
 
@@ -80,6 +80,49 @@ export const Default = (props: GridContainerProps): JSX.Element => {
   return <GridContainerDefaultComponent {...props} />;
 };
 
+export const Inverted = (props: GridContainerProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+
+  if (props.fields) {
+    return (
+      <div
+        className={`component bg-light-grey-teaser ${props.params.styles}`}
+        key={id ? id : undefined}
+        id={id ? id : undefined}
+      >
+        <div className="container py-5">
+          <h1 className="fw-bold first-headline">
+            <Text field={props.fields.Title} />
+          </h1>
+          <h2 className="mb-4 second-headline">
+            <Text field={props.fields.TitleTag} />
+          </h2>
+
+          <h3 className="fw-bold mb-4 third-headline">
+            <Text field={props.fields.SubTitle} />
+          </h3>
+
+          <div className="row align-items-center">
+            {/* Text Column */}
+            <div className="col-md-6 order-md-2">
+              <RichText field={props.fields.Text} />
+              <JssLink field={props.fields.Link} className={`btn btn-primary cta`} />
+            </div>
+            {/* Image Column on right for desktop, on top for mobile */}
+            <div className="col-md-6 order-md-1 mb-4 mb-md-0">
+              <Image
+                field={props.fields.Image}
+                className="img-img-fluid introtextconstrained-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  return <GridContainerDefaultComponent {...props} />;
+};
+
 export const NoImage = (props: GridContainerProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
@@ -91,10 +134,10 @@ export const NoImage = (props: GridContainerProps): JSX.Element => {
         id={id ? id : undefined}
       >
         <div className="container py-5">
-          <h1 className="fw-bold">
+          <h1 className="fw-bold first-headline">
             <Text field={props.fields.Title} />
           </h1>
-          <h2 className="mb-4">
+          <h2 className="mb-4 second-headline">
             <Text field={props.fields.TitleTag} />
           </h2>
 

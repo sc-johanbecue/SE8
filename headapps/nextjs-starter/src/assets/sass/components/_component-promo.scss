@@ -1,44 +1,52 @@
 @import "@sass/abstracts/vars";
 @import "@sass/abstracts/mixins";
 
-.small-icon{
-    .component-content{
-        display: flex;
-        .field-promoicon{
-            max-width: 30px;
-        }
-        .promo-text{
-            width: -webkit-fill-available;
-        }
+.hide-title{
+    .first-headline,.second-headline,.third-headline{
+        display: none;
     }
-    
 }
 
 .promo {
     &.small-icon{
-        padding: 50px;
         .component-content{
             display: flex;
         }
         .field-promoicon{
-            max-width: 30px;
+            max-width: 50px;
         }
         .promo-text{
             width: -webkit-fill-available;
+            color: black;
+            font-size: var(--bs-body-font-size);
         }
     }
-    background: $promo-bg;
-    padding: 15px;
+
+    &.promo-highlight{
+        .component-content{
+            background-color: white;
+        }
+        .promo-text{
+            padding: 15px;
+        }
+        .field-promotext{
+            //padding: 15px;
+            color: black;
+            font-size: var(--bs-body-font-size);
+            h2{
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    background: transparent;
     overflow: hidden;
+    color: #84909d;
+    font-size: 13px;
     box-sizing: border-box;
     >.component-content {
         position: relative;
-        @include clearfix();
-        @include border-basic(all, $promo-border);
-
-        >div {
-            padding: 5px;
-        }
     }
     .zg-height-fix {
         .field-promoicon {
@@ -57,6 +65,11 @@
     .field-promolink {
         margin-top: 5px;
         padding-bottom: 10px;
+        font-size: var(--bs-body-font-size);
+        a{
+            text-decoration: none;
+            color: #376eb4;
+        }
     }
     &.image-full-size {
         img {

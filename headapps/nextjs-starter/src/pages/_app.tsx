@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '/src/assets/Geberit/indent.css';
 import '/src/assets/Geberit/teasergrid.css';
 import '/src/assets/Geberit/containergrid.css';
+import '/src/assets/sass/components/_component-promo.scss';
 
 //import 'bootstrap-icons/font/bootstrap-icons.css';
 

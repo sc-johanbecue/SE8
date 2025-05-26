@@ -142,7 +142,6 @@ export const NoImage = (props: GridContainerProps): JSX.Element => {
           </h2>
 
           <div className="row align-items-center">
-
             {/* Text Column */}
             <div className="col-md-12 order-md-1">
               <RichText field={props.fields.Text} />

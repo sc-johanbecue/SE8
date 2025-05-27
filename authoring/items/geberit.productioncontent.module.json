@@ -1,0 +1,14 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Content",
+    "items": {
+        "path": "Production Content",
+        "includes": [
+            {
+                "name": "Master Intro Texts",
+                "path": "/sitecore/content/geberit-collection/master-website/Data/Master Intro Texts",
+                "scope": "ItemAndDescendants"
+            }
+        ]
+    }
+}

@@ -137,6 +137,7 @@ export const getStaticProps: GetStaticComponentProps = async (rendering) => {
 
 export interface ProductRenderingParams {
   ProductId?: string;
+  ProductIdSelector?: string;
 }
 
 export const resolveProductId = (rendering: {
@@ -144,11 +145,8 @@ export const resolveProductId = (rendering: {
   params?: ProductRenderingParams;
 }): string => {
   const defaultProductId = 'PRO_170102';
-  const routeName = rendering.route?.name;
-  let cleanProductId = (routeName ?? '').split(/[#]/)[0];
-  cleanProductId = (cleanProductId ?? '').split(/[?]/)[0];
 
-  return rendering.params?.ProductId || cleanProductId.toUpperCase() || defaultProductId;
+  return rendering.params?.ProductId || defaultProductId;
 };
 
 export const Default = (props: FooterProps): JSX.Element => {

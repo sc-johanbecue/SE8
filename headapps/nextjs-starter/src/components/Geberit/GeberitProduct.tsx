@@ -183,11 +183,11 @@ export const Default = (props: FooterProps): JSX.Element => {
 
       <h3>{staticProps?.productData.name}</h3>
       <p>
-        <strong>{t('Brand') || 'Brand'}:</strong> {staticProps?.productData.brand}
+        <strong>{t('Brand')}:</strong> {staticProps?.productData.brand}
         <br />
-        <strong>{t('Line') || 'Line'}</strong> {staticProps?.productData.line}
+        <strong>{t('Line')}</strong> {staticProps?.productData.line}
         <br />
-        <strong>{t('Type') || 'Type'}:</strong> {staticProps?.productData.type}
+        <strong>{t('Type')}:</strong> {staticProps?.productData.type}
       </p>
 
       <div className="row" style={{ display: 'flex' }}>
@@ -242,12 +242,12 @@ export const Default = (props: FooterProps): JSX.Element => {
       {props.params.ShowTechnicalAttributes
         ? techAttributes.length > 0 && (
             <div style={{ marginTop: '2rem' }}>
-              <h4>{t('Technical Attributes') || 'Technical Attributes'}</h4>
+              <h4>{t('Technical Attributes')}</h4>
               <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead>
                   <tr>
-                    <th style={{ borderBottom: '1px solid #ccc' }}>{t('Name') || 'Name'}</th>
-                    <th style={{ borderBottom: '1px solid #ccc' }}>{t('Value') || 'Value'}</th>
+                    <th style={{ borderBottom: '1px solid #ccc' }}>{t('Name')}</th>
+                    <th style={{ borderBottom: '1px solid #ccc' }}>{t('Value')}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -271,7 +271,7 @@ export const Default = (props: FooterProps): JSX.Element => {
       {props.params.ShowTechnicalAttributes
         ? accessories.length > 0 && (
             <div style={{ marginTop: '2rem' }}>
-              <h4>{t('Accessories') || 'Accessories'}</h4>
+              <h4>{t('Accessories')}</h4>
               <ul>
                 {accessories.map((a: any) => (
                   <li key={a.id}>

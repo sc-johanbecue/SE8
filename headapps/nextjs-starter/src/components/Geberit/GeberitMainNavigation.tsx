@@ -51,7 +51,7 @@ export const Default = (props: MainNavigationProps): JSX.Element => {
       key={id ? id : undefined}
       id={id ? id : undefined}
     >
-      <div className="sc-587a74fb-0 hvXFzQ" style={{ display: 'inline' }}>
+      <div className="sc-587a74fb-0 hvXFzQ" style={{ display: 'none' }}>
         <div className="sc-gFqAkR pBsox">
           <ul className="sc-2abe06a4-0 bbOiuQ">
             <div className="sc-821ebc6d-6 eMqlDi">

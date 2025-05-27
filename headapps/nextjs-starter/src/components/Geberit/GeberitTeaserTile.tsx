@@ -87,6 +87,7 @@ export const SquareImage = (props: MainHeroProps): JSX.Element => {
           className="xmc-teaser-footer"
           style={{
             marginTop: '0',
+            padding: '2rem',
             flex: '1',
             position: 'relative',
             display: 'flex',
@@ -95,6 +96,16 @@ export const SquareImage = (props: MainHeroProps): JSX.Element => {
             backgroundSize: 'cover',
           }}
         >
+          <div className="xmc-teaser-header">
+            <p className="xmc-teaser-category">
+              <Text field={props.fields.Headnote} />
+            </p>
+            <h2 className="xmc-teaser-title">
+              <Text field={props.fields.Title} />
+              <br />
+            </h2>
+            <Text field={props.fields.SubTitle} />
+          </div>
           <JssLink
             field={props.fields.Link}
             className="xmc-teaser-link text-dark"

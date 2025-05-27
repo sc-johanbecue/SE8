@@ -40,6 +40,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'images.data.geberit.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'edge*.**',
         port: '',
       },

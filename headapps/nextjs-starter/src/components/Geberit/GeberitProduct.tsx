@@ -216,7 +216,7 @@ export const Default = (props: FooterProps): JSX.Element => {
       {props.params.ShowArticles
         ? articles.length > 0 && (
             <div>
-              <h4>{t('Articles') || 'Articles'}</h4>
+              <h4>{t('Articles')}</h4>
               <ul>
                 {articles.map((article) => (
                   <li key={article.id}>

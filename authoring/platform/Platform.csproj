@@ -75,8 +75,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Config\Include\" />
-    <Content Include="App_Config\Include\Sitecore.patch.config" />
-    <Content Include="App_Config\Include\zlinkmanager.patch.config" />
+    <Content Include="App_Config\Include\DetailedRenderingParams.config" />
+    <Content Include="App_Config\Include\LinkManagerDisplayName.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

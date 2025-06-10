@@ -4,14 +4,16 @@ import {
   Text,
   ComponentParams,
   ComponentRendering,
-  useComponentProps,
+  // useComponentProps,
   GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import {
-  RenderingConfigurationFields,
+  // RenderingConfigurationFields,
   fetchRenderingConfiguration,
-  concatenateClassNames,
+  // concatenateClassNames,
 } from './Utility/RenderingConfigurationUtils';
+
+import { useAppearAnimation } from './Utility/useAppearAnimation';
 import 'animate.css';
 
 interface Fields {
@@ -20,7 +22,7 @@ interface Fields {
 
 type HeadingProps = {
   fields: Fields;
-  rendering: ComponentRendering & { params: ComponentParams };
+  rendering: ComponentRendering;
   params: ComponentParams;
 };
 
@@ -34,7 +36,6 @@ export const getStaticProps: GetStaticComponentProps = async (context) => {
 
   const staticProps = await fetchRenderingConfiguration(renderingConfigurationGuid, [
     'LineHeight',
-    'TextColor',
     'FontWeight',
     'FontSize',
     'PaddingStart',
@@ -69,34 +70,37 @@ export const RenderHeading = (
   props: HeadingProps,
   HeadingTag: keyof JSX.IntrinsicElements
 ): JSX.Element => {
-  const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
+  // const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
 
-  const headingClassNames = concatenateClassNames(
-    staticProps?.RenderingConfigurationFields.LineHeight,
-    staticProps?.RenderingConfigurationFields.TextColor,
-    staticProps?.RenderingConfigurationFields.FontWeight,
-    staticProps?.RenderingConfigurationFields.FontSize,
-    staticProps?.RenderingConfigurationFields.PaddingStart,
-    staticProps?.RenderingConfigurationFields.PaddingEnd,
-    staticProps?.RenderingConfigurationFields.PaddingTop,
-    staticProps?.RenderingConfigurationFields.PaddingBottom,
-    staticProps?.RenderingConfigurationFields.MarginStart,
-    staticProps?.RenderingConfigurationFields.MarginEnd,
-    staticProps?.RenderingConfigurationFields.MarginTop,
-    staticProps?.RenderingConfigurationFields.MarginBottom
-  );
+  const animationRef = useAppearAnimation<HTMLHeadingElement>({
+    params: props.params,
+  });
+
+  // const headingClassNames = concatenateClassNames(
+  //   staticProps?.RenderingConfigurationFields.LineHeight,
+  //   staticProps?.RenderingConfigurationFields.FontWeight,
+  //   staticProps?.RenderingConfigurationFields.FontSize,
+  //   staticProps?.RenderingConfigurationFields.PaddingStart,
+  //   staticProps?.RenderingConfigurationFields.PaddingEnd,
+  //   staticProps?.RenderingConfigurationFields.PaddingTop,
+  //   staticProps?.RenderingConfigurationFields.PaddingBottom,
+  //   staticProps?.RenderingConfigurationFields.MarginStart,
+  //   staticProps?.RenderingConfigurationFields.MarginEnd,
+  //   staticProps?.RenderingConfigurationFields.MarginTop,
+  //   staticProps?.RenderingConfigurationFields.MarginBottom
+  // );
 
   if (props.fields) {
     return (
       <HeadingTag
+        ref={animationRef}
         key={id ? id : undefined}
         id={id ? id : undefined}
-        className={`component position-relative ${headingClassNames} ${
-          props.params.Styles ? props.params.Styles : ''
-        }`}
+        className={`component position-relative`}
       >
         <Text field={props.fields.Title} />
+        JOHAN
       </HeadingTag>
     );
   }

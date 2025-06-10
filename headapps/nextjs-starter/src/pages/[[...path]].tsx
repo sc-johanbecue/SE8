@@ -4,6 +4,7 @@ import NotFound from 'src/NotFound';
 import Layout from 'src/Layout';
 import LayoutImagineCruising from 'src/Layout.ImagineCruising';
 import LayoutGeberit from 'src/Layout.Geberit';
+import RoyalGD from 'src/Layout.RoyalGD';
 
 import {
   SitecoreContext,
@@ -41,6 +42,7 @@ const SitecorePage = ({
   const geberitSingapore = layoutData.sitecore.context.site?.name == 'singapore';
   const geberitSwitserland = layoutData.sitecore.context.site?.name == 'switserland';
   const geberitMaster = layoutData.sitecore.context.site?.name == 'master-website';
+  const royalGD = layoutData.sitecore.context.site?.name == 'royal-gd';
 
   return (
     <ComponentPropsContext value={componentProps}>
@@ -53,6 +55,8 @@ const SitecorePage = ({
           <LayoutImagineCruising layoutData={layoutData} headLinks={headLinks} />
         ) : geberitMaster || geberitGermany || geberitSingapore || geberitSwitserland ? (
           <LayoutGeberit layoutData={layoutData} headLinks={headLinks} />
+        ) : royalGD ? (
+          <RoyalGD layoutData={layoutData} headLinks={headLinks} />
         ) : (
           // This is the default layout for the app
           <Layout layoutData={layoutData} headLinks={headLinks} />

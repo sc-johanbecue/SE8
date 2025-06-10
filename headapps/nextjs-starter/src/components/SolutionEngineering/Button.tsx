@@ -7,12 +7,14 @@ import {
   useComponentProps,
   GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+
 import {
   RenderingConfigurationFields,
   fetchRenderingConfiguration,
   concatenateClassNames,
 } from './Utility/RenderingConfigurationUtils';
 
+import { useAppearAnimation } from './Utility/useAppearAnimation';
 import 'animate.css';
 
 interface Fields {
@@ -21,16 +23,11 @@ interface Fields {
 
 type ButtonProps = {
   fields: Fields;
-  rendering: ComponentRendering & { params: ComponentParams };
+  rendering: ComponentRendering;
   params: ComponentParams;
 };
 
-//export const getServerSideProps: GetServerSideComponentProps
 export const getStaticProps: GetStaticComponentProps = async (context) => {
-  console.log('Starting getStaticProps');
-
-  // Extract the renderingConfiguration GUID from the context params.
-  // Note: if the field is nested differently, adjust accordingly.
   const renderingConfigurationGuid = context?.params?.RenderingConfiguration as string;
 
   const staticProps = await fetchRenderingConfiguration(renderingConfigurationGuid, [
@@ -48,14 +45,12 @@ export const getStaticProps: GetStaticComponentProps = async (context) => {
     'MarginEnd',
     'MarginTop',
     'MarginBottom',
+    'AppearAnimation',
+    'AppearAnimationSpeed',
+    'AppearAnimationIteration',
+    'AppearAnimationDelay',
   ]);
 
-  console.log(
-    ('getStaticProps - FieldName: PrefixImage' +
-      ' - Value: ' +
-      staticProps.PrefixImage?.value.src) as string
-  );
-  console.log('Ended getStaticProps');
   return staticProps;
 };
 
@@ -67,12 +62,15 @@ const ButtonDefaultComponent = (props: ButtonProps): JSX.Element => (
   </div>
 );
 
-// Helper function to render a Button with a dynamic tag
 export const Default = (props: ButtonProps): JSX.Element => {
   const staticProps = useComponentProps<RenderingConfigurationFields>(props.rendering.uid);
   const id = props.params.RenderingIdentifier;
 
-  const linkClassNames = concatenateClassNames(
+  const animationRef = useAppearAnimation<HTMLAnchorElement>({
+    params: props.params,
+  });
+
+  const baseClassNames = concatenateClassNames(
     staticProps?.RenderingConfigurationFields.ButtonType,
     staticProps?.RenderingConfigurationFields.ButtonColor,
     staticProps?.RenderingConfigurationFields.ButtonHorizontalPadding,
@@ -89,15 +87,17 @@ export const Default = (props: ButtonProps): JSX.Element => {
     staticProps?.RenderingConfigurationFields.MarginBottom
   );
 
-  if (props.fields) {
+  if (props.fields?.Link) {
     return (
       <JssLink
+        ref={animationRef}
         key={id || undefined}
         id={id || undefined}
         field={props.fields.Link}
-        className={`component btn ${linkClassNames} ${props.params.styles}`}
+        className={`component btn ${baseClassNames} ${props.params.styles}`}
       />
     );
   }
+
   return <ButtonDefaultComponent {...props} />;
 };

@@ -114,7 +114,7 @@ export async function fetchRenderingConfiguration(
     console.error('Error fetching external data:', error);
   }
 
-  // console.log(externalData);
+  console.log(externalData);
   // console.log('Ended fetchRenderingConfiguration');
 
   return { RenderingConfigurationFields: externalData };

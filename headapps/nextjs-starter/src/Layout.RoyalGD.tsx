@@ -78,7 +78,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           href="https://www.gdanimalhealth.com/favicons/gddeventer/apple-touch-icon-precomposed.png"
           rel="apple-touch-icon"
         />
-        <link href="/public/RoyalGD/main.css" rel="stylesheet" />
+        <link href="/RoyalGD/main.css" rel="stylesheet" />
         <meta
           name="description"
           content="Royal GD is a leading organisation in animal health and animal production. GD has supported industrial customers, governments, veterinarians and farmers by providing animal health programmes and laboratory diagnostic services."
@@ -97,12 +97,12 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
 
       {/* root placeholder for the app, which we add components to using route data */}
       <div className={mainClassPageEditing}>
-        <header>
-          <div id="header">{route && <Placeholder name="headless-header" rendering={route} />}</div>
+        <header className="header">
+          {route && <Placeholder name="headless-header" rendering={route} />}
         </header>
         <main>{route && <Placeholder name="headless-main" rendering={route} />}</main>
-        <footer>
-          <div id="footer">{route && <Placeholder name="headless-footer" rendering={route} />}</div>
+        <footer className="footer">
+          {route && <Placeholder name="headless-footer" rendering={route} />}
         </footer>
       </div>
 

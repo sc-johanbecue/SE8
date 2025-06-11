@@ -1,6 +1,11 @@
 import React from 'react';
 import { TextField, Text, Image as JssImage, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
 
+import { useAppearAnimation } from '../SolutionEngineering/Utility/useSimpleAppearAnimation';
+import 'animate.css';
+
+import { useHasMounted } from '../SolutionEngineering/Utility/useHasMounted';
+
 interface Fields {
   Title: TextField;
   Image: ImageField;
@@ -22,9 +27,17 @@ const CardDefaultComponent = (props: CardProps): JSX.Element => (
 export const Default = (props: CardProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
 
+  const animationRef = useAppearAnimation<HTMLDivElement>({
+    params: props.params,
+  });
+  const hasMounted = useHasMounted();
+
+  if (!hasMounted) return <></>;
+
   return (
     <>
       <div
+        ref={animationRef}
         key={id ? id : undefined}
         id={id ? id : undefined}
         className={`component card card--image ${props.params.styles}`}

@@ -16636,3 +16636,9 @@ ul.vacancyList li {
 [class*=column]+[class*=column]:last-child {
     float: left
 }
+
+@media (max-width: 768px) {
+  .slide-overlay {
+    display: none !important;
+  }
+}

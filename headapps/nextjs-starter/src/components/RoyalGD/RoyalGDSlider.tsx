@@ -69,20 +69,21 @@ export const Default = (props: SliderProps): JSX.Element => {
                   <Text field={item.fields.Title} />
                 </h2>
               </div>
-              <div className="slide-overlay"></div>
-              <ul className="slick-pager" role="tablist">
-                {sliderItems.map((item, index) => (
-                  <li
-                    className={index === currentIndex ? 'slick-active' : ''}
-                    role="presentation"
-                    key={index}
-                  >
-                    <a>
-                      <Text field={item.fields.Title} />
-                    </a>
-                  </li>
-                ))}
-              </ul>
+              <div className="slide-overlay">
+                <ul className="slick-pager" role="tablist">
+                  {sliderItems.map((item, index) => (
+                    <li
+                      className={index === currentIndex ? 'slick-active' : ''}
+                      role="presentation"
+                      key={index}
+                    >
+                      <a>
+                        <Text field={item.fields.Title} />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </li>
           ))}
         </ul>

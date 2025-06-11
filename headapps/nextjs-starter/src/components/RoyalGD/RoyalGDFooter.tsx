@@ -2,12 +2,13 @@ import React from 'react';
 import {
   TextField,
   Text,
-  // Link as JssLink,
+  Link as JssLink,
   LinkField,
-  // Image as JssImage,
+  Image as JssImage,
   ImageField,
-  // useSitecoreContext,
+  useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import { useHasMounted } from '../SolutionEngineering/Utility/useHasMounted';
 
 interface Fields {
   SocialMediaTitle: TextField;
@@ -32,7 +33,8 @@ const FooterDefaultComponent = (props: FooterProps): JSX.Element => (
 
 export const Default = (props: FooterProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
-  // const { sitecoreContext } = useSitecoreContext();
+  const { sitecoreContext } = useSitecoreContext();
+  const hasMounted = useHasMounted();
 
   return (
     <>
@@ -103,12 +105,12 @@ export const Default = (props: FooterProps): JSX.Element => {
             <p>
               <span style={{ fontSize: '14px' }}>
                 <strong>
-                  <Text field={props.fields.SocialMediaTitle} />
+                  {!hasMounted ? <></> : <Text field={props.fields.SocialMediaTitle} />}
                 </strong>
                 <br />
               </span>
               &nbsp;
-              {/* {!sitecoreContext.pageEditing ? (
+              {!sitecoreContext.pageEditing && hasMounted ? (
                 <>
                   <JssLink field={props.fields.SocialMediaLink1}>
                     <JssImage field={props.fields.SocialMediaImage1} />
@@ -122,7 +124,7 @@ export const Default = (props: FooterProps): JSX.Element => {
                   <JssImage field={props.fields.SocialMediaImage1} />{' '}
                   <JssImage field={props.fields.SocialMediaImage2} />
                 </>
-              )} */}
+              )}
             </p>
           </div>
         </div>

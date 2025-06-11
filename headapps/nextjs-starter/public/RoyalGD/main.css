@@ -16657,3 +16657,7 @@ ul.vacancyList li {
     flex: 0 0 auto;
     width: 50%;
 }
+
+.row.column-splitter {
+    display:flex;
+}

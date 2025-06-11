@@ -5,7 +5,7 @@ import Bootstrap from 'src/Bootstrap';
 
 //GEBERIT
 //import '/src/assets/Geberit/global.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import '/src/assets/Geberit/indent.css';
 // import '/src/assets/Geberit/teasergrid.css';

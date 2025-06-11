@@ -16642,3 +16642,8 @@ ul.vacancyList li {
     display: none !important;
   }
 }
+
+.col-xl-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}

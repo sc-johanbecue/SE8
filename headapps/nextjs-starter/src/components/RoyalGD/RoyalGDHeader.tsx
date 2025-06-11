@@ -220,15 +220,6 @@ export const Default = (props: HeaderProps): JSX.Element => {
                 <li className="menu__item">
                   <a
                     className="menu__link"
-                    data-submenu="submenu-5"
-                    href="https://www.gdanimalhealth.com/Disease-control"
-                  >
-                    Animal health
-                  </a>
-                </li>
-                <li className="menu__item">
-                  <a
-                    className="menu__link"
                     data-submenu="submenu-6"
                     href="https://www.gdanimalhealth.com/About-us"
                   >

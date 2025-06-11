@@ -16495,7 +16495,6 @@ ul.vacancyList li {
     width: calc(100% - 320px);
     color: #fff;
     padding: 3rem 2rem 2rem;
-    display: none
 }
 
 @media screen and (max-width: 63.99875em) {

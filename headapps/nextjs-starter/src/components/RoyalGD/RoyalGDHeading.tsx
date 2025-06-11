@@ -1,9 +1,8 @@
 import React from 'react';
-import { TextField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { TextField, Text } from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
-  Title: TextField;
-  Text: TextField;
+  Heading: TextField;
 }
 
 type HeadingProps = {
@@ -28,7 +27,9 @@ export const Default = (props: HeadingProps): JSX.Element => {
       id={id ? id : undefined}
       className={`component columns small-12 ${props.params.styles}`}
     >
-      <h3>News</h3>
+      <h3>
+        <Text field={props.fields.Heading} />
+      </h3>
       <hr />
     </div>
   );

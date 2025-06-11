@@ -83,18 +83,12 @@ export const Default = (props: HeaderProps): JSX.Element => {
               </ul>
               <ul className="list-inline language-switch">
                 <li id="phlanguage_0_languageRepeater_LanguageLi_0" className="EN active">
-                  <a
-                    id="phlanguage_0_languageRepeater_btnLang_0"
-                    href="javascript:__doPostBack(phlanguage_0$languageRepeater$ctl00$btnLang&#39;,&#39;)"
-                  >
+                  <a id="phlanguage_0_languageRepeater_btnLang_0" href="#">
                     en
                   </a>
                 </li>
                 <li id="phlanguage_0_languageRepeater_LanguageLi_1" className="NL">
-                  <a
-                    id="phlanguage_0_languageRepeater_btnLang_1"
-                    href="javascript:__doPostBack(phlanguage_0$languageRepeater$ctl01$btnLang&#39;,&#39;)"
-                  >
+                  <a id="phlanguage_0_languageRepeater_btnLang_1" href="#">
                     nl
                   </a>
                 </li>

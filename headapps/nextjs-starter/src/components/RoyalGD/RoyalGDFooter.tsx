@@ -1,9 +1,20 @@
 import React from 'react';
-import { TextField } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  TextField,
+  Text,
+  // Link as JssLink,
+  LinkField,
+  // Image as JssImage,
+  ImageField,
+  // useSitecoreContext,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
-  Title: TextField;
-  Text: TextField;
+  SocialMediaTitle: TextField;
+  SocialMediaLink1: LinkField;
+  SocialMediaLink2: LinkField;
+  SocialMediaImage1: ImageField;
+  SocialMediaImage2: ImageField;
 }
 
 type FooterProps = {
@@ -21,6 +32,7 @@ const FooterDefaultComponent = (props: FooterProps): JSX.Element => (
 
 export const Default = (props: FooterProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
+  // const { sitecoreContext } = useSitecoreContext();
 
   return (
     <>
@@ -90,26 +102,27 @@ export const Default = (props: FooterProps): JSX.Element => {
           <div className="columns small-12 medium-6 large-3" data-equalizer-watch>
             <p>
               <span style={{ fontSize: '14px' }}>
-                <strong>Follow us on social media</strong>
+                <strong>
+                  <Text field={props.fields.SocialMediaTitle} />
+                </strong>
                 <br />
-                <div className="socialbar"></div>
               </span>
               &nbsp;
-              <a
-                href="https://www.linkedin.com/company/397905?trk=companies_home_ycp_logo_gd-de-gezondheidsdienst-voor-dieren-"
-                target="_blank"
-              >
-                <img
-                  alt=""
-                  src="https://www.gdanimalhealth.com/-/media/Images/GDDiergezondheid/Social-Media-Iconen/icon_linkedIn-png.png"
-                />
-              </a>
-              <a href="https://twitter.com/GD_Deventer" target="_blank">
-                <img
-                  alt=""
-                  src="https://www.gdanimalhealth.com/-/media/Images/GDDiergezondheid/Social-Media-Iconen/icon_twitter-png.png"
-                />
-              </a>
+              {/* {!sitecoreContext.pageEditing ? (
+                <>
+                  <JssLink field={props.fields.SocialMediaLink1}>
+                    <JssImage field={props.fields.SocialMediaImage1} />
+                  </JssLink>
+                  <JssLink field={props.fields.SocialMediaLink2}>
+                    <JssImage field={props.fields.SocialMediaImage2} />
+                  </JssLink>
+                </>
+              ) : (
+                <>
+                  <JssImage field={props.fields.SocialMediaImage1} />{' '}
+                  <JssImage field={props.fields.SocialMediaImage2} />
+                </>
+              )} */}
             </p>
           </div>
         </div>

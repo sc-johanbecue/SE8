@@ -38,18 +38,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           <link rel={headLink.rel} key={headLink.href} href={headLink.href} />
         ))}
 
-        <script>
-          {`(function (w, d, s, l, i) {
-         w[l] = w[l] || []; w[l].push({
-             'gtm.start':
-                 new Date().getTime(), event: 'gtm.js'
-         }); var f = d.getElementsByTagName(s)[0],
-             j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-         })(window, document, 'script', 'dataLayer', 'GTM-W9DMHMK');
-      `}
-        </script>
-
         <title>Royal GD | AHEAD IN ANIMAL HEALTH</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta name="mobileoptimized" content="0" />
@@ -57,22 +45,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="author" content="GD" />
         <link
-          rel="stylesheet"
-          href="https://www.gdanimalhealth.com/assets/styles/CookieMelding.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://www.gdanimalhealth.com/assets/styles/CookieSettings.css"
-        />
-        <link
           type="image/x-icon"
           href="https://www.gdanimalhealth.com/favicons/gddeventer/favicon.ico"
           rel="icon"
-        />
-        <link
-          type="image/x-icon"
-          href="https://www.gdanimalhealth.com/favicons/gddeventer/favicon.ico"
-          rel="shortcut icon"
         />
         <link
           href="https://www.gdanimalhealth.com/favicons/gddeventer/apple-touch-icon-precomposed.png"
@@ -90,9 +65,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         <meta http-equiv="Content-Language" content="en" />
         <meta name="language" content="en" />
         <meta name="category" content="overig" />
-        <meta name="crawler:taxonomies" />
-        <meta name="WID" content="4dc3a592-c4e2-4ff4-bff0-9de3de31fa6a" />
-        <meta name="CUSA" content="4dc3a592-c4e2-4ff4-bff0-9de3de31fa6a" />
       </Head>
 
       {/* root placeholder for the app, which we add components to using route data */}
@@ -106,16 +78,16 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         </footer>
       </div>
 
-      <script
+      {/* <script
         type="text/javascript"
         src="https://www.gdanimalhealth.com/assets/scripts/CookieConsent.js"
         async
-      ></script>
-      <script
+      ></script> */}
+      {/* <script
         data-main="https://www.gdanimalhealth.com/assets/scripts/main.js"
         src="https://www.gdanimalhealth.com/assets/scripts/vendor/requirejs/require.js"
         async
-      ></script>
+      ></script> */}
       <div className="callout browser-notification hide" data-closable>
         <h3 className="title">Oude browser</h3>
         <p>

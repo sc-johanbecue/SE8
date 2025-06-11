@@ -1,9 +1,9 @@
 import React from 'react';
-import { TextField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { TextField, Text, Image as JssImage, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
   Title: TextField;
-  Text: TextField;
+  Image: ImageField;
 }
 
 type CardProps = {
@@ -32,15 +32,12 @@ export const Default = (props: CardProps): JSX.Element => {
       >
         <a href="https://www.gdanimalhealth.com/contract-research-organisation">
           <div className="card-image">
-            <img
-              src="https://www.gdanimalhealth.com/-/media/Images/GDDiergezondheid/CallToAction/CRO/cro-home-cta.png?h=221&amp;iar=0&amp;w=372&amp;hash=B2C07186D9372A3602724992DD8F6B97"
-              alt=""
-              width="372"
-              height="221"
-            />
+            <JssImage field={props.fields.Image} />
           </div>
           <div className="card-divider">
-            <span>CRO</span>
+            <span>
+              <Text field={props.fields.Title} />
+            </span>
           </div>
         </a>
       </div>

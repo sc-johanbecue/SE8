@@ -73,7 +73,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           {route && <Placeholder name="headless-header" rendering={route} />}
         </header>
         <main>
-          <div id="content" style={{marginLeft: "10px"}}>{route && <Placeholder name="headless-main" rendering={route} />}</div>
+          <div id="content" style={{ marginLeft: '10px' }}>
+            {route && <Placeholder name="headless-main" rendering={route} />}
+          </div>
         </main>
         <footer className="footer">
           {route && <Placeholder name="headless-footer" rendering={route} />}

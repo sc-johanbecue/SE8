@@ -8,6 +8,7 @@ import {
   RichText,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
+
 interface News {
   fields: {
     Image: ImageField;

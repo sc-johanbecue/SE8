@@ -229,15 +229,6 @@ export const Default = (props: HeaderProps): JSX.Element => {
                 <li className="menu__item">
                   <a
                     className="menu__link"
-                    data-submenu="submenu-7"
-                    href="https://www.gdanimalhealth.com/News-landing"
-                  >
-                    News
-                  </a>
-                </li>
-                <li className="menu__item">
-                  <a
-                    className="menu__link"
                     data-submenu="submenu-8"
                     href="https://www.gdanimalhealth.com/Forms"
                   >

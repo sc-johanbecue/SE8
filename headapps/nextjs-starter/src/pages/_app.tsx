@@ -13,14 +13,14 @@ import Bootstrap from 'src/Bootstrap';
 // import '/src/assets/Geberit/geberit-tiles.scss';
 // import '/src/assets/sass/components/_component-promo.scss';
 
-// SOLUTIONENGINEERING
-// import 'bootstrap-icons/font/bootstrap-icons.css';
-// import '/src/assets/SolutionEngineering/theme.css';
-// import '/src/assets/SolutionEngineering/theme-elements.css';
-// import '/src/assets/SolutionEngineering/theme-blog.css';
-// import '/src/assets/SolutionEngineering/theme-shop.css';
-// import '/src/assets/SolutionEngineering/custom.css';
-// import '/src/assets/SolutionEngineering/skins/skin-corporate-10.css';
+//SOLUTIONENGINEERING
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import '/src/assets/SolutionEngineering/theme.css';
+import '/src/assets/SolutionEngineering/theme-elements.css';
+import '/src/assets/SolutionEngineering/theme-blog.css';
+import '/src/assets/SolutionEngineering/theme-shop.css';
+import '/src/assets/SolutionEngineering/custom.css';
+import '/src/assets/SolutionEngineering/skins/skin-corporate-10.css';
 
 // import 'assets/MajidAlFuttaim/main.css';
 function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {

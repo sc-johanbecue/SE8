@@ -159,24 +159,15 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
         console.log('Cruise types:', cruise.cruise_type);
         console.log('Regions:', cruise.regions);
         // Determine category based on cruise type
-        let category = 'Ocean'; // Default
-        if (cruise.cruise_type && cruise.cruise_type.length > 0) {
-          // Check if any cruise type contains 'River'
-          if (cruise.cruise_type.some((type) => type.toLowerCase().includes('river'))) {
-            category = 'River';
-            console.log('Category determined as River');
-          } else if (cruise.cruise_type.some((type) => type.toLowerCase().includes('ocean'))) {
-            category = 'Ocean';
-            console.log('Category determined as Ocean');
-          } else {
-            // Use the first cruise type if it doesn't match our known types
-            category = cruise.cruise_type[0];
-            console.log('Category determined as:', category);
-          }
-        } else {
-          console.log('No cruise types found, using default Ocean');
-        }
-        const transformedCruise = {
+        const category =
+          cruise.cruise_type && cruise.cruise_type.length > 0
+            ? cruise.cruise_type.some((type) => type.toLowerCase().includes('river'))
+              ? 'River'
+              : cruise.cruise_type.some((type) => type.toLowerCase().includes('ocean'))
+              ? 'Ocean'
+              : cruise.cruise_type[0]
+            : 'Ocean';
+        return {
           id: cruise.vendor_id,
           name: cruise.name,
           description: cruise.description,
@@ -184,22 +175,25 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
           price: parseFloat(cruise.cruise_only_price) || 0,
           duration: `${cruise.cruise_nights} days`,
           destination: `${cruise.starts_at} to ${cruise.ends_at}`,
-          imageUrl: `https://placehold.co/600x400?text=${encodeURIComponent(cruise.ship_title)}`, // Placeholder image with ship name
+          imageUrl: `https://placehold.co/600x400?text=${encodeURIComponent(cruise.ship_title)}`,
         };
-        console.log('Transformed cruise:', transformedCruise);
-        return transformedCruise;
       });
 
-      console.log('All transformed cruises:', transformedCruises);
-      console.log('Categories found:', [...new Set(transformedCruises.map((c) => c.category))]);
+      // Deduplicate by id
+      const uniqueCruises = transformedCruises.filter(
+        (cruise, index, self) => index === self.findIndex((c) => c.id === cruise.id)
+      );
 
-      if (transformedCruises.length === 0) {
+      console.log('All transformed cruises:', uniqueCruises);
+      console.log('Categories found:', [...new Set(uniqueCruises.map((c) => c.category))]);
+
+      if (uniqueCruises.length === 0) {
         console.error('No cruises found in data');
         throw new Error('No cruise data found');
       }
 
-      console.log('Transformed cruises count:', transformedCruises.length);
-      setCruises(transformedCruises);
+      console.log('Transformed cruises count:', uniqueCruises.length);
+      setCruises(uniqueCruises);
     };
 
     fetchCruises();
@@ -272,23 +266,42 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
           <button onClick={() => setSelectedCruiseId(null)} className="back-button">
             ← Back to List
           </button>
-          <div className="cruise-detail-content">
-            <img src={selectedCruise.imageUrl} alt={selectedCruise.name} />
-            <h3>{selectedCruise.name}</h3>
-            <p>{selectedCruise.description}</p>
-            <div className="cruise-info">
-              <p>
-                <strong>Destination:</strong> {selectedCruise.destination}
-              </p>
-              <p>
-                <strong>Duration:</strong> {selectedCruise.duration}
-              </p>
-              <p>
-                <strong>Price:</strong> ${selectedCruise.price}
-              </p>
-              <p>
-                <strong>Category:</strong> {selectedCruise.category}
-              </p>
+          <div className="cruise-detail-content styled-card">
+            {/* Promo Banner and Image Grid */}
+            <div className="promo-image-grid">
+              <div className="main-image">
+                <img src={selectedCruise.imageUrl} alt={selectedCruise.name} />
+              </div>
+              <div className="side-images">
+                <img src={selectedCruise.imageUrl} alt="Side 1" />
+                <img src={selectedCruise.imageUrl} alt="Side 2" />
+              </div>
+              <div className="promo-banner">
+                <div>EXCLUSIVE PROMOTION</div>
+                <div className="promo-price">55 NIGHTS FROM AN INCREDIBLE</div>
+                <div className="promo-price-large">£{selectedCruise.price}pp</div>
+                <div>SAVE UP TO 41% PER COUPLE!</div>
+                <div className="promo-date">OFFER EXTENDED ENDS - 25.06.2025</div>
+              </div>
+            </div>
+            {/* Highlight Bar */}
+            <div className="highlight-bar">SAVE UP TO 41% PER COUPLE</div>
+            {/* Title */}
+            <h3 className="cruise-title">{selectedCruise.name}</h3>
+            {/* Details Row */}
+            <div className="cruise-details-row">
+              <span>🛳️ {selectedCruise.category}</span>
+              <span>📅 {selectedCruise.duration}</span>
+              <span>🚢 {selectedCruise.destination}</span>
+            </div>
+            {/* Price and CTA */}
+            <div className="cruise-price-row">
+              <div>
+                <span className="from-label">from</span>
+                <span className="price-large">£{selectedCruise.price}</span>
+                <span className="pp-label">pp</span>
+              </div>
+              <button className="discover-btn">Discover more</button>
             </div>
           </div>
         </div>
@@ -419,6 +432,97 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
           border-radius: 4px;
           font-size: 0.875rem;
           margin-top: 0.5rem;
+        }
+
+        .styled-card {
+          background: #fff;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          padding: 0;
+          overflow: hidden;
+        }
+        .promo-image-grid {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          position: relative;
+        }
+        .main-image img {
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+        }
+        .side-images {
+          display: flex;
+          gap: 2px;
+        }
+        .side-images img {
+          width: 50%;
+          height: 60px;
+          object-fit: cover;
+        }
+        .promo-banner {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background: #b3002d;
+          color: #fff;
+          padding: 8px;
+          border-radius: 4px;
+          text-align: right;
+          font-size: 0.9rem;
+        }
+        .promo-price-large {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        .highlight-bar {
+          background: #00897b;
+          color: #fff;
+          text-align: center;
+          padding: 8px 0;
+          font-weight: bold;
+          font-size: 1rem;
+        }
+        .cruise-title {
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin: 1rem 0 0.5rem 0;
+        }
+        .cruise-details-row {
+          display: flex;
+          gap: 1rem;
+          font-size: 0.95rem;
+          color: #333;
+          margin-bottom: 1rem;
+        }
+        .cruise-price-row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top: 1px solid #eee;
+          padding-top: 1rem;
+          margin-top: 1rem;
+        }
+        .price-large {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #b3002d;
+          margin: 0 0.25rem;
+        }
+        .from-label,
+        .pp-label {
+          font-size: 1rem;
+          color: #333;
+        }
+        .discover-btn {
+          background: #111;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          padding: 0.75rem 1.5rem;
+          font-size: 1rem;
+          cursor: pointer;
         }
       `}</style>
     </div>

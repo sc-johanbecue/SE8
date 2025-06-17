@@ -18,6 +18,7 @@ interface ApiCruiseItem {
   name: string;
   description: string;
   cruise_type: string[];
+  regions: string[];
   cruise_only_price: string;
   cruise_nights: number;
   starts_at: string;
@@ -96,7 +97,8 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
                 vendor_id: 'CARIB1',
                 name: 'Caribbean Paradise',
                 description: '7-day cruise through the Caribbean islands',
-                cruise_type: ['Ocean', 'Caribbean'],
+                cruise_type: ['Ocean'],
+                regions: ['Caribbean'],
                 cruise_only_price: '999.00',
                 cruise_nights: 7,
                 starts_at: 'Miami',
@@ -109,7 +111,8 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
                 vendor_id: 'MED1',
                 name: 'Mediterranean Explorer',
                 description: '10-day cruise through the Mediterranean',
-                cruise_type: ['Ocean', 'Mediterranean'],
+                cruise_type: ['Ocean'],
+                regions: ['Mediterranean'],
                 cruise_only_price: '1499.00',
                 cruise_nights: 10,
                 starts_at: 'Barcelona',
@@ -117,6 +120,20 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
                 ship_title: 'Mediterranean Star',
                 operator_title: 'Mediterranean Cruises',
                 official_link: 'https://example.com/mediterranean-cruise',
+              },
+              {
+                vendor_id: 'RIVER1',
+                name: 'European River Cruise',
+                description: '7-day river cruise through Europe',
+                cruise_type: ['River'],
+                regions: ['Europe'],
+                cruise_only_price: '1299.00',
+                cruise_nights: 7,
+                starts_at: 'Amsterdam',
+                ends_at: 'Budapest',
+                ship_title: 'River Explorer',
+                operator_title: 'River Cruises',
+                official_link: 'https://example.com/river-cruise',
               },
             ],
           };
@@ -137,16 +154,44 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
       }
       const apiData = data as ApiResponse;
       // Transform API data to our component's format
-      const transformedCruises: CruiseItem[] = apiData.cruises.map((cruise) => ({
-        id: cruise.vendor_id,
-        name: cruise.name,
-        description: cruise.description,
-        category: cruise.cruise_type[0] || 'Ocean', // Use first cruise type or default to Ocean
-        price: parseFloat(cruise.cruise_only_price) || 0,
-        duration: `${cruise.cruise_nights} days`,
-        destination: `${cruise.starts_at} to ${cruise.ends_at}`,
-        imageUrl: `https://placehold.co/600x400?text=${encodeURIComponent(cruise.ship_title)}`, // Placeholder image with ship name
-      }));
+      const transformedCruises: CruiseItem[] = apiData.cruises.map((cruise) => {
+        console.log('Processing cruise:', cruise.name);
+        console.log('Cruise types:', cruise.cruise_type);
+        console.log('Regions:', cruise.regions);
+        // Determine category based on cruise type
+        let category = 'Ocean'; // Default
+        if (cruise.cruise_type && cruise.cruise_type.length > 0) {
+          // Check if any cruise type contains 'River'
+          if (cruise.cruise_type.some((type) => type.toLowerCase().includes('river'))) {
+            category = 'River';
+            console.log('Category determined as River');
+          } else if (cruise.cruise_type.some((type) => type.toLowerCase().includes('ocean'))) {
+            category = 'Ocean';
+            console.log('Category determined as Ocean');
+          } else {
+            // Use the first cruise type if it doesn't match our known types
+            category = cruise.cruise_type[0];
+            console.log('Category determined as:', category);
+          }
+        } else {
+          console.log('No cruise types found, using default Ocean');
+        }
+        const transformedCruise = {
+          id: cruise.vendor_id,
+          name: cruise.name,
+          description: cruise.description,
+          category: category,
+          price: parseFloat(cruise.cruise_only_price) || 0,
+          duration: `${cruise.cruise_nights} days`,
+          destination: `${cruise.starts_at} to ${cruise.ends_at}`,
+          imageUrl: `https://placehold.co/600x400?text=${encodeURIComponent(cruise.ship_title)}`, // Placeholder image with ship name
+        };
+        console.log('Transformed cruise:', transformedCruise);
+        return transformedCruise;
+      });
+
+      console.log('All transformed cruises:', transformedCruises);
+      console.log('Categories found:', [...new Set(transformedCruises.map((c) => c.category))]);
 
       if (transformedCruises.length === 0) {
         console.error('No cruises found in data');

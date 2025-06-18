@@ -1,8 +1,0 @@
-﻿---
-Role: |
-  sitecore\Internal Editor
-MemberOf:
-  Role: |
-    sitecore\Author
-  Role: |
-    sitecore\Designer

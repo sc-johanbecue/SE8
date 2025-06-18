@@ -11,25 +11,20 @@ interface CruiseItem {
   duration: string;
   destination: string;
   imageUrl: string;
+  ship: string;
+  operator: string;
+  startsOn: string;
+  officialLink: string;
 }
 
 interface ApiCruiseItem {
-  vendor_id: string;
   name: string;
-  description: string;
-  cruise_type: string[];
-  regions: string[];
-  cruise_only_price: string;
-  cruise_nights: number;
-  starts_at: string;
-  ends_at: string;
-  ship_title: string;
-  operator_title: string;
+  ship: string;
+  operator: string;
+  region: string[];
+  starts_on: string;
+  price: string;
   official_link: string;
-}
-
-interface ApiResponse {
-  cruises: ApiCruiseItem[];
 }
 
 interface CruisingComponentProps extends ComponentProps {
@@ -53,21 +48,40 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  // New search filters
+  const [regionFilter, setRegionFilter] = useState<string>('');
+  const [shipFilter, setShipFilter] = useState<string>('');
+  const [operatorFilter, setOperatorFilter] = useState<string>('');
+  const [startsAfterFilter, setStartsAfterFilter] = useState<string>('');
+
   useEffect(() => {
     const fetchCruises = async () => {
       try {
-        const url = fields.cruisesUrl.value?.toString() || '';
-        console.log('Attempting to fetch from URL:', url);
-        if (!url) {
+        // Get the external URL from Sitecore fields
+        const externalUrl = fields.cruisesUrl.value?.toString() || '';
+        console.log('External URL from Sitecore:', externalUrl);
+        if (!externalUrl) {
           console.error('Cruises URL is empty or undefined');
           throw new Error('Cruises URL is not defined');
         }
 
-        // For development, try local data if remote fetch fails
+        // Use local API route to avoid CORS issues
+        const baseUrl = '/api/cruises';
+        console.log('Base URL:', baseUrl);
+
+        // Build URL with search parameters
+        const url = new URL(baseUrl, window.location.origin);
+        url.searchParams.set('url', externalUrl); // Pass the external URL as parameter
+        if (regionFilter) url.searchParams.set('region', regionFilter);
+        if (shipFilter) url.searchParams.set('ship', shipFilter);
+        if (operatorFilter) url.searchParams.set('operator', operatorFilter);
+        if (startsAfterFilter) url.searchParams.set('starts_after', startsAfterFilter);
+
+        console.log('Attempting to fetch from URL:', url.toString());
+
         try {
           console.log('Attempting remote fetch...');
-          const response = await fetch(url, {
-            credentials: 'include', // This will include cookies in the request
+          const response = await fetch(url.toString(), {
             headers: {
               Accept: 'application/json',
               'Content-Type': 'application/json',
@@ -91,52 +105,35 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
         } catch (fetchError) {
           console.warn('Remote fetch failed, using local data for development:', fetchError);
           // Fallback to local data in development
-          const localData = {
-            cruises: [
-              {
-                vendor_id: 'CARIB1',
-                name: 'Caribbean Paradise',
-                description: '7-day cruise through the Caribbean islands',
-                cruise_type: ['Ocean'],
-                regions: ['Caribbean'],
-                cruise_only_price: '999.00',
-                cruise_nights: 7,
-                starts_at: 'Miami',
-                ends_at: 'Caribbean Islands',
-                ship_title: 'Caribbean Explorer',
-                operator_title: 'Caribbean Cruises',
-                official_link: 'https://example.com/caribbean-cruise',
-              },
-              {
-                vendor_id: 'MED1',
-                name: 'Mediterranean Explorer',
-                description: '10-day cruise through the Mediterranean',
-                cruise_type: ['Ocean'],
-                regions: ['Mediterranean'],
-                cruise_only_price: '1499.00',
-                cruise_nights: 10,
-                starts_at: 'Barcelona',
-                ends_at: 'Mediterranean Sea',
-                ship_title: 'Mediterranean Star',
-                operator_title: 'Mediterranean Cruises',
-                official_link: 'https://example.com/mediterranean-cruise',
-              },
-              {
-                vendor_id: 'RIVER1',
-                name: 'European River Cruise',
-                description: '7-day river cruise through Europe',
-                cruise_type: ['River'],
-                regions: ['Europe'],
-                cruise_only_price: '1299.00',
-                cruise_nights: 7,
-                starts_at: 'Amsterdam',
-                ends_at: 'Budapest',
-                ship_title: 'River Explorer',
-                operator_title: 'River Cruises',
-                official_link: 'https://example.com/river-cruise',
-              },
-            ],
-          };
+          const localData = [
+            {
+              name: 'The Islands of Cape Verde Cruise',
+              ship: 'Harmony V',
+              operator: 'Variety Cruises',
+              region: ['Africa'],
+              starts_on: '2026-03-11T14:00:00.000Z',
+              price: '2352.30',
+              official_link: 'https://www.seafarercruises.com/cruises/mega-yacht/capeverde/',
+            },
+            {
+              name: 'Antiquity to Byzantium Cruise',
+              ship: 'Galileo',
+              operator: 'Variety Cruises',
+              region: ['Mediterranean'],
+              starts_on: '2026-03-20T15:00:00.000Z',
+              price: '2190.00',
+              official_link: 'https://www.seafarercruises.co.uk/cruises/mega-yacht/byzantium/',
+            },
+            {
+              name: 'City Explorer: Budapest, Bratislava and Vienna 2026',
+              ship: 'Spirit of the Danube',
+              operator: 'Saga Cruises',
+              region: ['Danube'],
+              starts_on: '2026-03-16T00:00:00.000Z',
+              price: '0.00',
+              official_link: '',
+            },
+          ];
           validateAndSetCruises(localData);
         }
       } catch (err) {
@@ -147,41 +144,46 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
     };
 
     const validateAndSetCruises = (data: unknown) => {
-      // Validate that data has the expected structure
-      if (typeof data !== 'object' || data === null || !('cruises' in data)) {
+      // Validate that data is an array
+      if (!Array.isArray(data)) {
         console.error('Invalid data structure:', data);
-        throw new Error('Invalid data format: expected an object with cruises array');
+        throw new Error('Invalid data format: expected an array of cruises');
       }
-      const apiData = data as ApiResponse;
+
       // Transform API data to our component's format
-      const transformedCruises: CruiseItem[] = apiData.cruises.map((cruise) => {
+      const transformedCruises: CruiseItem[] = data.map((cruise: ApiCruiseItem, index: number) => {
         console.log('Processing cruise:', cruise.name);
-        console.log('Cruise types:', cruise.cruise_type);
-        console.log('Regions:', cruise.regions);
-        // Determine category based on cruise type
-        const category =
-          cruise.cruise_type && cruise.cruise_type.length > 0
-            ? cruise.cruise_type.some((type) => type.toLowerCase().includes('river'))
-              ? 'River'
-              : cruise.cruise_type.some((type) => type.toLowerCase().includes('ocean'))
-              ? 'Ocean'
-              : cruise.cruise_type[0]
-            : 'Ocean';
+        console.log('Regions:', cruise.region);
+        // Determine category based on region
+        const category = cruise.region && cruise.region.length > 0 ? cruise.region[0] : 'Other';
+        // Format start date
+        const startDate = new Date(cruise.starts_on);
+        const formattedDate = startDate.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        });
+
         return {
-          id: cruise.vendor_id,
+          id: `${cruise.ship}-${index}`, // Generate unique ID
           name: cruise.name,
-          description: cruise.description,
+          description: `${cruise.ship} operated by ${cruise.operator}`,
           category: category,
-          price: parseFloat(cruise.cruise_only_price) || 0,
-          duration: `${cruise.cruise_nights} days`,
-          destination: `${cruise.starts_at} to ${cruise.ends_at}`,
-          imageUrl: `https://placehold.co/600x400?text=${encodeURIComponent(cruise.ship_title)}`,
+          price: parseFloat(cruise.price) || 0,
+          duration: '7 days', // Default duration since not provided in API
+          destination: cruise.region.join(', '),
+          imageUrl: `https://placehold.co/600x400?text=${encodeURIComponent(cruise.ship)}`,
+          ship: cruise.ship,
+          operator: cruise.operator,
+          startsOn: formattedDate,
+          officialLink: cruise.official_link,
         };
       });
 
-      // Deduplicate by id
+      // Deduplicate by name and ship
       const uniqueCruises = transformedCruises.filter(
-        (cruise, index, self) => index === self.findIndex((c) => c.id === cruise.id)
+        (cruise, index, self) =>
+          index === self.findIndex((c) => c.name === cruise.name && c.ship === cruise.ship)
       );
 
       console.log('All transformed cruises:', uniqueCruises);
@@ -197,12 +199,35 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
     };
 
     fetchCruises();
-  }, [fields.cruisesUrl.value]);
+  }, [fields.cruisesUrl.value, regionFilter, shipFilter, operatorFilter, startsAfterFilter]);
 
   // Get unique categories from cruises
   const categories = useMemo(() => {
     const uniqueCategories = new Set(cruises.map((cruise) => cruise.category));
     return ['all', ...Array.from(uniqueCategories)];
+  }, [cruises]);
+
+  // Get unique regions for filter dropdown
+  const regions = useMemo(() => {
+    const uniqueRegions = new Set<string>();
+    cruises.forEach((cruise) => {
+      if (cruise.destination) {
+        cruise.destination.split(', ').forEach((region) => uniqueRegions.add(region));
+      }
+    });
+    return Array.from(uniqueRegions).sort();
+  }, [cruises]);
+
+  // Get unique ships for filter dropdown
+  const ships = useMemo(() => {
+    const uniqueShips = new Set(cruises.map((cruise) => cruise.ship));
+    return Array.from(uniqueShips).sort();
+  }, [cruises]);
+
+  // Get unique operators for filter dropdown
+  const operators = useMemo(() => {
+    const uniqueOperators = new Set(cruises.map((cruise) => cruise.operator));
+    return Array.from(uniqueOperators).sort();
   }, [cruises]);
 
   // Filter cruises based on search term and category
@@ -211,7 +236,9 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
       const matchesSearch =
         cruise.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         cruise.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        cruise.destination.toLowerCase().includes(searchTerm.toLowerCase());
+        cruise.destination.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        cruise.ship.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        cruise.operator.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesCategory = selectedCategory === 'all' || cruise.category === selectedCategory;
       return matchesSearch && matchesCategory;
     });
@@ -222,6 +249,11 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
     if (!selectedCruiseId) return null;
     return cruises.find((cruise) => cruise.id === selectedCruiseId);
   }, [cruises, selectedCruiseId]);
+
+  const handleSearch = () => {
+    // Trigger a new fetch with the current filters
+    setIsLoading(true);
+  };
 
   if (isLoading) {
     return <div className="cruising-component">Loading cruises...</div>;
@@ -241,24 +273,74 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
       </div>
 
       <div className="cruising-filters">
-        <input
-          type="text"
-          placeholder="Search cruises..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="search-input"
-        />
-        <select
-          value={selectedCategory}
-          onChange={(e) => setSelectedCategory(e.target.value)}
-          className="category-select"
-        >
-          {categories.map((category) => (
-            <option key={category} value={category}>
-              {category.charAt(0).toUpperCase() + category.slice(1)}
-            </option>
-          ))}
-        </select>
+        <div className="search-row">
+          <input
+            type="text"
+            placeholder="Search cruises..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="search-input"
+          />
+          <select
+            value={selectedCategory}
+            onChange={(e) => setSelectedCategory(e.target.value)}
+            className="category-select"
+          >
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category.charAt(0).toUpperCase() + category.slice(1)}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="advanced-filters">
+          <select
+            value={regionFilter}
+            onChange={(e) => setRegionFilter(e.target.value)}
+            className="filter-select"
+          >
+            <option value="">All Regions</option>
+            {regions.map((region) => (
+              <option key={region} value={region}>
+                {region}
+              </option>
+            ))}
+          </select>
+          <select
+            value={shipFilter}
+            onChange={(e) => setShipFilter(e.target.value)}
+            className="filter-select"
+          >
+            <option value="">All Ships</option>
+            {ships.map((ship) => (
+              <option key={ship} value={ship}>
+                {ship}
+              </option>
+            ))}
+          </select>
+          <select
+            value={operatorFilter}
+            onChange={(e) => setOperatorFilter(e.target.value)}
+            className="filter-select"
+          >
+            <option value="">All Operators</option>
+            {operators.map((operator) => (
+              <option key={operator} value={operator}>
+                {operator}
+              </option>
+            ))}
+          </select>
+          <input
+            type="date"
+            value={startsAfterFilter}
+            onChange={(e) => setStartsAfterFilter(e.target.value)}
+            className="date-input"
+            placeholder="Starts after"
+          />
+          <button onClick={handleSearch} className="search-btn">
+            Search
+          </button>
+        </div>
       </div>
 
       {selectedCruise ? (
@@ -290,9 +372,9 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
             <h3 className="cruise-title">{selectedCruise.name}</h3>
             {/* Details Row */}
             <div className="cruise-details-row">
-              <span>🛳️ {selectedCruise.category}</span>
-              <span>📅 {selectedCruise.duration}</span>
-              <span>🚢 {selectedCruise.destination}</span>
+              <span>🛳️ {selectedCruise.ship}</span>
+              <span>📅 {selectedCruise.startsOn}</span>
+              <span>🚢 {selectedCruise.operator}</span>
             </div>
             {/* Price and CTA */}
             <div className="cruise-price-row">
@@ -301,7 +383,18 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
                 <span className="price-large">£{selectedCruise.price}</span>
                 <span className="pp-label">pp</span>
               </div>
-              <button className="discover-btn">Discover more</button>
+              {selectedCruise.officialLink ? (
+                <a
+                  href={selectedCruise.officialLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="discover-btn"
+                >
+                  Discover more
+                </a>
+              ) : (
+                <button className="discover-btn">Discover more</button>
+              )}
             </div>
           </div>
         </div>
@@ -315,9 +408,11 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
             >
               <img src={cruise.imageUrl} alt={cruise.name} />
               <h3>{cruise.name}</h3>
+              <p className="cruise-ship">{cruise.ship}</p>
+              <p className="cruise-operator">{cruise.operator}</p>
               <p className="cruise-destination">{cruise.destination}</p>
-              <p className="cruise-duration">{cruise.duration}</p>
-              <p className="cruise-price">From ${cruise.price}</p>
+              <p className="cruise-date">{cruise.startsOn}</p>
+              <p className="cruise-price">From £{cruise.price}</p>
               <span className="cruise-category">{cruise.category}</span>
             </div>
           ))}
@@ -337,13 +432,26 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
         }
 
         .cruising-filters {
-          display: flex;
-          gap: 1rem;
           margin-bottom: 2rem;
         }
 
+        .search-row {
+          display: flex;
+          gap: 1rem;
+          margin-bottom: 1rem;
+        }
+
+        .advanced-filters {
+          display: flex;
+          gap: 1rem;
+          flex-wrap: wrap;
+          align-items: center;
+        }
+
         .search-input,
-        .category-select {
+        .category-select,
+        .filter-select,
+        .date-input {
           padding: 0.5rem;
           border: 1px solid #ccc;
           border-radius: 4px;
@@ -354,9 +462,23 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
           flex: 1;
         }
 
+        .search-btn {
+          background: #0066cc;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          padding: 0.5rem 1rem;
+          cursor: pointer;
+          font-size: 1rem;
+        }
+
+        .search-btn:hover {
+          background: #0052a3;
+        }
+
         .cruise-grid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
           gap: 2rem;
           width: 100%;
         }
@@ -379,13 +501,29 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
 
         .cruise-card img {
           width: 100%;
-          height: 250px;
+          height: 200px;
           object-fit: cover;
           border-radius: 4px;
         }
 
         .cruise-card h3 {
           margin: 1rem 0 0.5rem;
+          font-size: 1.1rem;
+        }
+
+        .cruise-ship,
+        .cruise-operator,
+        .cruise-destination,
+        .cruise-date {
+          margin: 0.25rem 0;
+          font-size: 0.9rem;
+          color: #666;
+        }
+
+        .cruise-price {
+          font-weight: bold;
+          color: #b3002d;
+          margin: 0.5rem 0;
         }
 
         .cruise-detail {
@@ -523,6 +661,11 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
           padding: 0.75rem 1.5rem;
           font-size: 1rem;
           cursor: pointer;
+          text-decoration: none;
+          display: inline-block;
+        }
+        .discover-btn:hover {
+          background: #333;
         }
       `}</style>
     </div>

@@ -54,6 +54,10 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
   const [operatorFilter, setOperatorFilter] = useState<string>('');
   const [startsAfterFilter, setStartsAfterFilter] = useState<string>('');
 
+  // Pagination state
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(9);
+
   useEffect(() => {
     const fetchCruises = async () => {
       try {
@@ -244,6 +248,18 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
     });
   }, [cruises, searchTerm, selectedCategory]);
 
+  // Pagination calculations
+  const totalCount = filteredCruises.length;
+  const totalPages = Math.ceil(totalCount / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const paginatedCruises = filteredCruises.slice(startIndex, endIndex);
+
+  // Reset to first page when filters change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm, selectedCategory, regionFilter, shipFilter, operatorFilter, startsAfterFilter]);
+
   // Get selected cruise details
   const selectedCruise = useMemo(() => {
     if (!selectedCruiseId) return null;
@@ -253,6 +269,15 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
   const handleSearch = () => {
     // Trigger a new fetch with the current filters
     setIsLoading(true);
+  };
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
+  const handleItemsPerPageChange = (newItemsPerPage: number) => {
+    setItemsPerPage(newItemsPerPage);
+    setCurrentPage(1); // Reset to first page when changing items per page
   };
 
   if (isLoading) {
@@ -399,24 +424,76 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
           </div>
         </div>
       ) : (
-        <div className="cruise-grid">
-          {filteredCruises.map((cruise) => (
-            <div
-              key={cruise.id}
-              className="cruise-card"
-              onClick={() => setSelectedCruiseId(cruise.id)}
-            >
-              <img src={cruise.imageUrl} alt={cruise.name} />
-              <h3>{cruise.name}</h3>
-              <p className="cruise-ship">{cruise.ship}</p>
-              <p className="cruise-operator">{cruise.operator}</p>
-              <p className="cruise-destination">{cruise.destination}</p>
-              <p className="cruise-date">{cruise.startsOn}</p>
-              <p className="cruise-price">From £{cruise.price}</p>
-              <span className="cruise-category">{cruise.category}</span>
+        <>
+          <div className="results-header">
+            <div className="results-count">
+              Showing {startIndex + 1}-{Math.min(endIndex, totalCount)} of {totalCount} cruises
             </div>
-          ))}
-        </div>
+            <div className="items-per-page">
+              <label htmlFor="itemsPerPage">Items per page:</label>
+              <select
+                id="itemsPerPage"
+                value={itemsPerPage}
+                onChange={(e) => handleItemsPerPageChange(Number(e.target.value))}
+                className="items-per-page-select"
+              >
+                <option value={6}>6</option>
+                <option value={9}>9</option>
+                <option value={12}>12</option>
+                <option value={18}>18</option>
+              </select>
+            </div>
+          </div>
+
+          <div className="cruise-grid">
+            {paginatedCruises.map((cruise) => (
+              <div
+                key={cruise.id}
+                className="cruise-card"
+                onClick={() => setSelectedCruiseId(cruise.id)}
+              >
+                <img src={cruise.imageUrl} alt={cruise.name} />
+                <h3>{cruise.name}</h3>
+                <p className="cruise-ship">{cruise.ship}</p>
+                <p className="cruise-operator">{cruise.operator}</p>
+                <p className="cruise-destination">{cruise.destination}</p>
+                <p className="cruise-date">{cruise.startsOn}</p>
+                <p className="cruise-price">From £{cruise.price}</p>
+                <span className="cruise-category">{cruise.category}</span>
+              </div>
+            ))}
+          </div>
+
+          {totalPages > 1 && (
+            <div className="pagination">
+              <button
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage === 1}
+                className="pagination-btn"
+              >
+                Previous
+              </button>
+              <div className="page-numbers">
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                  <button
+                    key={page}
+                    onClick={() => handlePageChange(page)}
+                    className={`page-btn ${currentPage === page ? 'active' : ''}`}
+                  >
+                    {page}
+                  </button>
+                ))}
+              </div>
+              <button
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage === totalPages}
+                className="pagination-btn"
+              >
+                Next
+              </button>
+            </div>
+          )}
+        </>
       )}
 
       <style jsx>{`
@@ -666,6 +743,61 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
         }
         .discover-btn:hover {
           background: #333;
+        }
+        .results-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1rem;
+        }
+        .results-count {
+          font-size: 0.9rem;
+          color: #666;
+        }
+        .items-per-page {
+          display: flex;
+          align-items: center;
+        }
+        .items-per-page label {
+          margin-right: 0.5rem;
+        }
+        .items-per-page select {
+          padding: 0.5rem;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          font-size: 1rem;
+        }
+        .pagination {
+          display: flex;
+          justify-content: center;
+          margin-top: 1rem;
+        }
+        .pagination-btn {
+          background: none;
+          border: none;
+          color: #0066cc;
+          cursor: pointer;
+          font-size: 1rem;
+          padding: 0.5rem 1rem;
+        }
+        .pagination-btn:hover {
+          background: #0052a3;
+        }
+        .page-numbers {
+          display: flex;
+          gap: 0.5rem;
+        }
+        .page-btn {
+          background: none;
+          border: none;
+          color: #0066cc;
+          cursor: pointer;
+          font-size: 1rem;
+          padding: 0.5rem 1rem;
+        }
+        .page-btn.active {
+          background: #0066cc;
+          color: white;
         }
       `}</style>
     </div>

@@ -12,6 +12,8 @@ import {
 } from '@sitecore-content-sdk/nextjs';
 import Scripts from 'src/Scripts';
 import SitecoreStyles from 'src/components/SitecoreStyles';
+// Added by SolutionEngineering
+import ColorPaletteStyle from 'src/components/SolutionEngineering/ColorPaletteStyle';
 
 interface LayoutProps {
   layoutData: LayoutServiceData;
@@ -35,6 +37,8 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
       <Head>
         <title>{fields?.Title?.value?.toString() || 'Page'}</title>
         <link rel="icon" href="/favicon.ico" />
+        {/* Added by SolutionEngineering: inject Sitecore color palette */}
+        <ColorPaletteStyle />
       </Head>
 
       {/* root placeholder for the app, which we add components to using route data */}

@@ -5,8 +5,7 @@
       "components/*": ["src/components/*"],
       "lib/*": ["src/lib/*"],
       "temp/*": ["src/temp/*"],
-      "assets/*": ["src/assets/*"],
-      "@SolutionEngineeringLibrary/*": ["src/lib/SolutionEngineering/*"]
+      "assets/*": ["src/assets/*"]
     },
     "target": "es5",
     "types": ["node"],

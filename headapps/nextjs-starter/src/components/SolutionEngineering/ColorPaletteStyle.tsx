@@ -1,5 +1,5 @@
 import { fetchColorPalette } from 'lib/SolutionEngineering/fetchColorPalette';
-import { TAILWIND_VARIABLE_PREFIX } from '@SolutionEngineeringLibrary/constants';
+import { TAILWIND_VARIABLE_PREFIX } from 'lib/SolutionEngineering/constants';
 import React from 'react';
 
 const ColorPaletteStyle = async () => {

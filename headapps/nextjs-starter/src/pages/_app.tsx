@@ -9,12 +9,7 @@ import Head from 'next/head';
 // Added by SolutionEngineering
 import ColorPaletteStyle from 'src/components/SolutionEngineering/ColorPaletteStyle';
 
-// Added by SolutionEngineering
-interface ExtendedAppProps extends AppProps<SitecorePageProps> {
-  siteColors: Record<string, string>;
-}
-
-function App({ Component, pageProps }: ExtendedAppProps): JSX.Element {
+function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;
 
   return (

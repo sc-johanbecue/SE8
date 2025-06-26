@@ -4,18 +4,27 @@ import Bootstrap from 'src/Bootstrap';
 import 'assets/main.scss';
 import { SitecorePageProps } from '@sitecore-content-sdk/nextjs';
 import { JSX } from 'react';
+import Head from 'next/head';
 
-function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
+// Added by SolutionEngineering
+import ColorPaletteStyle from 'src/components/SolutionEngineering/ColorPaletteStyle';
+
+// Added by SolutionEngineering
+interface ExtendedAppProps extends AppProps<SitecorePageProps> {
+  siteColors: Record<string, string>;
+}
+
+function App({ Component, pageProps }: ExtendedAppProps): JSX.Element {
   const { dictionary, ...rest } = pageProps;
 
   return (
     <>
       <Bootstrap {...pageProps} />
-      {/*
-        // Use the next-localization (w/ rosetta) library to provide our translation dictionary to the app.
-        // Note Next.js does not (currently) provide anything for translation, only i18n routing.
-        // If your app is not multilingual, next-localization and references to it can be removed.
-      */}
+      <Head>
+        {/* Added by SolutionEngineering: inject Sitecore color palette */}
+        <ColorPaletteStyle />
+      </Head>
+
       <I18nProvider lngDict={dictionary} locale={pageProps.locale}>
         <Component {...rest} />
       </I18nProvider>

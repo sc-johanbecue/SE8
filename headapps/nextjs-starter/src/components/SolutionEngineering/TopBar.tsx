@@ -10,7 +10,7 @@ import { FaPhone, FaEnvelope, FaClock } from 'react-icons/fa6';
 import * as FaIcons6 from 'react-icons/fa6';
 import React, { JSX, useState } from 'react';
 import { GraphQLClient, gql } from 'graphql-request';
-import { TAILWIND_VARIABLE_PREFIX } from '@SolutionEngineeringLibrary/constants';
+import { TAILWIND_VARIABLE_PREFIX } from 'src/lib/SolutionEngineering/constants';
 
 interface HeaderTopFields {
   PhoneNumber: TextField;

@@ -1,1 +1,1 @@
-export const TAILWIND_VARIABLE_PREFIX = 'se';
+export const TAILWIND_VARIABLE_PREFIX = 'seprefix'; //TODO: remove and get from selected colorpalette

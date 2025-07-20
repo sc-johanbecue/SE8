@@ -1,0 +1,225 @@
+import React from 'react';
+import { TextField, Text } from '@sitecore-jss/sitecore-jss-nextjs';
+
+interface Fields {
+  Title: TextField;
+}
+type LHeroProps = {
+  params: { [key: string]: string };
+  fields: Fields;
+};
+
+const LHeroDefaultComponent = (props: LHeroProps): JSX.Element => (
+  <div className={`component LHero ${props.params.styles}`}>
+    <div className="component-content">
+      <span className="is-empty-hint"></span>
+    </div>
+  </div>
+);
+export const Default = (props: LHeroProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+  if (props.fields) {
+    return (
+      <div className={`${props.params.styles}`} id={id ? id : undefined}>
+        <div className="containerOuter">
+          <div
+            className="homepageBanner sliderSlick"
+            role="complementary"
+            aria-label="Main Carousel"
+          >
+            <div className="sliderParent sliderLazy slick-initialized slick-slider">
+              <div aria-live="polite" className="slick-list draggable">
+                <div className="slick-track" style="opacity: 1; width: 2039px;">
+                  <div
+                    className="slide slick-slide slick-current slick-active"
+                    data-slick-index="0"
+                    aria-hidden="false"
+                    style="width: 2039px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
+                  >
+                    <div className="sliderChild slick-initialized slick-slider slick-dotted">
+                      <button
+                        type="button"
+                        data-role="none"
+                        className="slick-prev slick-arrow"
+                        aria-label="Previous"
+                        style="display: block;"
+                      >
+                        <span className="icon-link-arrow-left"></span>
+                      </button>
+                      <div aria-live="polite" className="slick-list draggable">
+                        <div className="slick-track" style="opacity: 1; width: 6117px;">
+                          <div
+                            id="slide-9a45cb94-5671-4091-8913-8d526818c326"
+                            className="slide     slick-slide"
+                            data-slick-index="0"
+                            aria-hidden="true"
+                            style="width: 2039px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 1000ms ease 0s;"
+                          >
+                            <div className="container fill-height">
+                              <div className="row fill-height">
+                                <div className="col-md-6 col-md-offset-6 content">
+                                  <h1 className="titleWhite">Leaders of the future</h1>
+                                  <h2 className="padding-bottom-30 titleWhite">
+                                    <p>We have elected 27 new partners and 49 counsel globally</p>
+                                  </h2>
+                                  <a
+                                    href="https://www.linklaters.com/en/about-us/news-and-deals/news/2024/march/linklaters-elects-27-new-partners-and-49-counsel-globally"
+                                    className="cta"
+                                    onclick="webEventQueue()"
+                                  >
+                                    {' '}
+                                    <span
+                                      className="cta__text cta__text--white"
+                                      title="Find out more"
+                                    >
+                                      <Text field={props.fields.Title} />
+                                    </span>
+                                    <span className="icon-link-arrow-right cta__arrow cta__text--white"></span>
+                                  </a>{' '}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            id="slide-3f1c24a7-542d-4a05-90a3-d6adc5fbf8b0"
+                            className="slide     slide--lazy slick-slide slick-current slick-active"
+                            data-slick-index="1"
+                            aria-hidden="false"
+                            style="width: 2039px; position: relative; left: -2039px; top: 0px; z-index: 999; opacity: 1;"
+                          >
+                            <div className="container fill-height">
+                              <div className="row fill-height">
+                                <div className="col-md-6 col-md-offset-6 content">
+                                  <div className="title-1 titleWhite">Legal Outlook 2024</div>
+                                  <h2 className="padding-bottom-30 titleWhite">
+                                    Key events and what to look out for in 2024
+                                  </h2>
+                                  <a
+                                    href="https://www.linklaters.com/en/insights/publications/legal-outlook/2024/legal-outlook-2024"
+                                    className="cta"
+                                    onclick="webEventQueue()"
+                                  >
+                                    {' '}
+                                    <span
+                                      className="cta__text cta__text--white"
+                                      title="Explore our guides"
+                                    >
+                                      Explore our guides
+                                    </span>
+                                    <span className="icon-link-arrow-right cta__arrow cta__text--white"></span>
+                                  </a>{' '}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            id="slide-9b83d41e-b60e-40a4-a5ef-f2eca7a15e60"
+                            className="slide     slide--lazy slick-slide"
+                            data-slick-index="2"
+                            aria-hidden="true"
+                            style="width: 2039px; position: relative; left: -4078px; top: 0px; z-index: 998; opacity: 0;"
+                          >
+                            <div className="container fill-height">
+                              <div className="row fill-height">
+                                <div className="col-md-6 col-md-offset-6 content">
+                                  <div className="title-1 titleWhite">
+                                    Our approach to Generative AI
+                                  </div>
+                                  <h2 className="padding-bottom-30 titleWhite">
+                                    A snapshot of what we’ve been working on across the firm
+                                  </h2>
+                                  <a
+                                    href="https://www.linklaters.com/en/about-us/genai"
+                                    className="cta"
+                                    onclick="webEventQueue()"
+                                  >
+                                    {' '}
+                                    <span className="cta__text cta__text--white" title="Explore">
+                                      Explore
+                                    </span>
+                                    <span className="icon-link-arrow-right cta__arrow cta__text--white"></span>
+                                  </a>{' '}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button
+                        type="button"
+                        data-role="none"
+                        className="slick-next slick-arrow"
+                        aria-label="Next"
+                        style="display: block;"
+                      >
+                        <span className="icon-link-arrow-right"></span>
+                      </button>
+                    </div>
+                    <div className="sliderChild__dots">
+                      <ul className="slick-dots" style="display: block;">
+                        <li className="" aria-hidden="true">
+                          <button></button>
+                        </li>
+                        <li aria-hidden="false" className="slick-active">
+                          <button></button>
+                        </li>
+                        <li aria-hidden="true">
+                          <button></button>
+                        </li>
+                      </ul>
+                    </div>
+                    {/* <style type="text/css">
+        #slide-9a45cb94-5671-4091-8913-8d526818c326 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/home-page/misc/partner-promos-2560x1440.ashx?rev=439bb5b9-85dc-4837-abc5-8cf679ae2f3c&amp;extension=webp&amp;w=1920&amp;la=en&amp;hash=E56C04B9839C50F32D12F01D4A50FE8E'); }
+        @media screen and (max-width: 1440px) { #slide-9a45cb94-5671-4091-8913-8d526818c326 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/home-page/misc/partner-promos-2560x1440.ashx?rev=439bb5b9-85dc-4837-abc5-8cf679ae2f3c&amp;extension=webp&amp;w=1440&amp;la=en&amp;hash=D1A6C12A981E4E61AF1FAF6FB326D733'); } }
+        @media screen and (max-width: 1024px) { #slide-9a45cb94-5671-4091-8913-8d526818c326 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/home-page/misc/partner-promos-2560x1440.ashx?rev=439bb5b9-85dc-4837-abc5-8cf679ae2f3c&amp;extension=webp&amp;w=1024&amp;la=en&amp;hash=D389B470617E98B781BA0833CFE911E9'); } }
+        @media screen and (max-width: 768px) { #slide-9a45cb94-5671-4091-8913-8d526818c326 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/home-page/misc/partner-promos-2560x1440.ashx?rev=439bb5b9-85dc-4837-abc5-8cf679ae2f3c&amp;extension=webp&amp;w=768&amp;la=en&amp;hash=99093B7C7376948B7E8A83AC8354F04A'); } }
+        @media screen and (max-width: 600px) { #slide-9a45cb94-5671-4091-8913-8d526818c326 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/home-page/misc/partner-promos-2560x1440.ashx?rev=439bb5b9-85dc-4837-abc5-8cf679ae2f3c&amp;extension=webp&amp;w=600&amp;la=en&amp;hash=7CB36B053B9CA326F2D517639532574E'); } }
+        @media screen and (max-width: 480px) { #slide-9a45cb94-5671-4091-8913-8d526818c326 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/home-page/misc/partner-promos-2560x1440.ashx?rev=439bb5b9-85dc-4837-abc5-8cf679ae2f3c&amp;extension=webp&amp;w=480&amp;la=en&amp;hash=8F50BB1DB9C20ABE7CA8CEB27765CB8B'); } }
+        @media screen and (max-width: 320px) { #slide-9a45cb94-5671-4091-8913-8d526818c326 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/home-page/misc/partner-promos-2560x1440.ashx?rev=439bb5b9-85dc-4837-abc5-8cf679ae2f3c&amp;extension=webp&amp;w=320&amp;la=en&amp;hash=8D60986FA3D0A4289BECD86C3E4F0A67'); } }
+        @media screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1024px) and (min-resolution: 192dpi) { #slide-9a45cb94-5671-4091-8913-8d526818c326 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/home-page/misc/partner-promos-2560x1440.ashx?rev=439bb5b9-85dc-4837-abc5-8cf679ae2f3c&amp;extension=webp&amp;w=2048&amp;la=en&amp;hash=F1DEFA0404C5B097D311EFB4AD408E85'); } }
+        @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi) { #slide-9a45cb94-5671-4091-8913-8d526818c326 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/home-page/misc/partner-promos-2560x1440.ashx?rev=439bb5b9-85dc-4837-abc5-8cf679ae2f3c&amp;extension=webp&amp;w=1536&amp;la=en&amp;hash=EB0BB839634A6C7EA0D4A081010F95B7'); } }
+        @media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 600px) and (min-resolution: 192dpi) { #slide-9a45cb94-5671-4091-8913-8d526818c326 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/home-page/misc/partner-promos-2560x1440.ashx?rev=439bb5b9-85dc-4837-abc5-8cf679ae2f3c&amp;extension=webp&amp;w=1200&amp;la=en&amp;hash=F97C379D0252141582295215D1CFF650'); } }
+        @media screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi) { #slide-9a45cb94-5671-4091-8913-8d526818c326 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/home-page/misc/partner-promos-2560x1440.ashx?rev=439bb5b9-85dc-4837-abc5-8cf679ae2f3c&amp;extension=webp&amp;w=960&amp;la=en&amp;hash=BA4BEEDE73246DD89FC49B915A4A99AD'); } }
+        @media screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 320px) and (min-resolution: 192dpi) { #slide-9a45cb94-5671-4091-8913-8d526818c326 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/home-page/misc/partner-promos-2560x1440.ashx?rev=439bb5b9-85dc-4837-abc5-8cf679ae2f3c&amp;extension=webp&amp;w=640&amp;la=en&amp;hash=3E2E442BD2F0D324259FFDE6F3F60611'); } }
+</style>
+<style type="text/css">
+        #slide-3f1c24a7-542d-4a05-90a3-d6adc5fbf8b0 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/05_insights/publications/hero_2560x1440/legal-outlook/2024/milky-way-over-lakeside-mountains_banner_2560x1440_20pc_getty1328564799.ashx?rev=3bc89fe8-874f-43d1-a98f-ea07d7c68c18&amp;extension=webp&amp;w=1920&amp;la=en&amp;hash=0421CCFDD2E96C8CE8D591300C3FDF92'); }
+        @media screen and (max-width: 1440px) { #slide-3f1c24a7-542d-4a05-90a3-d6adc5fbf8b0 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/05_insights/publications/hero_2560x1440/legal-outlook/2024/milky-way-over-lakeside-mountains_banner_2560x1440_20pc_getty1328564799.ashx?rev=3bc89fe8-874f-43d1-a98f-ea07d7c68c18&amp;extension=webp&amp;w=1440&amp;la=en&amp;hash=E66B1DCFA14BB2E18AD8FA9EAC89A381'); } }
+        @media screen and (max-width: 1024px) { #slide-3f1c24a7-542d-4a05-90a3-d6adc5fbf8b0 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/05_insights/publications/hero_2560x1440/legal-outlook/2024/milky-way-over-lakeside-mountains_banner_2560x1440_20pc_getty1328564799.ashx?rev=3bc89fe8-874f-43d1-a98f-ea07d7c68c18&amp;extension=webp&amp;w=1024&amp;la=en&amp;hash=A11560E53904F1497A180F8CD248A5BE'); } }
+        @media screen and (max-width: 768px) { #slide-3f1c24a7-542d-4a05-90a3-d6adc5fbf8b0 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/05_insights/publications/hero_2560x1440/legal-outlook/2024/milky-way-over-lakeside-mountains_banner_2560x1440_20pc_getty1328564799.ashx?rev=3bc89fe8-874f-43d1-a98f-ea07d7c68c18&amp;extension=webp&amp;w=768&amp;la=en&amp;hash=38584A9374B33F645642CCD9D69EE836'); } }
+        @media screen and (max-width: 600px) { #slide-3f1c24a7-542d-4a05-90a3-d6adc5fbf8b0 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/05_insights/publications/hero_2560x1440/legal-outlook/2024/milky-way-over-lakeside-mountains_banner_2560x1440_20pc_getty1328564799.ashx?rev=3bc89fe8-874f-43d1-a98f-ea07d7c68c18&amp;extension=webp&amp;w=600&amp;la=en&amp;hash=FDD128D01F2C95522B710983E904AFD0'); } }
+        @media screen and (max-width: 480px) { #slide-3f1c24a7-542d-4a05-90a3-d6adc5fbf8b0 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/05_insights/publications/hero_2560x1440/legal-outlook/2024/milky-way-over-lakeside-mountains_banner_2560x1440_20pc_getty1328564799.ashx?rev=3bc89fe8-874f-43d1-a98f-ea07d7c68c18&amp;extension=webp&amp;w=480&amp;la=en&amp;hash=80C89B54603D8FD26E2FDF117224223A'); } }
+        @media screen and (max-width: 320px) { #slide-3f1c24a7-542d-4a05-90a3-d6adc5fbf8b0 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/05_insights/publications/hero_2560x1440/legal-outlook/2024/milky-way-over-lakeside-mountains_banner_2560x1440_20pc_getty1328564799.ashx?rev=3bc89fe8-874f-43d1-a98f-ea07d7c68c18&amp;extension=webp&amp;w=320&amp;la=en&amp;hash=EAFBC2DCCC518D87FCD5915149E74E9A'); } }
+        @media screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1024px) and (min-resolution: 192dpi) { #slide-3f1c24a7-542d-4a05-90a3-d6adc5fbf8b0 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/05_insights/publications/hero_2560x1440/legal-outlook/2024/milky-way-over-lakeside-mountains_banner_2560x1440_20pc_getty1328564799.ashx?rev=3bc89fe8-874f-43d1-a98f-ea07d7c68c18&amp;extension=webp&amp;w=2048&amp;la=en&amp;hash=AF2C295CD18E0E4187E13A38687F5343'); } }
+        @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi) { #slide-3f1c24a7-542d-4a05-90a3-d6adc5fbf8b0 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/05_insights/publications/hero_2560x1440/legal-outlook/2024/milky-way-over-lakeside-mountains_banner_2560x1440_20pc_getty1328564799.ashx?rev=3bc89fe8-874f-43d1-a98f-ea07d7c68c18&amp;extension=webp&amp;w=1536&amp;la=en&amp;hash=2CCFFAA2F4876BCCF4525EF202761519'); } }
+        @media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 600px) and (min-resolution: 192dpi) { #slide-3f1c24a7-542d-4a05-90a3-d6adc5fbf8b0 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/05_insights/publications/hero_2560x1440/legal-outlook/2024/milky-way-over-lakeside-mountains_banner_2560x1440_20pc_getty1328564799.ashx?rev=3bc89fe8-874f-43d1-a98f-ea07d7c68c18&amp;extension=webp&amp;w=1200&amp;la=en&amp;hash=AF23F2A3C81D9B62C08CF9D31765D1BE'); } }
+        @media screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi) { #slide-3f1c24a7-542d-4a05-90a3-d6adc5fbf8b0 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/05_insights/publications/hero_2560x1440/legal-outlook/2024/milky-way-over-lakeside-mountains_banner_2560x1440_20pc_getty1328564799.ashx?rev=3bc89fe8-874f-43d1-a98f-ea07d7c68c18&amp;extension=webp&amp;w=960&amp;la=en&amp;hash=FCDC1B825936CAD2539D45FD3EAA58EA'); } }
+        @media screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 320px) and (min-resolution: 192dpi) { #slide-3f1c24a7-542d-4a05-90a3-d6adc5fbf8b0 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/05_insights/publications/hero_2560x1440/legal-outlook/2024/milky-way-over-lakeside-mountains_banner_2560x1440_20pc_getty1328564799.ashx?rev=3bc89fe8-874f-43d1-a98f-ea07d7c68c18&amp;extension=webp&amp;w=640&amp;la=en&amp;hash=2135C475E70CEC352D123B518723E971'); } }
+</style>
+<style type="text/css">
+        #slide-9b83d41e-b60e-40a4-a5ef-f2eca7a15e60 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/gen-ai/hero/genai.ashx?rev=8d47701a-6898-4ebb-915a-0e02f2857b3a&amp;extension=webp&amp;w=1920&amp;la=en&amp;hash=FA837CBBA0105E20DB103D58A699A6B8'); }
+        @media screen and (max-width: 1440px) { #slide-9b83d41e-b60e-40a4-a5ef-f2eca7a15e60 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/gen-ai/hero/genai.ashx?rev=8d47701a-6898-4ebb-915a-0e02f2857b3a&amp;extension=webp&amp;w=1440&amp;la=en&amp;hash=34D2DE2FE83C70665CB5375DF4359D61'); } }
+        @media screen and (max-width: 1024px) { #slide-9b83d41e-b60e-40a4-a5ef-f2eca7a15e60 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/gen-ai/hero/genai.ashx?rev=8d47701a-6898-4ebb-915a-0e02f2857b3a&amp;extension=webp&amp;w=1024&amp;la=en&amp;hash=51AFCD32792B8D02C02380B05DFCA17E'); } }
+        @media screen and (max-width: 768px) { #slide-9b83d41e-b60e-40a4-a5ef-f2eca7a15e60 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/gen-ai/hero/genai.ashx?rev=8d47701a-6898-4ebb-915a-0e02f2857b3a&amp;extension=webp&amp;w=768&amp;la=en&amp;hash=587B2DBDAE22D4FE838C70DF9B711EAB'); } }
+        @media screen and (max-width: 600px) { #slide-9b83d41e-b60e-40a4-a5ef-f2eca7a15e60 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/gen-ai/hero/genai.ashx?rev=8d47701a-6898-4ebb-915a-0e02f2857b3a&amp;extension=webp&amp;w=600&amp;la=en&amp;hash=297FDF7D4B9877A6CF7C7986C313D282'); } }
+        @media screen and (max-width: 480px) { #slide-9b83d41e-b60e-40a4-a5ef-f2eca7a15e60 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/gen-ai/hero/genai.ashx?rev=8d47701a-6898-4ebb-915a-0e02f2857b3a&amp;extension=webp&amp;w=480&amp;la=en&amp;hash=5BE15D2EAC8EDF424F88B3C4B1BADF1E'); } }
+        @media screen and (max-width: 320px) { #slide-9b83d41e-b60e-40a4-a5ef-f2eca7a15e60 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/gen-ai/hero/genai.ashx?rev=8d47701a-6898-4ebb-915a-0e02f2857b3a&amp;extension=webp&amp;w=320&amp;la=en&amp;hash=5EFEB065739CE0511DD67462B5D9B267'); } }
+        @media screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1024px) and (min-resolution: 192dpi) { #slide-9b83d41e-b60e-40a4-a5ef-f2eca7a15e60 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/gen-ai/hero/genai.ashx?rev=8d47701a-6898-4ebb-915a-0e02f2857b3a&amp;extension=webp&amp;w=2048&amp;la=en&amp;hash=1E08AEDDEF00E7A6BD83BEF5093C5DA9'); } }
+        @media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi) { #slide-9b83d41e-b60e-40a4-a5ef-f2eca7a15e60 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/gen-ai/hero/genai.ashx?rev=8d47701a-6898-4ebb-915a-0e02f2857b3a&amp;extension=webp&amp;w=1536&amp;la=en&amp;hash=9950697CDB4519B940C7272FFAE0D89B'); } }
+        @media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 600px) and (min-resolution: 192dpi) { #slide-9b83d41e-b60e-40a4-a5ef-f2eca7a15e60 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/gen-ai/hero/genai.ashx?rev=8d47701a-6898-4ebb-915a-0e02f2857b3a&amp;extension=webp&amp;w=1200&amp;la=en&amp;hash=6F6068485A87DAF371583CE1DA5DD7C3'); } }
+        @media screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi) { #slide-9b83d41e-b60e-40a4-a5ef-f2eca7a15e60 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/gen-ai/hero/genai.ashx?rev=8d47701a-6898-4ebb-915a-0e02f2857b3a&amp;extension=webp&amp;w=960&amp;la=en&amp;hash=771BAD6BA27932746730E8E07B6258AC'); } }
+        @media screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 320px) and (min-resolution: 192dpi) { #slide-9b83d41e-b60e-40a4-a5ef-f2eca7a15e60 { background-image: url('https://lpscdn.linklaters.com/-/media/digital-marketing-image-library/images/00_about-us/gen-ai/hero/genai.ashx?rev=8d47701a-6898-4ebb-915a-0e02f2857b3a&amp;extension=webp&amp;w=640&amp;la=en&amp;hash=5F2A00F97A3DA8CB4DB87BE3AB0EF44D'); } }
+</style> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return <LHeroDefaultComponent {...props} />;
+};

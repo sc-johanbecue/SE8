@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import { useState } from 'react';
 import {
   Text,
@@ -7,7 +7,7 @@ import {
   TextField,
   ImageField,
   RichTextField,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   data: {
@@ -198,67 +198,59 @@ export const Default = (props: LinkLatersContactDetailsProps): JSX.Element => {
 
   const nameField: TextField = {
     value: name?.jsonValue?.value,
-    editable: name?.jsonValue?.editable,
   };
 
   const titleField: TextField = {
     value: title?.jsonValue?.value,
-    editable: title?.jsonValue?.editable,
   };
 
   const quoteField: TextField = {
     value: quote?.jsonValue?.value,
-    editable: quote?.jsonValue?.editable,
   };
 
   const imageField: ImageField = {
     value: image?.jsonValue,
-    editable: image?.jsonValue?.editable,
   };
 
   const overviewField: RichTextField = {
     value: overview?.jsonValue?.value,
-    editable: overview?.jsonValue?.editable,
   };
 
   const workHighlightsField: RichTextField = {
     value: workHighlights?.jsonValue?.value,
-    editable: workHighlights?.jsonValue?.editable,
   };
 
   const activitiesField: RichTextField = {
     value: activities?.jsonValue?.value,
-    editable: activities?.jsonValue?.editable,
   };
 
   const experienceField: RichTextField = {
     value: experience?.jsonValue?.value,
-    editable: experience?.jsonValue?.editable,
   };
 
   const governmentExperienceField: RichTextField = {
     value: governmentExperience?.jsonValue?.value,
-    editable: governmentExperience?.jsonValue?.editable,
   };
 
   const educationAndQualificationsField: RichTextField = {
     value: educationAndQualifications?.jsonValue?.value,
-    editable: educationAndQualifications?.jsonValue?.editable,
   };
 
   const articlesField: RichTextField = {
     value: articles?.jsonValue?.value,
-    editable: articles?.jsonValue?.editable,
   };
 
   const newsField: RichTextField = {
     value: news?.jsonValue?.value,
-    editable: news?.jsonValue?.editable,
   };
 
   const [activeTab, setActiveTab] = useState(0);
 
-  const handleTabClick = (index) => {
+  interface TabClickHandler {
+    (index: number): void;
+  }
+
+  const handleTabClick: TabClickHandler = (index: number): void => {
     setActiveTab(index);
   };
 

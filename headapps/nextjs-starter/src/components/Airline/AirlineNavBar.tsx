@@ -1,4 +1,4 @@
-import React from 'react'; //{ useState }
+import React, { JSX } from 'react'; //{ useState }
 import {
   Image as JssImage,
   ImageField,
@@ -10,7 +10,7 @@ import {
   useSitecoreContext,
   LinkField,
   Link,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   Logo: ImageField;

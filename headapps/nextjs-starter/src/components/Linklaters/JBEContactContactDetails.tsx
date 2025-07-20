@@ -1,10 +1,5 @@
-import React from 'react';
-import {
-  ComponentRendering,
-  ComponentParams,
-  Text,
-  TextField,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import React, { JSX } from 'react';
+import { ComponentRendering, ComponentParams, Text, TextField } from '@sitecore-content-sdk/nextjs';
 import Link from 'next/link';
 
 interface Fields {
@@ -117,32 +112,26 @@ export const Default = (props: LinkLatersContactContactDetailsProps): JSX.Elemen
 
   const nameField: TextField = {
     value: name?.jsonValue?.value,
-    editable: name?.jsonValue?.editable,
   };
 
   const subTitleField: TextField = {
     value: subTitle?.jsonValue?.value,
-    editable: subTitle?.jsonValue?.editable,
   };
 
   const countryField: TextField = {
     value: country?.jsonValue?.value,
-    editable: country?.jsonValue?.editable,
   };
 
   const phoneNumberField: TextField = {
     value: phoneNumber?.jsonValue?.value,
-    editable: phoneNumber?.jsonValue?.editable,
   };
 
   const emailField: TextField = {
     value: email?.jsonValue?.value,
-    editable: email?.jsonValue?.editable,
   };
 
   const countryOfAdmissionField: TextField = {
     value: countryOfAdmission?.jsonValue?.value,
-    editable: countryOfAdmission?.jsonValue?.editable,
   };
 
   if (props.fields) {

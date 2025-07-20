@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import {
   Placeholder,
   TextField,
@@ -7,7 +7,7 @@ import {
   LinkField,
   Link as JssLink,
   Text,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 import { FaMagnifyingGlass } from 'react-icons/fa6';
 
 interface Fields {

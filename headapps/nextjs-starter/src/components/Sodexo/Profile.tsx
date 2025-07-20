@@ -1,5 +1,6 @@
-import { TextField, ImageField, Text, Image as JssImage } from '@sitecore-jss/sitecore-jss-nextjs';
+import { TextField, ImageField, Text, Image as JssImage } from '@sitecore-content-sdk/nextjs';
 import { Mic } from 'lucide-react';
+import React, { JSX } from 'react';
 
 interface Fields {
   FirstName: TextField;

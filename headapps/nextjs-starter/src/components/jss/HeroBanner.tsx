@@ -7,7 +7,7 @@ import {
   Field,
   LinkField,
   useSitecoreContext,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 import { Heading, Img, Box, Text, Flex } from '@chakra-ui/react';
 
 interface Fields {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -7,7 +7,7 @@ import {
   faPlus,
   faStar as solidStar,
 } from '@fortawesome/free-solid-svg-icons';
-import { TextField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { TextField } from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   Title: TextField;

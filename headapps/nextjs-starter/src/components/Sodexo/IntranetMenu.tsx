@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { ImageField, Image as JssImage } from '@sitecore-jss/sitecore-jss-nextjs';
+import { ImageField, Image as JssImage } from '@sitecore-content-sdk/nextjs';
+import React, { JSX } from 'react';
 
 interface Fields {
   Logo: ImageField;

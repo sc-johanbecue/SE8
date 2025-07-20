@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
-import { LinkField, Link as JssLink } from '@sitecore-jss/sitecore-jss-nextjs';
+import React, { JSX, useEffect, useState } from 'react';
+import { LinkField, Link as JssLink } from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   SecondaryLink1: LinkField;

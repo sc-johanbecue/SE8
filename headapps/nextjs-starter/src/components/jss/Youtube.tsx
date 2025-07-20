@@ -4,8 +4,8 @@ import {
   Field,
   useSitecoreContext,
   Text,
-} from '@sitecore-jss/sitecore-jss-nextjs';
-import React, { useState } from 'react';
+} from '@sitecore-content-sdk/nextjs';
+import React, { JSX, useState } from 'react';
 import FsLightbox from 'fslightbox-react';
 import { Box } from '@chakra-ui/react';
 

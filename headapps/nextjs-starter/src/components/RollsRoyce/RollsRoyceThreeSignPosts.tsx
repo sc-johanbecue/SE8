@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import {
   ImageField,
   TextField,
@@ -6,7 +6,7 @@ import {
   Placeholder,
   ComponentParams,
   ComponentRendering,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   Number: TextField;

@@ -1,11 +1,9 @@
 'use client';
 
-import type React from 'react';
-
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { TextField, ImageField, Image as JssImage } from '@sitecore-jss/sitecore-jss-nextjs';
+import { TextField, ImageField, Image as JssImage } from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   Title: TextField;

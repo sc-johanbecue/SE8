@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisH, faExpand, faPlus, faDownload } from '@fortawesome/free-solid-svg-icons';
-import { TextField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { TextField } from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   Title: TextField;
@@ -208,10 +208,10 @@ export const Default = (props: SodexoProps): JSX.Element => {
                       doc.type === 'PDF'
                         ? '#e63946'
                         : doc.type === 'PPT'
-                        ? '#ff9f1c'
-                        : doc.type === 'WORD'
-                        ? '#457b9d'
-                        : '#666',
+                          ? '#ff9f1c'
+                          : doc.type === 'WORD'
+                            ? '#457b9d'
+                            : '#666',
                     borderRadius: '5px',
                     display: 'flex',
                     alignItems: 'center',

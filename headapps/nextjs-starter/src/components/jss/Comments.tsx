@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Field, Text as JSSText } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field, Text as JSSText } from '@sitecore-content-sdk/nextjs';
 import {
   Box,
   Heading,

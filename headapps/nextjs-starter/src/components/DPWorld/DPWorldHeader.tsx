@@ -1,5 +1,5 @@
-import React from 'react';
-import { ImageField, TextField, RichTextField } from '@sitecore-jss/sitecore-jss-nextjs';
+import React, { JSX } from 'react';
+import { ImageField, TextField, RichTextField } from '@sitecore-content-sdk/nextjs';
 import Link from 'next/link';
 
 interface Fields {
@@ -533,7 +533,10 @@ export const Default = (props: DPWorldHeaderProps): JSX.Element => {
                                               />
                                             </Link>{' '}
                                             <h2>
-                                              <Link href="/insights/our-stories"> Our Stories</Link>{' '}
+                                              <Link href="/insights/our-stories">
+                                                {' '}
+                                                Our Stories
+                                              </Link>{' '}
                                             </h2>
                                             <p>
                                               We connect people, markets and nations to change

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, useSitecoreContext, TextField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text, useSitecoreContext, TextField } from '@sitecore-content-sdk/nextjs';
 import { Heading, Divider } from '@chakra-ui/react';
 
 interface Fields {

@@ -6,7 +6,7 @@ import {
   TextField,
   ImageField,
   RichTextField,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 import { Badge, Text } from '@chakra-ui/react';
 
 interface Fields {

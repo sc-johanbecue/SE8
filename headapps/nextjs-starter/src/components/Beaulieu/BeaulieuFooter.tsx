@@ -1,5 +1,5 @@
-import React from 'react';
-import { ImageField, TextField, RichTextField } from '@sitecore-jss/sitecore-jss-nextjs';
+import React, { JSX } from 'react';
+import { ImageField, TextField, RichTextField } from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   Number: TextField;

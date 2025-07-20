@@ -6,8 +6,8 @@ import {
   LinkField,
   Text,
   useSitecoreContext,
-} from '@sitecore-jss/sitecore-jss-nextjs';
-import React, { useState } from 'react';
+} from '@sitecore-content-sdk/nextjs';
+import React, { JSX, useState } from 'react';
 import FsLightbox from 'fslightbox-react';
 
 interface Fields {
@@ -34,9 +34,6 @@ export const Banner = (props: ImageProps): JSX.Element => {
   const backgroundStyle = { backgroundImage: `url('${props?.fields?.Image?.value?.src}')` };
   const modifyImageProps = {
     ...props.fields.Image,
-    editable: props?.fields?.Image?.editable
-      ?.replace(`width="${props?.fields?.Image?.value?.width}"`, 'width="100%"')
-      .replace(`height="${props?.fields?.Image?.value?.height}"`, 'height="100%"'),
   };
   const id = props.params.RenderingIdentifier;
 

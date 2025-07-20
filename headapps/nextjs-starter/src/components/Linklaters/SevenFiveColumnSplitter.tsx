@@ -1,9 +1,5 @@
-import React from 'react';
-import {
-  Placeholder,
-  ComponentRendering,
-  ComponentParams,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import React, { JSX } from 'react';
+import { Placeholder, ComponentRendering, ComponentParams } from '@sitecore-content-sdk/nextjs';
 
 type LinkLatersArticleProps = {
   rendering: ComponentRendering & { params: ComponentParams };

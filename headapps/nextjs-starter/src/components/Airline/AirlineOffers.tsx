@@ -1,9 +1,5 @@
-import React from 'react';
-import {
-  Placeholder,
-  ComponentParams,
-  ComponentRendering,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import React, { JSX } from 'react';
+import { Placeholder, ComponentParams, ComponentRendering } from '@sitecore-content-sdk/nextjs';
 
 type AirlineOffersProps = {
   rendering: ComponentRendering & { params: ComponentParams };

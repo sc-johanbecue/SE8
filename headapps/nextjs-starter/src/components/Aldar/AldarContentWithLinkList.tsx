@@ -1,5 +1,5 @@
-import React from 'react';
-import { TextField, Text, LinkField, Link as JssLink } from '@sitecore-jss/sitecore-jss-nextjs';
+import React, { JSX } from 'react';
+import { TextField, Text, LinkField, Link as JssLink } from '@sitecore-content-sdk/nextjs';
 import Link from 'next/link';
 
 interface Fields {

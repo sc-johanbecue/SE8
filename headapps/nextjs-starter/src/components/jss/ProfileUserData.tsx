@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Field } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field } from '@sitecore-content-sdk/nextjs';
 import { ComposedMe, GetComposedMe } from 'src/services/Ordercloud/AccountService';
 import {
   Spinner,

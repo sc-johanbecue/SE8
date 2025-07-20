@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import {
   TextField,
   Text,
   Placeholder,
   ComponentRendering,
   ComponentParams,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   SectionHeader: TextField;

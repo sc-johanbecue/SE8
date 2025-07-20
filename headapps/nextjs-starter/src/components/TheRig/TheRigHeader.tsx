@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import {
   ImageField,
   TextField,
   RichTextField,
   useSitecoreContext,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 import Link from 'next/link';
 
 interface Fields {

@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { JSX } from 'react';
 
-import { TextField, Text } from '@sitecore-jss/sitecore-jss-nextjs';
+import { TextField, Text } from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   CopyrightText: TextField;

@@ -1,5 +1,5 @@
 import { Box, Heading, Select } from '@chakra-ui/react';
-import React from 'react';
+import React, { JSX } from 'react';
 import { useCookies } from 'react-cookie';
 
 type ThemeSwitcherProps = {

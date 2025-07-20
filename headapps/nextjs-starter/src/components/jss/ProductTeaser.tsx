@@ -12,7 +12,7 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { LayoutServicePageState, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
+import { LayoutServicePageState, useSitecoreContext } from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   data: {

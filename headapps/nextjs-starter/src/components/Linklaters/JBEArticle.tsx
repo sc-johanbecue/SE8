@@ -1,11 +1,5 @@
-import React from 'react';
-import {
-  DateField,
-  TextField,
-  RichTextField,
-  RichText,
-  Text,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import React, { JSX } from 'react';
+import { DateField, TextField, RichTextField, RichText, Text } from '@sitecore-content-sdk/nextjs';
 import Link from 'next/link';
 
 interface Fields {
@@ -89,12 +83,10 @@ export const Default = (props: LinkLatersArticleProps): JSX.Element => {
 
   const titleField: TextField = {
     value: title?.jsonValue?.value,
-    editable: title?.jsonValue?.editable,
   };
 
   const contentField: RichTextField = {
     value: content?.jsonValue?.value,
-    editable: content?.jsonValue?.editable,
   };
 
   const dateField = {
@@ -104,7 +96,6 @@ export const Default = (props: LinkLatersArticleProps): JSX.Element => {
 
   const categoryField: TextField = {
     value: category?.jsonValue?.value,
-    editable: category?.jsonValue?.editable,
   };
 
   if (props.fields) {

@@ -4,7 +4,7 @@ import {
   Field,
   GraphQLDictionaryService,
   useSitecoreContext,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 import {
   Box,
   Link,

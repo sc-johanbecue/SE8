@@ -1,5 +1,5 @@
-import React from 'react';
-import { ImageField, TextField, RichTextField } from '@sitecore-jss/sitecore-jss-nextjs';
+import React, { JSX } from 'react';
+import { ImageField, TextField, RichTextField } from '@sitecore-content-sdk/nextjs';
 import Link from 'next/link';
 
 interface Fields {
@@ -94,10 +94,14 @@ export const Default = (props: DPWorldFooterProps): JSX.Element => {
                               <Link href="/industries">Industries</Link>{' '}
                               <ul>
                                 <li>
-                                  <Link href="/industries/automotive-logistics">Automotive</Link>{' '}
+                                  <Link href="/industries/automotive-logistics">
+                                    Automotive
+                                  </Link>{' '}
                                 </li>
                                 <li>
-                                  <Link href="/industries/perishable-logistics">Perishables</Link>{' '}
+                                  <Link href="/industries/perishable-logistics">
+                                    Perishables
+                                  </Link>{' '}
                                 </li>
                                 <li>
                                   <Link href="/industries/healthcare-pharma-logistics">
@@ -134,7 +138,9 @@ export const Default = (props: DPWorldFooterProps): JSX.Element => {
                                   <Link href="/sustainability/esg-report-2022">ESG</Link>{' '}
                                 </li>
                                 <li>
-                                  <Link href="/sustainability/climate-change">Climate Change</Link>{' '}
+                                  <Link href="/sustainability/climate-change">
+                                    Climate Change
+                                  </Link>{' '}
                                 </li>
                                 <li>
                                   <Link href="/sustainability/education">Education</Link>{' '}

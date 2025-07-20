@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Field } from '@sitecore-jss/sitecore-jss-nextjs';
+import React, { JSX, useEffect, useState } from 'react';
+import { Field } from '@sitecore-content-sdk/nextjs';
 import { Spinner, Center, Box, Flex, Heading, HStack, Link, Stack, Text } from '@chakra-ui/react';
 import { GetCart } from 'src/services/Ordercloud/CartService';
 import useSWR, { useSWRConfig } from 'swr';

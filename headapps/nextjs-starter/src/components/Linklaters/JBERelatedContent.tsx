@@ -1,10 +1,5 @@
-import React from 'react';
-import {
-  ComponentRendering,
-  ComponentParams,
-  Text,
-  TextField,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import React, { JSX } from 'react';
+import { ComponentRendering, ComponentParams, Text, TextField } from '@sitecore-content-sdk/nextjs';
 import Link from 'next/link';
 
 interface Fields {
@@ -45,7 +40,6 @@ export const Default = (props: LinkLatersRelatedContentProps): JSX.Element => {
   const title = datasource?.Title;
   const titleField: TextField = {
     value: title?.jsonValue?.value,
-    editable: title?.jsonValue?.editable,
   };
 
   if (props.fields) {

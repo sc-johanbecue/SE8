@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import React, { JSX } from 'react';
 import {
   Image as JssImage,
   ImageField,
@@ -6,7 +7,7 @@ import {
   Text,
   RichTextField,
   useSitecoreContext,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   Name: TextField;

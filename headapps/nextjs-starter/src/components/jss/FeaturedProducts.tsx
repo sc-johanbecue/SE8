@@ -13,7 +13,7 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { usePathname } from 'next/navigation';
-import { Field, Text as JSSText } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field, Text as JSSText } from '@sitecore-content-sdk/nextjs';
 
 interface Product {
   fields: {

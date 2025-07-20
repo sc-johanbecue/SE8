@@ -1,5 +1,5 @@
-import React from 'react';
-import { LinkField, TextField, Text, Link as JssLink } from '@sitecore-jss/sitecore-jss-nextjs';
+import React, { JSX } from 'react';
+import { LinkField, TextField, Text, Link as JssLink } from '@sitecore-content-sdk/nextjs';
 import { FaXTwitter, FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa6';
 
 interface Fields {

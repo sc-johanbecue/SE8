@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link as JssLink, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import React, { JSX } from 'react';
+import { Link as JssLink, LinkField } from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   CTALink: LinkField;

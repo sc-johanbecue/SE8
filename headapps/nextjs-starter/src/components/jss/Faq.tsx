@@ -6,7 +6,7 @@ import {
   RichTextField,
   ComponentRendering,
   ComponentParams,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 import {
   Accordion,
   AccordionItem,

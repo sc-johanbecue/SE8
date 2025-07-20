@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import {
   ComponentRendering,
   ComponentParams,
   TextField,
   LinkField,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   Link: LinkField;

@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
-import { Text as JSSText, Field } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text as JSSText, Field } from '@sitecore-content-sdk/nextjs';
 import {
   ComposedMe,
   GetComposedMe,

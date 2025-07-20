@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import React from 'react';
-import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
+import React, { JSX } from 'react';
+import { useSitecoreContext } from '@sitecore-content-sdk/nextjs';
 
 const DubaiWTCMainNavBar = (): JSX.Element => {
   const { sitecoreContext } = useSitecoreContext();

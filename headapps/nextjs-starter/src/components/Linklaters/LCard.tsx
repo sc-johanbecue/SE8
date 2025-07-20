@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import {
   Image as JssImage,
   Link as JssLink,
@@ -7,7 +7,7 @@ import {
   LinkField,
   TextField,
   Text,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   CardImage: ImageField;

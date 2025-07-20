@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import {
   ImageField,
   TextField,
@@ -6,7 +6,7 @@ import {
   Link as JssLink,
   Image as JssImage,
   Text,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   Title: TextField;

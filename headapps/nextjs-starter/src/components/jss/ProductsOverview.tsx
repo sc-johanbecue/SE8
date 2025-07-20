@@ -39,7 +39,7 @@ import {
   DictionaryPhrases,
   useSitecoreContext,
   GraphQLDictionaryService,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 import React, { ChangeEvent, useEffect, useState } from 'react';
 import { MdOutlineTextFields } from 'react-icons/md';
 import { AiOutlineRight } from 'react-icons/ai';

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import {
   Field,
   Text,
   ComponentRendering,
   ComponentParams,
   Placeholder,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 import { Accordion, Box, Heading } from '@chakra-ui/react';
 
 interface Fields {

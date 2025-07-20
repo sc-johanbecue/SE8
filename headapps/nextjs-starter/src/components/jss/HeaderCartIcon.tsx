@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Field } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field } from '@sitecore-content-sdk/nextjs';
 import { Box, Circle, Icon, useColorModeValue as mode, useColorMode } from '@chakra-ui/react';
 import { RiShoppingCartLine } from 'react-icons/ri';
 import { GetCart } from 'src/services/Ordercloud/CartService';

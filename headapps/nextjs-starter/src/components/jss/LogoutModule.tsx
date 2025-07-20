@@ -3,7 +3,7 @@ import {
   Field,
   LayoutServicePageState,
   useSitecoreContext,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 import { Button, Container, Stack, Heading, Box } from '@chakra-ui/react';
 import { Logout } from 'src/services/GlobalAuthenticationService';
 import { Me, MeUser } from 'ordercloud-javascript-sdk';

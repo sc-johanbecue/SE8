@@ -1,6 +1,6 @@
 import React from 'react';
 import Script from 'next/script';
-import { Field, Text, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field, Text, useSitecoreContext } from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
   FormId: Field<string>;

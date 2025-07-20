@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { JSX } from 'react';
 import {
   TextField,
   ImageField,
@@ -7,7 +7,7 @@ import {
   ComponentRendering,
   ComponentParams,
   useSitecoreContext,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-content-sdk/nextjs';
 import Link from 'next/link';
 
 interface Fields {
@@ -58,19 +58,16 @@ export const Default = (props: LinkLatersContactProps): JSX.Element => {
   const title = datasource?.Title;
   const titleField: TextField = {
     value: title?.jsonValue?.value,
-    editable: title?.jsonValue?.editable,
   };
 
   const name = datasource?.Name;
   const nameField: TextField = {
     value: name?.jsonValue?.value,
-    editable: name?.jsonValue?.editable,
   };
 
   const image = datasource?.Image;
   const imageField: ImageField = {
     value: image?.jsonValue,
-    editable: image?.jsonValue?.editable,
   };
 
   const { sitecoreContext } = useSitecoreContext();

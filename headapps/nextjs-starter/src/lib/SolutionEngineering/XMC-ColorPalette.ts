@@ -3,20 +3,23 @@
 /**
  * XMC-ColorPalette.ts
  *
- * This function queries the Sitecore Layout Service GraphQL endpoint to retrieve a
- * structured color palette based on the provided site name and language. It extracts
- * primary, secondary, and neutral color groups and maps them into a flat object with
- * kebab-case keys and hex color values.
+ * Utility functions for fetching and structuring color palette data from Sitecore XM Cloud via GraphQL.
+ * Includes:
+ *  - Flattening hierarchical color folders into key-value hex map
+ *  - Resolving CSS variable names from color items with optional prefix
  */
 
 import { GraphQLClient, gql } from 'graphql-request';
+import { getContentRootPath } from './XMC-Content';
 
 /**
- * Fetch a structured color palette from Sitecore for the given site and language.
+ * Fetches a structured color palette from Sitecore and flattens it into a key-value map.
  *
- * @param siteName - Name of the Sitecore site (e.g., "demo-site")
+ * @param siteName - The Sitecore site name (e.g., "demo-site")
  * @param language - Language code (e.g., "en")
- * @returns A record of color names mapped to their hex values (e.g., { primary-dark: '#123456' })
+ * @returns An object containing:
+ *  - prefix: kebab-case string used for CSS variable naming
+ *  - colorMap: map of kebab-case color names to hex codes
  */
 export async function getColorPalette(
   siteName: string,
@@ -25,61 +28,30 @@ export async function getColorPalette(
   prefix: string;
   colorMap: Record<string, string>;
 }> {
-  // Construct the Sitecore GraphQL endpoint
   const endpoint = `${process.env.NEXT_PUBLIC_SITECORE_GRAPHQL_ENDPOINT}?sc_apikey=${process.env.NEXT_PUBLIC_SITECORE_API_KEY}`;
   const client = new GraphQLClient(endpoint);
 
   console.log(`Fetching color palette for site: ${siteName}, language: ${language}`);
 
-  // Define the GraphQL query to retrieve color palette fields
   const query = gql`
-    query GetStructuredColorPalette {
-      layout(site: "${siteName}", routePath: "/", language: "${language}") {
-        item {
-          parent {
-            colorPalette: field(name: "Color Palette") {
-              ... on LookupField {
-                targetItem {
-                  prefix: field (name: "Prefix")
-                  {
-                    jsonValue
-                  }
-                  primaryColors: field(name: "Primary Colors") {
-                    ... on MultilistField {
-                      targetItems {
-                        name
-                        fields: field(name: "HexColorCode") {
-                          ... on TextField {
-                            value
-                          }
-                        }
-                      }
-                    }
-                  }
-                  secondaryColors: field(name: "Secondary Colors") {
-                    ... on MultilistField {
-                      targetItems {
-                        name
-                        fields: field(name: "HexColorCode") {
-                          ... on TextField {
-                            value
-                          }
-                        }
-                      }
-                    }
-                  }
-                  neutralColors: field(name: "Neutral Colors") {
-                    ... on MultilistField {
-                      targetItems {
-                        name
-                        fields: field(name: "HexColorCode") {
-                          ... on TextField {
-                            value
-                          }
-                        }
-                      }
-                    }
-                  }
+    query GetBackgroundColor($path: String!, $language: String!) {
+      item(path: $path, language: $language) {
+        name
+        prefix: field(name: "Prefix") {
+          value
+        }
+        colorPalette: children {
+          results {
+            name
+
+            colorFolder: children {
+              results {
+                color: name
+                name: field(name: "Name") {
+                  value
+                }
+                hexColorCode: field(name: "HexColorCode") {
+                  value
                 }
               }
             }
@@ -89,41 +61,106 @@ export async function getColorPalette(
     }
   `;
 
-  // Execute the GraphQL query and extract the result
-  const response = await client.request<any>(query);
-  const colorPaletteItem = response?.layout?.item?.parent?.colorPalette?.targetItem;
+  const contentRoot = await getContentRootPath(siteName, language);
+  const colorPaletteItemPath = `${contentRoot}/Presentation/Color Palette`;
+  console.log(`Color palette item path: ${colorPaletteItemPath}`);
+  const response = await client.request<any>(query, {
+    path: colorPaletteItemPath as string,
+    language: language as string,
+  });
 
-  // Initialize the result map
-  const colorPalette: {
-    prefix: string;
-    colorMap: Record<string, string>;
-  } = {
-    prefix: '',
-    colorMap: {},
+  const colorMap: Record<string, string> = {};
+  const prefix = response?.item?.prefix?.value?.replace(/\s+/g, '-').toLowerCase();
+  const paletteGroups = response?.item?.colorPalette?.results;
+
+  for (const group of paletteGroups ?? []) {
+    for (const color of group?.colorFolder?.results ?? []) {
+      const rawName = color?.color;
+      const hex = color?.hexColorCode?.value;
+      if (!rawName || !hex) continue;
+
+      // Convert "Primary Color 1" → "primary-color-1"
+      const kebab = rawName.replace(/\s+/g, '-').toLowerCase();
+      colorMap[kebab] = hex;
+      console.log(`Mapped color: ${kebab} = ${hex}`);
+    }
+  }
+
+  return {
+    prefix,
+    colorMap,
   };
+}
 
-  // Helper function to flatten a color group into the result map
-  const extractColors = (colorItems: any[]) => {
-    colorItems?.forEach((item: any) => {
-      const name = item?.name;
-      const hex = item?.fields?.value;
+/**
+ * Type for resolved color variable names used in Tailwind-compatible theming.
+ */
+export type ColorCssVars = {
+  cssVar: string;
+  contrastCssVar: string;
+};
 
-      if (!name || !hex) return;
+/**
+ * Resolves the Tailwind-compatible CSS variable names for a color item in Sitecore.
+ *
+ * @param colorItemId - The path or ID of the color item
+ * @param client - An initialized GraphQLClient
+ * @param language - The language to query (e.g., "en")
+ * @returns An object with:
+ *  - cssVar: the CSS variable name (e.g., "--prefix-color")
+ *  - contrastCssVar: the contrast version (e.g., "--prefix-color-contrast")
+ */
+export async function getColorCssVars(
+  colorItemId: string | undefined,
+  language: string
+): Promise<ColorCssVars | null> {
+  const endpoint = `${process.env.NEXT_PUBLIC_SITECORE_GRAPHQL_ENDPOINT}?sc_apikey=${process.env.NEXT_PUBLIC_SITECORE_API_KEY}`;
+  const client = new GraphQLClient(endpoint);
 
-      // Convert color name to kebab-case (e.g., "Primary Light" → "primary-light")
-      const kebabCaseKey = name.trim().toLowerCase().replace(/\s+/g, '-');
-      colorPalette.colorMap[kebabCaseKey] = hex;
+  const query = gql`
+    query GetColorCssVars($id: String!, $language: String!) {
+      item(path: $id, language: $language) {
+        name
+        parent {
+          parent {
+            prefix: field(name: "Prefix") {
+              value
+            }
+          }
+        }
+      }
+    }
+  `;
 
-      console.log(`Mapped color: ${kebabCaseKey} = ${hex}`);
-    });
+  let colorKey = '';
+
+  if (colorItemId) {
+    try {
+      const result = await client.request<{
+        item?: {
+          name?: string;
+          parent: {
+            parent: { prefix: { value: string } };
+          };
+        };
+      }>(query, {
+        id: colorItemId,
+        language,
+      });
+
+      if (result.item?.name && result.item?.parent?.parent?.prefix.value) {
+        const prefix = result.item.parent.parent.prefix.value.replace(/\s+/g, '-').toLowerCase();
+        const name = result.item.name.replace(/\s+/g, '-').toLowerCase();
+        colorKey = `${prefix}-${name}`;
+      }
+    } catch (err) {
+      console.warn(`[getColorCssVars] Failed to fetch color item for ID ${colorItemId}:`, err);
+      return null;
+    }
+  }
+
+  return {
+    cssVar: `--${colorKey}`,
+    contrastCssVar: `--${colorKey}-contrast`,
   };
-
-  colorPalette.prefix = colorPaletteItem.prefix.jsonValue.value;
-
-  // Process all color groups
-  extractColors(colorPaletteItem?.primaryColors?.targetItems);
-  extractColors(colorPaletteItem?.secondaryColors?.targetItems);
-  extractColors(colorPaletteItem?.neutralColors?.targetItems);
-
-  return colorPalette;
 }

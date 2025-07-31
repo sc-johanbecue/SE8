@@ -10,8 +10,7 @@ import { FaPhone, FaEnvelope, FaClock } from 'react-icons/fa6';
 import * as FaIcons6 from 'react-icons/fa6';
 import React, { JSX, useState } from 'react';
 import { GraphQLClient, gql } from 'graphql-request';
-import { TAILWIND_VARIABLE_PREFIX } from 'src/lib/SolutionEngineering/constants';
-//import { getContrastsOrdered } from 'lib/SolutionEngineering/NeutralContrastColors';
+import { getColorCssVars } from '../../lib/SolutionEngineering/XMC-ColorPalette';
 
 interface HeaderTopFields {
   PhoneNumber: TextField;
@@ -40,25 +39,18 @@ type LayoutSocialQueryResult = {
   };
 };
 
-// Interface for the GraphQL response for the Background Color query
-interface BackgroundColorQueryResult {
-  item?: {
-    name: string;
-    field?: {
-      value?: string;
-    };
-  };
-}
+type ColorCssVars = {
+  cssVar: string;
+  contrastCssVar: string;
+};
 
 type ComponentProps = {
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
   fields: HeaderTopFields;
   socials: SocialItem[];
-  backgroundColor: {
-    key: string;
-    hexColorCode: string;
-  };
+  backgroundColor: ColorCssVars;
+  hoverBackgroundColor: ColorCssVars;
 };
 
 export const Default = (props: ComponentProps): JSX.Element => {
@@ -69,7 +61,6 @@ export const Default = (props: ComponentProps): JSX.Element => {
     React.ComponentType<{ size?: number; className?: string; style?: React.CSSProperties }>
   >;
 
-  // SocialIcon component to handle hover state and rendering
   const SocialIcon: React.FC<{ name: string }> = ({ name }) => {
     const Icon = iconMap[name];
     const [hovered, setHovered] = useState(false);
@@ -79,16 +70,6 @@ export const Default = (props: ComponentProps): JSX.Element => {
       return null;
     }
 
-    // console.log(`[HeaderTop] BackgroundColor-hex: ${props.backgroundColor.hexColorCode}`);
-    // console.log(`[HeaderTop] BackgroundColor-key: ${props.backgroundColor.key}`);
-    // const background = props.backgroundColor.hexColorCode;
-    // const colors = ['#ffffff', '#000000', '#ffcc00', '#999999', '#eeeeee'];
-
-    // const result = getContrastsOrdered(background, colors);
-
-    // console.log('Sorted by contrast (highest to lowest):');
-    // result.forEach(({ color, contrast }) => console.log(`${color} → ${contrast.toFixed(2)}`));
-
     return (
       <span
         onMouseEnter={() => setHovered(true)}
@@ -96,16 +77,16 @@ export const Default = (props: ComponentProps): JSX.Element => {
         className="inline-flex items-center justify-center w-8 h-8 rounded transition-all duration-200 transform hover:scale-110"
         style={{
           backgroundColor: hovered
-            ? `var(--${TAILWIND_VARIABLE_PREFIX}-${props.backgroundColor.key})`
-            : `var(--${TAILWIND_VARIABLE_PREFIX}-${props.backgroundColor.key}-contrast)`,
+            ? `var(${props.hoverBackgroundColor.cssVar})`
+            : `var(${props.backgroundColor.contrastCssVar})`,
         }}
       >
         <Icon
           size={16}
           style={{
             color: hovered
-              ? `var(--${TAILWIND_VARIABLE_PREFIX}-${props.backgroundColor.key}-contrast)`
-              : `var(--${TAILWIND_VARIABLE_PREFIX}-${props.backgroundColor.key})`,
+              ? `var(${props.hoverBackgroundColor.contrastCssVar})`
+              : `var(${props.backgroundColor.cssVar})`,
             transition: 'color 0.2s ease',
           }}
         />
@@ -208,36 +189,15 @@ export const getStaticProps: GetStaticComponentProps = async (_rendering, _layou
     console.warn('[HeaderTop] Failed to fetch socials from layout query:', error);
   }
 
-  const backgroundColorQuery = gql`
-    query GetBackgroundColor($id: String!) {
-      item(path: $id, language: "en") {
-        name
-        field(name: "HexColorCode") {
-          value
-        }
-      }
-    }
-  `;
-
-  const backgroundColorId = _rendering.params?.BackgroundColor;
-  let backgroundColor = {
-    key: 'neutral-color-1',
-    hexColorCode: '#ffffff', // Default fallback color
-  };
-
-  if (backgroundColorId) {
-    const bgData = await client.request<BackgroundColorQueryResult>(backgroundColorQuery, {
-      id: backgroundColorId,
-      language,
-    });
-    backgroundColor = {
-      key: bgData.item?.name.replace(/\s+/g, '-').toLowerCase() || 'neutral-color-1',
-      hexColorCode: bgData.item?.field?.value || '#ffffff',
-    };
-  }
+  const backgroundColor = await getColorCssVars(_rendering.params?.['Background Color'], language);
+  const hoverBackgroundColor = await getColorCssVars(
+    _rendering.params?.['Hover Background Color'],
+    language
+  );
 
   return {
     socials,
     backgroundColor,
+    hoverBackgroundColor,
   };
 };

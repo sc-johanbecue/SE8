@@ -1,5 +1,11 @@
 import React, { JSX, useState } from 'react';
-import { TextField, LinkField, GetStaticComponentProps } from '@sitecore-content-sdk/nextjs';
+import {
+  TextField,
+  LinkField,
+  ComponentParams,
+  ComponentRendering,
+  GetStaticComponentProps,
+} from '@sitecore-content-sdk/nextjs';
 import * as FaIcons6 from 'react-icons/fa6';
 import { IconType } from 'react-icons';
 import { getColorCssVars } from '../../lib/SolutionEngineering/XMC-ColorPalette';
@@ -15,7 +21,8 @@ interface Fields {
 }
 
 type SocialProps = {
-  params: { [key: string]: string };
+  rendering: ComponentRendering & { params: ComponentParams };
+  params: ComponentParams;
   fields: Fields;
   color: ColorCssVars;
   hoverColor: ColorCssVars;
@@ -45,7 +52,7 @@ export const Default = (props: SocialProps): JSX.Element => {
 
   if (props.fields) {
     return (
-      <div className={`component social ${props.params.styles}`} id={id || undefined}>
+      <div className={`component social ${props.params.styles} p-0`} id={id || undefined}>
         <div className="component-content">
           <a
             href={props.fields.Link.value.url as string}
@@ -56,11 +63,11 @@ export const Default = (props: SocialProps): JSX.Element => {
             <span
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
-              className="inline-flex items-center justify-center w-8 h-8 rounded transition-all duration-200 transform hover:scale-110"
+              className="inline-flex items-center justify-center w-8 h-8 rounded transition-all duration-200 transform"
               style={{
                 backgroundColor: hovered
-                  ? `var(${props.color.cssVar})`
-                  : `var(${props.hoverColor.cssVar})`,
+                  ? `var(${props.hoverColor.cssVar})`
+                  : `var(${props.color.contrastCssVar})`,
               }}
             >
               <Icon

@@ -7,16 +7,19 @@ $breakpoints: sm, md, lg, xl, xxl;
 .position-left,
 .position-left * {
   text-align: left !important;
+  justify-content: flex-start;
 }
 
 .position-right,
 .position-right * {
   text-align: right !important;
+  justify-content: flex-end;
 }
 
 .position-center,
 .position-center * {
   text-align: center !important;
+  justify-content: center;
 }
 
 .position-left select {
@@ -37,10 +40,12 @@ $breakpoints: sm, md, lg, xl, xxl;
       margin-left: auto !important;
       margin-right: 0 !important;
     }
+
     .me-#{$breakpoint}-auto {
       margin-right: auto !important;
       margin-left: 0 !important;
     }
+
     .mx-#{$breakpoint}-auto {
       margin-right: auto !important;
       margin-left: auto !important;

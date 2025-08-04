@@ -53,7 +53,7 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
               </div>
             </header>
             <main>
-              <div id="content">
+              <div id="content" className="flex w-full">
                 {route && <Placeholder name="headless-main" rendering={route} />}
               </div>
             </main>

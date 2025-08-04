@@ -159,8 +159,12 @@ export async function getColorCssVars(
     }
   }
 
-  return {
-    cssVar: `--${colorKey}`,
-    contrastCssVar: `--${colorKey}-contrast`,
-  };
+  if (colorKey) {
+    return {
+      cssVar: `--${colorKey}`,
+      contrastCssVar: `--${colorKey}-contrast`,
+    };
+  } else {
+    return null;
+  }
 }

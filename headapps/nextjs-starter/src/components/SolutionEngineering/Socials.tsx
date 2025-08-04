@@ -38,6 +38,7 @@ type SocialsContainerProps = {
   iconSize: string;
   backgroundStyle: string;
   hoverBackgroundStyle: string;
+  direction?: string;
 };
 
 /**
@@ -49,7 +50,7 @@ export const Default = (props: SocialsContainerProps): JSX.Element => {
 
   return (
     <div className={`component ${props.params.styles}`} id={id || undefined}>
-      <div className="flex flex-row gap-2">
+      <div className={`flex ${props.direction || ''} gap-2`}>
         {props.children?.length ? (
           props.children.map((child, index) => (
             <Social
@@ -108,6 +109,7 @@ export const getStaticProps: GetStaticComponentProps = async (_rendering, _layou
     _rendering.params?.['Hover Background Style'],
     language
   );
+  const direction = await getPresentationStyleValue(_rendering.params?.['Direction'], language);
 
   // Get child social components (with ID, icon, and link fields)
   const children = await getSocialChildren(_rendering.dataSource, language);
@@ -120,6 +122,7 @@ export const getStaticProps: GetStaticComponentProps = async (_rendering, _layou
     iconSize,
     backgroundStyle,
     hoverBackgroundStyle,
+    direction,
     children,
   };
 };

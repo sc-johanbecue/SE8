@@ -21,9 +21,12 @@ import * as SitecoreStyles from 'src/components/SitecoreStyles';
 import * as Title from 'src/components/Title';
 import * as TopBar from 'src/components/SolutionEngineering/TopBar';
 import * as Copyright from 'src/components/SolutionEngineering/Copyright';
-import * as Social from 'src/components/SolutionEngineering/Social';
-import * as Socials from 'src/components/SolutionEngineering/Socials';
-import * as SocialContainer from 'components/SolutionEngineering/SocialContainer';
+import * as Social from 'components/SolutionEngineering/Social/Social';
+import * as Socials from 'components/SolutionEngineering/Social/Socials';
+import * as SocialContainer from 'components/SolutionEngineering/Social/SocialContainer';
+import * as Logo from 'components/SolutionEngineering/Logo/Logo';
+import * as Logos from 'components/SolutionEngineering/Logo/Logos';
+import * as LogoContainer from 'components/SolutionEngineering/Logo/LogoContainer';
 
 // Components must be registered with to match the string key with component name in Sitecore
 export const componentMap = new Map<string, NextjsJssComponent>([
@@ -50,6 +53,9 @@ export const componentMap = new Map<string, NextjsJssComponent>([
   ['Social', Social],
   ['Socials', Socials],
   ['SocialContainer', SocialContainer],
+  ['Logo', Logo],
+  ['Logos', Logos],
+  ['LogoContainer', LogoContainer],
 ]);
 
 export default componentMap;

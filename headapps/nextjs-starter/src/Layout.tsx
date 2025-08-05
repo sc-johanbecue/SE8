@@ -48,17 +48,17 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
         ) : (
           <>
             <header>
-              <div id="header">
+              <div id="header" key="header">
                 {route && <Placeholder name="headless-header" rendering={route} />}
               </div>
             </header>
             <main>
-              <div id="content" className="flex w-full">
+              <div id="content" className="flex w-full" key="main">
                 {route && <Placeholder name="headless-main" rendering={route} />}
               </div>
             </main>
             <footer>
-              <div id="footer">
+              <div id="footer" key="footer">
                 {route && <Placeholder name="headless-footer" rendering={route} />}
               </div>
             </footer>

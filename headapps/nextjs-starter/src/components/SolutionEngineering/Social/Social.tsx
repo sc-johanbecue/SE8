@@ -6,22 +6,25 @@ import {
   ComponentRendering,
   GetStaticComponentProps,
 } from '@sitecore-content-sdk/nextjs';
+
 import * as FaIcons6 from 'react-icons/fa6';
 import { IconType } from 'react-icons';
-import { getColorCssVars, ColorCssVars } from '../../lib/SolutionEngineering/XMC-ColorPalette';
-import { getPresentationStyleValue } from 'lib/SolutionEngineering/XMC-PresentationStyle';
 
-// Define expected field types from Sitecore
+import { getColorCssVars, ColorCssVars } from 'lib/SolutionEngineering/XMC-ColorPalette';
+import { getRenderingParameterLookupValue } from 'lib/SolutionEngineering/XMC-RenderingParameterLookup';
+
+/**
+ * Field definitions expected from Sitecore.
+ */
 interface Fields {
   Icon: TextField;
   Link: LinkField;
 }
 
-// Props received by the Social component
-type SocialProps = {
-  rendering: ComponentRendering & { params: ComponentParams };
-  params: ComponentParams;
-  fields: Fields;
+/**
+ * Presentation-related props resolved from getStaticProps.
+ */
+type SocialPresentationProps = {
   color?: ColorCssVars;
   hoverColor?: ColorCssVars;
   backgroundColor?: ColorCssVars;
@@ -31,7 +34,18 @@ type SocialProps = {
   hoverBackgroundStyle?: string;
 };
 
-// Component shown when required fields are not populated (i.e., fallback content)
+/**
+ * Component props for Social icon link.
+ */
+type SocialProps = {
+  rendering: ComponentRendering & { params: ComponentParams };
+  params: ComponentParams;
+  fields: Fields;
+} & SocialPresentationProps;
+
+/**
+ * Component displayed when required fields (Icon or Link) are missing.
+ */
 const DefaultContent = (props: SocialProps): JSX.Element => (
   <div
     className={`component Social ${props.params.styles ?? ''}`}
@@ -43,23 +57,37 @@ const DefaultContent = (props: SocialProps): JSX.Element => (
   </div>
 );
 
+/**
+ * The default exported Social component renders a single icon link
+ * with hover states, background styling, and dynamic coloring.
+ */
 export const Default = (props: SocialProps): JSX.Element => {
-  const { fields, params, iconSize, color, hoverColor, backgroundColor, hoverBackgroundColor } =
-    props;
-  const [hovered, setHovered] = useState(false);
+  const {
+    fields,
+    params,
+    iconSize,
+    color,
+    hoverColor,
+    backgroundColor,
+    hoverBackgroundColor,
+    backgroundStyle,
+    hoverBackgroundStyle,
+  } = props;
 
+  const [hovered, setHovered] = useState(false);
   const id = params.RenderingIdentifier;
 
-  // Safely extract the icon name from the Icon field
+  // Extract icon name and corresponding component from icon map
   const iconName = typeof fields?.Icon?.value === 'string' ? fields.Icon.value : '';
   const iconMap: Record<string, IconType> = { ...FaIcons6 };
-
   const Icon = iconMap[iconName];
-  const IconBackground = hovered
-    ? (iconMap[props.hoverBackgroundStyle ?? ''] ?? undefined)
-    : (iconMap[props.backgroundStyle ?? ''] ?? undefined);
 
-  // If Icon is not available, render fallback
+  // Dynamically resolve background icon component based on hover state
+  const IconBackground = hovered
+    ? iconMap[hoverBackgroundStyle ?? '']
+    : iconMap[backgroundStyle ?? ''];
+
+  // Fallback rendering if required values are missing
   if (!Icon || !fields?.Link?.value?.url) {
     return <DefaultContent {...props} />;
   }
@@ -111,27 +139,31 @@ export const Default = (props: SocialProps): JSX.Element => {
   );
 };
 
-// Fetch styling and color props for static site generation
-export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData, context) => {
+/**
+ * Static props function for the Social component.
+ * Resolves icon size, styles, and color variables from Sitecore rendering params.
+ */
+export const getStaticProps: GetStaticComponentProps = async (rendering, _layoutData, context) => {
   const language = context?.locale as string;
 
-  const color = await getColorCssVars(_rendering.params?.['Color'], language);
-  const hoverColor = await getColorCssVars(_rendering.params?.['Hover Color'], language);
-  const backgroundColor = await getColorCssVars(_rendering.params?.['Background Color'], language);
-  const hoverBackgroundColor = await getColorCssVars(
-    _rendering.params?.['Hover Background Color'],
-    language
-  );
-
-  const iconSize = await getPresentationStyleValue(_rendering.params?.['Icon Size'], language);
-  const backgroundStyle = await getPresentationStyleValue(
-    _rendering.params?.['Background Style'],
-    language
-  );
-  const hoverBackgroundStyle = await getPresentationStyleValue(
-    _rendering.params?.['Hover Background Style'],
-    language
-  );
+  // Resolve all presentation-related values
+  const [
+    color,
+    hoverColor,
+    backgroundColor,
+    hoverBackgroundColor,
+    iconSize,
+    backgroundStyle,
+    hoverBackgroundStyle,
+  ] = await Promise.all([
+    getColorCssVars(rendering.params?.['Color'], language),
+    getColorCssVars(rendering.params?.['Hover Color'], language),
+    getColorCssVars(rendering.params?.['Background Color'], language),
+    getColorCssVars(rendering.params?.['Hover Background Color'], language),
+    getRenderingParameterLookupValue(rendering.params?.['Icon Size'], language),
+    getRenderingParameterLookupValue(rendering.params?.['Background Style'], language),
+    getRenderingParameterLookupValue(rendering.params?.['Hover Background Style'], language),
+  ]);
 
   return {
     color,

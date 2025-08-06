@@ -4,3 +4,5 @@
 @import "basic/main.scss";
 //Tailwind
 @import "tailwindcss";
+@source inline("{sm:,md:,lg:,xl:,2xl:,}h-{1..100}"); //Added Solution Engineering - Include all height utility classes
+@source inline("{sm:,md:,lg:,xl:,2xl:,}w-{1..100}"); //Added Solution Engineering - Include all width utility classes

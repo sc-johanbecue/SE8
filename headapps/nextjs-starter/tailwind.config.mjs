@@ -58,31 +58,6 @@ const config = {
     'basis-full',
     'basis-0',
     'grow',
-    'max-h-1',
-    'max-h-2',
-    'max-h-3',
-    'max-h-4',
-    'max-h-5',
-    'max-h-6',
-    'max-h-7',
-    'max-h-8',
-    'max-h-9',
-    'max-h-10',
-    'max-h-11',
-    'max-h-12',
-    'max-h-13',
-    'max-h-14',
-    'max-h-15',
-    'max-h-16',
-    'max-h-17',
-    'max-h-18',
-    'max-h-19',
-    'max-h-20',
-    'max-h-21',
-    'max-h-22',
-    'max-h-23',
-    'max-h-24',
-    'max-h-25',
 
     // Layout and positioning utilities
     {
@@ -93,6 +68,11 @@ const config = {
     // Margin utilities
     {
       pattern: /^m(x|l|r)-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
+    // Margin utilities
+    {
+      pattern: /^h-.+$/,
       variants: ['sm', 'md', 'lg', 'xl', '2xl'],
     },
   ],

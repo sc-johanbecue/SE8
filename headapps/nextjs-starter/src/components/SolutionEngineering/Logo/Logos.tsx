@@ -44,7 +44,8 @@ type LogoChild = {
  */
 type LogoPresentationProps = {
   children?: LogoChild[];
-  iconSize: string;
+  height: string;
+  width: string;
   direction?: string;
   gap?: string;
 };
@@ -62,7 +63,7 @@ type LogosContainerProps = {
  * Maps child items into <Logo> components with proper visual and interaction props.
  */
 export const Default = (props: LogosContainerProps): JSX.Element => {
-  const { rendering, params, children, iconSize, direction, gap } = props;
+  const { rendering, params, children, height, width, direction, gap } = props;
 
   const renderingId = params?.RenderingIdentifier;
 
@@ -83,7 +84,8 @@ export const Default = (props: LogosContainerProps): JSX.Element => {
                   Logo: child.Logo,
                   Link: child.Link,
                 }}
-                iconSize={iconSize}
+                height={height}
+                width={width}
               />
             </>
           ))
@@ -107,8 +109,9 @@ export const getStaticProps: GetStaticComponentProps = async (rendering, _layout
     getRenderingParameterLookupValue(rendering.params?.[key], language);
 
   // Fetch all design-related rendering parameters in parallel
-  const [iconSize, direction, gap] = await Promise.all([
-    resolveParam('Icon Size'),
+  const [height, width, direction, gap] = await Promise.all([
+    resolveParam('Height'),
+    resolveParam('Width'),
     resolveParam('Direction'),
     resolveParam('Gap'),
   ]);
@@ -119,7 +122,8 @@ export const getStaticProps: GetStaticComponentProps = async (rendering, _layout
   console.log('[getStaticProps] Loaded logos:', children);
 
   return {
-    iconSize,
+    height,
+    width,
     direction,
     gap,
     children,

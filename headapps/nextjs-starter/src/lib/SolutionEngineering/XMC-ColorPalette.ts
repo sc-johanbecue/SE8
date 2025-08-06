@@ -62,7 +62,7 @@ export async function getColorPalette(
   `;
 
   const contentRoot = await getContentRootPath(siteName, language);
-  const colorPaletteItemPath = `${contentRoot}/Presentation/Color Palette`;
+  const colorPaletteItemPath = `${contentRoot}/Presentation/Rendering Parameter Options/Color Palette`;
   console.log(`Color palette item path: ${colorPaletteItemPath}`);
   const response = await client.request<any>(query, {
     path: colorPaletteItemPath as string,

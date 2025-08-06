@@ -41,7 +41,7 @@ export async function getRenderingParameterLookupValue(
       $language: String!
     ) {
       item(path: $RenderingParameterLookupItemId, language: $language) {
-        RenderingParameterLookup: field(name: "value") {
+        RenderingParameterLookup: field(name: "Value") {
           value
         }
       }

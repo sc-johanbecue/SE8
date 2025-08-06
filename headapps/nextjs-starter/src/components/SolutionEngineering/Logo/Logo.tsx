@@ -23,7 +23,8 @@ interface Fields {
  * Presentation-related props resolved from getStaticProps.
  */
 type LogoPresentationProps = {
-  iconSize?: string;
+  height?: string;
+  width?: string;
 };
 
 /**
@@ -54,7 +55,7 @@ const DefaultContent = (props: LogoProps): JSX.Element => (
  * with hover states, background styling, and dynamic coloring.
  */
 export const Default = (props: LogoProps): JSX.Element => {
-  const { fields, params } = props;
+  const { fields, params, height, width } = props;
 
   // const [hovered, setHovered] = useState(false);
   const id = params.RenderingIdentifier;
@@ -64,9 +65,16 @@ export const Default = (props: LogoProps): JSX.Element => {
     return <DefaultContent {...props} />;
   }
 
+  console.log('[Logo] Rendering with fields:', {
+    Logo: fields.Logo,
+    Link: fields.Link,
+    height: props.height,
+    width: props.width,
+  });
+
   return (
     <div
-      className={`component ${params.styles ?? ''} p-0 h-10 flex items-center`}
+      className={`component ${params.styles ?? ''} p-0 ${height || ''} ${width || ''} flex items-center`}
       id={id || undefined}
     >
       <JssLink field={fields.Link} className="block h-full" editable={false}>
@@ -84,11 +92,18 @@ export const getStaticProps: GetStaticComponentProps = async (rendering, _layout
   const language = context?.locale as string;
 
   // Resolve all presentation-related values
-  const [iconSize] = await Promise.all([
-    getRenderingParameterLookupValue(rendering.params?.['Icon Size'], language),
+  const [height, width] = await Promise.all([
+    getRenderingParameterLookupValue(rendering.params?.['Height'], language),
+    getRenderingParameterLookupValue(rendering.params?.['Width'], language),
   ]);
 
+  console.log('[getStaticProps] Loaded logo props:', {
+    height,
+    width,
+  });
+
   return {
-    iconSize,
+    height,
+    width,
   };
 };

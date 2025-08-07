@@ -15,7 +15,6 @@ interface CruiseItem {
   operator: string;
   startsOn: string;
   officialLink: string;
-  imagineCurated: boolean;
 }
 
 interface ApiCruiseItem {
@@ -26,10 +25,9 @@ interface ApiCruiseItem {
   starts_on: string;
   price: string;
   official_link: string;
-  imagine_curated: boolean;
 }
 
-interface CruisingComponentProps extends ComponentProps {
+interface CruisingComponentOriginalProps extends ComponentProps {
   fields: {
     title: TextField;
     description: RichTextField;
@@ -37,7 +35,7 @@ interface CruisingComponentProps extends ComponentProps {
   };
 }
 
-const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
+const CruisingComponentOriginal = (props: CruisingComponentOriginalProps): JSX.Element => {
   const { fields } = props;
   console.log('Component Props:', props);
   console.log('Fields:', fields);
@@ -110,7 +108,7 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
           validateAndSetCruises(data);
         } catch (fetchError) {
           console.warn('Remote fetch failed, using local data for development:', fetchError);
-          // Fallback to local data in development with imagine_curated property
+          // Fallback to local data in development
           const localData = [
             {
               name: 'The Islands of Cape Verde Cruise',
@@ -120,7 +118,6 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
               starts_on: '2026-03-11T14:00:00.000Z',
               price: '2352.30',
               official_link: 'https://www.seafarercruises.com/cruises/mega-yacht/capeverde/',
-              imagine_curated: true,
             },
             {
               name: 'Antiquity to Byzantium Cruise',
@@ -130,7 +127,6 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
               starts_on: '2026-03-20T15:00:00.000Z',
               price: '2190.00',
               official_link: 'https://www.seafarercruises.co.uk/cruises/mega-yacht/byzantium/',
-              imagine_curated: false,
             },
             {
               name: 'City Explorer: Budapest, Bratislava and Vienna 2026',
@@ -140,7 +136,6 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
               starts_on: '2026-03-16T00:00:00.000Z',
               price: '0.00',
               official_link: '',
-              imagine_curated: true,
             },
           ];
           validateAndSetCruises(localData);
@@ -163,7 +158,6 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
       const transformedCruises: CruiseItem[] = data.map((cruise: ApiCruiseItem, index: number) => {
         console.log('Processing cruise:', cruise.name);
         console.log('Regions:', cruise.region);
-        console.log('Imagine curated:', cruise.imagine_curated);
         // Determine category based on region
         const category = cruise.region && cruise.region.length > 0 ? cruise.region[0] : 'Other';
         // Format start date
@@ -187,7 +181,6 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
           operator: cruise.operator,
           startsOn: formattedDate,
           officialLink: cruise.official_link,
-          imagineCurated: cruise.imagine_curated || false,
         };
       });
 
@@ -197,26 +190,16 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
           index === self.findIndex((c) => c.name === cruise.name && c.ship === cruise.ship)
       );
 
-      // Sort cruises: imagine_curated: true items first, then by name
-      const sortedCruises = uniqueCruises.sort((a, b) => {
-        // First sort by imagine_curated (true items first)
-        if (a.imagineCurated && !b.imagineCurated) return -1;
-        if (!a.imagineCurated && b.imagineCurated) return 1;
-        // Then sort by name alphabetically
-        return a.name.localeCompare(b.name);
-      });
+      console.log('All transformed cruises:', uniqueCruises);
+      console.log('Categories found:', [...new Set(uniqueCruises.map((c) => c.category))]);
 
-      console.log('All transformed cruises:', sortedCruises);
-      console.log('Categories found:', [...new Set(sortedCruises.map((c) => c.category))]);
-      console.log('Curated cruises count:', sortedCruises.filter((c) => c.imagineCurated).length);
-
-      if (sortedCruises.length === 0) {
+      if (uniqueCruises.length === 0) {
         console.error('No cruises found in data');
         throw new Error('No cruise data found');
       }
 
-      console.log('Transformed cruises count:', sortedCruises.length);
-      setCruises(sortedCruises);
+      console.log('Transformed cruises count:', uniqueCruises.length);
+      setCruises(uniqueCruises);
     };
 
     fetchCruises();
@@ -400,12 +383,6 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
                 <img src={selectedCruise.imageUrl} alt="Side 1" />
                 <img src={selectedCruise.imageUrl} alt="Side 2" />
               </div>
-              {selectedCruise.imagineCurated && (
-                <div className="curated-banner">
-                  <div>IMAGINE CURATED</div>
-                  <div className="curated-subtitle">Premium Selection</div>
-                </div>
-              )}
               <div className="promo-banner">
                 <div>EXCLUSIVE PROMOTION</div>
                 <div className="promo-price">55 NIGHTS FROM AN INCREDIBLE</div>
@@ -451,12 +428,6 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
           <div className="results-header">
             <div className="results-count">
               Showing {startIndex + 1}-{Math.min(endIndex, totalCount)} of {totalCount} cruises
-              {cruises.filter((c) => c.imagineCurated).length > 0 && (
-                <span className="curated-count">
-                  {' '}
-                  ({cruises.filter((c) => c.imagineCurated).length} curated)
-                </span>
-              )}
             </div>
             <div className="items-per-page">
               <label htmlFor="itemsPerPage">Items per page:</label>
@@ -478,11 +449,10 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
             {paginatedCruises.map((cruise) => (
               <div
                 key={cruise.id}
-                className={`cruise-card ${cruise.imagineCurated ? 'curated' : ''}`}
+                className="cruise-card"
                 onClick={() => setSelectedCruiseId(cruise.id)}
               >
                 <img src={cruise.imageUrl} alt={cruise.name} />
-                {cruise.imagineCurated && <div className="curated-badge">IMAGINE CURATED</div>}
                 <h3>{cruise.name}</h3>
                 <p className="cruise-ship">{cruise.ship}</p>
                 <p className="cruise-operator">{cruise.operator}</p>
@@ -599,12 +569,6 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
           width: 100%;
           display: flex;
           flex-direction: column;
-          position: relative;
-        }
-
-        .cruise-card.curated {
-          border: 2px solid #ffd700;
-          box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
         }
 
         .cruise-card:hover {
@@ -612,28 +576,11 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        .cruise-card.curated:hover {
-          box-shadow: 0 6px 16px rgba(255, 215, 0, 0.3);
-        }
-
         .cruise-card img {
           width: 100%;
           height: 200px;
           object-fit: cover;
           border-radius: 4px;
-        }
-
-        .curated-badge {
-          position: absolute;
-          top: 1rem;
-          right: 1rem;
-          background: #ffd700;
-          color: #000;
-          padding: 0.25rem 0.5rem;
-          border-radius: 4px;
-          font-size: 0.75rem;
-          font-weight: bold;
-          z-index: 1;
         }
 
         .cruise-card h3 {
@@ -729,23 +676,6 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
           height: 60px;
           object-fit: cover;
         }
-        .curated-banner {
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          background: #ffd700;
-          color: #000;
-          padding: 8px;
-          border-radius: 4px;
-          text-align: center;
-          font-size: 0.9rem;
-          font-weight: bold;
-          z-index: 2;
-        }
-        .curated-subtitle {
-          font-size: 0.7rem;
-          opacity: 0.8;
-        }
         .promo-banner {
           position: absolute;
           top: 10px;
@@ -824,10 +754,6 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
           font-size: 0.9rem;
           color: #666;
         }
-        .curated-count {
-          color: #ffd700;
-          font-weight: bold;
-        }
         .items-per-page {
           display: flex;
           align-items: center;
@@ -878,4 +804,4 @@ const CruisingComponent = (props: CruisingComponentProps): JSX.Element => {
   );
 };
 
-export default CruisingComponent;
+export default CruisingComponentOriginal;

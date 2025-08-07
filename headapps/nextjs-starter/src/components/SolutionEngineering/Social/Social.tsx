@@ -9,8 +9,8 @@ import {
 
 import { ColorCssVars } from 'lib/SolutionEngineering/XMC-ColorPalette';
 
-import * as Icon from '../Icon/Icon';
-const IconComponent = Icon.Default;
+import * as Link from '../Link/Link';
+const LinkComponent = Link.Default;
 
 /**
  * Field definitions expected from Sitecore.
@@ -77,7 +77,7 @@ export const Default = (props: SocialProps): JSX.Element => {
     hoverBackgroundStyle,
   } = props;
 
-  const id = props.rendering.uid + '-social';
+  //const id = props.rendering.uid + '-social';
 
   // Fallback rendering if required values are missing
   if (!fields?.Link?.value?.url) {
@@ -85,27 +85,22 @@ export const Default = (props: SocialProps): JSX.Element => {
   }
 
   return (
-    <a
-      className={`component ${params.styles ?? ''} p-0`}
-      id={id || undefined}
-      href={fields.Link.value.url as string}
-      target={fields.Link.value.target || '_self'}
-      aria-label={fields.Link.value.text}
-    >
-      <IconComponent
-        rendering={{ ...props.rendering, dataSource: fields.Icon.id }}
-        params={params}
-        fields={{
-          Icon: fields.Icon.fields.Icon,
-        }}
-        color={color}
-        hoverColor={hoverColor}
-        backgroundColor={backgroundColor}
-        hoverBackgroundColor={hoverBackgroundColor}
-        iconSize={iconSize}
-        backgroundStyle={backgroundStyle}
-        hoverBackgroundStyle={hoverBackgroundStyle}
-      ></IconComponent>
-    </a>
+    <LinkComponent
+      //className={`component ${params.styles ?? ''} p-0`}
+      //id={id || undefined}
+      rendering={{ ...props.rendering, dataSource: fields.Icon.id }}
+      params={params}
+      fields={{
+        Icon: fields.Icon,
+        Link: fields.Link,
+      }}
+      color={color}
+      hoverColor={hoverColor}
+      backgroundColor={backgroundColor}
+      hoverBackgroundColor={hoverBackgroundColor}
+      iconSize={iconSize}
+      backgroundStyle={backgroundStyle}
+      hoverBackgroundStyle={hoverBackgroundStyle}
+    ></LinkComponent>
   );
 };

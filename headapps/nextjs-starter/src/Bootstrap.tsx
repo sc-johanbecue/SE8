@@ -28,6 +28,7 @@ const Bootstrap = (props: SitecorePageProps): JSX.Element | null => {
       console.debug('Browser Events SDK is not initialized in edit and preview modes');
     else {
       if (config.api.edge?.clientContextId) {
+        console.log('Start CloudSDK initialization');
         CloudSDK({
           sitecoreEdgeUrl: config.api.edge.edgeUrl,
           sitecoreEdgeContextId: config.api.edge.clientContextId,
@@ -40,6 +41,7 @@ const Bootstrap = (props: SitecorePageProps): JSX.Element | null => {
           .addPersonalize({ enablePersonalizeCookie: true, webPersonalization: true }) // Initialize the personalize package
           .addSearch() // Initialize the search package
           .initialize(); // Run the initialization logic and set cookies
+        console.log('Ended CloudSDK initialization');
       } else {
         console.error('Client Edge API settings missing from configuration');
       }

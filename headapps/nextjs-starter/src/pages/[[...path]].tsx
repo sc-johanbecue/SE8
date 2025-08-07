@@ -1,10 +1,12 @@
 import { useEffect } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next'; //getStaticProps
 import NotFound from 'src/NotFound';
-import Layout from 'src/Layout';
+import Layout from 'src/Layout.MajidAlFuttaim';
 import LayoutImagineCruising from 'src/Layout.ImagineCruising';
 import LayoutGeberit from 'src/Layout.Geberit';
 import RoyalGD from 'src/Layout.RoyalGD';
+import FrieslandCampina from 'src/Layout.FrieslandCampina';
+import MajidAlFuttaim from 'src/Layout.MajidAlFuttaim';
 
 import {
   SitecoreContext,
@@ -43,7 +45,8 @@ const SitecorePage = ({
   const geberitSwitserland = layoutData.sitecore.context.site?.name == 'switserland';
   const geberitMaster = layoutData.sitecore.context.site?.name == 'master-website';
   const royalGD = layoutData.sitecore.context.site?.name == 'royal-gd';
-
+  const frieslandcampina = layoutData.sitecore.context.site?.name == 'frieslandcampina';
+  const majidalfuttaim = layoutData.sitecore.context.site?.name == 'majidalfuttaim';
   return (
     <ComponentPropsContext value={componentProps}>
       <SitecoreContext
@@ -57,6 +60,10 @@ const SitecorePage = ({
           <LayoutGeberit layoutData={layoutData} headLinks={headLinks} />
         ) : royalGD ? (
           <RoyalGD layoutData={layoutData} headLinks={headLinks} />
+        ) : frieslandcampina ? (
+          <FrieslandCampina layoutData={layoutData} headLinks={headLinks} />
+        ) : majidalfuttaim ? (
+          <MajidAlFuttaim layoutData={layoutData} headLinks={headLinks} />
         ) : (
           // This is the default layout for the app
           <Layout layoutData={layoutData} headLinks={headLinks} />

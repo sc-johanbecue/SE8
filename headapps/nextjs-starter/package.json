@@ -24,6 +24,8 @@
   "dependencies": {
     "@sitecore-cloudsdk/core": "^0.5.1",
     "@sitecore-cloudsdk/events": "^0.5.1",
+    "@sitecore-cloudsdk/personalize": "^0.5.2",
+    "@sitecore-cloudsdk/search": "^0.5.2",
     "@sitecore-content-sdk/nextjs": "~0.2.1",
     "@sitecore-feaas/clientside": "^0.5.19",
     "@sitecore/components": "~2.0.1",

@@ -1,5 +1,6 @@
 import React, { JSX } from 'react';
 import {
+  Item,
   TextField,
   LinkField,
   ComponentParams,
@@ -36,7 +37,11 @@ async function getSocialChildren(parentId: string | undefined, language: string 
  */
 type SocialChild = {
   id: string;
-  Icon: TextField;
+  Icon: Item & {
+    fields: {
+      Icon: TextField;
+    };
+  };
   Link: LinkField;
 };
 
@@ -84,10 +89,10 @@ export const Default = (props: SocialsContainerProps): JSX.Element => {
     gap,
   } = props;
 
-  const renderingId = params?.RenderingIdentifier;
+  const id = props.rendering.uid + '-socials';
 
   return (
-    <div className={`component ${params?.styles || ''}`} id={renderingId || undefined}>
+    <div className={`component ${params?.styles || ''}`} id={id || undefined}>
       <div className={`flex ${direction || 'flex-row'} ${gap || ''}`}>
         {children?.length ? (
           children.map((child, index) => (
@@ -96,7 +101,7 @@ export const Default = (props: SocialsContainerProps): JSX.Element => {
               rendering={{ ...rendering, dataSource: child.id }}
               params={{
                 ...params,
-                RenderingIdentifier: `social-${child.id}`,
+                RenderingIdentifier: child.id,
               }}
               fields={{
                 Icon: child.Icon,

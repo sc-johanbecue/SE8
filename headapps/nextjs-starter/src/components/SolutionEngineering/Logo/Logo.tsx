@@ -58,7 +58,7 @@ export const Default = (props: LogoProps): JSX.Element => {
   const { fields, params, height, width } = props;
 
   // const [hovered, setHovered] = useState(false);
-  const id = params.RenderingIdentifier;
+  const id = props.rendering.uid + '-logo';
 
   // Fallback rendering if required values are missing
   if (!props.fields.Logo) {

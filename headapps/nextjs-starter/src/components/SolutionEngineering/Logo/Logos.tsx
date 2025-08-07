@@ -65,10 +65,10 @@ type LogosContainerProps = {
 export const Default = (props: LogosContainerProps): JSX.Element => {
   const { rendering, params, children, height, width, direction, gap } = props;
 
-  const renderingId = params?.RenderingIdentifier;
+  const id = props.rendering.uid + '-logos';
 
   return (
-    <div className={`component ${params?.styles || ''}`} id={renderingId || undefined}>
+    <div className={`component ${params?.styles || ''}`} id={id || undefined}>
       <div className={`flex ${direction || 'flex-row'} ${gap || ''}`}>
         {children?.length ? (
           children.map((child, index) => (

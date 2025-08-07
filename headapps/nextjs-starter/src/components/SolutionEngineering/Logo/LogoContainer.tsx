@@ -34,7 +34,7 @@ export const Default = (props: LogoContainerProps): JSX.Element => {
   const { rendering, params, direction, gap } = props;
   const { sitecoreContext } = useSitecoreContext();
 
-  const id = params?.RenderingIdentifier;
+  const id = props.rendering.uid + '-logoContainer';
   const phKey = `logoContainer-${params?.DynamicPlaceholderId}`;
   const editingPhKey = `logoContainer-{*}`;
 

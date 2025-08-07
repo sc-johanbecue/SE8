@@ -34,7 +34,7 @@ export const Default = (props: SocialContainerProps): JSX.Element => {
   const { rendering, params, direction, gap } = props;
   const { sitecoreContext } = useSitecoreContext();
 
-  const id = params?.RenderingIdentifier;
+  const id = rendering.uid + '-socialContainer';
   const phKey = `socialContainer-${params?.DynamicPlaceholderId}`;
   const editingPhKey = `socialContainer-{*}`;
 

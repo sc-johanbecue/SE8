@@ -21,12 +21,15 @@ import * as SitecoreStyles from 'src/components/SitecoreStyles';
 import * as Title from 'src/components/Title';
 import * as TopBar from 'src/components/SolutionEngineering/TopBar';
 import * as Copyright from 'src/components/SolutionEngineering/Copyright';
+import * as Icon from 'components/SolutionEngineering/Icon/Icon';
 import * as Social from 'components/SolutionEngineering/Social/Social';
 import * as Socials from 'components/SolutionEngineering/Social/Socials';
 import * as SocialContainer from 'components/SolutionEngineering/Social/SocialContainer';
 import * as Logo from 'components/SolutionEngineering/Logo/Logo';
 import * as Logos from 'components/SolutionEngineering/Logo/Logos';
 import * as LogoContainer from 'components/SolutionEngineering/Logo/LogoContainer';
+import * as Link from 'components/SolutionEngineering/Link/Link';
+import * as SearchWidget from 'components/SolutionEngineering/SearchWidget';
 
 // Components must be registered with to match the string key with component name in Sitecore
 export const componentMap = new Map<string, NextjsJssComponent>([
@@ -50,12 +53,15 @@ export const componentMap = new Map<string, NextjsJssComponent>([
   ['Title', Title],
   ['TopBar', TopBar],
   ['Copyright', Copyright],
+  ['Icon', Icon],
   ['Social', Social],
   ['Socials', Socials],
   ['SocialContainer', SocialContainer],
   ['Logo', Logo],
   ['Logos', Logos],
   ['LogoContainer', LogoContainer],
+  ['Link', Link],
+  ['SearchWidget', SearchWidget],
 ]);
 
 export default componentMap;

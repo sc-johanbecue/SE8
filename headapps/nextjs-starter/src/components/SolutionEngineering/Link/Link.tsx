@@ -27,7 +27,7 @@ interface Fields {
 /**
  * Presentation-related props resolved from getStaticProps.
  */
-type SocialPresentationProps = {
+type LinkPresentationProps = {
   color?: ColorCssVars;
   hoverColor?: ColorCssVars;
   backgroundColor?: ColorCssVars;
@@ -38,33 +38,33 @@ type SocialPresentationProps = {
 };
 
 /**
- * Component props for Social icon link.
+ * Component props for Link icon link.
  */
-type SocialProps = {
+type LinkProps = {
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
   fields: Fields;
-} & SocialPresentationProps;
+} & LinkPresentationProps;
 
 /**
  * Component displayed when required fields (Icon or Link) are missing.
  */
-const DefaultContent = (props: SocialProps): JSX.Element => (
+const DefaultContent = (props: LinkProps): JSX.Element => (
   <div
-    className={`component Social ${props.params.styles ?? ''}`}
+    className={`component Link ${props.params.styles ?? ''}`}
     id={props.params.RenderingIdentifier || undefined}
   >
     <div className="component-content">
-      <span className="is-empty-hint">Social Component</span>
+      <span className="is-empty-hint">Link Component</span>
     </div>
   </div>
 );
 
 /**
- * The default exported Social component renders a single icon link
+ * The default exported Link component renders a single icon link
  * with hover states, background styling, and dynamic coloring.
  */
-export const Default = (props: SocialProps): JSX.Element => {
+export const Default = (props: LinkProps): JSX.Element => {
   const {
     fields,
     params,
@@ -77,7 +77,7 @@ export const Default = (props: SocialProps): JSX.Element => {
     hoverBackgroundStyle,
   } = props;
 
-  const id = props.rendering.uid + '-social';
+  const id = params.RenderingIdentifier + '-link';
 
   // Fallback rendering if required values are missing
   if (!fields?.Link?.value?.url) {
@@ -92,6 +92,7 @@ export const Default = (props: SocialProps): JSX.Element => {
       target={fields.Link.value.target || '_self'}
       aria-label={fields.Link.value.text}
     >
+      {fields.Link.value.text}
       <IconComponent
         rendering={{ ...props.rendering, dataSource: fields.Icon.id }}
         params={params}

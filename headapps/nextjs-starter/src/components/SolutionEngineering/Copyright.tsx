@@ -34,13 +34,12 @@ export const Default = (props: CopyrightProps): JSX.Element => {
 
   if (props.fields) {
     return (
-      <div className={`component copyright ${props.params.styles}`} id={id || undefined}>
-        <div
-          className="component-content"
-          style={props.fontFamily ? { fontFamily: `var(${props.fontFamily.cssVar})` } : {}}
-        >
-          <Text field={props.fields['Copyright Text']} />
-        </div>
+      <div
+        className={`component ${props.params.styles}`}
+        id={id || undefined}
+        style={props.fontFamily ? { fontFamily: `var(${props.fontFamily.cssVar})` } : {}}
+      >
+        <Text field={props.fields['Copyright Text']} />
       </div>
     );
   }

@@ -1,6 +1,8 @@
 import { useEffect, JSX } from 'react';
 import { CloudSDK } from '@sitecore-cloudsdk/core/browser';
 import '@sitecore-cloudsdk/events/browser';
+import '@sitecore-cloudsdk/personalize/browser';
+import '@sitecore-cloudsdk/search/browser';
 import config from 'sitecore.config';
 import {
   LayoutServicePageState,
@@ -35,7 +37,9 @@ const Bootstrap = (props: SitecorePageProps): JSX.Element | null => {
           cookieDomain: window.location.hostname.replace(/^www\./, ''),
         })
           .addEvents()
-          .initialize();
+          .addPersonalize({ enablePersonalizeCookie: true, webPersonalization: true }) // Initialize the personalize package
+          .addSearch() // Initialize the search package
+          .initialize(); // Run the initialization logic and set cookies
       } else {
         console.error('Client Edge API settings missing from configuration');
       }

@@ -58,7 +58,7 @@ const config = {
     'basis-full',
     'basis-0',
     'grow',
-
+    'no-underline',
     // Layout and positioning utilities
     {
       pattern:

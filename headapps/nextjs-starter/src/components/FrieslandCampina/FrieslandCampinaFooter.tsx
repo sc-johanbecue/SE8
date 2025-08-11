@@ -1,6 +1,3 @@
-import Link from 'next/link';
-import { IconFacebook, IconInstagram, IconLinkedin, IconX, IconYoutube } from './icons/svg-icons';
-
 import React from 'react'; //{ useState }
 import {
   ComponentRendering,
@@ -40,79 +37,69 @@ export const Default = (props: FooterProps): JSX.Element => {
               <h3 className="footer__title">Follow us</h3>
               <ul className="footer__socials socials">
                 <li className="socials__item">
-                  <Link
+                  <a
                     className="socials__link"
                     href="https://www.linkedin.com/company/frieslandcampina/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <span className="socials__text sr-text">LinkedIn</span>
-                    <IconLinkedin
-                      className="socials__icon"
-                      width="22"
-                      height="22"
-                      aria-hidden="true"
-                    />
-                  </Link>
+                    <svg width="22" height="22" className="socials__icon" aria-hidden="true">
+                      <use xlinkHref="#icon--linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li className="socials__item">
-                  <Link
+                  <a
                     className="socials__link"
                     href="https://www.facebook.com/FrieslandCampina/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <span className="socials__text sr-text">Facebook</span>
-                    <IconFacebook
-                      className="socials__icon"
-                      width="22"
-                      height="22"
-                      aria-hidden="true"
-                    />
-                  </Link>
+                    <svg width="22" height="22" className="socials__icon" aria-hidden="true">
+                      <use xlinkHref="#icon--facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li className="socials__item">
-                  <Link
+                  <a
                     className="socials__link"
                     href="https://twitter.com/FrieslndCampina"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <span className="socials__text sr-text">Twitter</span>
-                    <IconX className="socials__icon" width="22" height="22" aria-hidden="true" />
-                  </Link>
+                    <svg width="22" height="22" className="socials__icon" aria-hidden="true">
+                      <use xlinkHref="#icon--x"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li className="socials__item">
-                  <Link
+                  <a
                     className="socials__link"
                     href="https://www.instagram.com/frieslandcampina/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <span className="socials__text sr-text">Instagram</span>
-                    <IconInstagram
-                      className="socials__icon"
-                      width="22"
-                      height="22"
-                      aria-hidden="true"
-                    />
-                  </Link>
+                    <svg width="22" height="22" className="socials__icon" aria-hidden="true">
+                      <use xlinkHref="#icon--instagram"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li className="socials__item">
-                  <Link
+                  <a
                     className="socials__link"
                     href="https://www.youtube.com/@frieslandcampina"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <span className="socials__text sr-text">YouTube</span>
-                    <IconYoutube
-                      className="socials__icon"
-                      width="22"
-                      height="22"
-                      aria-hidden="true"
-                    />
-                  </Link>
+                    <svg width="22" height="22" className="socials__icon" aria-hidden="true">
+                      <use xlinkHref="#icon--youtube"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -120,10 +107,10 @@ export const Default = (props: FooterProps): JSX.Element => {
           <div className="footer__fat text--s">
             <div className="footer__columns">
               <div className="footer__column">
-                <Link title="Ga naar de startpagina" className="logo footer__logo" href="/nl/">
+                <a title="Ga naar de startpagina" className="logo footer__logo" href="/nl/">
                   <span className="sr-text logo__logotype">Ga naar de startpagina</span>
                   <img
-                    src="/images/spa/logo-fc-full.svg"
+                    src="https://www.frieslandcampina.com/images/spa/logo-fc-full.svg"
                     className="logo__logomark logo__logomark--full"
                     width="256"
                     height="136"
@@ -131,70 +118,70 @@ export const Default = (props: FooterProps): JSX.Element => {
                     aria-hidden="true"
                   />
                   <img
-                    src="/images/spa/logo-fc-compact.svg"
+                    src="https://www.frieslandcampina.com/images/spa/logo-fc-compact.svg"
                     className="logo__logomark logo__logomark--compact"
                     width="146"
                     height="46"
                     alt="Friesland Campina"
                     aria-hidden="true"
                   />
-                </Link>
+                </a>
               </div>
               <div className="footer__column">
                 <div className="footer__menu">
                   <h3 className="footer__title">Over FrieslandCampina</h3>
                   <ul className="footer__list">
                     <li className="footer__item">
-                      <Link className="footer__link" href="/nl/over-ons/wie-wij-zijn/">
+                      <a className="footer__link" href="/nl/over-ons/wie-wij-zijn/">
                         <span className="footer__text-label">Wie wij zijn</span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="footer__item">
-                      <Link className="footer__link" href="/nl/brands/">
+                      <a className="footer__link" href="/nl/brands/">
                         <span className="footer__text-label">Onze merken</span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="footer__item">
-                      <Link className="footer__link" href="/nl/duurzaamheid/voeding/">
+                      <a className="footer__link" href="/nl/duurzaamheid/voeding/">
                         <span className="footer__text-label">Voeding</span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="footer__item">
-                      <Link className="footer__link" href="/nl/duurzaamheid/">
+                      <a className="footer__link" href="/nl/duurzaamheid/">
                         <span className="footer__text-label">Duurzaamheid</span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="footer__item">
-                      <Link
+                      <a
                         className="footer__link"
                         href="/nl/over-ons/financiele-resultaten/financiele-verslagen-en-duurzaamheidsontwikkelingen/"
                       >
                         <span className="footer__text-label">Jaarverslagen</span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="footer__item">
-                      <Link className="footer__link" href="/nl/contact/">
+                      <a className="footer__link" href="/nl/contact/">
                         <span className="footer__text-label">Contact opnemen</span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="footer__item">
-                      <Link className="footer__link" href="/nl/speak-up/">
+                      <a className="footer__link" href="/nl/speak-up/">
                         <span className="footer__text-label">Speak Up</span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="footer__item">
-                      <Link className="footer__link" href="/nl/veelgestelde-vragen/">
+                      <a className="footer__link" href="/nl/veelgestelde-vragen/">
                         <span className="footer__text-label">Veelgestelde vragen</span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="footer__item">
-                      <Link
+                      <a
                         className="footer__link"
                         href="https://careers.frieslandcampina.com/nl"
                         target="_blank"
                       >
                         <span className="footer__text-label">Careers</span>
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -204,24 +191,24 @@ export const Default = (props: FooterProps): JSX.Element => {
                   <h3 className="footer__title">Eigendom van boeren</h3>
                   <ul className="footer__list">
                     <li className="footer__item">
-                      <Link className="footer__link" href="/nl/eigendom-van-boeren/">
+                      <a className="footer__link" href="/nl/eigendom-van-boeren/">
                         <span className="footer__text-label">Eigendom van boeren</span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="footer__item">
-                      <Link className="footer__link" href="/nl/melk-leveren/">
+                      <a className="footer__link" href="/nl/melk-leveren/">
                         <span className="footer__text-label">
                           Melk leveren aan FrieslandCampina
                         </span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="footer__item">
-                      <Link
+                      <a
                         className="footer__link"
                         href="/nl/eigendom-van-boeren/nederlands-erfgoed/"
                       >
                         <span className="footer__text-label">Nederlands erfgoed</span>
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -231,19 +218,19 @@ export const Default = (props: FooterProps): JSX.Element => {
                   <h3 className="footer__title">Media</h3>
                   <ul className="footer__list">
                     <li className="footer__item">
-                      <Link className="footer__link" href="/nl/nieuws/">
+                      <a className="footer__link" href="/nl/nieuws/">
                         <span className="footer__text-label">Nieuws</span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="footer__item">
-                      <Link className="footer__link" href="/nl/stories/">
+                      <a className="footer__link" href="/nl/stories/">
                         <span className="footer__text-label">Stories</span>
-                      </Link>
+                      </a>
                     </li>
                     <li className="footer__item">
-                      <Link className="footer__link" href="/nl/media/">
+                      <a className="footer__link" href="/nl/media/">
                         <span className="footer__text-label">Mediarelaties</span>
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -254,59 +241,59 @@ export const Default = (props: FooterProps): JSX.Element => {
           <div className="footer__skinny text--xs">
             <ul className="footer__disclaimer disclaimer">
               <li className="disclaimer__item">
-                <Link className="disclaimer__link" href="/nl/disclaimer/">
+                <a className="disclaimer__link" href="/nl/disclaimer/">
                   <span className="disclaimer__text-label">Disclaimer</span>
-                </Link>
+                </a>
               </li>
               <li className="disclaimer__item">
-                <Link className="disclaimer__link" href="/nl/algemene-voorwaarden/">
+                <a className="disclaimer__link" href="/nl/algemene-voorwaarden/">
                   <span className="disclaimer__text-label">Algemene voorwaarden</span>
-                </Link>
+                </a>
               </li>
               <li className="disclaimer__item">
-                <Link
+                <a
                   className="disclaimer__link"
                   href="https://privacy.frieslandcampina.com/nl"
                   target="_blank"
                 >
                   <span className="disclaimer__text-label">Privacy verklaring</span>
-                </Link>
+                </a>
               </li>
               <li className="disclaimer__item">
-                <Link
+                <a
                   className="disclaimer__link"
                   href="https://privacy.frieslandcampina.com/nl/cookie/"
                   target="_blank"
                 >
                   <span className="disclaimer__text-label">Cookie verklaring</span>
-                </Link>
+                </a>
               </li>
               <li className="disclaimer__item">
-                <Link
+                <a
                   className="disclaimer__link"
                   href="https://melkweb.frieslandcampina.com/inloggen"
                   target="_blank"
                 >
                   <span className="disclaimer__text-label">Melkweb</span>
-                </Link>
+                </a>
               </li>
               <li className="disclaimer__item">
-                <Link
+                <a
                   className="disclaimer__link"
                   href="https://performancemanager.successfactors.eu/"
                   target="_blank"
                 >
                   <span className="disclaimer__text-label">Horizon</span>
-                </Link>
+                </a>
               </li>
               <li className="disclaimer__item">
-                <Link
+                <a
                   className="disclaimer__link"
                   href="https://frieslandcampina.service-now.com/finder"
                   target="_blank"
                 >
                   <span className="disclaimer__text-label">Finder</span>
-                </Link>
+                </a>
               </li>
               <li className="disclaimer__item">
                 <a className="optanon-toggle-display disclaimer__link">

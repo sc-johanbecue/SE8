@@ -5,8 +5,8 @@ import {
   ComponentParams,
   TextField,
   LinkField,
+  Placeholder,
 } from '@sitecore-jss/sitecore-jss-nextjs';
-import { Placeholder } from 'react-bootstrap';
 
 interface Fields {
   Copyright: TextField;
@@ -30,7 +30,7 @@ const HeaderDefaultComponent = (props: HeaderProps): JSX.Element => (
 );
 
 export const Default = (props: HeaderProps): JSX.Element => {
-  const phNavigation = `Navigation-${props.params.DynamicPlaceholderId}`;
+  const phNavigation = `FrieslandCampinaNavigation-${props.params.DynamicPlaceholderId}`;
 
   if (props.fields) {
     return (

@@ -52,7 +52,7 @@ export const Default = (props: NavigationProps): JSX.Element => {
   const { sitecoreContext } = useSitecoreContext();
 
   if (!Object.values(props.fields).length) {
-    return <>ddddd[Navigation]</>;
+    return <>[Navigation]</>;
   }
 
   const handleToggleMenu = (event?: React.MouseEvent<HTMLElement>, flag?: boolean): void => {
@@ -74,7 +74,7 @@ export const Default = (props: NavigationProps): JSX.Element => {
         key={`${key}${element.Id}`}
         fields={element}
         handleClick={(event: React.MouseEvent<HTMLElement>) => handleToggleMenu(event, false)}
-        relativeLevel={1}
+        relativeLevel={0}
       />
     ));
 
@@ -92,20 +92,21 @@ const NavigationList = (props: NavigationProps) => {
         key={`${index}${element.Id}`}
         fields={element}
         handleClick={props.handleClick}
-        relativeLevel={props.relativeLevel + 1}
+        relativeLevel={props.relativeLevel}
       />
     ));
   }
 
   return (
-    <li className="nav__list-item nav__list-item--level-0" key={props.fields.Id} tabIndex={0}>
+    <li className="nav__list-item nav__list-item--level-0" key={props.fields.Id}>
       <Link
         className={`nav__link nav__link--level-${props.relativeLevel}`}
         field={getLinkField(props)}
         editable={sitecoreContext.pageEditing}
         onClick={props.handleClick}
       >
-        <span className="nav__text-label">{getNavigationText(props)}</span>
+        {/* <span className="nav__text-label">{getNavigationText(props)}</span> */}
+        {getNavigationText(props)}
       </Link>
       {children.length > 0 ? (
         <>

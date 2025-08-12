@@ -7,6 +7,7 @@ import {
   LinkField,
   Placeholder,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import Link from 'next/link';
 
 interface Fields {
   Copyright: TextField;
@@ -36,7 +37,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
     return (
       <div className="header__container ls-container--m ls-gutter">
         <nav className="header__top-bar">
-          <a
+          <Link
             href="https://careers.frieslandcampina.com/nl"
             className="header__button badge badge--clickable badge--careers"
           >
@@ -44,8 +45,8 @@ export const Default = (props: HeaderProps): JSX.Element => {
               <use xlinkHref="#icon--user"></use>
             </svg>
             <span>Careers</span>
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.frieslandcampina.com/nl/eigendom-van-boeren/garantieprijs/"
             className="header__milk-prices badge badge--clickable badge--milkprice "
           >
@@ -53,7 +54,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
               <use xlinkHref="#icon--milk-carton"></use>
             </svg>
             <p className="header__milk-label">Garantieprijs</p>
-          </a>
+          </Link>
           <div className="header__languages languages">
             <div className="app__overlay app__overlay--language"></div>
             <button className="languages__toggler badge badge--clickable">
@@ -67,12 +68,12 @@ export const Default = (props: HeaderProps): JSX.Element => {
                 <div className="languages__column languages__column--aside">
                   <aside className="languages__aside">
                     <h3 className="title--s">Welkom bij FrieslandCampina</h3>
-                    <a
+                    <Link
                       className="languages__cta button button--primary"
                       href="https://www.frieslandcampina.com/nl/"
                     >
                       Ga terug naar de website
-                    </a>
+                    </Link>
                   </aside>
                 </div>
                 <div className="languages__column languages__column--list">
@@ -80,39 +81,48 @@ export const Default = (props: HeaderProps): JSX.Element => {
                   <ul className="languages__list">
                     <li className="languages__language">
                       <h4 className="languages__subtitle title--xs">Global</h4>
-                      <a className="languages__link link " href="http://www.frieslandcampina.com">
+                      <Link
+                        className="languages__link link "
+                        href="http://www.frieslandcampina.com"
+                      >
                         Engels
-                      </a>
+                      </Link>
                     </li>
                     <li className="languages__language">
                       <h4 className="languages__subtitle title--xs">Duitsland</h4>
-                      <a className="languages__link link " href="http://www.frieslandcampina.de/de">
+                      <Link
+                        className="languages__link link "
+                        href="http://www.frieslandcampina.de/de"
+                      >
                         Duits
-                      </a>
+                      </Link>
                     </li>
                     <li className="languages__language">
                       <h4 className="languages__subtitle title--xs">Griekenland</h4>
-                      <a
+                      <Link
                         className="languages__link link "
                         href="https://www.frieslandcampina.com/gr"
                       >
                         Grieks
-                      </a>
+                      </Link>
                     </li>
                     <li className="languages__language">
                       <h4 className="languages__subtitle title--xs">Nigeria</h4>
-                      <a
+                      <Link
                         className="languages__link link "
                         href="https://www.frieslandcampina.com.ng/ng/"
                       >
                         Engels
-                      </a>
+                      </Link>
                     </li>
                     <li className="languages__language">
                       <h4 className="languages__subtitle title--xs">Pakistan</h4>
-                      <a className="languages__link link " href="https://frieslandcampina.com.pk/">
+                      <Link
+                        className="languages__link link "
+                        href="https://frieslandcampina.com.pk/"
+                      >
                         Engels
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -121,7 +131,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
           </div>
         </nav>
         <nav className="header__nav nav" aria-label="Main">
-          <a title="Ga naar de startpagina" className="logo nav__logo" href="/nl/">
+          <Link title="Ga naar de startpagina" className="logo nav__logo" href="/nl/">
             <span className="sr-text logo__logotype">Ga naar de startpagina</span>
             <img
               src="https://www.frieslandcampina.com/images/spa/logo-fc-full.svg"
@@ -139,7 +149,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
               alt="Friesland Campina"
               aria-hidden="true"
             />
-          </a>
+          </Link>
           <button
             className="nav__hamburger hamburger hamburger--pristine"
             aria-controls="a11y-nav"

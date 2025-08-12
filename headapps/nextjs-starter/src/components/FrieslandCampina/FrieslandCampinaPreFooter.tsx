@@ -5,6 +5,7 @@ import {
   TextField,
   LinkField,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import Link from 'next/link';
 
 interface Fields {
   Copyright: TextField;
@@ -777,9 +778,9 @@ export const Default = (props: FooterProps): JSX.Element => {
           <div className="pre-footer__message ls-container--xs ls-gutter">
             <h2 className="pre-footer__title title--l">Nourishing by nature</h2>
             <p className="pre-footer__text text--l">Goede voeding in balans met de planeet</p>
-            <a className="button pre-footer__button" href="/nl/duurzaamheid/">
+            <Link className="button pre-footer__button" href="/nl/duurzaamheid/">
               <span className="button__label">Duurzaamheid</span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

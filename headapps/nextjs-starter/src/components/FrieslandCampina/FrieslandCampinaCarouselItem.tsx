@@ -5,6 +5,7 @@ import {
   TextField,
   LinkField,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import Link from 'next/link';
 
 interface Fields {
   Copyright: TextField;
@@ -27,7 +28,7 @@ export const Default = (props: FooterProps): JSX.Element => {
       data-key-id="ft-0"
     >
       <article className="carousel__inner">
-        <a href="/nl/stories/guus-janssen" className="carousel__link">
+        <Link href="/nl/stories/guus-janssen" className="carousel__link">
           <div className="carousel__visual ls-first-item">
             <img
               className="carousel__image carousel__image--static lazyload"
@@ -58,7 +59,7 @@ export const Default = (props: FooterProps): JSX.Element => {
               <span className="link">Leden aan het woord</span>
             </footer>
           </div>
-        </a>
+        </Link>
       </article>
     </li>
   );

@@ -10,6 +10,9 @@ import {
 import { ColorCssVars } from 'lib/SolutionEngineering/XMC-ColorPalette';
 import { BaseLink } from './BaseLink';
 
+import * as Icon from '../Icon/Icon';
+const IconComponent = Icon.Default;
+
 /**
  * Field definitions expected from Sitecore.
  */
@@ -63,7 +66,17 @@ const DefaultContent = (props: LinkProps): JSX.Element => (
  * with hover states, background styling, and dynamic coloring.
  */
 export const Default = (props: LinkProps): JSX.Element => {
-  const { fields, params } = props;
+  const {
+    fields,
+    params,
+    iconSize,
+    color,
+    hoverColor,
+    backgroundColor,
+    hoverBackgroundColor,
+    backgroundStyle,
+    hoverBackgroundStyle,
+  } = props;
 
   const id = params.RenderingIdentifier + '-link';
 
@@ -75,6 +88,20 @@ export const Default = (props: LinkProps): JSX.Element => {
   return (
     <BaseLink link={fields.Link} className={`component ${params.styles ?? ''} p-0`} id={id}>
       {fields.Link.value.text}
+      <IconComponent
+        rendering={{ ...props.rendering, dataSource: fields.Icon.id }}
+        params={params}
+        fields={{
+          Icon: fields.Icon.fields.Icon,
+        }}
+        color={color}
+        hoverColor={hoverColor}
+        backgroundColor={backgroundColor}
+        hoverBackgroundColor={hoverBackgroundColor}
+        iconSize={iconSize}
+        backgroundStyle={backgroundStyle}
+        hoverBackgroundStyle={hoverBackgroundStyle}
+      ></IconComponent>
     </BaseLink>
   );
 };

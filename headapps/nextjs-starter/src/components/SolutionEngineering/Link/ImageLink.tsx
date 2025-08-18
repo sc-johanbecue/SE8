@@ -1,39 +1,23 @@
 import React, { JSX } from 'react';
 import {
-  Item,
-  TextField,
+  ImageField,
   LinkField,
   ComponentParams,
   ComponentRendering,
 } from '@sitecore-content-sdk/nextjs';
 
-import { ColorCssVars } from 'lib/SolutionEngineering/XMC-ColorPalette';
 import { BaseLink } from './BaseLink';
+
+import * as BaseImageComponent from '../Image/BaseImage';
+const BaseImage = BaseImageComponent.Default;
 
 /**
  * Field definitions expected from Sitecore.
  */
 interface Fields {
-  Icon: Item & {
-    fields: {
-      Icon: TextField;
-    };
-  };
+  Image: ImageField;
   Link: LinkField;
 }
-
-/**
- * Presentation-related props resolved from getStaticProps.
- */
-type LinkPresentationProps = {
-  color?: ColorCssVars;
-  hoverColor?: ColorCssVars;
-  backgroundColor?: ColorCssVars;
-  hoverBackgroundColor?: ColorCssVars;
-  iconSize?: string;
-  backgroundStyle?: string;
-  hoverBackgroundStyle?: string;
-};
 
 /**
  * Component props for Link icon link.
@@ -42,7 +26,7 @@ type LinkProps = {
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
   fields: Fields;
-} & LinkPresentationProps;
+};
 
 /**
  * Component displayed when required fields (Icon or Link) are missing.
@@ -74,7 +58,7 @@ export const Default = (props: LinkProps): JSX.Element => {
 
   return (
     <BaseLink link={fields.Link} className={`component ${params.styles ?? ''} p-0`} id={id}>
-      {fields.Link.value.text}
+      <BaseImage image={fields.Image} params={props.params} rendering={props.rendering} />
     </BaseLink>
   );
 };

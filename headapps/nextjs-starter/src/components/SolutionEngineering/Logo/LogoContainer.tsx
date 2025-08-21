@@ -7,15 +7,20 @@ import {
   GetStaticComponentProps,
 } from '@sitecore-content-sdk/nextjs';
 
-import { getRenderingParameterLookupValue } from 'lib/SolutionEngineering/XMC-RenderingParameterLookup';
+import {
+  ListRenderingParameters,
+  getListRenderingParameters,
+} from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-ListBaseRenderingParameters';
+import { joinClassNames } from 'lib/SolutionEngineering/Utils/ClassNameUtils';
+
+const debuggingEnabled = false;
 
 /**
  * Presentation props returned from getStaticProps,
  * controlling layout direction and spacing.
  */
-type LogoContainerPresentationProps = {
-  direction?: string;
-  gap?: string;
+type StaticProps = {
+  listRenderingParameters: ListRenderingParameters;
 };
 
 /**
@@ -24,31 +29,49 @@ type LogoContainerPresentationProps = {
 type LogoContainerProps = {
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
-} & LogoContainerPresentationProps;
+  isNested?: boolean;
+} & StaticProps;
 
 /**
  * The LogoContainer component wraps a Placeholder for nested logo components.
  * It supports flexible layout direction and gap via rendering parameters.
  */
 export const Default = (props: LogoContainerProps): JSX.Element => {
-  const { rendering, params, direction, gap } = props;
   const { sitecoreContext } = useSitecoreContext();
 
   const id = props.rendering.uid + '-logoContainer';
-  const phKey = `logoContainer-${params?.DynamicPlaceholderId}`;
+  const phKey = `logoContainer-${props.params?.DynamicPlaceholderId}`;
   const editingPhKey = `logoContainer-{*}`;
 
   // Check if placeholder has children (different in Experience Editor)
   const hasChildren = sitecoreContext.pageEditing
-    ? rendering.placeholders?.[editingPhKey]?.length
-    : rendering.placeholders?.[phKey]?.length;
+    ? props.rendering.placeholders?.[editingPhKey]?.length
+    : props.rendering.placeholders?.[phKey]?.length;
+
+  if (debuggingEnabled) {
+    console.log('[LogoContainer - Default] - id:' + id);
+    console.log('[LogoContainer - Default] - params:' + JSON.stringify(props.params));
+    console.log('[LogoContainer - Default] - rendering:' + JSON.stringify(props.rendering));
+    console.log('[LogoContainer - Default] - isNested:' + JSON.stringify(props.isNested));
+    console.log('[LogoContainer - Default] - hasChildren:' + JSON.stringify(hasChildren));
+    console.log(
+      '[LogoContainer - Default] - listRenderingParameters:' +
+        JSON.stringify(props.listRenderingParameters)
+    );
+  }
+
+  const wrapperClassNames = props.isNested ? '' : joinClassNames('component', props.params.styles);
 
   return (
-    <div className={`component ${params?.styles || ''}`} id={id || undefined}>
+    <div className={wrapperClassNames} id={id}>
       <div
-        className={hasChildren === 0 ? 'contents' : `flex ${direction || 'flex-row'} ${gap || ''}`}
+        className={
+          hasChildren === 0
+            ? 'contents'
+            : `flex ${props.listRenderingParameters.direction || 'flex-row'} ${props.listRenderingParameters.gap || ''}`
+        }
       >
-        <Placeholder name={phKey} rendering={rendering} />
+        <Placeholder name={phKey} rendering={props.rendering} />
       </div>
     </div>
   );
@@ -61,15 +84,17 @@ export const Default = (props: LogoContainerProps): JSX.Element => {
 export const getStaticProps: GetStaticComponentProps = async (rendering, _layoutData, context) => {
   const language = context?.locale as string;
 
-  const direction = await getRenderingParameterLookupValue(
-    rendering.params?.['Direction'],
-    language
-  );
+  // Resolve all presentation-related values
+  const listRenderingParameters = await getListRenderingParameters(rendering, language);
 
-  const gap = await getRenderingParameterLookupValue(rendering.params?.['Gap'], language);
+  if (debuggingEnabled) {
+    console.log(
+      '[LogoContainer - getStaticProps] - listRenderingParameters:' +
+        JSON.stringify(listRenderingParameters)
+    );
+  }
 
   return {
-    direction,
-    gap,
+    listRenderingParameters,
   };
 };

@@ -1,22 +1,30 @@
 import React, { JSX } from 'react';
 import {
-  Item,
   TextField,
   LinkField,
   ComponentParams,
   ComponentRendering,
+  GetStaticComponentProps,
 } from '@sitecore-content-sdk/nextjs';
 
-import { ColorCssVars } from 'lib/SolutionEngineering/XMC-ColorPalette';
+import {
+  IconRenderingParameters,
+  getIconRenderingParameters,
+} from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-IconBaseRenderingParameters';
 
-import * as Link from '../Link/Link';
-const LinkComponent = Link.Default;
+import { Default as IconLink } from '../Link/IconLink';
+
+const debuggingEnabled = false;
 
 /**
  * Field definitions expected from Sitecore.
  */
-interface Fields {
-  Icon: Item & {
+export interface Fields {
+  Icon: {
+    id: string;
+    url: string;
+    name: string;
+    displayName: string;
     fields: {
       Icon: TextField;
     };
@@ -24,83 +32,69 @@ interface Fields {
   Link: LinkField;
 }
 
-/**
- * Presentation-related props resolved from getStaticProps.
- */
-type SocialPresentationProps = {
-  color?: ColorCssVars;
-  hoverColor?: ColorCssVars;
-  backgroundColor?: ColorCssVars;
-  hoverBackgroundColor?: ColorCssVars;
-  iconSize?: string;
-  backgroundStyle?: string;
-  hoverBackgroundStyle?: string;
+type StaticProps = {
+  iconRenderingParameters: IconRenderingParameters;
 };
 
 /**
  * Component props for Social icon link.
  */
 type SocialProps = {
-  rendering: ComponentRendering & { params: ComponentParams };
+  rendering: ComponentRendering;
   params: ComponentParams;
   fields: Fields;
-} & SocialPresentationProps;
-
-/**
- * Component displayed when required fields (Icon or Link) are missing.
- */
-const DefaultContent = (props: SocialProps): JSX.Element => (
-  <div
-    className={`component Social ${props.params.styles ?? ''}`}
-    id={props.params.RenderingIdentifier || undefined}
-  >
-    <div className="component-content">
-      <span className="is-empty-hint">Social Component</span>
-    </div>
-  </div>
-);
+  isNested?: boolean;
+} & StaticProps;
 
 /**
  * The default exported Social component renders a single icon link
  * with hover states, background styling, and dynamic coloring.
  */
 export const Default = (props: SocialProps): JSX.Element => {
-  const {
-    fields,
-    params,
-    iconSize,
-    color,
-    hoverColor,
-    backgroundColor,
-    hoverBackgroundColor,
-    backgroundStyle,
-    hoverBackgroundStyle,
-  } = props;
+  const id = props.rendering.uid + '-social';
 
-  //const id = props.rendering.uid + '-social';
-
-  // Fallback rendering if required values are missing
-  if (!fields?.Link?.value?.url) {
-    return <DefaultContent {...props} />;
+  if (debuggingEnabled) {
+    console.log('[Social - Default] - id:' + id);
+    console.log('[Social - Default] - params:' + JSON.stringify(props.params));
+    console.log('[Social - Default] - rendering:' + JSON.stringify(props.rendering));
+    console.log('[Social - Default] - isNested:' + JSON.stringify(props.isNested));
+    console.log('[Social - Default] - fields:' + JSON.stringify(props.fields));
+    console.log(
+      '[Social - Default] - iconRenderingParameters:' +
+        JSON.stringify(props.iconRenderingParameters)
+    );
   }
 
   return (
-    <LinkComponent
-      //className={`component ${params.styles ?? ''} p-0`}
-      //id={id || undefined}
-      rendering={{ ...props.rendering, dataSource: fields.Icon.id }}
-      params={params}
+    <IconLink
+      rendering={props.rendering}
+      params={props.params}
+      isNested={props.isNested}
       fields={{
-        Icon: fields.Icon,
-        Link: fields.Link,
+        Icon: props.fields.Icon.fields.Icon,
+        Link: props.fields.Link,
       }}
-      color={color}
-      hoverColor={hoverColor}
-      backgroundColor={backgroundColor}
-      hoverBackgroundColor={hoverBackgroundColor}
-      iconSize={iconSize}
-      backgroundStyle={backgroundStyle}
-      hoverBackgroundStyle={hoverBackgroundStyle}
-    ></LinkComponent>
+      iconRenderingParameters={props.iconRenderingParameters}
+    ></IconLink>
   );
+};
+
+/**
+ * Static props function for the Social component.
+ * Resolves icon size, styles, and color variables from Sitecore rendering params.
+ */
+export const getStaticProps: GetStaticComponentProps = async (rendering, _layoutData, context) => {
+  const language = context?.locale as string;
+
+  // Resolve all presentation-related values
+  const iconRenderingParameters = await getIconRenderingParameters(rendering, language);
+
+  if (debuggingEnabled) {
+    console.log(
+      '[Social - getStaticProps] - iconRenderingParameters:' +
+        JSON.stringify(iconRenderingParameters)
+    );
+  }
+
+  return { iconRenderingParameters };
 };

@@ -9,7 +9,7 @@ import * as ColumnSplitter from 'src/components/ColumnSplitter';
 import * as Container from 'src/components/Container';
 import * as ContentBlock from 'src/components/ContentBlock';
 import * as FEAASScripts from 'src/components/FEAASScripts';
-import * as Image from 'src/components/Image';
+
 import * as LinkList from 'src/components/LinkList';
 import * as Navigation from 'src/components/Navigation';
 import * as PageContent from 'src/components/PageContent';
@@ -22,6 +22,8 @@ import * as Title from 'src/components/Title';
 import * as TopBar from 'src/components/SolutionEngineering/TopBar';
 import * as Copyright from 'src/components/SolutionEngineering/Copyright';
 import * as Icon from 'components/SolutionEngineering/Icon/Icon';
+import * as Icons from 'components/SolutionEngineering/Icon/Icons';
+import * as IconContainer from 'components/SolutionEngineering/Icon/IconContainer';
 import * as Social from 'components/SolutionEngineering/Social/Social';
 import * as Socials from 'components/SolutionEngineering/Social/Socials';
 import * as SocialContainer from 'components/SolutionEngineering/Social/SocialContainer';
@@ -30,6 +32,9 @@ import * as Logos from 'components/SolutionEngineering/Logo/Logos';
 import * as LogoContainer from 'components/SolutionEngineering/Logo/LogoContainer';
 import * as Link from 'components/SolutionEngineering/Link/Link';
 import * as SearchWidget from 'components/SolutionEngineering/SearchWidget';
+import * as Image from 'components/SolutionEngineering/Image/Image';
+import * as Images from 'components/SolutionEngineering/Image/Images';
+import * as ImageContainer from 'components/SolutionEngineering/Image/ImageContainer';
 
 // Components must be registered with to match the string key with component name in Sitecore
 export const componentMap = new Map<string, NextjsJssComponent>([
@@ -53,15 +58,24 @@ export const componentMap = new Map<string, NextjsJssComponent>([
   ['Title', Title],
   ['TopBar', TopBar],
   ['Copyright', Copyright],
+  ['Link', Link],
+  ['SearchWidget', SearchWidget],
+  //Icons
   ['Icon', Icon],
-  ['Social', Social],
-  ['Socials', Socials],
-  ['SocialContainer', SocialContainer],
+  ['Icons', Icons],
+  ['IconContainer', IconContainer],
+  //Images
+  ['Image', Image],
+  ['Images', Images],
+  ['ImageContainer', ImageContainer],
+  //Logos
   ['Logo', Logo],
   ['Logos', Logos],
   ['LogoContainer', LogoContainer],
-  ['Link', Link],
-  ['SearchWidget', SearchWidget],
+  //Socials
+  ['Social', Social],
+  ['Socials', Socials],
+  ['SocialContainer', SocialContainer],
 ]);
 
 export default componentMap;

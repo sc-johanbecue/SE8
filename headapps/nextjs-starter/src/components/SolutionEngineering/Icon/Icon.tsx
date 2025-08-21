@@ -6,124 +6,126 @@ import {
   GetStaticComponentProps,
 } from '@sitecore-content-sdk/nextjs';
 
-import * as FaIcons6 from 'react-icons/fa6';
-import { IconType } from 'react-icons';
+import {
+  IconRenderingParameters,
+  getIconRenderingParameters,
+} from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-IconBaseRenderingParameters';
 
-import { getColorCssVars, ColorCssVars } from 'lib/SolutionEngineering/XMC-ColorPalette';
-import { getRenderingParameterLookupValue } from 'lib/SolutionEngineering/XMC-RenderingParameterLookup';
+import * as FaIcons6 from 'react-icons/fa6';
+// Import all FontAwesome v6 icons
+import { IconType } from 'react-icons';
+import { joinClassNames } from 'lib/SolutionEngineering/Utils/ClassNameUtils';
+// Type definition for any react-icons icon
+
+const debuggingEnabled = false;
 
 /**
  * Field definitions expected from Sitecore.
  */
-interface Fields {
+export interface Fields {
   Icon: TextField;
 }
 
-/**
- * Presentation-related props resolved from getStaticProps.
- */
-type SocialPresentationProps = {
-  color?: ColorCssVars;
-  hoverColor?: ColorCssVars;
-  backgroundColor?: ColorCssVars;
-  hoverBackgroundColor?: ColorCssVars;
-  iconSize?: string;
-  backgroundStyle?: string;
-  hoverBackgroundStyle?: string;
+type StaticProps = {
+  iconRenderingParameters: IconRenderingParameters;
 };
 
 /**
  * Component props for Social icon link.
  */
-type SocialProps = {
-  rendering: ComponentRendering & { params: ComponentParams };
+type IconProps = {
+  rendering: ComponentRendering;
   params: ComponentParams;
   fields: Fields;
-} & SocialPresentationProps;
-
-/**
- * Component displayed when required fields (Icon or Link) are missing.
- */
-const DefaultContent = (props: SocialProps): JSX.Element => (
-  <div
-    className={`component Social ${props.params.styles ?? ''}`}
-    id={props.params.RenderingIdentifier || undefined}
-  >
-    <div className="component-content">
-      <span className="is-empty-hint">Social Component</span>
-    </div>
-  </div>
-);
+  isNested?: boolean;
+} & StaticProps;
 
 /**
  * The default exported Social component renders a single icon link
  * with hover states, background styling, and dynamic coloring.
  */
-export const Default = (props: SocialProps): JSX.Element => {
-  const {
-    fields,
-    params,
-    iconSize,
-    color,
-    hoverColor,
-    backgroundColor,
-    hoverBackgroundColor,
-    backgroundStyle,
-    hoverBackgroundStyle,
-  } = props;
+export const Default = (props: IconProps): JSX.Element => {
+  const id = props.rendering.uid + '-icon';
 
+  if (debuggingEnabled) {
+    console.log('[Icon - Default] - id:' + id);
+    console.log('[Icon - Default] - fields:' + JSON.stringify(props.fields));
+    console.log('[Icon - Default] - params:' + JSON.stringify(props.params));
+    console.log('[Icon - Default] - rendering:' + JSON.stringify(props.rendering));
+    console.log('[Logo - Default] - isNested:' + JSON.stringify(props.isNested));
+    console.log(
+      '[Icon - Default] - iconRenderingParameters:' + JSON.stringify(props.iconRenderingParameters)
+    );
+  }
+
+  // Local state to track hover status
   const [hovered, setHovered] = useState(false);
-  const id = params.RenderingIdentifier + '-icon';
 
-  // Extract icon name and corresponding component from icon map
-  const iconName = typeof fields?.Icon?.value === 'string' ? fields.Icon.value : '';
+  // Get icon name string from Sitecore TextField
+  const iconName = typeof props.fields.Icon?.value === 'string' ? props.fields.Icon.value : '';
+  if (debuggingEnabled) {
+    console.log('[BaseIcon] - icon:' + JSON.stringify(props.fields.Icon));
+  }
+  // Map all available FontAwesome icons into an object for lookup
   const iconMap: Record<string, IconType> = { ...FaIcons6 };
+
+  // Resolve foreground icon component based on the icon name
   const Icon = iconMap[iconName];
 
-  // Dynamically resolve background icon component based on hover state
-  const IconBackground = hovered
-    ? iconMap[hoverBackgroundStyle ?? '']
-    : iconMap[backgroundStyle ?? ''];
+  // Resolve background icon component, which changes on hover
+  const IconBackground = iconMap[props.iconRenderingParameters.iconStyle ?? ''];
 
-  // Fallback rendering if required values are missing
-  if (!Icon) {
-    return <DefaultContent {...props} />;
-  }
+  const baseWrapperClassNames = joinClassNames(
+    'p-0',
+    'fa-stack',
+    props.iconRenderingParameters.iconSize
+  );
+
+  const wrapperClassName = props.isNested
+    ? baseWrapperClassNames
+    : joinClassNames('component', props.params.styles, baseWrapperClassNames);
 
   return (
     <span
-      className={`component ${params.styles ?? ''} p-0 fa-stack ${iconSize}`}
-      id={id || undefined}
-      style={{ flexShrink: 0 }}
+      // Wrapper span for icon stack (FontAwesome stack styling)
+      className={wrapperClassName}
+      id={id} // Ensure unique id for DOM
+      style={{ flexShrink: 0 }} // Prevent shrinking inside flex layouts
+      // Hover listeners to update state
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
+      {/* Render background icon if defined (fills "fa-stack-2x" layer) */}
       {IconBackground && (
         <IconBackground
           className="fa-stack-2x"
           style={{
+            // Use Sitecore color variables for hover/non-hover background
             color: hovered
-              ? hoverBackgroundColor?.cssVar
-                ? `var(${hoverBackgroundColor.cssVar})`
-                : undefined
-              : backgroundColor?.cssVar
-                ? `var(${backgroundColor.cssVar})`
+              ? props.iconRenderingParameters.hoveredIconBackgroundColor?.cssVar
+                ? `var(${props.iconRenderingParameters.hoveredIconBackgroundColor.cssVar})`
+                : ''
+              : props.iconRenderingParameters.iconBackgroundColor?.cssVar
+                ? `var(${props.iconRenderingParameters.iconBackgroundColor.cssVar})`
                 : 'transparent',
           }}
         />
       )}
+
+      {/* Render foreground icon (sits on "fa-stack-1x" layer) */}
       <Icon
         className="fa-stack-1x"
         style={{
-          top: '0.5em',
+          top: '0.5em', // Slight vertical alignment adjustment
+          // Switch between normal and hover colors
           color: hovered
-            ? hoverColor?.cssVar
-              ? `var(${hoverColor.cssVar})`
-              : undefined
-            : color?.cssVar
-              ? `var(${color.cssVar})`
-              : undefined,
-          transition: 'color 0.2s ease',
+            ? props.iconRenderingParameters.hoveredIconColor?.cssVar
+              ? `var(${props.iconRenderingParameters.hoveredIconColor.cssVar})`
+              : ''
+            : props.iconRenderingParameters.iconColor?.cssVar
+              ? `var(${props.iconRenderingParameters.iconColor.cssVar})`
+              : '',
+          transition: 'color 0.2s ease', // Smooth hover color transition
         }}
       />
     </span>
@@ -138,31 +140,13 @@ export const getStaticProps: GetStaticComponentProps = async (rendering, _layout
   const language = context?.locale as string;
 
   // Resolve all presentation-related values
-  const [
-    color,
-    hoverColor,
-    backgroundColor,
-    hoverBackgroundColor,
-    iconSize,
-    backgroundStyle,
-    hoverBackgroundStyle,
-  ] = await Promise.all([
-    getColorCssVars(rendering.params?.['Color'], language),
-    getColorCssVars(rendering.params?.['Hover Color'], language),
-    getColorCssVars(rendering.params?.['Background Color'], language),
-    getColorCssVars(rendering.params?.['Hover Background Color'], language),
-    getRenderingParameterLookupValue(rendering.params?.['Icon Size'], language),
-    getRenderingParameterLookupValue(rendering.params?.['Background Style'], language),
-    getRenderingParameterLookupValue(rendering.params?.['Hover Background Style'], language),
-  ]);
+  const iconRenderingParameters = await getIconRenderingParameters(rendering, language);
 
-  return {
-    color,
-    hoverColor,
-    backgroundColor,
-    hoverBackgroundColor,
-    iconSize,
-    backgroundStyle,
-    hoverBackgroundStyle,
-  };
+  if (debuggingEnabled) {
+    console.log(
+      '[Icon - getStaticProps] - iconRenderingParameters:' + JSON.stringify(iconRenderingParameters)
+    );
+  }
+
+  return { iconRenderingParameters };
 };

@@ -8,10 +8,20 @@ import {
 } from '@sitecore-content-sdk/nextjs';
 
 import { getTypedChildItems } from 'lib/SolutionEngineering/XMC-Content2';
-import { getRenderingParameterLookupValue } from 'lib/SolutionEngineering/XMC-RenderingParameterLookup';
 
-import * as ImageComponent from './Image';
-const Image = ImageComponent.Default;
+import {
+  getImageRenderingParameters,
+  ImageRenderingParameters,
+} from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-ImageBaseRenderingParameters';
+
+import { Default as Image, Fields } from './Image';
+import {
+  getListRenderingParameters,
+  ListRenderingParameters,
+} from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-ListBaseRenderingParameters';
+import { joinClassNames } from 'lib/SolutionEngineering/Utils/ClassNameUtils';
+
+const debuggingEnabled = false;
 
 /**
  * Fetches typed child items (Image field) for a given parent.
@@ -31,23 +41,12 @@ async function getImageChildren(parentId: string | undefined, language: string |
 }
 
 /**
- * Child item structure returned by getImageChildren.
- */
-type ImageChild = {
-  id: string;
-  Image: ImageField;
-  Link: LinkField;
-};
-
-/**
  * Presentation-related props resolved from rendering parameters.
  */
-type ImagePresentationProps = {
-  children?: ImageChild[];
-  height: string;
-  width: string;
-  direction?: string;
-  gap?: string;
+type StaticProps = {
+  children?: (Fields & { id: string })[];
+  imageRenderingParameters: ImageRenderingParameters;
+  listRenderingParameters: ListRenderingParameters;
 };
 
 /**
@@ -56,38 +55,60 @@ type ImagePresentationProps = {
 type ImagesContainerProps = {
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
-} & ImagePresentationProps;
+  isNested?: boolean;
+} & StaticProps;
 
 /**
  * Default component renderer for the Images container.
  * Maps child items into <Image> components with proper visual and interaction props.
  */
 export const Default = (props: ImagesContainerProps): JSX.Element => {
-  const { rendering, params, children, height, width, direction, gap } = props;
-
   const id = props.rendering.uid + '-images';
 
+  if (debuggingEnabled) {
+    console.log('[Images - Default] - id:' + id);
+    console.log('[Images - Default] - params:' + JSON.stringify(props.params));
+    console.log('[Images - Default] - rendering:' + JSON.stringify(props.rendering));
+    console.log('[Images - Default] - isNested:' + JSON.stringify(props.isNested));
+    console.log('[Images - Default] - children:' + JSON.stringify(props.children));
+    console.log(
+      '[Images - Default] - listRenderingParameters:' +
+        JSON.stringify(props.listRenderingParameters)
+    );
+    console.log(
+      '[Images - Default] - imageRenderingParameters:' +
+        JSON.stringify(props.imageRenderingParameters)
+    );
+  }
+
+  const wrapperClassNames = props.isNested ? '' : joinClassNames('component', props.params.styles);
+
   return (
-    <div className={`component ${params?.styles || ''}`} id={id || undefined}>
-      <div className={`flex ${direction || 'flex-row'} ${gap || ''}`}>
-        {children?.length ? (
-          children.map((child, index) => (
-            <>
+    <div className={wrapperClassNames} id={id || undefined}>
+      <div
+        className={`flex ${props.listRenderingParameters.direction || 'flex-row'} ${props.listRenderingParameters.gap || ''}`}
+      >
+        {props.children?.length ? (
+          props.children.map((child, index) => {
+            const key = `${id}-${index}-image`;
+            if (debuggingEnabled) console.log('[Logos - Default] render key:', key);
+
+            return (
               <Image
-                key={index}
-                rendering={{ ...rendering, dataSource: child.id }}
+                key={key}
+                rendering={{ ...props.rendering, dataSource: child.id }}
                 params={{
-                  ...params,
+                  ...props.params,
                   RenderingIdentifier: `image-${child.id}`,
                 }}
                 fields={{
                   Image: child.Image,
                 }}
-                height={height}
-                width={width}
+                isNested={true}
+                imageRenderingParameters={props.imageRenderingParameters}
               />
-            </>
-          ))
+            );
+          })
         ) : (
           <span className="text-sm text-gray-500">No images are configured.</span>
         )}
@@ -104,27 +125,30 @@ export const getStaticProps: GetStaticComponentProps = async (rendering, _layout
   const language = context?.locale as string;
 
   // Helper to reduce repetition for parameter lookups
-  const resolveParam = (key: string) =>
-    getRenderingParameterLookupValue(rendering.params?.[key], language);
+  // Resolve all presentation-related values
+  const imageRenderingParameters = await getImageRenderingParameters(rendering, language);
+  const listRenderingParameters = await getListRenderingParameters(rendering, language);
 
-  // Fetch all design-related rendering parameters in parallel
-  const [height, width, direction, gap] = await Promise.all([
-    resolveParam('Height'),
-    resolveParam('Width'),
-    resolveParam('Direction'),
-    resolveParam('Gap'),
-  ]);
-
-  // Fetch child items for this Images component
+  // Fetch child items for this Socials component
   const children = await getImageChildren(rendering.dataSource, language);
 
-  console.log('[getStaticProps] Loaded images:', children);
+  if (debuggingEnabled) {
+    console.log(
+      '[Logos - getStaticProps] - iconRenderingParameters:' +
+        JSON.stringify(imageRenderingParameters)
+    );
+    console.log(
+      '[Logos - getStaticProps] - listRenderingParameters:' +
+        JSON.stringify(listRenderingParameters)
+    );
+    console.log(
+      '[Logos - getStaticProps] - children:(' + children.length + '):' + JSON.stringify(children)
+    );
+  }
 
   return {
-    height,
-    width,
-    direction,
-    gap,
+    imageRenderingParameters,
+    listRenderingParameters,
     children,
   };
 };

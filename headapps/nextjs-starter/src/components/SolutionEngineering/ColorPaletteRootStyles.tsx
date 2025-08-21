@@ -14,6 +14,8 @@ import { getColorPalette } from 'lib/SolutionEngineering/XMC-ColorPalette';
 import { LayoutServiceData } from '@sitecore-content-sdk/nextjs';
 import { getContrastsOrdered } from 'lib/SolutionEngineering/NeutralContrastColors';
 
+const debuggingEnabled = false;
+
 interface ColorPaletteStyleProps {
   layoutData: LayoutServiceData;
 }
@@ -26,12 +28,20 @@ const ColorPaletteStyle = async ({ layoutData }: ColorPaletteStyleProps) => {
   const colorPalette = await getColorPalette(siteName, language);
 
   if (!colorPalette.colorMap || Object.keys(colorPalette.colorMap).length === 0) {
-    console.warn('[ColorPaletteRootStyle] No colors returned from Sitecore.');
+    if (debuggingEnabled) {
+      console.warn(
+        '[ColorPaletteRootStyles - ColorPaletteStyle] No colors returned from Sitecore.'
+      );
+    }
     return null;
   }
 
-  console.log('[ColorPaletteRootStyle] Loaded palette:', colorPalette.colorMap);
-
+  if (debuggingEnabled) {
+    console.log(
+      '[ColorPaletteRootStyles - ColorPaletteStyle] Loaded palette:',
+      colorPalette.colorMap
+    );
+  }
   /** 2. Create base CSS variables like --tw-color-primary-dark: #123456; **/
   const baseCssVariables = Object.entries(colorPalette.colorMap).map(
     ([colorKey, colorValue]) => `--${colorPalette.prefix}-${colorKey}: ${colorValue};`
@@ -51,9 +61,10 @@ const ColorPaletteStyle = async ({ layoutData }: ColorPaletteStyleProps) => {
     .map(([, colorValue]) => colorValue)
     .filter((hex): hex is string => typeof hex === 'string' && hex.length >= 4);
 
-  console.log('[ColorPaletteRootStyle] Neutral colors:', neutralColors);
-  console.log('[ColorPaletteRootStyle] Accent colors:', accentColors);
-
+  if (debuggingEnabled) {
+    console.log('[ColorPaletteRootStyles - ColorPaletteStyle] Neutral colors:', neutralColors);
+    console.log('[ColorPaletteRootStyles - ColorPaletteStyle] Accent colors:', accentColors);
+  }
   /** 4. Generate contrast CSS variables **/
   const contrastCssVariables: string[] = [];
 
@@ -67,7 +78,12 @@ const ColorPaletteStyle = async ({ layoutData }: ColorPaletteStyleProps) => {
         contrastCssVariables.push(
           `--${colorPalette.prefix}-${colorKey}-contrast: ${bestNeutralContrast.color};`
         );
-        console.log(`[ColorPaletteRootStyle] Contrast for ${colorKey}:`, bestNeutralContrast.color);
+        if (debuggingEnabled) {
+          console.log(
+            `[ColorPaletteRootStyles - ColorPaletteStyle] Contrast for ${colorKey}:`,
+            bestNeutralContrast.color
+          );
+        }
       }
     } else {
       const bestAccentContrast = getContrastsOrdered(hex, accentColors)[0];
@@ -75,15 +91,24 @@ const ColorPaletteStyle = async ({ layoutData }: ColorPaletteStyleProps) => {
         contrastCssVariables.push(
           `--${colorPalette.prefix}-${colorKey}-contrast: ${bestAccentContrast.color};`
         );
-        console.log(`[ColorPaletteRootStyle] Contrast for ${colorKey}:`, bestAccentContrast.color);
+        if (debuggingEnabled) {
+          console.log(
+            `[ColorPaletteRootStyles - ColorPaletteStyle] Contrast for ${colorKey}:`,
+            bestAccentContrast.color
+          );
+        }
       }
     }
   }
 
   /** 5. Combine and inject all CSS variables **/
   const allCssVariables = [...baseCssVariables, ...contrastCssVariables].join(' ');
-  console.log('[ColorPaletteRootStyle] Final CSS variables injected:', allCssVariables);
-
+  if (debuggingEnabled) {
+    console.log(
+      '[ColorPaletteRootStyles - ColorPaletteStyle] Final CSS variables injected:',
+      allCssVariables
+    );
+  }
   return <style>{`:root { ${allCssVariables} }`}</style>;
 };
 

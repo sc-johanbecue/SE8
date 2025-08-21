@@ -12,6 +12,8 @@
 import { GraphQLClient, gql } from 'graphql-request';
 import { getContentRootPath } from './XMC-Content';
 
+const debuggingEnabled = false;
+
 /**
  * Fetches a structured color palette from Sitecore and flattens it into a key-value map.
  *
@@ -31,8 +33,9 @@ export async function getColorPalette(
   const endpoint = `${process.env.NEXT_PUBLIC_SITECORE_GRAPHQL_ENDPOINT}?sc_apikey=${process.env.NEXT_PUBLIC_SITECORE_API_KEY}`;
   const client = new GraphQLClient(endpoint);
 
-  console.log(`Fetching color palette for site: ${siteName}, language: ${language}`);
-
+  if (debuggingEnabled) {
+    console.log(`Fetching color palette for site: ${siteName}, language: ${language}`);
+  }
   const query = gql`
     query GetBackgroundColor($path: String!, $language: String!) {
       item(path: $path, language: $language) {
@@ -63,7 +66,9 @@ export async function getColorPalette(
 
   const contentRoot = await getContentRootPath(siteName, language);
   const colorPaletteItemPath = `${contentRoot}/Presentation/Rendering Parameter Options/Color Palette`;
-  console.log(`Color palette item path: ${colorPaletteItemPath}`);
+  if (debuggingEnabled) {
+    console.log(`Color palette item path: ${colorPaletteItemPath}`);
+  }
   const response = await client.request<any>(query, {
     path: colorPaletteItemPath as string,
     language: language as string,
@@ -82,7 +87,9 @@ export async function getColorPalette(
       // Convert "Primary Color 1" → "primary-color-1"
       const kebab = rawName.replace(/\s+/g, '-').toLowerCase();
       colorMap[kebab] = hex;
-      console.log(`Mapped color: ${kebab} = ${hex}`);
+      if (debuggingEnabled) {
+        console.log(`Mapped color: ${kebab} = ${hex}`);
+      }
     }
   }
 

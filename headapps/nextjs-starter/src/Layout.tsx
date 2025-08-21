@@ -49,18 +49,18 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
           <DesignLibrary {...layoutData} />
         ) : (
           <>
-            <header>
-              <div id="header" key="header">
+            <header key="header">
+              <div id="header">
                 {route && <Placeholder name="headless-header" rendering={route} />}
               </div>
             </header>
-            <main>
-              <div id="content" className="flex w-full" key="main">
+            <main key="main">
+              <div id="content" className="flex w-full">
                 {route && <Placeholder name="headless-main" rendering={route} />}
               </div>
             </main>
-            <footer>
-              <div id="footer" key="footer">
+            <footer key="footer">
+              <div id="footer">
                 {route && <Placeholder name="headless-footer" rendering={route} />}
               </div>
             </footer>

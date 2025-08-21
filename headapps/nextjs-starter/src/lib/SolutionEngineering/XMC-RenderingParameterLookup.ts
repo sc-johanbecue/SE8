@@ -14,6 +14,7 @@
 
 import { GraphQLClient, gql } from 'graphql-request';
 
+const debuggingEnabled = false;
 /**
  * Retrieves the "Value" field from a given Sitecore item.
  *
@@ -28,6 +29,17 @@ export async function getRenderingParameterLookupValue(
   RenderingParameterLookupItemId: string | undefined,
   language: string
 ): Promise<string | null> {
+  if (debuggingEnabled) {
+    console.log(
+      '[XMC-RenderingParameterLookup - getRenderingParameterLookupValue] RenderingParameterLookupItemId:' +
+        JSON.stringify(RenderingParameterLookupItemId)
+    );
+    console.log(
+      '[XMC-RenderingParameterLookup - getRenderingParameterLookupValue] language:' +
+        JSON.stringify(RenderingParameterLookupItemId)
+    );
+  }
+
   if (RenderingParameterLookupItemId === undefined || language === undefined) {
     return null;
   }
@@ -59,17 +71,19 @@ export async function getRenderingParameterLookupValue(
         language,
       });
 
-      console.warn(
-        `[getRenderingParameterLookupValue] result.item?.RenderingParameterLookup:`,
-        result.item?.RenderingParameterLookup
-      );
+      if (debuggingEnabled) {
+        console.log(
+          `[RenderingParameterLookup - getRenderingParameterLookupValue] result.item?.RenderingParameterLookup:`,
+          result.item?.RenderingParameterLookup
+        );
+      }
 
       if (result.item?.RenderingParameterLookup?.value) {
         RenderingParameterLookup = result.item.RenderingParameterLookup.value;
       }
     } catch (err) {
       console.warn(
-        `[getRenderingParameterLookupValue] Failed to fetch presentation style value for ID ${RenderingParameterLookupItemId}:`,
+        `[XMC-RenderingParameterLookup - getRenderingParameterLookupValue] Failed to fetch presentation style value for ID ${RenderingParameterLookupItemId}:`,
         err
       );
       return null;

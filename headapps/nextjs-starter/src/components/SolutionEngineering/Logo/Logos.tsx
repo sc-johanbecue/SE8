@@ -8,10 +8,19 @@ import {
 } from '@sitecore-content-sdk/nextjs';
 
 import { getTypedChildItems } from 'lib/SolutionEngineering/XMC-Content2';
-import { getRenderingParameterLookupValue } from 'lib/SolutionEngineering/XMC-RenderingParameterLookup';
 
-import * as LogoComponent from './Logo';
-const Logo = LogoComponent.Default;
+import {
+  getImageRenderingParameters,
+  ImageRenderingParameters,
+} from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-ImageBaseRenderingParameters';
+import {
+  getListRenderingParameters,
+  ListRenderingParameters,
+} from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-ListBaseRenderingParameters';
+import { Default as Logo, Fields } from './Logo';
+import { joinClassNames } from 'lib/SolutionEngineering/Utils/ClassNameUtils';
+
+const debuggingEnabled = false;
 
 /**
  * Fetches typed child items (Icon + Link fields) for a given parent.
@@ -30,24 +39,10 @@ async function getLogoChildren(parentId: string | undefined, language: string | 
   return children;
 }
 
-/**
- * Child item structure returned by getLogoChildren.
- */
-type LogoChild = {
-  id: string;
-  Logo: ImageField;
-  Link: LinkField;
-};
-
-/**
- * Presentation-related props resolved from rendering parameters.
- */
-type LogoPresentationProps = {
-  children?: LogoChild[];
-  height: string;
-  width: string;
-  direction?: string;
-  gap?: string;
+type StaticProps = {
+  children?: (Fields & { id: string })[];
+  imageRenderingParameters: ImageRenderingParameters;
+  listRenderingParameters: ListRenderingParameters;
 };
 
 /**
@@ -56,39 +51,60 @@ type LogoPresentationProps = {
 type LogosContainerProps = {
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
-} & LogoPresentationProps;
+  isNested?: boolean;
+} & StaticProps;
 
 /**
  * Default component renderer for the Logos container.
  * Maps child items into <Logo> components with proper visual and interaction props.
  */
 export const Default = (props: LogosContainerProps): JSX.Element => {
-  const { rendering, params, children, height, width, direction, gap } = props;
-
   const id = props.rendering.uid + '-logos';
 
+  if (debuggingEnabled) {
+    console.log('[Logos - Default] - id:' + id);
+    console.log('[Logos - Default] - params:' + JSON.stringify(props.params));
+    console.log('[Logos - Default] - rendering:' + JSON.stringify(props.rendering));
+    console.log('[Logos - Default] - isNested:' + JSON.stringify(props.isNested));
+    console.log('[Logos - Default] - children:' + JSON.stringify(props.children));
+    console.log(
+      '[Logos - Default] - listRenderingParameters:' + JSON.stringify(props.listRenderingParameters)
+    );
+    console.log(
+      '[Logos - Default] - imageRenderingParameters:' +
+        JSON.stringify(props.imageRenderingParameters)
+    );
+  }
+
+  const wrapperClassNames = props.isNested ? '' : joinClassNames('component', props.params.styles);
+
   return (
-    <div className={`component ${params?.styles || ''}`} id={id || undefined}>
-      <div className={`flex ${direction || 'flex-row'} ${gap || ''}`}>
-        {children?.length ? (
-          children.map((child, index) => (
-            <>
+    <div className={wrapperClassNames} id={id}>
+      <div
+        className={`flex ${props.listRenderingParameters.direction || 'flex-row'} ${props.listRenderingParameters.gap || ''}`}
+      >
+        {props.children?.length ? (
+          props.children.map((child, index) => {
+            const key = `${id}-${index}-logo`;
+            if (debuggingEnabled) console.log('[Logos - Default] render key:', key);
+
+            return (
               <Logo
-                key={index}
-                rendering={{ ...rendering, dataSource: child.id }}
+                key={key}
+                rendering={{ ...props.rendering, dataSource: child.id }}
                 params={{
-                  ...params,
+                  ...props.params,
                   RenderingIdentifier: `logo-${child.id}`,
                 }}
                 fields={{
                   Logo: child.Logo,
                   Link: child.Link,
                 }}
-                height={height}
-                width={width}
+                isNested={true}
+                imageRenderingParameters={props.imageRenderingParameters}
               />
-            </>
-          ))
+            );
+          })
         ) : (
           <span className="text-sm text-gray-500">No logos are configured.</span>
         )}
@@ -104,28 +120,30 @@ export const Default = (props: LogosContainerProps): JSX.Element => {
 export const getStaticProps: GetStaticComponentProps = async (rendering, _layoutData, context) => {
   const language = context?.locale as string;
 
-  // Helper to reduce repetition for parameter lookups
-  const resolveParam = (key: string) =>
-    getRenderingParameterLookupValue(rendering.params?.[key], language);
+  // Resolve all presentation-related values
+  const imageRenderingParameters = await getImageRenderingParameters(rendering, language);
+  const listRenderingParameters = await getListRenderingParameters(rendering, language);
 
-  // Fetch all design-related rendering parameters in parallel
-  const [height, width, direction, gap] = await Promise.all([
-    resolveParam('Height'),
-    resolveParam('Width'),
-    resolveParam('Direction'),
-    resolveParam('Gap'),
-  ]);
-
-  // Fetch child items for this Logos component
+  // Fetch child items for this Socials component
   const children = await getLogoChildren(rendering.dataSource, language);
 
-  console.log('[getStaticProps] Loaded logos:', children);
+  if (debuggingEnabled) {
+    console.log(
+      '[Logos - getStaticProps] - iconRenderingParameters:' +
+        JSON.stringify(imageRenderingParameters)
+    );
+    console.log(
+      '[Logos - getStaticProps] - listRenderingParameters:' +
+        JSON.stringify(listRenderingParameters)
+    );
+    console.log(
+      '[Logos - getStaticProps] - children:(' + children.length + '):' + JSON.stringify(children)
+    );
+  }
 
   return {
-    height,
-    width,
-    direction,
-    gap,
+    imageRenderingParameters,
+    listRenderingParameters,
     children,
   };
 };

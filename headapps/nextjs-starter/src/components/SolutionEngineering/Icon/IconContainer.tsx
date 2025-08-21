@@ -6,6 +6,7 @@ import {
   useSitecoreContext,
   GetStaticComponentProps,
 } from '@sitecore-content-sdk/nextjs';
+
 import {
   getListRenderingParameters,
   ListRenderingParameters,
@@ -23,24 +24,24 @@ type StaticProps = {
 };
 
 /**
- * Props for the ImageContainer component.
+ * Props for the IconContainer component.
  */
-type ImageContainerProps = {
+type IconContainerProps = {
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
   isNested?: boolean;
 } & StaticProps;
 
 /**
- * The ImageContainer component wraps a Placeholder for nested image components.
+ * The IconContainer component wraps a Placeholder for nested icon components.
  * It supports flexible layout direction and gap via rendering parameters.
  */
-export const Default = (props: ImageContainerProps): JSX.Element => {
+export const Default = (props: IconContainerProps): JSX.Element => {
   const { sitecoreContext } = useSitecoreContext();
 
-  const id = props.rendering.uid + '-imageContainer';
-  const phKey = `imageContainer-${props.params?.DynamicPlaceholderId}`;
-  const editingPhKey = `imageContainer-{*}`;
+  const id = props.rendering.uid + '-iconContainer';
+  const phKey = `iconContainer-${props.params?.DynamicPlaceholderId}`;
+  const editingPhKey = `iconContainer-{*}`;
 
   // Check if placeholder has children (different in Experience Editor)
   const hasChildren = sitecoreContext.pageEditing
@@ -48,13 +49,13 @@ export const Default = (props: ImageContainerProps): JSX.Element => {
     : props.rendering.placeholders?.[phKey]?.length;
 
   if (debuggingEnabled) {
-    console.log('[ImageContainer - Default] - id:' + id);
-    console.log('[ImageContainer - Default] - params:' + JSON.stringify(props.params));
-    console.log('[ImageContainer - Default] - rendering:' + JSON.stringify(props.rendering));
-    console.log('[ImageContainer - Default] - isNested:' + JSON.stringify(props.isNested));
-    console.log('[ImageContainer - Default] - hasChildren:' + JSON.stringify(hasChildren));
+    console.log('[IconContainer - Default] - id:' + id);
+    console.log('[IconContainer - Default] - params:' + JSON.stringify(props.params));
+    console.log('[IconContainer - Default] - rendering:' + JSON.stringify(props.rendering));
+    console.log('[IconContainer - Default] - isNested:' + JSON.stringify(props.isNested));
+    console.log('[IconContainer - Default] - hasChildren:' + JSON.stringify(hasChildren));
     console.log(
-      '[ImageContainer - Default] - listRenderingParameters:' +
+      '[IconContainer - Default] - listRenderingParameters:' +
         JSON.stringify(props.listRenderingParameters)
     );
   }
@@ -62,7 +63,7 @@ export const Default = (props: ImageContainerProps): JSX.Element => {
   const wrapperClassNames = props.isNested ? '' : joinClassNames('component', props.params.styles);
 
   return (
-    <div className={wrapperClassNames} id={id}>
+    <div className={wrapperClassNames} id={id || undefined}>
       <div
         className={
           hasChildren === 0
@@ -77,18 +78,17 @@ export const Default = (props: ImageContainerProps): JSX.Element => {
 };
 
 /**
- * Static props function for ImageContainer component.
+ * Static props function for IconContainer component.
  * Resolves layout values like direction and spacing from rendering parameters.
  */
 export const getStaticProps: GetStaticComponentProps = async (rendering, _layoutData, context) => {
   const language = context?.locale as string;
 
-  // Resolve all presentation-related values
   const listRenderingParameters = await getListRenderingParameters(rendering, language);
 
   if (debuggingEnabled) {
     console.log(
-      '[ImageContainer - getStaticProps] - listRenderingParameters:' +
+      '[IconContainer - getStaticProps] - listRenderingParameters:' +
         JSON.stringify(listRenderingParameters)
     );
   }

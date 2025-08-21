@@ -19,7 +19,7 @@ import {
   ListRenderingParameters,
 } from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-ListBaseRenderingParameters';
 
-import { Default as Social, Fields } from './Social';
+import { Default as Icon, Fields } from './Icon';
 import { joinClassNames } from 'lib/SolutionEngineering/Utils/ClassNameUtils';
 
 const debuggingEnabled = false;
@@ -36,32 +36,30 @@ type StaticProps = {
 /**
  * Final props type combining Sitecore rendering info + presentation props.
  */
-type SocialsContainerProps = {
-  rendering: ComponentRendering & { params: ComponentParams };
+type IconsContainerProps = {
+  rendering: ComponentRendering;
   params: ComponentParams;
   isNested?: boolean;
 } & StaticProps;
 
 /**
- * Default component renderer for the Socials container.
- * Maps child items into <Social> components with proper visual and interaction props.
+ * Default component renderer for the Icons container.
+ * Maps child items into <Icon> components with proper visual and interaction props.
  */
-export const Default = (props: SocialsContainerProps): JSX.Element => {
-  const id = props.rendering.uid + '-socials';
+export const Default = (props: IconsContainerProps): JSX.Element => {
+  const id = props.rendering.uid + '-icons';
 
   if (debuggingEnabled) {
-    console.log('[Socials - Default] - id:' + id);
-    console.log('[Socials - Default] - params:' + JSON.stringify(props.params));
-    console.log('[Socials - Default] - rendering:' + JSON.stringify(props.rendering));
-    console.log('[Socials - Default] - isNested:' + JSON.stringify(props.isNested));
-    console.log('[Socials - Default] - children:' + JSON.stringify(props.children));
+    console.log('[Icons - Default] - id:' + id);
+    console.log('[Icons - Default] - params:' + JSON.stringify(props.params));
+    console.log('[Icons - Default] - rendering:' + JSON.stringify(props.rendering));
+    console.log('[Icons - Default] - isNested:' + JSON.stringify(props.isNested));
+    console.log('[Icons - Default] - children:' + JSON.stringify(props.children));
     console.log(
-      '[Socials - Default] - listRenderingParameters:' +
-        JSON.stringify(props.listRenderingParameters)
+      '[Icons - Default] - listRenderingParameters:' + JSON.stringify(props.listRenderingParameters)
     );
     console.log(
-      '[Socials - Default] - iconRenderingParameters:' +
-        JSON.stringify(props.iconRenderingParameters)
+      '[Icons - Default] - iconRenderingParameters:' + JSON.stringify(props.iconRenderingParameters)
     );
   }
 
@@ -74,11 +72,11 @@ export const Default = (props: SocialsContainerProps): JSX.Element => {
       >
         {props.children?.length ? (
           props.children.map((child, index) => {
-            const key = `${id}-${index}-social`;
-            if (debuggingEnabled) console.log('[Socials - Default] render key:', key);
+            const key = `${id}-${index}-icon`;
+            if (debuggingEnabled) console.log('[Icons - Default] render key:', key);
 
             return (
-              <Social
+              <Icon
                 key={key}
                 rendering={{ ...props.rendering, dataSource: child.id }}
                 params={{
@@ -87,15 +85,14 @@ export const Default = (props: SocialsContainerProps): JSX.Element => {
                 }}
                 fields={{
                   Icon: child.Icon,
-                  Link: child.Link,
                 }}
-                iconRenderingParameters={props.iconRenderingParameters}
                 isNested={true}
+                iconRenderingParameters={props.iconRenderingParameters}
               />
             );
           })
         ) : (
-          <span className="text-sm text-gray-500">No socials are configured.</span>
+          <span className="text-sm text-gray-500">No icons are configured.</span>
         )}
       </div>
     </div>
@@ -105,9 +102,9 @@ export const Default = (props: SocialsContainerProps): JSX.Element => {
 /**
  * Fetches typed child items (Icon + Link fields) for a given parent.
  */
-async function getSocialChildren(parentId: string | undefined, language: string | undefined) {
+async function getIconChildren(parentId: string | undefined, language: string | undefined) {
   if (!parentId || !language) {
-    console.warn('[getSocialChildren] Missing parentId or language.');
+    console.warn('[getIconChildren] Missing parentId or language.');
     return [];
   }
 
@@ -120,7 +117,7 @@ async function getSocialChildren(parentId: string | undefined, language: string 
 }
 
 /**
- * Static props fetcher for the Socials component.
+ * Static props fetcher for the Icons component.
  * Loads visual parameters (color, layout, hover, etc.) and child data from Sitecore.
  */
 export const getStaticProps: GetStaticComponentProps = async (rendering, _layoutData, context) => {
@@ -130,20 +127,20 @@ export const getStaticProps: GetStaticComponentProps = async (rendering, _layout
   const iconRenderingParameters = await getIconRenderingParameters(rendering, language);
   const listRenderingParameters = await getListRenderingParameters(rendering, language);
 
-  // Fetch child items for this Socials component
-  const children = await getSocialChildren(rendering.dataSource, language);
+  // Fetch child items for this Icons component
+  const children = await getIconChildren(rendering.dataSource, language);
 
   if (debuggingEnabled) {
     console.log(
-      '[Socials - getStaticProps] - iconRenderingParameters:' +
+      '[Icons - getStaticProps] - iconRenderingParameters:' +
         JSON.stringify(iconRenderingParameters)
     );
     console.log(
-      '[Socials - getStaticProps] - listRenderingParameters:' +
+      '[Icons - getStaticProps] - listRenderingParameters:' +
         JSON.stringify(listRenderingParameters)
     );
     console.log(
-      '[Socials - getStaticProps] - children:(' + children.length + '):' + JSON.stringify(children)
+      '[Icons - getStaticProps] - children:(' + children.length + '):' + JSON.stringify(children)
     );
   }
 

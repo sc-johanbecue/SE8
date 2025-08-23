@@ -1,5 +1,8 @@
 import { ComponentRendering } from '@sitecore-content-sdk/nextjs';
-import { getRenderingParameterLookupValue } from 'lib/SolutionEngineering/XMC-RenderingParameterLookup';
+import {
+  getRenderingParameterLookupValue,
+  getRenderingParameterValue,
+} from 'lib/SolutionEngineering/XMC-RenderingParameterLookup';
 
 const debuggingEnabled = false;
 
@@ -10,6 +13,7 @@ export type ImageRenderingParameters = {
   imageHeight?: string | null;
   imageWidth?: string | null;
   imageFit?: string | null;
+  viewportSizes: string | null;
 };
 
 /**
@@ -26,15 +30,17 @@ export async function getImageRenderingParameters(
     );
   }
 
-  const [imageHeight, imageWidth, imageFit] = await Promise.all([
+  const [imageHeight, imageWidth, imageFit, viewportSizes] = await Promise.all([
     getRenderingParameterLookupValue(rendering.params?.['Image Height'], language),
     getRenderingParameterLookupValue(rendering.params?.['Image Width'], language),
     getRenderingParameterLookupValue(rendering.params?.['Image Fit'], language),
+    getRenderingParameterValue(rendering.params?.['Image Viewport Sizes']),
   ]);
 
   return {
     imageHeight: imageHeight,
     imageWidth: imageWidth,
     imageFit: imageFit,
+    viewportSizes: viewportSizes,
   };
 }

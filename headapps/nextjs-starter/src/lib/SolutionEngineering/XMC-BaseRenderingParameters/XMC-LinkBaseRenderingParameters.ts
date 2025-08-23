@@ -25,7 +25,7 @@ export async function getLinkRenderingParameters(
   }
 
   const [iconLocation] = await Promise.all([
-    getRenderingParameterLookupValue(rendering.params?.['Icon Location'], language),
+    getRenderingParameterLookupValue(rendering.params?.['Icon Position'], language),
   ]);
 
   return {

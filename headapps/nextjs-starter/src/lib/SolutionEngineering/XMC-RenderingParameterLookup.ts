@@ -92,3 +92,20 @@ export async function getRenderingParameterLookupValue(
 
   return RenderingParameterLookup;
 }
+
+export async function getRenderingParameterValue(
+  RenderingParameterValue: string | undefined
+): Promise<string | null> {
+  if (debuggingEnabled) {
+    console.log(
+      '[XMC-RenderingParameterLookup - getRenderingParameterValue] RenderingParameterValue:' +
+        JSON.stringify(RenderingParameterValue)
+    );
+  }
+
+  if (RenderingParameterValue === undefined) {
+    return null;
+  }
+
+  return RenderingParameterValue;
+}

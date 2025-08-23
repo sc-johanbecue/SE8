@@ -7,8 +7,7 @@ const debuggingEnabled = false;
  * Presentation-related props resolved from getStaticProps.
  */
 export type ListRenderingParameters = {
-  direction?: string | null;
-  gap?: string | null;
+  gridLayout: string | null;
 };
 
 /**
@@ -25,13 +24,11 @@ export async function getListRenderingParameters(
     );
   }
 
-  const [direction, gap] = await Promise.all([
-    getRenderingParameterLookupValue(rendering.params?.['Direction'], language),
-    getRenderingParameterLookupValue(rendering.params?.['Gap'], language),
+  const [gridLayout] = await Promise.all([
+    getRenderingParameterLookupValue(rendering.params?.['Grid Layout'], language),
   ]);
 
   return {
-    direction: direction,
-    gap: gap,
+    gridLayout: gridLayout,
   };
 }

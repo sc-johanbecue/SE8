@@ -14,7 +14,7 @@ import {
   IconRenderingParameters,
   getIconRenderingParameters,
 } from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-IconBaseRenderingParameters';
-import { joinClassNames } from 'lib/SolutionEngineering/Utils/ClassNameUtils';
+import { joinClassNames } from 'lib/SolutionEngineering/Utils/ComponentUtils';
 
 const debuggingEnabled = false;
 

@@ -11,7 +11,10 @@ import {
   getListRenderingParameters,
   ListRenderingParameters,
 } from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-ListBaseRenderingParameters';
-import { joinClassNames } from 'lib/SolutionEngineering/Utils/ClassNameUtils';
+import {
+  buildListContainerClasses,
+  joinClassNames,
+} from 'lib/SolutionEngineering/Utils/ComponentUtils';
 
 const debuggingEnabled = false;
 
@@ -62,15 +65,11 @@ export const Default = (props: IconContainerProps): JSX.Element => {
 
   const wrapperClassNames = props.isNested ? '' : joinClassNames('component', props.params.styles);
 
+  const listContainerClasses = buildListContainerClasses(props.listRenderingParameters.gridLayout);
+
   return (
     <div className={wrapperClassNames} id={id || undefined}>
-      <div
-        className={
-          hasChildren === 0
-            ? 'contents'
-            : `flex ${props.listRenderingParameters.direction || 'flex-row'} ${props.listRenderingParameters.gap || ''}`
-        }
-      >
+      <div className={hasChildren === 0 ? 'contents' : listContainerClasses}>
         <Placeholder name={phKey} rendering={props.rendering} />
       </div>
     </div>

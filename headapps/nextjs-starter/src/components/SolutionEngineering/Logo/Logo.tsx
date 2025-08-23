@@ -14,8 +14,6 @@ import {
 
 import { Default as ImageLink } from '../Link/ImageLink';
 
-// import { joinClassNames } from 'lib/SolutionEngineering/Utils/ClassNameUtils';
-
 const debuggingEnabled = false;
 
 /**

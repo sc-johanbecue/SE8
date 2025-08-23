@@ -14,7 +14,7 @@ import {
   ImageRenderingParameters,
   getImageRenderingParameters,
 } from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-ImageBaseRenderingParameters';
-import { joinClassNames } from 'lib/SolutionEngineering/Utils/ClassNameUtils';
+import { joinClassNames } from 'lib/SolutionEngineering/Utils/ComponentUtils';
 
 const debuggingEnabled = false;
 

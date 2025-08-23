@@ -1,242 +1,346 @@
-// /**
-//  * Fetches the content root path for a given Sitecore site.
-//  *
-//  * This uses the layout query to retrieve the parent item of the current route root.
-//  * Typically used to dynamically build full item paths from relative routes.
-//  *
-//  * @param siteName - The name of the Sitecore site (e.g., "demo-template")
-//  * @param language - The language to query in (e.g., "en")
-//  * @returns An object with the `contentRoot` path as a string (e.g., "/sitecore/content/demo-template/home")
-//  */
+import { GraphQLClient, gql } from 'graphql-request';
+import { TextField, LinkField } from '@sitecore-content-sdk/nextjs';
 
-// import { GraphQLClient, gql } from 'graphql-request';
-// import { TextField, LinkField } from '@sitecore-content-sdk/nextjs';
+const debuggingEnabled = false;
 
-// export async function getContentRootPath(siteName: string, language: string): Promise<string> {
-//   // Construct the GraphQL endpoint with the Sitecore API key
-//   const endpoint = `${process.env.NEXT_PUBLIC_SITECORE_GRAPHQL_ENDPOINT}?sc_apikey=${process.env.NEXT_PUBLIC_SITECORE_API_KEY}`;
-//   const client = new GraphQLClient(endpoint);
+// Raw field structure returned by Sitecore GraphQL
+type RawSitecoreField = {
+  name: string;
+  jsonValue: unknown;
+};
 
-//   console.log(
-//     `[getContentRoot] Fetching content root for site: ${siteName}, language: ${language}`
-//   );
+type SitecoreChildItemRaw = {
+  id: string;
+  fields: RawSitecoreField[];
+};
 
-//   // GraphQL query to retrieve the parent item path of the current layout root
-//   const query = gql`
-//     query getContentRoot($site: String!, $language: String!) {
-//       layout(site: $site, routePath: "/", language: $language) {
-//         item {
-//           contentRoot: parent {
-//             path
-//           }
-//         }
-//       }
-//     }
-//   `;
+// 1. Generic fetcher for raw child items
+export async function getChildItems(
+  parentId: string | undefined,
+  language: string | undefined
+): Promise<SitecoreChildItemRaw[]> {
+  if (!parentId || !language) return [];
 
-//   // Execute the query with the site name as a variable
-//   const response = await client.request<{
-//     layout?: {
-//       item?: {
-//         contentRoot?: {
-//           path: string;
-//         };
-//       };
-//     };
-//   }>(query, { site: siteName, language: language as string });
+  const endpoint = `${process.env.NEXT_PUBLIC_SITECORE_GRAPHQL_ENDPOINT}?sc_apikey=${process.env.NEXT_PUBLIC_SITECORE_API_KEY}`;
+  const client = new GraphQLClient(endpoint);
 
-//   const contentRootPath = response?.layout?.item?.contentRoot?.path;
+  const query = gql`
+    query GetChildren($parentId: String!, $language: String!) {
+      item(path: $parentId, language: $language) {
+        children {
+          results {
+            id
+            fields {
+              name
+              jsonValue
+            }
+          }
+        }
+      }
+    }
+  `;
 
-//   if (!contentRootPath) {
-//     console.warn(`[getContentRoot] No content root found for site: ${siteName}`);
-//   } else {
-//     console.log(`[getContentRoot] Content root for ${siteName}:`, contentRootPath);
-//   }
+  const result = await client.request<{
+    item?: { children?: { results?: SitecoreChildItemRaw[] } };
+  }>(query, { parentId, language });
 
-//   return contentRootPath || '';
-// }
+  return result?.item?.children?.results ?? [];
+}
 
-// /**
-//  * Retrieves the child item IDs of a given parent Sitecore item.
-//  *
-//  * @param parentId - The ID (GUID or path) of the parent item.
-//  * @param language - The language context for the query (e.g., 'en').
-//  * @returns An array of string IDs of the child items, or an empty array if not found.
-//  */
-// export async function getChildren(
-//   parentId: string | undefined,
-//   language: string | undefined
-// ): Promise<string[]> {
-//   // Return an empty array if parentId or language is not provided
-//   if (parentId === undefined || language === undefined) {
-//     return [];
-//   }
+// 2. Generic function to extract and type specified fields
+export async function getTypedChildItems<TFieldMap extends Record<string, unknown>>(
+  parentId: string | undefined,
+  language: string,
+  fieldsToExtract: (keyof TFieldMap)[]
+): Promise<(TFieldMap & { id: string })[]> {
+  const children = await getChildItems(parentId, language);
 
-//   // Construct the GraphQL endpoint with the Sitecore API key
-//   const endpoint = `${process.env.NEXT_PUBLIC_SITECORE_GRAPHQL_ENDPOINT}?sc_apikey=${process.env.NEXT_PUBLIC_SITECORE_API_KEY}`;
-//   const client = new GraphQLClient(endpoint);
+  return children.map((child) => {
+    const typedFields: Partial<TFieldMap> = {};
 
-//   console.log(`[getChildren] Fetching children for item id: ${parentId}, language: ${language}`);
+    for (const fieldName of fieldsToExtract) {
+      const rawField = child.fields.find((f) => f.name === fieldName);
+      if (rawField) {
+        typedFields[fieldName] = rawField.jsonValue as TFieldMap[typeof fieldName];
+      }
+    }
 
-//   // GraphQL query to fetch child items of a given parent item
-//   const query = gql`
-//     query GetChildren($parentId: String!, $language: String!) {
-//       item(path: $parentId, language: $language) {
-//         children {
-//           results {
-//             id
-//           }
-//         }
-//       }
-//     }
-//   `;
+    return {
+      id: child.id,
+      ...typedFields,
+    } as TFieldMap & { id: string };
+  });
+}
 
-//   // Execute the query using the parent ID and language
-//   const result = await client.request<{
-//     item?: {
-//       children?: {
-//         results?: { id: string }[];
-//       };
-//     };
-//   }>(query, { parentId, language });
+/**
+ * Fetches the content root path for a given Sitecore site.
+ *
+ * This uses the layout query to retrieve the parent item of the current route root.
+ * Typically used to dynamically build full item paths from relative routes.
+ *
+ * @param siteName - The name of the Sitecore site (e.g., "demo-template")
+ * @param language - The language to query in (e.g., "en")
+ * @returns An object with the `contentRoot` path as a string (e.g., "/sitecore/content/demo-template/home")
+ */
 
-//   // Map the result to extract just the IDs of the child items
-//   const children = result?.item?.children?.results?.map((child) => child.id) || [];
+export async function getContentRootPath(siteName: string, language: string): Promise<string> {
+  // Construct the GraphQL endpoint with the Sitecore API key
+  const endpoint = `${process.env.NEXT_PUBLIC_SITECORE_GRAPHQL_ENDPOINT}?sc_apikey=${process.env.NEXT_PUBLIC_SITECORE_API_KEY}`;
+  const client = new GraphQLClient(endpoint);
 
-//   // Log the outcome of the query
-//   if (!children.length) {
-//     console.warn(`[getChildren] No children found for parent id: ${parentId}`);
-//   } else {
-//     console.log(`[getChildren] ${children.length} children found for parent id: ${parentId}`);
-//   }
+  if (debuggingEnabled) {
+    console.log(
+      `[XMC-Content - getContentRootPath] Fetching content root for site: ${siteName}, language: ${language}`
+    );
+  }
 
-//   return children;
-// }
+  // GraphQL query to retrieve the parent item path of the current layout root
+  const query = gql`
+    query getContentRoot($site: String!, $language: String!) {
+      layout(site: $site, routePath: "/", language: $language) {
+        item {
+          contentRoot: parent {
+            path
+          }
+        }
+      }
+    }
+  `;
 
-// /**
-//  * Retrieves the child item IDs of a given parent Sitecore item.
-//  *
-//  * @param parentId - The ID (GUID or path) of the parent item.
-//  * @param language - The language context for the query (e.g., 'en').
-//  * @returns An array of string IDs of the child items, or an empty array if not found.
-//  */
-// export async function getSocialChildren(
-//   parentId: string | undefined,
-//   language: string | undefined
-// ): Promise<
-//   {
-//     icon: { value: TextField };
-//     link: {
-//       jsonValue: LinkField;
-//     };
-//   }[]
-// > {
-//   // Return an empty array if parentId or language is not provided
-//   if (parentId === undefined || language === undefined) {
-//     return [];
-//   }
+  // Execute the query with the site name as a variable
+  const response = await client.request<{
+    layout?: {
+      item?: {
+        contentRoot?: {
+          path: string;
+        };
+      };
+    };
+  }>(query, { site: siteName, language: language as string });
 
-//   // Construct the GraphQL endpoint with the Sitecore API key
-//   const endpoint = `${process.env.NEXT_PUBLIC_SITECORE_GRAPHQL_ENDPOINT}?sc_apikey=${process.env.NEXT_PUBLIC_SITECORE_API_KEY}`;
-//   const client = new GraphQLClient(endpoint);
+  const contentRootPath = response?.layout?.item?.contentRoot?.path;
 
-//   console.log(`[getChildren] Fetching children for item id: ${parentId}, language: ${language}`);
+  if (!contentRootPath) {
+    console.warn(`[XMC-Content - getContentRootPath] No content root found for site: ${siteName}`);
+  } else {
+    if (debuggingEnabled) {
+      console.log(
+        `[XMC-Content - getContentRootPath] Content root for ${siteName}:`,
+        contentRootPath
+      );
+    }
+  }
 
-//   // GraphQL query to fetch child items of a given parent item
-//   const query = gql`
-//     query GetChildren($parentId: String!, $language: String!) {
-//       item(path: $parentId, language: $language) {
-//         children {
-//           results {
-//             icon: field(name: "Icon") {
-//               value
-//             }
-//             link: field(name: "Link") {
-//               jsonValue
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `;
+  return contentRootPath || '';
+}
 
-//   // Execute the query using the parent ID and language
-//   const result = await client.request<{
-//     item?: {
-//       children?: {
-//         results?: { icon: { value: TextField }; link: { jsonValue: LinkField } }[];
-//       };
-//     };
-//   }>(query, { parentId, language });
+/**
+ * Retrieves the child item IDs of a given parent Sitecore item.
+ *
+ * @param parentId - The ID (GUID or path) of the parent item.
+ * @param language - The language context for the query (e.g., 'en').
+ * @returns An array of string IDs of the child items, or an empty array if not found.
+ */
+export async function getChildren(
+  parentId: string | undefined,
+  language: string | undefined
+): Promise<string[]> {
+  // Return an empty array if parentId or language is not provided
+  if (parentId === undefined || language === undefined) {
+    return [];
+  }
 
-//   //console.log(`[getChildren] Result:`, result?.item?.children?.results);
-//   console.log(`[getChildren] Result:`, JSON.stringify(result?.item?.children?.results, null, 2));
+  // Construct the GraphQL endpoint with the Sitecore API key
+  const endpoint = `${process.env.NEXT_PUBLIC_SITECORE_GRAPHQL_ENDPOINT}?sc_apikey=${process.env.NEXT_PUBLIC_SITECORE_API_KEY}`;
+  const client = new GraphQLClient(endpoint);
 
-//   // Map the result to extract just the IDs of the child items
-//   const children = result?.item?.children?.results;
+  if (debuggingEnabled) {
+    console.log(
+      `[XMC-Content - getChildren] Fetching children for item id: ${parentId}, language: ${language}`
+    );
+  }
 
-//   // Log the outcome of the query
-//   if (!children?.length) {
-//     console.warn(`[getChildren] No children found for parent id: ${parentId}`);
-//     return [];
-//   } else {
-//     console.log(`[getChildren] ${children.length} children found for parent id: ${parentId}`);
-//     return children;
-//   }
-// }
+  // GraphQL query to fetch child items of a given parent item
+  const query = gql`
+    query GetChildren($parentId: String!, $language: String!) {
+      item(path: $parentId, language: $language) {
+        children {
+          results {
+            id
+          }
+        }
+      }
+    }
+  `;
 
-// export async function getCopyright(
-//   siteName: string | undefined,
-//   language: string | undefined
-// ): Promise<string> {
-//   if (!siteName || !language) {
-//     console.warn('[getCopyright] Missing siteName or language, returning empty string.');
-//     return '';
-//   }
+  // Execute the query using the parent ID and language
+  const result = await client.request<{
+    item?: {
+      children?: {
+        results?: { id: string }[];
+      };
+    };
+  }>(query, { parentId, language });
 
-//   // Construct the GraphQL endpoint with the Sitecore API key
-//   const endpoint = `${process.env.NEXT_PUBLIC_SITECORE_GRAPHQL_ENDPOINT}?sc_apikey=${process.env.NEXT_PUBLIC_SITECORE_API_KEY}`;
-//   const client = new GraphQLClient(endpoint);
+  // Map the result to extract just the IDs of the child items
+  const children = result?.item?.children?.results?.map((child) => child.id) || [];
 
-//   console.log(
-//     `[getContentRoot] Fetching copyright from content root for site: ${siteName}, language: ${language}`
-//   );
+  // Log the outcome of the query
+  if (!children.length) {
+    console.warn(`[XMC-Content - getChildren] No children found for parent id: ${parentId}`);
+  } else {
+    if (debuggingEnabled) {
+      console.log(
+        `[XMC-Content - getChildren] ${children.length} children found for parent id: ${parentId}`
+      );
+    }
+  }
 
-//   // GraphQL query to retrieve the parent item path of the current layout root
-//   const query = gql`
-//     query contentRoot($site: String!, $language: String!) {
-//       layout(site: $site, routePath: "/", language: $language) {
-//         item {
-//           contentRoot: parent {
-//             copyright: field(name: "Copyright Text") {
-//               jsonValue
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `;
+  return children;
+}
 
-//   // Execute the query with the site name as a variable
-//   const response = await client.request<{
-//     layout?: {
-//       item?: {
-//         contentRoot?: {
-//           copyright: {
-//             jsonValue: string;
-//           };
-//         };
-//       };
-//     };
-//   }>(query, { site: siteName, language: language as string });
+/**
+ * Retrieves the child item IDs of a given parent Sitecore item.
+ *
+ * @param parentId - The ID (GUID or path) of the parent item.
+ * @param language - The language context for the query (e.g., 'en').
+ * @returns An array of string IDs of the child items, or an empty array if not found.
+ */
+export async function getSocialChildren(
+  parentId: string | undefined,
+  language: string | undefined
+): Promise<
+  {
+    icon: { value: TextField };
+    link: {
+      jsonValue: LinkField;
+    };
+  }[]
+> {
+  // Return an empty array if parentId or language is not provided
+  if (parentId === undefined || language === undefined) {
+    return [];
+  }
 
-//   const contentRootPath = response?.layout?.item?.contentRoot?.copyright?.jsonValue;
+  // Construct the GraphQL endpoint with the Sitecore API key
+  const endpoint = `${process.env.NEXT_PUBLIC_SITECORE_GRAPHQL_ENDPOINT}?sc_apikey=${process.env.NEXT_PUBLIC_SITECORE_API_KEY}`;
+  const client = new GraphQLClient(endpoint);
 
-//   if (!contentRootPath) {
-//     console.warn(`[getContentRoot] No content root found for site: ${siteName}`);
-//   } else {
-//     console.log(`[getContentRoot] Content root for ${siteName}:`, contentRootPath);
-//   }
+  if (debuggingEnabled) {
+    console.log(
+      `[XMC-Content - getSocialChildren] Fetching children for item id: ${parentId}, language: ${language}`
+    );
+  }
 
-//   return contentRootPath || '';
-// }
+  // GraphQL query to fetch child items of a given parent item
+  const query = gql`
+    query GetChildren($parentId: String!, $language: String!) {
+      item(path: $parentId, language: $language) {
+        children {
+          results {
+            icon: field(name: "Icon") {
+              value
+            }
+            link: field(name: "Link") {
+              jsonValue
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  // Execute the query using the parent ID and language
+  const result = await client.request<{
+    item?: {
+      children?: {
+        results?: { icon: { value: TextField }; link: { jsonValue: LinkField } }[];
+      };
+    };
+  }>(query, { parentId, language });
+
+  if (debuggingEnabled) {
+    console.log(
+      `[XMC-Content - getSocialChildren] Result:`,
+      JSON.stringify(result?.item?.children?.results, null, 2)
+    );
+  }
+
+  // Map the result to extract just the IDs of the child items
+  const children = result?.item?.children?.results;
+
+  // Log the outcome of the query
+  if (!children?.length) {
+    console.warn(`[XMC-Content - getSocialChildren] No children found for parent id: ${parentId}`);
+    return [];
+  } else {
+    if (debuggingEnabled) {
+      console.log(
+        `[XMC-Content - getSocialChildren] ${children.length} children found for parent id: ${parentId}`
+      );
+    }
+    return children;
+  }
+}
+
+export async function getCopyright(
+  siteName: string | undefined,
+  language: string | undefined
+): Promise<string> {
+  if (!siteName || !language) {
+    console.warn(
+      '[XMC-Content - getCopyright] Missing siteName or language, returning empty string.'
+    );
+    return '';
+  }
+
+  // Construct the GraphQL endpoint with the Sitecore API key
+  const endpoint = `${process.env.NEXT_PUBLIC_SITECORE_GRAPHQL_ENDPOINT}?sc_apikey=${process.env.NEXT_PUBLIC_SITECORE_API_KEY}`;
+  const client = new GraphQLClient(endpoint);
+
+  if (debuggingEnabled) {
+    console.log(
+      `[XMC-Content - getCopyright] Fetching copyright from content root for site: ${siteName}, language: ${language}`
+    );
+  }
+
+  // GraphQL query to retrieve the parent item path of the current layout root
+  const query = gql`
+    query contentRoot($site: String!, $language: String!) {
+      layout(site: $site, routePath: "/", language: $language) {
+        item {
+          contentRoot: parent {
+            copyright: field(name: "Copyright Text") {
+              jsonValue
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  // Execute the query with the site name as a variable
+  const response = await client.request<{
+    layout?: {
+      item?: {
+        contentRoot?: {
+          copyright: {
+            jsonValue: string;
+          };
+        };
+      };
+    };
+  }>(query, { site: siteName, language: language as string });
+
+  const contentRootPath = response?.layout?.item?.contentRoot?.copyright?.jsonValue;
+
+  if (!contentRootPath) {
+    console.warn(`[XMC-Content - getCopyright] No content root found for site: ${siteName}`);
+  } else {
+    if (debuggingEnabled) {
+      console.log(`[XMC-Content - getCopyright] Content root for ${siteName}:`, contentRootPath);
+    }
+  }
+
+  return contentRootPath || '';
+}

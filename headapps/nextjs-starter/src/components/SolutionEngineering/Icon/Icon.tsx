@@ -14,7 +14,7 @@ import {
 import * as FaIcons6 from 'react-icons/fa6';
 // Import all FontAwesome v6 icons
 import { IconType } from 'react-icons';
-import { joinClassNames } from 'lib/SolutionEngineering/Utils/ClassNameUtils';
+import { joinClassNames } from 'lib/SolutionEngineering/Utils/ComponentUtils';
 // Type definition for any react-icons icon
 
 const debuggingEnabled = false;

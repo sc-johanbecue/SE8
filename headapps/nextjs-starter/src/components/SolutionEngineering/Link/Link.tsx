@@ -22,7 +22,7 @@ import {
   getFontRenderingParameters,
 } from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-FontBaseRenderingParameters';
 import { Default as Icon } from '../Icon/Icon';
-import { joinClassNames } from 'lib/SolutionEngineering/Utils/ClassNameUtils';
+import { joinClassNames } from 'lib/SolutionEngineering/Utils/ComponentUtils';
 
 const debuggingEnabled = false;
 

@@ -7,7 +7,7 @@ import {
   GetStaticComponentProps,
 } from '@sitecore-content-sdk/nextjs';
 
-import { getTypedChildItems } from 'lib/SolutionEngineering/XMC-Content2';
+import { getTypedChildItems } from 'lib/SolutionEngineering/XMC-Content';
 
 import {
   IconRenderingParameters,
@@ -20,7 +20,10 @@ import {
 } from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-ListBaseRenderingParameters';
 
 import { Default as Social, Fields } from './Social';
-import { joinClassNames } from 'lib/SolutionEngineering/Utils/ClassNameUtils';
+import {
+  buildListContainerClasses,
+  joinClassNames,
+} from 'lib/SolutionEngineering/Utils/ComponentUtils';
 
 const debuggingEnabled = false;
 
@@ -67,11 +70,11 @@ export const Default = (props: SocialsContainerProps): JSX.Element => {
 
   const wrapperClassNames = props.isNested ? '' : joinClassNames('component', props.params.styles);
 
+  const listContainerClasses = buildListContainerClasses(props.listRenderingParameters.gridLayout);
+
   return (
     <div className={wrapperClassNames} id={id}>
-      <div
-        className={`flex ${props.listRenderingParameters.direction || 'flex-row'} ${props.listRenderingParameters.gap || ''}`}
-      >
+      <div className={listContainerClasses}>
         {props.children?.length ? (
           props.children.map((child, index) => {
             const key = `${id}-${index}-social`;
@@ -103,23 +106,6 @@ export const Default = (props: SocialsContainerProps): JSX.Element => {
 };
 
 /**
- * Fetches typed child items (Icon + Link fields) for a given parent.
- */
-async function getSocialChildren(parentId: string | undefined, language: string | undefined) {
-  if (!parentId || !language) {
-    console.warn('[getSocialChildren] Missing parentId or language.');
-    return [];
-  }
-
-  const children = await getTypedChildItems<{
-    Icon: TextField;
-    Link: LinkField;
-  }>(parentId, language, ['Icon', 'Link']);
-
-  return children;
-}
-
-/**
  * Static props fetcher for the Socials component.
  * Loads visual parameters (color, layout, hover, etc.) and child data from Sitecore.
  */
@@ -131,7 +117,10 @@ export const getStaticProps: GetStaticComponentProps = async (rendering, _layout
   const listRenderingParameters = await getListRenderingParameters(rendering, language);
 
   // Fetch child items for this Socials component
-  const children = await getSocialChildren(rendering.dataSource, language);
+  const children = await getTypedChildItems<{
+    Icon: TextField;
+    Link: LinkField;
+  }>(rendering.dataSource, language, ['Icon', 'Link']);
 
   if (debuggingEnabled) {
     console.log(

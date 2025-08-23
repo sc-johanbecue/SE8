@@ -35,6 +35,7 @@ import * as SearchWidget from 'components/SolutionEngineering/SearchWidget';
 import * as Image from 'components/SolutionEngineering/Image/Image';
 import * as Images from 'components/SolutionEngineering/Image/Images';
 import * as ImageContainer from 'components/SolutionEngineering/Image/ImageContainer';
+import * as Card from 'components/SolutionEngineering/Card';
 
 // Components must be registered with to match the string key with component name in Sitecore
 export const componentMap = new Map<string, NextjsJssComponent>([
@@ -76,6 +77,8 @@ export const componentMap = new Map<string, NextjsJssComponent>([
   ['Social', Social],
   ['Socials', Socials],
   ['SocialContainer', SocialContainer],
+  //Card
+  ['Card', Card],
 ]);
 
 export default componentMap;

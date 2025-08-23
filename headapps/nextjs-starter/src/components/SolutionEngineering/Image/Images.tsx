@@ -7,7 +7,7 @@ import {
   GetStaticComponentProps,
 } from '@sitecore-content-sdk/nextjs';
 
-import { getTypedChildItems } from 'lib/SolutionEngineering/XMC-Content2';
+import { getTypedChildItems } from 'lib/SolutionEngineering/XMC-Content';
 
 import {
   getImageRenderingParameters,
@@ -19,39 +19,21 @@ import {
   getListRenderingParameters,
   ListRenderingParameters,
 } from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-ListBaseRenderingParameters';
-import { joinClassNames } from 'lib/SolutionEngineering/Utils/ClassNameUtils';
+import {
+  buildListContainerClasses,
+  joinClassNames,
+} from 'lib/SolutionEngineering/Utils/ComponentUtils';
 
 const debuggingEnabled = false;
 
-/**
- * Fetches typed child items (Image field) for a given parent.
- */
-async function getImageChildren(parentId: string | undefined, language: string | undefined) {
-  if (!parentId || !language) {
-    console.warn('[getImageChildren] Missing parentId or language.');
-    return [];
-  }
-
-  const children = await getTypedChildItems<{
-    Image: ImageField;
-    Link: LinkField;
-  }>(parentId, language, ['Image', 'Link']);
-
-  return children;
-}
-
-/**
- * Presentation-related props resolved from rendering parameters.
- */
+/** Presentation-related props resolved from rendering parameters. */
 type StaticProps = {
   children?: (Fields & { id: string })[];
   imageRenderingParameters: ImageRenderingParameters;
   listRenderingParameters: ListRenderingParameters;
 };
 
-/**
- * Final props type combining Sitecore rendering info + presentation props.
- */
+/** Final props type combining Sitecore rendering info + presentation props. */
 type ImagesContainerProps = {
   rendering: ComponentRendering & { params: ComponentParams };
   params: ComponentParams;
@@ -60,39 +42,28 @@ type ImagesContainerProps = {
 
 /**
  * Default component renderer for the Images container.
- * Maps child items into <Image> components with proper visual and interaction props.
  */
 export const Default = (props: ImagesContainerProps): JSX.Element => {
   const id = props.rendering.uid + '-images';
 
   if (debuggingEnabled) {
-    console.log('[Images - Default] - id:' + id);
-    console.log('[Images - Default] - params:' + JSON.stringify(props.params));
-    console.log('[Images - Default] - rendering:' + JSON.stringify(props.rendering));
-    console.log('[Images - Default] - isNested:' + JSON.stringify(props.isNested));
-    console.log('[Images - Default] - children:' + JSON.stringify(props.children));
+    console.log('[Images - Default] id:', id);
     console.log(
-      '[Images - Default] - listRenderingParameters:' +
-        JSON.stringify(props.listRenderingParameters)
-    );
-    console.log(
-      '[Images - Default] - imageRenderingParameters:' +
-        JSON.stringify(props.imageRenderingParameters)
+      '[Images - Default] listRenderingParameters:',
+      JSON.stringify(props.listRenderingParameters)
     );
   }
 
   const wrapperClassNames = props.isNested ? '' : joinClassNames('component', props.params.styles);
 
+  const listContainerClasses = buildListContainerClasses(props.listRenderingParameters.gridLayout);
+
   return (
     <div className={wrapperClassNames} id={id || undefined}>
-      <div
-        className={`flex ${props.listRenderingParameters.direction || 'flex-row'} ${props.listRenderingParameters.gap || ''}`}
-      >
+      <div className={listContainerClasses}>
         {props.children?.length ? (
           props.children.map((child, index) => {
             const key = `${id}-${index}-image`;
-            if (debuggingEnabled) console.log('[Logos - Default] render key:', key);
-
             return (
               <Image
                 key={key}
@@ -101,9 +72,7 @@ export const Default = (props: ImagesContainerProps): JSX.Element => {
                   ...props.params,
                   RenderingIdentifier: `image-${child.id}`,
                 }}
-                fields={{
-                  Image: child.Image,
-                }}
+                fields={{ Image: child.Image }}
                 isNested={true}
                 imageRenderingParameters={props.imageRenderingParameters}
               />
@@ -119,31 +88,28 @@ export const Default = (props: ImagesContainerProps): JSX.Element => {
 
 /**
  * Static props fetcher for the Images component.
- * Loads visual parameters (color, layout, hover, etc.) and child data from Sitecore.
  */
 export const getStaticProps: GetStaticComponentProps = async (rendering, _layoutData, context) => {
   const language = context?.locale as string;
 
-  // Helper to reduce repetition for parameter lookups
-  // Resolve all presentation-related values
   const imageRenderingParameters = await getImageRenderingParameters(rendering, language);
   const listRenderingParameters = await getListRenderingParameters(rendering, language);
 
-  // Fetch child items for this Socials component
-  const children = await getImageChildren(rendering.dataSource, language);
+  const children = await getTypedChildItems<{
+    Image: ImageField;
+    Link: LinkField;
+  }>(rendering.dataSource, language, ['Image', 'Link']);
 
   if (debuggingEnabled) {
     console.log(
-      '[Logos - getStaticProps] - iconRenderingParameters:' +
-        JSON.stringify(imageRenderingParameters)
+      '[Images - getStaticProps] imageRenderingParameters:',
+      JSON.stringify(imageRenderingParameters)
     );
     console.log(
-      '[Logos - getStaticProps] - listRenderingParameters:' +
-        JSON.stringify(listRenderingParameters)
+      '[Images - getStaticProps] listRenderingParameters:',
+      JSON.stringify(listRenderingParameters)
     );
-    console.log(
-      '[Logos - getStaticProps] - children:(' + children.length + '):' + JSON.stringify(children)
-    );
+    console.log('[Images - getStaticProps] children:', children.length);
   }
 
   return {

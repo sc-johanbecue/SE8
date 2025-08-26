@@ -10,8 +10,8 @@ const debuggingEnabled = false;
 export type IconRenderingParameters = {
   iconColor?: ColorCssVars | null;
   iconBackgroundColor?: ColorCssVars | null;
-  iconSize?: string | null;
-  iconStyle?: string | null;
+  iconSize?: string;
+  iconStyle?: string;
   hoveredIconColor?: ColorCssVars | null;
   hoveredIconBackgroundColor?: ColorCssVars | null;
 };
@@ -49,8 +49,8 @@ export async function getIconRenderingParameters(
   return {
     iconColor: iconColor,
     iconBackgroundColor: iconBackgroundColor,
-    iconSize: iconSize,
-    iconStyle: iconStyle,
+    iconSize: iconSize as string,
+    iconStyle: iconStyle as string,
     hoveredIconColor: hoveredIconColor,
     hoveredIconBackgroundColor: hoveredIconBackgroundColor,
   };

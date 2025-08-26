@@ -68,39 +68,39 @@ export const Default = (props: SocialsContainerProps): JSX.Element => {
     );
   }
 
-  const wrapperClassNames = props.isNested ? '' : joinClassNames('component', props.params.styles);
+  const listLayoutStyle = buildListContainerClasses(props.listRenderingParameters.listLayoutStyle);
 
-  const listContainerClasses = buildListContainerClasses(props.listRenderingParameters.gridLayout);
+  const wrapperClassNames = props.isNested
+    ? listLayoutStyle
+    : joinClassNames('component', props.params.styles, listLayoutStyle);
 
   return (
     <div className={wrapperClassNames} id={id}>
-      <div className={listContainerClasses}>
-        {props.children?.length ? (
-          props.children.map((child, index) => {
-            const key = `${id}-${index}-social`;
-            if (debuggingEnabled) console.log('[Socials - Default] render key:', key);
+      {props.children?.length ? (
+        props.children.map((child, index) => {
+          const key = `${id}-${index}-social`;
+          if (debuggingEnabled) console.log('[Socials - Default] render key:', key);
 
-            return (
-              <Social
-                key={key}
-                rendering={{ ...props.rendering, dataSource: child.id }}
-                params={{
-                  ...props.params,
-                  RenderingIdentifier: child.id,
-                }}
-                fields={{
-                  Icon: child.Icon,
-                  Link: child.Link,
-                }}
-                iconRenderingParameters={props.iconRenderingParameters}
-                isNested={true}
-              />
-            );
-          })
-        ) : (
-          <span className="text-sm text-gray-500">No socials are configured.</span>
-        )}
-      </div>
+          return (
+            <Social
+              key={key}
+              rendering={{ ...props.rendering, dataSource: child.id }}
+              params={{
+                ...props.params,
+                RenderingIdentifier: child.id,
+              }}
+              fields={{
+                Icon: child.Icon,
+                Link: child.Link,
+              }}
+              iconRenderingParameters={props.iconRenderingParameters}
+              isNested={true}
+            />
+          );
+        })
+      ) : (
+        <span className="text-sm text-gray-500">No socials are configured.</span>
+      )}
     </div>
   );
 };

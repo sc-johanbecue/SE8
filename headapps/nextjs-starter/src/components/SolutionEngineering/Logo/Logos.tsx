@@ -62,39 +62,39 @@ export const Default = (props: LogosContainerProps): JSX.Element => {
     );
   }
 
-  const wrapperClassNames = props.isNested ? '' : joinClassNames('component', props.params.styles);
+  const listLayoutStyle = buildListContainerClasses(props.listRenderingParameters.listLayoutStyle);
 
-  const listContainerClasses = buildListContainerClasses(props.listRenderingParameters.gridLayout);
+  const wrapperClassNames = props.isNested
+    ? listLayoutStyle
+    : joinClassNames('component', props.params.styles, listLayoutStyle);
 
   return (
     <div className={wrapperClassNames} id={id}>
-      <div className={listContainerClasses}>
-        {props.children?.length ? (
-          props.children.map((child, index) => {
-            const key = `${id}-${index}-logo`;
-            if (debuggingEnabled) console.log('[Logos - Default] render key:', key);
+      {props.children?.length ? (
+        props.children.map((child, index) => {
+          const key = `${id}-${index}-logo`;
+          if (debuggingEnabled) console.log('[Logos - Default] render key:', key);
 
-            return (
-              <Logo
-                key={key}
-                rendering={{ ...props.rendering, dataSource: child.id }}
-                params={{
-                  ...props.params,
-                  RenderingIdentifier: `logo-${child.id}`,
-                }}
-                fields={{
-                  Logo: child.Logo,
-                  Link: child.Link,
-                }}
-                isNested={true}
-                imageRenderingParameters={props.imageRenderingParameters}
-              />
-            );
-          })
-        ) : (
-          <span className="text-sm text-gray-500">No logos are configured.</span>
-        )}
-      </div>
+          return (
+            <Logo
+              key={key}
+              rendering={{ ...props.rendering, dataSource: child.id }}
+              params={{
+                ...props.params,
+                RenderingIdentifier: `logo-${child.id}`,
+              }}
+              fields={{
+                Logo: child.Logo,
+                Link: child.Link,
+              }}
+              isNested={true}
+              imageRenderingParameters={props.imageRenderingParameters}
+            />
+          );
+        })
+      ) : (
+        <span className="text-sm text-gray-500">No logos are configured.</span>
+      )}
     </div>
   );
 };

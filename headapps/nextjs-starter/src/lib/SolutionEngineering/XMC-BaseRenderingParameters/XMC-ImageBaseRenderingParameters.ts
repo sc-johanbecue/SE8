@@ -1,19 +1,15 @@
 import { ComponentRendering } from '@sitecore-content-sdk/nextjs';
-import {
-  getRenderingParameterLookupValue,
-  getRenderingParameterValue,
-} from 'lib/SolutionEngineering/XMC-RenderingParameterLookup';
+import { getRenderingParameterLookupValue } from 'lib/SolutionEngineering/XMC-RenderingParameterLookup';
 
-const debuggingEnabled = false;
+const debuggingEnabled = true;
 
 /**
  * Presentation-related props resolved from getStaticProps.
  */
 export type ImageRenderingParameters = {
-  imageHeight?: string | null;
-  imageWidth?: string | null;
-  imageFit?: string | null;
-  viewportSizes: string | null;
+  imageFit: string;
+  imageLayoutStyles: string;
+  imageWrapperLayoutStyles: string;
 };
 
 /**
@@ -30,17 +26,15 @@ export async function getImageRenderingParameters(
     );
   }
 
-  const [imageHeight, imageWidth, imageFit, viewportSizes] = await Promise.all([
-    getRenderingParameterLookupValue(rendering.params?.['Image Height'], language),
-    getRenderingParameterLookupValue(rendering.params?.['Image Width'], language),
+  const [imageFit, imageLayoutStyles, imageWrapperLayoutStyles] = await Promise.all([
     getRenderingParameterLookupValue(rendering.params?.['Image Fit'], language),
-    getRenderingParameterValue(rendering.params?.['Image Viewport Sizes']),
+    getRenderingParameterLookupValue(rendering.params?.['Image Layout Styles'], language),
+    getRenderingParameterLookupValue(rendering.params?.['Image Wrapper Layout Styles'], language),
   ]);
 
   return {
-    imageHeight: imageHeight,
-    imageWidth: imageWidth,
-    imageFit: imageFit,
-    viewportSizes: viewportSizes,
+    imageFit: imageFit as string,
+    imageLayoutStyles: imageLayoutStyles as string,
+    imageWrapperLayoutStyles: imageWrapperLayoutStyles as string,
   };
 }

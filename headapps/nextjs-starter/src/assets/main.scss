@@ -86,3 +86,41 @@
    ========================================== */
 @source inline("w-[{1..100}%]");
 @source inline("h-[{1..100}%]");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}h-[{10..100}vh]");
+
+
+
+/* Carousel arrow utilities (buttons, positions, effects) */
+@source inline("group");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}relative");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}absolute");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}left-2");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}right-2");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}top-1/2");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}-translate-y-1/2");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}z-10");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}p-2");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}rounded-full");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}bg-white/80");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}backdrop-blur");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}shadow");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}text-black");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}focus:outline-none");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}focus:ring-2");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}focus:ring-black/20");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}disabled:opacity-40");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}disabled:cursor-not-allowed");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}opacity-0");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}opacity-100");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}group-hover:opacity-100");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}transition-opacity");
+
+/* Track basics (if not already safelisted) */
+@source inline("{,sm:,md:,lg:,xl:,2xl:}overflow-x-auto");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}flex");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}snap-x");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}snap-mandatory");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}gap-4");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}snap-start");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}shrink-0");
+@source inline("{,sm:,md:,lg:,xl:,2xl:}basis-{1/4,1/3,1/2,3/4,full}");

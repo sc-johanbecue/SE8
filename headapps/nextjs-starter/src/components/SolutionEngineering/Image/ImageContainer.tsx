@@ -64,7 +64,9 @@ export const Default = (props: ImageContainerProps): JSX.Element => {
 
   const wrapperClassNames = props.isNested ? '' : joinClassNames('component', props.params.styles);
 
-  const listContainerClasses = buildListContainerClasses(props.listRenderingParameters.gridLayout);
+  const listContainerClasses = buildListContainerClasses(
+    props.listRenderingParameters.listLayoutStyle
+  );
 
   return (
     <div className={wrapperClassNames} id={id}>

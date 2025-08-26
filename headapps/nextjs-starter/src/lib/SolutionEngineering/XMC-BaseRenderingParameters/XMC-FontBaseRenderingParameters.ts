@@ -9,7 +9,7 @@ const debuggingEnabled = false;
  */
 export type FontRenderingParameters = {
   fontFamily: FontCssVars | null;
-  fontSize: string | null;
+  fontSize: string;
 };
 
 /**
@@ -33,6 +33,6 @@ export async function getFontRenderingParameters(
 
   return {
     fontFamily: fontFamily,
-    fontSize: fontSize,
+    fontSize: fontSize as string,
   };
 }

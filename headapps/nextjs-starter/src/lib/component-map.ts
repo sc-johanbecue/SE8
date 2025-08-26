@@ -9,7 +9,6 @@ import * as ColumnSplitter from 'src/components/ColumnSplitter';
 import * as Container from 'src/components/Container';
 import * as ContentBlock from 'src/components/ContentBlock';
 import * as FEAASScripts from 'src/components/FEAASScripts';
-
 import * as LinkList from 'src/components/LinkList';
 import * as Navigation from 'src/components/Navigation';
 import * as PageContent from 'src/components/PageContent';
@@ -34,8 +33,12 @@ import * as Link from 'components/SolutionEngineering/Link/Link';
 import * as SearchWidget from 'components/SolutionEngineering/SearchWidget';
 import * as Image from 'components/SolutionEngineering/Image/Image';
 import * as Images from 'components/SolutionEngineering/Image/Images';
+import * as ImageCarousel from 'components/SolutionEngineering/Image/ImageCarousel';
 import * as ImageContainer from 'components/SolutionEngineering/Image/ImageContainer';
 import * as Card from 'components/SolutionEngineering/Card';
+import * as ScalableVectorGraphic from 'components/SolutionEngineering/ScalableVectorGraphic/ScalableVectorGraphic';
+import * as ScalableVectorGraphics from 'components/SolutionEngineering/ScalableVectorGraphic/ScalableVectorGraphics';
+import * as ScalableVectorGraphicContainer from 'components/SolutionEngineering/ScalableVectorGraphic/ScalableVectorGraphicContainer';
 
 // Components must be registered with to match the string key with component name in Sitecore
 export const componentMap = new Map<string, NextjsJssComponent>([
@@ -68,6 +71,7 @@ export const componentMap = new Map<string, NextjsJssComponent>([
   //Images
   ['Image', Image],
   ['Images', Images],
+  ['ImageCarousel', ImageCarousel],
   ['ImageContainer', ImageContainer],
   //Logos
   ['Logo', Logo],
@@ -79,6 +83,10 @@ export const componentMap = new Map<string, NextjsJssComponent>([
   ['SocialContainer', SocialContainer],
   //Card
   ['Card', Card],
+  //ScalableVectorGraphic
+  ['ScalableVectorGraphic', ScalableVectorGraphic],
+  ['ScalableVectorGraphics', ScalableVectorGraphics],
+  ['ScalableVectorGraphicContainer', ScalableVectorGraphicContainer],
 ]);
 
 export default componentMap;

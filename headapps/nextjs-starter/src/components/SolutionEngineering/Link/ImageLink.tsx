@@ -59,23 +59,11 @@ export const Default = (props: LinkProps): JSX.Element => {
     );
   }
 
-  const baseWrapperClassNames = joinClassNames(
-    'p-0',
-    props.fields.Link.value.url ? props.imageRenderingParameters.imageHeight : '',
-    props.fields.Link.value.url ? props.imageRenderingParameters.imageWidth : ''
-  );
+  const baseWrapperClassNames = joinClassNames('p-0');
 
   const wrapperClassNames = props.isNested
     ? baseWrapperClassNames
     : joinClassNames('component', props.params.styles, baseWrapperClassNames);
-
-  const mergedImageRenderingParameters: ImageRenderingParameters = props.fields.Link.value.url
-    ? {
-        ...props.imageRenderingParameters,
-        imageWidth: '',
-        imageHeight: '',
-      }
-    : props.imageRenderingParameters;
 
   return (
     <BaseLink link={props.fields.Link} className={wrapperClassNames} id={id} isNested={true}>
@@ -83,7 +71,7 @@ export const Default = (props: LinkProps): JSX.Element => {
         rendering={props.rendering}
         params={props.params}
         fields={props.fields}
-        imageRenderingParameters={mergedImageRenderingParameters}
+        imageRenderingParameters={props.imageRenderingParameters}
         isNested={true}
       />
     </BaseLink>

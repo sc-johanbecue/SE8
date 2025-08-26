@@ -14,7 +14,7 @@ import {
 
 import { joinClassNames } from 'lib/SolutionEngineering/Utils/ComponentUtils';
 
-const debuggingEnabled = false;
+const debuggingEnabled = true;
 
 /**
  * Field definitions expected from Sitecore.
@@ -56,28 +56,26 @@ export const Default = (props: ImageProps): JSX.Element => {
     );
   }
 
-  const baseWrapperClassNames = joinClassNames(
-    'p-0',
-    props.imageRenderingParameters.imageHeight,
-    props.imageRenderingParameters.imageWidth
+  const imageWrapperLayoutStyles = joinClassNames(
+    props.imageRenderingParameters.imageWrapperLayoutStyles
+  );
+  const imageWrapperClassNames = props.isNested
+    ? imageWrapperLayoutStyles
+    : joinClassNames('component', props.params.styles, imageWrapperLayoutStyles);
+
+  const imageLayoutStyles = joinClassNames(
+    props.imageRenderingParameters.imageLayoutStyles,
+    props.imageRenderingParameters.imageFit
   );
 
-  const wrapperClassName = props.isNested
-    ? baseWrapperClassNames
-    : joinClassNames('component', props.params.styles, baseWrapperClassNames);
+  const imageClassNames = props.isNested
+    ? imageLayoutStyles
+    : joinClassNames('', imageLayoutStyles);
 
   return (
-    <div
-      // Wrapper div around the Sitecore image
-      // Adds default "component" class, any custom styles, plus height/width classes if provided
-      className={wrapperClassName}
-      id={id} // Ensure unique id for DOM
-    >
+    <div className={imageWrapperClassNames} id={id}>
       {/* Sitecore JSS Image component (handles media URLs, alt text, etc.) */}
-      <JssImage
-        field={props.fields.Image}
-        className={`w-full h-full ${props.imageRenderingParameters.imageFit}`}
-      />
+      <JssImage field={props.fields.Image} className={imageClassNames} />
     </div>
   );
 };
@@ -98,5 +96,5 @@ export const getStaticProps: GetStaticComponentProps = async (rendering, _layout
     );
   }
 
-  return imageRenderingParameters;
+  return { imageRenderingParameters };
 };

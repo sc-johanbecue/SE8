@@ -93,6 +93,79 @@ export async function getRenderingParameterLookupValue(
   return RenderingParameterLookup;
 }
 
+// export async function getImageClassNameRenderingParametersValue(
+//   ImageClassNamesRenderingParameterLookupItemId: string | undefined,
+//   language: string
+// ): Promise<{ imageClassNames: string; imageContainerClassNames: string } | null> {
+//   if (debuggingEnabled) {
+//     console.log(
+//       '[XMC-RenderingParameterLookup - getImageClassNameRenderingParametersValue] ImageClassNamesRenderingParameterLookupItemId:' +
+//         JSON.stringify(ImageClassNamesRenderingParameterLookupItemId)
+//     );
+//     console.log(
+//       '[XMC-RenderingParameterLookup - getImageClassNameRenderingParametersValue] language:' +
+//         JSON.stringify(ImageClassNamesRenderingParameterLookupItemId)
+//     );
+//   }
+
+//   if (ImageClassNamesRenderingParameterLookupItemId === undefined || language === undefined) {
+//     return null;
+//   }
+
+//   const endpoint = `${process.env.NEXT_PUBLIC_SITECORE_GRAPHQL_ENDPOINT}?sc_apikey=${process.env.NEXT_PUBLIC_SITECORE_API_KEY}`;
+//   const client = new GraphQLClient(endpoint);
+
+//   const query = gql`
+//     query GetRenderingParameterLookupValue(
+//   $RenderingParameterLookupItemId: String!
+//   $language: String!
+// ) {
+//   item(path: $RenderingParameterLookupItemId, language: $language) {
+//     ImageClassNames: field(name: "Image Class Names") {
+//       value
+//     }
+//     ImageContainerClassNames: field(name: "Image Container Class Names") {
+//       value
+//     }
+//   }
+//   `;
+
+//   let imageClassNameRenderingParameters = { imageClassNames: '', imageContainerClassNames: '' };
+
+//   if (ImageClassNamesRenderingParameterLookupItemId) {
+//     try {
+//       const result = await client.request<{
+//         item?: {
+//           ImageClassNames?: { value: string };
+//           ImageContainerClassNames?: { value: string };
+//         };
+//       }>(query, {
+//         ImageClassNamesRenderingParameterLookupItemId,
+//         language,
+//       });
+
+//       if (debuggingEnabled) {
+//         console.log(
+//           `[RenderingParameterLookup - getImageClassNameRenderingParametersValue] result.item?.RenderingParameterLookup:`,
+//           result.item?.ImageClassNames
+//         );
+//       }
+
+//       imageClassNameRenderingParameters = {
+//         imageClassNames: result.item?.ImageClassNames?.value as string,
+//         imageContainerClassNames: result.item?.ImageContainerClassNames?.value as string,
+//       };
+//     } catch (err) {
+//       console.warn(
+//         `[XMC-RenderingParameterLookup - getImageClassNameRenderingParametersValue] Failed to fetch presentation style value for ID ${ImageClassNamesRenderingParameterLookupItemId}:`,
+//         err
+//       );
+//     }
+//   }
+
+//   return imageClassNameRenderingParameters;
+// }
+
 export async function getRenderingParameterValue(
   RenderingParameterValue: string | undefined
 ): Promise<string | null> {
@@ -104,7 +177,7 @@ export async function getRenderingParameterValue(
   }
 
   if (RenderingParameterValue === undefined) {
-    return null;
+    return '';
   }
 
   return RenderingParameterValue;

@@ -19,10 +19,6 @@ import {
   getListRenderingParameters,
   ListRenderingParameters,
 } from 'lib/SolutionEngineering/XMC-BaseRenderingParameters/XMC-ListBaseRenderingParameters';
-import {
-  buildListContainerClasses,
-  joinClassNames,
-} from 'lib/SolutionEngineering/Utils/ComponentUtils';
 import HorizontalCarousel from '../HorizontalCarousel/HorizontalCarousel';
 
 const debuggingEnabled = true;
@@ -45,52 +41,6 @@ type ImagesContainerProps = {
  * Default component renderer for the Images container.
  */
 export const Default = (props: ImagesContainerProps): JSX.Element => {
-  const id = props.rendering.uid + '-images';
-
-  if (debuggingEnabled) {
-    console.log('[Images - Default] id:', id);
-    console.log(
-      '[Images - Default] listRenderingParameters:',
-      JSON.stringify(props.listRenderingParameters)
-    );
-  }
-
-  const listLayoutStyle = buildListContainerClasses(props.listRenderingParameters.listLayoutStyle);
-
-  const wrapperClassNames = props.isNested
-    ? listLayoutStyle
-    : joinClassNames('component', props.params.styles, listLayoutStyle);
-
-  return (
-    <div className={wrapperClassNames} id={id || undefined}>
-      {props.children?.length ? (
-        props.children.map((child, index) => {
-          const key = `${id}-${index}-image`;
-          return (
-            <Image
-              key={key}
-              rendering={{ ...props.rendering, dataSource: child.id }}
-              params={{
-                ...props.params,
-                RenderingIdentifier: `image-${child.id}`,
-              }}
-              fields={{ Image: child.Image }}
-              isNested={true}
-              imageRenderingParameters={props.imageRenderingParameters}
-            />
-          );
-        })
-      ) : (
-        <span className="text-sm text-gray-500">No images are configured.</span>
-      )}
-    </div>
-  );
-};
-
-/**
- * Default component renderer for the Images container.
- */
-export const Carousel = (props: ImagesContainerProps): JSX.Element => {
   const id = props.rendering.uid + '-images';
 
   if (debuggingEnabled) {

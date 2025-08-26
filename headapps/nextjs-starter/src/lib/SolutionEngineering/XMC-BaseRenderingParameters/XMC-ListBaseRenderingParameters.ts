@@ -7,7 +7,7 @@ const debuggingEnabled = false;
  * Presentation-related props resolved from getStaticProps.
  */
 export type ListRenderingParameters = {
-  gridLayout: string | null;
+  listLayoutStyle: string;
 };
 
 /**
@@ -24,11 +24,11 @@ export async function getListRenderingParameters(
     );
   }
 
-  const [gridLayout] = await Promise.all([
-    getRenderingParameterLookupValue(rendering.params?.['Grid Layout'], language),
+  const [listLayoutStyle] = await Promise.all([
+    getRenderingParameterLookupValue(rendering.params?.['List Layout Style'], language),
   ]);
 
   return {
-    gridLayout: gridLayout,
+    listLayoutStyle: listLayoutStyle as string,
   };
 }

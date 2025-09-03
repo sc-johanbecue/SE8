@@ -6,6 +6,7 @@ import LayoutImagineCruising from 'src/Layout.ImagineCruising';
 import LayoutGeberit from 'src/Layout.Geberit';
 import RoyalGD from 'src/Layout.RoyalGD';
 import FrieslandCampina from 'src/Layout.FrieslandCampina';
+import Flora from 'src/Layout.Flora';
 import MajidAlFuttaim from 'src/Layout.MajidAlFuttaim';
 
 import {
@@ -47,6 +48,7 @@ const SitecorePage = ({
   const royalGD = layoutData.sitecore.context.site?.name == 'royal-gd';
   const frieslandcampina = layoutData.sitecore.context.site?.name == 'frieslandcampina';
   const majidalfuttaim = layoutData.sitecore.context.site?.name == 'majidalfuttaim';
+  const floraFoods = layoutData.sitecore.context.site?.name == 'veolife';
   return (
     <ComponentPropsContext value={componentProps}>
       <SitecoreContext
@@ -62,6 +64,8 @@ const SitecorePage = ({
           <RoyalGD layoutData={layoutData} headLinks={headLinks} />
         ) : frieslandcampina ? (
           <FrieslandCampina layoutData={layoutData} headLinks={headLinks} />
+        ) : floraFoods ? (
+          <Flora layoutData={layoutData} headLinks={headLinks} />
         ) : majidalfuttaim ? (
           <MajidAlFuttaim layoutData={layoutData} headLinks={headLinks} />
         ) : (

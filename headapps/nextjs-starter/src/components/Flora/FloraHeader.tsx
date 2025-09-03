@@ -73,7 +73,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                             <Link
                               data-variantfieldname="Link"
                               title="Products"
-                              href="https://www.violife.com/en-us/products"
+                              href="/products"
                               data-variantitemid="{2BB6BCB7-A482-4EBE-90AE-E375703173B6}"
                             >
                               Products
@@ -85,7 +85,7 @@ export const Default = (props: HeaderProps): JSX.Element => {
                             <Link
                               data-variantfieldname="Link"
                               title="Recipes"
-                              href="https://www.violife.com/en-us/easy-recipes"
+                              href="/easy-recipes"
                               data-variantitemid="{5B5B7FA6-1FC2-4EB8-BE6C-0775FABD11FE}"
                             >
                               Recipes

@@ -10,6 +10,7 @@ import {
   RichTextField,
   Text,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import Link from 'next/link';
 
 interface Fields {
   Image: ImageField;
@@ -276,13 +277,13 @@ export const Default = (props: VideoHeroProps): JSX.Element => {
                                           <path d="M14.2464 11.8844L19.5 8.11556H13.0071L10.9955 2L8.99287 8.11556H2.5L7.75357 11.8844L5.74194 18L10.9955 14.2222L16.2491 18L14.2464 11.8844Z"></path>
                                         </svg>
                                       </div>
-                                      <a
+                                      <Link
                                         href="#rate-this"
                                         className="rate-text scroll-to-view"
                                         aria-describedby="avg-rating-details"
                                       >
                                         Rate Recipe
-                                      </a>
+                                      </Link>
                                     </div>
                                   </div>
                                 </div>
@@ -384,14 +385,14 @@ export const Default = (props: VideoHeroProps): JSX.Element => {
                                       </div>
                                     </div>
                                     <div className="btn btn-primary field-link">
-                                      <a
+                                      <Link
                                         data-variantfieldname="Link"
                                         title="Discover all"
                                         href="/products"
                                         data-variantitemid="{99037134-8B5F-45C8-8876-AC047E079B4C}"
                                       >
                                         Discover Products
-                                      </a>
+                                      </Link>
                                     </div>
                                   </div>
                                 </div>
@@ -416,12 +417,13 @@ export const Default = (props: VideoHeroProps): JSX.Element => {
                                   tabIndex={0}
                                   aria-describedby="tab-label"
                                 >
-                                  <a
+                                  <Link
+                                    href=""
                                     className="active"
                                     data-tab-trigger="tab1-0c82ba13-3689-4cd0-a597-7f8868de3fb9"
                                   >
                                     <span className="field-tabtext1">INGREDIENTS</span>
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li
                                   className="tab-item"
@@ -432,9 +434,12 @@ export const Default = (props: VideoHeroProps): JSX.Element => {
                                   tabIndex={-1}
                                   aria-describedby="tab-label"
                                 >
-                                  <a data-tab-trigger="tab2-0c82ba13-3689-4cd0-a597-7f8868de3fb9">
+                                  <Link
+                                    href=""
+                                    data-tab-trigger="tab2-0c82ba13-3689-4cd0-a597-7f8868de3fb9"
+                                  >
                                     <span className="field-tabtext2">DIRECTIONS</span>
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                               <div className="tabs-content">
@@ -670,14 +675,15 @@ export const Default = (props: VideoHeroProps): JSX.Element => {
                                         Copied!
                                       </div>
                                       <div className="field-link">
-                                        <a
+                                        <Link
+                                          href=""
                                           className="btn btn-primary copycipboard"
                                           data-variantfieldname="Link"
                                           title=" Copy Ingredients"
                                           data-variantitemid="{F7069293-3E80-4353-A396-ABF354C54DB8}"
                                         >
                                           Copy Ingredients
-                                        </a>
+                                        </Link>
                                       </div>
                                     </li>
                                   </ul>
@@ -689,7 +695,7 @@ export const Default = (props: VideoHeroProps): JSX.Element => {
                                   <ul role="list">
                                     <li className="item0 odd first last" role="listitem">
                                       <div className="field-link">
-                                        <a
+                                        <Link
                                           className="btn btn-primary download-recipe"
                                           data-variantfieldname="Link"
                                           title="Download Recipe"
@@ -697,7 +703,7 @@ export const Default = (props: VideoHeroProps): JSX.Element => {
                                           data-variantitemid="{0E328198-5DF5-4767-8968-20CF8A6A7ADB}"
                                         >
                                           Download Recipe
-                                        </a>
+                                        </Link>
                                       </div>
                                     </li>
                                   </ul>

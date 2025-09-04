@@ -236,7 +236,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           </div>
         </div>
       </section>
-      <script src="https://www.violife.com/en-us/-/media/Themes/Upfield/Brands/Violife-Foods/Violife-Foods-Global/scripts/optimized-min.js?revision=8ac0667bcbac4dfa82d918891d4bd969&amp;t=20250828T031244Z" />
+      {/* <script src="https://www.violife.com/en-us/-/media/Themes/Upfield/Brands/Violife-Foods/Violife-Foods-Global/scripts/optimized-min.js?revision=8ac0667bcbac4dfa82d918891d4bd969&amp;t=20250828T031244Z" /> */}
       {/* <!-- /#wrapper --> */}
       <div className="overlay-wrapper">
         <div className="overlay component">

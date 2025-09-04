@@ -4,7 +4,7 @@
         <system.webServer>
             <httpProtocol>
                 <customHeaders>
-                    <add xdt:Transform="SetAttributes" xdt:Locator="Match(name)" name="Content-Security-Policy" value="img-src 'self' https://jbe-play.sitecoresandbox.cloud/; child-src 'self' https://jbe-play.sitecoresandbox.cloud/; connect-src 'self' https://jbe-play.sitecoresandbox.cloud/;" />
+                    <add xdt:Transform="SetAttributes" xdt:Locator="Match(name)" name="Content-Security-Policy" value="img-src 'self' https://jbe-xmc.sitecoresandbox.cloud/; child-src 'self' https://jbe-xmc.sitecoresandbox.cloud/; connect-src 'self' https://jbe-xmc.sitecoresandbox.cloud/;" />
                 </customHeaders>
             </httpProtocol>
         </system.webServer>

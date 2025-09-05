@@ -16,6 +16,8 @@ interface Fields {
   Image: ImageField;
   RecipeName: TextField;
   ShortDescription: RichTextField;
+  Ingredients: RichTextField;
+  Directions: RichTextField;
 }
 
 type VideoHeroProps = {
@@ -460,7 +462,8 @@ export const Default = (props: VideoHeroProps): JSX.Element => {
 
                                             <div className="check-list field-ingredientstext recipe-ingredient-list">
                                               <div>
-                                                <ul role="list">
+                                                <RichText field={props.fields.Ingredients} />
+                                                {/* <ul role="list">
                                                   <li role="listitem">
                                                     <div className="tick-wrapper">
                                                       <span
@@ -581,7 +584,7 @@ export const Default = (props: VideoHeroProps): JSX.Element => {
                                                     </div>
                                                     salt and pepper
                                                   </li>
-                                                </ul>
+                                                </ul> */}
                                               </div>
                                             </div>
                                           </div>
@@ -602,7 +605,8 @@ export const Default = (props: VideoHeroProps): JSX.Element => {
                                     <div className="component-content">
                                       <div className="recipe-detail-instructions field-instructionstext recipe-ingredient-list">
                                         <div>
-                                          <ol role="list">
+                                          <RichText field={props.fields.Directions} />
+                                          {/* <ol role="list">
                                             <li role="listitem">
                                               Sauté the cherry tomatoes with a bit of olive oil in a
                                               pan. Once they become soft, add garlic, fresh basil
@@ -629,7 +633,7 @@ export const Default = (props: VideoHeroProps): JSX.Element => {
                                               the pasta and serve immediately, adding fresh basil
                                               and thyme on top.
                                             </li>
-                                          </ol>
+                                          </ol> */}
                                         </div>
                                       </div>
                                       <div className="recipe-detail-tip"></div>

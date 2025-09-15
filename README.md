@@ -1,66 +1,78 @@
-# PLAY! Summit Demo on XM Cloud
+# XM Cloud Front End Application Starter Kits
 
-A headless site built to showcase the power of Sitecore's composable digital solutions, on XM Cloud
+This repository contains multiple Next.js Starter Kits, and the SPA Starters monorepo (which includes a Node Proxy Application and and SPA starter apps) for Sitecore XM Cloud Development. It is intended to get developers up and running quickly with a new front end project that is integrated with Sitecore XM Cloud.
 
-![PLAY! Website Home Page](docs/play-website-thumbnail.png)
+[Deploying XM Cloud](https://doc.sitecore.com/xmc/en/developers/xm-cloud/deploying-xm-cloud.html)
 
-This repository is a Sitecore DXP demo that uses:
+Here's a quick overview of the major folders and their purpose:
 
-- Sitecore XM Cloud
-  - XM Cloud Pages Personalize
-  - XM Cloud Pages Analyze
-- Sitecore Content Hub DAM and CMP
-- Sitecore Search
-- Sitecore JavaScript Services (JSS)
-- Next.js
-- Vercel
-- Tailwind CSS
-- Storybook
+  - `/examples`:
+  Contains starter front-end applications. Each subfolder is a working app
+    * basic-nextjs: [README](https://github.com/Sitecore/xmcloud-starter-js/tree/main/examples/basic-nextjs/README.md) 
+    * basic-spa: [README](https://github.com/Sitecore/xmcloud-starter-js/tree/main/examples/basic-spa/README.md) 
+    * kit-nextjs-article-starter: [README](https://github.com/Sitecore/xmcloud-starter-js/tree/main/examples/kit-nextjs-article-starter/README.md)
+    * kit-nextjs-location-finder: [README](https://github.com/Sitecore/xmcloud-starter-js/blob/main/examples/kit-nextjs-location-finder/README.md)
+    * kit-nextjs-product-listing: [README](https://github.com/Sitecore/xmcloud-starter-js/blob/main/examples/kit-nextjs-product-listing/README.md)
+    * kit-nextjs-skate-park: [README](https://github.com/Sitecore/xmcloud-starter-js/blob/main/examples/kit-nextjs-skate-park/README.md)
 
-## Live Demo
+  - `/local-containers`:
+  Contains Docker-related files for local development environments.
 
-View the live demo at [play-website.sitecoredemo.com](https://play-website.sitecoredemo.com/)
+  - `/authoring`: 
+    The authoring folder is where Sitecore content items are defined and stored for deployment. These items include:
+    * Templates: located under /items — defines the structure of content items used in the application..
+    * Powershell, Modules, etc. Organized by namespace under items/items, useful for modular development and deployment.
+    * Modules: Each module has its own .module.json file (e.g., nextjs-starter.module.json) to define what items it includes and where they should be deployed in the Sitecore content tree.
 
-## Storybook
+  - `xmcloud.build.json`: 
+    This is the primary configuration file for building and deploying rendering hosts in your XM Cloud environment.
 
-View the [Storybook](https://github.com/storybookjs/storybook) at [play-website-storybook.sitecoredemo.com](https://play-website-storybook.sitecoredemo.com/)
+    Key Sections:
+      * renderingHosts: Defines one or more front-end apps to build. Each entry includes:
 
-## [📖 Documentation](docs/README.md)
+      * path: where the app is located (e.g., ./examples/kit-nextjs-skate-park)
 
-The setup, installation, development, and usage documentation is available in the [docs folder](docs/README.md).
+      * nodeVersion: Node.js version used during build
 
-## ⚠ Important notice
+      * jssDeploymentSecret: Deployment auth key for JSS
 
-### Is PLAY! Summit a starter kit or template solution?
+      * enabled: Whether the rendering host is active
 
-**No.** You should not clone this repository for the purposes of starting a new Sitecore project. There are other community solutions which can be used as a starter for Sitecore implementations. PLAY! Summit is intended as a **demo site demonstrating the full Sitecore DXP capabilities**.
+      * buildCommand / runCommand: Custom scripts for build/start
 
-### Is PLAY! Summit supported by Sitecore?
+      * postActions: Actions that run after a successful deployment, such as warming up the CM server or triggering reindexing.
 
-Sitecore maintains the PLAY! Summit example, but PLAY! Summit code is not supported by Sitecore Product Support Services. Please do not submit support tickets regarding PLAY! Summit.
+      * authoringPath: Path to the folder containing Sitecore item definitions (default is ./authoring).
 
-### How can I get help with PLAY! Summit?
+## GitHub Template
 
-For usage questions regarding PLAY! Summit, installation or code, please use [Sitecore Stack Exchange](https://sitecore.stackexchange.com/) or [#sitecoredemo](https://sitecorechat.slack.com/messages/CASEB5M38) on [Sitecore Community Slack](https://sitecore.chat/).
+This Github repository is a template that can be used to create your own repository. To get started, click the `Use this template` button at the top of the repository.
 
-Please do not submit usage questions via GitHub.
+### Prerequisites
 
-### Bug reports
+- Access to an Sitecore XM Cloud Environment
+- [Node.js LTS](https://nodejs.org/en/)
 
-You can use GitHub to submit [bug reports](https://github.com/Sitecore/Sitecore.Demo.XmCloud.PlaySummit/issues/new) for PLAY! Summit.
+### Getting Started Guide
 
-### Feature requests
+For developers new to XM Cloud you can follow the Getting Started Guide on the [Sitecore Documentation Site](https://doc.sitecore.com/xmc) to get up and running with XM Cloud. This will walk you through the process of creating a new XM Cloud Project, provisioning an Environment, deploying the NextJs Starter Kit, and finally creating your first Component.
 
-You can use GitHub to submit [feature requests](https://github.com/Sitecore/Sitecore.Demo.XmCloud.PlaySummit/issues/new) for PLAY! Summit.
+### Running the Next.js Starter Kit
 
-### Contribute
+>  **Note:** Please refer to the `README.md` of the specific example starter you’re working with for detailed setup instructions.
+> The following outlines the general steps to run the app locally:
+- Log into the Sitecore XM Cloud Deploy Portal, locate your Environment and select the `Developer Settings` tab.
+- Ensure that the `Preview` toggle is enabled.
+- In the `Local Development` section, click to copy the sample `.env` file contents to your clipboard.
+- Create a new `.env.local` file in the `./examples/basic-nextjs` folder of this repository and paste the contents from your clipboard.
+- Run the following commands in the root of the repository to start the NextJs application:
+  ```bash
+  cd examples/basic-nextjs
+  npm install
+  npm run dev
+  ```
+- You should now be able to access your site on `http://localhost:3000` and see your changes in real-time as you make them.
 
-Contributions are always welcome by submitting [pull requests](https://github.com/Sitecore/Sitecore.Demo.XmCloud.PlaySummit/pulls) on GitHub!
+### SPA Starters Monorepo and Angular SPA
 
-### License
-
-Please read the [LICENSE](https://github.com/Sitecore/Sitecore.Demo.XmCloud.PlaySummit/blob/main/LICENSE) carefully prior to using the code in this repository.
-
-### Warranty
-
-The code, samples and/or solutions provided in this repository are for example purposes only and **without warranty (expressed or implied)**. The code has not been extensively tested and is not guaranteed to be bug free.
+A new starter SPA based on Angular has been introduced with JSS v22.3.0. The Angular starter has been designed to be compatible with XM Cloud and should be used with the provided node XM Cloud proxy application to handle server-side rendering (SSR), data queries, personalization and more. For more details and information on how to run and deploy the Angular starter and proxy to XM Cloud have a look at [SPA starters monorepo](examples/basic-spa/)

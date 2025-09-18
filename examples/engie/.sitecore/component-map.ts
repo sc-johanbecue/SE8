@@ -65,6 +65,13 @@ import * as TextBanner from 'components/text-banner/TextBanner';
 import * as TopicListing from 'components/topic-listing/TopicListing';
 import * as VerticalImageAccordion from 'components/vertical-image-accordion/VerticalImageAccordion';
 import * as Video from 'components/video/Video';
+import * as EngieCard from 'components/engie/EngieCard';
+import * as EngieCardContainer from 'components/engie/EngieCardContainer';
+import * as EngieShowcase from 'components/engie/EngieShowcase';
+import * as EngieHeader from 'components/engie/EngieHeader';
+import * as EngieFooter from 'components/engie/EngieFooter';
+import * as EngieHeroCTA from 'components/engie/EngieHeroCTA';
+import * as EngieUSP from 'components/engie/EngieUSP';
 
 // Components must be registered with to match the string key with component name in Sitecore
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
@@ -133,6 +140,13 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['TopicListing', TopicListing],
   ['VerticalImageAccordion', VerticalImageAccordion],
   ['Video', Video],
+  ['EngieCardContainer', EngieCardContainer],
+  ['EngieCard', EngieCard],
+  ['EngieShowcase', EngieShowcase],
+    ['EngieHeader', EngieHeader],
+      ['EngieFooter', EngieFooter],
+      ['EngieHeroCTA', EngieHeroCTA],
+      ['EngieUSP', EngieUSP],
 ]);
 
 export default componentMap;

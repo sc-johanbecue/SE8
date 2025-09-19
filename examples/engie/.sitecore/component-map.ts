@@ -72,6 +72,7 @@ import * as EngieHeader from 'components/engie/EngieHeader';
 import * as EngieFooter from 'components/engie/EngieFooter';
 import * as EngieHeroCTA from 'components/engie/EngieHeroCTA';
 import * as EngieUSP from 'components/engie/EngieUSP';
+import * as EngieContentAndImage from 'components/engie/EngieContentAndImage';
 
 // Components must be registered with to match the string key with component name in Sitecore
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
@@ -143,10 +144,11 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['EngieCardContainer', EngieCardContainer],
   ['EngieCard', EngieCard],
   ['EngieShowcase', EngieShowcase],
-    ['EngieHeader', EngieHeader],
-      ['EngieFooter', EngieFooter],
-      ['EngieHeroCTA', EngieHeroCTA],
-      ['EngieUSP', EngieUSP],
+  ['EngieHeader', EngieHeader],
+  ['EngieFooter', EngieFooter],
+  ['EngieHeroCTA', EngieHeroCTA],
+  ['EngieUSP', EngieUSP],
+  ['EngieContentAndImage', EngieContentAndImage],
 ]);
 
 export default componentMap;

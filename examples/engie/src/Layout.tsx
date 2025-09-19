@@ -132,19 +132,11 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
         <meta name="smartbanner:close-label" content="Sluiten" />
         <meta name="smartbanner:hide-ttl" content="1296000000" />
 
-        {/* Verification */}
-        <meta name="facebook-domain-verification" content="40b1svczs83kj79taon46giep5d2n6" />
-
         {/* Stylesheets */}
         <link
           rel="stylesheet"
           href="https://www.engie.nl/assets/css/main.a8946fcadb8ae1b496ec.css"
         />
-        <link
-          rel="stylesheet"
-          href="https://cdn.conversationalsdevelopment.nl/engie/client/v2/index.css"
-        />
-
         {/* Favicons */}
         <link rel="manifest" href="https://www.engie.nl/assets/images/favicons/manifest.json" />
         <link
@@ -156,51 +148,6 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
           href="https://www.engie.nl/assets/images/favicons/favicon.svg"
           type="image/svg+xml"
         />
-
-        {/* Preconnect / DNS-prefetch */}
-        <link rel="preconnect" href="https://googletagmanager.com/" />
-        <link rel="preconnect" href="https://google-analytics.com/" />
-        <link rel="dns-prefetch" href="https://googletagmanager.com/" />
-        <link rel="dns-prefetch" href="https://google-analytics.com/" />
-
-        {/* <script async src="https://www.engie.nl/Resources/Foundation/Logging/SourceBuster.js" /> */}
-
-        {/* Environment Script */}
-        {/* <script
-          dangerouslySetInnerHTML={{
-            __html: `(function () {
-              var environment = 'production';
-              var endpoint = '/api/v1/';
-              window.EnvironmentSettings = {
-                endpoint: endpoint,
-                environment: environment
-              };
-              window.validationMessages = {
-                required: 'Dit veld is verplicht',
-                email: 'Geen geldig e-mailadres',
-                iban: 'Geen geldig IBAN nummer',
-                zipcode: 'Geen geldige postcode'
-              };
-            })();`,
-          }}
-        /> */}
-
-        {/* Optimizely */}
-        {/* <script src="https://cdn.optimizely.com/js/26422020719.js"></script> */}
-
-        {/* Google Tag Manager */}
-        {/* <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-KBNRX9Q');`,
-          }}
-        /> */}
-
-        {/* Main JS File */}
-        {/* <script src="https://www.engie.nl/assets/js/main.aefa371b74660051986e.js" defer></script> */}
       </Head>
       <VideoProvider>
         {/* root placeholder for the app, which we add components to using route data */}
@@ -225,201 +172,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                     {route && <Placeholder name="headless-footer" rendering={route} />}
                   </div>
                 </footer>
-                <main id="content" role="main">
-                  <section
-                    id="ImageText-260e82fc-0af7-424d-bc7a-3dc7af73b842"
-                    className="c-content-slot"
-                    js-hook-inview=""
-                  >
-                    <div className="o-container">
-                      <div className="o-grid">
-                        <div className="o-col-12">
-                          <div className="c-image-text">
-                            <div className="image-text__wrapper o-grid">
-                              <div className="o-col-12 o-col-6--md ">
-                                <div className="image-text__content is--left">
-                                  <h2
-                                    id="Title-260e82fc-0af7-424d-bc7a-3dc7af73b842"
-                                    className="image-text__title"
-                                  >
-                                    Ontdek het gemak van ENGIE
-                                  </h2>
-                                  <div
-                                    id="Text-260e82fc-0af7-424d-bc7a-3dc7af73b842"
-                                    className="image-text__description s-rich-text"
-                                  >
-                                    <p>
-                                      Voor je energiezaken wil je geen moeite doen. Dat begrijpen we
-                                      bij ENGIE. Daarom maken we energiezaken zo makkelijk mogelijk
-                                      voor jou. Zo houd jij tijd &eacute;n geld over voor leuke
-                                      dingen. En met onze groene stroom ben je ook nog eens duurzaam
-                                      bezig. Bekijk direct alle voordelen.
-                                    </p>
-                                    <ul className="c-usps     cta-pat__usps usps--green usps--vertical">
-                                      <li className="usps__item">
-                                        {' '}
-                                        <span className="usps__icon">
-                                          {/* <!--  icons/checkmark.svg  --> */}
-                                          <svg
-                                            className="svg--icons-checkmark"
-                                            width="18"
-                                            height="14"
-                                            viewBox="0 0 18 14"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <path
-                                              fill="#212121"
-                                              d="M5.59 10.58L1.42 6.41 0 7.82l5.59 5.59 12-12L16.18 0z"
-                                              stroke="none"
-                                              stroke-width="1"
-                                              fill-rule="evenodd"
-                                            ></path>
-                                          </svg>{' '}
-                                        </span>
-                                        <div className="usps__content">
-                                          <h3 className="usps__title">
-                                            Gratis energie-app voor iedereen
-                                          </h3>
-                                        </div>
-                                      </li>
-                                      <li className="usps__item">
-                                        {' '}
-                                        <span className="usps__icon">
-                                          {/* <!--  icons/checkmark.svg  --> */}
-                                          <svg
-                                            className="svg--icons-checkmark"
-                                            width="18"
-                                            height="14"
-                                            viewBox="0 0 18 14"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <path
-                                              fill="#212121"
-                                              d="M5.59 10.58L1.42 6.41 0 7.82l5.59 5.59 12-12L16.18 0z"
-                                              stroke="none"
-                                              stroke-width="1"
-                                              fill-rule="evenodd"
-                                            ></path>
-                                          </svg>{' '}
-                                        </span>
-                                        <div className="usps__content">
-                                          <h3 className="usps__title">
-                                            Betrouwbare klantenservice
-                                          </h3>
-                                        </div>
-                                      </li>
-                                      <li className="usps__item">
-                                        {' '}
-                                        <span className="usps__icon">
-                                          {/* <!--  icons/checkmark.svg  --> */}
-                                          <svg
-                                            className="svg--icons-checkmark"
-                                            width="18"
-                                            height="14"
-                                            viewBox="0 0 18 14"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <path
-                                              fill="#212121"
-                                              d="M5.59 10.58L1.42 6.41 0 7.82l5.59 5.59 12-12L16.18 0z"
-                                              stroke="none"
-                                              stroke-width="1"
-                                              fill-rule="evenodd"
-                                            ></path>
-                                          </svg>{' '}
-                                        </span>
-                                        <div className="usps__content">
-                                          <h3 className="usps__title">Wij regelen je overstap</h3>
-                                        </div>
-                                      </li>
-                                      <li className="usps__item">
-                                        {' '}
-                                        <span className="usps__icon">
-                                          {/* <!--  icons/checkmark.svg  --> */}
-                                          <svg
-                                            className="svg--icons-checkmark"
-                                            width="18"
-                                            height="14"
-                                            viewBox="0 0 18 14"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <path
-                                              fill="#212121"
-                                              d="M5.59 10.58L1.42 6.41 0 7.82l5.59 5.59 12-12L16.18 0z"
-                                              stroke="none"
-                                              stroke-width="1"
-                                              fill-rule="evenodd"
-                                            ></path>
-                                          </svg>{' '}
-                                        </span>
-                                        <div className="usps__content">
-                                          <h3 className="usps__title">Nederlandse groene stroom</h3>
-                                        </div>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                  <div className="image-text__buttons">
-                                    <a
-                                      id="button-260e82fc-0af7-424d-bc7a-3dc7af73b842"
-                                      className="c-button--secondary image-text__button"
-                                      href="https://www.engie.nl/ontdek-het-gemak"
-                                      target="_self"
-                                    >
-                                      <span id="ButtonTitle" className="button__label">
-                                        Alles over het gemak van ENGIE
-                                      </span>
-                                    </a>
-                                    <a
-                                      href="https://www.engie.nl/product-advies/app"
-                                      className="image-text__button c-button--ghost"
-                                      title="Ook jij ontvangt groene stroom"
-                                    >
-                                      {' '}
-                                      <span className="button__label">
-                                        Meer over de gratis energie-app
-                                      </span>
-                                    </a>{' '}
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="o-col-12 o-col-6--md ">
-                                <div className="image-text__image-container">
-                                  <figure
-                                    className="c-image image-text__image"
-                                    js-hook-objectfit-container
-                                  >
-                                    <img
-                                      id="image-3071621f-ccfb-40a4-9e58-e8a56b9feeaa"
-                                      className="image__default"
-                                      src="https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_vrouw_koken_telefoon.jpg?w=10&hash=C32F2D7412D2CF952ADE7442618AE500"
-                                      js-hook-objectfit-img
-                                      style={{ objectPosition: '50% 50%' }}
-                                      alt="Vrouw koken telefoon"
-                                      data-src="https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_vrouw_koken_telefoon.jpg?w=768&hash=095CF65A2621C3F09618312F8BF138CA"
-                                      data-srcSet="https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_vrouw_koken_telefoon.jpg?w=320&hash=42D279CD29BF93030A90311090BE7FDB 320w,https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_vrouw_koken_telefoon.jpg?w=480&hash=C539189F996BF5FCC932B75D0B9108BC 480w,https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_vrouw_koken_telefoon.jpg?w=768&hash=095CF65A2621C3F09618312F8BF138CA 768w,https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_vrouw_koken_telefoon.jpg?w=466&hash=B7C23FB1CCE5C04A77791AFF2E212AFB 466w,https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_vrouw_koken_telefoon.jpg?w=572&hash=8A283A485876A64EA99BAEB821070488 572w"
-                                      sizes="(max-width: 320px) 320px,(max-width: 480px) 480px,(max-width: 768px) 768px,(max-width: 1024px) 466px,572px"
-                                    />
-                                    <img
-                                      id="image-3071621f-ccfb-40a4-9e58-e8a56b9feeaa-ghost"
-                                      className="image__ghost"
-                                      aria-hidden="true"
-                                      src="https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_vrouw_koken_telefoon.jpg?w=10&hash=C32F2D7412D2CF952ADE7442618AE500"
-                                      js-hook-objectfit-img
-                                      style={{ objectPosition: '50% 50%' }}
-                                      alt="Vrouw koken telefoon"
-                                      js-hook-shadow-image
-                                    />
-                                  </figure>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-
-                  <section
+                {/* <section
                     className="c-content-slot content-slot--background content-slot--background-color  content-slot--background-full u-background--grey-100"
                     js-hook-inview
                   >
@@ -432,7 +185,6 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
 
                       <div className="o-grid">
                         <div className="o-col-12">
-                          {/* <!-- begin tiles --> */}
                           <div className="c-slider-card" js-hook-slider-card>
                             <div className="slider-card__wrapper o-grid" js-hook-slider-slides>
                               <div
@@ -706,13 +458,10 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                               </div>
                             </div>
                           </div>
-                          {/* <!-- end tiles --> */}
                         </div>
                       </div>
                     </div>
                   </section>
-
-                  {/* <!-- begin content-slot --> */}
                   <section
                     className="c-content-slot content-slot--background content-slot--background-color  content-slot--background-half content-slot--background-grey-100"
                     js-hook-inview
@@ -730,7 +479,6 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
 
                       <div className="o-grid">
                         <div className="o-col-12">
-                          {/* <!-- begin tiles --> */}
                           <div className="c-slider-card" js-hook-slider-card>
                             <div className="slider-card__wrapper o-grid" js-hook-slider-slides>
                               <div
@@ -1063,12 +811,10 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                               </div>
                             </div>
                           </div>
-                          {/* <!-- end tiles --> */}
                         </div>
                       </div>
                     </div>
                   </section>
-
                   <section className="c-content-slot" js-hook-inview="">
                     <div className="o-container">
                       <div className="o-grid">
@@ -1482,98 +1228,6 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                       </div>
                     </div>
                   </section>
-
-                  <section
-                    id="ImageText-2f2a82a7-5b3c-47f8-b21b-bf8a35872a96"
-                    className="c-content-slot"
-                    js-hook-inview=""
-                  >
-                    <div className="o-container">
-                      <div className="o-grid">
-                        <div className="o-col-12">
-                          <div className="c-image-text">
-                            <div className="image-text__wrapper o-grid">
-                              <div className="o-col-12 o-col-6--md ">
-                                <div className="image-text__content is--left">
-                                  <h2
-                                    id="Title-2f2a82a7-5b3c-47f8-b21b-bf8a35872a96"
-                                    className="image-text__title"
-                                  >
-                                    ENGIE & Team Picnic PostNL
-                                  </h2>
-                                  <div
-                                    id="Text-2f2a82a7-5b3c-47f8-b21b-bf8a35872a96"
-                                    className="image-text__description s-rich-text"
-                                  >
-                                    <p>
-                                      Sinds 2025 is ENGIE trotse partner van Team Picnic PostNL, een
-                                      internationaal UCI World Tour Team, gevestigd in Deventer en
-                                      actief op het hoogste niveau van het internationale
-                                      wielrennen.
-                                    </p>
-                                    <p>
-                                      Als wereldwijd leider op het gebied van duurzame energie en
-                                      innovatieve technologieën, ziet ENGIE deze samenwerking als
-                                      een kans om haar missie internationaal verder uit te dragen.
-                                    </p>
-                                    <p>
-                                      Voor Team Picnic PostNL betekent het partnership met ENGIE een
-                                      nieuwe stap in hun groeiende focus op maatschappelijke
-                                      verantwoordelijkheid.
-                                    </p>
-                                  </div>
-                                  <div className="image-text__buttons">
-                                    <a
-                                      id="button-2f2a82a7-5b3c-47f8-b21b-bf8a35872a96"
-                                      className="c-button--secondary image-text__button"
-                                      href="https://www.engie.nl/teampicnic"
-                                      target="_self"
-                                    >
-                                      {' '}
-                                      <span id="ButtonTitle" className="button__label">
-                                        Lees meer
-                                      </span>
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="o-col-12 o-col-6--md ">
-                                <div className="image-text__image-container">
-                                  <figure
-                                    className="c-image image-text__image"
-                                    js-hook-objectfit-container
-                                  >
-                                    <img
-                                      id="image-926c7f05-52bd-4c9a-b4d4-941491e3e866"
-                                      className="image__default"
-                                      src="https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_corvos_000375.jpg?w=10&hash=6B72A5CC89E1BFB7106BB037D76DDF66"
-                                      js-hook-objectfit-img
-                                      style={{ objectPosition: '50% 50%' }}
-                                      alt="Tobias Lund Andresen. Foto: Cor Vos"
-                                      data-src="https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_corvos_000375.jpg?w=768&hash=ADC945FC43DE58F7D00DFBFE36201160"
-                                      data-srcSet="https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_corvos_000375.jpg?w=320&hash=CD311E9C55C0BC89A6040FC5B75762F0 320w,https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_corvos_000375.jpg?w=480&hash=0BFDC7D4D9B84A428F78B93A2E2156E1 480w,https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_corvos_000375.jpg?w=768&hash=ADC945FC43DE58F7D00DFBFE36201160 768w,https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_corvos_000375.jpg?w=466&hash=09442364CE7A69381D8879C965987CE8 466w,https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_corvos_000375.jpg?w=572&hash=3A4D5BBD6C3CD6D17755F1F5299BE4B8 572w"
-                                      sizes="(max-width: 320px) 320px,(max-width: 480px) 480px,(max-width: 768px) 768px,(max-width: 1024px) 466px,572px"
-                                    />
-                                    <img
-                                      id="image-926c7f05-52bd-4c9a-b4d4-941491e3e866-ghost"
-                                      className="image__ghost"
-                                      aria-hidden="true"
-                                      src="https://www.engie.nl/-/media/engie/thuis/foto-op-vierkant---540-x-430/540x430_corvos_000375.jpg?w=10&hash=6B72A5CC89E1BFB7106BB037D76DDF66"
-                                      js-hook-objectfit-img
-                                      style={{ objectPosition: '50% 50%' }}
-                                      alt="Tobias Lund Andresen. Foto: Cor Vos"
-                                      js-hook-shadow-image
-                                    />
-                                  </figure>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-
                   <section
                     id="HighlightBlock-69dad0e7-dcdd-438a-ae48-beac8414fe36"
                     className="c-content-slot content-slot--background content-slot--background-block-mobile content-slot--background-image content-slot--background-full"
@@ -1623,9 +1277,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                             >
                               <ul className="c-usps     cta-pat__usps usps--green usps--vertical">
                                 <li className="usps__item">
-                                  {' '}
                                   <span className="usps__icon">
-                                    {/* <!--  icons/checkmark.svg  --> */}
                                     <svg
                                       className="svg--icons-checkmark"
                                       width="18"
@@ -1640,7 +1292,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                                         stroke-width="1"
                                         fill-rule="evenodd"
                                       ></path>
-                                    </svg>{' '}
+                                    </svg>
                                   </span>
                                   <div className="usps__content">
                                     <h3 className="usps__title">
@@ -1649,9 +1301,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                                   </div>
                                 </li>
                                 <li className="usps__item">
-                                  {' '}
                                   <span className="usps__icon">
-                                    {/* <!--  icons/checkmark.svg  --> */}
                                     <svg
                                       className="svg--icons-checkmark"
                                       width="18"
@@ -1666,7 +1316,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                                         stroke-width="1"
                                         fill-rule="evenodd"
                                       ></path>
-                                    </svg>{' '}
+                                    </svg>
                                   </span>
                                   <div className="usps__content">
                                     <h3 className="usps__title">
@@ -1676,9 +1326,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                                   </div>
                                 </li>
                                 <li className="usps__item">
-                                  {' '}
                                   <span className="usps__icon">
-                                    {/* <!--  icons/checkmark.svg  --> */}
                                     <svg
                                       className="svg--icons-checkmark"
                                       width="18"
@@ -1710,7 +1358,6 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                                 href="https://www.engie.nl/product-advies/warmtepomp/offerte-aanvragen"
                                 target="_self"
                               >
-                                {' '}
                                 <span id="ButtonTitle" className="button__label">
                                   Kies ook voor duurzaam verwarmen
                                 </span>
@@ -1799,301 +1446,9 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                         </div>
                       </div>
                     </div>
-                  </section>
-
-                  {/* <!-- begin CtaPat --> */}
-                  {/* <script>{` window.validationMessages = { required: "Veld is verplicht", zipcode: "Geen geldige postcode"}`}</script> */}
-                  <section
-                    id="CtaPat-b871616d-9293-4191-9257-b2bf6dbd4599"
-                    className="c-content-slot content-slot--background content-slot--background-image content-slot--background-full"
-                    js-hook-inview=""
-                  >
-                    <div className="content-slot__image-container">
-                      <figure className="c-image " js-hook-objectfit-container>
-                        <img
-                          id="image-806d59f4-a3d7-463a-a08f-ba0004877369"
-                          className="image__default"
-                          src="https://www.engie.nl/-/media/engie/thuis/cta-pat/1920x700_cta-pat_default.jpg?w=10&hash=11027A781C380AC1170556413A01DF0C"
-                          js-hook-objectfit-img
-                          style={{ objectPosition: '50% 50%' }}
-                          alt="Voordelige energie van ENGIE"
-                          data-src="https://www.engie.nl/-/media/engie/thuis/cta-pat/1920x700_cta-pat_default.jpg?w=768&hash=1AC9D332DC7A8C6D821D25D2E766FCEC"
-                          data-srcSet="https://www.engie.nl/-/media/engie/thuis/cta-pat/1920x700_cta-pat_default.jpg?w=320&hash=3D0C9DB44AFF2804C7E6A9C93629E279 320w,https://www.engie.nl/-/media/engie/thuis/cta-pat/1920x700_cta-pat_default.jpg?w=480&hash=FE5736CBE345C23A4945B0A9C6C9797A 480w,https://www.engie.nl/-/media/engie/thuis/cta-pat/1920x700_cta-pat_default.jpg?w=768&hash=1AC9D332DC7A8C6D821D25D2E766FCEC 768w,https://www.engie.nl/-/media/engie/thuis/cta-pat/1920x700_cta-pat_default.jpg?w=1024&hash=0BD28FD69CAFB493CFFBA1648E3174A1 1024w,https://www.engie.nl/-/media/engie/thuis/cta-pat/1920x700_cta-pat_default.jpg?w=1440&hash=C8FB09990864A019CFFA80C10B29B105 1440w"
-                          sizes="(max-width: 320px) 320px,(max-width: 480px) 480px,(max-width: 768px) 768px,(max-width: 1024px) 1024px,1440px"
-                        />
-                        <img
-                          id="image-806d59f4-a3d7-463a-a08f-ba0004877369-ghost"
-                          className="image__ghost"
-                          aria-hidden="true"
-                          src="https://www.engie.nl/-/media/engie/thuis/cta-pat/1920x700_cta-pat_default.jpg?w=10&hash=11027A781C380AC1170556413A01DF0C"
-                          js-hook-objectfit-img
-                          style={{ objectPosition: '50% 50%' }}
-                          alt="Voordelige energie van ENGIE"
-                          js-hook-shadow-image
-                        />
-                      </figure>
-                    </div>
-                    <div className="o-container">
-                      <div className="o-grid">
-                        <div className="o-col-12 o-col-6--lg ">
-                          {/* <!-- begin CtaPat Content --> */}
-                          <div className="c-cta-pat">
-                            <h4 id="Title" className="cta-pat__title">
-                              Profiteer van vaste tarieven
-                            </h4>
-                            <div className="o-col-12">
-                              <ul className="c-usps     cta-pat__usps usps--green usps--vertical">
-                                <li className="usps__item">
-                                  {' '}
-                                  <span className="usps__icon">
-                                    {/* <!--  icons/checkmark.svg  --> */}
-                                    <svg
-                                      className="svg--icons-checkmark"
-                                      width="18"
-                                      height="14"
-                                      viewBox="0 0 18 14"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        fill="#212121"
-                                        d="M5.59 10.58L1.42 6.41 0 7.82l5.59 5.59 12-12L16.18 0z"
-                                        stroke="none"
-                                        stroke-width="1"
-                                        fill-rule="evenodd"
-                                      ></path>
-                                    </svg>{' '}
-                                  </span>
-                                  <div className="usps__content">
-                                    <h3 className="usps__title">100% Nederlandse groene stroom</h3>
-                                  </div>
-                                </li>
-                                <li className="usps__item">
-                                  {' '}
-                                  <span className="usps__icon">
-                                    {/* <!--  icons/checkmark.svg  --> */}
-                                    <svg
-                                      className="svg--icons-checkmark"
-                                      width="18"
-                                      height="14"
-                                      viewBox="0 0 18 14"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        fill="#212121"
-                                        d="M5.59 10.58L1.42 6.41 0 7.82l5.59 5.59 12-12L16.18 0z"
-                                        stroke="none"
-                                        stroke-width="1"
-                                        fill-rule="evenodd"
-                                      ></path>
-                                    </svg>{' '}
-                                  </span>
-                                  <div className="usps__content">
-                                    <h3 className="usps__title">
-                                      Inzicht en besparen via gratis energie-app
-                                    </h3>
-                                  </div>
-                                </li>
-                                <li className="usps__item">
-                                  {' '}
-                                  <span className="usps__icon">
-                                    {/* <!--  icons/checkmark.svg  --> */}
-                                    <svg
-                                      className="svg--icons-checkmark"
-                                      width="18"
-                                      height="14"
-                                      viewBox="0 0 18 14"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        fill="#212121"
-                                        d="M5.59 10.58L1.42 6.41 0 7.82l5.59 5.59 12-12L16.18 0z"
-                                        stroke="none"
-                                        stroke-width="1"
-                                        fill-rule="evenodd"
-                                      ></path>
-                                    </svg>{' '}
-                                  </span>
-                                  <div className="usps__content">
-                                    <h3 className="usps__title">
-                                      Uitstekende service, beoordeeld met een 8,0
-                                    </h3>
-                                  </div>
-                                </li>
-                              </ul>
-                            </div>
-                            <div className="cta-pat__promotion-block cta-pat__promotion-block--shape- cta-pat__promotion-block--border-gradient">
-                              <p>
-                                Nu tot
-                                <br />
-                                <strong>&euro; 300,-</strong>
-                                <br />
-                                bonus
-                              </p>
-                            </div>
-                            <form
-                              className="c-form cta-pat__form"
-                              action="https://energie.engie.nl"
-                              js-hook-cta-pat-form=""
-                            >
-                              <div className="c-alert alert--error u-hidden" js-hook-alert=""></div>
-                              <div className="cta-pat__form-row">
-                                <div className="c-input form__item cta-pat__input-zipcode input--text">
-                                  <div className="input__wrapper" title="">
-                                    <label className="input__label" htmlFor="thuis-zipcode"></label>
-                                    <input
-                                      className="input__input"
-                                      type="text"
-                                      name="postcode"
-                                      value=""
-                                      id="thuis-zipcode"
-                                      data-validate="required,zipcode"
-                                      placeholder="Postcode"
-                                      autoComplete="disable"
-                                      js-hook-zipcode=""
-                                    />
-                                    <span className="focus-helper"></span>
-                                  </div>
-                                  <div className="form__item-error u-hidden"></div>
-                                </div>
-                                <div className="c-input form__item cta-pat__input-number input--number">
-                                  <div className="input__wrapper" title="">
-                                    <label
-                                      className="input__label"
-                                      htmlFor="thuis-house-number"
-                                    ></label>
-                                    <input
-                                      className="input__input"
-                                      type="number"
-                                      name="huisnummer"
-                                      value=""
-                                      id="thuis-house-number"
-                                      data-validate="required"
-                                      placeholder="Huisnummer"
-                                      autoComplete="disable"
-                                      js-hook-house-number=""
-                                    />
-                                    <span className="focus-helper"></span>
-                                  </div>
-                                  <div className="form__item-error u-hidden"></div>
-                                </div>
-                                <div className="c-input form__item cta-pat__input-house-number-extension input--text">
-                                  <div className="input__wrapper" title="">
-                                    <label
-                                      className="input__label"
-                                      htmlFor="thuis-house-number-extension"
-                                    ></label>
-                                    <input
-                                      className="input__input"
-                                      type="text"
-                                      name="toevoeging"
-                                      value=""
-                                      id="thuis-house-number-extension"
-                                      placeholder="Toevoeging"
-                                      autoComplete="disable"
-                                      js-hook-house-number-extension=""
-                                    />
-                                    <span className="focus-helper"></span>
-                                  </div>
-                                  <div className="form__item-error u-hidden"></div>
-                                </div>
-                              </div>
-                              <button
-                                className="c-button--secondary button--large cta-pat__button"
-                                type="submit"
-                              >
-                                <span id="ButtonText" className="button__label">
-                                  Bereken nu jouw maandbedrag
-                                </span>
-                              </button>
-                              <div className="cta-pat__foot-note">
-                                <span className="cta-pat__foot-note-text">
-                                  <p>Binnen 1 minuut berekend</p>
-                                  {/* <!--  icons/arrow-up.svg  --> */}
-                                  <span className="svg--icons-arrow-up">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      className="svg--icons-arrow-up"
-                                      viewBox="0 0 512 512"
-                                    >
-                                      <path d="M48 488a24 24 0 0 1 0-48 294.062 294.062 0 0 0 209.3-86.7A294.066 294.066 0 0 0 344 144V48a24 24 0 0 1 48 0v96a341.876 341.876 0 0 1-27.043 133.907 342.818 342.818 0 0 1-73.712 109.337A343 343 0 0 1 48 488z" />
-                                      <path d="M464.017 200a23.96 23.96 0 0 1-19.218-9.6L368 88l-76.8 102.4a24 24 0 1 1-38.4-28.8l96-128a24 24 0 0 1 38.4 0l96 128a24 24 0 0 1-19.183 38.4z" />
-                                    </svg>
-                                  </span>
-                                </span>
-                              </div>
-                            </form>
-                          </div>
-                          {/* <!-- end CtaPat Content --> */}
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                  {/* <!-- end CtaPat --> */}
-                </main>
-
-                {/* <script>
-                  {`
-    var modal = document.querySelector('.c-ie-warning');
-    // Only internet explorer supports documentMode
-    const isIE = !!document.documentMode
-    if (modal && isIE) {
-        var sessionStorage = window.sessionStorage
-        var closeButton = modal.querySelector('.ie-warning__close-button');
-        var closeButtonIcon = modal.querySelector('.modal__button-close');
-
-        closeButton.addEventListener('click', closeModal)
-        closeButtonIcon.addEventListener('click', closeModal)
-
-        function closeModal() {
-            modal.setAttribute("class", "is--hidden")
-            sessionStorage.setItem('closed', 'true')
-        }
-
-        if (sessionStorage.getItem('closed') === null) {
-            modal.className = modal.className.replace(/\is--hidden\b/g, "")
-        }
-    }
-        `}
-                </script> */}
+                  </section> */}
 
                 <div className="c-section-scroll-indicator" js-hook-section-scroll-indicator></div>
-
-                {/* <script>
-                  {`
-    // Nomodule fix for Safari 10
-    !function () { var e = document, t = e.createElement("script"); if (!("noModule" in t) && "onbeforeload" in t) { var n = !1; e.addEventListener("beforeload", function (e) { if (e.target === t) n = !0; else if (!e.target.hasAttribute("nomodule") || !n) return; e.preventDefault() }, !0), t.type = "module", t.src = ".", e.head.appendChild(t), t.remove() } }();
-    `}
-                </script> */}
-
-                {/* <script type="text/javascript">
-                  {`
-if (document.querySelector("pat-personal-offer-root") != null) { 
-  document.querySelector("body header.c-header").classList.add("header--pat"); 
-  document.querySelector("body footer.c-footer").classList.add("footer--pat");
-}
-  `}
-                </script> */}
-                {/* <script>
-                  {`
-  window.seamly = window.seamly || []
-  window.seamly.push(
-    { action: "init", args: { layoutMode: 'window' } },
-    { action: "setVariables", args: { escalationGroup: 'thuis' } }
-  )
-    `}
-                </script> */}
-
-                {/* <script>
-                  {`
-        window.dataLayer = window.dataLayer || [];
-window.dataLayer.push({"MR_IsKlant":"onbekend"});
-`}
-                </script>
-
-                <script
-                  src="https://www.engie.nl/assets/js/consentmanagement/cookie-consent.js"
-                  async
-                /> */}
               </>
             )}
           </div>

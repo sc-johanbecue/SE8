@@ -41,16 +41,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
               field={props.fields.Image}
               className="image__default"
               js-hook-objectfit-img
-              style={{ objectPosition: '50% 50%' }}
-              sizes="(max-width: 320px) 370px,(max-width: 480px) 585px,(max-width: 768px) 390px,570px"
-            />
-            <JssImage
-              field={props.fields.Image}
-              className="image__ghost"
-              aria-hidden="true"
-              js-hook-objectfit-img
-              style={{ objectPosition: '50% 50%' }}
-              js-hook-shadow-image
+              style={{ objectPosition: '50% 50%', opacity: '100%' }}
             />
           </figure>
         </div>
@@ -61,10 +52,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
           >
             <Text field={props.fields.Title} />
           </h4>
-          <p id="Text-f468195b-eb16-4e81-84a8-a8ec6906e40e" className="card__text s-rich-text">
-            <RichText field={props.fields.Text} />
-          </p>
-
+          <RichText field={props.fields.Text} className="card__text s-rich-text" />
           <div
             id="button-f468195b-eb16-4e81-84a8-a8ec6906e40e"
             className="c-button--link  button--icon  card__button"

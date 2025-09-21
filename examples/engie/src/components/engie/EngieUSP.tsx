@@ -1,8 +1,13 @@
 import React, { JSX } from 'react';
-import { ComponentParams, ComponentRendering, TextField, Text } from '@sitecore-content-sdk/nextjs';
+import {
+  ComponentParams,
+  ComponentRendering,
+  RichTextField,
+  RichText,
+} from '@sitecore-content-sdk/nextjs';
 
 type ItemFields = {
-  Title: TextField;
+  Title: RichTextField;
 };
 
 type ComponentProps = {
@@ -34,7 +39,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
       </span>
       <div className="usps__content">
         <h3 className="usps__title">
-          <Text field={props.fields.Title} />
+          <RichText field={props.fields.Title} />
         </h3>
       </div>
     </li>

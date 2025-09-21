@@ -155,3 +155,60 @@ export const WithoutCTA = (props: ComponentProps): JSX.Element => {
     </section>
   );
 };
+
+export const BackgroundImage = (props: ComponentProps): JSX.Element => {
+  const phUSPContainer = `EngieUSPContainer-${props.params.DynamicPlaceholderId}`;
+  return (
+    <section
+      id="HighlightBlock-69dad0e7-dcdd-438a-ae48-beac8414fe36"
+      className="c-content-slot content-slot--background content-slot--background-block-mobile content-slot--background-image content-slot--background-full"
+      js-hook-inview=""
+    >
+      <div className="content-slot__image-container">
+        <figure
+          className="c-image c-image content-slot__image image--is-loaded"
+          js-hook-objectfit-container
+        >
+          <JssImage
+            field={props.fields.Image}
+            className="image__default"
+            js-hook-objectfit-img
+            style={{ objectPosition: '58% 17%', opacity: '1' }}
+          />
+        </figure>
+      </div>
+      <div className="o-container">
+        <div className="o-grid">
+          <div className="o-col-12 o-col-6--md ">
+            <div className="c-highlight-block-text highlight-block-text--background highlight-block-text--text-white">
+              <h2
+                id="Title-69dad0e7-dcdd-438a-ae48-beac8414fe36"
+                className="highlight-block-text__title"
+              >
+                <Text field={props.fields.Title} />
+              </h2>
+              <div
+                id="Text-69dad0e7-dcdd-438a-ae48-beac8414fe36"
+                className="highlight-block-text__text s-rich-text"
+              >
+                <ul className="c-usps     cta-pat__usps usps--green usps--vertical">
+                  <Placeholder name={phUSPContainer} rendering={props.rendering} />
+                </ul>
+              </div>
+              <div className="highlight-block-text__buttons">
+                <JssLink
+                  field={props.fields.Link1}
+                  className="c-button--secondary highlight-block-text__button"
+                >
+                  <span id="ButtonTitle" className="button__label">
+                    {props.fields.Link1?.value.text}
+                  </span>
+                </JssLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};

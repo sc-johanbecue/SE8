@@ -137,6 +137,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
           rel="stylesheet"
           href="https://www.engie.nl/assets/css/main.a8946fcadb8ae1b496ec.css"
         />
+        <link rel="stylesheet" href="https://www.engie.nl/bundles/EngieForms/styles.css" />
         {/* Favicons */}
         <link rel="manifest" href="https://www.engie.nl/assets/images/favicons/manifest.json" />
         <link

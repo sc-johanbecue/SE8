@@ -31,7 +31,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
         Skip to main content
       </a>
 
-      <header className="c-header header--transparent" data-variant="transparent" js-hook-header>
+      <header className="c-header" data-variant="transparent" js-hook-header>
         <div className="header__outer-container">
           <div className="c-search-form header__search-form is--hidden" js-hook-header-search>
             <form
@@ -314,6 +314,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
           </div>
         </div>
       </header>
+      <div style={{ height: '100px' }}></div>
     </>
   );
 };

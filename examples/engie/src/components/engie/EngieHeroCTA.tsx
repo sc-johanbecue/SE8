@@ -189,7 +189,7 @@ export const Inversed = (props: ComponentProps): JSX.Element => {
             alt=""
             className="image__default"
             js-hook-objectfit-img
-            style={{ objectPosition: '50% 50%', opacity: '1' }}
+            style={{ objectPosition: '50% 50%', opacity: '1', paddingBottom: '0px' }}
           />
         </figure>
       </div>

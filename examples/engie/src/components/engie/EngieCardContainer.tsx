@@ -8,7 +8,7 @@ import {
 import React, { JSX } from 'react';
 
 type ItemFields = {
-  title: TextField;
+  Title: TextField;
 };
 
 type ComponentProps = {
@@ -29,7 +29,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
         <div className="o-grid">
           <div className="o-col-12 content-slot__header">
             <h2 className="content-slot__title u-text--white">
-              <Text field={props.fields.title} />
+              <Text field={props.fields.Title} />
             </h2>
           </div>
         </div>

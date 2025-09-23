@@ -24,11 +24,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
     <section
       className="c-content-slot content-slot--background content-slot--background-color content-slot--background-half content-slot--background-gradient"
       js-hook-inview
+      style={{ marginTop: '0px' }}
     >
       <div className="o-container">
         <div className="o-grid">
           <div className="o-col-12 content-slot__header">
-            <h2 className="content-slot__title u-text--white">
+            <h2 className="content-slot__title">
               <Text field={props.fields.Title} />
             </h2>
           </div>

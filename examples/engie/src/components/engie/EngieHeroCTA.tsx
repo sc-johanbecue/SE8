@@ -274,16 +274,6 @@ export const Inversed = (props: ComponentProps): JSX.Element => {
               <div className="cta-pat__foot-note">
                 <span className="cta-pat__foot-note-text">
                   <RichText field={props.fields.CTAFootnote} />
-                  <span className="svg--icons-arrow-up">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="svg--icons-arrow-up"
-                      viewBox="0 0 512 512"
-                    >
-                      <path d="M48 488a24 24 0 0 1 0-48 294.062 294.062 0 0 0 209.3-86.7A294.066 294.066 0 0 0 344 144V48a24 24 0 0 1 48 0v96a341.876 341.876 0 0 1-27.043 133.907 342.818 342.818 0 0 1-73.712 109.337A343 343 0 0 1 48 488z"></path>
-                      <path d="M464.017 200a23.96 23.96 0 0 1-19.218-9.6L368 88l-76.8 102.4a24 24 0 1 1-38.4-28.8l96-128a24 24 0 0 1 38.4 0l96 128a24 24 0 0 1-19.183 38.4z"></path>
-                    </svg>
-                  </span>
                 </span>
               </div>
             </div>

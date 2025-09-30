@@ -27,7 +27,7 @@ type ComponentProps = {
 export const Default = (props: ComponentProps): JSX.Element => {
   console.log('ktm footer props:', JSON.stringify(props));
   return (
-    <footer>
+    <>
       <div className="c-footer__additional-text">
         <p>
           The stated discount is exclusively available at participating, authorized KTM dealers. All
@@ -324,6 +324,6 @@ export const Default = (props: ComponentProps): JSX.Element => {
           </div>
         </div>
       </div>
-    </footer>
+    </>
   );
 };

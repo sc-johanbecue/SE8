@@ -101,11 +101,9 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                 {route && <Placeholder name="headless-main" rendering={route} />}
               </div>
             </main>
-            <footer>
-              <div id="footer">
-                {route && <Placeholder name="headless-footer" rendering={route} />}
-              </div>
-            </footer>
+            <div id="footer" className="footer aem-GridColumn aem-GridColumn--default--12">
+              {route && <Placeholder name="headless-footer" rendering={route} />}
+            </div>
           </>
         )}
       </div>

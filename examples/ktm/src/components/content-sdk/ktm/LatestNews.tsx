@@ -273,13 +273,17 @@ export const Default = (props: ComponentProps): JSX.Element => {
       </div>
       <div className="button aem-GridColumn aem-GridColumn--default--12">
         <div className="component c-btn c-btn--center">
-          <p className="c-btn__text"><Text field={props.fields.Label} /></p>
+          <p className="c-btn__text">
+            <Text field={props.fields.Label} />
+          </p>
           <JssLink
             field={props.fields.Link2}
             className="c-btn__link c-btn__link--primary-light-icon c-btn__link--icon"
             target="_self"
           >
-            <span className="c-btn__link--text"><Text field={props.fields.ButtonLabel3} /></span>
+            <span className="c-btn__link--text">
+              <Text field={props.fields.ButtonLabel3} />
+            </span>
           </JssLink>
         </div>
       </div>

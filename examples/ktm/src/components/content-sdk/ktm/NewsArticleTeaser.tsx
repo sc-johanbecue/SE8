@@ -36,10 +36,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
           <figure className="c-teaser-list__figure c-teaser-list__figure--three-items-per-row">
             <div className="cq-dd-image">
               <div className="c-image__content">
-                <div
-                  id="38562452"
-                  className="s7dm-dynamic-media-ktm"
-                >
+                <div id="38562452" className="s7dm-dynamic-media-ktm">
                   <div className="s7responsiveContainer">
                     <JssImage
                       field={props.fields.Image}

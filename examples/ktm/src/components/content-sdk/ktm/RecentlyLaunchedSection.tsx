@@ -27,7 +27,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
         <div className="aem-Grid aem-Grid--12 aem-Grid--default--12">
           <div className="htmlSourceCode aem-GridColumn aem-GridColumn--default--12">
             <div className="component">
-              <h2 style={{ textAlign: 'center' }}><Text field={props.fields.Heading} /></h2>
+              <h2 style={{ textAlign: 'center' }}>
+                <Text field={props.fields.Heading} />
+              </h2>
             </div>
           </div>
           <div className="modelList aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">

@@ -1,3 +1,5 @@
+'use client';
+
 import {
   ComponentParams,
   ComponentRendering,
@@ -8,7 +10,7 @@ import {
 } from '@sitecore-content-sdk/nextjs';
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { JSX } from 'react';
+import React, { JSX, useCallback, useState } from 'react';
 
 type ItemFields = {
   Title: TextField;
@@ -26,22 +28,86 @@ type ComponentProps = {
 
 export const Default = (props: ComponentProps): JSX.Element => {
   console.log('ktm header props:', JSON.stringify(props));
+
+  // Mobile nav open/close
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  // Country selector open/close
+  const [isCountryOpen, setIsCountryOpen] = useState(false);
+
+  // Top-level menus open/close
+  const [openMenu, setOpenMenu] = useState<Record<string, boolean>>({
+    models: false,
+    xbow: false,
+    powerparts: false,
+    racing: false,
+    world: false,
+    service: false,
+  });
+
+  const toggleMenu = useCallback((key: keyof typeof openMenu) => {
+    setOpenMenu((s) => ({ ...s, [key]: !s[key] }));
+  }, []);
+
+  const keyToggle =
+    (fn: () => void) =>
+    (e: React.KeyboardEvent<HTMLElement>) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        fn();
+      }
+    };
+
   return (
     <>
       <div className="container">
-        <div className="nav">
+        <div className={`nav${isNavOpen ? ' is-open' : ''}`}>
+          {/* Mobile toggles (CSS will show/hide per breakpoint) */}
+          <button
+            type="button"
+            className="nav__menu-toggle js-menu-toggle"
+            onClick={() => setIsNavOpen((v) => !v)}
+            aria-expanded={isNavOpen}
+            aria-controls="main-nav"
+          >
+            <i className="icon icon-menu"></i>
+            <i className="icon icon-delete"></i>
+          </button>
+          <button
+            type="button"
+            className="nav__menu-toggle nav__menu-toggle-desktop js-menu-toggle-desktop"
+            onClick={() => setIsNavOpen(false)}
+            aria-expanded={isNavOpen}
+            aria-controls="main-nav"
+          >
+            <i className="icon icon-delete"></i>
+          </button>
+
           <nav
-            className="nav__items js-nav-items js-calcviewheight"
+            id="main-nav"
+            className={`nav__items js-nav-items js-calcviewheight${isNavOpen ? ' is-open' : ''}`}
             data-offset-sm="185"
             data-offset-md="115"
             data-height-auto-lg="true"
             data-height-auto-xl="true"
-            style={{ height: 'auto' }}
+            style={{ height: 'auto', display: 'block' }}
+            aria-hidden={!isNavOpen}
           >
             <ul>
-              <li className="js-has-items accordion" data-opened="false">
-                <span className="heading">Models</span>
-                <div className="content">
+              {/* MODELS */}
+              <li className="js-has-items accordion" data-opened={openMenu.models ? 'true' : 'false'}>
+                <span
+                  className="heading"
+                  role="button"
+                  tabIndex={0}
+                  aria-expanded={openMenu.models}
+                  aria-controls="submenu-models"
+                  onClick={() => toggleMenu('models')}
+                  onKeyDown={keyToggle(() => toggleMenu('models'))}
+                >
+                  Models
+                </span>
+                <div className="content" id="submenu-models">
                   <ul className="nav__models js-nav-models">
                     <li className="range-list js-range-list accordion">
                       <span className="heading d-lg-none">Select range</span>
@@ -52,9 +118,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
                           <li data-segment-id="ec0599e9-b40a-4bb9-bf26-46afcdcf46c9">Electric</li>
                           <li data-segment-id="abb3e7a0-a780-4f71-8eae-02b9729ba89b">Dual Sport</li>
                           <li data-segment-id="6f4e2c1b-2d4e-4c69-9bcc-4c53a63ed15f">Adventure</li>
-                          <li data-segment-id="19708f84-2503-40c5-ac82-73ac44970597">
-                            SPORTS TOURER
-                          </li>
+                          <li data-segment-id="19708f84-2503-40c5-ac82-73ac44970597">SPORTS TOURER</li>
                           <li data-segment-id="03778f93-33cf-4d7d-9e1a-f1f289b3e1aa">Supermoto</li>
                           <li data-segment-id="02b7a25c-5ef1-4566-9823-2f25838d79ce">Naked Bike</li>
                           <li data-segment-id="f0ec3513-8bf1-453e-b68f-ba53e4087495">Supersport</li>
@@ -69,9 +133,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
                           <div className="container active-element">
                             <aside>
                               <p className="heading-h3">
-                                <Link href="https://www.ktm.com/en-be/models/motocross.html">
-                                  MOTOCROSS
-                                </Link>
+                                <Link href="https://www.ktm.com/en-be/models/motocross.html">MOTOCROSS</Link>
                               </p>
                               <p className="d-none d-md-block heading-h5"></p>
                               <div className="c-btn d-none d-md-flex">
@@ -190,13 +252,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
                             </section>
                           </div>
                         </li>
+
                         <li data-segment-id="95d4b6f8-2d1c-40f7-9b83-bfbbd75909f1">
                           <div className="container active-element">
                             <aside>
                               <p className="heading-h3">
-                                <Link href="https://www.ktm.com/en-be/models/enduro.html">
-                                  ENDURO
-                                </Link>
+                                <Link href="https://www.ktm.com/en-be/models/enduro.html">ENDURO</Link>
                               </p>
                               <p className="d-none d-md-block heading-h5"></p>
                               <div className="c-btn d-none d-md-flex">
@@ -318,13 +379,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
                             </section>
                           </div>
                         </li>
+
                         <li data-segment-id="ec0599e9-b40a-4bb9-bf26-46afcdcf46c9">
                           <div className="container active-element">
                             <aside>
                               <p className="heading-h3">
-                                <Link href="https://www.ktm.com/en-be/models/electric.html">
-                                  Electric
-                                </Link>
+                                <Link href="https://www.ktm.com/en-be/models/electric.html">Electric</Link>
                               </p>
                               <p className="d-none d-md-block heading-h5"></p>
                               <div className="c-btn d-none d-md-flex">
@@ -373,9 +433,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
                                   </div>
                                 </li>
                                 <li className="js-engine-list accordion engine-list">
-                                  <div className="heading engineGroup">
-                                    KIDS ELECTRIC BALANCE BIKES
-                                  </div>
+                                  <div className="heading engineGroup">KIDS ELECTRIC BALANCE BIKES</div>
                                   <div className="content">
                                     <ul className="bike-list">
                                       <li>
@@ -400,13 +458,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
                             </section>
                           </div>
                         </li>
+
                         <li data-segment-id="abb3e7a0-a780-4f71-8eae-02b9729ba89b">
                           <div className="container active-element">
                             <aside>
                               <p className="heading-h3">
-                                <Link href="https://www.ktm.com/en-be/models/dual-sport.html">
-                                  Dual Sport
-                                </Link>
+                                <Link href="https://www.ktm.com/en-be/models/dual-sport.html">Dual Sport</Link>
                               </p>
                               <p className="d-none d-md-block heading-h5"></p>
                               <div className="c-btn d-none d-md-flex">
@@ -439,13 +496,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
                             </section>
                           </div>
                         </li>
+
                         <li data-segment-id="6f4e2c1b-2d4e-4c69-9bcc-4c53a63ed15f">
                           <div className="container active-element">
                             <aside>
                               <p className="heading-h3">
-                                <Link href="https://www.ktm.com/en-be/models/adventure.html">
-                                  Adventure
-                                </Link>
+                                <Link href="https://www.ktm.com/en-be/models/adventure.html">Adventure</Link>
                               </p>
                               <p className="d-none d-md-block heading-h5"></p>
                               <div className="c-btn d-none d-md-flex">
@@ -523,13 +579,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
                             </section>
                           </div>
                         </li>
+
                         <li data-segment-id="19708f84-2503-40c5-ac82-73ac44970597">
                           <div className="container active-element">
                             <aside>
                               <p className="heading-h3">
-                                <Link href="https://www.ktm.com/en-be/models/sports-tourer.html">
-                                  SPORTS TOURER
-                                </Link>
+                                <Link href="https://www.ktm.com/en-be/models/sports-tourer.html">SPORTS TOURER</Link>
                               </p>
                               <p className="d-none d-md-block heading-h5"></p>
                               <div className="c-btn d-none d-md-flex">
@@ -557,13 +612,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
                             </section>
                           </div>
                         </li>
+
                         <li data-segment-id="03778f93-33cf-4d7d-9e1a-f1f289b3e1aa">
                           <div className="container active-element">
                             <aside>
                               <p className="heading-h3">
-                                <Link href="https://www.ktm.com/en-be/models/supermoto.html">
-                                  Supermoto
-                                </Link>
+                                <Link href="https://www.ktm.com/en-be/models/supermoto.html">Supermoto</Link>
                               </p>
                               <p className="d-none d-md-block heading-h5"></p>
                               <div className="c-btn d-none d-md-flex">
@@ -601,13 +655,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
                             </section>
                           </div>
                         </li>
+
                         <li data-segment-id="02b7a25c-5ef1-4566-9823-2f25838d79ce">
                           <div className="container active-element">
                             <aside>
                               <p className="heading-h3">
-                                <Link href="https://www.ktm.com/en-be/models/naked-bike.html">
-                                  Naked Bike
-                                </Link>
+                                <Link href="https://www.ktm.com/en-be/models/naked-bike.html">Naked Bike</Link>
                               </p>
                               <p className="d-none d-md-block heading-h5"></p>
                               <div className="c-btn d-none d-md-flex">
@@ -655,13 +708,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
                             </section>
                           </div>
                         </li>
+
                         <li data-segment-id="f0ec3513-8bf1-453e-b68f-ba53e4087495">
                           <div className="container active-element">
                             <aside>
                               <p className="heading-h3">
-                                <Link href="https://www.ktm.com/en-be/models/supersport.html">
-                                  Supersport
-                                </Link>
+                                <Link href="https://www.ktm.com/en-be/models/supersport.html">Supersport</Link>
                               </p>
                               <p className="d-none d-md-block heading-h5"></p>
                               <div className="c-btn d-none d-md-flex">
@@ -694,17 +746,14 @@ export const Default = (props: ComponentProps): JSX.Element => {
                             </section>
                           </div>
                         </li>
+
                         <li data-segment-id="e1a8a633-bb16-42a8-b833-c279fe6b338f">
                           <div className="container active-element">
                             <aside>
                               <p className="heading-h3">
-                                <Link href="https://www.ktm.com/en-be/models/x-bow.html">
-                                  X-BOW
-                                </Link>
+                                <Link href="https://www.ktm.com/en-be/models/x-bow.html">X-BOW</Link>
                               </p>
-                              <p className="d-none d-md-block heading-h5">
-                                REVOLUTIONARY. PURISTIC. RADICAL.
-                              </p>
+                              <p className="d-none d-md-block heading-h5">REVOLUTIONARY. PURISTIC. RADICAL.</p>
                               <div className="c-btn d-none d-md-flex">
                                 <Link
                                   href="https://www.ktm.com/en-be/models/x-bow.html"
@@ -735,13 +784,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
                             </section>
                           </div>
                         </li>
+
                         <li data-segment-id="a69dfa94-c6dc-4034-a266-e41d8ca6de8e">
                           <div className="container active-element">
                             <aside>
                               <p className="heading-h3">
-                                <Link href="https://www.ktm.com/en-be/models/brabus.html">
-                                  BRABUS
-                                </Link>
+                                <Link href="https://www.ktm.com/en-be/models/brabus.html">BRABUS</Link>
                               </p>
                               <p className="d-none d-md-block heading-h5"></p>
                               <div className="c-btn d-none d-md-flex">
@@ -774,9 +822,21 @@ export const Default = (props: ComponentProps): JSX.Element => {
                   </ul>
                 </div>
               </li>
-              <li className="js-has-items accordion" data-opened="false">
-                <span className="heading">X-BOW</span>
-                <div className="content">
+
+              {/* X-BOW */}
+              <li className="js-has-items accordion" data-opened={openMenu.xbow ? 'true' : 'false'}>
+                <span
+                  className="heading"
+                  role="button"
+                  tabIndex={0}
+                  aria-expanded={openMenu.xbow}
+                  aria-controls="submenu-xbow"
+                  onClick={() => toggleMenu('xbow')}
+                  onKeyDown={keyToggle(() => toggleMenu('xbow'))}
+                >
+                  X-BOW
+                </span>
+                <div className="content" id="submenu-xbow">
                   <ul className="submenu">
                     <li>
                       <Link
@@ -829,7 +889,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
                         className="headerNavLink headerNavLink--lvl2"
                         target="_self"
                       >
-                        E-SPORTS & GAMING
+                        E-SPORTS &amp; GAMING
                       </Link>
                     </li>
                     <li>
@@ -862,9 +922,21 @@ export const Default = (props: ComponentProps): JSX.Element => {
                   </ul>
                 </div>
               </li>
-              <li className="js-has-items accordion" data-opened="false">
-                <span className="heading">PowerParts & PowerWear</span>
-                <div className="content">
+
+              {/* POWERPARTS & POWERWEAR */}
+              <li className="js-has-items accordion" data-opened={openMenu.powerparts ? 'true' : 'false'}>
+                <span
+                  className="heading"
+                  role="button"
+                  tabIndex={0}
+                  aria-expanded={openMenu.powerparts}
+                  aria-controls="submenu-powerparts"
+                  onClick={() => toggleMenu('powerparts')}
+                  onKeyDown={keyToggle(() => toggleMenu('powerparts'))}
+                >
+                  PowerParts &amp; PowerWear
+                </span>
+                <div className="content" id="submenu-powerparts">
                   <ul className="submenu">
                     <li>
                       <Link
@@ -923,9 +995,21 @@ export const Default = (props: ComponentProps): JSX.Element => {
                   </ul>
                 </div>
               </li>
-              <li className="js-has-items accordion" data-opened="false">
-                <span className="heading">Racing</span>
-                <div className="content">
+
+              {/* RACING */}
+              <li className="js-has-items accordion" data-opened={openMenu.racing ? 'true' : 'false'}>
+                <span
+                  className="heading"
+                  role="button"
+                  tabIndex={0}
+                  aria-expanded={openMenu.racing}
+                  aria-controls="submenu-racing"
+                  onClick={() => toggleMenu('racing')}
+                  onKeyDown={keyToggle(() => toggleMenu('racing'))}
+                >
+                  Racing
+                </span>
+                <div className="content" id="submenu-racing">
                   <ul className="submenu">
                     <li>
                       <Link
@@ -975,9 +1059,21 @@ export const Default = (props: ComponentProps): JSX.Element => {
                   </ul>
                 </div>
               </li>
-              <li className="js-has-items accordion" data-opened="false">
-                <span className="heading">KTM World</span>
-                <div className="content">
+
+              {/* KTM WORLD */}
+              <li className="js-has-items accordion" data-opened={openMenu.world ? 'true' : 'false'}>
+                <span
+                  className="heading"
+                  role="button"
+                  tabIndex={0}
+                  aria-expanded={openMenu.world}
+                  aria-controls="submenu-world"
+                  onClick={() => toggleMenu('world')}
+                  onKeyDown={keyToggle(() => toggleMenu('world'))}
+                >
+                  KTM World
+                </span>
+                <div className="content" id="submenu-world">
                   <ul className="submenu">
                     <li>
                       <Link
@@ -1063,9 +1159,21 @@ export const Default = (props: ComponentProps): JSX.Element => {
                   </ul>
                 </div>
               </li>
-              <li className="js-has-items accordion" data-opened="false">
-                <span className="heading">Service</span>
-                <div className="content">
+
+              {/* SERVICE */}
+              <li className="js-has-items accordion" data-opened={openMenu.service ? 'true' : 'false'}>
+                <span
+                  className="heading"
+                  role="button"
+                  tabIndex={0}
+                  aria-expanded={openMenu.service}
+                  aria-controls="submenu-service"
+                  onClick={() => toggleMenu('service')}
+                  onKeyDown={keyToggle(() => toggleMenu('service'))}
+                >
+                  Service
+                </span>
+                <div className="content" id="submenu-service">
                   <ul className="submenu">
                     <li>
                       <Link
@@ -1082,7 +1190,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
                         className="headerNavLink headerNavLink--lvl2"
                         target="_self"
                       >
-                        Manuals & Maintenance
+                        Manuals &amp; Maintenance
                       </Link>
                     </li>
                     <li>
@@ -1109,7 +1217,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
                         className="headerNavLink headerNavLink--lvl2"
                         target="_self"
                       >
-                        Service & Safety Check
+                        Service &amp; Safety Check
                       </Link>
                     </li>
                     <li>
@@ -1151,6 +1259,8 @@ export const Default = (props: ComponentProps): JSX.Element => {
                   </ul>
                 </div>
               </li>
+
+              {/* POWER DEALS (direct link) */}
               <li data-opened="false">
                 <Link
                   href="https://www.ktm.com/en-be/news.html#promotions"
@@ -1163,6 +1273,8 @@ export const Default = (props: ComponentProps): JSX.Element => {
               </li>
             </ul>
           </nav>
+
+          {/* Aside with country selector */}
           <aside className="nav__aside nav__aside--hidden-text">
             <nav className="nav__aside-links js-lang-nav">
               <Link
@@ -1171,480 +1283,189 @@ export const Default = (props: ComponentProps): JSX.Element => {
                 target="_self"
                 data-label="Find a dealer"
               >
+                <i className="icon icon-location"></i>
                 <span>Find a dealer</span>
-              </Link>{' '}
-              <Link
+              </Link>
+
+              <a
                 href="#"
                 className="c-culture-switch__toggle js-lang-toggle nav__aside-links--culture-switch"
                 data-label="Belgium"
+                role="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsCountryOpen((v) => !v);
+                }}
+                onKeyDown={keyToggle(() => setIsCountryOpen((v) => !v))}
+                aria-expanded={isCountryOpen}
+                aria-controls="culture-switch-panel"
               >
+                <i className="icon icon-country"></i>
                 <span>Belgium</span>
-              </Link>
-              <section className="nav__aside-items">
+              </a>
+
+              <section
+                id="culture-switch-panel"
+                className="nav__aside-items"
+                data-opened={isCountryOpen ? 'true' : 'false'}
+                aria-hidden={!isCountryOpen}
+              >
                 <div className="c-culture-switch js-lang-items">
                   <div className="c-culture-switch__container container component-fullwidth--padded-lg">
                     <article className="c-culture-switch__column">
                       <section className="c-culture-switch__area">
                         <ul className="c-culture-switch__list js-lang-list">
                           <li>
-                            <Link href="https://www.ktm.com/en-int.languageswitch.html">
-                              International
-                            </Link>
+                            <Link href="https://www.ktm.com/en-int.languageswitch.html">International</Link>
                           </li>
                         </ul>
                       </section>
+
                       <section className="c-culture-switch__area">
                         <div className="c-culture-switch__region-name">Europe</div>
                         <ul className="c-culture-switch__list js-lang-list c-culture-switch__list--two-cols">
-                          <li>
-                            <Link href="https://www.ktm.com/de-at.languageswitch.html">
-                              Austria
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-be.languageswitch.html">
-                              Belgium (en)
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/fr-be.languageswitch.html">
-                              Belgium (fr)
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-hr.languageswitch.html">
-                              Croatia
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-cy.languageswitch.html">Cyprus</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-cz.languageswitch.html">
-                              Czech Republic
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-dk.languageswitch.html">
-                              Denmark
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-ee.languageswitch.html">
-                              Estonia
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-fi.languageswitch.html">
-                              Finland
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/fr-fr.languageswitch.html">France</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/de-de.languageswitch.html">
-                              Germany
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-gr.languageswitch.html">Greece</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-hu.languageswitch.html">
-                              Hungary
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-ie.languageswitch.html">
-                              Ireland
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/it-it.languageswitch.html">Italy</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-lv.languageswitch.html">Latvia</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-lt.languageswitch.html">
-                              Lithuania
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/fr-lu.languageswitch.html">
-                              Luxembourg
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-nl.languageswitch.html">
-                              Netherlands
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-no.languageswitch.html">Norway</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-pl.languageswitch.html">Poland</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-pt.languageswitch.html">
-                              Portugal
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-ro.languageswitch.html">
-                              Romania
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-ru.languageswitch.html">Russia</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-rs.languageswitch.html">Serbia</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-si.languageswitch.html">
-                              Slovenia
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-sk.languageswitch.html">
-                              Slovakia
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/es-es.languageswitch.html">Spain</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-se.languageswitch.html">Sweden</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/de-ch.languageswitch.html">
-                              Switzerland (de)
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/fr-ch.languageswitch.html">
-                              Switzerland (fr)
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/it-ch.languageswitch.html">
-                              Switzerland (it)
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-tr.languageswitch.html">Turkey</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-gb.languageswitch.html">
-                              United Kingdom
-                            </Link>
-                          </li>
+                          <li><Link href="https://www.ktm.com/de-at.languageswitch.html">Austria</Link></li>
+                          <li><Link href="https://www.ktm.com/en-be.languageswitch.html">Belgium (en)</Link></li>
+                          <li><Link href="https://www.ktm.com/fr-be.languageswitch.html">Belgium (fr)</Link></li>
+                          <li><Link href="https://www.ktm.com/en-hr.languageswitch.html">Croatia</Link></li>
+                          <li><Link href="https://www.ktm.com/en-cy.languageswitch.html">Cyprus</Link></li>
+                          <li><Link href="https://www.ktm.com/en-cz.languageswitch.html">Czech Republic</Link></li>
+                          <li><Link href="https://www.ktm.com/en-dk.languageswitch.html">Denmark</Link></li>
+                          <li><Link href="https://www.ktm.com/en-ee.languageswitch.html">Estonia</Link></li>
+                          <li><Link href="https://www.ktm.com/en-fi.languageswitch.html">Finland</Link></li>
+                          <li><Link href="https://www.ktm.com/fr-fr.languageswitch.html">France</Link></li>
+                          <li><Link href="https://www.ktm.com/de-de.languageswitch.html">Germany</Link></li>
+                          <li><Link href="https://www.ktm.com/en-gr.languageswitch.html">Greece</Link></li>
+                          <li><Link href="https://www.ktm.com/en-hu.languageswitch.html">Hungary</Link></li>
+                          <li><Link href="https://www.ktm.com/en-ie.languageswitch.html">Ireland</Link></li>
+                          <li><Link href="https://www.ktm.com/it-it.languageswitch.html">Italy</Link></li>
+                          <li><Link href="https://www.ktm.com/en-lv.languageswitch.html">Latvia</Link></li>
+                          <li><Link href="https://www.ktm.com/en-lt.languageswitch.html">Lithuania</Link></li>
+                          <li><Link href="https://www.ktm.com/fr-lu.languageswitch.html">Luxembourg</Link></li>
+                          <li><Link href="https://www.ktm.com/en-nl.languageswitch.html">Netherlands</Link></li>
+                          <li><Link href="https://www.ktm.com/en-no.languageswitch.html">Norway</Link></li>
+                          <li><Link href="https://www.ktm.com/en-pl.languageswitch.html">Poland</Link></li>
+                          <li><Link href="https://www.ktm.com/en-pt.languageswitch.html">Portugal</Link></li>
+                          <li><Link href="https://www.ktm.com/en-ro.languageswitch.html">Romania</Link></li>
+                          <li><Link href="https://www.ktm.com/en-ru.languageswitch.html">Russia</Link></li>
+                          <li><Link href="https://www.ktm.com/en-rs.languageswitch.html">Serbia</Link></li>
+                          <li><Link href="https://www.ktm.com/en-si.languageswitch.html">Slovenia</Link></li>
+                          <li><Link href="https://www.ktm.com/en-sk.languageswitch.html">Slovakia</Link></li>
+                          <li><Link href="https://www.ktm.com/es-es.languageswitch.html">Spain</Link></li>
+                          <li><Link href="https://www.ktm.com/en-se.languageswitch.html">Sweden</Link></li>
+                          <li><Link href="https://www.ktm.com/de-ch.languageswitch.html">Switzerland (de)</Link></li>
+                          <li><Link href="https://www.ktm.com/fr-ch.languageswitch.html">Switzerland (fr)</Link></li>
+                          <li><Link href="https://www.ktm.com/it-ch.languageswitch.html">Switzerland (it)</Link></li>
+                          <li><Link href="https://www.ktm.com/en-tr.languageswitch.html">Turkey</Link></li>
+                          <li><Link href="https://www.ktm.com/en-gb.languageswitch.html">United Kingdom</Link></li>
                         </ul>
                       </section>
                     </article>
+
                     <article className="c-culture-switch__column">
                       <section className="c-culture-switch__area">
                         <div className="c-culture-switch__region-name">North America</div>
                         <ul className="c-culture-switch__list js-lang-list">
-                          <li>
-                            <Link href="https://www.ktm.com/en-ca.languageswitch.html">
-                              Canada (en)
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/fr-ca.languageswitch.html">
-                              Canada (fr)
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/es-mx.languageswitch.html">Mexico</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-us.languageswitch.html">
-                              United States
-                            </Link>
-                          </li>
+                          <li><Link href="https://www.ktm.com/en-ca.languageswitch.html">Canada (en)</Link></li>
+                          <li><Link href="https://www.ktm.com/fr-ca.languageswitch.html">Canada (fr)</Link></li>
+                          <li><Link href="https://www.ktm.com/es-mx.languageswitch.html">Mexico</Link></li>
+                          <li><Link href="https://www.ktm.com/en-us.languageswitch.html">United States</Link></li>
                         </ul>
                       </section>
+
                       <section className="c-culture-switch__area">
                         <div className="c-culture-switch__region-name">Middle East</div>
                         <ul className="c-culture-switch__list js-lang-list c-culture-switch__list--two-cols">
-                          <li>
-                            <Link href="https://www.ktm.com/en-bh.languageswitch.html">
-                              Bahrain
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-jo.languageswitch.html">Jordan</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-kw.languageswitch.html">Kuwait</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-lb.languageswitch.html">
-                              Lebanon
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-qa.languageswitch.html">Qatar</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-sa.languageswitch.html">
-                              Saudi Arabia
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-ae.languageswitch.html">
-                              United Arab Emirates
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-iq.languageswitch.html">Iraq</Link>
-                          </li>
+                          <li><Link href="https://www.ktm.com/en-bh.languageswitch.html">Bahrain</Link></li>
+                          <li><Link href="https://www.ktm.com/en-jo.languageswitch.html">Jordan</Link></li>
+                          <li><Link href="https://www.ktm.com/en-kw.languageswitch.html">Kuwait</Link></li>
+                          <li><Link href="https://www.ktm.com/en-lb.languageswitch.html">Lebanon</Link></li>
+                          <li><Link href="https://www.ktm.com/en-qa.languageswitch.html">Qatar</Link></li>
+                          <li><Link href="https://www.ktm.com/en-sa.languageswitch.html">Saudi Arabia</Link></li>
+                          <li><Link href="https://www.ktm.com/en-ae.languageswitch.html">United Arab Emirates</Link></li>
+                          <li><Link href="https://www.ktm.com/en-iq.languageswitch.html">Iraq</Link></li>
                         </ul>
                       </section>
                     </article>
+
                     <article className="c-culture-switch__column">
                       <section className="c-culture-switch__area">
                         <div className="c-culture-switch__region-name">Latin America</div>
                         <ul className="c-culture-switch__list js-lang-list c-culture-switch__list--two-cols">
-                          <li>
-                            <Link href="https://www.ktm.com/es-ar.languageswitch.html">
-                              Argentina
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/es-bo.languageswitch.html">
-                              Bolivia
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/pt-br.languageswitch.html">Brazil</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/es-cl.languageswitch.html">Chile</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/es-co.languageswitch.html">
-                              Colombia
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/es-cr.languageswitch.html">
-                              Costa Rica
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-do.languageswitch.html">
-                              Dominican Republic
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/es-ec.languageswitch.html">
-                              Ecuador
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/es-gt.languageswitch.html">
-                              Guatemala
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/es-ni.languageswitch.html">
-                              Nicaragua
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/es-pa.languageswitch.html">Panama</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/es-py.languageswitch.html">
-                              Paraguay
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/es-pe.languageswitch.html">Peru</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/es-uy.languageswitch.html">
-                              Uruguay
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/es-ve.languageswitch.html">
-                              Venezuela
-                            </Link>
-                          </li>
+                          <li><Link href="https://www.ktm.com/es-ar.languageswitch.html">Argentina</Link></li>
+                          <li><Link href="https://www.ktm.com/es-bo.languageswitch.html">Bolivia</Link></li>
+                          <li><Link href="https://www.ktm.com/pt-br.languageswitch.html">Brazil</Link></li>
+                          <li><Link href="https://www.ktm.com/es-cl.languageswitch.html">Chile</Link></li>
+                          <li><Link href="https://www.ktm.com/es-co.languageswitch.html">Colombia</Link></li>
+                          <li><Link href="https://www.ktm.com/es-cr.languageswitch.html">Costa Rica</Link></li>
+                          <li><Link href="https://www.ktm.com/en-do.languageswitch.html">Dominican Republic</Link></li>
+                          <li><Link href="https://www.ktm.com/es-ec.languageswitch.html">Ecuador</Link></li>
+                          <li><Link href="https://www.ktm.com/es-gt.languageswitch.html">Guatemala</Link></li>
+                          <li><Link href="https://www.ktm.com/es-ni.languageswitch.html">Nicaragua</Link></li>
+                          <li><Link href="https://www.ktm.com/es-pa.languageswitch.html">Panama</Link></li>
+                          <li><Link href="https://www.ktm.com/es-py.languageswitch.html">Paraguay</Link></li>
+                          <li><Link href="https://www.ktm.com/es-pe.languageswitch.html">Peru</Link></li>
+                          <li><Link href="https://www.ktm.com/es-uy.languageswitch.html">Uruguay</Link></li>
+                          <li><Link href="https://www.ktm.com/es-ve.languageswitch.html">Venezuela</Link></li>
                         </ul>
                       </section>
+
                       <section className="c-culture-switch__area">
                         <div className="c-culture-switch__region-name">Asia</div>
                         <ul className="c-culture-switch__list js-lang-list c-culture-switch__list--two-cols">
-                          <li>
-                            <Link href="https://www.ktm.com/en-bd.languageswitch.html">
-                              Bangladesh
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-kh.languageswitch.html">
-                              Cambodia
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/zh-cn.languageswitch.html">China</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/fr-pf.languageswitch.html">
-                              French Polynesia (FR)
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-hk.languageswitch.html">
-                              Hong Kong (CN)
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-in.languageswitch.html">India</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-id.languageswitch.html">
-                              Indonesia
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/ja-jp.languageswitch.html">Japan</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-my.languageswitch.html">
-                              Malaysia
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-mm.languageswitch.html">
-                              Myanmar
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-np.languageswitch.html">Nepal</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/fr-nc.languageswitch.html">
-                              New Caledonia (FR)
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-ph.languageswitch.html">
-                              Philippines
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-sg.languageswitch.html">
-                              Singapore
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-kr.languageswitch.html">
-                              South Korea
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-lk.languageswitch.html">
-                              Sri Lanka
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-tw.languageswitch.html">
-                              Taiwan Region (en)
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/zh-tw.languageswitch.html">
-                              Taiwan Region (zh)
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-th.languageswitch.html">
-                              Thailand
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-vn.languageswitch.html">
-                              Vietnam
-                            </Link>
-                          </li>
+                          <li><Link href="https://www.ktm.com/en-bd.languageswitch.html">Bangladesh</Link></li>
+                          <li><Link href="https://www.ktm.com/en-kh.languageswitch.html">Cambodia</Link></li>
+                          <li><Link href="https://www.ktm.com/zh-cn.languageswitch.html">China</Link></li>
+                          <li><Link href="https://www.ktm.com/fr-pf.languageswitch.html">French Polynesia (FR)</Link></li>
+                          <li><Link href="https://www.ktm.com/en-hk.languageswitch.html">Hong Kong (CN)</Link></li>
+                          <li><Link href="https://www.ktm.com/en-in.languageswitch.html">India</Link></li>
+                          <li><Link href="https://www.ktm.com/en-id.languageswitch.html">Indonesia</Link></li>
+                          <li><Link href="https://www.ktm.com/ja-jp.languageswitch.html">Japan</Link></li>
+                          <li><Link href="https://www.ktm.com/en-my.languageswitch.html">Malaysia</Link></li>
+                          <li><Link href="https://www.ktm.com/en-mm.languageswitch.html">Myanmar</Link></li>
+                          <li><Link href="https://www.ktm.com/en-np.languageswitch.html">Nepal</Link></li>
+                          <li><Link href="https://www.ktm.com/fr-nc.languageswitch.html">New Caledonia (FR)</Link></li>
+                          <li><Link href="https://www.ktm.com/en-ph.languageswitch.html">Philippines</Link></li>
+                          <li><Link href="https://www.ktm.com/en-sg.languageswitch.html">Singapore</Link></li>
+                          <li><Link href="https://www.ktm.com/en-kr.languageswitch.html">South Korea</Link></li>
+                          <li><Link href="https://www.ktm.com/en-lk.languageswitch.html">Sri Lanka</Link></li>
+                          <li><Link href="https://www.ktm.com/en-tw.languageswitch.html">Taiwan Region (en)</Link></li>
+                          <li><Link href="https://www.ktm.com/zh-tw.languageswitch.html">Taiwan Region (zh)</Link></li>
+                          <li><Link href="https://www.ktm.com/en-th.languageswitch.html">Thailand</Link></li>
+                          <li><Link href="https://www.ktm.com/en-vn.languageswitch.html">Vietnam</Link></li>
                         </ul>
                       </section>
                     </article>
+
                     <article className="c-culture-switch__column">
                       <section className="c-culture-switch__area">
                         <div className="c-culture-switch__region-name">Oceania</div>
                         <ul className="c-culture-switch__list js-lang-list">
-                          <li>
-                            <Link href="https://www.ktm.com/en-au.languageswitch.html">
-                              Australia
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-nz.languageswitch.html">
-                              New Zealand
-                            </Link>
-                          </li>
+                          <li><Link href="https://www.ktm.com/en-au.languageswitch.html">Australia</Link></li>
+                          <li><Link href="https://www.ktm.com/en-nz.languageswitch.html">New Zealand</Link></li>
                         </ul>
                       </section>
+
                       <section className="c-culture-switch__area">
                         <div className="c-culture-switch__region-name">Africa</div>
                         <ul className="c-culture-switch__list js-lang-list c-culture-switch__list--two-cols">
-                          <li>
-                            <Link href="https://www.ktm.com/fr-bj.languageswitch.html">Benin</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-eg.languageswitch.html">Egypt</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-ke.languageswitch.html">Kenya</Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/fr-mg.languageswitch.html">
-                              Madagascar
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/fr-mu.languageswitch.html">
-                              Mauritius
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/fr-ma.languageswitch.html">
-                              Morocco
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-ng.languageswitch.html">
-                              Nigeria
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-sc.languageswitch.html">
-                              Seychelles
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/en-za.languageswitch.html">
-                              South Africa
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="https://www.ktm.com/fr-tg.languageswitch.html">Togo</Link>
-                          </li>
+                          <li><Link href="https://www.ktm.com/fr-bj.languageswitch.html">Benin</Link></li>
+                          <li><Link href="https://www.ktm.com/en-eg.languageswitch.html">Egypt</Link></li>
+                          <li><Link href="https://www.ktm.com/en-ke.languageswitch.html">Kenya</Link></li>
+                          <li><Link href="https://www.ktm.com/fr-mg.languageswitch.html">Madagascar</Link></li>
+                          <li><Link href="https://www.ktm.com/fr-mu.languageswitch.html">Mauritius</Link></li>
+                          <li><Link href="https://www.ktm.com/fr-ma.languageswitch.html">Morocco</Link></li>
+                          <li><Link href="https://www.ktm.com/en-ng.languageswitch.html">Nigeria</Link></li>
+                          <li><Link href="https://www.ktm.com/en-sc.languageswitch.html">Seychelles</Link></li>
+                          <li><Link href="https://www.ktm.com/en-za.languageswitch.html">South Africa</Link></li>
+                          <li><Link href="https://www.ktm.com/fr-tg.languageswitch.html">Togo</Link></li>
                         </ul>
                       </section>
                     </article>
                   </div>
                 </div>
               </section>
+
               <Link
                 href="http://my.ktm.com/be/en/login"
                 className="nav__aside-links--myhub"
@@ -1652,9 +1473,11 @@ export const Default = (props: ComponentProps): JSX.Element => {
                 rel="noopener noreferrer"
                 data-label="My.KTM"
               >
+                <i className="icon icon-user"></i>
                 <span>My.KTM</span>
               </Link>
             </nav>
+
             <Link href="https://www.ktm.com/en-be.html" className="nav__logo">
               <Image
                 src="https://www.ktm.com/content/dam/websites/ktm-com/language-masters/en/logo/37860_KTM_LogoPodium_orange_RGB.jpg"

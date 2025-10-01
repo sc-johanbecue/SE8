@@ -21,7 +21,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
 
   console.log('ktm iconList props:', JSON.stringify(props));
   return (
-    <div className="iconList aem-GridColumn aem-GridColumn--default--12" style={{padding: '0px !important'}}>
+    <div className="iconList aem-GridColumn aem-GridColumn--default--12" style={{margin: '0 -30px !important'}}>
       <div className="component c-icon-list-container">
         <div className="c-icon-list-wrapper">
           <div className="c-icon-list container">

@@ -1662,7 +1662,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
                 sizes="100vw"
                 width={0}
                 height={0}
-                style={{ width: '100%', height: 'auto' }}
+                style={{ width: '100px', height: 'auto' }}
                 unoptimized
               />
             </Link>

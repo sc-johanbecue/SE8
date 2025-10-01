@@ -1,4 +1,4 @@
-import {
+import { 
   ComponentParams,
   ComponentRendering,
   TextField,
@@ -8,8 +8,9 @@ import {
   Image as JssImage,
   Link as JssLink,
   Text,
+  useSitecore,
 } from '@sitecore-content-sdk/nextjs';
-import React, { JSX } from 'react';
+import React, { JSX, ReactNode } from 'react';
 
 type ItemFields = {
   Heading: TextField;
@@ -26,8 +27,42 @@ type ComponentProps = {
   fields: ItemFields;
 };
 
+// Helper: render a JssLink in normal mode,
+// but replace it with a non-link wrapper in editing mode (preserving className).
+function MaybeJssLink({
+  isEditing,
+  field,
+  className,
+  children,
+}: {
+  isEditing: boolean;
+  field?: LinkField;
+  className?: string;
+  children: ReactNode;
+}) {
+  const hasHref = Boolean(field?.value && field.value.href);
+
+  if (isEditing || !hasHref) {
+    return (
+      <div className={className} data-editing-unlinked>
+        {children}
+      </div>
+    );
+  }
+
+  return (
+    <JssLink field={field!} className={className}>
+      {children}
+    </JssLink>
+  );
+}
+
 export const Default = (props: ComponentProps): JSX.Element => {
   console.log('ktm footer props:', JSON.stringify(props));
+
+  const { page } = useSitecore();
+  const isPageEditing = Boolean(page?.mode?.isEditing);
+
   return (
     <div className="image dynamicmedia parbase aem-GridColumn--tablet--12 aem-GridColumn--offset--tablet--0 aem-GridColumn--default--none aem-GridColumn--phone--none aem-GridColumn--phone--12 aem-GridColumn--tablet--none aem-GridColumn aem-GridColumn--offset--phone--0 aem-GridColumn--default--3 aem-GridColumn--offset--default--0">
       <div className="cq-dd-image">
@@ -36,7 +71,8 @@ export const Default = (props: ComponentProps): JSX.Element => {
           data-special="1"
           data-link="https://azweapppreorderserviceprod.azurewebsites.net/preorderservice/"
         >
-          <JssLink
+          <MaybeJssLink
+            isEditing={isPageEditing}
             field={props.fields.Link}
             className="c-image__link"
           >
@@ -63,7 +99,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
               >
                 <div className="s7responsiveContainer">
                   <JssImage
-                    field= {props.fields.Image}
+                    field={props.fields.Image}
                     alt="Rider drives an KTM Electric Bike along a rugged, rocky trail surrounded by natural terrain."
                     className="fluidimage"
                     sizes="100vw"
@@ -78,7 +114,8 @@ export const Default = (props: ComponentProps): JSX.Element => {
                 </div>
               </div>
             </div>
-          </JssLink>
+          </MaybeJssLink>
+
           <div className="c-image__overlay c-image__overlay--center">
             <div className="content">
               <p className="subheading"><Text field={props.fields.SubHeading} /></p>

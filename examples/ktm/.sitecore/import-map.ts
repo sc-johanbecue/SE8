@@ -3,19 +3,45 @@
 import { combineImportEntries, defaultImportEntries } from '@sitecore-content-sdk/nextjs/codegen';
 // end of built-in imports
 
+import { Text, useSitecore, Placeholder, RichText, NextImage, Link, withDatasourceCheck, CdpHelper, Image as Image_8a80e63291fea86e0744df19113dc44bec187216 } from '@sitecore-content-sdk/nextjs';
+import { useState, useEffect, useCallback, useMemo } from 'react';
+import React from 'react';
 import Head from 'next/head';
 import client from 'lib/sitecore-client';
 import Image from 'next/image';
 import * as FEAAS from '@sitecore-feaas/clientside/react';
 import nextConfig from 'next.config';
-import { CdpHelper, useSitecore } from '@sitecore-content-sdk/nextjs';
-import { useEffect } from 'react';
-import React from 'react';
 import { pageView } from '@sitecore-cloudsdk/events/browser';
 import config from 'sitecore.config';
-import Link from 'next/link';
+import Link_a258c208ba01265ca0aa9c7abae745cc7141aa63 from 'next/link';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 
 const importMap = [
+  {
+    module: '@sitecore-content-sdk/nextjs',
+    exports: [
+      { name: 'Text', value: Text },
+      { name: 'useSitecore', value: useSitecore },
+      { name: 'Placeholder', value: Placeholder },
+      { name: 'RichText', value: RichText },
+      { name: 'NextImage', value: NextImage },
+      { name: 'Link', value: Link },
+      { name: 'withDatasourceCheck', value: withDatasourceCheck },
+      { name: 'CdpHelper', value: CdpHelper },
+      { name: 'Image', value: Image_8a80e63291fea86e0744df19113dc44bec187216 },
+    ]
+  },
+  {
+    module: 'react',
+    exports: [
+      { name: 'useState', value: useState },
+      { name: 'useEffect', value: useEffect },
+      { name: 'useCallback', value: useCallback },
+      { name: 'useMemo', value: useMemo },
+      { name: 'default', value: React },
+    ]
+  },
   {
     module: 'next/head',
     exports: [
@@ -47,20 +73,6 @@ const importMap = [
     ]
   },
   {
-    module: '@sitecore-content-sdk/nextjs',
-    exports: [
-      { name: 'CdpHelper', value: CdpHelper },
-      { name: 'useSitecore', value: useSitecore },
-    ]
-  },
-  {
-    module: 'react',
-    exports: [
-      { name: 'useEffect', value: useEffect },
-      { name: 'default', value: React },
-    ]
-  },
-  {
     module: '@sitecore-cloudsdk/events/browser',
     exports: [
       { name: 'pageView', value: pageView },
@@ -75,7 +87,19 @@ const importMap = [
   {
     module: 'next/link',
     exports: [
-      { name: 'default', value: Link },
+      { name: 'default', value: Link_a258c208ba01265ca0aa9c7abae745cc7141aa63 },
+    ]
+  },
+  {
+    module: 'embla-carousel-react',
+    exports: [
+      { name: 'default', value: useEmblaCarousel },
+    ]
+  },
+  {
+    module: 'embla-carousel-autoplay',
+    exports: [
+      { name: 'default', value: Autoplay },
     ]
   }
 ];

@@ -111,9 +111,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                 <div className="aem-Grid aem-Grid--12 aem-Grid--default--12">
                   <div className="header aem-GridColumn aem-GridColumn--default--12">
                     <header className="nav js-nav component">
-                      <div id="header">
                         {route && <Placeholder name="headless-header" rendering={route} />}
-                      </div>
                     </header>
                     <input type="hidden" className="js-data-country" data-country="be" />
                   </div>

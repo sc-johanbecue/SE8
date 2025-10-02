@@ -19,6 +19,7 @@ import * as ColumnSplitter from 'src/components/sxa/ColumnSplitter';
 import * as RecentlyLaunchedSection from 'src/components/content-sdk/ktm/RecentlyLaunchedSection';
 import * as RecentlyLaunchedItem from 'src/components/content-sdk/ktm/RecentlyLaunchedItem';
 import * as NewsArticleTeaser from 'src/components/content-sdk/ktm/NewsArticleTeaser';
+import * as NewsArticle from 'src/components/content-sdk/ktm/NewsArticle';
 import * as MultiColumnImageContainer from 'src/components/content-sdk/ktm/MultiColumnImageContainer';
 import * as LatestNews from 'src/components/content-sdk/ktm/LatestNews';
 import * as ImageWithOverlay from 'src/components/content-sdk/ktm/ImageWithOverlay';
@@ -51,6 +52,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['RecentlyLaunchedSection', RecentlyLaunchedSection],
   ['RecentlyLaunchedItem', RecentlyLaunchedItem],
   ['NewsArticleTeaser', NewsArticleTeaser],
+  ['NewsArticle', NewsArticle],
   ['MultiColumnImageContainer', MultiColumnImageContainer],
   ['LatestNews', LatestNews],
   ['ImageWithOverlay', ImageWithOverlay],

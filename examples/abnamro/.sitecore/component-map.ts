@@ -65,28 +65,23 @@ import * as TextBanner from 'components/text-banner/TextBanner';
 import * as TopicListing from 'components/topic-listing/TopicListing';
 import * as VerticalImageAccordion from 'components/vertical-image-accordion/VerticalImageAccordion';
 import * as Video from 'components/video/Video';
-import * as EngieCard from 'components/engie/EngieCard';
-import * as EngieCardContainer from 'components/engie/EngieCardContainer';
-import * as EngieShowcase from 'components/engie/EngieShowcase';
-import * as EngieHeader from 'components/engie/EngieHeader';
-import * as EngieFooter from 'components/engie/EngieFooter';
-import * as EngieHeroCTA from 'components/engie/EngieHeroCTA';
-import * as EngieUSP from 'components/engie/EngieUSP';
-import * as EngieContentAndImage from 'components/engie/EngieContentAndImage';
-//ABN AMRO
-import * as abnamroBottomFooter from 'components/abnamro/abnamroBottomFooter';
-//import * as abnamroContentCardsSection from 'components/abnamro/abnamroContentCardsSection';
-import * as abnamroFooter from 'components/abnamro/abnamroFooter';
-import * as abnamroTopNavigation from 'components/abnamro/abnamroTopNavigation';
-import * as abnamroHeroSection from 'components/abnamro/abnamroHeroSection';
-//import * as abnamroLinkCardsSection from 'components/abnamro/abnamroLinkCardsSection';
-import * as abnamroCardsSection from 'components/abnamro/abnamroCardsSection';
-import * as abnamroMiddleFooter from 'components/abnamro/abnamroMiddleFooter';
-import * as abnamroNavigation from 'components/abnamro/abnamroNavigation';
-import * as abnamroPromo from 'components/abnamro/abnamroPromo';
-import * as abnamroSearchSection from 'components/abnamro/abnamroSearchSection';
-import * as abnamroTilesSection from 'components/abnamro/abnamroTilesSection';
-import * as abnamroTopFooter from 'components/abnamro/abnamroTopFooter';
+import * as EasyjetCountdownTimer from 'components/easyjet/easyjetCountDownTimers';
+import * as EasyjetAdventureSection from 'components/easyjet/easyjet-adventure-section';
+import * as EasyjetDestinationSpotlight from 'components/easyjet/easyjetDestinationSpotlight';
+import * as EasyjetExploreSection from 'components/easyjet/easyjetExploreSection';
+import * as EasyjetExploreSectionImage from 'components/easyjet/easyjetExploreSectionImage';
+import * as EasyjetFooter from 'components/easyjet/easyjetFooter';
+import * as EasyjetTrustSection from 'components/easyjet/easyjetTrustSection';
+import * as EasyjetHeroSection from 'components/easyjet/easyjetHeroSection';
+import * as EasyjetFlightDealsCarousel from 'components/easyjet/easyjetFlightDealsCarousel';
+import * as EasyjetFlightDeal from 'components/easyjet/easyjetFlightDeal';
+import * as EasyjetPromoCard from 'components/easyjet/easyjetPromoCard';
+import * as EasyjetNavigation from 'components/easyjet/easyjetNavigation';
+import * as EasyjetDestinationInfo from 'components/easyjet/easyjetDestinationInfo';
+import * as EasyjetDestinationHighlights from 'components/easyjet/easyjetDestinationHighlights';
+import * as EasyjetDestinationHero from 'components/easyjet/easyjetDestinationHero';
+import * as EasyjetFareSelection from 'components/easyjet/easyjetFareSelection';
+import * as EasyjetBookingConfirmation from 'components/easyjet/easyjetBookingConfirmation';
 
 // Components must be registered with to match the string key with component name in Sitecore
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
@@ -155,28 +150,23 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['TopicListing', TopicListing],
   ['VerticalImageAccordion', VerticalImageAccordion],
   ['Video', Video],
-  ['EngieCardContainer', EngieCardContainer],
-  ['EngieCard', EngieCard],
-  ['EngieShowcase', EngieShowcase],
-  ['EngieHeader', EngieHeader],
-  ['EngieFooter', EngieFooter],
-  ['EngieHeroCTA', EngieHeroCTA],
-  ['EngieUSP', EngieUSP],
-  ['EngieContentAndImage', EngieContentAndImage],
-
-  ['abnamroBottomFooter', abnamroBottomFooter],
-  ['abnamroCardsSection', abnamroCardsSection],
-  //['abnamroContentCardsSection', abnamroContentCardsSection],
-  ['abnamroFooter', abnamroFooter],
-  ['abnamroTopNavigation', abnamroTopNavigation],
-  ['abnamroHeroSection', abnamroHeroSection],
-  //['abnamroLinkCardsSection', abnamroLinkCardsSection],
-  ['abnamroMiddleFooter', abnamroMiddleFooter],
-  ['abnamroNavigation', abnamroNavigation],
-  ['abnamroPromo', abnamroPromo],
-  ['abnamroSearchSection', abnamroSearchSection],
-  ['abnamroTilesSection', abnamroTilesSection],
-  ['abnamroTopFooter', abnamroTopFooter],
+  ['EasyjetAdventureSection', EasyjetAdventureSection],
+  ['EasyjetDestinationSpotlight', EasyjetDestinationSpotlight],
+  ['EasyjetFooter', EasyjetFooter],
+  ['EasyjetTrustSection', EasyjetTrustSection],
+  ['EasyjetExploreSection', EasyjetExploreSection],
+  ['EasyjetExploreSectionImage', EasyjetExploreSectionImage],
+  ['EasyjetHeroSection', EasyjetHeroSection],
+  ['EasyjetFlightDealsCarousel', EasyjetFlightDealsCarousel],
+  ['EasyjetFlightDeal', EasyjetFlightDeal],
+  ['EasyjetPromoCard', EasyjetPromoCard],
+  ['EasyjetCountdownTimer', EasyjetCountdownTimer],
+  ['EasyjetNavigation', EasyjetNavigation],
+  ['EasyjetDestinationInfo', EasyjetDestinationInfo],
+  ['EasyjetDestinationHighlights', EasyjetDestinationHighlights],
+  ['EasyjetDestinationHero', EasyjetDestinationHero],
+  ['EasyjetFareSelection', EasyjetFareSelection],
+  ['EasyjetBookingConfirmation', EasyjetBookingConfirmation],
 ]);
 
 export default componentMap;

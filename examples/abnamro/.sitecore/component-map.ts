@@ -82,6 +82,19 @@ import * as EasyjetDestinationHighlights from 'components/easyjet/easyjetDestina
 import * as EasyjetDestinationHero from 'components/easyjet/easyjetDestinationHero';
 import * as EasyjetFareSelection from 'components/easyjet/easyjetFareSelection';
 import * as EasyjetBookingConfirmation from 'components/easyjet/easyjetBookingConfirmation';
+import * as abnamroBottomFooter from 'components/abnamro/abnamroBottomFooter';
+import * as abnamroCardsSection from 'components/abnamro/abnamroCardsSection';
+import * as abnamroContentCardsSection from 'components/abnamro/abnamroContentCardsSection';
+import * as abnamroFooter from 'components/abnamro/abnamroFooter';
+import * as abnamroHeroSection from 'components/abnamro/abnamroHeroSection';
+import * as abnamroLinkCardsSection from 'components/abnamro/abnamroLinkCardsSection';
+import * as abnamroMiddleFooter from 'components/abnamro/abnamroMiddleFooter';
+import * as abnamroNavigation from 'components/abnamro/abnamroNavigation';
+import * as abnamroPromo from 'components/abnamro/abnamroPromo';
+import * as abnamroSearchSection from 'components/abnamro/abnamroSearchSection';
+import * as abnamroTilesSection from 'components/abnamro/abnamroTilesSection';
+import * as abnamroTopFooter from 'components/abnamro/abnamroTopFooter';
+import * as abnamroTopNavigation from 'components/abnamro/abnamroTopNavigation';
 
 // Components must be registered with to match the string key with component name in Sitecore
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
@@ -167,6 +180,20 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['EasyjetDestinationHero', EasyjetDestinationHero],
   ['EasyjetFareSelection', EasyjetFareSelection],
   ['EasyjetBookingConfirmation', EasyjetBookingConfirmation],
+
+  ['abnamroBottomFooter', abnamroBottomFooter],
+  ['abnamroCardsSection', abnamroCardsSection],
+  ['abnamroContentCardsSection', abnamroContentCardsSection],
+  ['abnamroFooter', abnamroFooter],
+  ['abnamroHeroSection', abnamroHeroSection],
+  ['abnamroLinkCardsSection', abnamroLinkCardsSection],
+  ['abnamroMiddleFooter', abnamroMiddleFooter],
+  ['abnamroNavigation', abnamroNavigation],
+  ['abnamroPromo', abnamroPromo],
+  ['abnamroSearchSection', abnamroSearchSection],
+  ['abnamroTilesSection', abnamroTilesSection],
+  ['abnamroTopFooter', abnamroTopFooter],
+  ['abnamroTopNavigation', abnamroTopNavigation],
 ]);
 
 export default componentMap;

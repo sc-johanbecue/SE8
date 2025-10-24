@@ -77,7 +77,7 @@ import * as EngieContentAndImage from 'components/engie/EngieContentAndImage';
 import * as abnamroBottomFooter from 'components/abnamro/abnamroBottomFooter';
 //import * as abnamroContentCardsSection from 'components/abnamro/abnamroContentCardsSection';
 import * as abnamroFooter from 'components/abnamro/abnamroFooter';
-import * as abnamroTopnavigation from 'components/abnamro/abnamroTopNavigation';
+import * as abnamroTopNavigation from 'components/abnamro/abnamroTopNavigation';
 import * as abnamroHeroSection from 'components/abnamro/abnamroHeroSection';
 //import * as abnamroLinkCardsSection from 'components/abnamro/abnamroLinkCardsSection';
 import * as abnamroCardsSection from 'components/abnamro/abnamroCardsSection';
@@ -168,7 +168,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['abnamroCardsSection', abnamroCardsSection],
   //['abnamroContentCardsSection', abnamroContentCardsSection],
   ['abnamroFooter', abnamroFooter],
-  ['abnamroTopnavigation', abnamroTopnavigation],
+  ['abnamroTopNavigation', abnamroTopNavigation],
   ['abnamroHeroSection', abnamroHeroSection],
   //['abnamroLinkCardsSection', abnamroLinkCardsSection],
   ['abnamroMiddleFooter', abnamroMiddleFooter],

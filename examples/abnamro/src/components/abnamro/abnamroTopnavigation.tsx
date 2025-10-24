@@ -28,7 +28,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
   const id = props.rendering.uid;
   const fields: Fields = {
     logo: {
-      src: '/abn-amro-logo.jpg',
+      src: '/abn-amro-logo.svg',
       alt: 'ABN AMRO',
     },
     topLinks: [

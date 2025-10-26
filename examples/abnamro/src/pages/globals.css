@@ -1,21 +1,25 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 @import '../assets/styles/globals.css';
 
 @custom-variant dark (&:is(.dark *));
 
 /* Added ABN AMRO Sans font-face declarations */
 @font-face {
-  font-family: "ABN AMRO Sans";
-  src: url("/fonts/abnamrosans-regular.woff2") format("woff2"), url("/fonts/abnamrosans-regular.woff") format("woff");
+  font-family: 'ABN AMRO Sans';
+  src:
+    url('/fonts/abnamrosans-regular.woff2') format('woff2'),
+    url('/fonts/abnamrosans-regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "ABN AMRO Sans";
-  src: url("/fonts/abnamrosans-semibold.woff2") format("woff2"), url("/fonts/abnamrosans-semibold.woff") format("woff");
+  font-family: 'ABN AMRO Sans';
+  src:
+    url('/fonts/abnamrosans-semibold.woff2') format('woff2'),
+    url('/fonts/abnamrosans-semibold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -97,8 +101,8 @@
 
 @theme inline {
   /* Updated font-sans to use ABN AMRO Sans */
-  --font-sans: "ABN AMRO Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --font-sans: 'ABN AMRO Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

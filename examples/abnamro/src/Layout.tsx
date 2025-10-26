@@ -70,7 +70,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
         {/* root placeholder for the app, which we add components to using route data */}
         <ThemeProvider attribute="class" disableTransitionOnChange>
           <div
-            className={`min-h-screen flex flex-col ${classNamesMain} bg-[#f5f5f5]`}
+            className={`min-h-screen flex flex-col ${classNamesMain} bg-[#f3f3f3]`}
             dir={direction}
           >
             {mode.isDesignLibrary ? (

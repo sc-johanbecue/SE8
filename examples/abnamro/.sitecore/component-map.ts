@@ -85,16 +85,20 @@ import * as EasyjetBookingConfirmation from 'components/easyjet/easyjetBookingCo
 import * as abnamroBottomFooter from 'components/abnamro/abnamroBottomFooter';
 import * as abnamroCardsSection from 'components/abnamro/abnamroCardsSection';
 import * as abnamroContentCardsSection from 'components/abnamro/abnamroContentCardsSection';
-import * as abnamroFooter from 'components/abnamro/abnamroFooter';
+import * as abnamroContentCard from 'components/abnamro/abnamroContentCard';
 import * as abnamroHeroSection from 'components/abnamro/abnamroHeroSection';
-import * as abnamroLinkCardsSection from 'components/abnamro/abnamroLinkCardsSection';
+import * as abnamroLinksCardsSection from 'components/abnamro/abnamroLinksCardsSection';
+import * as abnamroLinksCard from 'components/abnamro/abnamroLinksCard';
 import * as abnamroMiddleFooter from 'components/abnamro/abnamroMiddleFooter';
 import * as abnamroNavigation from 'components/abnamro/abnamroNavigation';
 import * as abnamroPromo from 'components/abnamro/abnamroPromo';
 import * as abnamroSearchSection from 'components/abnamro/abnamroSearchSection';
 import * as abnamroTilesSection from 'components/abnamro/abnamroTilesSection';
 import * as abnamroTopFooter from 'components/abnamro/abnamroTopFooter';
-import * as abnamroTopNavigation from 'components/abnamro/abnamroTopNavigation';
+import * as abnamroBreadcrumbs from 'components/abnamro/abnamroBreadcrumbs';
+import * as abnamroComparisonSection from 'components/abnamro/abnamroComparisonSection';
+import * as abnamroComparisonCard from 'components/abnamro/abnamroComparisonCard';
+import * as abnamroIntroductionSection from 'components/abnamro/abnamroIntroductionSection';
 
 // Components must be registered with to match the string key with component name in Sitecore
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
@@ -184,16 +188,21 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['abnamroBottomFooter', abnamroBottomFooter],
   ['abnamroCardsSection', abnamroCardsSection],
   ['abnamroContentCardsSection', abnamroContentCardsSection],
-  ['abnamroFooter', abnamroFooter],
   ['abnamroHeroSection', abnamroHeroSection],
-  ['abnamroLinkCardsSection', abnamroLinkCardsSection],
+  ['abnamroLinksCardsSection', abnamroLinksCardsSection],
+  ['abnamroLinksCard', abnamroLinksCard],
   ['abnamroMiddleFooter', abnamroMiddleFooter],
   ['abnamroNavigation', abnamroNavigation],
   ['abnamroPromo', abnamroPromo],
   ['abnamroSearchSection', abnamroSearchSection],
   ['abnamroTilesSection', abnamroTilesSection],
   ['abnamroTopFooter', abnamroTopFooter],
-  ['abnamroTopNavigation', abnamroTopNavigation],
+  ['abnamroContentCardsSection', abnamroContentCardsSection],
+  ['abnamroContentCard', abnamroContentCard],
+  ['abnamroBreadcrumbs', abnamroBreadcrumbs],
+  ['abnamroComparisonSection', abnamroComparisonSection],
+  ['abnamroComparisonCard', abnamroComparisonCard],
+  ['abnamroIntroductionSection', abnamroIntroductionSection],
 ]);
 
 export default componentMap;

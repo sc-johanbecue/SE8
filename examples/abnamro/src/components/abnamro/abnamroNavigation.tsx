@@ -57,7 +57,7 @@ type Fields = {
 
 const fields = {
   logo: {
-    src: '/abn-amro-logo.jpg',
+    src: '/abn-amro-logo.svg',
     alt: 'ABN AMRO',
     href: '/',
   },

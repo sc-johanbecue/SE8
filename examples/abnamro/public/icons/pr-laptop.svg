@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="PRODUCT_ICONS" data-name="PRODUCT ICONS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #004c4c;
+      }
+
+      .cls-2 {
+        fill: #66c7c0;
+      }
+
+      .cls-3 {
+        fill: #33b5ab;
+      }
+
+      .cls-4 {
+        fill: #00716b;
+      }
+
+      .cls-5 {
+        fill: #f3c000;
+      }
+    </style>
+  </defs>
+  <path class="cls-4" d="M62,55H10V18.96c0-2.19,1.77-3.96,3.96-3.96h44.07c2.19,0,3.96,1.77,3.96,3.96v36.04Z"/>
+  <path class="cls-3" d="M14.98,18h42.04c1.09,0,1.98.89,1.98,1.98v33.77H13V19.98c0-1.09.89-1.98,1.98-1.98Z"/>
+  <rect class="cls-1" x="35" y="15.5" width="2" height="2" rx="1" ry="1"/>
+  <path class="cls-2" d="M14.98,18c-1.09,0-1.98.89-1.98,1.98v33.77h6.86l29.08-35.75H14.98Z"/>
+  <path class="cls-4" d="M5.96,51h60.04v1.82c0,2.31-1.87,4.18-4.18,4.18H10.14c-2.31,0-4.18-1.87-4.18-4.18v-1.82h0Z"/>
+  <path class="cls-5" d="M31,51h10c0,1.1-.9,2-2,2h-6c-1.1,0-2-.9-2-2h0Z"/>
+</svg>

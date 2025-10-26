@@ -56,7 +56,7 @@ const LinkListItem = (props: LinkListItemProps) => {
     className += ' last';
   }
   return (
-    <li className={className}>
+    <li className={className} key={props.key}>
       <div className="field-link">
         <JssLink
           field={props.field}

@@ -31,8 +31,9 @@ type ComponentProps = {
 };
 
 export const Default = (props: ComponentProps): JSX.Element => {
+  const id = props.rendering.uid;
   return (
-    <section className="w-full">
+    <section className="w-full" key={id}>
       {/* Mobile Layout: Image on top, content below */}
       <div className="lg:hidden">
         <div className="relative w-full">

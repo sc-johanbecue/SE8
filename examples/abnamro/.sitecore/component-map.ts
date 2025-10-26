@@ -99,6 +99,7 @@ import * as abnamroBreadcrumbs from 'components/abnamro/abnamroBreadcrumbs';
 import * as abnamroComparisonSection from 'components/abnamro/abnamroComparisonSection';
 import * as abnamroComparisonCard from 'components/abnamro/abnamroComparisonCard';
 import * as abnamroIntroductionSection from 'components/abnamro/abnamroIntroductionSection';
+import * as abnamroFAQSection from 'components/abnamro/abnamroFAQSection';
 
 // Components must be registered with to match the string key with component name in Sitecore
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
@@ -203,6 +204,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['abnamroComparisonSection', abnamroComparisonSection],
   ['abnamroComparisonCard', abnamroComparisonCard],
   ['abnamroIntroductionSection', abnamroIntroductionSection],
+  ['abnamroFAQSection', abnamroFAQSection],
 ]);
 
 export default componentMap;

@@ -1,6 +1,6 @@
 ﻿import Head from 'next/head';
 import { SitecoreProvider, SitecorePageProps, Page, ErrorPage } from '@sitecore-content-sdk/nextjs';
-import Layout from '@/layout';
+import Layout from 'src/layout';
 import { GetStaticProps } from 'next';
 import scConfig from 'sitecore.config';
 import client from 'lib/sitecore-client';

@@ -513,7 +513,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
               <div className="relative">
                 <button
                   onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
-                  className='px-4 py-2 text-sm font-medium transition-colors text-gray-600 hover:text-gray-900'
+                  className="px-4 py-2 text-sm font-medium transition-colors text-gray-600 hover:text-gray-900"
                 >
                   English
                 </button>

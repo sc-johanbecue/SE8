@@ -175,7 +175,7 @@ export const ReversedBackgroundImage = (props: ComponentProps): JSX.Element => {
   const id = props.rendering.uid;
 
   return (
-    <section className="relative h-[200px] md:h-[440px] overflow-hidden">
+    <section className="relative h-[200px] md:h-[440px] overflow-hidden" key={id}>
       <Image
         src={props.fields.Image.value?.src as string}
         alt={props.fields.Image.value?.alt as string}

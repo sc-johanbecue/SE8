@@ -65,7 +65,6 @@ const fields = {
     { label: 'Privé', href: '#', variant: 'outlined' as const },
     { label: 'Zakelijk', href: '#' },
     { label: 'Private banking', href: '#' },
-    { label: 'English', href: '#' },
   ],
   loginButton: {
     label: 'Inloggen',
@@ -386,18 +385,25 @@ export const Default = (props: ComponentProps): JSX.Element => {
                 />
                 <div className="absolute top-full left-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg z-50">
                   <Link
-                    href="#"
+                    href="/en"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 border-b border-gray-200"
                     onClick={() => setLanguageDropdownOpen(false)}
                   >
                     English
                   </Link>
                   <Link
-                    href="#"
+                    href="/nl-NL"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50"
                     onClick={() => setLanguageDropdownOpen(false)}
                   >
                     Nederlands
+                  </Link>
+                  <Link
+                    href="/fr-BE"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50"
+                    onClick={() => setLanguageDropdownOpen(false)}
+                  >
+                    Français
                   </Link>
                 </div>
               </>
@@ -503,6 +509,50 @@ export const Default = (props: ComponentProps): JSX.Element => {
                   {link.label}
                 </Link>
               ))}
+
+              <div className="relative">
+                <button
+                  onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
+                  className='px-4 py-2 text-sm font-medium transition-colors text-gray-600 hover:text-gray-900'
+                >
+                  English
+                </button>
+
+                {languageDropdownOpen && (
+                  <>
+                    <div
+                      className="fixed inset-0 z-40"
+                      onClick={() => setLanguageDropdownOpen(false)}
+                    />
+                    <div className="absolute top-full left-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg z-50">
+                      <Link
+                        href="#"
+                        locale="en"
+                        className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 border-b border-gray-200"
+                        onClick={() => setLanguageDropdownOpen(false)}
+                      >
+                        English
+                      </Link>
+                      <Link
+                        href=""
+                        locale="nl-NL"
+                        className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50"
+                        onClick={() => setLanguageDropdownOpen(false)}
+                      >
+                        Nederlands
+                      </Link>
+                      <Link
+                        href="#"
+                        locale="fr-BE"
+                        className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50"
+                        onClick={() => setLanguageDropdownOpen(false)}
+                      >
+                        Français
+                      </Link>
+                    </div>
+                  </>
+                )}
+              </div>
 
               <Link
                 href={fields.loginButton.href}

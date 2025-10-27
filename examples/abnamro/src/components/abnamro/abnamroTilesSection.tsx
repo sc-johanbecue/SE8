@@ -49,11 +49,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
                   height={56}
                   className="flex-shrink-0"
                 />
-                <Text
-                  tag="span"
-                  field={tile.fields.Text}
-                  className="text-gray-900 font-normal text-base md:text-sm flex-1"
-                />
+                <span className="text-gray-900 font-normal text-base md:text-sm flex-1">
+                  <Text field={tile.fields.Text} />
+                </span>
                 <ChevronRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </JssLink>
             ))}

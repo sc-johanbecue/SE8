@@ -40,8 +40,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
           <JssImage field={props.fields.Image} fill className="object-cover" priority />
         </div>
         <div className="bg-[#004c4c] px-3 py-6">
-          <Text tag="h2" field={props.fields.Title} className="text-3xl text-white mb-2" />
-          <Text tag="p" field={props.fields.Subtitle} className="text-2xl text-white mb-4" />
+          <h2 className="text-3xl text-white mb-2">
+            <Text field={props.fields.Title} />
+          </h2>
+          <p className="text-2xl text-white mb-4">
+            <Text field={props.fields.Subtitle} />
+          </p>
           <JssLink
             field={props.fields.Link}
             className="inline-block bg-[#ffcc00] text-[#004c4c] px-8 py-2 font-semibold hover:bg-[#e6b800] transition-colors"
@@ -55,12 +59,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
       <div className="hidden lg:flex h-[440px]">
         <div className="w-1/2 bg-[#004c4c] flex items-center px-16 py-20">
           <div>
-            <Text
-              tag="h2"
-              field={props.fields.Title}
-              className="text-3xl font-semibold text-white mb-6"
-            />
-            <Text tag="p" field={props.fields.Subtitle} className="text-2xl text-white mb-10" />
+            <h2 className="text-3xl font-semibold text-white mb-6">
+              <Text field={props.fields.Title} />
+            </h2>
+            <p className="text-2xl text-white mb-10">
+              <Text field={props.fields.Subtitle} />
+            </p>
             <JssLink
               field={props.fields.Link}
               className="inline-block bg-[#ffcc00] text-[#004c4c] px-8 py-4 font-semibold hover:bg-[#e6b800] transition-colors"
@@ -89,8 +93,12 @@ export const ReversedDefault = (props: ComponentProps): JSX.Element => {
       {/* Mobile Layout: Image on top, content below */}
       <div className="lg:hidden">
         <div className="bg-[#004c4c] px-3 py-6">
-          <Text tag="h2" field={props.fields.Title} className="text-3xl text-white mb-2" />
-          <Text tag="p" field={props.fields.Subtitle} className="text-2xl text-white mb-4" />
+          <h2 className="text-3xl text-white mb-2">
+            <Text field={props.fields.Title} />
+          </h2>
+          <p className="text-2xl text-white mb-4">
+            <Text field={props.fields.Subtitle} />
+          </p>
           <JssLink
             field={props.fields.Link}
             className="inline-block bg-[#ffcc00] text-[#004c4c] px-8 py-2 font-semibold hover:bg-[#e6b800] transition-colors"
@@ -107,12 +115,12 @@ export const ReversedDefault = (props: ComponentProps): JSX.Element => {
       <div className="hidden lg:flex h-[440px]">
         <div className="w-1/2 bg-[#004c4c] flex items-center px-16 py-20">
           <div>
-            <Text
-              tag="h2"
-              field={props.fields.Title}
-              className="text-3xl font-semibold text-white mb-6"
-            />
-            <Text tag="p" field={props.fields.Subtitle} className="text-2xl text-white mb-10" />
+            <h2 className="text-3xl font-semibold text-white mb-6">
+              <Text field={props.fields.Title} />
+            </h2>
+            <p className="text-2xl text-white mb-10">
+              <Text field={props.fields.Subtitle} />
+            </p>
             <JssLink
               field={props.fields.Link}
               className="inline-block bg-[#ffcc00] text-[#004c4c] px-8 py-4 font-semibold hover:bg-[#e6b800] transition-colors"
@@ -149,16 +157,12 @@ export const BackgroundImage = (props: ComponentProps): JSX.Element => {
       <div className="absolute inset-0 bg-black/30" />
       <div className="relative container mx-auto px-4 h-full flex items-center">
         <div className="max-w-xl">
-          <Text
-            tag="h1"
-            field={props.fields.Title}
-            className="text-xl md:text-5xl font-bold text-white mb-4 text-balance"
-          />
-          <Text
-            tag="p"
-            field={props.fields.Subtitle}
-            className="text-l md:text-2xl text-white mb-6"
-          />
+          <h1 className="text-xl md:text-5xl font-bold text-white mb-4 text-balance">
+            <Text field={props.fields.Title} />
+          </h1>
+          <p className="text-l md:text-2xl text-white mb-6">
+            <Text field={props.fields.Subtitle} />
+          </p>
           <JssLink
             field={props.fields.Link}
             className="inline-block px-6 py-3 bg-yellow-400 text-black font-semibold rounded hover:bg-yellow-500 transition-colors"
@@ -188,16 +192,12 @@ export const ReversedBackgroundImage = (props: ComponentProps): JSX.Element => {
         className={`relative container mx-auto px-4 md:px-8 lg:px-16 h-full flex flex-col justify-center md:justify-center items-end text-right`}
       >
         <div className="max-w-xl md:ml-auto">
-          <Text
-            tag="h1"
-            field={props.fields.Title}
-            className="text-xl md:text-5xl font-bold text-white mb-4 text-balance"
-          />
-          <Text
-            tag="p"
-            field={props.fields.Subtitle}
-            className="text-l md:text-2xl text-white mb-6"
-          />
+          <h1 className="text-xl md:text-5xl font-bold text-white mb-4 text-balance">
+            <Text field={props.fields.Title} />
+          </h1>
+          <p className="text-l md:text-2xl text-white mb-6">
+            <Text field={props.fields.Subtitle} />
+          </p>
           <JssLink
             field={props.fields.Link}
             className="inline-block px-6 py-3 bg-yellow-400 text-black font-semibold rounded hover:bg-yellow-500 transition-colors"

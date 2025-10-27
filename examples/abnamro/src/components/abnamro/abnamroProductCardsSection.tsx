@@ -88,22 +88,18 @@ export const Default = (props: ComponentProps): JSX.Element => {
                     </div>
 
                     {/* Title */}
-                    <Text
-                      tag="h3"
-                      field={card.fields.Title}
-                      className="text-xl lg:text-2xl font-bold mb-4 text-gray-900"
-                    />
+                    <h3 className="text-xl lg:text-2xl font-bold mb-4 text-gray-900">
+                      <Text field={card.fields.Title} />
+                    </h3>
 
                     {/* Features List */}
                     <ul className="space-y-3 mb-6 flex-grow">
                       {card.fields.Features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start gap-2">
                           <Check className="w-5 h-5 text-[#00695f] flex-shrink-0 mt-0.5" />
-                          <Text
-                            tag="span"
-                            field={feature.fields.Text}
-                            className="text-gray-700 text-sm lg:text-base"
-                          />
+                          <span className="text-gray-700 text-sm lg:text-base">
+                            <Text field={feature.fields.Text} />
+                          </span>
                         </li>
                       ))}
                     </ul>
@@ -123,7 +119,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
                         field={card.fields.SecondaryLink}
                         className="group flex items-center gap-2 text-base font-medium text-teal-700 underline decoration-teal-700 underline-offset-4 transition-colors hover:text-teal-800 hover:decoration-teal-800 md:text-lg"
                       >
-                        <Text tag="span" field={card.fields.SecondaryLinkText} />
+                        <span>
+                          <Text field={card.fields.SecondaryLinkText} />
+                        </span>
                         {card.fields.SecondaryLinkText.value != '' && (
                           <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                         )}

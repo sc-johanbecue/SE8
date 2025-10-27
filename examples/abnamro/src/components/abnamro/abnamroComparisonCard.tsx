@@ -42,11 +42,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
       {/* Featured Badge - positioned above card */}
       <div className="h-12 mb-0">
         {props.fields.FeaturedText.value != '' && (
-          <Text
-            tag="div"
-            field={props.fields.FeaturedText}
-            className="bg-[#00695f] text-white text-center py-3 px-4 font-semibold uppercase text-sm tracking-wide rounded-t-lg h-full flex items-center justify-center"
-          />
+          <div className="bg-[#00695f] text-white text-center py-3 px-4 font-semibold uppercase text-sm tracking-wide rounded-t-lg h-full flex items-center justify-center">
+            <Text field={props.fields.FeaturedText} />
+          </div>
         )}
       </div>
 
@@ -71,22 +69,18 @@ export const Default = (props: ComponentProps): JSX.Element => {
           </div>
 
           {/* Title */}
-          <Text
-            tag="h3"
-            field={props.fields.Title}
-            className="text-xl lg:text-2xl font-bold mb-4 text-gray-900"
-          />
+          <h3 className="text-xl lg:text-2xl font-bold mb-4 text-gray-900">
+            <Text field={props.fields.Title} />
+          </h3>
 
           {/* Features List */}
           <ul className="space-y-3 mb-6 flex-grow">
             {props.fields.Features.map((feature, featureIndex) => (
               <li key={featureIndex} className="flex items-start gap-2">
                 <Check className="w-5 h-5 text-[#00695f] flex-shrink-0 mt-0.5" />
-                <Text
-                  tag="span"
-                  field={feature.fields.Text}
-                  className="text-gray-700 text-sm lg:text-base"
-                />
+                <span className="text-gray-700 text-sm lg:text-base">
+                  <Text field={feature.fields.Text} />
+                </span>
               </li>
             ))}
           </ul>
@@ -105,7 +99,10 @@ export const Default = (props: ComponentProps): JSX.Element => {
               field={props.fields.SecondaryLink}
               className="group flex items-center gap-1 text-[#00695f] hover:text-[#004d40] font-medium text-sm underline transition-colors"
             >
-              <Text tag="span" field={props.fields.SecondaryLinkText} />
+              <span>
+                <Text field={props.fields.SecondaryLinkText} />
+              </span>
+
               {props.fields.SecondaryLinkText.value != '' && (
                 <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               )}

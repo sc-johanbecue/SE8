@@ -75,11 +75,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
   return (
     <section className="py-12 md:py-16 bg-gray-50" key={id}>
       <div className="container mx-auto px-4">
-        <Text
-          tag="h2"
-          field={props.fields.Title}
-          className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 md:mb-12 text-center"
-        />
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
+          <Text field={props.fields.Title} />
+        </h2>
 
         <div className="md:hidden space-y-6">
           <Placeholder name={phCardsContainer} rendering={props.rendering} />

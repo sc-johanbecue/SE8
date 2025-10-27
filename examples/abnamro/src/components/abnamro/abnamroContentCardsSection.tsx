@@ -81,11 +81,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
   return (
     <section className="py-12 md:py-16 bg-gray-50" key={id}>
       <div className="container mx-auto px-4">
-        <Text
-          tag="h2"
-          field={props.fields.Title}
-          className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 md:mb-12 text-center"
-        />
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
+          <Text field={props.fields.Title} />
+        </h2>
 
         <div className="md:hidden space-y-6">
           {props.fields.Cards &&
@@ -143,11 +141,9 @@ function ContentCard({ card }: { card: ContentCard }) {
         className="w-full h-56 object-cover"
       />
       <div className="p-6 flex flex-col flex-grow">
-        <Text
-          tag="h3"
-          field={card.fields.Title}
-          className="text-2xl font-bold text-gray-900 mb-4"
-        />
+        <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          <Text field={card.fields.Title} />
+        </h3>
         <RichText
           field={card.fields.Description}
           className="text-gray-700 mb-6 leading-relaxed flex-grow"

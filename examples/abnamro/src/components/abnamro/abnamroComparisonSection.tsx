@@ -25,11 +25,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
     <section className="py-12 lg:py-16" key={id}>
       <div className="container mx-auto px-4">
         {/* Section Title */}
-        <Text
-          tag="h2"
-          field={props.fields.Title}
-          className="text-3xl lg:text-4xl font-bold text-center mb-8 lg:mb-12 text-gray-900"
-        />
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-8 lg:mb-12 text-gray-900">
+          <Text field={props.fields.Title} />
+        </h2>
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">

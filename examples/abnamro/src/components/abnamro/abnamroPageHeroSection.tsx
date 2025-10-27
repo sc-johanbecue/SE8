@@ -35,12 +35,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
           <JssImage field={props.fields.Image} fill className="object-cover" priority />
         </div>
         <div className="bg-[#00695f] px-6 py-12">
-          <Text
-            tag="h2"
-            field={props.fields.Title}
-            className="text-3xl font-semibold text-white mb-4"
-          />
-          <Text tag="p" field={props.fields.Subtitle} className="text-xl text-white mb-8" />
+          <h2 className="text-3xl font-semibold text-white mb-4">
+            <Text field={props.fields.Title} />
+          </h2>
+          <p className="text-xl text-white mb-8">
+            <Text field={props.fields.Subtitle} />
+          </p>
           <JssLink
             field={props.fields.Link}
             className="inline-block bg-[#ffcc00] text-[#00695f] px-8 py-4 font-semibold hover:bg-[#e6b800] transition-colors"
@@ -54,12 +54,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
       <div className="hidden lg:flex">
         <div className="w-1/2 bg-[#00695f] flex items-center px-16 py-20">
           <div>
-            <Text
-              tag="h2"
-              field={props.fields.Title}
-              className="text-5xl font-semibold text-white mb-6"
-            />
-            <Text tag="p" field={props.fields.Subtitle} className="text-2xl text-white mb-10" />
+            <h2 className="text-5xl font-semibold text-white mb-6">
+              <Text field={props.fields.Title} />
+            </h2>
+            <p className="text-2xl text-white mb-10">
+              <Text field={props.fields.Subtitle} />
+            </p>
             <JssLink
               field={props.fields.Link}
               className="inline-block bg-[#ffcc00] text-[#00695f] px-8 py-4 font-semibold hover:bg-[#e6b800] transition-colors"

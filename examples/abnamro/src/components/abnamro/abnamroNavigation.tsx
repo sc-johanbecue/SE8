@@ -62,8 +62,8 @@ const fields = {
     href: '/',
   },
   utilityLinks: [
-    { label: 'Privé', href: '#', variant: 'outlined' as const },
-    { label: 'Zakelijk', href: '#' },
+    { label: 'Privé', href: '/', variant: 'outlined' as const },
+    { label: 'Zakelijk', href: '/zakelijk' },
     { label: 'Private banking', href: '#' },
   ],
   loginButton: {

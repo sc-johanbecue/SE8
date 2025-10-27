@@ -43,11 +43,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
         className="w-full h-56 object-cover"
       />
       <div className="p-6 flex flex-col flex-grow">
-        <Text
-          tag="h3"
-          field={props.fields.Title}
-          className="text-2xl font-bold text-gray-900 mb-4"
-        />
+        <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          <Text field={props.fields.Title} />
+        </h3>
         <RichText
           field={props.fields.Description}
           className="text-gray-700 mb-6 leading-relaxed flex-grow"

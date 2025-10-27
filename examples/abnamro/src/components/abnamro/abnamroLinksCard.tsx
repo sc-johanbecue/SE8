@@ -58,16 +58,14 @@ const LinkListItem = (props: LinkListItemProps) => {
   return (
     <li className={className} key={props.key}>
       <div className="field-link">
-        <JssLink
-          field={props.field}
-          className="flex items-center gap-2 text-[#00857d] hover:text-[#006d66] group"
-        >
+        <div className="flex items-center gap-2 text-[#00857d] hover:text-[#006d66] group">
           <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          {/* <ArrowRight className="w-4 h-4 flex-shrink-0" /> */}
-          <span className="md:text-sm lg:text-base underline group-hover:no-underline">
-            {props.field.value.text}
-          </span>
-        </JssLink>
+          <JssLink field={props.field}>
+            <span className="md:text-sm lg:text-base underline group-hover:no-underline">
+              {props.field.value.text}
+            </span>
+          </JssLink>
+        </div>
       </div>
     </li>
   );

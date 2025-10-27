@@ -41,11 +41,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
             />
           </div>
           <div className="w-full md:w-1/2">
-            <Text
-              tag="h2"
-              field={props.fields.Title}
-              className="text-2xl md:text-3xl font-bold text-gray-900 mb-4"
-            />
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              <Text field={props.fields.Title} />
+            </h2>
             <RichText
               field={props.fields.Description}
               className="text-gray-700 mb-6 leading-relaxed"
@@ -69,11 +67,9 @@ export const Reversed = (props: ComponentProps): JSX.Element => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center max-w-6xl mx-auto">
           <div className="w-full md:w-1/2">
-            <Text
-              tag="h2"
-              field={props.fields.Title}
-              className="text-2xl md:text-3xl font-bold text-gray-900 mb-4"
-            />
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              <Text field={props.fields.Title} />
+            </h2>
             <RichText
               field={props.fields.Description}
               className="text-gray-700 mb-6 leading-relaxed"

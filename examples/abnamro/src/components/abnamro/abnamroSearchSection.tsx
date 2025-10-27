@@ -53,7 +53,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">{currentGreeting}</h2>
-          <Text tag="p" field={props.fields.Text} className="text-gray-600 mb-6" />
+          <p className="text-gray-600 mb-6">
+            <Text field={props.fields.Text} />
+          </p>
           <div className="relative">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input

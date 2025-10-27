@@ -161,7 +161,7 @@ function ContentCard({ card }: { card: ContentCard }) {
             <Text field={card.fields.PrimaryLinkText} />
           </JssLink>
 
-          {card.fields.SecondaryLink && (
+          {card.fields.SecondaryLink.value && (
             <JssLink
               field={card.fields.SecondaryLink}
               className="inline-flex items-center gap-1 text-[#005f4f] font-semibold underline hover:no-underline group"
@@ -169,7 +169,9 @@ function ContentCard({ card }: { card: ContentCard }) {
               <span>
                 <Text field={card.fields.SecondaryLinkText} />
               </span>
-              <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              {card.fields.SecondaryLinkText.value != '' && (
+                <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              )}
             </JssLink>
           )}
         </div>

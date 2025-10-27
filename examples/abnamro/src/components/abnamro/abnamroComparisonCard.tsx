@@ -106,7 +106,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
               className="group flex items-center gap-1 text-[#00695f] hover:text-[#004d40] font-medium text-sm underline transition-colors"
             >
               <Text tag="span" field={props.fields.SecondaryLinkText} />
-              <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              {props.fields.SecondaryLinkText.value != '' && (
+                <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              )}
             </JssLink>
           )}
         </div>

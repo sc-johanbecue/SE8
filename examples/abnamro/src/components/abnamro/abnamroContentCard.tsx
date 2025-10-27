@@ -61,7 +61,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
             <Text field={props.fields.PrimaryLinkText} />
           </JssLink>
 
-          {props.fields.SecondaryLink && (
+          {props.fields.SecondaryLink.value.href != undefined && (
             <JssLink
               field={props.fields.SecondaryLink}
               className="inline-flex items-center gap-1 text-[#005f4f] font-semibold underline hover:no-underline group"
@@ -69,7 +69,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
               <span>
                 <Text field={props.fields.SecondaryLinkText} />
               </span>
-              <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              {props.fields.SecondaryLinkText.value != '' && (
+                <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              )}
             </JssLink>
           )}
         </div>

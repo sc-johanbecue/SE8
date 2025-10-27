@@ -141,6 +141,17 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+.article h2 {
+  font-weight: 700;
+  font-size: 27px;
+}
+
+.article ul {
+  list-style-type: disc;
+  padding-left: 1.5rem; /* adds space so bullets are visible */
+  margin: 1em 0; /* optional spacing */
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

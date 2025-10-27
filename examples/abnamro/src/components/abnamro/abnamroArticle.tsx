@@ -111,7 +111,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
         <div className="prose prose-lg max-w-none">
           <RichText
             field={props.fields.Content}
-            className="text-lg leading-relaxed text-gray-900"
+            className="text-lg leading-relaxed text-gray-900 article"
           />
         </div>
 

@@ -24,7 +24,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
         <div className="bg-white mx-auto max-w-4xl text-center">
           <RichText
             field={props.fields.Text}
-            className="bg-white text-pretty text-lg leading-relaxed text-gray-800 md:text-xl md:leading-relaxed"
+            className="bg-white text-pretty text-lg leading-relaxed text-gray-800 md:text-xl md:leading-relaxed article"
           />
         </div>
       </div>

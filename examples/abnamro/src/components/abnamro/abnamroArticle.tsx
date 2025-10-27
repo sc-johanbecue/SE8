@@ -5,11 +5,10 @@ import {
   RichTextField,
   Text,
   RichText,
-  Image as JssImage,
   ComponentParams,
   ComponentRendering,
 } from '@sitecore-content-sdk/nextjs';
-
+import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 
 type Fields = {
@@ -50,12 +49,18 @@ export const Default = (props: ComponentProps): JSX.Element => {
     <article className="bg-gray-50" key={id}>
       {/* Hero Image with Title Overlay (Desktop) */}
       <div className="relative">
-        <div className="w-full h-[300px] md:h-[400px] relative">
-          <JssImage field={props.fields.Image} fill className="object-cover" priority />
+        <div className="relative w-full h-[240px] md:h-[360px] lg:h-[400px] overflow-hidden">
+          <Image
+            alt=""
+            src={props.fields.Image.value?.src as string}
+            fill
+            className="object-cover object-center"
+            priority
+          />
         </div>
 
         {/* Title overlay for desktop */}
-        <div className="hidden md:block absolute bottom-8 left-1/2 -translate-x-1/2 w-full max-w-3xl px-4">
+        <div className="hidden md:block absolute -bottom-8 left-1/2 -translate-x-1/2 w-full max-w-3xl px-4">
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h1 className="text-3xl lg:text-4xl font-normal text-gray-900 text-balance">
               <Text field={props.fields.Title} />

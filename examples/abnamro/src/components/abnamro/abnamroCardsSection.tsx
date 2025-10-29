@@ -25,14 +25,8 @@ export const Default = (props: ComponentProps): JSX.Element => {
   const id = props.rendering.uid;
   const phCardsContainer = `abnamroCardsContainer-${props.params.DynamicPlaceholderId}`;
 
-  console.log('phCardsContainerItems:', JSON.stringify(phCardsContainer));
-  console.log('placeholder:', JSON.stringify(props.rendering.placeholders));
-  console.log('placeholder:', JSON.stringify(props.rendering.placeholders as PlaceholdersData)[2]);
-
   const phCardsContainerItems =
     (props.rendering.placeholders as PlaceholdersData)[phCardsContainer]?.length || 0;
-
-  console.log('phCardsContainerItems:', phCardsContainerItems);
 
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: 'start',

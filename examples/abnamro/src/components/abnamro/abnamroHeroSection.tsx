@@ -92,6 +92,9 @@ export const ReversedDefault = (props: ComponentProps): JSX.Element => {
     <section className="w-full" key={id}>
       {/* Mobile Layout: Image on top, content below */}
       <div className="lg:hidden">
+        <div className="relative w-full">
+          <JssImage field={props.fields.Image} fill className="object-cover" priority />
+        </div>
         <div className="bg-[#004c4c] px-3 py-6">
           <h2 className="text-3xl text-white mb-2">
             <Text field={props.fields.Title} />
@@ -106,13 +109,18 @@ export const ReversedDefault = (props: ComponentProps): JSX.Element => {
             <Text field={props.fields.LinkText} />
           </JssLink>
         </div>
-        <div className="relative w-full">
-          <JssImage field={props.fields.Image} fill className="object-cover" priority />
-        </div>
       </div>
 
       {/* Desktop Layout: Split view with content on left, image on right */}
       <div className="hidden lg:flex h-[440px]">
+        <div className="w-1/2 relative h-full">
+          <JssImage
+            field={props.fields.Image}
+            fill-cover
+            className="inset-0 w-full h-full object-cover"
+            priority
+          />
+        </div>
         <div className="w-1/2 bg-[#004c4c] flex items-center px-16 py-20">
           <div>
             <h2 className="text-3xl font-semibold text-white mb-6">
@@ -128,14 +136,6 @@ export const ReversedDefault = (props: ComponentProps): JSX.Element => {
               <Text field={props.fields.LinkText} />
             </JssLink>
           </div>
-        </div>
-        <div className="w-1/2 relative h-full">
-          <JssImage
-            field={props.fields.Image}
-            fill-cover
-            className="inset-0 w-full h-full object-cover"
-            priority
-          />
         </div>
       </div>
     </section>

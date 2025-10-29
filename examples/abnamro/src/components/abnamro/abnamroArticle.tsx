@@ -12,7 +12,7 @@ import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 
 type Fields = {
-  Title: TextField;
+  ArticleTitle: TextField;
   PublicationDate: TextField;
   Tags: TextField;
   Image: ImageField;
@@ -63,7 +63,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
         <div className="hidden md:block absolute -bottom-8 left-1/2 -translate-x-1/2 w-full max-w-3xl px-4">
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h1 className="text-3xl lg:text-4xl font-normal text-gray-900 text-balance">
-              <Text field={props.fields.Title} />
+              <Text field={props.fields.ArticleTitle} />
             </h1>
           </div>
         </div>
@@ -74,24 +74,25 @@ export const Default = (props: ComponentProps): JSX.Element => {
         {/* Title for mobile (below image) */}
         <div className="md:hidden mb-6">
           <h1 className="text-2xl font-normal text-gray-900 mb-4 text-balance">
-            <Text field={props.fields.Title} />
+            <Text field={props.fields.ArticleTitle} />
           </h1>
         </div>
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-4">
-          {props.fields.Tags.value
-            ?.toString()
-            .split(' ')
-            .map((tag, index) => (
-              <Badge
-                key={index}
-                variant="secondary"
-                className="bg-gray-200 text-gray-700 hover:bg-gray-300"
-              >
-                {tag}
-              </Badge>
-            ))}
+          {props.fields.Tags.value != '' &&
+            props.fields.Tags.value
+              ?.toString()
+              .split(' ')
+              .map((tag, index) => (
+                <Badge
+                  key={index}
+                  variant="secondary"
+                  className="bg-gray-200 text-gray-700 hover:bg-gray-300"
+                >
+                  {tag}
+                </Badge>
+              ))}
         </div>
 
         {/* Date and Reading Time */}
@@ -119,18 +120,19 @@ export const Default = (props: ComponentProps): JSX.Element => {
         <div className="mt-12 mb-8">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Tags</h3>
           <div className="flex flex-wrap gap-2">
-            {props.fields.Tags.value
-              ?.toString()
-              .split(' ')
-              .map((tag, index) => (
-                <Badge
-                  key={index}
-                  variant="outline"
-                  className="border-gray-300 text-gray-700 hover:bg-gray-100"
-                >
-                  {tag}
-                </Badge>
-              ))}
+            {props.fields.Tags.value != '' &&
+              props.fields.Tags.value
+                ?.toString()
+                .split(' ')
+                .map((tag, index) => (
+                  <Badge
+                    key={index}
+                    variant="outline"
+                    className="border-gray-300 text-gray-700 hover:bg-gray-100"
+                  >
+                    {tag}
+                  </Badge>
+                ))}
           </div>
         </div>
       </div>

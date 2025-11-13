@@ -77,7 +77,7 @@ import * as LenovoGetStartedCard from 'components/lenovo/GetStartedCard';
 import * as LenovoHeroSection from 'components/lenovo/HeroSection';
 import * as LenovoLoginForm from 'components/lenovo/LoginForm';
 import * as LenovoMyProgressCard from 'components/lenovo/MyProgressCard';
-import * as LenovoNavbar from 'components/lenovo/Navbar';
+import * as LenovoNavBar from 'components/lenovo/NavBar';
 import * as LenovoPSREFBanner from 'components/lenovo/PSREFBanner';
 import * as LenovoPageHeader from 'components/lenovo/PageHeader';
 import * as LenovoProductBrandTabs from 'components/lenovo/ProductBrandTabs';
@@ -100,6 +100,7 @@ import * as LenovoToolCard from 'components/lenovo/ToolCard';
 import * as LenovoTrainingStatsCards from 'components/lenovo/TrainingStatsCards';
 import * as LenovoUpcomingEventsCard from 'components/lenovo/UpcomingEventsCard';
 import * as LenovoVideoThumbnail from 'components/lenovo/VideoThumbnail';
+import * as LenovoDealRegistrationTabs from 'components/lenovo/DealRegistrationTabs';
 
 // Map of component names to components
 
@@ -182,7 +183,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['LenovoHeroSection', LenovoHeroSection],
   ['LenovoLoginForm', LenovoLoginForm],
   ['LenovoMyProgressCard', LenovoMyProgressCard],
-  ['LenovoNavbar', LenovoNavbar],
+  ['LenovoNavBar', LenovoNavBar],
   ['LenovoPSREFBanner', LenovoPSREFBanner],
   ['LenovoPageHeader', LenovoPageHeader],
   ['LenovoProductBrandTabs', LenovoProductBrandTabs],
@@ -204,7 +205,8 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['LenovoToolCard', LenovoToolCard],
   ['LenovoTrainingStatsCards', LenovoTrainingStatsCards],
   ['LenovoUpcomingEventsCard', LenovoUpcomingEventsCard],
-  ['LenovoVideoThumbnail', LenovoVideoThumbnail]
+  ['LenovoVideoThumbnail', LenovoVideoThumbnail],
+  ['LenovoDealRegistrationTabs', LenovoDealRegistrationTabs],
 ]);
 
 export default componentMap;

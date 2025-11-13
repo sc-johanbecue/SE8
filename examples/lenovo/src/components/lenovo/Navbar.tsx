@@ -279,5 +279,3 @@ async function NavbarUserSection({ fields, page }: { fields: Fields; page: Page 
     </Button>
   );
 }
-
-export default Default;

@@ -22,23 +22,16 @@ type ComponentProps = {
   fields: Fields;
 };
 
-const defaultFields: Fields = {
-  Icon: { value: { src: '/icons/building.svg', alt: 'Building Icon' } },
-  IconColor: { value: 'text-[#E2231A]' },
-  Value: { value: '10K+' },
-  Label: { value: 'Active Partners' },
-};
-
 export const Default = (props: ComponentProps): JSX.Element => {
   const id = props.rendering.uid;
-  const fields = props.fields || defaultFields;
+  const fields = props.fields;
 
   return (
     <Card key={id}>
       <CardContent className="pt-6">
         <div className="flex items-center gap-4">
-          <div className={`p-3 bg-[#E2231A]/10 rounded-lg`}>
-            <Image field={fields.Icon} className="h-6 w-6" />
+          <div className={`p-3 rounded-lg flex items-center justify-center`}>
+            <Image field={fields.Icon} className="h-15 w-15" />
           </div>
           <div>
             <p className="text-3xl font-bold">

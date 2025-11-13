@@ -1,13 +1,13 @@
-import type { JSX } from 'react';
+import { JSX } from 'react';
 import {
-  type TextField,
+  TextField,
   Text,
-  type RichTextField,
+  RichTextField,
   RichText,
-  type LinkField,
+  LinkField,
   Link as SitecoreLink,
-  type ComponentParams,
-  type ComponentRendering,
+  ComponentParams,
+  ComponentRendering,
 } from '@sitecore-content-sdk/nextjs';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -23,27 +23,15 @@ type Fields = {
 };
 
 type ComponentProps = {
-  rendering?: ComponentRendering & { params: ComponentParams };
-  params?: ComponentParams;
-  fields?: Fields;
+  rendering: ComponentRendering & { params: ComponentParams };
+  params: ComponentParams;
+  fields: Fields;
 };
 
-const defaultFields: Fields = {
-  Heading: { value: 'Focus on delivering outcomes' },
-  Description: {
-    value:
-      '<p>Maximize your revenue, efficiency and customer value with Lenovo 360 Solutions Hub</p>',
-  },
-  PrimaryButtonText: { value: 'Get Started' },
-  PrimaryButtonLink: { value: { href: '/login', text: 'Get Started' } },
-  SecondaryButtonText: { value: 'Explore Solutions' },
-  SecondaryButtonLink: { value: { href: '/solutions', text: 'Explore Solutions' } },
-};
-
-export default function HeroSection(props?: ComponentProps): JSX.Element {
-  const id = props?.rendering?.uid || 'hero-section';
-  const fields = props?.fields || defaultFields;
-  const isSitecoreContext = !!props?.rendering;
+export default function HeroSection(props: ComponentProps): JSX.Element {
+  const id = props.rendering?.uid;
+  const fields = props.fields;
+  const isSitecoreContext = !!props.rendering;
 
   return (
     <section

@@ -1,21 +1,26 @@
-'use client';
-
 import type React from 'react';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { login } from '@/lib/auth';
-import type { TextField, ComponentParams, ComponentRendering } from '@sitecore-content-sdk/nextjs';
-import { Text } from '@sitecore-content-sdk/nextjs';
+import {
+  TextField,
+  RichTextField,
+  RichText,
+  Text,
+  LinkField,
+  Link as JssLink,
+  ComponentParams,
+  ComponentRendering,
+} from '@sitecore-content-sdk/nextjs';
 
 type Fields = {
   Title: TextField;
-  Description: TextField;
+  Description: RichTextField;
   LogoText: TextField;
   UsernameLabel: TextField;
   UsernamePlaceholder: TextField;
@@ -23,12 +28,9 @@ type Fields = {
   PasswordPlaceholder: TextField;
   SubmitButtonText: TextField;
   SubmitButtonLoadingText: TextField;
-  DemoCredentialsTitle: TextField;
-  DemoCredential1: TextField;
-  DemoCredential2: TextField;
   BackToHomeText: TextField;
-  BackToHomeHref: TextField;
-  RedirectPath: TextField;
+  BackToHomeLink: LinkField;
+  RedirectLink: LinkField;
 };
 
 type ComponentProps = {
@@ -37,27 +39,9 @@ type ComponentProps = {
   fields: Fields;
 };
 
-const defaultFields: Fields = {
-  Title: { value: 'Partner Portal Login' },
-  Description: { value: 'Enter your credentials to access the partner hub' },
-  LogoText: { value: 'Lenovo' },
-  UsernameLabel: { value: 'Username' },
-  UsernamePlaceholder: { value: 'demo1 or demo2' },
-  PasswordLabel: { value: 'Password' },
-  PasswordPlaceholder: { value: 'demo1 or demo2' },
-  SubmitButtonText: { value: 'Sign In' },
-  SubmitButtonLoadingText: { value: 'Signing in...' },
-  DemoCredentialsTitle: { value: 'Demo Credentials:' },
-  DemoCredential1: { value: 'Username: demo1 / Password: demo1' },
-  DemoCredential2: { value: 'Username: demo2 / Password: demo2' },
-  BackToHomeText: { value: 'Back to Home' },
-  BackToHomeHref: { value: '/' },
-  RedirectPath: { value: '/dashboard' },
-};
-
 export const Default = (props: ComponentProps) => {
   const id = props.rendering.uid;
-  const fields = props.fields || defaultFields;
+  const fields = props.fields;
   const router = useRouter();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -72,7 +56,7 @@ export const Default = (props: ComponentProps) => {
     const result = await login(username, password);
 
     if (result.success) {
-      const redirectPath = (fields.RedirectPath?.value as string) || '/dashboard';
+      const redirectPath = fields.RedirectLink.value.href as string;
       router.push(redirectPath);
       router.refresh();
     } else {
@@ -86,7 +70,7 @@ export const Default = (props: ComponentProps) => {
       key={id}
       className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4"
     >
-      <Card className="w-full max-w-md">
+      <Card className="w-full max-w-md bg-[#FFFFFF]">
         <CardHeader className="space-y-1">
           <div className="flex justify-center mb-4">
             <div className="bg-[#E2231A] px-6 py-2 text-white font-bold text-2xl">
@@ -97,7 +81,7 @@ export const Default = (props: ComponentProps) => {
             <Text field={fields.Title} />
           </CardTitle>
           <CardDescription className="text-center">
-            <Text field={fields.Description} />
+            <RichText field={fields.Description} />
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -143,25 +127,10 @@ export const Default = (props: ComponentProps) => {
               {isLoading ? fields.SubmitButtonLoadingText?.value : fields.SubmitButtonText?.value}
             </Button>
 
-            <div className="text-sm text-center text-muted-foreground">
-              <p className="mb-2">
-                <Text field={fields.DemoCredentialsTitle} />
-              </p>
-              <p>
-                <Text field={fields.DemoCredential1} />
-              </p>
-              <p>
-                <Text field={fields.DemoCredential2} />
-              </p>
-            </div>
-
             <div className="text-center text-sm">
-              <Link
-                href={(fields.BackToHomeHref?.value as string) || '/'}
-                className="text-[#E2231A] hover:underline"
-              >
+              <JssLink field={fields.BackToHomeLink} className="text-[#E2231A] hover:underline">
                 <Text field={fields.BackToHomeText} />
-              </Link>
+              </JssLink>
             </div>
           </form>
         </CardContent>

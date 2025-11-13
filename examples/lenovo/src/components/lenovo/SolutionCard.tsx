@@ -2,10 +2,12 @@ import type { JSX } from 'react';
 import {
   type TextField,
   Text,
+  RichText,
+  type RichTextField,
   type ImageField,
-  Image,
+  Image as JssImage,
   type LinkField,
-  Link,
+  Link as JssLink,
   type ComponentParams,
   type ComponentRendering,
 } from '@sitecore-content-sdk/nextjs';
@@ -16,7 +18,7 @@ import { ArrowRight } from 'lucide-react';
 type Fields = {
   BackgroundImage: ImageField;
   Title: TextField;
-  Description: TextField;
+  Description: RichTextField;
   Badge: TextField;
   ButtonText: TextField;
   ButtonLink: LinkField;
@@ -30,41 +32,28 @@ type ComponentProps = {
   fields: Fields;
 };
 
-const defaultFields: Fields = {
-  BackgroundImage: { value: { src: '/digital-workspace.jpg', alt: 'Digital Workplace' } },
-  Title: { value: 'Digital Workplace' },
-  Description: { value: 'Modern workplace solutions for hybrid work environments' },
-  Badge: { value: 'Lenovo' },
-  ButtonText: { value: 'View solutions' },
-  ButtonLink: { value: { href: '/solutions/digital-workplace', text: 'View solutions' } },
-  GradientFrom: { value: 'from-blue-500' },
-  GradientTo: { value: 'to-cyan-500' },
-};
-
 export const Default = (props: ComponentProps): JSX.Element => {
   const id = props.rendering.uid;
-  const fields = props.fields || defaultFields;
+  const fields = props.fields;
 
   return (
-    <Card key={id} className="group hover:shadow-lg transition-shadow">
-      <div
-        className={`aspect-video bg-gradient-to-br ${fields.GradientFrom.value} ${fields.GradientTo.value} relative overflow-hidden`}
-      >
-        <div className="absolute inset-0 opacity-20">
-          <Image field={fields.BackgroundImage} className="w-full h-full object-cover" />
+    <Card key={id} className="group hover:shadow-lg transition-shadow  flex flex-col h-full">
+      <div className={`aspect-video relative overflow-hidden`}>
+        <div className="absolute inset-0">
+          <JssImage field={fields.BackgroundImage} className="w-full h-full object-cover" />
         </div>
       </div>
-      <CardHeader>
-        <div className="flex items-center justify-between">
+      <CardHeader className="flex-grow">
+        <div className="flex items-start justify-between gap-2 mb-2">
           <CardTitle>
             <Text field={fields.Title} />
           </CardTitle>
-          <span className="text-xs bg-[#E2231A] text-white px-2 py-1 rounded">
+          <span className="text-xs bg-[#E2231A] text-white px-2 py-1 rounded flex-shrink-0">
             <Text field={fields.Badge} />
           </span>
         </div>
         <CardDescription>
-          <Text field={fields.Description} />
+          <RichText field={fields.Description} />
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -73,9 +62,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
           className="w-full group-hover:bg-[#E2231A] group-hover:text-white group-hover:border-[#E2231A] bg-transparent"
           asChild
         >
-          <Link field={fields.ButtonLink}>
+          <JssLink field={fields.ButtonLink}>
             <Text field={fields.ButtonText} /> <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
+          </JssLink>
         </Button>
       </CardContent>
     </Card>

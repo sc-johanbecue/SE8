@@ -204,7 +204,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['LenovoToolCard', LenovoToolCard],
   ['LenovoTrainingStatsCards', LenovoTrainingStatsCards],
   ['LenovoUpcomingEventsCard', LenovoUpcomingEventsCard],
-  ['LenovoVideoThumbnail', LenovoVideoThumbnail],
+  ['LenovoVideoThumbnail', LenovoVideoThumbnail]
 ]);
 
 export default componentMap;

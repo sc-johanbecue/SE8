@@ -4,6 +4,7 @@ import {
   type TextField,
   Text,
   type LinkField,
+  Link as JssLink,
   type ComponentParams,
   type ComponentRendering,
   useSitecore,
@@ -19,7 +20,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import NextLink from 'next/link';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { useState, useEffect } from 'react';
 
@@ -96,14 +96,14 @@ export const Default = (props: ComponentProps): JSX.Element => {
   return (
     <header key={id} className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex h-16 items-center gap-4 px-4">
-        <NextLink href={fields.HomeLink.value?.href || '/'} className="flex items-center gap-2">
+        <JssLink field={fields.HomeLink} className="flex items-center gap-2">
           <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg">
-            {isInSitecore ? <Text field={fields.LogoText} /> : fields.LogoText.value}
+            <Text field={fields.LogoText} />
           </div>
           <span className="font-semibold text-sm hidden sm:inline">
-            {isInSitecore ? <Text field={fields.SubtitleText} /> : fields.SubtitleText.value}
+            <Text field={fields.SubtitleText} />
           </span>
-        </NextLink>
+        </JssLink>
 
         <Sheet>
           <SheetTrigger asChild className="md:hidden">
@@ -116,96 +116,74 @@ export const Default = (props: ComponentProps): JSX.Element => {
               <SheetTitle>
                 <div className="flex items-center gap-2">
                   <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg">
-                    {isInSitecore ? <Text field={fields.LogoText} /> : fields.LogoText.value}
+                    <Text field={fields.LogoText} />
                   </div>
                   <span className="font-semibold text-sm">
-                    {isInSitecore ? (
-                      <Text field={fields.SubtitleText} />
-                    ) : (
-                      fields.SubtitleText.value
-                    )}
+                    <Text field={fields.SubtitleText} />
                   </span>
                 </div>
               </SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-4 mt-8 pl-4">
-              <NextLink
-                href={fields.HomeLink.value?.href || '/'}
+              <JssLink
+                field={fields.HomeLink}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {isInSitecore ? <Text field={fields.HomeText} /> : fields.HomeText.value}
-              </NextLink>
-              <NextLink
-                href={fields.ProductsLink.value?.href || '/products'}
+                <Text field={fields.HomeText} />
+              </JssLink>
+              <JssLink
+                field={fields.ProductsLink}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {isInSitecore ? <Text field={fields.ProductsText} /> : fields.ProductsText.value}
-              </NextLink>
-              <NextLink
-                href={fields.DashboardLink.value?.href || '/dashboard'}
+                <Text field={fields.ProductsText} />
+              </JssLink>
+              <JssLink
+                field={fields.DashboardLink}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {isInSitecore ? <Text field={fields.DashboardText} /> : fields.DashboardText.value}
-              </NextLink>
-              <NextLink
-                href={fields.DealsLink.value?.href || '/deals'}
+                <Text field={fields.DashboardText} />
+              </JssLink>
+              <JssLink
+                field={fields.DealsLink}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {isInSitecore ? <Text field={fields.DealsText} /> : fields.DealsText.value}
-              </NextLink>
-              <NextLink
-                href={fields.SolutionsLink.value?.href || '/solutions'}
+                <Text field={fields.DealsText} />
+              </JssLink>
+              <JssLink
+                field={fields.SolutionsLink}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {isInSitecore ? <Text field={fields.SolutionsText} /> : fields.SolutionsText.value}
-              </NextLink>
-              <NextLink
-                href={fields.TrainingLink.value?.href || '/training'}
+                <Text field={fields.SolutionsText} />
+              </JssLink>
+              <JssLink
+                field={fields.TrainingLink}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {isInSitecore ? <Text field={fields.TrainingText} /> : fields.TrainingText.value}
-              </NextLink>
+                <Text field={fields.TrainingText} />
+              </JssLink>
             </nav>
           </SheetContent>
         </Sheet>
 
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium ml-6">
-          <NextLink
-            href={fields.HomeLink.value?.href || '/'}
-            className="hover:text-[#E2231A] transition-colors"
-          >
-            {isInSitecore ? <Text field={fields.HomeText} /> : fields.HomeText.value}
-          </NextLink>
-          <NextLink
-            href={fields.ProductsLink.value?.href || '/products'}
-            className="hover:text-[#E2231A] transition-colors"
-          >
-            {isInSitecore ? <Text field={fields.ProductsText} /> : fields.ProductsText.value}
-          </NextLink>
-          <NextLink
-            href={fields.DashboardLink.value?.href || '/dashboard'}
-            className="hover:text-[#E2231A] transition-colors"
-          >
-            {isInSitecore ? <Text field={fields.DashboardText} /> : fields.DashboardText.value}
-          </NextLink>
-          <NextLink
-            href={fields.DealsLink.value?.href || '/deals'}
-            className="hover:text-[#E2231A] transition-colors"
-          >
-            {isInSitecore ? <Text field={fields.DealsText} /> : fields.DealsText.value}
-          </NextLink>
-          <NextLink
-            href={fields.SolutionsLink.value?.href || '/solutions'}
-            className="hover:text-[#E2231A] transition-colors"
-          >
-            {isInSitecore ? <Text field={fields.SolutionsText} /> : fields.SolutionsText.value}
-          </NextLink>
-          <NextLink
-            href={fields.TrainingLink.value?.href || '/training'}
-            className="hover:text-[#E2231A] transition-colors"
-          >
-            {isInSitecore ? <Text field={fields.TrainingText} /> : fields.TrainingText.value}
-          </NextLink>
+          <JssLink field={fields.HomeLink} className="hover:text-[#E2231A] transition-colors">
+            <Text field={fields.HomeText} />
+          </JssLink>
+          <JssLink field={fields.ProductsLink} className="hover:text-[#E2231A] transition-colors">
+            <Text field={fields.ProductsText} />
+          </JssLink>
+          <JssLink field={fields.DashboardLink} className="hover:text-[#E2231A] transition-colors">
+            <Text field={fields.DashboardText} />
+          </JssLink>
+          <JssLink field={fields.DealsLink} className="hover:text-[#E2231A] transition-colors">
+            <Text field={fields.DealsText} />
+          </JssLink>
+          <JssLink field={fields.SolutionsLink} className="hover:text-[#E2231A] transition-colors">
+            <Text field={fields.SolutionsText} />
+          </JssLink>
+          <JssLink field={fields.TrainingLink} className="hover:text-[#E2231A] transition-colors">
+            <Text field={fields.TrainingText} />
+          </JssLink>
         </nav>
 
         <div className="flex-1 max-w-sm mx-4 hidden lg:block">
@@ -258,16 +236,16 @@ export const Default = (props: ComponentProps): JSX.Element => {
                   </DropdownMenuLabel>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem onClick={handleLogout}>
-                    {isInSitecore ? <Text field={fields.SignOutText} /> : fields.SignOutText.value}
+                    <Text field={fields.SignOutText} />
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
             </>
           ) : (
             <Button asChild className="bg-[#E2231A] hover:bg-[#C11D15]">
-              <NextLink href={fields.SignInLink.value?.href || '/login'}>
-                {isInSitecore ? <Text field={fields.SignInText} /> : fields.SignInText.value}
-              </NextLink>
+              <JssLink field={fields.SignInLink}>
+                <Text field={fields.SignInText} />
+              </JssLink>
             </Button>
           )}
         </div>

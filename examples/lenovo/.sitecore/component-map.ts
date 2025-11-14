@@ -77,7 +77,6 @@ import * as LenovoGetStartedCard from 'components/lenovo/GetStartedCard';
 import * as LenovoHeroSection from 'components/lenovo/HeroSection';
 import * as LenovoLoginForm from 'components/lenovo/LoginForm';
 import * as LenovoMyProgressCard from 'components/lenovo/MyProgressCard';
-import * as LenovoNavBar from 'components/lenovo/NavBar';
 import * as LenovoPSREFBanner from 'components/lenovo/PSREFBanner';
 import * as LenovoPageHeader from 'components/lenovo/PageHeader';
 import * as LenovoProductBrandTabs from 'components/lenovo/ProductBrandTabs';
@@ -104,6 +103,7 @@ import * as LenovoVideoThumbnail from 'components/lenovo/VideoThumbnail';
 import * as LenovoDealRegistrationTabs from 'components/lenovo/DealRegistrationTabs';
 import * as LenovoSolutionKeyFeatures from 'components/lenovo/SolutionKeyFeatures';
 import * as LenovoSolutionBenefits from 'components/lenovo/SolutionBenefits';
+import * as LenovoNavBar from 'components/lenovo/NavBar';
 
 // Map of component names to components
 

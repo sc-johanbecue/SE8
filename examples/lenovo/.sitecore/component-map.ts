@@ -103,7 +103,7 @@ import * as LenovoVideoThumbnail from 'components/lenovo/VideoThumbnail';
 import * as LenovoDealRegistrationTabs from 'components/lenovo/DealRegistrationTabs';
 import * as LenovoSolutionKeyFeatures from 'components/lenovo/SolutionKeyFeatures';
 import * as LenovoSolutionBenefits from 'components/lenovo/SolutionBenefits';
-import * as LenovoNavBar from 'components/lenovo/NavBar';
+import * as LenovoNavBar from 'components/lenovo/NavigationBar';
 
 // Map of component names to components
 

@@ -1,3 +1,4 @@
+'use client';
 import type { JSX } from 'react';
 import {
   type TextField,
@@ -6,11 +7,21 @@ import {
   type ComponentParams,
   type ComponentRendering,
 } from '@sitecore-content-sdk/nextjs';
-import { Search, Menu } from 'lucide-react';
+import { Search, Bell, User, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+import { logout } from '@/lib/auth';
 import NextLink from 'next/link';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { useState, useEffect } from 'react';
 
 type Fields = {
   LogoText: TextField;
@@ -72,12 +83,20 @@ const defaultFields: Fields = {
   CompanyPlaceholder: { value: '#company#' },
 };
 
-export const Default = async (props?: ComponentProps): Promise<JSX.Element> => {
+export const Default = (props?: ComponentProps): JSX.Element => {
   const id = props?.rendering?.uid || 'navbar';
   const fields = defaultFields; //props?.fields ||
   const isInSitecore = !!props?.rendering;
 
-  // const user = await getCurrentUser();
+  const [user, setUser] = useState<{ name: string; company: string } | null>(null);
+
+  useEffect(() => {
+    // Fetch user data on client side
+    fetch('/api/user')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => setUser(data))
+      .catch(() => setUser(null));
+  }, []);
 
   return (
     <header key={id} className="sticky top-0 z-50 w-full border-b bg-white">
@@ -206,11 +225,81 @@ export const Default = async (props?: ComponentProps): Promise<JSX.Element> => {
         </div>
 
         <div className="flex items-center gap-2 ml-auto">
-          <Button asChild className="bg-[#E2231A] hover:bg-[#C11D15]">
-            <NextLink href={fields.SignInLink.value?.href || '/login'}>
-              {isInSitecore ? <Text field={fields.SignInText} /> : fields.SignInText.value}
-            </NextLink>
-          </Button>
+          {user ? (
+            <>
+              <Button variant="ghost" size="icon">
+                <Bell className="h-5 w-5" />
+              </Button>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <User className="h-5 w-5" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  <DropdownMenuLabel>
+                    <div className="flex flex-col">
+                      {isInSitecore ? (
+                        <>
+                          <span>
+                            <Text field={fields.FirstnamePlaceholder} />{' '}
+                            <Text field={fields.LastnamePlaceholder} />
+                          </span>
+                          <span className="text-xs text-muted-foreground font-normal">
+                            <Text field={fields.CompanyPlaceholder} />
+                          </span>
+                        </>
+                      ) : (
+                        <>
+                          <span>{user.name}</span>
+                          <span className="text-xs text-muted-foreground font-normal">
+                            {user.company}
+                          </span>
+                        </>
+                      )}
+                    </div>
+                  </DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem asChild>
+                    <NextLink href="/profile">
+                      {isInSitecore ? (
+                        <Text field={fields.ProfileText} />
+                      ) : (
+                        fields.ProfileText.value
+                      )}
+                    </NextLink>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <NextLink href="/settings">
+                      {isInSitecore ? (
+                        <Text field={fields.SettingsText} />
+                      ) : (
+                        fields.SettingsText.value
+                      )}
+                    </NextLink>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem asChild>
+                    <form action={logout}>
+                      <button type="submit" className="w-full text-left">
+                        {isInSitecore ? (
+                          <Text field={fields.SignOutText} />
+                        ) : (
+                          fields.SignOutText.value
+                        )}
+                      </button>
+                    </form>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </>
+          ) : (
+            <Button asChild className="bg-[#E2231A] hover:bg-[#C11D15]">
+              <NextLink href={fields.SignInLink.value?.href || '/login'}>
+                {isInSitecore ? <Text field={fields.SignInText} /> : fields.SignInText.value}
+              </NextLink>
+            </Button>
+          )}
         </div>
       </div>
     </header>

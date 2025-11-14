@@ -83,7 +83,7 @@ export const Default = (props: ComponentProps) => {
         const redirectPath = fields.RedirectLink.value.href as string;
         console.log('[v0] Login successful, redirecting to:', redirectPath);
         router.push(redirectPath);
-        router.refresh();
+        //router.refresh();
       } else {
         console.log('[v0] Login failed:', result.error);
         setError(result.error || 'Login failed');

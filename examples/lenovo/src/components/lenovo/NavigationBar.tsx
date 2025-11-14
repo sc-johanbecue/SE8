@@ -6,6 +6,7 @@ import {
   type LinkField,
   type ComponentParams,
   type ComponentRendering,
+  useSitecore,
 } from '@sitecore-content-sdk/nextjs';
 import { Search, Bell, User, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -86,7 +87,7 @@ const defaultFields: Fields = {
 export const Default = (props: ComponentProps): JSX.Element => {
   const id = props.rendering?.uid;
   const fields = defaultFields; //props?.fields ||
-  const isInSitecore = !!props.rendering;
+  const { page } = useSitecore();
 
   const [user, setUser] = useState<{ name: string; company: string } | null>(null);
 
@@ -103,10 +104,10 @@ export const Default = (props: ComponentProps): JSX.Element => {
       <div className="container flex h-16 items-center gap-4 px-4">
         <NextLink href={fields.HomeLink.value?.href || '/'} className="flex items-center gap-2">
           <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg">
-            {isInSitecore ? <Text field={fields.LogoText} /> : fields.LogoText.value}
+            {page.mode.isEditing ? <Text field={fields.LogoText} /> : fields.LogoText.value}
           </div>
           <span className="font-semibold text-sm hidden sm:inline">
-            {isInSitecore ? <Text field={fields.SubtitleText} /> : fields.SubtitleText.value}
+            {page.mode.isEditing ? <Text field={fields.SubtitleText} /> : fields.SubtitleText.value}
           </span>
         </NextLink>
 
@@ -115,37 +116,37 @@ export const Default = (props: ComponentProps): JSX.Element => {
             href={fields.HomeLink.value?.href || '/'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            {isInSitecore ? <Text field={fields.HomeText} /> : fields.HomeText.value}
+            {page.mode.isEditing ? <Text field={fields.HomeText} /> : fields.HomeText.value}
           </NextLink>
           <NextLink
             href={fields.ProductsLink.value?.href || '/products'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            {isInSitecore ? <Text field={fields.ProductsText} /> : fields.ProductsText.value}
+            {page.mode.isEditing ? <Text field={fields.ProductsText} /> : fields.ProductsText.value}
           </NextLink>
           <NextLink
             href={fields.DashboardLink.value?.href || '/dashboard'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            {isInSitecore ? <Text field={fields.DashboardText} /> : fields.DashboardText.value}
+            {page.mode.isEditing ? <Text field={fields.DashboardText} /> : fields.DashboardText.value}
           </NextLink>
           <NextLink
             href={fields.DealsLink.value?.href || '/deals'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            {isInSitecore ? <Text field={fields.DealsText} /> : fields.DealsText.value}
+            {page.mode.isEditing ? <Text field={fields.DealsText} /> : fields.DealsText.value}
           </NextLink>
           <NextLink
             href={fields.SolutionsLink.value?.href || '/solutions'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            {isInSitecore ? <Text field={fields.SolutionsText} /> : fields.SolutionsText.value}
+            {page.mode.isEditing ? <Text field={fields.SolutionsText} /> : fields.SolutionsText.value}
           </NextLink>
           <NextLink
             href={fields.TrainingLink.value?.href || '/training'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            {isInSitecore ? <Text field={fields.TrainingText} /> : fields.TrainingText.value}
+            {page.mode.isEditing ? <Text field={fields.TrainingText} /> : fields.TrainingText.value}
           </NextLink>
         </nav>
 
@@ -175,7 +176,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
                 <DropdownMenuContent align="end">
                   <DropdownMenuLabel>
                     <div className="flex flex-col">
-                      {isInSitecore ? (
+                      {page.mode.isEditing ? (
                         <>
                           <span>
                             <Text field={fields.FirstnamePlaceholder} />{' '}
@@ -198,7 +199,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
                   <DropdownMenuSeparator />
                   <DropdownMenuItem asChild>
                     <NextLink href="/profile">
-                      {isInSitecore ? (
+                      {page.mode.isEditing ? (
                         <Text field={fields.ProfileText} />
                       ) : (
                         fields.ProfileText.value
@@ -207,7 +208,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <NextLink href="/settings">
-                      {isInSitecore ? (
+                      {page.mode.isEditing ? (
                         <Text field={fields.SettingsText} />
                       ) : (
                         fields.SettingsText.value
@@ -218,7 +219,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
                   <DropdownMenuItem asChild>
                     <form action={logout}>
                       <button type="submit" className="w-full text-left">
-                        {isInSitecore ? (
+                        {page.mode.isEditing ? (
                           <Text field={fields.SignOutText} />
                         ) : (
                           fields.SignOutText.value
@@ -232,7 +233,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
           ) : (
             <Button asChild className="bg-[#E2231A] hover:bg-[#C11D15]">
               <NextLink href={fields.SignInLink.value?.href || '/login'}>
-                {isInSitecore ? <Text field={fields.SignInText} /> : fields.SignInText.value}
+                {page.mode.isEditing ? <Text field={fields.SignInText} /> : fields.SignInText.value}
               </NextLink>
             </Button>
           )}
@@ -249,10 +250,10 @@ export const Default = (props: ComponentProps): JSX.Element => {
               <SheetTitle>
                 <div className="flex items-center gap-2">
                   <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg">
-                    {isInSitecore ? <Text field={fields.LogoText} /> : fields.LogoText.value}
+                    {page.mode.isEditing ? <Text field={fields.LogoText} /> : fields.LogoText.value}
                   </div>
                   <span className="font-semibold text-sm">
-                    {isInSitecore ? (
+                    {page.mode.isEditing ? (
                       <Text field={fields.SubtitleText} />
                     ) : (
                       fields.SubtitleText.value
@@ -266,37 +267,37 @@ export const Default = (props: ComponentProps): JSX.Element => {
                 href={fields.HomeLink.value?.href || '/'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {isInSitecore ? <Text field={fields.HomeText} /> : fields.HomeText.value}
+                {page.mode.isEditing ? <Text field={fields.HomeText} /> : fields.HomeText.value}
               </NextLink>
               <NextLink
                 href={fields.ProductsLink.value?.href || '/products'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {isInSitecore ? <Text field={fields.ProductsText} /> : fields.ProductsText.value}
+                {page.mode.isEditing ? <Text field={fields.ProductsText} /> : fields.ProductsText.value}
               </NextLink>
               <NextLink
                 href={fields.DashboardLink.value?.href || '/dashboard'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {isInSitecore ? <Text field={fields.DashboardText} /> : fields.DashboardText.value}
+                {page.mode.isEditing ? <Text field={fields.DashboardText} /> : fields.DashboardText.value}
               </NextLink>
               <NextLink
                 href={fields.DealsLink.value?.href || '/deals'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {isInSitecore ? <Text field={fields.DealsText} /> : fields.DealsText.value}
+                {page.mode.isEditing ? <Text field={fields.DealsText} /> : fields.DealsText.value}
               </NextLink>
               <NextLink
                 href={fields.SolutionsLink.value?.href || '/solutions'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {isInSitecore ? <Text field={fields.SolutionsText} /> : fields.SolutionsText.value}
+                {page.mode.isEditing ? <Text field={fields.SolutionsText} /> : fields.SolutionsText.value}
               </NextLink>
               <NextLink
                 href={fields.TrainingLink.value?.href || '/training'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {isInSitecore ? <Text field={fields.TrainingText} /> : fields.TrainingText.value}
+                {page.mode.isEditing ? <Text field={fields.TrainingText} /> : fields.TrainingText.value}
               </NextLink>
             </nav>
           </SheetContent>

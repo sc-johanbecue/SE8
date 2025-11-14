@@ -1,109 +1,61 @@
-import Link from 'next/link';
+import type { JSX } from 'react';
+import {
+  type TextField,
+  Text,
+  type ComponentParams,
+  type ComponentRendering,
+  Placeholder,
+  RichTextField,
+  RichText,
+} from '@sitecore-content-sdk/nextjs';
 
-export function Footer() {
+type Fields = {
+  LogoText: TextField;
+  Description: RichTextField;
+  CopyrightText: TextField;
+};
+
+type ComponentProps = {
+  rendering: ComponentRendering & { params: ComponentParams };
+  params: ComponentParams;
+  fields: Fields;
+};
+
+export const Default = (props: ComponentProps): JSX.Element => {
+  const id = props.rendering.uid;
+  const fields = props.fields;
+  const phFooterLeftColumn = `lenovoLeftFooterColumnContainer-${props.params.DynamicPlaceholderId}`;
+  const phFooterMiddleColumn = `lenovoMiddleFooterColumnContainer-${props.params.DynamicPlaceholderId}`;
+  const phFooterRightColumn = `lenovoRightFooterColumnContainer-${props.params.DynamicPlaceholderId}`;
+
   return (
-    <footer className="border-t bg-gray-50 mt-auto">
+    <footer key={id} className="border-t bg-gray-50 mt-auto">
       <div className="container py-12 px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg inline-block mb-4">
-              Lenovo
+              <Text field={fields.LogoText} />
             </div>
-            <p className="text-sm text-muted-foreground">
-              Partner Portal for accessing partner resources, tools, and solutions.
-            </p>
+            <RichText field={fields.Description} className="text-sm text-muted-foreground" />
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Products</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/products/laptops"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  Laptops
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/desktops"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  Desktops & AIOs
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/workstations"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  Workstations
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/servers"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  Servers
-                </Link>
-              </li>
-            </ul>
+            <Placeholder name={phFooterLeftColumn} rendering={props.rendering} />
           </div>
-
           <div>
-            <h3 className="font-semibold mb-4">Resources</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/support" className="text-muted-foreground hover:text-foreground">
-                  Support
-                </Link>
-              </li>
-              <li>
-                <Link href="/training" className="text-muted-foreground hover:text-foreground">
-                  Training
-                </Link>
-              </li>
-              <li>
-                <Link href="/documentation" className="text-muted-foreground hover:text-foreground">
-                  Documentation
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-muted-foreground hover:text-foreground">
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
+            <Placeholder name={phFooterMiddleColumn} rendering={props.rendering} />
           </div>
-
           <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/privacy" className="text-muted-foreground hover:text-foreground">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms" className="text-muted-foreground hover:text-foreground">
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link href="/cookies" className="text-muted-foreground hover:text-foreground">
-                  Cookie Policy
-                </Link>
-              </li>
-            </ul>
+            <Placeholder name={phFooterRightColumn} rendering={props.rendering} />
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          © 2025 Lenovo. All rights reserved. Demo environment for XM Cloud.
+          <Text field={fields.CopyrightText} />
         </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Default;

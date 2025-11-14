@@ -5,21 +5,10 @@ import {
   type LinkField,
   type ComponentParams,
   type ComponentRendering,
-  useSitecore,
-  Page,
 } from '@sitecore-content-sdk/nextjs';
-import { Search, Bell, User, Menu } from 'lucide-react';
+import { Search, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
-import { getCurrentUser, logout } from '@/lib/auth';
 import NextLink from 'next/link';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 
@@ -44,6 +33,10 @@ type Fields = {
   ProfileText: TextField;
   SettingsText: TextField;
   SignOutText: TextField;
+  UsernamePlaceholder: TextField;
+  FirstnamePlaceholder: TextField;
+  LastnamePlaceholder: TextField;
+  CompanyPlaceholder: TextField;
 };
 
 type ComponentProps = {
@@ -73,25 +66,28 @@ const defaultFields: Fields = {
   ProfileText: { value: 'My Profile' },
   SettingsText: { value: 'Settings' },
   SignOutText: { value: 'Sign Out' },
+  UsernamePlaceholder: { value: '#username#' },
+  FirstnamePlaceholder: { value: '#firstname#' },
+  LastnamePlaceholder: { value: '#lastname#' },
+  CompanyPlaceholder: { value: '#company#' },
 };
 
-export const Default = (props: ComponentProps): JSX.Element => {
-  const id = props.rendering?.uid || 'navbar';
-  const fields = defaultFields; //props.fields ||
-  const { page } = useSitecore();
+export const Default = async (props?: ComponentProps): Promise<JSX.Element> => {
+  const id = props?.rendering?.uid || 'navbar';
+  const fields = defaultFields; //props?.fields ||
+  const isInSitecore = !!props?.rendering;
 
-  // Since we can't use async in this component, we'll need to handle user state differently
-  // For now, we'll render a client component wrapper or use a simpler approach
+  // const user = await getCurrentUser();
 
   return (
     <header key={id} className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex h-16 items-center gap-4 px-4">
         <NextLink href={fields.HomeLink.value?.href || '/'} className="flex items-center gap-2">
           <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg">
-            <Text field={fields.LogoText} />
+            {isInSitecore ? <Text field={fields.LogoText} /> : fields.LogoText.value}
           </div>
           <span className="font-semibold text-sm hidden sm:inline">
-            <Text field={fields.SubtitleText} />
+            {isInSitecore ? <Text field={fields.SubtitleText} /> : fields.SubtitleText.value}
           </span>
         </NextLink>
 
@@ -106,10 +102,14 @@ export const Default = (props: ComponentProps): JSX.Element => {
               <SheetTitle>
                 <div className="flex items-center gap-2">
                   <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg">
-                    <Text field={fields.LogoText} />
+                    {isInSitecore ? <Text field={fields.LogoText} /> : fields.LogoText.value}
                   </div>
                   <span className="font-semibold text-sm">
-                    <Text field={fields.SubtitleText} />
+                    {isInSitecore ? (
+                      <Text field={fields.SubtitleText} />
+                    ) : (
+                      fields.SubtitleText.value
+                    )}
                   </span>
                 </div>
               </SheetTitle>
@@ -119,37 +119,37 @@ export const Default = (props: ComponentProps): JSX.Element => {
                 href={fields.HomeLink.value?.href || '/'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                <Text field={fields.HomeText} />
+                {isInSitecore ? <Text field={fields.HomeText} /> : fields.HomeText.value}
               </NextLink>
               <NextLink
                 href={fields.ProductsLink.value?.href || '/products'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                <Text field={fields.ProductsText} />
+                {isInSitecore ? <Text field={fields.ProductsText} /> : fields.ProductsText.value}
               </NextLink>
               <NextLink
                 href={fields.DashboardLink.value?.href || '/dashboard'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                <Text field={fields.DashboardText} />
+                {isInSitecore ? <Text field={fields.DashboardText} /> : fields.DashboardText.value}
               </NextLink>
               <NextLink
                 href={fields.DealsLink.value?.href || '/deals'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                <Text field={fields.DealsText} />
+                {isInSitecore ? <Text field={fields.DealsText} /> : fields.DealsText.value}
               </NextLink>
               <NextLink
                 href={fields.SolutionsLink.value?.href || '/solutions'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                <Text field={fields.SolutionsText} />
+                {isInSitecore ? <Text field={fields.SolutionsText} /> : fields.SolutionsText.value}
               </NextLink>
               <NextLink
                 href={fields.TrainingLink.value?.href || '/training'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                <Text field={fields.TrainingText} />
+                {isInSitecore ? <Text field={fields.TrainingText} /> : fields.TrainingText.value}
               </NextLink>
             </nav>
           </SheetContent>
@@ -160,37 +160,37 @@ export const Default = (props: ComponentProps): JSX.Element => {
             href={fields.HomeLink.value?.href || '/'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            <Text field={fields.HomeText} />
+            {isInSitecore ? <Text field={fields.HomeText} /> : fields.HomeText.value}
           </NextLink>
           <NextLink
             href={fields.ProductsLink.value?.href || '/products'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            <Text field={fields.ProductsText} />
+            {isInSitecore ? <Text field={fields.ProductsText} /> : fields.ProductsText.value}
           </NextLink>
           <NextLink
             href={fields.DashboardLink.value?.href || '/dashboard'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            <Text field={fields.DashboardText} />
+            {isInSitecore ? <Text field={fields.DashboardText} /> : fields.DashboardText.value}
           </NextLink>
           <NextLink
             href={fields.DealsLink.value?.href || '/deals'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            <Text field={fields.DealsText} />
+            {isInSitecore ? <Text field={fields.DealsText} /> : fields.DealsText.value}
           </NextLink>
           <NextLink
             href={fields.SolutionsLink.value?.href || '/solutions'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            <Text field={fields.SolutionsText} />
+            {isInSitecore ? <Text field={fields.SolutionsText} /> : fields.SolutionsText.value}
           </NextLink>
           <NextLink
             href={fields.TrainingLink.value?.href || '/training'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            <Text field={fields.TrainingText} />
+            {isInSitecore ? <Text field={fields.TrainingText} /> : fields.TrainingText.value}
           </NextLink>
         </nav>
 
@@ -206,76 +206,15 @@ export const Default = (props: ComponentProps): JSX.Element => {
         </div>
 
         <div className="flex items-center gap-2 ml-auto">
-          <NavbarUserSection fields={fields} page={page} />
+          <Button asChild className="bg-[#E2231A] hover:bg-[#C11D15]">
+            <NextLink href={fields.SignInLink.value?.href || '/login'}>
+              {isInSitecore ? <Text field={fields.SignInText} /> : fields.SignInText.value}
+            </NextLink>
+          </Button>
         </div>
       </div>
     </header>
   );
 };
 
-// Client component for user-dependent rendering
-async function NavbarUserSection({ fields, page }: { fields: Fields; page: Page }) {
-  let user;
-  if (page.mode.isEditing) {
-    user = {
-      username: '#username#',
-      password: '#password#',
-      name: '#Firstname# #Lastname#',
-      company: '#Company#',
-    };
-  } else {
-    user = await getCurrentUser();
-  }
-
-  if (user) {
-    return (
-      <>
-        <Button variant="ghost" size="icon">
-          <Bell className="h-5 w-5" />
-        </Button>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="ghost" size="icon">
-              <User className="h-5 w-5" />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuLabel>
-              <div className="flex flex-col">
-                <span>{user.name}</span>
-                <span className="text-xs text-muted-foreground font-normal">{user.company}</span>
-              </div>
-            </DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem asChild>
-              <NextLink href="/profile">
-                <Text field={fields.ProfileText} />
-              </NextLink>
-            </DropdownMenuItem>
-            <DropdownMenuItem asChild>
-              <NextLink href="/settings">
-                <Text field={fields.SettingsText} />
-              </NextLink>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem asChild>
-              <form action={logout}>
-                <button type="submit" className="w-full text-left">
-                  <Text field={fields.SignOutText} />
-                </button>
-              </form>
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-      </>
-    );
-  }
-
-  return (
-    <Button asChild className="bg-[#E2231A] hover:bg-[#C11D15]">
-      <NextLink href={fields.SignInLink.value?.href || '/login'}>
-        <Text field={fields.SignInText} />
-      </NextLink>
-    </Button>
-  );
-}
+export default Default;

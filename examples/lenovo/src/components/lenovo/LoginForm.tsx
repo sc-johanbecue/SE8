@@ -68,7 +68,10 @@ export const Default = (props: ComponentProps) => {
     setError('');
     setIsLoading(true);
 
+    console.log('[v0] Login form submitted', { username });
+
     try {
+      console.log('[v0] Sending login request');
       const response = await fetch('/api/auth/login', {
         method: 'POST',
         headers: {
@@ -77,17 +80,31 @@ export const Default = (props: ComponentProps) => {
         body: JSON.stringify({ username, password }),
       });
 
+      console.log('[v0] Response status:', response.status);
+
+      const contentType = response.headers.get('content-type');
+      if (!contentType || !contentType.includes('application/json')) {
+        console.error('[v0] Non-JSON response received:', await response.text());
+        setError('Server error: Invalid response format');
+        setIsLoading(false);
+        return;
+      }
+
       const result = await response.json();
+      console.log('[v0] Response result:', result);
 
       if (result.success) {
         const redirectPath = fields.RedirectPath?.value || '/dashboard';
+        console.log('[v0] Login successful, redirecting to:', redirectPath);
         router.push(redirectPath as string);
         router.refresh();
       } else {
+        console.log('[v0] Login failed:', result.error);
         setError(result.error || 'Login failed');
         setIsLoading(false);
       }
     } catch (err) {
+      console.error('[v0] Login exception:', err);
       setError('An error occurred during login');
       setIsLoading(false);
     }

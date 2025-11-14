@@ -20,7 +20,7 @@ type Solution = {
   fields: {
     Title: TextField;
     Description: RichTextField;
-    Badge: TextField;
+    Badge1: TextField;
     Link: LinkField;
     Gradient: TextField;
     BackgroundImage: ImageField;
@@ -60,7 +60,7 @@ export default function SolutionCardsGrid(props: ComponentProps): JSX.Element {
                   <Text field={solution.fields.Title} />
                 </CardTitle>
                 <span className="text-xs bg-[#E2231A] text-white px-2 py-1 rounded">
-                  <Text field={solution.fields.Badge} />
+                  <Text field={solution.fields.Badge1} />
                 </span>
               </div>
               <CardDescription>

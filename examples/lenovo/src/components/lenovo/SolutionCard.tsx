@@ -19,11 +19,9 @@ type Fields = {
   BackgroundImage: ImageField;
   Title: TextField;
   Description: RichTextField;
-  Badge: TextField;
+  Badge1: TextField;
   ButtonText: TextField;
   ButtonLink: LinkField;
-  GradientFrom: TextField;
-  GradientTo: TextField;
 };
 
 type ComponentProps = {
@@ -49,7 +47,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
             <Text field={fields.Title} />
           </CardTitle>
           <span className="text-xs bg-[#E2231A] text-white px-2 py-1 rounded flex-shrink-0">
-            <Text field={fields.Badge} />
+            <Text field={fields.Badge1} />
           </span>
         </div>
         <CardDescription>

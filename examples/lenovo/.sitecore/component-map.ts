@@ -99,8 +99,11 @@ import * as LenovoStatsSection from 'components/lenovo/StatsSection';
 import * as LenovoToolCard from 'components/lenovo/ToolCard';
 import * as LenovoTrainingStatsCards from 'components/lenovo/TrainingStatsCards';
 import * as LenovoUpcomingEventsCard from 'components/lenovo/UpcomingEventsCard';
+import * as LenovoSolutionPageHeader from 'components/lenovo/SolutionPageHeader';
 import * as LenovoVideoThumbnail from 'components/lenovo/VideoThumbnail';
 import * as LenovoDealRegistrationTabs from 'components/lenovo/DealRegistrationTabs';
+import * as LenovoSolutionKeyFeatures from 'components/lenovo/SolutionKeyFeatures';
+import * as LenovoSolutionBenefits from 'components/lenovo/SolutionBenefits';
 
 // Map of component names to components
 
@@ -207,6 +210,9 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['LenovoUpcomingEventsCard', LenovoUpcomingEventsCard],
   ['LenovoVideoThumbnail', LenovoVideoThumbnail],
   ['LenovoDealRegistrationTabs', LenovoDealRegistrationTabs],
+  ['LenovoSolutionPageHeader', LenovoSolutionPageHeader],
+  ['LenovoSolutionKeyFeatures', LenovoSolutionKeyFeatures],
+  ['LenovoSolutionBenefits', LenovoSolutionBenefits],
 ]);
 
 export default componentMap;

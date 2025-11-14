@@ -9,12 +9,18 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import type { TextField, ComponentParams, ComponentRendering } from '@sitecore-content-sdk/nextjs';
+import {
+  TextField,
+  RichTextField,
+  RichText,
+  ComponentParams,
+  ComponentRendering,
+} from '@sitecore-content-sdk/nextjs';
 import { Text } from '@sitecore-content-sdk/nextjs';
 
 type Fields = {
   Title: TextField;
-  Description: TextField;
+  Description: RichTextField;
   LogoText: TextField;
   UsernameLabel: TextField;
   UsernamePlaceholder: TextField;
@@ -22,9 +28,6 @@ type Fields = {
   PasswordPlaceholder: TextField;
   SubmitButtonText: TextField;
   SubmitButtonLoadingText: TextField;
-  DemoCredentialsTitle: TextField;
-  DemoCredential1: TextField;
-  DemoCredential2: TextField;
   BackToHomeText: TextField;
   BackToHomeHref: TextField;
   RedirectPath: TextField;
@@ -36,27 +39,9 @@ type ComponentProps = {
   fields: Fields;
 };
 
-const defaultFields: Fields = {
-  Title: { value: 'Partner Portal Login' },
-  Description: { value: 'Enter your credentials to access the partner hub' },
-  LogoText: { value: 'Lenovo' },
-  UsernameLabel: { value: 'Username' },
-  UsernamePlaceholder: { value: 'demo1 or demo2' },
-  PasswordLabel: { value: 'Password' },
-  PasswordPlaceholder: { value: 'demo1 or demo2' },
-  SubmitButtonText: { value: 'Sign In' },
-  SubmitButtonLoadingText: { value: 'Signing in...' },
-  DemoCredentialsTitle: { value: 'Demo Credentials:' },
-  DemoCredential1: { value: 'Username: demo1 / Password: demo1' },
-  DemoCredential2: { value: 'Username: demo2 / Password: demo2' },
-  BackToHomeText: { value: 'Back to Home' },
-  BackToHomeHref: { value: '/' },
-  RedirectPath: { value: '/dashboard' },
-};
-
 export const Default = (props: ComponentProps) => {
   const id = props.rendering.uid;
-  const fields = props.fields || defaultFields;
+  const fields = props.fields;
   const router = useRouter();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -126,7 +111,7 @@ export const Default = (props: ComponentProps) => {
             <Text field={fields.Title} />
           </CardTitle>
           <CardDescription className="text-center">
-            <Text field={fields.Description} />
+            <RichText field={fields.Description} />
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -171,19 +156,6 @@ export const Default = (props: ComponentProps) => {
             >
               {isLoading ? fields.SubmitButtonLoadingText?.value : fields.SubmitButtonText?.value}
             </Button>
-
-            <div className="text-sm text-center text-muted-foreground">
-              <p className="mb-2">
-                <Text field={fields.DemoCredentialsTitle} />
-              </p>
-              <p>
-                <Text field={fields.DemoCredential1} />
-              </p>
-              <p>
-                <Text field={fields.DemoCredential2} />
-              </p>
-            </div>
-
             <div className="text-center text-sm">
               <Link
                 href={(fields.BackToHomeHref?.value as string) || '/'}

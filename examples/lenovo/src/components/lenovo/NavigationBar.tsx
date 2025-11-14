@@ -6,6 +6,7 @@ import {
   type LinkField,
   type ComponentParams,
   type ComponentRendering,
+  useSitecore,
 } from '@sitecore-content-sdk/nextjs';
 import { Search, Bell, User, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -304,6 +305,3 @@ export const Default = (props: ComponentProps): JSX.Element => {
 };
 
 export default Default;
-function useSitecore(): { page: any } {
-  throw new Error('Function not implemented.');
-}

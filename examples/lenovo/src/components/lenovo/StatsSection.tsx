@@ -7,6 +7,7 @@ import {
 } from '@sitecore-content-sdk/nextjs';
 
 type Fields = {
+  Heading: TextField;
   BackgroundColor: TextField;
 };
 

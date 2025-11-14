@@ -75,7 +75,7 @@ const defaultFields: Fields = {
   SignOutText: { value: 'Sign Out' },
 };
 
-export const Default = (props: ComponentProps): JSX.Element => {
+export default function NavBar(props: ComponentProps): JSX.Element {
   const id = props.rendering?.uid || 'navbar';
   const fields = defaultFields; //props.fields ||
   const { page } = useSitecore();
@@ -211,7 +211,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
       </div>
     </header>
   );
-};
+}
 
 // Client component for user-dependent rendering
 async function NavbarUserSection({ fields, page }: { fields: Fields; page: Page }) {
@@ -279,3 +279,5 @@ async function NavbarUserSection({ fields, page }: { fields: Fields; page: Page 
     </Button>
   );
 }
+
+export const Default = NavBar;

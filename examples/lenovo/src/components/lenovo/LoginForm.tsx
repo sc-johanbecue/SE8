@@ -3,7 +3,6 @@
 import type React from 'react';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -12,9 +11,11 @@ import { Alert, AlertDescription } from '@/components/ui/alert';
 import {
   TextField,
   RichTextField,
+  Link as JssLink,
   RichText,
   ComponentParams,
   ComponentRendering,
+  LinkField,
 } from '@sitecore-content-sdk/nextjs';
 import { Text } from '@sitecore-content-sdk/nextjs';
 
@@ -29,8 +30,8 @@ type Fields = {
   SubmitButtonText: TextField;
   SubmitButtonLoadingText: TextField;
   BackToHomeText: TextField;
-  BackToHomeHref: TextField;
-  RedirectPath: TextField;
+  BackToHomeLink: LinkField;
+  RedirectLink: LinkField;
 };
 
 type ComponentProps = {
@@ -79,9 +80,9 @@ export const Default = (props: ComponentProps) => {
       console.log('[v0] Response result:', result);
 
       if (result.success) {
-        const redirectPath = fields.RedirectPath?.value || '/dashboard';
+        const redirectPath = fields.RedirectLink.value.href as string;
         console.log('[v0] Login successful, redirecting to:', redirectPath);
-        router.push(redirectPath as string);
+        router.push(redirectPath);
         router.refresh();
       } else {
         console.log('[v0] Login failed:', result.error);
@@ -157,12 +158,12 @@ export const Default = (props: ComponentProps) => {
               {isLoading ? fields.SubmitButtonLoadingText?.value : fields.SubmitButtonText?.value}
             </Button>
             <div className="text-center text-sm">
-              <Link
-                href={(fields.BackToHomeHref?.value as string) || '/'}
+              <JssLink
+                field={fields.BackToHomeLink}
                 className="text-[#E2231A] hover:underline"
               >
                 <Text field={fields.BackToHomeText} />
-              </Link>
+              </JssLink>
             </div>
           </form>
         </CardContent>

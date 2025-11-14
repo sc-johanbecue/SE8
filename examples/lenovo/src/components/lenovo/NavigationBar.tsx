@@ -128,7 +128,11 @@ export const Default = (props: ComponentProps): JSX.Element => {
             href={fields.DashboardLink.value?.href || '/dashboard'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            {page.mode.isEditing ? <Text field={fields.DashboardText} /> : fields.DashboardText.value}
+            {page.mode.isEditing ? (
+              <Text field={fields.DashboardText} />
+            ) : (
+              fields.DashboardText.value
+            )}
           </NextLink>
           <NextLink
             href={fields.DealsLink.value?.href || '/deals'}
@@ -140,7 +144,11 @@ export const Default = (props: ComponentProps): JSX.Element => {
             href={fields.SolutionsLink.value?.href || '/solutions'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            {page.mode.isEditing ? <Text field={fields.SolutionsText} /> : fields.SolutionsText.value}
+            {page.mode.isEditing ? (
+              <Text field={fields.SolutionsText} />
+            ) : (
+              fields.SolutionsText.value
+            )}
           </NextLink>
           <NextLink
             href={fields.TrainingLink.value?.href || '/training'}
@@ -273,13 +281,21 @@ export const Default = (props: ComponentProps): JSX.Element => {
                 href={fields.ProductsLink.value?.href || '/products'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {page.mode.isEditing ? <Text field={fields.ProductsText} /> : fields.ProductsText.value}
+                {page.mode.isEditing ? (
+                  <Text field={fields.ProductsText} />
+                ) : (
+                  fields.ProductsText.value
+                )}
               </NextLink>
               <NextLink
                 href={fields.DashboardLink.value?.href || '/dashboard'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {page.mode.isEditing ? <Text field={fields.DashboardText} /> : fields.DashboardText.value}
+                {page.mode.isEditing ? (
+                  <Text field={fields.DashboardText} />
+                ) : (
+                  fields.DashboardText.value
+                )}
               </NextLink>
               <NextLink
                 href={fields.DealsLink.value?.href || '/deals'}
@@ -291,13 +307,21 @@ export const Default = (props: ComponentProps): JSX.Element => {
                 href={fields.SolutionsLink.value?.href || '/solutions'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {page.mode.isEditing ? <Text field={fields.SolutionsText} /> : fields.SolutionsText.value}
+                {page.mode.isEditing ? (
+                  <Text field={fields.SolutionsText} />
+                ) : (
+                  fields.SolutionsText.value
+                )}
               </NextLink>
               <NextLink
                 href={fields.TrainingLink.value?.href || '/training'}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
-                {page.mode.isEditing ? <Text field={fields.TrainingText} /> : fields.TrainingText.value}
+                {page.mode.isEditing ? (
+                  <Text field={fields.TrainingText} />
+                ) : (
+                  fields.TrainingText.value
+                )}
               </NextLink>
             </nav>
           </SheetContent>

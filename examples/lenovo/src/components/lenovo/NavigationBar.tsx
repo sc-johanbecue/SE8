@@ -83,9 +83,9 @@ const defaultFields: Fields = {
   CompanyPlaceholder: { value: '#company#' },
 };
 
-export const Default = (props?: ComponentProps): JSX.Element => {
-  const id = props?.rendering?.uid || 'navbar';
-  const fields = props?.fields || defaultFields;
+export const Default = (props: ComponentProps): JSX.Element => {
+  const id = props.rendering.uid || 'navbar';
+  const fields = defaultFields; //props.fields ||
   const { page } = useSitecore();
   const isInSitecore = page.mode.isEditing;
 

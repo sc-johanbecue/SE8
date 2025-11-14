@@ -19,7 +19,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { logout } from '@/lib/auth';
 import NextLink from 'next/link';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { useState, useEffect } from 'react';
@@ -84,77 +83,153 @@ const defaultFields: Fields = {
   CompanyPlaceholder: { value: '#company#' },
 };
 
-export const Default = (props: ComponentProps): JSX.Element => {
-  const id = props.rendering?.uid;
-  const fields = defaultFields; //props?.fields ||
+export const Default = (props?: ComponentProps): JSX.Element => {
+  const id = props?.rendering?.uid || 'navbar';
+  const fields = props?.fields || defaultFields;
   const { page } = useSitecore();
+  const isInSitecore = page.mode.isEditing;
 
   const [user, setUser] = useState<{ name: string; company: string } | null>(null);
 
   useEffect(() => {
+    console.log('[v0] Fetching user data...');
     // Fetch user data on client side
     fetch('/api/user')
-      .then((res) => (res.ok ? res.json() : null))
-      .then((data) => setUser(data))
-      .catch(() => setUser(null));
+      .then((res) => {
+        console.log('[v0] User API response status:', res.status);
+        return res.ok ? res.json() : null;
+      })
+      .then((data) => {
+        console.log('[v0] User API data:', data);
+        setUser(data?.user || null);
+      })
+      .catch((error) => {
+        console.log('[v0] User API error:', error);
+        setUser(null);
+      });
   }, []);
+
+  const handleLogout = async () => {
+    try {
+      await fetch('/api/auth/logout', { method: 'POST' });
+      window.location.href = '/login';
+    } catch (error) {
+      console.error('Logout failed:', error);
+    }
+  };
 
   return (
     <header key={id} className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex h-16 items-center gap-4 px-4">
         <NextLink href={fields.HomeLink.value?.href || '/'} className="flex items-center gap-2">
           <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg">
-            {page.mode.isEditing ? <Text field={fields.LogoText} /> : fields.LogoText.value}
+            {isInSitecore ? <Text field={fields.LogoText} /> : fields.LogoText.value}
           </div>
           <span className="font-semibold text-sm hidden sm:inline">
-            {page.mode.isEditing ? <Text field={fields.SubtitleText} /> : fields.SubtitleText.value}
+            {isInSitecore ? <Text field={fields.SubtitleText} /> : fields.SubtitleText.value}
           </span>
         </NextLink>
+
+        <Sheet>
+          <SheetTrigger asChild className="md:hidden">
+            <Button variant="ghost" size="icon">
+              <Menu className="h-5 w-5" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left" className="w-72">
+            <SheetHeader>
+              <SheetTitle>
+                <div className="flex items-center gap-2">
+                  <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg">
+                    {isInSitecore ? <Text field={fields.LogoText} /> : fields.LogoText.value}
+                  </div>
+                  <span className="font-semibold text-sm">
+                    {isInSitecore ? (
+                      <Text field={fields.SubtitleText} />
+                    ) : (
+                      fields.SubtitleText.value
+                    )}
+                  </span>
+                </div>
+              </SheetTitle>
+            </SheetHeader>
+            <nav className="flex flex-col gap-4 mt-8 pl-4">
+              <NextLink
+                href={fields.HomeLink.value?.href || '/'}
+                className="text-lg hover:text-[#E2231A] transition-colors py-2"
+              >
+                {isInSitecore ? <Text field={fields.HomeText} /> : fields.HomeText.value}
+              </NextLink>
+              <NextLink
+                href={fields.ProductsLink.value?.href || '/products'}
+                className="text-lg hover:text-[#E2231A] transition-colors py-2"
+              >
+                {isInSitecore ? <Text field={fields.ProductsText} /> : fields.ProductsText.value}
+              </NextLink>
+              <NextLink
+                href={fields.DashboardLink.value?.href || '/dashboard'}
+                className="text-lg hover:text-[#E2231A] transition-colors py-2"
+              >
+                {isInSitecore ? <Text field={fields.DashboardText} /> : fields.DashboardText.value}
+              </NextLink>
+              <NextLink
+                href={fields.DealsLink.value?.href || '/deals'}
+                className="text-lg hover:text-[#E2231A] transition-colors py-2"
+              >
+                {isInSitecore ? <Text field={fields.DealsText} /> : fields.DealsText.value}
+              </NextLink>
+              <NextLink
+                href={fields.SolutionsLink.value?.href || '/solutions'}
+                className="text-lg hover:text-[#E2231A] transition-colors py-2"
+              >
+                {isInSitecore ? <Text field={fields.SolutionsText} /> : fields.SolutionsText.value}
+              </NextLink>
+              <NextLink
+                href={fields.TrainingLink.value?.href || '/training'}
+                className="text-lg hover:text-[#E2231A] transition-colors py-2"
+              >
+                {isInSitecore ? <Text field={fields.TrainingText} /> : fields.TrainingText.value}
+              </NextLink>
+            </nav>
+          </SheetContent>
+        </Sheet>
 
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium ml-6">
           <NextLink
             href={fields.HomeLink.value?.href || '/'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            {page.mode.isEditing ? <Text field={fields.HomeText} /> : fields.HomeText.value}
+            {isInSitecore ? <Text field={fields.HomeText} /> : fields.HomeText.value}
           </NextLink>
           <NextLink
             href={fields.ProductsLink.value?.href || '/products'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            {page.mode.isEditing ? <Text field={fields.ProductsText} /> : fields.ProductsText.value}
+            {isInSitecore ? <Text field={fields.ProductsText} /> : fields.ProductsText.value}
           </NextLink>
           <NextLink
             href={fields.DashboardLink.value?.href || '/dashboard'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            {page.mode.isEditing ? (
-              <Text field={fields.DashboardText} />
-            ) : (
-              fields.DashboardText.value
-            )}
+            {isInSitecore ? <Text field={fields.DashboardText} /> : fields.DashboardText.value}
           </NextLink>
           <NextLink
             href={fields.DealsLink.value?.href || '/deals'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            {page.mode.isEditing ? <Text field={fields.DealsText} /> : fields.DealsText.value}
+            {isInSitecore ? <Text field={fields.DealsText} /> : fields.DealsText.value}
           </NextLink>
           <NextLink
             href={fields.SolutionsLink.value?.href || '/solutions'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            {page.mode.isEditing ? (
-              <Text field={fields.SolutionsText} />
-            ) : (
-              fields.SolutionsText.value
-            )}
+            {isInSitecore ? <Text field={fields.SolutionsText} /> : fields.SolutionsText.value}
           </NextLink>
           <NextLink
             href={fields.TrainingLink.value?.href || '/training'}
             className="hover:text-[#E2231A] transition-colors"
           >
-            {page.mode.isEditing ? <Text field={fields.TrainingText} /> : fields.TrainingText.value}
+            {isInSitecore ? <Text field={fields.TrainingText} /> : fields.TrainingText.value}
           </NextLink>
         </nav>
 
@@ -184,7 +259,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
                 <DropdownMenuContent align="end">
                   <DropdownMenuLabel>
                     <div className="flex flex-col">
-                      {page.mode.isEditing ? (
+                      {isInSitecore ? (
                         <>
                           <span>
                             <Text field={fields.FirstnamePlaceholder} />{' '}
@@ -205,35 +280,8 @@ export const Default = (props: ComponentProps): JSX.Element => {
                     </div>
                   </DropdownMenuLabel>
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem asChild>
-                    <NextLink href="/profile">
-                      {page.mode.isEditing ? (
-                        <Text field={fields.ProfileText} />
-                      ) : (
-                        fields.ProfileText.value
-                      )}
-                    </NextLink>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem asChild>
-                    <NextLink href="/settings">
-                      {page.mode.isEditing ? (
-                        <Text field={fields.SettingsText} />
-                      ) : (
-                        fields.SettingsText.value
-                      )}
-                    </NextLink>
-                  </DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem asChild>
-                    <form action={logout}>
-                      <button type="submit" className="w-full text-left">
-                        {page.mode.isEditing ? (
-                          <Text field={fields.SignOutText} />
-                        ) : (
-                          fields.SignOutText.value
-                        )}
-                      </button>
-                    </form>
+                  <DropdownMenuItem onClick={handleLogout}>
+                    {isInSitecore ? <Text field={fields.SignOutText} /> : fields.SignOutText.value}
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
@@ -241,91 +289,11 @@ export const Default = (props: ComponentProps): JSX.Element => {
           ) : (
             <Button asChild className="bg-[#E2231A] hover:bg-[#C11D15]">
               <NextLink href={fields.SignInLink.value?.href || '/login'}>
-                {page.mode.isEditing ? <Text field={fields.SignInText} /> : fields.SignInText.value}
+                {isInSitecore ? <Text field={fields.SignInText} /> : fields.SignInText.value}
               </NextLink>
             </Button>
           )}
         </div>
-
-        <Sheet>
-          <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon">
-              <Menu className="h-5 w-5" />
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="left" className="w-72">
-            <SheetHeader>
-              <SheetTitle>
-                <div className="flex items-center gap-2">
-                  <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg">
-                    {page.mode.isEditing ? <Text field={fields.LogoText} /> : fields.LogoText.value}
-                  </div>
-                  <span className="font-semibold text-sm">
-                    {page.mode.isEditing ? (
-                      <Text field={fields.SubtitleText} />
-                    ) : (
-                      fields.SubtitleText.value
-                    )}
-                  </span>
-                </div>
-              </SheetTitle>
-            </SheetHeader>
-            <nav className="flex flex-col gap-4 mt-8 pl-4">
-              <NextLink
-                href={fields.HomeLink.value?.href || '/'}
-                className="text-lg hover:text-[#E2231A] transition-colors py-2"
-              >
-                {page.mode.isEditing ? <Text field={fields.HomeText} /> : fields.HomeText.value}
-              </NextLink>
-              <NextLink
-                href={fields.ProductsLink.value?.href || '/products'}
-                className="text-lg hover:text-[#E2231A] transition-colors py-2"
-              >
-                {page.mode.isEditing ? (
-                  <Text field={fields.ProductsText} />
-                ) : (
-                  fields.ProductsText.value
-                )}
-              </NextLink>
-              <NextLink
-                href={fields.DashboardLink.value?.href || '/dashboard'}
-                className="text-lg hover:text-[#E2231A] transition-colors py-2"
-              >
-                {page.mode.isEditing ? (
-                  <Text field={fields.DashboardText} />
-                ) : (
-                  fields.DashboardText.value
-                )}
-              </NextLink>
-              <NextLink
-                href={fields.DealsLink.value?.href || '/deals'}
-                className="text-lg hover:text-[#E2231A] transition-colors py-2"
-              >
-                {page.mode.isEditing ? <Text field={fields.DealsText} /> : fields.DealsText.value}
-              </NextLink>
-              <NextLink
-                href={fields.SolutionsLink.value?.href || '/solutions'}
-                className="text-lg hover:text-[#E2231A] transition-colors py-2"
-              >
-                {page.mode.isEditing ? (
-                  <Text field={fields.SolutionsText} />
-                ) : (
-                  fields.SolutionsText.value
-                )}
-              </NextLink>
-              <NextLink
-                href={fields.TrainingLink.value?.href || '/training'}
-                className="text-lg hover:text-[#E2231A] transition-colors py-2"
-              >
-                {page.mode.isEditing ? (
-                  <Text field={fields.TrainingText} />
-                ) : (
-                  fields.TrainingText.value
-                )}
-              </NextLink>
-            </nav>
-          </SheetContent>
-        </Sheet>
       </div>
     </header>
   );

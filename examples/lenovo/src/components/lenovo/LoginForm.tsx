@@ -158,10 +158,7 @@ export const Default = (props: ComponentProps) => {
               {isLoading ? fields.SubmitButtonLoadingText?.value : fields.SubmitButtonText?.value}
             </Button>
             <div className="text-center text-sm">
-              <JssLink
-                field={fields.BackToHomeLink}
-                className="text-[#E2231A] hover:underline"
-              >
+              <JssLink field={fields.BackToHomeLink} className="text-[#E2231A] hover:underline">
                 <Text field={fields.BackToHomeText} />
               </JssLink>
             </div>

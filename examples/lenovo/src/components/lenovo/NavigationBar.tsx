@@ -55,37 +55,9 @@ type ComponentProps = {
   params: ComponentParams;
   fields: Fields;
 };
-
-const defaultFields: Fields = {
-  LogoText: { value: 'Lenovo' },
-  SubtitleText: { value: '360 Partner Hub' },
-  SearchPlaceholder: { value: 'What are you looking for?' },
-  HomeLink: { value: { href: '/', text: 'Home' } },
-  HomeText: { value: 'Home' },
-  ProductsLink: { value: { href: '/products', text: 'Products & Services' } },
-  ProductsText: { value: 'Products & Services' },
-  DashboardLink: { value: { href: '/dashboard', text: 'Dashboard' } },
-  DashboardText: { value: 'Dashboard' },
-  DealsLink: { value: { href: '/deals', text: 'Deal Registration' } },
-  DealsText: { value: 'Deal Registration' },
-  SolutionsLink: { value: { href: '/solutions', text: 'Solutions' } },
-  SolutionsText: { value: 'Solutions' },
-  TrainingLink: { value: { href: '/training', text: 'Training' } },
-  TrainingText: { value: 'Training' },
-  SignInText: { value: 'Sign In' },
-  SignInLink: { value: { href: '/login', text: 'Sign In' } },
-  ProfileText: { value: 'My Profile' },
-  SettingsText: { value: 'Settings' },
-  SignOutText: { value: 'Sign Out' },
-  UsernamePlaceholder: { value: '#username#' },
-  FirstnamePlaceholder: { value: '#firstname#' },
-  LastnamePlaceholder: { value: '#lastname#' },
-  CompanyPlaceholder: { value: '#company#' },
-};
-
 export const Default = (props: ComponentProps): JSX.Element => {
-  const id = props?.rendering?.uid || 'navbar';
-  const fields = defaultFields; //props?.fields ||
+  const id = props.rendering?.uid || 'navbar';
+  const fields = props.fields;
   const { page } = useSitecore();
   const isInSitecore = page.mode.isEditing;
 

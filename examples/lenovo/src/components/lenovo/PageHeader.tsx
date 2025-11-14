@@ -9,8 +9,9 @@ import {
 } from '@sitecore-content-sdk/nextjs';
 
 type Fields = {
-  Title: TextField;
+  Heading: TextField;
   Description: RichTextField;
+  Tagline: TextField;
 };
 
 type ComponentProps = {
@@ -19,17 +20,33 @@ type ComponentProps = {
   fields: Fields;
 };
 
-export const Default = (props: ComponentProps): JSX.Element => {
+// const defaultFields: Fields = {
+//   Heading: { value: 'Lenovo 360 Solutions Hub' },
+//   Tagline: { value: 'Deliver exceptional value to your customers' },
+//   Description: {
+//     value:
+//       '<p>Access comprehensive solutions, resources, and tools designed to help partners maximize revenue, efficiency, and customer satisfaction. From digital workplace to edge AI, find everything you need to succeed.</p>',
+//   },
+// };
+
+export default function SolutionHubHeader(props: ComponentProps): JSX.Element {
   const id = props.rendering.uid;
+  const fields = props.fields;
 
   return (
-    <div className="mb-8" key={id}>
-      <h1 className="text-4xl font-bold mb-4">
-        <Text field={props.fields.Title} />
-      </h1>
-      <div className="text-muted-foreground text-lg">
-        <RichText field={props.fields.Description} />
+    <div key={id} className="mb-12">
+      <div className="mb-2">
+        <span className="text-sm font-semibold text-[#E2231A] uppercase tracking-wide">
+          <Text field={fields.Tagline} />
+        </span>
       </div>
+      <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
+        <Text field={fields.Heading} />
+      </h1>
+      <RichText
+        field={fields.Description}
+        className="text-lg text-muted-foreground max-w-3xl text-pretty"
+      />
     </div>
   );
-};
+}

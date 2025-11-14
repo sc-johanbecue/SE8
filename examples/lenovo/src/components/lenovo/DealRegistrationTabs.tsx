@@ -6,6 +6,8 @@ import { useState } from 'react';
 import {
   type TextField,
   Text,
+  type RichTextField,
+  RichText,
   type ComponentParams,
   type ComponentRendering,
 } from '@sitecore-content-sdk/nextjs';
@@ -25,23 +27,51 @@ import {
 import { Badge } from '@/components/ui/badge';
 import { Calendar, DollarSign, FileText, CheckCircle2, Clock, XCircle } from 'lucide-react';
 
+type ProductCategory = {
+  fields: {
+    Value: TextField;
+    Text: TextField;
+  };
+};
+
+type Deal = {
+  fields: {
+    ID: TextField;
+    Company: TextField;
+    Product: TextField;
+    Value: TextField;
+    Status: TextField;
+    Date: TextField;
+  };
+};
+
 type Fields = {
-  Heading: TextField;
-  Description: TextField;
   Tab1Label: TextField;
   Tab2Label: TextField;
-  FormTitle: TextField;
-  FormDescription: TextField;
+  NewDealTitle: TextField;
+  NewDealDescription: RichTextField;
   CompanyLabel: TextField;
+  CompanyPlaceholderText: TextField;
   ContactLabel: TextField;
+  ContactPlaceholderText: TextField;
   EmailLabel: TextField;
+  EmailPlaceholderText: TextField;
   PhoneLabel: TextField;
+  PhonePlaceholderText: TextField;
   ProductLabel: TextField;
+  ProductPlaceholderText: TextField;
   DealValueLabel: TextField;
+  DealValuePlaceholderText: TextField;
   NotesLabel: TextField;
+  NotesPlaceholderText: TextField;
   SubmitButtonText: TextField;
   TrackingTitle: TextField;
-  TrackingDescription: TextField;
+  TrackingDescription: RichTextField;
+  Deals: Deal[];
+  TrackingProductLabel: TextField;
+  TrackingValueLabel: TextField;
+  TrackingSubmittedLabel: TextField;
+  ProductCategories: ProductCategory[];
 };
 
 type ComponentProps = {
@@ -50,58 +80,11 @@ type ComponentProps = {
   fields: Fields;
 };
 
-const defaultFields: Fields = {
-  Heading: { value: 'Deal Registration & Tracking' },
-  Description: {
-    value: 'Register new deals and track their progress through the approval pipeline',
-  },
-  Tab1Label: { value: 'Register New Deal' },
-  Tab2Label: { value: 'Track Deals' },
-  FormTitle: { value: 'New Deal Registration' },
-  FormDescription: { value: 'Complete the form below to register a new partner deal' },
-  CompanyLabel: { value: 'Company Name' },
-  ContactLabel: { value: 'Contact Person' },
-  EmailLabel: { value: 'Email Address' },
-  PhoneLabel: { value: 'Phone Number' },
-  ProductLabel: { value: 'Product Category' },
-  DealValueLabel: { value: 'Estimated Deal Value ($)' },
-  NotesLabel: { value: 'Additional Notes' },
-  SubmitButtonText: { value: 'Submit Deal Registration' },
-  TrackingTitle: { value: 'Your Deal Registrations' },
-  TrackingDescription: { value: 'Track the status of your submitted deals' },
-};
-
 // Mock deal data for tracking
-const mockDeals = [
-  {
-    id: 'DEAL-2024-001',
-    company: 'Tech Solutions Inc.',
-    product: 'ThinkPad X1 Carbon (50 units)',
-    value: '$75,000',
-    status: 'Approved',
-    date: '2024-12-15',
-  },
-  {
-    id: 'DEAL-2024-002',
-    company: 'Global Enterprises',
-    product: 'ThinkStation P Series (10 units)',
-    value: '$45,000',
-    status: 'Pending',
-    date: '2024-12-20',
-  },
-  {
-    id: 'DEAL-2024-003',
-    company: 'Startup Innovators',
-    product: 'ThinkBook 14 (25 units)',
-    value: '$22,500',
-    status: 'Under Review',
-    date: '2024-12-22',
-  },
-];
 
 export const Default = (props: ComponentProps) => {
-  const fields = props.fields || defaultFields;
-  const id = props.rendering?.uid || 'deal-registration-tabs';
+  const fields = props.fields;
+  const id = props.rendering.uid;
 
   const [formData, setFormData] = useState({
     company: '',
@@ -157,15 +140,6 @@ export const Default = (props: ComponentProps) => {
 
   return (
     <div key={id} className="space-y-6">
-      <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold mb-2">
-          <Text field={fields.Heading} />
-        </h1>
-        <p className="text-muted-foreground">
-          <Text field={fields.Description} />
-        </p>
-      </div>
-
       <Tabs defaultValue="register" className="w-full">
         <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="register">
@@ -180,10 +154,10 @@ export const Default = (props: ComponentProps) => {
           <Card>
             <CardHeader>
               <CardTitle>
-                <Text field={fields.FormTitle} />
+                <Text field={fields.NewDealTitle} />
               </CardTitle>
               <CardDescription>
-                <Text field={fields.FormDescription} />
+                <RichText field={fields.NewDealDescription} />
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -195,7 +169,7 @@ export const Default = (props: ComponentProps) => {
                     </Label>
                     <Input
                       id="company"
-                      placeholder="Enter company name"
+                      placeholder={props.fields.CompanyPlaceholderText.value as string}
                       value={formData.company}
                       onChange={(e) => handleInputChange('company', e.target.value)}
                       required
@@ -207,7 +181,7 @@ export const Default = (props: ComponentProps) => {
                     </Label>
                     <Input
                       id="contact"
-                      placeholder="Enter contact person"
+                      placeholder={props.fields.ContactPlaceholderText.value as string}
                       value={formData.contact}
                       onChange={(e) => handleInputChange('contact', e.target.value)}
                       required
@@ -220,7 +194,7 @@ export const Default = (props: ComponentProps) => {
                     <Input
                       id="email"
                       type="email"
-                      placeholder="contact@company.com"
+                      placeholder={props.fields.EmailPlaceholderText.value as string}
                       value={formData.email}
                       onChange={(e) => handleInputChange('email', e.target.value)}
                       required
@@ -233,7 +207,7 @@ export const Default = (props: ComponentProps) => {
                     <Input
                       id="phone"
                       type="tel"
-                      placeholder="+1 (555) 123-4567"
+                      placeholder={props.fields.PhonePlaceholderText.value as string}
                       value={formData.phone}
                       onChange={(e) => handleInputChange('phone', e.target.value)}
                       required
@@ -248,15 +222,19 @@ export const Default = (props: ComponentProps) => {
                       onValueChange={(value) => handleInputChange('product', value)}
                     >
                       <SelectTrigger>
-                        <SelectValue placeholder="Select product category" />
+                        <SelectValue
+                          placeholder={props.fields.ProductPlaceholderText.value as string}
+                        />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="thinkpad">ThinkPad Series</SelectItem>
-                        <SelectItem value="thinkbook">ThinkBook Series</SelectItem>
-                        <SelectItem value="thinkstation">ThinkStation Workstations</SelectItem>
-                        <SelectItem value="thinkcentre">ThinkCentre Desktops</SelectItem>
-                        <SelectItem value="legion">Legion Gaming</SelectItem>
-                        <SelectItem value="infrastructure">Infrastructure Solutions</SelectItem>
+                        {fields.ProductCategories.map((productCategory, index) => (
+                          <SelectItem
+                            key={index}
+                            value={productCategory.fields.Value.value as string}
+                          >
+                            {productCategory.fields.Text.value}
+                          </SelectItem>
+                        ))}
                       </SelectContent>
                     </Select>
                   </div>
@@ -267,7 +245,7 @@ export const Default = (props: ComponentProps) => {
                     <Input
                       id="dealValue"
                       type="number"
-                      placeholder="50000"
+                      placeholder={props.fields.DealValuePlaceholderText.value as string}
                       value={formData.dealValue}
                       onChange={(e) => handleInputChange('dealValue', e.target.value)}
                       required
@@ -280,7 +258,7 @@ export const Default = (props: ComponentProps) => {
                   </Label>
                   <Textarea
                     id="notes"
-                    placeholder="Provide any additional details about this deal..."
+                    placeholder={props.fields.NotesPlaceholderText.value as string}
                     rows={4}
                     value={formData.notes}
                     onChange={(e) => handleInputChange('notes', e.target.value)}
@@ -301,39 +279,45 @@ export const Default = (props: ComponentProps) => {
                 <Text field={fields.TrackingTitle} />
               </CardTitle>
               <CardDescription>
-                <Text field={fields.TrackingDescription} />
+                <RichText field={fields.TrackingDescription} />
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
-                {mockDeals.map((deal) => (
-                  <Card key={deal.id} className="overflow-hidden">
+                {fields.Deals.map((deal) => (
+                  <Card key={deal.fields.ID.value} className="overflow-hidden">
                     <CardContent className="p-6">
                       <div className="flex items-start justify-between mb-4">
                         <div className="flex items-center gap-3">
-                          {getStatusIcon(deal.status)}
+                          {getStatusIcon(deal.fields.Status.value as string)}
                           <div>
-                            <h3 className="font-semibold text-lg">{deal.company}</h3>
-                            <p className="text-sm text-muted-foreground">{deal.id}</p>
+                            <h3 className="font-semibold text-lg">{deal.fields.Company.value}</h3>
+                            <p className="text-sm text-muted-foreground">{deal.fields.ID.value}</p>
                           </div>
                         </div>
-                        {getStatusBadge(deal.status)}
+                        {getStatusBadge(deal.fields.Status.value as string)}
                       </div>
                       <div className="grid gap-3 md:grid-cols-3 text-sm">
                         <div className="flex items-center gap-2">
                           <FileText className="h-4 w-4 text-muted-foreground" />
-                          <span className="text-muted-foreground">Product:</span>
-                          <span className="font-medium">{deal.product}</span>
+                          <span className="text-muted-foreground">
+                            <Text field={fields.TrackingProductLabel} />
+                          </span>
+                          <span className="font-medium">{deal.fields.Product.value}</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <DollarSign className="h-4 w-4 text-muted-foreground" />
-                          <span className="text-muted-foreground">Value:</span>
-                          <span className="font-medium">{deal.value}</span>
+                          <span className="text-muted-foreground">
+                            <Text field={fields.TrackingValueLabel} />
+                          </span>
+                          <span className="font-medium">{deal.fields.Value.value}</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <Calendar className="h-4 w-4 text-muted-foreground" />
-                          <span className="text-muted-foreground">Submitted:</span>
-                          <span className="font-medium">{deal.date}</span>
+                          <span className="text-muted-foreground">
+                            <Text field={fields.TrackingSubmittedLabel} />
+                          </span>
+                          <span className="font-medium">{deal.fields.Date.value}</span>
                         </div>
                       </div>
                     </CardContent>

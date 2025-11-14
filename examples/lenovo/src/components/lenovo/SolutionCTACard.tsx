@@ -5,14 +5,13 @@ import {
   type RichTextField,
   RichText,
   type LinkField,
-  Link as SitecoreLink,
+  Link as JssLink,
   type ComponentParams,
   type ComponentRendering,
 } from '@sitecore-content-sdk/nextjs';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, MessageCircle } from 'lucide-react';
-import Link from 'next/link';
 
 type Fields = {
   Heading: TextField;
@@ -24,27 +23,14 @@ type Fields = {
 };
 
 type ComponentProps = {
-  rendering?: ComponentRendering & { params: ComponentParams };
-  params?: ComponentParams;
-  fields?: Fields;
+  rendering: ComponentRendering & { params: ComponentParams };
+  params: ComponentParams;
+  fields: Fields;
 };
 
-const defaultFields: Fields = {
-  Heading: { value: 'Need help finding the right solution?' },
-  Description: {
-    value:
-      "<p>Our solution specialists are here to help you identify the best Lenovo solutions for your customers' unique needs. Get personalized guidance and support.</p>",
-  },
-  PrimaryButtonText: { value: 'Contact a Specialist' },
-  PrimaryButtonLink: { value: { href: '/contact', text: 'Contact a Specialist' } },
-  SecondaryButtonText: { value: 'Browse All Solutions' },
-  SecondaryButtonLink: { value: { href: '/solutions', text: 'Browse All Solutions' } },
-};
-
-export default function SolutionCTACard(props?: ComponentProps): JSX.Element {
-  const id = props?.rendering?.uid || 'solution-cta-card';
-  const fields = props?.fields || defaultFields;
-  const isSitecoreContext = !!props?.rendering;
+export default function SolutionCTACard(props: ComponentProps): JSX.Element {
+  const id = props.rendering.uid;
+  const fields = props.fields;
 
   return (
     <Card key={id} className="bg-gradient-to-br from-slate-900 to-slate-800 text-white border-0">
@@ -66,15 +52,9 @@ export default function SolutionCTACard(props?: ComponentProps): JSX.Element {
       <CardContent>
         <div className="flex flex-wrap gap-3">
           <Button asChild size="lg" className="bg-[#E2231A] hover:bg-[#C11D15]">
-            {isSitecoreContext ? (
-              <SitecoreLink field={fields.PrimaryButtonLink}>
-                <Text field={fields.PrimaryButtonText} /> <ArrowRight className="ml-2 h-4 w-4" />
-              </SitecoreLink>
-            ) : (
-              <Link href={fields.PrimaryButtonLink.value?.href || '/contact'}>
-                <Text field={fields.PrimaryButtonText} /> <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            )}
+            <JssLink field={fields.PrimaryButtonLink}>
+              <Text field={fields.PrimaryButtonText} /> <ArrowRight className="ml-2 h-4 w-4" />
+            </JssLink>
           </Button>
           <Button
             asChild
@@ -82,15 +62,9 @@ export default function SolutionCTACard(props?: ComponentProps): JSX.Element {
             variant="outline"
             className="border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
           >
-            {isSitecoreContext ? (
-              <SitecoreLink field={fields.SecondaryButtonLink}>
-                <Text field={fields.SecondaryButtonText} />
-              </SitecoreLink>
-            ) : (
-              <Link href={fields.SecondaryButtonLink.value?.href || '/solutions'}>
-                <Text field={fields.SecondaryButtonText} />
-              </Link>
-            )}
+            <JssLink field={fields.SecondaryButtonLink}>
+              <Text field={fields.SecondaryButtonText} />
+            </JssLink>
           </Button>
         </div>
       </CardContent>

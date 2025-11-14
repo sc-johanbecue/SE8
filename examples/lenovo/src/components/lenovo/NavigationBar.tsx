@@ -6,7 +6,6 @@ import {
   type LinkField,
   type ComponentParams,
   type ComponentRendering,
-  useSitecore,
 } from '@sitecore-content-sdk/nextjs';
 import { Search, Bell, User, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -84,12 +83,13 @@ const defaultFields: Fields = {
 };
 
 export const Default = (props: ComponentProps): JSX.Element => {
-  const id = props.rendering.uid || 'navbar';
-  const fields = defaultFields; //props.fields ||
+  const id = props?.rendering?.uid || 'navbar';
+  const fields = defaultFields; //props?.fields ||
   const { page } = useSitecore();
   const isInSitecore = page.mode.isEditing;
 
   const [user, setUser] = useState<{ name: string; company: string } | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     console.log('[v0] Fetching user data...');
@@ -102,10 +102,12 @@ export const Default = (props: ComponentProps): JSX.Element => {
       .then((data) => {
         console.log('[v0] User API data:', data);
         setUser(data?.user || null);
+        setIsLoading(false);
       })
       .catch((error) => {
         console.log('[v0] User API error:', error);
         setUser(null);
+        setIsLoading(false);
       });
   }, []);
 
@@ -245,7 +247,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
         </div>
 
         <div className="flex items-center gap-2 ml-auto">
-          {user ? (
+          {isLoading ? (
+            <div className="w-20 h-10" /> // Empty space placeholder
+          ) : user ? (
             <>
               <Button variant="ghost" size="icon">
                 <Bell className="h-5 w-5" />
@@ -300,3 +304,6 @@ export const Default = (props: ComponentProps): JSX.Element => {
 };
 
 export default Default;
+function useSitecore(): { page: any } {
+  throw new Error('Function not implemented.');
+}

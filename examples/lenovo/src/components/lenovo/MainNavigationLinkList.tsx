@@ -154,9 +154,9 @@ const NavigationList = (props: NavigationProps) => {
 
   if (props.relativeLevel === 1) {
     return (
-      <li 
-        className={`${classNameList} ${active ? 'active' : ''} relative`} 
-        key={props.fields.Id} 
+      <li
+        className={`${classNameList} ${active ? 'active' : ''} relative`}
+        key={props.fields.Id}
         tabIndex={0}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -171,15 +171,13 @@ const NavigationList = (props: NavigationProps) => {
           </Link>
         </div>
         {children.length > 0 && active && (
-          <div 
+          <div
             className="absolute left-0 top-full mt-3 pt-1 bg-white border border-gray-200 rounded-lg shadow-2xl p-8 z-50 min-w-[800px]"
             // </CHANGE>
             onMouseEnter={handleSubmenuMouseEnter}
             onMouseLeave={handleSubmenuMouseLeave}
           >
-            <div className="grid grid-cols-4 gap-8">
-              {children}
-            </div>
+            <div className="grid grid-cols-4 gap-8">{children}</div>
           </div>
         )}
       </li>
@@ -197,21 +195,13 @@ const NavigationList = (props: NavigationProps) => {
         >
           {getNavigationText(props)}
         </Link>
-        {children.length > 0 && (
-          <ul className="space-y-1 pl-3">
-            {children}
-          </ul>
-        )}
+        {children.length > 0 && <ul className="space-y-1 pl-3">{children}</ul>}
       </div>
     );
   }
 
   return (
-    <li 
-      className={`${classNameList} group`} 
-      key={props.fields.Id} 
-      tabIndex={0}
-    >
+    <li className={`${classNameList} group`} key={props.fields.Id} tabIndex={0}>
       <Link
         className="block hover:bg-gray-50 rounded-md p-1.5 pl-3 transition-colors"
         field={getLinkField(props)}
@@ -222,9 +212,7 @@ const NavigationList = (props: NavigationProps) => {
           {getNavigationText(props)}
         </div>
         {props.fields.Title?.value && props.fields.NavigationTitle?.value && (
-          <div className="text-sm text-gray-500 mt-0.5">
-            {props.fields.Title.value.toString()}
-          </div>
+          <div className="text-sm text-gray-500 mt-0.5">{props.fields.Title.value.toString()}</div>
         )}
       </Link>
     </li>

@@ -6,6 +6,8 @@ import {
   Image as JssImage,
   type LinkField,
   Link as JssLink,
+  RichText,
+  RichTextField,
   type ComponentParams,
   type ComponentRendering,
 } from '@sitecore-content-sdk/nextjs';
@@ -17,7 +19,7 @@ type Fields = {
   BackgroundImage: ImageField;
   Title: TextField;
   Subtitle: TextField;
-  Description: TextField;
+  LongDescription: RichTextField;
   Badge1: TextField;
   Badge2: TextField;
   Badge3: TextField;
@@ -68,7 +70,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
             <Text field={fields.Subtitle} />
           </p>
           <p className="text-lg mb-8 text-white/80 leading-relaxed">
-            <Text field={fields.Description} />
+            <RichText field={fields.LongDescription} />
           </p>
 
           <div className="flex flex-wrap gap-3 mb-8">
@@ -129,7 +131,7 @@ export const Red = (props: ComponentProps): JSX.Element => {
             <Text field={fields.Subtitle} />
           </p>
           <p className="text-lg mb-8 text-white/80 leading-relaxed">
-            <Text field={fields.Description} />
+            <RichText field={fields.LongDescription} />
           </p>
 
           <div className="flex flex-wrap gap-3 mb-8">
@@ -144,7 +146,11 @@ export const Red = (props: ComponentProps): JSX.Element => {
             </Badge>
           </div>
 
-          <Button size="lg" className="bg-white text-[#E2231A] hover:bg-black/90 hover:text-white" asChild>
+          <Button
+            size="lg"
+            className="bg-white text-[#E2231A] hover:bg-black/90 hover:text-white"
+            asChild
+          >
             <JssLink field={fields.CTALink}>
               <Text field={fields.CTAText} />
             </JssLink>
@@ -190,7 +196,7 @@ export const White = (props: ComponentProps): JSX.Element => {
             <Text field={fields.Subtitle} />
           </p>
           <p className="text-lg mb-8 text-black/80 leading-relaxed">
-            <Text field={fields.Description} />
+            <Text field={fields.LongDescription} />
           </p>
 
           <div className="flex flex-wrap gap-3 mb-8">
@@ -205,7 +211,11 @@ export const White = (props: ComponentProps): JSX.Element => {
             </Badge>
           </div>
 
-          <Button size="lg" className="bg-white text-[#E2231A] hover:bg-[#E2231A]/90 hover:text-white" asChild>
+          <Button
+            size="lg"
+            className="bg-white text-[#E2231A] hover:bg-[#E2231A]/90 hover:text-white"
+            asChild
+          >
             <JssLink field={fields.CTALink}>
               <Text field={fields.CTAText} />
             </JssLink>

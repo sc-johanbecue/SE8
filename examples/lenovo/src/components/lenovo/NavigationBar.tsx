@@ -65,6 +65,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
   const [user, setUser] = useState<{ name: string; company: string } | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const phMainNavigationLinksContainer = `lenovoMainNavigationLinksContainer-${props.params.DynamicPlaceholderId}`;
+  const phMobileMainNavigationLinksContainer = `lenovoMobileMainNavigationLinksContainer-${props.params.DynamicPlaceholderId}`;
 
   useEffect(() => {
     console.log('[v0] Fetching user data...');
@@ -107,88 +108,8 @@ export const Default = (props: ComponentProps): JSX.Element => {
           </span>
         </JssLink>
 
-        <Sheet>
-          <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon">
-              <Menu className="h-5 w-5" />
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="left" className="w-72">
-            <SheetHeader>
-              <SheetTitle>
-                <div className="flex items-center gap-2">
-                  <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg">
-                    <Text field={fields.LogoText} />
-                  </div>
-                  <span className="font-semibold text-sm">
-                    <Text field={fields.SubtitleText} />
-                  </span>
-                </div>
-              </SheetTitle>
-            </SheetHeader>
-            <nav className="flex flex-col gap-4 mt-8 pl-4">
-              <Placeholder name={phMainNavigationLinksContainer} rendering={props.rendering} />
-              {/* <JssLink
-                field={fields.HomeLink}
-                className="text-lg hover:text-[#E2231A] transition-colors py-2"
-              >
-                <Text field={fields.HomeText} />
-              </JssLink>
-              <JssLink
-                field={fields.ProductsLink}
-                className="text-lg hover:text-[#E2231A] transition-colors py-2"
-              >
-                <Text field={fields.ProductsText} />
-              </JssLink>
-              <JssLink
-                field={fields.DashboardLink}
-                className="text-lg hover:text-[#E2231A] transition-colors py-2"
-              >
-                <Text field={fields.DashboardText} />
-              </JssLink>
-              <JssLink
-                field={fields.DealsLink}
-                className="text-lg hover:text-[#E2231A] transition-colors py-2"
-              >
-                <Text field={fields.DealsText} />
-              </JssLink>
-              <JssLink
-                field={fields.SolutionsLink}
-                className="text-lg hover:text-[#E2231A] transition-colors py-2"
-              >
-                <Text field={fields.SolutionsText} />
-              </JssLink>
-              <JssLink
-                field={fields.TrainingLink}
-                className="text-lg hover:text-[#E2231A] transition-colors py-2"
-              >
-                <Text field={fields.TrainingText} />
-              </JssLink> */}
-            </nav>
-          </SheetContent>
-        </Sheet>
-
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium ml-6">
           <Placeholder name={phMainNavigationLinksContainer} rendering={props.rendering} />
-{/* 
-          <JssLink field={fields.HomeLink} className="hover:text-[#E2231A] transition-colors">
-            <Text field={fields.HomeText} />
-          </JssLink>
-          <JssLink field={fields.ProductsLink} className="hover:text-[#E2231A] transition-colors">
-            <Text field={fields.ProductsText} />
-          </JssLink>
-          <JssLink field={fields.DashboardLink} className="hover:text-[#E2231A] transition-colors">
-            <Text field={fields.DashboardText} />
-          </JssLink>
-          <JssLink field={fields.DealsLink} className="hover:text-[#E2231A] transition-colors">
-            <Text field={fields.DealsText} />
-          </JssLink>
-          <JssLink field={fields.SolutionsLink} className="hover:text-[#E2231A] transition-colors">
-            <Text field={fields.SolutionsText} />
-          </JssLink>
-          <JssLink field={fields.TrainingLink} className="hover:text-[#E2231A] transition-colors">
-            <Text field={fields.TrainingText} />
-          </JssLink> */}
         </nav>
 
         <div className="flex-1 max-w-sm mx-4 hidden lg:block">
@@ -254,6 +175,33 @@ export const Default = (props: ComponentProps): JSX.Element => {
             </Button>
           )}
         </div>
+        <Sheet>
+          <SheetTrigger asChild className="md:hidden">
+            <Button variant="ghost" size="icon">
+              <Menu className="h-5 w-5" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left" className="w-72">
+            <SheetHeader>
+              <SheetTitle>
+                <div className="flex items-center gap-2">
+                  <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg">
+                    <Text field={fields.LogoText} />
+                  </div>
+                  <span className="font-semibold text-sm">
+                    <Text field={fields.SubtitleText} />
+                  </span>
+                </div>
+              </SheetTitle>
+            </SheetHeader>
+            <nav className="flex flex-col gap-4 mt-8 pl-4">
+              <Placeholder
+                name={phMobileMainNavigationLinksContainer}
+                rendering={props.rendering}
+              />
+            </nav>
+          </SheetContent>
+        </Sheet>
       </div>
     </header>
   );

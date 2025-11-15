@@ -1,17 +1,17 @@
-import type { JSX } from 'react';
+import { JSX } from 'react';
 import {
-  type TextField,
+  TextField,
   Text,
-  type RichTextField,
+  RichTextField,
   RichText,
-  type ComponentParams,
-  type ComponentRendering,
+  ComponentParams,
+  ComponentRendering,
 } from '@sitecore-content-sdk/nextjs';
 
 type Fields = {
   Heading: TextField;
-  Description: RichTextField;
   Tagline: TextField;
+  Description: RichTextField;
 };
 
 type ComponentProps = {
@@ -20,33 +20,32 @@ type ComponentProps = {
   fields: Fields;
 };
 
-// const defaultFields: Fields = {
-//   Heading: { value: 'Lenovo 360 Solutions Hub' },
-//   Tagline: { value: 'Deliver exceptional value to your customers' },
-//   Description: {
-//     value:
-//       '<p>Access comprehensive solutions, resources, and tools designed to help partners maximize revenue, efficiency, and customer satisfaction. From digital workplace to edge AI, find everything you need to succeed.</p>',
-//   },
-// };
-
-export default function SolutionHubHeader(props: ComponentProps): JSX.Element {
-  const id = props.rendering.uid;
+export default function HeroSection(props: ComponentProps): JSX.Element {
+  const id = props.rendering?.uid;
   const fields = props.fields;
 
   return (
-    <div key={id} className="mb-12">
-      <div className="mb-2">
-        <span className="text-sm font-semibold text-[#E2231A] uppercase tracking-wide">
-          <Text field={fields.Tagline} />
-        </span>
+    <section
+      key={id}
+      className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-8"
+    >
+      <div className="container mx-auto px-4 max-w-7xl">
+        <div className="max-w-3xl">
+          <div className="mb-2 pt-2">
+            <span className="text-sm font-semibold text-[#E2231A] uppercase tracking-wide ml-1">
+              <Text field={fields.Tagline} />
+            </span>
+          </div>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance">
+            <Text field={fields.Heading} />
+          </h1>
+          <div className="text-xl text-gray-300 mb-8 text-pretty">
+            <RichText field={fields.Description} />
+          </div>
+        </div>
       </div>
-      <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
-        <Text field={fields.Heading} />
-      </h1>
-      <RichText
-        field={fields.Description}
-        className="text-lg text-muted-foreground max-w-3xl text-pretty"
-      />
-    </div>
+    </section>
   );
 }
+
+export const Default = HeroSection;

@@ -29,7 +29,6 @@ const getLinkField = (props: NavigationProps): LinkField => ({
 });
 
 export const Default = (props: NavigationProps): JSX.Element => {
-  const { page } = useSitecore();
   const styles =
     props.params != null
       ? `${props.params.GridParameters ?? ''} ${props.params.Styles ?? ''}`.trimEnd()

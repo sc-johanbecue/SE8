@@ -139,7 +139,7 @@ export const Default = (props: ComponentProps) => {
   };
 
   return (
-    <div key={id} className="space-y-6">
+    <div key={id} className="space-y-20 p-10">
       <Tabs defaultValue="register" className="w-full">
         <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="register">

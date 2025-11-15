@@ -105,6 +105,8 @@ import * as LenovoSolutionKeyFeatures from 'components/lenovo/SolutionKeyFeature
 import * as LenovoSolutionBenefits from 'components/lenovo/SolutionBenefits';
 import * as LenovoNavBar from 'components/lenovo/NavigationBar';
 import * as LenovoFooterColumn from 'components/lenovo/FooterColumn';
+import * as LenovoMainNavigationLinkList from 'components/lenovo/MainNavigationLinkList';
+import * as LenovoMainNavigationLinkListMobile from 'components/lenovo/MainNavigationLinkListMobile';
 
 // Map of component names to components
 
@@ -215,6 +217,8 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['LenovoSolutionKeyFeatures', LenovoSolutionKeyFeatures],
   ['LenovoSolutionBenefits', LenovoSolutionBenefits],
   ['LenovoFooterColumn', LenovoFooterColumn],
+  ['LenovoMainNavigationLinkList', LenovoMainNavigationLinkList],
+  ['LenovoMainNavigationLinkListMobile', LenovoMainNavigationLinkListMobile],
 ]);
 
 export default componentMap;

@@ -8,6 +8,7 @@ import {
   type ComponentParams,
   type ComponentRendering,
   useSitecore,
+  Placeholder,
 } from '@sitecore-content-sdk/nextjs';
 import { Search, Bell, User, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -63,6 +64,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
 
   const [user, setUser] = useState<{ name: string; company: string } | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const phMainNavigationLinksContainer = `lenovoMainNavigationLinksContainer-${props.params.DynamicPlaceholderId}`;
 
   useEffect(() => {
     console.log('[v0] Fetching user data...');
@@ -125,7 +127,8 @@ export const Default = (props: ComponentProps): JSX.Element => {
               </SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-4 mt-8 pl-4">
-              <JssLink
+              <Placeholder name={phMainNavigationLinksContainer} rendering={props.rendering} />
+              {/* <JssLink
                 field={fields.HomeLink}
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
@@ -160,12 +163,14 @@ export const Default = (props: ComponentProps): JSX.Element => {
                 className="text-lg hover:text-[#E2231A] transition-colors py-2"
               >
                 <Text field={fields.TrainingText} />
-              </JssLink>
+              </JssLink> */}
             </nav>
           </SheetContent>
         </Sheet>
 
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium ml-6">
+          <Placeholder name={phMainNavigationLinksContainer} rendering={props.rendering} />
+{/* 
           <JssLink field={fields.HomeLink} className="hover:text-[#E2231A] transition-colors">
             <Text field={fields.HomeText} />
           </JssLink>
@@ -183,7 +188,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
           </JssLink>
           <JssLink field={fields.TrainingLink} className="hover:text-[#E2231A] transition-colors">
             <Text field={fields.TrainingText} />
-          </JssLink>
+          </JssLink> */}
         </nav>
 
         <div className="flex-1 max-w-sm mx-4 hidden lg:block">

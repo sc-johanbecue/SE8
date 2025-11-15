@@ -21,8 +21,10 @@ type Fields = {
   Badge1: TextField;
   Badge2: TextField;
   Badge3: TextField;
-  Gradient: TextField;
   BackLink: LinkField;
+  BackLinkText: TextField;
+  CTALink: LinkField;
+  CTAText: TextField;
 };
 
 type ComponentProps = {
@@ -35,24 +37,31 @@ export const Default = (props: ComponentProps): JSX.Element => {
   const id = props.rendering.uid;
   const fields = props.fields;
 
+  const backLinkTextColor = 'text-white';
+  const backLinkHoverColor = 'hover:text-white/80';
+  const backLinkBackgroundColor = 'bg-black/40';
+  const overlayColor = 'bg-black/60';
+
   return (
-    <div
-      key={id}
-      className={`relative bg-gradient-to-br ${fields.Gradient.value} text-white overflow-hidden`}
-    >
-      <div className="absolute inset-0 opacity-10">
+    <div key={id} className="relative overflow-hidden">
+      <div className="absolute inset-0">
         <JssImage field={fields.BackgroundImage} className="w-full h-full object-cover" />
       </div>
 
       <div className="container mx-auto px-4 py-16 max-w-7xl relative z-10">
-        <Button variant="ghost" className="text-white hover:text-white/80 mb-6 -ml-4" asChild>
-          <JssLink field={props.fields.BackLink}>
-            <ArrowLeft className="mr-2 h-4 w-4" /> Back to Solutions
+        <Button
+          variant="ghost"
+          className={`${backLinkTextColor} ${backLinkHoverColor} ${backLinkBackgroundColor} mb-6 p-8`}
+          asChild
+        >
+          <JssLink field={fields.BackLink}>
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            <Text field={fields.BackLinkText} />
           </JssLink>
         </Button>
 
-        <div className="max-w-3xl">
-          <h1 className="text-5xl font-bold mb-4">
+        <div className={`max-w-3xl ${overlayColor} backdrop-blur-sm p-8 rounded-lg`}>
+          <h1 className="text-5xl font-bold mb-4 text-white">
             <Text field={fields.Title} />
           </h1>
           <p className="text-2xl mb-6 text-white/90">
@@ -74,8 +83,132 @@ export const Default = (props: ComponentProps): JSX.Element => {
             </Badge>
           </div>
 
-          <Button size="lg" className="bg-white text-[#E2231A] hover:bg-white/90">
-            Contact Sales
+          <Button size="lg" className="bg-white text-[#E2231A] hover:bg-white/90" asChild>
+            <JssLink field={fields.CTALink}>
+              <Text field={fields.CTAText} />
+            </JssLink>
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const Red = (props: ComponentProps): JSX.Element => {
+  const id = props.rendering.uid;
+  const fields = props.fields;
+
+  const backLinkTextColor = 'text-white';
+  const backLinkHoverColor = 'hover:text-white/80 hover:bg-black';
+  const backLinkBackgroundColor = 'bg-[#E2231A]/90';
+  const overlayColor = 'bg-[#E2231A]/90';
+
+  return (
+    <div key={id} className="relative overflow-hidden">
+      <div className="absolute inset-0">
+        <JssImage field={fields.BackgroundImage} className="w-full h-full object-cover" />
+      </div>
+
+      <div className="container mx-auto px-4 py-16 max-w-7xl relative z-10">
+        <Button
+          variant="ghost"
+          className={`${backLinkTextColor} ${backLinkHoverColor} ${backLinkBackgroundColor} mb-6 p-8`}
+          asChild
+        >
+          <JssLink field={fields.BackLink}>
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            <Text field={fields.BackLinkText} />
+          </JssLink>
+        </Button>
+
+        <div className={`max-w-3xl ${overlayColor} backdrop-blur-sm p-8 rounded-lg`}>
+          <h1 className="text-5xl font-bold mb-4 text-white">
+            <Text field={fields.Title} />
+          </h1>
+          <p className="text-2xl mb-6 text-white/90">
+            <Text field={fields.Subtitle} />
+          </p>
+          <p className="text-lg mb-8 text-white/80 leading-relaxed">
+            <Text field={fields.Description} />
+          </p>
+
+          <div className="flex flex-wrap gap-3 mb-8">
+            <Badge className="bg-white/20 text-white hover:bg-white/30 text-sm py-1 px-3">
+              <Text field={fields.Badge1} />
+            </Badge>
+            <Badge className="bg-white/20 text-white hover:bg-white/30 text-sm py-1 px-3">
+              <Text field={fields.Badge2} />
+            </Badge>
+            <Badge className="bg-white/20 text-white hover:bg-white/30 text-sm py-1 px-3">
+              <Text field={fields.Badge3} />
+            </Badge>
+          </div>
+
+          <Button size="lg" className="bg-white text-[#E2231A] hover:bg-black/90 hover:text-white" asChild>
+            <JssLink field={fields.CTALink}>
+              <Text field={fields.CTAText} />
+            </JssLink>
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const White = (props: ComponentProps): JSX.Element => {
+  const id = props.rendering.uid;
+  const fields = props.fields;
+
+  const backLinkTextColor = 'text-black';
+  const backLinkHoverColor = 'hover:text-black/80';
+  const backLinkBackgroundColor = 'bg-white/40';
+  const overlayColor = 'bg-white/60';
+
+  return (
+    <div key={id} className="relative overflow-hidden">
+      <div className="absolute inset-0">
+        <JssImage field={fields.BackgroundImage} className="w-full h-full object-cover" />
+      </div>
+
+      <div className="container mx-auto px-4 py-16 max-w-7xl relative z-10">
+        <Button
+          variant="ghost"
+          className={`${backLinkTextColor} ${backLinkHoverColor} ${backLinkBackgroundColor} mb-6 p-8`}
+          asChild
+        >
+          <JssLink field={fields.BackLink}>
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            <Text field={fields.BackLinkText} />
+          </JssLink>
+        </Button>
+
+        <div className={`max-w-3xl ${overlayColor} backdrop-blur-sm p-8 rounded-lg`}>
+          <h1 className="text-5xl font-bold mb-4 text-black">
+            <Text field={fields.Title} />
+          </h1>
+          <p className="text-2xl mb-6 text-black/90">
+            <Text field={fields.Subtitle} />
+          </p>
+          <p className="text-lg mb-8 text-black/80 leading-relaxed">
+            <Text field={fields.Description} />
+          </p>
+
+          <div className="flex flex-wrap gap-3 mb-8">
+            <Badge className="bg-[#E2231A]/80 text-white hover:bg-white/30 hover:text-[#E2231A] text-sm py-1 px-3">
+              <Text field={fields.Badge1} />
+            </Badge>
+            <Badge className="bg-[#E2231A]/80 text-white hover:bg-white/30 hover:text-[#E2231A] text-sm py-1 px-3">
+              <Text field={fields.Badge2} />
+            </Badge>
+            <Badge className="bg-[#E2231A]/80 text-white hover:bg-white/30 hover:text-[#E2231A] text-sm py-1 px-3">
+              <Text field={fields.Badge3} />
+            </Badge>
+          </div>
+
+          <Button size="lg" className="bg-white text-[#E2231A] hover:bg-[#E2231A]/90 hover:text-white" asChild>
+            <JssLink field={fields.CTALink}>
+              <Text field={fields.CTAText} />
+            </JssLink>
           </Button>
         </div>
       </div>

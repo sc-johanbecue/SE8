@@ -100,7 +100,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
   const phPrograms = `lenovoFeaturedPrograms-${props.params.DynamicPlaceholderId}`;
 
   return (
-    <section id={id} className="mb-12">
+    <section id={id} className="mb-12 p-10">
       <div className="mb-8">
         <h2 className="text-2xl font-bold mb-2">
           <Text field={fields.Heading} />

@@ -10,7 +10,7 @@ import {
   useSitecore,
   Placeholder,
 } from '@sitecore-content-sdk/nextjs';
-import { Search, Bell, User, Menu } from 'lucide-react';
+import { Search, Bell, User, Menu, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
@@ -23,6 +23,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 type Fields = {
   LogoText: TextField;
@@ -64,6 +65,8 @@ export const Default = (props: ComponentProps): JSX.Element => {
 
   const [user, setUser] = useState<{ name: string; company: string } | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
+
   const phMainNavigationLinksContainer = `lenovoMainNavigationLinksContainer-${props.params.DynamicPlaceholderId}`;
   const phMobileMainNavigationLinksContainer = `lenovoMobileMainNavigationLinksContainer-${props.params.DynamicPlaceholderId}`;
 
@@ -112,18 +115,70 @@ export const Default = (props: ComponentProps): JSX.Element => {
           <Placeholder name={phMainNavigationLinksContainer} rendering={props.rendering} />
         </nav>
 
-        <div className="flex-1 max-w-sm mx-4 hidden lg:block">
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+        <div className="ml-auto flex items-center gap-2">
+          <div className="hidden md:block relative">
+            <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input
               type="search"
               placeholder={fields.SearchPlaceholder.value as string}
-              className="pl-9 bg-gray-50"
+              className="pl-8 w-[200px]"
             />
           </div>
-        </div>
 
-        <div className="flex items-center gap-2 ml-auto">
+          {/* NL Language dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
+              className="flex items-center gap-1 text-sm font-semibold text-[#00716B] hover:text-[#005952]"
+            >
+              <ChevronDown className="w-4 h-4" />
+              NL
+            </button>
+
+            {languageDropdownOpen && (
+              <>
+                <div
+                  className="fixed inset-0 z-40"
+                  onClick={() => setLanguageDropdownOpen(false)}
+                />
+                <div className="absolute top-full left-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg z-50">
+                  <Link
+                    locale="en"
+                    href=""
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 border-b border-gray-200"
+                    onClick={() => setLanguageDropdownOpen(false)}
+                  >
+                    English
+                  </Link>
+                  <Link
+                    locale="nl-NL"
+                    href=""
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50"
+                    onClick={() => setLanguageDropdownOpen(false)}
+                  >
+                    Nederlands
+                  </Link>
+                  <Link
+                    locale="ja-JP"
+                    href=""
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50"
+                    onClick={() => setLanguageDropdownOpen(false)}
+                  >
+                    Japanese
+                  </Link>
+                  <Link
+                    locale="fr-BE"
+                    href=""
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50"
+                    onClick={() => setLanguageDropdownOpen(false)}
+                  >
+                    Français
+                  </Link>
+                </div>
+              </>
+            )}
+          </div>
+
           {isLoading ? (
             <div className="w-20 h-10" /> // Empty space placeholder
           ) : user ? (
@@ -175,6 +230,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
             </Button>
           )}
         </div>
+
         <Sheet>
           <SheetTrigger asChild className="md:hidden">
             <Button variant="ghost" size="icon">

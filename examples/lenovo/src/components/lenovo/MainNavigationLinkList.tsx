@@ -77,12 +77,18 @@ export const Default = (props: NavigationProps): JSX.Element => {
       if (page.mode.isEditing) return true;
 
       if (isLoadingUser) {
-        const navTitle = element.NavigationTitle?.value?.toString() || '';
-        if (navTitle === 'Dashboard') return false;
+        if (
+          element.Id === '979d2425-b798-45ed-8c08-a5846183ef0a' ||
+          element.Id === 'e26e1515-b1c5-4472-8336-5fc460b6cdcd'
+        )
+          return false;
       }
 
-      const navTitle = element.NavigationTitle?.value?.toString() || '';
-      if (navTitle === 'Dashboard' && !user) {
+      if (
+        (element.Id === '979d2425-b798-45ed-8c08-a5846183ef0a' ||
+          element.Id === 'e26e1515-b1c5-4472-8336-5fc460b6cdcd') &&
+        !user
+      ) {
         return false;
       }
 

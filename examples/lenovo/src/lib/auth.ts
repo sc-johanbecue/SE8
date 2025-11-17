@@ -6,6 +6,18 @@ import { cookies } from 'next/headers';
 const users = [
   { username: 'demo1', password: 'demo1', name: 'Sarah Johnson', company: 'Tech Solutions Inc' },
   { username: 'demo2', password: 'demo2', name: 'Michael Chen', company: 'Digital Partners LLC' },
+  {
+    username: 'partner@lenovo.com',
+    password: 'partner123',
+    name: 'John Partner',
+    company: 'Tech Solutions Inc.',
+  },
+  {
+    username: 'sarah.oreilly@sitecore.com',
+    password: 'demo',
+    name: "Sarah O'Reilly",
+    company: 'Sitecore',
+  },
 ];
 
 export async function login(username: string, password: string) {

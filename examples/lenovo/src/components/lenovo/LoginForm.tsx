@@ -11,6 +11,8 @@ import {
   TextField,
   RichTextField,
   Link as JssLink,
+  Image as JssImage,
+  ImageField,
   RichText,
   ComponentParams,
   ComponentRendering,
@@ -22,6 +24,7 @@ type Fields = {
   Title: TextField;
   Description: RichTextField;
   LogoText: TextField;
+  Logo: ImageField;
   UsernameLabel: TextField;
   UsernamePlaceholder: TextField;
   PasswordLabel: TextField;
@@ -101,8 +104,8 @@ export const Default = (props: ComponentProps) => {
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
           <div className="flex justify-center mb-4">
-            <div className="bg-[#E2231A] px-6 py-2 text-white font-bold text-2xl">
-              <Text field={fields.LogoText} />
+            <div className="px-6 py-2 text-white font-bold text-2xl">
+              <JssImage field={fields.Logo} />
             </div>
           </div>
           <CardTitle className="text-2xl text-center">

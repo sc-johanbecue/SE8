@@ -21,6 +21,12 @@ const users = {
     name: 'John Partner',
     company: 'Tech Solutions Inc.',
   },
+  'sarah.oreilly@sitecore.com': {
+    username: 'sarah.oreilly@sitecore.com',
+    password: 'demo',
+    name: "Sarah O'Reilly",
+    company: 'Sitecore',
+  },
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {

@@ -2,6 +2,8 @@ import type { JSX } from 'react';
 import {
   type TextField,
   Text,
+  type ImageField,
+  Image as JssImage,
   type ComponentParams,
   type ComponentRendering,
   Placeholder,
@@ -10,6 +12,7 @@ import {
 } from '@sitecore-content-sdk/nextjs';
 
 type Fields = {
+  Logo: ImageField;
   LogoText: TextField;
   Description: RichTextField;
   CopyrightText: TextField;
@@ -33,8 +36,8 @@ export const Default = (props: ComponentProps): JSX.Element => {
       <div className="container py-12 px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg inline-block mb-4">
-              <Text field={fields.LogoText} />
+            <div className="px-3 py-1 text-white font-bold text-lg inline-block mb-4">
+              <JssImage field={fields.Logo} />
             </div>
             <RichText field={fields.Description} className="text-sm text-muted-foreground" />
           </div>

@@ -3,6 +3,8 @@ import type { JSX } from 'react';
 import {
   type TextField,
   Text,
+  type ImageField,
+  Image as JssImage,
   type LinkField,
   Link as JssLink,
   type ComponentParams,
@@ -27,6 +29,7 @@ import Link from 'next/link';
 
 type Fields = {
   LogoText: TextField;
+  Logo: ImageField;
   SubtitleText: TextField;
   SearchPlaceholder: TextField;
   HomeLink: LinkField;
@@ -116,9 +119,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
   return (
     <header key={id} className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex h-16 items-center gap-4 px-4">
-        <JssLink field={fields.HomeLink} className="flex items-center gap-2">
-          <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg">
-            <Text field={fields.LogoText} />
+        <JssLink field={fields.HomeLink} className="flex items-center gap-2 shrink-0">
+          <div className="px-2 sm:px-3 py-1 text-white font-bold text-lg w-24 sm:w-auto">
+            <JssImage field={fields.Logo} />
           </div>
           <span className="font-semibold text-sm hidden sm:inline text-nowrap">
             <Text field={fields.SubtitleText} />
@@ -130,7 +133,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
         </nav>
 
         <div className="ml-auto flex items-center gap-2">
-          <div className="hidden md:block relative">
+          <div className="hidden lg:block relative">
             <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input
               type="search"
@@ -138,6 +141,10 @@ export const Default = (props: ComponentProps): JSX.Element => {
               className="pl-8 w-[200px] lg:w-[300px]"
             />
           </div>
+          
+          <Button variant="ghost" size="icon" className="hidden md:flex lg:hidden">
+            <Search className="h-5 w-5" />
+          </Button>
 
           <div className="relative">
             <button
@@ -235,8 +242,8 @@ export const Default = (props: ComponentProps): JSX.Element => {
             <SheetHeader>
               <SheetTitle>
                 <div className="flex items-center gap-2">
-                  <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg">
-                    <Text field={fields.LogoText} />
+                  <div className="px-2 sm:px-3 py-1 text-white font-bold text-lg w-24 sm:w-auto">
+                    <JssImage field={fields.Logo} />
                   </div>
                   <span className="font-semibold text-sm">
                     <Text field={fields.SubtitleText} />

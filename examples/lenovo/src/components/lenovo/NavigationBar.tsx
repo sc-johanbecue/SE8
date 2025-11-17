@@ -141,7 +141,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
               className="pl-8 w-[200px] lg:w-[300px]"
             />
           </div>
-          
+
           <Button variant="ghost" size="icon" className="hidden md:flex lg:hidden">
             <Search className="h-5 w-5" />
           </Button>

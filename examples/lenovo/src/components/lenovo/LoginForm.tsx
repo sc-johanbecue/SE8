@@ -2,7 +2,6 @@
 
 import type React from 'react';
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -43,7 +42,6 @@ type ComponentProps = {
 export const Default = (props: ComponentProps) => {
   const id = props.rendering.uid;
   const fields = props.fields;
-  const router = useRouter();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');

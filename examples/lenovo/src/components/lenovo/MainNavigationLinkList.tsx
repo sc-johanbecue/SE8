@@ -77,18 +77,12 @@ export const Default = (props: NavigationProps): JSX.Element => {
       if (page.mode.isEditing) return true;
 
       if (isLoadingUser) {
-        if (
-          element.Id === '979d2425-b798-45ed-8c08-a5846183ef0a' ||
-          element.Id === 'e26e1515-b1c5-4472-8336-5fc460b6cdcd'
-        )
-          return false;
+        const navTitle = element.NavigationTitle?.value?.toString() || '';
+        if (navTitle === 'Dashboard') return false;
       }
 
-      if (
-        (element.Id === '979d2425-b798-45ed-8c08-a5846183ef0a' ||
-          element.Id === 'e26e1515-b1c5-4472-8336-5fc460b6cdcd') &&
-        !user
-      ) {
+      const navTitle = element.NavigationTitle?.value?.toString() || '';
+      if (navTitle === 'Dashboard' && !user) {
         return false;
       }
 
@@ -153,6 +147,9 @@ const NavigationList = (props: NavigationProps) => {
     }
   };
 
+  const navigationTitle = getNavigationText(props);
+  const isRedirectLink = navigationTitle.toLowerCase().includes('redirect');
+
   const handleMouseEnter = () => {
     if (children.length > 0 && props.relativeLevel === 1) {
       if (closeTimeoutRef.current) {
@@ -193,13 +190,24 @@ const NavigationList = (props: NavigationProps) => {
         onMouseLeave={handleMouseLeave}
       >
         <div className="navigation-title">
-          <Link
-            className="hover:text-[#E2231A] transition-colors cursor-pointer font-medium"
-            field={getLinkField(props)}
-            editable={page.mode.isEditing}
-          >
-            {getNavigationText(props)}
-          </Link>
+          {isRedirectLink ? (
+            <a
+              href="https://www.google.com"
+              className="hover:text-[#E2231A] transition-colors cursor-pointer font-medium"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {navigationTitle}
+            </a>
+          ) : (
+            <Link
+              className="hover:text-[#E2231A] transition-colors cursor-pointer font-medium"
+              field={getLinkField(props)}
+              editable={page.mode.isEditing}
+            >
+              {navigationTitle}
+            </Link>
+          )}
         </div>
         {children.length > 0 && active && (
           <div
@@ -217,14 +225,26 @@ const NavigationList = (props: NavigationProps) => {
   if (props.relativeLevel === 2) {
     return (
       <div key={props.fields.Id} className="space-y-4">
-        <Link
-          className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4 hover:text-[#E2231A] transition-colors cursor-pointer"
-          field={getLinkField(props)}
-          editable={page.mode.isEditing}
-          onClick={props.handleClick}
-        >
-          {getNavigationText(props)}
-        </Link>
+        {isRedirectLink ? (
+          <a
+            href="https://www.google.com"
+            className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4 hover:text-[#E2231A] transition-colors cursor-pointer"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={props.handleClick}
+          >
+            {navigationTitle}
+          </a>
+        ) : (
+          <Link
+            className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4 hover:text-[#E2231A] transition-colors cursor-pointer"
+            field={getLinkField(props)}
+            editable={page.mode.isEditing}
+            onClick={props.handleClick}
+          >
+            {navigationTitle}
+          </Link>
+        )}
         {children.length > 0 && <ul className="space-y-1 pl-3">{children}</ul>}
       </div>
     );
@@ -232,19 +252,40 @@ const NavigationList = (props: NavigationProps) => {
 
   return (
     <li className={`${classNameList} group`} key={props.fields.Id} tabIndex={0}>
-      <Link
-        className="block hover:bg-gray-50 rounded-md p-1.5 pl-3 transition-colors"
-        field={getLinkField(props)}
-        editable={page.mode.isEditing}
-        onClick={props.handleClick}
-      >
-        <div className="font-medium text-gray-900 group-hover:text-[#E2231A] transition-colors">
-          {getNavigationText(props)}
-        </div>
-        {props.fields.Title?.value && props.fields.NavigationTitle?.value && (
-          <div className="text-sm text-gray-500 mt-0.5">{props.fields.Title.value.toString()}</div>
-        )}
-      </Link>
+      {isRedirectLink ? (
+        <a
+          href="https://www.google.com"
+          className="block hover:bg-gray-50 rounded-md p-1.5 pl-3 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={props.handleClick}
+        >
+          <div className="font-medium text-gray-900 group-hover:text-[#E2231A] transition-colors">
+            {navigationTitle}
+          </div>
+          {props.fields.Title?.value && props.fields.NavigationTitle?.value && (
+            <div className="text-sm text-gray-500 mt-0.5">
+              {props.fields.Title.value.toString()}
+            </div>
+          )}
+        </a>
+      ) : (
+        <Link
+          className="block hover:bg-gray-50 rounded-md p-1.5 pl-3 transition-colors"
+          field={getLinkField(props)}
+          editable={page.mode.isEditing}
+          onClick={props.handleClick}
+        >
+          <div className="font-medium text-gray-900 group-hover:text-[#E2231A] transition-colors">
+            {navigationTitle}
+          </div>
+          {props.fields.Title?.value && props.fields.NavigationTitle?.value && (
+            <div className="text-sm text-gray-500 mt-0.5">
+              {props.fields.Title.value.toString()}
+            </div>
+          )}
+        </Link>
+      )}
     </li>
   );
 };

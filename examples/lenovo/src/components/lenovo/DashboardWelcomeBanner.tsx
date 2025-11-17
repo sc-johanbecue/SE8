@@ -1,50 +1,36 @@
 import type { JSX } from 'react';
 import {
-  type TextField,
-  Text,
   type ComponentParams,
   type ComponentRendering,
+  Placeholder,
 } from '@sitecore-content-sdk/nextjs';
 
-type Fields = {
-  WelcomeText: TextField;
-  UserNamePlaceholder: TextField;
-  SubText: TextField;
-  GradientFrom: TextField;
-  GradientTo: TextField;
-};
-
 type ComponentProps = {
-  rendering?: ComponentRendering & { params: ComponentParams };
-  params?: ComponentParams;
-  fields?: Fields;
+  rendering: ComponentRendering & { params: ComponentParams };
+  params: ComponentParams;
 };
 
-const defaultFields: Fields = {
-  WelcomeText: { value: 'Welcome' },
-  UserNamePlaceholder: { value: 'Partner' },
-  SubText: { value: 'Get to know your partner portal' },
-  GradientFrom: { value: 'from-purple-600' },
-  GradientTo: { value: 'to-blue-600' },
-};
+export default function Dashboard(props: ComponentProps): JSX.Element {
+  const id = props.rendering.uid;
 
-export default function DashboardWelcomeBanner(props?: ComponentProps): JSX.Element {
-  const id = props?.rendering?.uid || 'dashboard-welcome-banner';
-  const fields = props?.fields || defaultFields;
+  const phLeftDashboardContainer = `lenovoLeftDashboardContainer-${props.params.DynamicPlaceholderId}`;
+  const phRightDashboardContainer = `lenovoRightDashboardContainer-${props.params.DynamicPlaceholderId}`;
 
   return (
-    <div
-      key={id}
-      className={`bg-gradient-to-r ${fields.GradientFrom.value} ${fields.GradientTo.value} text-white rounded-lg p-6 mb-8`}
-    >
-      <h1 className="text-2xl md:text-3xl font-bold mb-2">
-        <Text field={fields.WelcomeText} /> <Text field={fields.UserNamePlaceholder} />!
-      </h1>
-      <p className="text-purple-100">
-        <Text field={fields.SubText} />
-      </p>
+    <div key={id} className="container mx-auto py-8 px-4 max-w-7xl">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Left Column - Main Content */}
+        <div className="lg:col-span-2 space-y-6">
+          <Placeholder name={phLeftDashboardContainer} rendering={props.rendering} />
+        </div>
+
+        {/* Right Column - Sidebar */}
+        <div className="space-y-6">
+          <Placeholder name={phRightDashboardContainer} rendering={props.rendering} />
+        </div>
+      </div>
     </div>
   );
 }
 
-export const Default = DashboardWelcomeBanner;
+export const Default = Dashboard;

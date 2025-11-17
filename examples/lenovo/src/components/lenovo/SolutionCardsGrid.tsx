@@ -14,6 +14,7 @@ import {
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 type Solution = {
   name: string;
@@ -25,6 +26,7 @@ type Solution = {
     Gradient: TextField;
     BackgroundImage: ImageField;
   };
+  url: string;
 };
 
 type Fields = {
@@ -41,7 +43,7 @@ export default function SolutionCardsGrid(props: ComponentProps): JSX.Element {
   const id = props.rendering?.uid;
 
   return (
-    <div key={id} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+    <div key={id} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 p-10">
       {props.fields.items
         .filter((e) => e.name != 'Data')
         .map((solution, index) => (
@@ -49,10 +51,12 @@ export default function SolutionCardsGrid(props: ComponentProps): JSX.Element {
             <div
               className={`aspect-video bg-gradient-to-br ${solution.fields.Gradient.value} relative overflow-hidden flex items-center justify-center`}
             >
-              <JssImage
-                field={solution.fields.BackgroundImage}
-                className="w-full h-full object-cover"
-              />
+              <Link href={solution.url}>
+                <JssImage
+                  field={solution.fields.BackgroundImage}
+                  className="w-full h-full object-cover"
+                />
+              </Link>
             </div>
             <CardHeader>
               <div className="flex items-center justify-between mb-2">

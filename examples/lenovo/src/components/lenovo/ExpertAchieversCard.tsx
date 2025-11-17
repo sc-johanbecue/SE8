@@ -3,14 +3,13 @@ import {
   type TextField,
   Text,
   type LinkField,
-  Link as SitecoreLink,
+  Link as JssLink,
   type ComponentParams,
   type ComponentRendering,
 } from '@sitecore-content-sdk/nextjs';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Award, TrendingUp } from 'lucide-react';
-import Link from 'next/link';
 
 type Fields = {
   Heading: TextField;
@@ -26,17 +25,17 @@ type Fields = {
 };
 
 type ComponentProps = {
-  rendering?: ComponentRendering & { params: ComponentParams };
-  params?: ComponentProps;
-  fields?: Fields;
+  rendering: ComponentRendering & { params: ComponentParams };
+  params: ComponentProps;
+  fields: Fields;
 };
 
 const defaultFields: Fields = {
   Heading: { value: 'Lenovo 360 Expert Achievers Program' },
   PointsToClaimLabel: { value: 'Points to Claim' },
-  PointsToClaimValue: { value: '0' },
+  PointsToClaimValue: { value: '60' },
   PointsToRedeemLabel: { value: 'Points to Redeem' },
-  PointsToRedeemValue: { value: '0' },
+  PointsToRedeemValue: { value: '30' },
   Description: { value: 'Jump to LEAP and start earning on eligible Lenovo activities now!' },
   ButtonText: { value: 'Start Earning' },
   ButtonLink: { value: { href: '/leap', text: 'Start Earning' } },
@@ -44,10 +43,9 @@ const defaultFields: Fields = {
   GradientTo: { value: 'to-slate-900' },
 };
 
-export default function ExpertAchieversCard(props?: ComponentProps): JSX.Element {
-  const id = props?.rendering?.uid || 'expert-achievers-card';
-  const fields = props?.fields || defaultFields;
-  const isSitecoreContext = !!props?.rendering;
+export default function ExpertAchieversCard(props: ComponentProps): JSX.Element {
+  const id = props.rendering.uid;
+  const fields = defaultFields; //props.fields ||
 
   return (
     <Card
@@ -86,15 +84,9 @@ export default function ExpertAchieversCard(props?: ComponentProps): JSX.Element
           <Text field={fields.Description} />
         </p>
         <Button className="w-full bg-blue-600 hover:bg-blue-700" asChild>
-          {isSitecoreContext ? (
-            <SitecoreLink field={fields.ButtonLink}>
-              <Text field={fields.ButtonText} />
-            </SitecoreLink>
-          ) : (
-            <Link href={fields.ButtonLink.value?.href || '/leap'}>
-              <Text field={fields.ButtonText} />
-            </Link>
-          )}
+          <JssLink field={fields.ButtonLink}>
+            <Text field={fields.ButtonText} />
+          </JssLink>
         </Button>
       </CardContent>
     </Card>

@@ -26,7 +26,7 @@ const defaultFields: Fields = {
 
 export const Default = (props: ComponentProps): JSX.Element => {
   const id = props.rendering.uid;
-  const fields = props.fields || defaultFields;
+  const fields = defaultFields; //props.fields ||
 
   return (
     <Link key={id} field={fields.LinkUrl} className="block text-sm text-blue-600 hover:underline">

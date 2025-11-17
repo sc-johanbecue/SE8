@@ -28,32 +28,14 @@ type Fields = {
 };
 
 type ComponentProps = {
-  rendering?: ComponentRendering & { params: ComponentParams };
-  params?: ComponentParams;
-  fields?: Fields;
+  rendering: ComponentRendering & { params: ComponentParams };
+  params: ComponentParams;
+  fields: Fields;
 };
 
-const defaultFields: Fields = {
-  Heading: { value: 'Deal Registrations and Bid Requests' },
-  DealRegLabel: { value: 'Deal Registrations' },
-  DealRegValue: { value: '9' },
-  DealRegSubmitted: { value: '(4)' },
-  DealRegPending: { value: '(2)' },
-  BidRequestLabel: { value: 'Bid Requests' },
-  BidRequestValue: { value: '0' },
-  BidRequestHistoric: { value: '(58)' },
-  LeadsLabel: { value: 'Leads' },
-  LeadsValue: { value: '0' },
-  LeadsStatus: { value: 'New' },
-  InfrastructureLabel: { value: 'Infrastructure' },
-  InfrastructureValue: { value: '2' },
-  InfrastructureStatus: { value: 'New' },
-  ButtonText: { value: 'BACK AN END TO END REQUEST' },
-};
-
-export default function DealRegistrationsCard(props?: ComponentProps): JSX.Element {
-  const id = props?.rendering?.uid || 'deal-registrations-card';
-  const fields = props?.fields || defaultFields;
+export default function DealRegistrationsCard(props: ComponentProps): JSX.Element {
+  const id = props.rendering.uid;
+  const fields = props.fields;
 
   return (
     <Card key={id}>

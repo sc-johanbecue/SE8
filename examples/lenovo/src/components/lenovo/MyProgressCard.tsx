@@ -24,29 +24,29 @@ type Fields = {
 };
 
 type ComponentProps = {
-  rendering?: ComponentRendering & { params: ComponentParams };
-  params?: ComponentParams;
-  fields?: Fields;
+  rendering: ComponentRendering & { params: ComponentParams };
+  params: ComponentParams;
+  fields: Fields;
 };
 
 const defaultFields: Fields = {
   Heading: { value: 'My Progress' },
   DateText: { value: 'As of 2025-01-12' },
   ClientRecordsLabel: { value: 'Total Client Records' },
-  ClientRecordsValue: { value: '0' },
+  ClientRecordsValue: { value: '240' },
   CreatedLabel: { value: 'Created' },
-  CreatedValue: { value: '0' },
+  CreatedValue: { value: '$350000' },
   SentLabel: { value: 'Sent' },
-  SentValue: { value: '0' },
+  SentValue: { value: '4' },
   ViewedLabel: { value: 'Viewed' },
-  ViewedValue: { value: '0' },
+  ViewedValue: { value: '10' },
   DownloadedLabel: { value: 'Downloaded' },
-  DownloadedValue: { value: '0' },
+  DownloadedValue: { value: '3.4 TB' },
 };
 
-export default function MyProgressCard(props?: ComponentProps): JSX.Element {
-  const id = props?.rendering?.uid || 'my-progress-card';
-  const fields = props?.fields || defaultFields;
+export default function MyProgressCard(props: ComponentProps): JSX.Element {
+  const id = props.rendering.uid;
+  const fields = defaultFields; //props?.fields || 
 
   return (
     <Card key={id}>

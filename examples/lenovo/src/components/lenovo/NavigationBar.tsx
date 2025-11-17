@@ -70,9 +70,22 @@ export const Default = (props: ComponentProps): JSX.Element => {
   const phMainNavigationLinksContainer = `lenovoMainNavigationLinksContainer-${props.params.DynamicPlaceholderId}`;
   const phMobileMainNavigationLinksContainer = `lenovoMobileMainNavigationLinksContainer-${props.params.DynamicPlaceholderId}`;
 
+  const languages = [
+    { locale: 'en', name: 'English' },
+    { locale: 'nl-NL', name: 'Nederlands (Nederland)' },
+    { locale: 'nl-NL', name: 'Nederlands (België)' },
+    { locale: 'ja-JP', name: 'Japanese' },
+    { locale: 'fr-FR', name: 'Français' },
+    { locale: 'fr-BE', name: 'Français (Belgique)' },
+  ];
+
+  const currentLocale = page?.locale || 'en';
+  const currentLanguage = languages.find(lang => lang.locale === currentLocale)?.name || 'English';
+  
+  const availableLanguages = languages.filter(lang => lang.locale !== currentLocale);
+
   useEffect(() => {
     console.log('[v0] Fetching user data...');
-    // Fetch user data on client side
     fetch('/api/user')
       .then((res) => {
         console.log('[v0] User API response status:', res.status);
@@ -106,7 +119,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
           <div className="bg-[#E2231A] px-3 py-1 text-white font-bold text-lg">
             <Text field={fields.LogoText} />
           </div>
-          <span className="font-semibold text-sm hidden sm:inline">
+          <span className="font-semibold text-sm hidden sm:inline text-nowrap">
             <Text field={fields.SubtitleText} />
           </span>
         </JssLink>
@@ -121,18 +134,17 @@ export const Default = (props: ComponentProps): JSX.Element => {
             <Input
               type="search"
               placeholder={fields.SearchPlaceholder.value as string}
-              className="pl-8 w-[200px]"
+              className="pl-8 w-[200px] lg:w-[300px]"
             />
           </div>
 
-          {/* NL Language dropdown */}
           <div className="relative">
             <button
               onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
-              className="flex items-center gap-1 text-sm font-semibold text-[#00716B] hover:text-[#005952]"
+              className="flex items-center gap-1 text-sm font-semibold text-[#000000] hover:text-[#E2231A]"
             >
               <ChevronDown className="w-4 h-4" />
-              NL
+              {currentLanguage}
             </button>
 
             {languageDropdownOpen && (
@@ -141,39 +153,20 @@ export const Default = (props: ComponentProps): JSX.Element => {
                   className="fixed inset-0 z-40"
                   onClick={() => setLanguageDropdownOpen(false)}
                 />
-                <div className="absolute top-full left-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg z-50">
-                  <Link
-                    locale="en"
-                    href=""
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 border-b border-gray-200"
-                    onClick={() => setLanguageDropdownOpen(false)}
-                  >
-                    English
-                  </Link>
-                  <Link
-                    locale="nl-NL"
-                    href=""
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50"
-                    onClick={() => setLanguageDropdownOpen(false)}
-                  >
-                    Nederlands
-                  </Link>
-                  <Link
-                    locale="ja-JP"
-                    href=""
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50"
-                    onClick={() => setLanguageDropdownOpen(false)}
-                  >
-                    Japanese
-                  </Link>
-                  <Link
-                    locale="fr-BE"
-                    href=""
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50"
-                    onClick={() => setLanguageDropdownOpen(false)}
-                  >
-                    Français
-                  </Link>
+                <div className="absolute top-full left-0 mt-2 w-50 bg-white border border-gray-200 shadow-lg z-50">
+                  {availableLanguages.map((lang, index) => (
+                    <Link
+                      key={lang.locale}
+                      locale={lang.locale}
+                      href=""
+                      className={`block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 ${
+                        index < availableLanguages.length - 1 ? 'border-b border-gray-200' : ''
+                      }`}
+                      onClick={() => setLanguageDropdownOpen(false)}
+                    >
+                      {lang.name}
+                    </Link>
+                  ))}
                 </div>
               </>
             )}

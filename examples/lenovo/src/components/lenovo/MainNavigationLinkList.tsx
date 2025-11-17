@@ -1,4 +1,4 @@
-import React, { useState, JSX } from 'react';
+import React, { useState, JSX, useEffect } from 'react';
 import { Link, LinkField, TextField, useSitecore } from '@sitecore-content-sdk/nextjs';
 
 interface Fields {
@@ -29,12 +29,27 @@ const getLinkField = (props: NavigationProps): LinkField => ({
 
 export const Default = (props: NavigationProps): JSX.Element => {
   const [isOpenMenu, openMenu] = useState(false);
+  const [user, setUser] = useState<{ name: string } | null>(null);
+  const [isLoadingUser, setIsLoadingUser] = useState(true);
   const { page } = useSitecore();
   const styles =
     props.params != null
       ? `${props.params.GridParameters ?? ''} ${props.params.Styles ?? ''}`.trimEnd()
       : '';
   const id = props.params != null ? props.params.RenderingIdentifier : null;
+
+  useEffect(() => {
+    fetch('/api/user')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        setUser(data?.user || null);
+        setIsLoadingUser(false);
+      })
+      .catch(() => {
+        setUser(null);
+        setIsLoadingUser(false);
+      });
+  }, []);
 
   if (!Object.values(props.fields).length) {
     return (
@@ -58,6 +73,27 @@ export const Default = (props: NavigationProps): JSX.Element => {
 
   const list = Object.values(props.fields)
     .filter((element) => element)
+    .filter((element: Fields) => {
+      if (page.mode.isEditing) return true;
+
+      if (isLoadingUser) {
+        if (
+          element.Id === '979d2425-b798-45ed-8c08-a5846183ef0a' ||
+          element.Id === 'e26e1515-b1c5-4472-8336-5fc460b6cdcd'
+        )
+          return false;
+      }
+
+      if (
+        (element.Id === '979d2425-b798-45ed-8c08-a5846183ef0a' ||
+          element.Id === 'e26e1515-b1c5-4472-8336-5fc460b6cdcd') &&
+        !user
+      ) {
+        return false;
+      }
+
+      return true;
+    })
     .map((element: Fields, key: number) => (
       <NavigationList
         key={`${key}${element.Id}`}
@@ -77,7 +113,6 @@ export const Default = (props: NavigationProps): JSX.Element => {
           onChange={() => handleToggleMenu()}
         />
         <div className="menu-humburger hidden" />
-        {/* </CHANGE> */}
         <div className="component-content">
           <nav>
             <ul className="clearfix flex gap-6">{list}</ul>
@@ -92,7 +127,6 @@ const NavigationList = (props: NavigationProps) => {
   const { page } = useSitecore();
   const [active, setActive] = useState(false);
   const closeTimeoutRef = React.useRef<NodeJS.Timeout | null>(null);
-  // </CHANGE>
   const classNameList = `${props.fields.Styles.concat('rel-level' + props.relativeLevel).join(
     ' '
   )}`;
@@ -125,7 +159,6 @@ const NavigationList = (props: NavigationProps) => {
         clearTimeout(closeTimeoutRef.current);
         closeTimeoutRef.current = null;
       }
-      // </CHANGE>
       setActive(true);
     }
   };
@@ -135,7 +168,6 @@ const NavigationList = (props: NavigationProps) => {
       closeTimeoutRef.current = setTimeout(() => {
         setActive(false);
       }, 150);
-      // </CHANGE>
     }
   };
 
@@ -144,7 +176,6 @@ const NavigationList = (props: NavigationProps) => {
       clearTimeout(closeTimeoutRef.current);
       closeTimeoutRef.current = null;
     }
-    // </CHANGE>
     setActive(true);
   };
 
@@ -172,8 +203,7 @@ const NavigationList = (props: NavigationProps) => {
         </div>
         {children.length > 0 && active && (
           <div
-            className="absolute left-0 top-full mt-3 pt-1 bg-white border border-gray-200 rounded-lg shadow-2xl p-8 z-50 min-w-[800px]"
-            // </CHANGE>
+            className="absolute left-0 top-full mt-1 pt-1 bg-white border border-gray-200 rounded-lg shadow-2xl p-8 z-50 min-w-[800px]"
             onMouseEnter={handleSubmenuMouseEnter}
             onMouseLeave={handleSubmenuMouseLeave}
           >

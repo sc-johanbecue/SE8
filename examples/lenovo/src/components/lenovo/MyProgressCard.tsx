@@ -46,7 +46,7 @@ const defaultFields: Fields = {
 
 export default function MyProgressCard(props: ComponentProps): JSX.Element {
   const id = props.rendering.uid;
-  const fields = defaultFields; //props?.fields || 
+  const fields = defaultFields; //props?.fields ||
 
   return (
     <Card key={id}>

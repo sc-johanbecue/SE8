@@ -24,7 +24,7 @@ const defaultFields: Fields = {
 
 export const Default = (props: ComponentProps): JSX.Element => {
   const id = props.rendering.uid;
-  const fields = defaultFields; //props.fields || 
+  const fields = defaultFields; //props.fields ||
   const phQuickLinks = `lenovoQuickLinks-${props.params.DynamicPlaceholderId}`;
 
   return (

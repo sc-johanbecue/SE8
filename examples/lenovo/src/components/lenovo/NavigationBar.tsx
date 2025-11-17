@@ -80,9 +80,10 @@ export const Default = (props: ComponentProps): JSX.Element => {
   ];
 
   const currentLocale = page?.locale || 'en';
-  const currentLanguage = languages.find(lang => lang.locale === currentLocale)?.name || 'English';
-  
-  const availableLanguages = languages.filter(lang => lang.locale !== currentLocale);
+  const currentLanguage =
+    languages.find((lang) => lang.locale === currentLocale)?.name || 'English';
+
+  const availableLanguages = languages.filter((lang) => lang.locale !== currentLocale);
 
   useEffect(() => {
     console.log('[v0] Fetching user data...');

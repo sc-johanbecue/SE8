@@ -17,7 +17,7 @@ import { ArrowLeft } from 'lucide-react';
 
 type Fields = {
   BackgroundImage: ImageField;
-  Title: TextField;
+  SolutionTitle: TextField;
   Subtitle: TextField;
   LongDescription: RichTextField;
   Badge1: TextField;
@@ -64,7 +64,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
 
         <div className={`max-w-3xl ${overlayColor} backdrop-blur-sm p-8 rounded-lg`}>
           <h1 className="text-5xl font-bold mb-4 text-white">
-            <Text field={fields.Title} />
+            <Text field={fields.SolutionTitle} />
           </h1>
           <p className="text-2xl mb-6 text-white/90">
             <Text field={fields.Subtitle} />
@@ -125,7 +125,7 @@ export const Red = (props: ComponentProps): JSX.Element => {
 
         <div className={`max-w-3xl ${overlayColor} backdrop-blur-sm p-8 rounded-lg`}>
           <h1 className="text-5xl font-bold mb-4 text-white">
-            <Text field={fields.Title} />
+            <Text field={fields.SolutionTitle} />
           </h1>
           <p className="text-2xl mb-6 text-white/90">
             <Text field={fields.Subtitle} />
@@ -190,7 +190,7 @@ export const White = (props: ComponentProps): JSX.Element => {
 
         <div className={`max-w-3xl ${overlayColor} backdrop-blur-sm p-8 rounded-lg`}>
           <h1 className="text-5xl font-bold mb-4 text-black">
-            <Text field={fields.Title} />
+            <Text field={fields.SolutionTitle} />
           </h1>
           <p className="text-2xl mb-6 text-black/90">
             <Text field={fields.Subtitle} />

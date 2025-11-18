@@ -51,7 +51,7 @@ export default function SolutionCardsGrid(props: ComponentProps): JSX.Element {
             <div
               className={`aspect-video bg-gradient-to-br ${solution.fields.Gradient.value} relative overflow-hidden flex items-center justify-center`}
             >
-              <Link href={solution.url}>
+              <Link href={solution.url} className="w-full h-full">
                 <JssImage
                   field={solution.fields.BackgroundImage}
                   className="w-full h-full object-cover"

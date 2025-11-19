@@ -2,7 +2,6 @@
 import { CloudSDK } from '@sitecore-cloudsdk/core/browser';
 import { SitecorePageProps } from '@sitecore-content-sdk/nextjs';
 import '@sitecore-cloudsdk/events/browser';
-import '@sitecore-cloudsdk/personalize/browser';
 import config from 'sitecore.config';
 
 /**
@@ -20,9 +19,7 @@ const Bootstrap = (props: SitecorePageProps): JSX.Element | null => {
     }
 
     const mode = page.mode;
-    const forceEnableEvents = process.env.NEXT_PUBLIC_FORCE_CDP_EVENTS === 'true';
-
-    if (process.env.NODE_ENV === 'development' && !forceEnableEvents)
+    if (process.env.NODE_ENV === 'development')
       console.debug('Browser Events SDK is not initialized in development environment');
     else if (!mode.isNormal)
       console.debug('Browser Events SDK is not initialized in edit and preview modes');
@@ -34,17 +31,9 @@ const Bootstrap = (props: SitecorePageProps): JSX.Element | null => {
           siteName: page.siteName || config.defaultSite,
           enableBrowserCookie: true,
           // Replace with the top level cookie domain of the website that is being integrated e.g ".example.com" and not "www.example.com"
-          // In development, explicitly set to 'localhost' for local testing
-          cookieDomain:
-            process.env.NODE_ENV === 'development'
-              ? 'localhost'
-              : window.location.hostname.replace(/^www\./, ''),
+          cookieDomain: window.location.hostname.replace(/^www\./, ''),
         })
           .addEvents()
-          .addPersonalize({
-            enablePersonalizeCookie: true,
-            webPersonalization: true,
-          })
           .initialize();
       } else {
         console.error('Client Edge API settings missing from configuration');

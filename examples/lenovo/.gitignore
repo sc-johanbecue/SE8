@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 
+# Lock files
+package-lock.json
+
 # testing
 /coverage
 
@@ -29,6 +32,4 @@
 .sitecore/*
 # except for component-map
 !.sitecore/component-map.ts
-
-# Claude AI resources
-.claude/
+!.sitecore/import-map.ts

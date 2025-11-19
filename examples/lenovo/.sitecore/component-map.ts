@@ -65,50 +65,6 @@ import * as TextBanner from 'components/text-banner/TextBanner';
 import * as TopicListing from 'components/topic-listing/TopicListing';
 import * as VerticalImageAccordion from 'components/vertical-image-accordion/VerticalImageAccordion';
 import * as Video from 'components/video/Video';
-import * as LenovoAdditionalToolsSection from 'components/lenovo/AdditionalToolsSection';
-import * as LenovoCTASection from 'components/lenovo/CTASection';
-import * as LenovoDashboardWelcomeBanner from 'components/lenovo/DashboardWelcomeBanner';
-import * as LenovoDealRegistrationsCard from 'components/lenovo/DealRegistrationsCard';
-import * as LenovoEventItem from 'components/lenovo/EventItem';
-import * as LenovoExpertAchieversCard from 'components/lenovo/ExpertAchieversCard';
-import * as LenovoFeaturedTrainingPrograms from 'components/lenovo/FeaturedTrainingPrograms';
-import * as LenovoFooter from 'components/lenovo/Footer';
-import * as LenovoGetStartedCard from 'components/lenovo/GetStartedCard';
-import * as LenovoHeroSection from 'components/lenovo/HeroSection';
-import * as LenovoLoginForm from 'components/lenovo/LoginForm';
-import * as LenovoMyProgressCard from 'components/lenovo/MyProgressCard';
-import * as LenovoPSREFBanner from 'components/lenovo/PSREFBanner';
-import * as LenovoPageHeader from 'components/lenovo/PageHeader';
-import * as LenovoProductBrandTabs from 'components/lenovo/ProductBrandTabs';
-import * as LenovoProductCard from 'components/lenovo/ProductCard';
-import * as LenovoProductCategoriesSection from 'components/lenovo/ProductCategoriesSection';
-import * as LenovoProductGrid from 'components/lenovo/ProductGrid';
-import * as LenovoProductCategorySection from 'components/lenovo/ProductCategorySection';
-import * as LenovoProductSeriesNav from 'components/lenovo/ProductSeriesNav';
-import * as LenovoQuickActionsCard from 'components/lenovo/QuickActionsCard';
-import * as LenovoQuickLinkItem from 'components/lenovo/QuickLinkItem';
-import * as LenovoQuickLinksCard from 'components/lenovo/QuickLinksCard';
-import * as LenovoSolutionCTACard from 'components/lenovo/SolutionCTACard';
-import * as LenovoSolutionCard from 'components/lenovo/SolutionCard';
-import * as LenovoSolutionCardsGrid from 'components/lenovo/SolutionCardsGrid';
-import * as LenovoSolutionHubHeader from 'components/lenovo/SolutionHubHeader';
-import * as LenovoSolutionsSection from 'components/lenovo/SolutionsSection';
-import * as LenovoStatCard from 'components/lenovo/StatCard';
-import * as LenovoStatsSection from 'components/lenovo/StatsSection';
-import * as LenovoToolCard from 'components/lenovo/ToolCard';
-import * as LenovoTrainingStatsCards from 'components/lenovo/TrainingStatsCards';
-import * as LenovoUpcomingEventsCard from 'components/lenovo/UpcomingEventsCard';
-import * as LenovoSolutionPageHeader from 'components/lenovo/SolutionPageHeader';
-import * as LenovoVideoThumbnail from 'components/lenovo/VideoThumbnail';
-import * as LenovoDealRegistrationTabs from 'components/lenovo/DealRegistrationTabs';
-import * as LenovoSolutionKeyFeatures from 'components/lenovo/SolutionKeyFeatures';
-import * as LenovoSolutionBenefits from 'components/lenovo/SolutionBenefits';
-import * as LenovoNavBar from 'components/lenovo/NavigationBar';
-import * as LenovoFooterColumn from 'components/lenovo/FooterColumn';
-import * as LenovoMainNavigationLinkList from 'components/lenovo/MainNavigationLinkList';
-import * as LenovoMainNavigationLinkListMobile from 'components/lenovo/MainNavigationLinkListMobile';
-
-// Map of component names to components
 
 // Components must be registered with to match the string key with component name in Sitecore
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
@@ -177,48 +133,6 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['TopicListing', TopicListing],
   ['VerticalImageAccordion', VerticalImageAccordion],
   ['Video', Video],
-  ['LenovoAdditionalToolsSection', LenovoAdditionalToolsSection],
-  ['LenovoCTASection', LenovoCTASection],
-  ['LenovoDashboardWelcomeBanner', LenovoDashboardWelcomeBanner],
-  ['LenovoDealRegistrationsCard', LenovoDealRegistrationsCard],
-  ['LenovoEventItem', LenovoEventItem],
-  ['LenovoExpertAchieversCard', LenovoExpertAchieversCard],
-  ['LenovoFeaturedTrainingPrograms', LenovoFeaturedTrainingPrograms],
-  ['LenovoFooter', LenovoFooter],
-  ['LenovoGetStartedCard', LenovoGetStartedCard],
-  ['LenovoHeroSection', LenovoHeroSection],
-  ['LenovoLoginForm', LenovoLoginForm],
-  ['LenovoMyProgressCard', LenovoMyProgressCard],
-  ['LenovoNavBar', LenovoNavBar],
-  ['LenovoPSREFBanner', LenovoPSREFBanner],
-  ['LenovoPageHeader', LenovoPageHeader],
-  ['LenovoProductBrandTabs', LenovoProductBrandTabs],
-  ['LenovoProductCategoriesSection', LenovoProductCategoriesSection],
-  ['LenovoProductCategorySection', LenovoProductCategorySection],
-  ['LenovoProductCard', LenovoProductCard],
-  ['LenovoProductGrid', LenovoProductGrid],
-  ['LenovoProductSeriesNav', LenovoProductSeriesNav],
-  ['LenovoQuickActionsCard', LenovoQuickActionsCard],
-  ['LenovoQuickLinkItem', LenovoQuickLinkItem],
-  ['LenovoQuickLinksCard', LenovoQuickLinksCard],
-  ['LenovoSolutionCTACard', LenovoSolutionCTACard],
-  ['LenovoSolutionCard', LenovoSolutionCard],
-  ['LenovoSolutionCardsGrid', LenovoSolutionCardsGrid],
-  ['LenovoSolutionHubHeader', LenovoSolutionHubHeader],
-  ['LenovoSolutionsSection', LenovoSolutionsSection],
-  ['LenovoStatCard', LenovoStatCard],
-  ['LenovoStatsSection', LenovoStatsSection],
-  ['LenovoToolCard', LenovoToolCard],
-  ['LenovoTrainingStatsCards', LenovoTrainingStatsCards],
-  ['LenovoUpcomingEventsCard', LenovoUpcomingEventsCard],
-  ['LenovoVideoThumbnail', LenovoVideoThumbnail],
-  ['LenovoDealRegistrationTabs', LenovoDealRegistrationTabs],
-  ['LenovoSolutionPageHeader', LenovoSolutionPageHeader],
-  ['LenovoSolutionKeyFeatures', LenovoSolutionKeyFeatures],
-  ['LenovoSolutionBenefits', LenovoSolutionBenefits],
-  ['LenovoFooterColumn', LenovoFooterColumn],
-  ['LenovoMainNavigationLinkList', LenovoMainNavigationLinkList],
-  ['LenovoMainNavigationLinkListMobile', LenovoMainNavigationLinkListMobile],
 ]);
 
 export default componentMap;

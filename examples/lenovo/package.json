@@ -75,7 +75,6 @@
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
-    "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "focus-trap-react": "^11.0.4",
     "font-awesome": "^4.7.0",
@@ -110,8 +109,7 @@
     "tailwindcss": "^4.1.11",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^1.1.2",
-    "zod": "^3.25.71",
-    "cookie": "1.0.2"
+    "zod": "^3.25.71"
   },
   "devDependencies": {
     "@sitecore-content-sdk/cli": "^1.0.0",
@@ -139,9 +137,12 @@
     "build": "cross-env NODE_ENV=production npm-run-all --serial sitecore-tools:build next:build",
     "lint": "eslint ./src/**/*.tsx ./src/**/*.ts",
     "lint:fix": "eslint ./src/**/*.tsx ./src/**/*.ts --fix",
-    "prettier": "prettier --write \"./src/**/*.{ts,tsx}\"",
+    "prettier": "prettier --write \"./src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "format:check": "prettier --check \"./src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "type-check": "tsc --noEmit",
+    "test": "echo 'No tests implemented yet' && exit 0",
     "next:build": "next build",
-    "next:dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "next:dev": "cross-env NODE_OPTIONS='--inspect' next dev --turbopack",
     "next:start": "next start",
     "sitecore-tools:build": "sitecore-tools project build",
     "sitecore-tools:generate-map": "sitecore-tools project component generate-map",

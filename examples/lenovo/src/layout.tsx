@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-css-tags */
 /**
  * This Layout is needed for Starter Kit.
  */
@@ -7,10 +6,23 @@ import Head from 'next/head';
 import { Placeholder, Page, Field, DesignLibrary, ImageField } from '@sitecore-content-sdk/nextjs';
 import Scripts from 'src/Scripts';
 import SitecoreStyles from 'components/content-sdk/SitecoreStyles';
+import { Figtree } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider/theme-provider.dev';
 import { VideoProvider } from './contexts/VideoContext';
-import { Providers } from '@/components/lyca/providers';
 
+const heading = Figtree({
+  weight: ['400', '500'],
+  variable: '--font-heading',
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+});
+
+const body = Figtree({
+  weight: ['400', '500'],
+  variable: '--font-body',
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+});
 interface LayoutProps {
   page: Page;
 }
@@ -34,8 +46,8 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
   const { route } = layout.sitecore;
   const fields = route?.fields as RouteFields;
   const mainClassPageEditing = mode.isEditing ? 'editing-mode' : 'prod-mode';
-  const classNamesMain = `${mainClassPageEditing} main-layout`;
-  const direction = layout.sitecore.context.language?.startsWith('ar') ? 'rtl' : 'ltr';
+  const importMapDynamic = () => import('.sitecore/import-map');
+  const classNamesMain = `${mainClassPageEditing} ${body.variable} ${heading.variable} main-layout`;
 
   const metaTitle =
     fields?.metadataTitle?.value?.toString() || fields?.pageTitle?.value?.toString() || 'Page';
@@ -70,31 +82,29 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
       <VideoProvider>
         {/* root placeholder for the app, which we add components to using route data */}
         <ThemeProvider attribute="class" disableTransitionOnChange>
-          <Providers>
-            <div className={`min-h-screen flex flex-col ${classNamesMain}`} dir={direction}>
-              {mode.isDesignLibrary ? (
-                <DesignLibrary />
-              ) : (
-                <>
-                  <header>
-                    <div id="header">
-                      {route && <Placeholder name="headless-header" rendering={route} />}
-                    </div>
-                  </header>
-                  <main>
-                    <div id="content" className="antialiased">
-                      {route && <Placeholder name="headless-main" rendering={route} />}
-                    </div>
-                  </main>
-                  <footer>
-                    <div id="footer">
-                      {route && <Placeholder name="headless-footer" rendering={route} />}
-                    </div>
-                  </footer>
-                </>
-              )}
-            </div>
-          </Providers>
+          <div className={`min-h-screen flex flex-col ${classNamesMain}`}>
+            {mode.isDesignLibrary ? (
+              <DesignLibrary loadImportMap={importMapDynamic} />
+            ) : (
+              <>
+                <header>
+                  <div id="header">
+                    {route && <Placeholder name="headless-header" rendering={route} />}
+                  </div>
+                </header>
+                <main>
+                  <div id="content" className="antialiased">
+                    {route && <Placeholder name="headless-main" rendering={route} />}
+                  </div>
+                </main>
+                <footer>
+                  <div id="footer">
+                    {route && <Placeholder name="headless-footer" rendering={route} />}
+                  </div>
+                </footer>
+              </>
+            )}
+          </div>
         </ThemeProvider>
       </VideoProvider>
     </>

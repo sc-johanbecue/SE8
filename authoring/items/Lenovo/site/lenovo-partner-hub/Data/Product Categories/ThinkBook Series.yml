@@ -1,0 +1,224 @@
+﻿---
+ID: "2503fc73-820f-42ab-b0cf-4e0808a9bd49"
+Parent: "2768b43e-0c0e-4c1f-8b61-42fd61249f58"
+Template: "c9cb9917-10b8-448e-ba3a-6072cf88c742"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Data/Product Categories/ThinkBook Series"
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T230438Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "976186d8-4c53-461d-8174-a32ae57e7b59"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "cc4dc76c-e962-45ea-8170-d2c28b6c6a40"
+      Hint: Text
+      Value: سلسلة ثينك بوك
+    - ID: "cd85b2d4-3ab2-45d6-b490-d01d10ebe183"
+      Hint: Value
+      Value: ثينك بوك
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153714Z
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T230438Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "44d472f8-c9d7-4678-a218-a8a8ecad9abd"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "cc4dc76c-e962-45ea-8170-d2c28b6c6a40"
+      Hint: Text
+      Value: ThinkBook Serie
+    - ID: "cd85b2d4-3ab2-45d6-b490-d01d10ebe183"
+      Hint: Value
+      Value: ThinkBook
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100904Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T230438Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "791f1864-3103-463a-8482-43bedd4025a1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "cc4dc76c-e962-45ea-8170-d2c28b6c6a40"
+      Hint: Text
+      Value: ThinkBook Series
+    - ID: "cd85b2d4-3ab2-45d6-b490-d01d10ebe183"
+      Hint: Value
+      Value: thinkbook
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251113T230446Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T230438Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fa633aab-7871-49bc-8de6-ce0761a7f48a"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "cc4dc76c-e962-45ea-8170-d2c28b6c6a40"
+      Hint: Text
+      Value: Série ThinkBook
+    - ID: "cd85b2d4-3ab2-45d6-b490-d01d10ebe183"
+      Hint: Value
+      Value: ThinkBook
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143614Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T230438Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0865f5fc-ebf9-433c-b1e2-460897c3749d"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "cc4dc76c-e962-45ea-8170-d2c28b6c6a40"
+      Hint: Text
+      Value: ThinkBookシリーズ
+    - ID: "cd85b2d4-3ab2-45d6-b490-d01d10ebe183"
+      Hint: Value
+      Value: ThinkBook
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T014414Z
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T230438Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "97a1c7fa-e68d-4ecf-aa63-3916cb15a2cc"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "cc4dc76c-e962-45ea-8170-d2c28b6c6a40"
+      Hint: Text
+      Value: 씽크북 시리즈
+    - ID: "cd85b2d4-3ab2-45d6-b490-d01d10ebe183"
+      Hint: Value
+      Value: 씽크북
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T105002Z
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251118T143910Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f1e205fb-97ba-4305-8c9f-6d329a88075f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T143910Z

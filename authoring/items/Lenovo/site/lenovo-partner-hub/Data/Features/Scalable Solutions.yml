@@ -1,0 +1,261 @@
+﻿---
+ID: "2d827695-5356-4d47-9d69-91a2dcdc07a3"
+Parent: "693be30e-b41a-49d1-a3e7-58bb75e9b7ed"
+Template: "c34e6ccb-f893-469a-9c19-8d6f2c612716"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Data/Features/Scalable Solutions"
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "171d8dc9-d6de-4d9d-b65d-4481ade32928"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>حلول قابلة للتوسع بأسعار معقولة أصبحت الآن أسرع من أي وقت مضى.</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T015407Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "84c93927-eb5c-4ace-8755-b9f2bb726856"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c9713377-2f4c-47d0-9365-01cf63487fd9"
+      Hint: Title
+      Value: حلول قابلة للتوسع
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153653Z
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "171d8dc9-d6de-4d9d-b65d-4481ade32928"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Preiswerte skalierbare Lösungen sind jetzt schneller als je zuvor.</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T015407Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f2083f37-a1ce-477d-b874-894cec0fd1eb"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c9713377-2f4c-47d0-9365-01cf63487fd9"
+      Hint: Title
+      Value: Skalierbare Lösungen
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100849Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "171d8dc9-d6de-4d9d-b65d-4481ade32928"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Affordable Scalable Solutions are now faster than ever.</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T015407Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5abf12e9-3635-4a0c-89cb-9a0f1a2e8bcc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "c9713377-2f4c-47d0-9365-01cf63487fd9"
+      Hint: Title
+      Value: Scalable Solutions
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T020628Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "171d8dc9-d6de-4d9d-b65d-4481ade32928"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Les solutions évolutives abordables sont désormais plus rapides que jamais.</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T015407Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bbd329a0-9254-49d5-b880-f98969388813"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c9713377-2f4c-47d0-9365-01cf63487fd9"
+      Hint: Title
+      Value: Solutions évolutives
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143605Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "171d8dc9-d6de-4d9d-b65d-4481ade32928"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>手頃な価格のスケーラブルソリューションがこれまで以上に高速になりました。</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T015407Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "56583aec-8077-4093-8f4c-4a5b55d26617"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "c9713377-2f4c-47d0-9365-01cf63487fd9"
+      Hint: Title
+      Value: スケーラブルソリューション
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T014405Z
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "171d8dc9-d6de-4d9d-b65d-4481ade32928"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>저렴한 확장 가능한 솔루션이 이제 그 어느 때보다 빠릅니다.</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T015407Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c4468328-ed97-42f8-84e6-d068471cac24"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c9713377-2f4c-47d0-9365-01cf63487fd9"
+      Hint: Title
+      Value: 확장 가능한 솔루션
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104953Z
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "171d8dc9-d6de-4d9d-b65d-4481ade32928"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Niedrogie skalowalne rozwiązania są teraz szybsze niż kiedykolwiek.</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T015407Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a0d200cd-7a29-4ad0-9457-af966d9b5e94"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c9713377-2f4c-47d0-9365-01cf63487fd9"
+      Hint: Title
+      Value: Skalowalne rozwiązania
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144030Z

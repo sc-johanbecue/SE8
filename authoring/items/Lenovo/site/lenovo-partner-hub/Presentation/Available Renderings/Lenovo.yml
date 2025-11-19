@@ -1,0 +1,220 @@
+﻿---
+ID: "2751ad45-569a-40a3-9006-fd383ae5177f"
+Parent: "c30f152b-c8cb-49ab-8433-0f0aa84c0685"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Presentation/Available Renderings/Lenovo"
+BranchID: "209f458a-5f7c-4024-9bbb-c78ad6d21abc"
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {78188C93-88C4-4E65-8C20-1A2232A7BE85}
+    {FE9D4BF8-8DE7-4C27-BF1D-C9E0E8A9FE04}
+    {48D01579-28D5-42B6-B106-DBD7156E8191}
+    {1FB3D222-6F5D-4D31-9334-A624D47AEC2A}
+    {B2BCBA45-FAAA-4DAC-9454-FAB6E6E4E564}
+    {ADC472A2-680B-4759-A5F3-D354597CCBDF}
+    {F2F00AFD-28E3-48E4-A457-7AFB274FBC2A}
+    {6BA5F3AF-E308-44C2-921E-EEE8B0296C40}
+    {6F39463C-91D4-48BA-814A-3E8108ABA872}
+    {A1FD9A87-85CC-49E8-878D-66EE3A5F1B89}
+    {553624B8-6B35-4977-B230-6F473B4C646C}
+    {68E515CD-729D-419A-A849-82095FA8ADFD}
+    {1E14F30C-20FE-405B-B793-34D4911F97AF}
+    {55FEED8B-CD34-4F9F-8EEE-28396448C7CD}
+    {67C69595-E02F-4386-B978-00B725A8095C}
+    {7338667D-7EDA-4169-B0F2-73B257EE4D1D}
+    {DEF3B516-EA93-4F77-95A0-5D3D54323D04}
+    {5A3E3338-A81F-4416-B3D5-979F1B6E73EA}
+    {4B88425A-92D8-45CB-A800-6EC9588C2182}
+    {A191AAF6-E8F8-4743-BDEC-FC7F0F0AF646}
+    {901E16C6-FDC2-4B84-A76E-1DAC45D9E9B1}
+    {203C5858-FF3A-4143-BDEC-DC95BE1D1F50}
+    {150DBBAD-BE7C-4FB3-8DBC-ADE2619A349E}
+    {EB56349F-5076-44BC-9E91-E8C8470E9C4D}
+    {1E20A9D2-6F37-4F42-8AA5-31726D9D72E0}
+    {A60CA9A0-5400-492D-A8F2-C6876A7F109F}
+    {7890EE94-9831-4352-9E65-EED0E3054DD6}
+    {3AC6093D-DFF8-42D9-BC1B-9E0A1F89491B}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "fcac14b1-868b-4284-98e5-74c3481272f4"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{EDD5B21F-2BD2-4290-81A2-68428363D312}"
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251118T153525Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e9ef3ca4-84a7-4545-9043-1417ee89bdfe"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153525Z
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251118T100728Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "aa1c40a9-fe22-4baf-b163-177c275e7369"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100728Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144357Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "df72113b-2701-4449-b782-6af38f72723c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T095839Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T143453Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "534bcb7b-31f9-444c-8d2f-f6d75cadad55"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143453Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T150127Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "606c86e9-669a-4840-9ef4-badca5fdd8c7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T150127Z
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T104841Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f5f82053-eec4-4d70-8928-0db498532747"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104841Z
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251118T143914Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ab4e6359-3fb4-46d1-af65-9b916a05ef9b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T143914Z

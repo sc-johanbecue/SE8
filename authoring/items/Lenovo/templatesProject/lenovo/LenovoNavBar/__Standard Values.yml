@@ -1,0 +1,114 @@
+﻿---
+ID: "0411f2b6-c870-4daa-8b57-d8fef8146ec3"
+Parent: "dff82a0c-9a0d-4290-a71c-45d6e76ed944"
+Template: "dff82a0c-9a0d-4290-a71c-45d6e76ed944"
+Path: /sitecore/templates/Project/lenovo/LenovoNavBar/__Standard Values
+SharedFields:
+- ID: "0a51f4fc-b0d2-4514-b945-428d7d1eac13"
+  Hint: HomeLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+- ID: "618d2676-fe0e-4c8b-9ab8-cc49e74b588b"
+  Hint: SignInLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{AB10FA66-939A-48FD-A2F5-12C9FACDE5FC}" />
+- ID: "7fbf4c71-96fd-46b0-aa83-2a0b50f7e285"
+  Hint: ProductsLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+- ID: "ab793651-e9c7-4ee6-bd86-6712d2423cd2"
+  Hint: DealsLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "61b0d6c7-0848-4ed5-b41c-57013ade8b88"
+- ID: "e4bba994-62f6-45fd-8377-4725de2f2a57"
+  Hint: TrainingLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+- ID: "f5b862ba-1784-4758-bca0-a36b3d5356ad"
+  Hint: DashboardLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+- ID: "fbb9419e-b2c4-4bf9-93d1-61c7528f9bbb"
+  Hint: SolutionsLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0907a2d2-0033-4bdf-82da-cadc6d076fd4"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "24904b38-9338-41cc-8477-30cfe2b24156"
+      Hint: DashboardText
+      Value: Dashboard
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T140742Z
+    - ID: "334c2072-be2b-4258-a773-f23f89f59246"
+      Hint: UsernamePlaceholder
+      Value: #username#
+    - ID: "3ac6e647-a7d3-4566-bbac-813f39568b64"
+      Hint: TrainingText
+      Value: Training
+    - ID: "4d493dac-c763-4a3a-b5bd-4b83eccf237b"
+      Hint: CompanyPlaceholder
+      Value: #company#
+    - ID: "501391f8-3a7a-4018-bd10-d77d0d3c6561"
+      Hint: LastnamePlaceholder
+      Value: #lastname#
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "62038aca-b248-4737-841d-659c54090d04"
+      Hint: SignOutText
+      Value: Sign Out
+    - ID: "7001fde7-a56d-4657-ab6f-2a2a2457fbf0"
+      Hint: ProductsText
+      Value: Products & Services
+    - ID: "897290ea-d71b-41ec-919e-f894c09662a0"
+      Hint: ProfileText
+      Value: My Profile
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b84ea04a-a3b9-4cda-8414-cfebe9c7a075"
+    - ID: "9234a8ba-ae22-4928-9ddb-3a45958377fc"
+      Hint: DealsText
+      Value: Deal Registration
+    - ID: "b3b80959-4183-4f93-963d-6302a6947240"
+      Hint: HomeText
+      Value: Home
+    - ID: "b90e95f0-5501-4271-af65-5d1e3b5dde2d"
+      Hint: SignInText
+      Value: Sign In
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "c8098dd6-2900-4615-b9ce-6ff0a6a7acf1"
+      Hint: SettingsText
+      Value: Settings
+    - ID: "cad9feb0-451a-4ac4-86f9-4a08d21bcf0f"
+      Hint: SubtitleText
+      Value: 360 Partner Hub
+    - ID: "cb3e0a6a-cae1-41ba-a27a-c4bb838e3313"
+      Hint: FirstnamePlaceholder
+      Value: #firstname#
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T141053Z
+    - ID: "f251d9c5-d9f4-471b-b16c-859a884aa943"
+      Hint: SolutionsText
+      Value: Solutions
+    - ID: "fbc346c6-3391-4087-970d-06c9e76eefb4"
+      Hint: SearchPlaceholder
+      Value: "What are you looking for?"

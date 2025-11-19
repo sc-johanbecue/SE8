@@ -1,0 +1,23 @@
+﻿---
+ID: "fdbbd8f6-8277-4415-ae4f-c5d69d26b2b8"
+Parent: "73f35d50-1cda-49cc-8864-bd5ffd113fbb"
+Template: "73f35d50-1cda-49cc-8864-bd5ffd113fbb"
+Path: /sitecore/templates/Project/lenovo/Rendering Parameters/LenovoSolutionBenefits Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T022250Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f0d8b9d7-fb2e-4246-8136-8559ed71643e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T022250Z

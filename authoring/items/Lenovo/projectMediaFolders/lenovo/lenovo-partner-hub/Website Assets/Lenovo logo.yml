@@ -1,0 +1,54 @@
+﻿---
+ID: "781649e2-0907-4c19-a168-db96cb12ecdb"
+Parent: "b61025fd-82ee-476d-a6a6-daf35746eb10"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/lenovo/lenovo-partner-hub/Website Assets/Lenovo logo"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/781649E209074C19A168DB96CB12ECDB.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "0f787fc0-3906-421a-9bd8-2f39546e1318"
+  Value: PHN2ZyBpZD0ibGVub3ZvLWxvZ28tbWFpbi1yZWQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEyMy45OTkiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCAxMjMuOTk5IDQwIj4KICA8ZyBpZD0ibWFzdGhlYWQtbG9nby1sZW5vdm8tcmVkIj4KICAgIDxnIGlkPSJMZW5vdm9Mb2dvLVBPUy0xQ29sb3IiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiPgogICAgICA8cmVjdCBpZD0ibWFzayIgd2lkdGg9IjEyNCIgaGVpZ2h0PSI0MCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIgZmlsbD0iI2ZmZiIvPgogICAgICA8cGF0aCBpZD0ibG9nby1yZWQiIGQ9Ik0wLDQwVjBIMTI0VjQwWm0yNS44NjEtMTQuOUgxNS45M1Y4LjQ0MUgxMS41VjI5LjEwNUgyNS44NjFabTE1LjEyOC05LjU1OEE3Ljk4Niw3Ljk4NiwwLDAsMCwzNC43LDEyLjkzMWE4LjE0OCw4LjE0OCwwLDAsMC04LjQyNCw4LjIyNGMwLDQuOCwzLjYzMSw4LjIyNCw4LjkwOCw4LjIyNGExMC40NzUsMTAuNDc1LDAsMCwwLDcuMzkzLTMuMDM5bC0yLjc2My0yLjEyMkE2LjYzOCw2LjYzOCwwLDAsMSwzNS4yNTQsMjUuOWE0Ljg2LDQuODYsMCwwLDEtMy41MjYtMS4yODdMNDIuOSwxOS45OGE4LjYyMiw4LjYyMiwwLDAsMC0xLjkwNi00LjQzOVptMTkuNDk1LDMuNzFhNi4xMjYsNi4xMjYsMCwwLDAtNi40NjMtNi4zMTYsNi42MTMsNi42MTMsMCwwLDAtNS4xODUsMi41NDdWMTMuMTkySDQ0LjQ2NVYyOS4xaDQuMzcxVjIwLjA0N2EzLjQxMSwzLjQxMSwwLDAsMSwzLjYtMy4zNjMsMy41LDMuNSwwLDAsMSwzLjY3NywzLjM2M1YyOS4xaDQuMzcxdi05Ljg1Wm0xMC4zMDctNi4zMTZhOC4yMyw4LjIzLDAsMSwwLDguNTIxLDguMjI0QTguMzE2LDguMzE2LDAsMCwwLDcwLjc5MSwxMi45MzFaTTkxLjUzLDEzLjIsODcuNTgxLDI0LjAzNCw4My42MjksMTMuMkg3OC42NDJsNi41NDUsMTUuOWg0Ljc4Nmw2LjU0NS0xNS45Wm0xMi44OTItLjI2OWE4LjIzLDguMjMsMCwxLDAsOC41MjEsOC4yMjQsOC4zMTYsOC4zMTYsMCwwLDAtOC41MjEtOC4yMjRabTAsMTIuN2E0LjMzMyw0LjMzMywwLDAsMS00LjI3LTQuNDc4LDQuMTg2LDQuMTg2LDAsMCwxLDQuMjA4LTQuNDc5LDQuMzMzLDQuMzMzLDAsMCwxLDQuMjcsNC40NzlBNC4yMTcsNC4yMTcsMCwwLDEsMTA0LjQyMSwyNS42MjlabS0zMy42MywwYTQuMzMzLDQuMzMzLDAsMCwxLTQuMjctNC40NzgsNC4xODcsNC4xODcsMCwwLDEsNC4yMTItNC40NzlBNC4zMzMsNC4zMzMsMCwwLDEsNzUsMjEuMTUxLDQuMjE3LDQuMjE3LDAsMCwxLDcwLjc5MSwyNS42MjlaTTMxLjQyNiwxNy45OTFhNC4wNjQsNC4wNjQsMCwwLDEsMy4zNi0xLjU4NCwzLjY1OCwzLjY1OCwwLDAsMSwzLjM4NywyLjIyNEwzMC41MzgsMjEuOGE1LjEyLDUuMTIsMCwwLDEsLjg4My0zLjgwOFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiIGZpbGw9IiNlMTI1MWIiLz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1475
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "4a9cec18-f9e7-4da1-b105-8610adee52b4"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T223444Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: Lenovo logo
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "52c3f858-223f-4f7e-908c-819cee06521b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T223444Z

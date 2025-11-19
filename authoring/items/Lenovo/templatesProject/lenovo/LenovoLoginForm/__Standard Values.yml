@@ -1,0 +1,73 @@
+﻿---
+ID: "058747ce-c18d-4497-947d-67dcc6ee4730"
+Parent: "b4b40804-b812-4e12-9412-cdd026f95814"
+Template: "b4b40804-b812-4e12-9412-cdd026f95814"
+Path: /sitecore/templates/Project/lenovo/LenovoLoginForm/__Standard Values
+SharedFields:
+- ID: "7ac91feb-6612-4e7c-a03c-5b41219a07e6"
+  Hint: RedirectLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+- ID: "c7ce01a7-ae8c-40ef-9d52-afe01a5f1dcc"
+  Hint: BackToHomeLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E26E1515-B1C5-4472-8336-5FC460B6CDCD}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "d5f0ea1e-1ee0-4df6-ad83-44f9ebcea8a9"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T233324Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5f0f4c0d-f4ea-4dac-9490-691d0473d4be"
+      Hint: UsernameLabel
+      Value: Username
+    - ID: "64620dd3-b61c-4ca4-a9e0-8982fb32747f"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "7063ff87-3393-4e9e-bd43-eb826a0ae8bf"
+      Hint: Description
+      Value: Enter your credentials to access the partner hub
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a755e03d-3c1e-468e-ae8f-1e1091f79a90"
+    - ID: "a03e892a-502a-4aa0-b2c0-1084382b89bc"
+      Hint: PasswordLabel
+      Value: Password
+    - ID: "a1e4fd48-f4d7-4dce-bd10-766d3b145171"
+      Hint: Title
+      Value: Partner Portal Login
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "c3e0a908-4d7f-42c4-b67a-6833101ba6c4"
+      Hint: SubmitButtonLoadingText
+      Value: Signing in...
+    - ID: "c8453ea4-0141-4a31-bf66-656b94a07bb0"
+      Hint: BackToHomeText
+      Value: Back to Home
+    - ID: "d2c7a05e-48a4-4f17-b06c-7db05c4bc34e"
+      Hint: UsernamePlaceholder
+      Value: demo1 or demo2
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251112T233809Z
+    - ID: "e05dc923-fa96-4276-a10e-f76d7413cc7f"
+      Hint: PasswordPlaceholder
+      Value: demo1 or demo2
+    - ID: "fb24ea27-ff9c-4351-bf78-b5493fde6438"
+      Hint: SubmitButtonText
+      Value: Sign In

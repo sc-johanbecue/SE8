@@ -1,0 +1,54 @@
+﻿---
+ID: "4b1db6df-d5fa-4b6b-b70d-7d1d7bfa4528"
+Parent: "1a490611-0db6-4421-a3c5-494837e831a7"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/lenovo/lenovo-partner-hub/Website Assets/Icons/certifications-earned"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/4B1DB6DFD5FA4B6BB70D7D1D7BFA4528.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "bfeadd1f-c762-4f54-a887-6ff2f038d79e"
+  Value: PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8IS0tIENlcnRpZmljYXRlL2JhZGdlIC0tPgogIDxyZWN0IHg9IjgiIHk9IjEyIiB3aWR0aD0iMzQiIGhlaWdodD0iMjYiIHJ4PSIyIiBmaWxsPSJub25lIiBzdHJva2U9IiNFMjIzMUEiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPCEtLSBBd2FyZCByaWJib24gLS0+CiAgPHBhdGggZD0iTTI1IDMwTDIwIDQ1TDI1IDQyTDMwIDQ1TDI1IDMwWiIgZmlsbD0iI0UyMjMxQSIgc3Ryb2tlPSIjRTIyMzFBIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICA8IS0tIFN0YXIvc2VhbCAtLT4KICA8Y2lyY2xlIGN4PSIyNSIgY3k9IjIyIiByPSI3IiBmaWxsPSIjRTIyMzFBIi8+CiAgPHBhdGggZD0iTTI1IDE3TDI2IDIwTDI5IDIwTDI2LjUgMjJMMjcuNSAyNUwyNSAyM0wyMi41IDI1TDIzLjUgMjJMMjEgMjBMMjQgMjBMMjUgMTdaIiBmaWxsPSJ3aGl0ZSIvPgogIDwhLS0gQ2VydGlmaWNhdGUgbGluZXMgLS0+CiAgPGxpbmUgeDE9IjE0IiB5MT0iMzAiIHgyPSIyMiIgeTI9IjMwIiBzdHJva2U9IiNFMjIzMUEiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8bGluZSB4MT0iMjgiIHkxPSIzMCIgeDI9IjM2IiB5Mj0iMzAiIHN0cm9rZT0iI0UyMjMxQSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 780
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "2e2fa3b0-0c35-4942-96c2-77b63fbffbce"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T025635Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: "certifications-earned"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "afbc4c94-eeb1-4e54-934c-60d27f3c0c73"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T025635Z

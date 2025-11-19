@@ -1,0 +1,288 @@
+﻿---
+ID: "0c8f0865-99cc-45aa-a38d-b096e87512a7"
+Parent: "83f77131-2df6-4eed-a3f9-7c2fc1a7e530"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Presentation/Partial Designs/Footer"
+SharedFields:
+- ID: "4a749557-242b-4372-8a20-b2db9d406301"
+  Hint: __AutoThumbnails
+  Value: 
+- ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
+  Hint: Signature
+  Value: footer
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{8DD560CD-2EB0-4382-B0F3-CA809CBD7D3E}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "3bf8849b-84f7-4f96-a9c4-cd9558c43322"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{B342ABCB-E899-4289-AC6F-E899999E0BE5}"
+          p:before="*"
+          s:ds="10d516f9-a803-47ca-acae-c8f788663ff7"
+          s:id="{7338667D-7EDA-4169-B0F2-73B257EE4D1D}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+          s:ph="headless-footer" />
+        <r
+          uid="{841FC3B5-0B37-4CFA-9980-D8C1307CFB40}"
+          p:after="r[@uid='{B342ABCB-E899-4289-AC6F-E899999E0BE5}']"
+          s:ds="c5357960-6fbd-4f6f-8ed4-2db5d9396923"
+          s:id="{DEF3B516-EA93-4F77-95A0-5D3D54323D04}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
+          s:ph="/headless-footer/lenovoLeftFooterColumnContainer-2" />
+        <r
+          uid="{59C6AB9D-583D-4CE9-872F-E08A0EE79BAD}"
+          p:after="r[@uid='{841FC3B5-0B37-4CFA-9980-D8C1307CFB40}']"
+          s:ds="65c977be-a6fd-4223-b467-ab7136c1cc9c"
+          s:id="{DEF3B516-EA93-4F77-95A0-5D3D54323D04}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
+          s:ph="/headless-footer/lenovoMiddleFooterColumnContainer-2" />
+        <r
+          uid="{FE4069F7-A7FD-4E68-9CF7-0A77ACE19FE2}"
+          p:after="*[1=2]"
+          s:ds="9a934e16-6a27-4f82-8220-f37b8bb5aac3"
+          s:id="{DEF3B516-EA93-4F77-95A0-5D3D54323D04}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
+          s:ph="/headless-footer/lenovoRightFooterColumnContainer-2" />
+      </d>
+    </r>
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251118T153528Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5e864125-c446-4719-8660-66d5eb4c8fa1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153528Z
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251118T100731Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a56dcadf-67ff-440c-b654-02a3be4a64cb"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100731Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{B342ABCB-E899-4289-AC6F-E899999E0BE5}">
+              <p:d />
+            </r>
+            <r
+              uid="{841FC3B5-0B37-4CFA-9980-D8C1307CFB40}">
+              <p:d />
+            </r>
+            <r
+              uid="{59C6AB9D-583D-4CE9-872F-E08A0EE79BAD}">
+              <p:d />
+            </r>
+            <r
+              uid="{FE4069F7-A7FD-4E68-9CF7-0A77ACE19FE2}">
+              <p:d />
+            </r>
+            <r
+              uid="{1C9AF02C-8D81-4822-B5F8-2B2A60A274A5}"
+              p:before="*"
+              s:ds="10d516f9-a803-47ca-acae-c8f788663ff7"
+              s:id="{7338667D-7EDA-4169-B0F2-73B257EE4D1D}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+              s:ph="headless-footer" />
+            <r
+              uid="{15E38C7E-0F0E-4AA9-8571-BE46CC063E39}"
+              p:after="r[@uid='{1C9AF02C-8D81-4822-B5F8-2B2A60A274A5}']"
+              s:ds="c5357960-6fbd-4f6f-8ed4-2db5d9396923"
+              s:id="{DEF3B516-EA93-4F77-95A0-5D3D54323D04}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
+              s:ph="/headless-footer/lenovoLeftFooterColumnContainer-1" />
+            <r
+              uid="{0965BD72-A7B8-40D5-9D0C-208B55476758}"
+              p:after="r[@uid='{15E38C7E-0F0E-4AA9-8571-BE46CC063E39}']"
+              s:ds="65c977be-a6fd-4223-b467-ab7136c1cc9c"
+              s:id="{DEF3B516-EA93-4F77-95A0-5D3D54323D04}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
+              s:ph="/headless-footer/lenovoMiddleFooterColumnContainer-1" />
+            <r
+              uid="{312E07B8-CB0E-4204-8F38-F913CC2CF4D3}"
+              p:after="*[1=2]"
+              s:ds="9a934e16-6a27-4f82-8220-f37b8bb5aac3"
+              s:id="{DEF3B516-EA93-4F77-95A0-5D3D54323D04}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
+              s:ph="/headless-footer/lenovoRightFooterColumnContainer-1" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T170712Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "aafb3fa1-6ab8-4935-9be7-778e7e1ad755"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T223456Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T143456Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "53f1be56-42ab-4b23-9d08-dde42eb94be2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T223456Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251115T014339Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "38e174f0-19f1-4425-9b6c-f34498bcf0a9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T223456Z
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T104845Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e80dff4a-0e70-438b-af0c-518a4ca9cf84"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T223456Z
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251118T143917Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bb506905-039f-43c6-b291-a4b4b934f90c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T143917Z

@@ -1,0 +1,307 @@
+﻿---
+ID: "e26e1515-b1c5-4472-8336-5fc460b6cdcd"
+Parent: "e44f3c70-887e-4c5a-942d-cd294d40723e"
+Template: "b1f53211-9033-4df6-a4e7-7ac03fbac9e7"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Home/Dashboard"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{04D9188B-DF0A-4C0E-9437-D910F82D48FE}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "6438ac37-dd71-49f9-8ce1-4cbfd624b00d"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{C1BED225-0E09-41B3-8F2C-061F41E9EDFA}"
+          p:before="*"
+          s:ds="94bfb5cf-816b-4be8-b144-bb8f58c4b285"
+          s:id="{B2BCBA45-FAAA-4DAC-9454-FAB6E6E4E564}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+          s:ph="headless-main" />
+        <r
+          uid="{E934ABCD-1B39-4E6B-A45A-37E59B367A2D}"
+          p:after="r[@uid='{C1BED225-0E09-41B3-8F2C-061F41E9EDFA}']"
+          s:ds="e8dccdd5-75e1-4382-8e1c-d172376b2a46"
+          s:id="{4B88425A-92D8-45CB-A800-6EC9588C2182}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+          s:ph="headless-main" />
+        <r
+          uid="{2BF5C994-96AB-4FBE-9408-F9FFDAC44AD2}"
+          p:after="r[@uid='{E934ABCD-1B39-4E6B-A45A-37E59B367A2D}']"
+          s:ds="0351164e-8c9b-4924-8401-540eb1e2dcfc"
+          s:id="{A191AAF6-E8F8-4743-BDEC-FC7F0F0AF646}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+          s:ph="/headless-main/lenovoLeftDashboardContainer-1" />
+        <r
+          uid="{7E5CDFF5-9AC6-48B9-9527-08E62D4505AB}"
+          p:after="r[@uid='{2BF5C994-96AB-4FBE-9408-F9FFDAC44AD2}']"
+          s:ds="951743ad-6b88-4ebd-b7fc-9fa70b3ba3e9"
+          s:id="{901E16C6-FDC2-4B84-A76E-1DAC45D9E9B1}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+          s:ph="/headless-main/lenovoLeftDashboardContainer-1" />
+        <r
+          uid="{7D49F4BD-513E-43B1-AAA0-C7F9063B5412}"
+          p:after="r[@uid='{7E5CDFF5-9AC6-48B9-9527-08E62D4505AB}']"
+          s:ds="1cfa0e46-e691-4cee-bb14-ac1b1c02e6aa"
+          s:id="{203C5858-FF3A-4143-BDEC-DC95BE1D1F50}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+          s:ph="/headless-main/lenovoLeftDashboardContainer-1" />
+        <r
+          uid="{FDA0919D-A061-47A4-8F26-32D26D373C0D}"
+          p:after="r[@uid='{7D49F4BD-513E-43B1-AAA0-C7F9063B5412}']"
+          s:ds="ed59adb1-3143-42ef-9253-536de850992a"
+          s:id="{7890EE94-9831-4352-9E65-EED0E3054DD6}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=6"
+          s:ph="/headless-main/lenovoLeftDashboardContainer-1/lenovoGetStartedVideos-5" />
+        <r
+          uid="{36B738C1-4D22-4A6E-BCCA-56B86FDBA192}"
+          p:after="r[@uid='{FDA0919D-A061-47A4-8F26-32D26D373C0D}']"
+          s:ds="7bc25318-aba6-43e4-a2bf-14e8f3c0bfa3"
+          s:id="{EB56349F-5076-44BC-9E91-E8C8470E9C4D}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=7"
+          s:ph="/headless-main/lenovoRightDashboardContainer-1" />
+        <r
+          uid="{FEFF9787-886A-4ACB-B16F-5F38A504E388}"
+          p:after="r[@uid='{36B738C1-4D22-4A6E-BCCA-56B86FDBA192}']"
+          s:ds="813c4a28-b92c-41c9-811c-c6fda8588593"
+          s:id="{1E20A9D2-6F37-4F42-8AA5-31726D9D72E0}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=8"
+          s:ph="/headless-main/lenovoRightDashboardContainer-1" />
+        <r
+          uid="{386837B3-B81B-4653-8572-44C5A2B087AB}"
+          p:after="r[@uid='{FEFF9787-886A-4ACB-B16F-5F38A504E388}']"
+          s:ds="4cf8b636-3dcb-4d8a-8b21-74f2944d1e7e"
+          s:id="{A60CA9A0-5400-492D-A8F2-C6876A7F109F}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=10"
+          s:ph="/headless-main/lenovoRightDashboardContainer-1" />
+        <r
+          uid="{CDD47834-F1A0-48C0-AC7C-6ED96A364823}"
+          p:after="*[1=2]"
+          s:ds="2b28fe2e-1a3b-4651-ac6a-e1c4f5e23579"
+          s:id="{3AC6093D-DFF8-42D9-BC1B-9E0A1F89491B}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=9"
+          s:ph="/headless-main/lenovoRightDashboardContainer-1/lenovoQuickLinks-8" />
+      </d>
+    </r>
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T233719Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: لوحة التحكم
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4e388f1b-3812-4c1c-bd6a-ce69820f4b49"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: لوحة التحكم
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153617Z
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T233719Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Armaturenbrett
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1328c2a7-e7a6-4afc-8f5a-cc72be3718bd"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Armaturenbrett
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100817Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T233719Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Dashboard
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1db9da8c-462d-4a2f-aa68-a583eca0f752"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Dashboard
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T001415Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T233719Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Tableau de bord
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "761bdc8c-57d0-4d21-bc48-a9edb565fd53"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Tableau de bord
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143538Z
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T233719Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: 대시보드
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1b70f07a-146b-432b-88dc-f9370c7fd51d"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: 대시보드
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104928Z
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T233719Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Panel sterowania
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a52794bd-9bf8-4887-a2d4-a9eb2ecb86cf"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Panel sterowania
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144003Z

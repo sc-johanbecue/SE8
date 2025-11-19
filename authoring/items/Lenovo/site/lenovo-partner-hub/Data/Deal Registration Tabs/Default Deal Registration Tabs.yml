@@ -1,0 +1,661 @@
+﻿---
+ID: "e849d5ca-77f0-4b42-81d0-34e2c51679e0"
+Parent: "ec96097a-8888-4e74-aec5-7fcea9179574"
+Template: "2f680548-ddf7-453b-a7f3-a3131bef4041"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Data/Deal Registration Tabs/Default Deal Registration Tabs"
+SharedFields:
+- ID: "b115dcdd-8a77-4d27-b1e2-aeac45452725"
+  Hint: ProductCategories
+  Value: |
+    {ED80032F-08B7-4A5B-9EC2-FF4278EF22C1}
+    {0AC74D95-1377-4CFE-B858-A858C21CC991}
+    {F6C40B84-5B1E-4D8C-A1E1-871E5D2B0B40}
+    {D82D9225-F78B-43F4-B92F-53FBB8951CCA}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0a3b0370-0637-4a61-85af-4ea115517d2e"
+- ID: "dd3bc4e7-de23-4d14-97f3-68a3013725b4"
+  Hint: Deals
+  Value: |
+    {1FE7BD4C-D7E6-4961-9F47-19299D120FB1}
+    {35A96E20-0574-4C4E-9ADE-F55C7E484A2E}
+    {497EF65D-BC36-4926-A34C-F8A57C4B188D}
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "031b5395-ad42-46dc-b6cb-c6ca09de8fe2"
+      Hint: SubmitButtonText
+      Value: إرسال تسجيل الصفقة
+    - ID: "1484cc85-3d8b-454c-b15b-fe004a91869c"
+      Hint: CompanyPlaceholderText
+      Value: أدخل اسم الشركة
+    - ID: "2336fa48-1007-42ee-a95f-9b6ae4a952ff"
+      Hint: PhoneLabel
+      Value: رقم الهاتف
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T214354Z
+    - ID: "27d16baa-3729-4247-910b-9eaef05341d9"
+      Hint: ContactPlaceholderText
+      Value: أدخل الشخص المسؤول
+    - ID: "2b28f136-fab4-456c-bedb-b9f6a0788e33"
+      Hint: TrackingValueLabel
+      Value: "القيمة:"
+    - ID: "3211d6ce-f9c5-4fff-9988-574bbfc6e03e"
+      Hint: PhonePlaceholderText
+      Value: "+1 (555) 123-4567"
+    - ID: "4d27ee12-da6e-43dc-97a5-d9f979c5f7c0"
+      Hint: Tab2Label
+      Value: تتبع الصفقات
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "64974aa2-080a-4d7f-a2e9-59c85908902c"
+      Hint: DealValuePlaceholderText
+      Value: $ 50000
+    - ID: "6514e0c5-a568-4d4d-937d-19ccf858f5fb"
+      Hint: EmailPlaceholderText
+      Value: contact@company.com
+    - ID: "6949b57f-45d2-4a29-b67b-7f91d60b3032"
+      Hint: ContactLabel
+      Value: الشخص المسؤول
+    - ID: "8a1b0bb3-9de4-4cc3-8d2c-52c01e2188b2"
+      Hint: EmailLabel
+      Value: عنوان البريد الإلكتروني
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f3d56fad-bddc-4e54-b4a7-5fedc5380ece"
+    - ID: "8e5d908a-47b5-415f-a50d-d113ac56fdbd"
+      Hint: TrackingProductLabel
+      Value: "المنتج:"
+    - ID: "91d1c6d3-9f06-4438-acd4-d987f37518e7"
+      Hint: NewDealTitle
+      Value: تسجيل صفقة جديدة
+    - ID: "96ee04df-aef0-4c8f-84ae-9e647910a39d"
+      Hint: Tab1Label
+      Value: تسجيل صفقة جديدة
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a499fd75-d3c7-4ddf-a992-7bb713cce563"
+      Hint: NewDealDescription
+      Value: أكمل النموذج أدناه لتسجيل صفقة شريك جديدة
+    - ID: "ab1604d2-90e4-44c4-90a0-386f95a5c7af"
+      Hint: TrackingDescription
+      Value: تتبع حالة الصفقات التي تم إرسالها
+    - ID: "ac9b0ddd-e0de-4a7a-8c40-505033f1051f"
+      Hint: ProductPlaceholderText
+      Value: اختر فئة المنتج
+    - ID: "b692d2c5-31f1-48c2-9dce-7dd211bda089"
+      Hint: NotesPlaceholderText
+      Value: قدم أي تفاصيل إضافية حول هذه الصفقة...
+    - ID: "ba22f884-ff08-414c-a184-50b9e3fd983e"
+      Hint: ProductLabel
+      Value: فئة المنتج
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bb05c99c-1a71-4377-bde4-1c00d3a2fa78"
+      Hint: NotesLabel
+      Value: ملاحظات إضافية
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153645Z
+    - ID: "f8205690-499e-4ba3-a9ff-539a83ea461d"
+      Hint: TrackingTitle
+      Value: تسجيلات الصفقات الخاصة بك
+    - ID: "f884099b-f0d1-4f0d-a495-e17deef9a042"
+      Hint: DealValueLabel
+      Value: القيمة المقدرة للصفقة ($)
+    - ID: "f9d5bf18-7fb1-4146-81ee-ddf40913c463"
+      Hint: CompanyLabel
+      Value: اسم الشركة
+    - ID: "fca5a822-cbef-4226-a5fb-6cca0ebc616c"
+      Hint: TrackingSubmittedLabel
+      Value: "تم الإرسال:"
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "031b5395-ad42-46dc-b6cb-c6ca09de8fe2"
+      Hint: SubmitButtonText
+      Value: "Deal-Registrierung abschicken"
+    - ID: "1484cc85-3d8b-454c-b15b-fe004a91869c"
+      Hint: CompanyPlaceholderText
+      Value: Firmennamen eingeben
+    - ID: "2336fa48-1007-42ee-a95f-9b6ae4a952ff"
+      Hint: PhoneLabel
+      Value: Telefonnummer
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T214354Z
+    - ID: "27d16baa-3729-4247-910b-9eaef05341d9"
+      Hint: ContactPlaceholderText
+      Value: Ansprechpartner eingeben
+    - ID: "2b28f136-fab4-456c-bedb-b9f6a0788e33"
+      Hint: TrackingValueLabel
+      Value: "Wert:"
+    - ID: "3211d6ce-f9c5-4fff-9988-574bbfc6e03e"
+      Hint: PhonePlaceholderText
+      Value: "+1 (555) 123-4567"
+    - ID: "4d27ee12-da6e-43dc-97a5-d9f979c5f7c0"
+      Hint: Tab2Label
+      Value: Deals verfolgen
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "64974aa2-080a-4d7f-a2e9-59c85908902c"
+      Hint: DealValuePlaceholderText
+      Value: € 50000
+    - ID: "6514e0c5-a568-4d4d-937d-19ccf858f5fb"
+      Hint: EmailPlaceholderText
+      Value: contact@company.com
+    - ID: "6949b57f-45d2-4a29-b67b-7f91d60b3032"
+      Hint: ContactLabel
+      Value: Ansprechpartner
+    - ID: "8a1b0bb3-9de4-4cc3-8d2c-52c01e2188b2"
+      Hint: EmailLabel
+      Value: "E-Mail-Adresse"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2de95dea-d767-4f18-ba22-9b1e4d7718c9"
+    - ID: "8e5d908a-47b5-415f-a50d-d113ac56fdbd"
+      Hint: TrackingProductLabel
+      Value: "Produkt:"
+    - ID: "91d1c6d3-9f06-4438-acd4-d987f37518e7"
+      Hint: NewDealTitle
+      Value: "Neue Deal-Registrierung"
+    - ID: "96ee04df-aef0-4c8f-84ae-9e647910a39d"
+      Hint: Tab1Label
+      Value: Neuen Deal registrieren
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a499fd75-d3c7-4ddf-a992-7bb713cce563"
+      Hint: NewDealDescription
+      Value: "Füllen Sie das untenstehende Formular aus, um einen neuen Partner-Deal zu registrieren"
+    - ID: "ab1604d2-90e4-44c4-90a0-386f95a5c7af"
+      Hint: TrackingDescription
+      Value: Verfolgen Sie den Status Ihrer eingereichten Deals
+    - ID: "ac9b0ddd-e0de-4a7a-8c40-505033f1051f"
+      Hint: ProductPlaceholderText
+      Value: Produktkategorie auswählen
+    - ID: "b692d2c5-31f1-48c2-9dce-7dd211bda089"
+      Hint: NotesPlaceholderText
+      Value: Geben Sie zusätzliche Details zu diesem Deal an...
+    - ID: "ba22f884-ff08-414c-a184-50b9e3fd983e"
+      Hint: ProductLabel
+      Value: Produktkategorie
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bb05c99c-1a71-4377-bde4-1c00d3a2fa78"
+      Hint: NotesLabel
+      Value: Zusätzliche Anmerkungen
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100844Z
+    - ID: "f8205690-499e-4ba3-a9ff-539a83ea461d"
+      Hint: TrackingTitle
+      Value: "Ihre Deal-Registrierungen"
+    - ID: "f884099b-f0d1-4f0d-a495-e17deef9a042"
+      Hint: DealValueLabel
+      Value: "Geschätzter Deal-Wert (€)"
+    - ID: "f9d5bf18-7fb1-4146-81ee-ddf40913c463"
+      Hint: CompanyLabel
+      Value: Firmenname
+    - ID: "fca5a822-cbef-4226-a5fb-6cca0ebc616c"
+      Hint: TrackingSubmittedLabel
+      Value: "Eingereicht:"
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T214354Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ce276426-17c8-40cb-96ce-4b2addbf7c16"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T145525Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "031b5395-ad42-46dc-b6cb-c6ca09de8fe2"
+      Hint: SubmitButtonText
+      Value: Soumettre l'enregistrement de l'offre
+    - ID: "1484cc85-3d8b-454c-b15b-fe004a91869c"
+      Hint: CompanyPlaceholderText
+      Value: Entrez le nom de l'entreprise
+    - ID: "2336fa48-1007-42ee-a95f-9b6ae4a952ff"
+      Hint: PhoneLabel
+      Value: Numéro de téléphone
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T214354Z
+    - ID: "27d16baa-3729-4247-910b-9eaef05341d9"
+      Hint: ContactPlaceholderText
+      Value: Entrez la personne de contact
+    - ID: "2b28f136-fab4-456c-bedb-b9f6a0788e33"
+      Hint: TrackingValueLabel
+      Value: "Valeur :"
+    - ID: "3211d6ce-f9c5-4fff-9988-574bbfc6e03e"
+      Hint: PhonePlaceholderText
+      Value: "+1 (555) 123-4567"
+    - ID: "4d27ee12-da6e-43dc-97a5-d9f979c5f7c0"
+      Hint: Tab2Label
+      Value: Suivre les offres
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "64974aa2-080a-4d7f-a2e9-59c85908902c"
+      Hint: DealValuePlaceholderText
+      Value: 50 000 €
+    - ID: "6514e0c5-a568-4d4d-937d-19ccf858f5fb"
+      Hint: EmailPlaceholderText
+      Value: contact@company.com
+    - ID: "6949b57f-45d2-4a29-b67b-7f91d60b3032"
+      Hint: ContactLabel
+      Value: Personne de contact
+    - ID: "8a1b0bb3-9de4-4cc3-8d2c-52c01e2188b2"
+      Hint: EmailLabel
+      Value: "Adresse e-mail"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ce7b4a02-215e-419d-9fc8-a05b800a77e6"
+    - ID: "8e5d908a-47b5-415f-a50d-d113ac56fdbd"
+      Hint: TrackingProductLabel
+      Value: "Produit :"
+    - ID: "91d1c6d3-9f06-4438-acd4-d987f37518e7"
+      Hint: NewDealTitle
+      Value: Nouvel enregistrement d'offre
+    - ID: "96ee04df-aef0-4c8f-84ae-9e647910a39d"
+      Hint: Tab1Label
+      Value: Enregistrer une nouvelle offre
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a499fd75-d3c7-4ddf-a992-7bb713cce563"
+      Hint: NewDealDescription
+      Value: "Complétez le formulaire ci-dessous pour enregistrer une nouvelle offre partenaire"
+    - ID: "ab1604d2-90e4-44c4-90a0-386f95a5c7af"
+      Hint: TrackingDescription
+      Value: Suivez l'état de vos offres soumises
+    - ID: "ac9b0ddd-e0de-4a7a-8c40-505033f1051f"
+      Hint: ProductPlaceholderText
+      Value: Sélectionnez la catégorie de produit
+    - ID: "b692d2c5-31f1-48c2-9dce-7dd211bda089"
+      Hint: NotesPlaceholderText
+      Value: Fournissez des détails supplémentaires sur cette offre...
+    - ID: "ba22f884-ff08-414c-a184-50b9e3fd983e"
+      Hint: ProductLabel
+      Value: Catégorie de produit
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bb05c99c-1a71-4377-bde4-1c00d3a2fa78"
+      Hint: NotesLabel
+      Value: Notes supplémentaires
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143602Z
+    - ID: "f8205690-499e-4ba3-a9ff-539a83ea461d"
+      Hint: TrackingTitle
+      Value: Vos enregistrements d'offres
+    - ID: "f884099b-f0d1-4f0d-a495-e17deef9a042"
+      Hint: DealValueLabel
+      Value: Valeur estimée de l'offre (€)
+    - ID: "f9d5bf18-7fb1-4146-81ee-ddf40913c463"
+      Hint: CompanyLabel
+      Value: Nom de l'entreprise
+    - ID: "fca5a822-cbef-4226-a5fb-6cca0ebc616c"
+      Hint: TrackingSubmittedLabel
+      Value: "Soumis :"
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "031b5395-ad42-46dc-b6cb-c6ca09de8fe2"
+      Hint: SubmitButtonText
+      Value: 取引登録を送信
+    - ID: "1484cc85-3d8b-454c-b15b-fe004a91869c"
+      Hint: CompanyPlaceholderText
+      Value: 会社名を入力してください
+    - ID: "2336fa48-1007-42ee-a95f-9b6ae4a952ff"
+      Hint: PhoneLabel
+      Value: 電話番号
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T214354Z
+    - ID: "27d16baa-3729-4247-910b-9eaef05341d9"
+      Hint: ContactPlaceholderText
+      Value: 担当者を入力してください
+    - ID: "2b28f136-fab4-456c-bedb-b9f6a0788e33"
+      Hint: TrackingValueLabel
+      Value: "価値:"
+    - ID: "3211d6ce-f9c5-4fff-9988-574bbfc6e03e"
+      Hint: PhonePlaceholderText
+      Value: "+1 (555) 123-4567"
+    - ID: "4d27ee12-da6e-43dc-97a5-d9f979c5f7c0"
+      Hint: Tab2Label
+      Value: 取引を追跡する
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "64974aa2-080a-4d7f-a2e9-59c85908902c"
+      Hint: DealValuePlaceholderText
+      Value: $ 50000
+    - ID: "6514e0c5-a568-4d4d-937d-19ccf858f5fb"
+      Hint: EmailPlaceholderText
+      Value: contact@company.com
+    - ID: "6949b57f-45d2-4a29-b67b-7f91d60b3032"
+      Hint: ContactLabel
+      Value: 担当者
+    - ID: "8a1b0bb3-9de4-4cc3-8d2c-52c01e2188b2"
+      Hint: EmailLabel
+      Value: メールアドレス
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a846e2d5-ec96-476a-914e-fc1da301552d"
+    - ID: "8e5d908a-47b5-415f-a50d-d113ac56fdbd"
+      Hint: TrackingProductLabel
+      Value: "製品:"
+    - ID: "91d1c6d3-9f06-4438-acd4-d987f37518e7"
+      Hint: NewDealTitle
+      Value: 新規取引登録
+    - ID: "96ee04df-aef0-4c8f-84ae-9e647910a39d"
+      Hint: Tab1Label
+      Value: 新しい取引を登録する
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a499fd75-d3c7-4ddf-a992-7bb713cce563"
+      Hint: NewDealDescription
+      Value: 新しいパートナー取引を登録するには、以下のフォームに記入してください
+    - ID: "ab1604d2-90e4-44c4-90a0-386f95a5c7af"
+      Hint: TrackingDescription
+      Value: 提出した取引のステータスを追跡する
+    - ID: "ac9b0ddd-e0de-4a7a-8c40-505033f1051f"
+      Hint: ProductPlaceholderText
+      Value: 製品カテゴリーを選択
+    - ID: "b692d2c5-31f1-48c2-9dce-7dd211bda089"
+      Hint: NotesPlaceholderText
+      Value: この取引に関する追加の詳細を提供してください...
+    - ID: "ba22f884-ff08-414c-a184-50b9e3fd983e"
+      Hint: ProductLabel
+      Value: 製品カテゴリー
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "bb05c99c-1a71-4377-bde4-1c00d3a2fa78"
+      Hint: NotesLabel
+      Value: 追加のメモ
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T014405Z
+    - ID: "f8205690-499e-4ba3-a9ff-539a83ea461d"
+      Hint: TrackingTitle
+      Value: あなたの取引登録
+    - ID: "f884099b-f0d1-4f0d-a495-e17deef9a042"
+      Hint: DealValueLabel
+      Value: 推定取引額（$）
+    - ID: "f9d5bf18-7fb1-4146-81ee-ddf40913c463"
+      Hint: CompanyLabel
+      Value: 会社名
+    - ID: "fca5a822-cbef-4226-a5fb-6cca0ebc616c"
+      Hint: TrackingSubmittedLabel
+      Value: "提出済み:"
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "031b5395-ad42-46dc-b6cb-c6ca09de8fe2"
+      Hint: SubmitButtonText
+      Value: 거래 등록 제출
+    - ID: "1484cc85-3d8b-454c-b15b-fe004a91869c"
+      Hint: CompanyPlaceholderText
+      Value: 회사 이름 입력
+    - ID: "2336fa48-1007-42ee-a95f-9b6ae4a952ff"
+      Hint: PhoneLabel
+      Value: 전화번호
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T214354Z
+    - ID: "27d16baa-3729-4247-910b-9eaef05341d9"
+      Hint: ContactPlaceholderText
+      Value: 담당자 입력
+    - ID: "2b28f136-fab4-456c-bedb-b9f6a0788e33"
+      Hint: TrackingValueLabel
+      Value: "가치:"
+    - ID: "3211d6ce-f9c5-4fff-9988-574bbfc6e03e"
+      Hint: PhonePlaceholderText
+      Value: "+1 (555) 123-4567"
+    - ID: "4d27ee12-da6e-43dc-97a5-d9f979c5f7c0"
+      Hint: Tab2Label
+      Value: 거래 추적
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "64974aa2-080a-4d7f-a2e9-59c85908902c"
+      Hint: DealValuePlaceholderText
+      Value: $ 50000
+    - ID: "6514e0c5-a568-4d4d-937d-19ccf858f5fb"
+      Hint: EmailPlaceholderText
+      Value: contact@company.com
+    - ID: "6949b57f-45d2-4a29-b67b-7f91d60b3032"
+      Hint: ContactLabel
+      Value: 담당자
+    - ID: "8a1b0bb3-9de4-4cc3-8d2c-52c01e2188b2"
+      Hint: EmailLabel
+      Value: 이메일 주소
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "72f8694d-fb6a-48ea-8780-2130988487fd"
+    - ID: "8e5d908a-47b5-415f-a50d-d113ac56fdbd"
+      Hint: TrackingProductLabel
+      Value: "제품:"
+    - ID: "91d1c6d3-9f06-4438-acd4-d987f37518e7"
+      Hint: NewDealTitle
+      Value: 새 거래 등록
+    - ID: "96ee04df-aef0-4c8f-84ae-9e647910a39d"
+      Hint: Tab1Label
+      Value: 새 거래 등록
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a499fd75-d3c7-4ddf-a992-7bb713cce563"
+      Hint: NewDealDescription
+      Value: 아래 양식을 작성하여 새로운 파트너 거래를 등록하십시오
+    - ID: "ab1604d2-90e4-44c4-90a0-386f95a5c7af"
+      Hint: TrackingDescription
+      Value: 제출한 거래의 상태를 추적하십시오
+    - ID: "ac9b0ddd-e0de-4a7a-8c40-505033f1051f"
+      Hint: ProductPlaceholderText
+      Value: 제품 카테고리 선택
+    - ID: "b692d2c5-31f1-48c2-9dce-7dd211bda089"
+      Hint: NotesPlaceholderText
+      Value: 이 거래에 대한 추가 세부 정보를 제공하십시오...
+    - ID: "ba22f884-ff08-414c-a184-50b9e3fd983e"
+      Hint: ProductLabel
+      Value: 제품 카테고리
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bb05c99c-1a71-4377-bde4-1c00d3a2fa78"
+      Hint: NotesLabel
+      Value: 추가 메모
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104950Z
+    - ID: "f8205690-499e-4ba3-a9ff-539a83ea461d"
+      Hint: TrackingTitle
+      Value: 귀하의 거래 등록
+    - ID: "f884099b-f0d1-4f0d-a495-e17deef9a042"
+      Hint: DealValueLabel
+      Value: 예상 거래 가치 ($)
+    - ID: "f9d5bf18-7fb1-4146-81ee-ddf40913c463"
+      Hint: CompanyLabel
+      Value: 회사 이름
+    - ID: "fca5a822-cbef-4226-a5fb-6cca0ebc616c"
+      Hint: TrackingSubmittedLabel
+      Value: "제출됨:"
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "031b5395-ad42-46dc-b6cb-c6ca09de8fe2"
+      Hint: SubmitButtonText
+      Value: Zarejestruj transakcję
+    - ID: "1484cc85-3d8b-454c-b15b-fe004a91869c"
+      Hint: CompanyPlaceholderText
+      Value: Wprowadź nazwę firmy
+    - ID: "2336fa48-1007-42ee-a95f-9b6ae4a952ff"
+      Hint: PhoneLabel
+      Value: Numer telefonu
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T214354Z
+    - ID: "27d16baa-3729-4247-910b-9eaef05341d9"
+      Hint: ContactPlaceholderText
+      Value: Wprowadź osobę kontaktową
+    - ID: "2b28f136-fab4-456c-bedb-b9f6a0788e33"
+      Hint: TrackingValueLabel
+      Value: "Wartość:"
+    - ID: "3211d6ce-f9c5-4fff-9988-574bbfc6e03e"
+      Hint: PhonePlaceholderText
+      Value: "+1 (555) 123-4567"
+    - ID: "4d27ee12-da6e-43dc-97a5-d9f979c5f7c0"
+      Hint: Tab2Label
+      Value: Śledź transakcje
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "64974aa2-080a-4d7f-a2e9-59c85908902c"
+      Hint: DealValuePlaceholderText
+      Value: 50000 zł
+    - ID: "6514e0c5-a568-4d4d-937d-19ccf858f5fb"
+      Hint: EmailPlaceholderText
+      Value: contact@company.com
+    - ID: "6949b57f-45d2-4a29-b67b-7f91d60b3032"
+      Hint: ContactLabel
+      Value: Osoba kontaktowa
+    - ID: "8a1b0bb3-9de4-4cc3-8d2c-52c01e2188b2"
+      Hint: EmailLabel
+      Value: "Adres e-mail"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7f357a71-9fdf-41a8-9b8c-f4a1ee975d12"
+    - ID: "8e5d908a-47b5-415f-a50d-d113ac56fdbd"
+      Hint: TrackingProductLabel
+      Value: "Produkt:"
+    - ID: "91d1c6d3-9f06-4438-acd4-d987f37518e7"
+      Hint: NewDealTitle
+      Value: Rejestracja nowej transakcji
+    - ID: "96ee04df-aef0-4c8f-84ae-9e647910a39d"
+      Hint: Tab1Label
+      Value: Zarejestruj nową transakcję
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a499fd75-d3c7-4ddf-a992-7bb713cce563"
+      Hint: NewDealDescription
+      Value: Wypełnij poniższy formularz, aby zarejestrować nową transakcję partnerską
+    - ID: "ab1604d2-90e4-44c4-90a0-386f95a5c7af"
+      Hint: TrackingDescription
+      Value: Śledź status swoich złożonych transakcji
+    - ID: "ac9b0ddd-e0de-4a7a-8c40-505033f1051f"
+      Hint: ProductPlaceholderText
+      Value: Wybierz kategorię produktu
+    - ID: "b692d2c5-31f1-48c2-9dce-7dd211bda089"
+      Hint: NotesPlaceholderText
+      Value: Podaj dodatkowe szczegóły dotyczące tej transakcji...
+    - ID: "ba22f884-ff08-414c-a184-50b9e3fd983e"
+      Hint: ProductLabel
+      Value: Kategoria produktu
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bb05c99c-1a71-4377-bde4-1c00d3a2fa78"
+      Hint: NotesLabel
+      Value: Dodatkowe uwagi
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144027Z
+    - ID: "f8205690-499e-4ba3-a9ff-539a83ea461d"
+      Hint: TrackingTitle
+      Value: Twoje rejestracje transakcji
+    - ID: "f884099b-f0d1-4f0d-a495-e17deef9a042"
+      Hint: DealValueLabel
+      Value: Szacowana wartość transakcji (zł)
+    - ID: "f9d5bf18-7fb1-4146-81ee-ddf40913c463"
+      Hint: CompanyLabel
+      Value: Nazwa firmy
+    - ID: "fca5a822-cbef-4226-a5fb-6cca0ebc616c"
+      Hint: TrackingSubmittedLabel
+      Value: "Złożono:"

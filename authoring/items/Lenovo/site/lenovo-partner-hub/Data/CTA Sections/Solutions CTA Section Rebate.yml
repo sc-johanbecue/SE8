@@ -1,0 +1,376 @@
+﻿---
+ID: "734dda75-21cb-45b7-a164-18f66e8b0630"
+Parent: "22fd6759-1c42-4b1f-a448-8ba63a06e160"
+Template: "5f1b0356-f0f9-4ed4-a9c4-48e0ca32af2b"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Data/CTA Sections/Solutions CTA Section Rebate"
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">استكشف مجموعة الذكاء الاصطناعي من لينوفو اليوم وضع عملك كمستشار موثوق في عصر الحوسبة الذكية.</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "823b2d18-e738-44d6-8ece-aa59c06e77bc"
+      Hint: TextColor
+      Value: "text-white"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c67f4c25-7888-4e51-b8e2-3bf0810e8237"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b6f20da0-e122-406e-8cf0-a562dd54abaf"
+      Hint: BackgroundColor
+      Value: "bg-slate-900"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: اتصل بالمبيعات
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: استفد من خصم 5% على جميع أجهزة الكمبيوتر الذكاء الاصطناعي
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153645Z
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">Entdecken Sie noch heute Lenovos KI-Portfolio und positionieren Sie Ihr Unternehmen als vertrauenswürdiger Berater im Zeitalter des intelligenten Rechnens.</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "823b2d18-e738-44d6-8ece-aa59c06e77bc"
+      Hint: TextColor
+      Value: "text-white"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a52e48bd-a8e7-4ac3-9383-f43beb94330b"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b6f20da0-e122-406e-8cf0-a562dd54abaf"
+      Hint: BackgroundColor
+      Value: "bg-slate-900"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: Vertrieb kontaktieren
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: "Profitieren Sie von einem 5% Rabatt auf alle KI-PCs"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100844Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Unlock the power of Lenovo's cutting-edge AI portfolio today and elevate your business to new heights as a trusted advisor in the era of intelligent computing. Plus, enjoy exclusive rebates to enhance your savings and amplify your impact.</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "14ef2ee5-6a82-4bf6-9f47-89a149d0c732"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: Contact Sales
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: Benefit from a 5% rebate on all AI PCs
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T155745Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">Explorez le portefeuille d'IA de Lenovo aujourd'hui et positionnez votre entreprise en tant que conseiller de confiance à l'ère de l'informatique intelligente.</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "823b2d18-e738-44d6-8ece-aa59c06e77bc"
+      Hint: TextColor
+      Value: "text-white"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "465b4222-5c10-42c7-a277-aeaea4f768af"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b6f20da0-e122-406e-8cf0-a562dd54abaf"
+      Hint: BackgroundColor
+      Value: "bg-slate-900"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: Contacter les ventes
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: Profitez d'une remise de 5 % sur tous les PC IA
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143602Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content">
+        <p style="text-align:center;">私たちの専門家チームが、完璧なデジタルワークプレースソリューションの設計と実装をお手伝いします。</p>
+        </div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "823b2d18-e738-44d6-8ece-aa59c06e77bc"
+      Hint: TextColor
+      Value: "text-white"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4099d907-753a-4423-b317-0db512e70ed3"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b6f20da0-e122-406e-8cf0-a562dd54abaf"
+      Hint: BackgroundColor
+      Value: "bg-slate-900"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: 営業に連絡する
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: 職場を変革する準備はできていますか？
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T135826Z
+  - Version: 2
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">LenovoのAIポートフォリオを今すぐ探索し、インテリジェントコンピューティングの時代における信頼できるアドバイザーとしてビジネスを位置付けましょう。</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "823b2d18-e738-44d6-8ece-aa59c06e77bc"
+      Hint: TextColor
+      Value: "text-white"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f4a04f77-28b6-41b3-9eee-2f517963a163"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b6f20da0-e122-406e-8cf0-a562dd54abaf"
+      Hint: BackgroundColor
+      Value: "bg-slate-900"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: 営業に連絡する
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: お客様がAI PCの力を解き放つのを手助けしましょう。
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T135826Z
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">Lenovo의 AI 포트폴리오를 오늘 탐색하고 지능형 컴퓨팅 시대에 신뢰할 수 있는 조언자로서 비즈니스를 자리매김하세요.</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "823b2d18-e738-44d6-8ece-aa59c06e77bc"
+      Hint: TextColor
+      Value: "text-white"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f63bedf3-55f8-4ca0-b864-313140a3d15c"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b6f20da0-e122-406e-8cf0-a562dd54abaf"
+      Hint: BackgroundColor
+      Value: "bg-slate-900"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: 영업 문의
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: 고객이 AI PC의 힘을 활용할 수 있도록 도와주세요.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T135826Z
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">Poznaj portfolio AI Lenovo już dziś i pozycjonuj swoją firmę jako zaufany doradca w erze inteligentnego przetwarzania.</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "823b2d18-e738-44d6-8ece-aa59c06e77bc"
+      Hint: TextColor
+      Value: "text-white"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1c94c46f-5fc3-4c76-9d0e-d0680481631f"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b6f20da0-e122-406e-8cf0-a562dd54abaf"
+      Hint: BackgroundColor
+      Value: "bg-slate-900"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: Skontaktuj się z działem sprzedaży
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: Skorzystaj z 5% rabatu na wszystkie komputery AI
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144026Z

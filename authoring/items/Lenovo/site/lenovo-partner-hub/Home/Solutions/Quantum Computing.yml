@@ -1,0 +1,1148 @@
+﻿---
+ID: "a845447d-befc-4f16-81c0-924a9113afb6"
+Parent: "bf3a5b50-c224-424c-a3e5-0484f4fea364"
+Template: "5988a860-d8bf-4285-819f-262cae122a6e"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Home/Solutions/Quantum Computing"
+SharedFields:
+- ID: "1fbc6a49-6281-48ee-87e9-a3970b145adb"
+  Hint: NavigationFilter
+  Value: "{D063E9D1-C7B5-4B1E-B31E-69886C9C59F5}"
+- ID: "5534371c-d9a0-48b6-ad13-a8fb354b782c"
+  Hint: Benefits
+  Value: |
+    {CD024889-1B12-40EE-A71D-24F58F35314F}
+    {32DB8691-1225-48B4-B258-D912A204870D}
+    {361E6855-B7B9-45D2-B58C-4B64EB2C92AD}
+    {5E9AA706-C643-44D2-8554-C5E40D9EEF33}
+    {725FADD1-2D65-4324-A52D-3AE429613E06}
+    {F6CC3E51-B288-421F-89AE-D17AEAAADA6B}
+- ID: "6cc01814-3192-49e6-ab63-9d466614b9c5"
+  Hint: BackgroundImage
+  Value: |
+    <image mediaid="ed08ae8c-40c9-4276-b166-889218f176f0" />
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{96B86531-B197-4139-8279-FECBF8210D28}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "c20acd12-eb43-4f8c-94fc-0c22219cf8ac"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: 
+- ID: "fe79b7c3-f604-46f8-b940-762e232ba506"
+  Hint: KeyFeatures
+  Value: |
+    {A8B8E790-4E83-4949-9488-44A14F219137}
+    {2D827695-5356-4D47-9D69-91A2DCDC07A3}
+    {230B9E93-9FC8-49E7-B77C-0956D2A85D51}
+Languages:
+- Language: "ar-EG"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "baa01aa2-5339-437c-a7ff-0d90627d67e1"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: الحوسبة الكمومية
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{EA0F03D8-F2D9-402A-85AA-1901FBDCE30A}"
+              s:ds="65ab194f-3b6f-4b91-8fe4-d22c507b515f">
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{8F663C5B-2C3B-4D94-B9F6-AB8D4AB95F70}"
+                    s:name="44e8533774dd4353836d63c2ca20a2be">
+                    <conditions>
+                      <condition
+                        uid="CB3D76A7F208477A84379F53E9394A9D"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="44e8533774dd4353836d63c2ca20a2be" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{120537EA-EA72-4B90-A052-908172E881BC}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="1d2109a9-52cf-4a97-9d11-5d2d625b33b6" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="277F1C19846242CAB68AFC66586D6F2B"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{706D04B9-89D8-408B-A464-F18911ECE4BE}"
+              p:after="r[@uid='{EA0F03D8-F2D9-402A-85AA-1901FBDCE30A}']">
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{BE68E91C-60BC-4173-AC8E-6D0374EBF765}"
+                    s:name="44e8533774dd4353836d63c2ca20a2be">
+                    <conditions>
+                      <condition
+                        uid="0583EE9CD06F4E9EB508F838297D227A"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="44e8533774dd4353836d63c2ca20a2be" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{AE7526F4-3D7A-4FB5-8B5C-6993667D2D87}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="734dda75-21cb-45b7-a164-18f66e8b0630" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="5C86EAAADE5046FFA20AF9EE8B3C8221"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+          </d>
+        </r>
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: لينوفو
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: فوائد الحلول
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: مدعوم بالذكاء الاصطناعي
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T103239Z
+    - ID: "2d246ada-1e97-401d-907d-47abed3ce4fe"
+      Hint: Content
+      Value: |
+        <div class="ck-content"><h4><strong>1. تعزيز الإنتاجية من خلال الذكاء الاصطناعي على الجهاز</strong></h4><p>تستفيد أجهزة الكمبيوتر المدعومة بالذكاء الاصطناعي من وحدات المعالجة العصبية المخصصة (NPUs) لمعالجة أعباء العمل الذكاء الاصطناعي محليًا. هذا يعني:</p><ul><li><strong>أداء أسرع</strong> للمهام مثل الترجمة الفورية للغة، والتعرف على الصور، والتحليلات التنبؤية.</li><li><strong>تقليل التأخير</strong> مقارنة بالذكاء الاصطناعي المستند إلى السحابة، مما يتيح تعدد المهام بسلاسة وتحسين الاستجابة.</li><li><strong>تطبيقات محسنة</strong>: من Microsoft Copilot إلى الأدوات الإبداعية، تسرع أجهزة الكمبيوتر المدعومة بالذكاء الاصطناعي سير العمل للعاملين في المعرفة والمطورين والمصممين.</li></ul><h4><strong>2. تحسين الأمان والخصوصية</strong></h4><p>مع معالجة الذكاء الاصطناعي على الجهاز:</p><ul><li>تبقى البيانات الحساسة محلية، مما يقلل من التعرض للتهديدات السيبرانية.</li><li>ميزات الأمان المتقدمة المدفوعة بالذكاء الاصطناعي مثل الكشف التكيفي عن التهديدات والمصادقة البيومترية تعزز الحماية.</li><li>يصبح الامتثال أسهل للصناعات ذات متطلبات حوكمة البيانات الصارمة.</li></ul><h4><strong>3. كفاءة الطاقة والاستدامة</strong></h4><p>تدير أجهزة الكمبيوتر المدعومة بالذكاء الاصطناعي استهلاك الطاقة بذكاء:</p><ul><li>تقوم وحدات المعالجة العصبية بتفريغ المهام من وحدات المعالجة المركزية ووحدات معالجة الرسومات، مما يقلل من استخدام الطاقة.</li><li>عمر بطارية أطول للعمال المتنقلين.</li><li>يتماشى البصمة الكربونية المنخفضة مع أهداف الاستدامة للشركات.</li></ul><h4><strong>4. تأمين مستقبل عملك</strong></h4><p>تم بناء أجهزة الكمبيوتر المدعومة بالذكاء الاصطناعي للمرحلة التالية من الابتكار:</p><ul><li>الدعم الأصلي للتطبيقات المدفوعة بالذكاء الاصطناعي يضمن طول العمر.</li><li>أداء قابل للتوسع لأعباء العمل الناشئة مثل الذكاء الاصطناعي التوليدي وتعلم الآلة.</li><li>ميزة تنافسية في جذب المواهب التي تتوقع أدوات متقدمة.</li></ul><h4><strong>لماذا لينوفو؟</strong></h4><p>تقود لينوفو الشحنة بأجهزة جاهزة للذكاء الاصطناعي عبر خطوط ThinkPad وThinkBook وYoga، مدعومة بأمان قوي وموثوقية على مستوى المؤسسات ودعم عالمي. بالنسبة للشركاء، هذا يعني:</p><ul><li><strong>هوامش أعلى</strong> على المنتجات المتميزة المدعومة بالذكاء الاصطناعي.</li><li><strong>عروض متميزة</strong> للعملاء الذين يبحثون عن الابتكار.</li><li><strong>الوصول إلى نظام لينوفو البيئي للذكاء الاصطناعي</strong>، بما في ذلك تحسينات البرامج وبرامج تمكين الشركاء.</li></ul></div>
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: |
+        <div class="ck-content"><p>الذكاء الاصطناعي ليس مجرد لمحة عن المستقبل، إنه نبض الأعمال الحديثة. في سباق الابتكار، تتعرض الشركات لضغوط للتفوق، والحاجة إلى حلول حوسبة أكثر ذكاءً وسرعة وقوة لم تكن أكبر من أي وقت مضى. نقدم <strong>أجهزة الكمبيوتر المدعومة بالذكاء الاصطناعي</strong>، الأجهزة الثورية التي تعيد تعريف الإنتاجية، وتعزز الأمان، وترفع تجربة المستخدم إلى ما يتجاوز التوقعات.</p></div>
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: الحوسبة الكمومية
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: الحالة التجارية لأجهزة الكمبيوتر المدعومة بالذكاء الاصطناعي
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fb1db633-d254-4a4d-a96e-b7309951ffd3"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: العودة إلى الحلول
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: أجهزة الكمبيوتر المدعومة بالذكاء الاصطناعي
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: لماذا يجب على شركاء لينوفو الاهتمام
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: الحوسبة الكمومية
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: الميزات الرئيسية
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: عرض الحلول
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153632Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>أدخل <strong>أجهزة الكمبيوتر المدعومة بالذكاء الاصطناعي</strong>، جيل جديد من الأجهزة مصمم لتحويل الإنتاجية والأمان وتجربة المستخدم.</p></div>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: اتصل بالمبيعات
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: كل ما تحتاجه لبناء مكان عمل رقمي حديث
+- Language: "de-DE"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "db91041d-a3a9-4135-a495-3f7cbdc95e1c"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Quantencomputing
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{706D04B9-89D8-408B-A464-F18911ECE4BE}">
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{BE68E91C-60BC-4173-AC8E-6D0374EBF765}"
+                    s:name="44e8533774dd4353836d63c2ca20a2be">
+                    <conditions>
+                      <condition
+                        uid="0583EE9CD06F4E9EB508F838297D227A"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="44e8533774dd4353836d63c2ca20a2be" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{AE7526F4-3D7A-4FB5-8B5C-6993667D2D87}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="734dda75-21cb-45b7-a164-18f66e8b0630" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="5C86EAAADE5046FFA20AF9EE8B3C8221"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+          </d>
+        </r>
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: Lenovo
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: Lösungsnutzen
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: "KI-gestützt"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T103239Z
+    - ID: "2d246ada-1e97-401d-907d-47abed3ce4fe"
+      Hint: Content
+      Value: |
+        <div class="ck-content"><h4><strong>1. Erhöhte Produktivität durch On-Device-KI</strong></h4><p>KI-PCs nutzen dedizierte neuronale Verarbeitungseinheiten (NPUs), um KI-Workloads lokal zu bearbeiten. Das bedeutet:</p><ul><li><strong>Schnellere Leistung</strong> für Aufgaben wie Echtzeit-Sprachübersetzung, Bilderkennung und prädiktive Analysen.</li><li><strong>Reduzierte Latenz</strong> im Vergleich zu cloudbasierter KI, was nahtloses Multitasking und verbesserte Reaktionsfähigkeit ermöglicht.</li><li><strong>Optimierte Anwendungen</strong>: Von Microsoft Copilot bis zu kreativen Tools beschleunigen KI-PCs Arbeitsabläufe für Wissensarbeiter, Entwickler und Designer.</li></ul><h4><strong>2. Verbesserte Sicherheit und Datenschutz</strong></h4><p>Da die KI-Verarbeitung auf dem Gerät erfolgt:</p><ul><li>Bleiben sensible Daten lokal, was die Exposition gegenüber Cyber-Bedrohungen reduziert.</li><li>Erweiterte KI-gesteuerte Sicherheitsfunktionen wie adaptive Bedrohungserkennung und biometrische Authentifizierung verbessern den Schutz.</li><li>Die Einhaltung von Vorschriften wird für Branchen mit strengen Datenverwaltungsanforderungen einfacher.</li></ul><h4><strong>3. Energieeffizienz und Nachhaltigkeit</strong></h4><p>KI-PCs verwalten den Energieverbrauch intelligent:</p><ul><li>NPUs entlasten CPUs und GPUs, was den Energieverbrauch reduziert.</li><li>Längere Akkulaufzeit für mobile Arbeiter.</li><li>Geringerer CO2-Fußabdruck entspricht den Unternehmenszielen zur Nachhaltigkeit.</li></ul><h4><strong>4. Zukunftssicherheit für Ihr Unternehmen</strong></h4><p>KI-PCs sind für die nächste Innovationswelle gebaut:</p><ul><li>Native Unterstützung für KI-gesteuerte Anwendungen gewährleistet Langlebigkeit.</li><li>Skalierbare Leistung für aufkommende Workloads wie generative KI und maschinelles Lernen.</li><li>Ein Wettbewerbsvorteil bei der Gewinnung von Talenten, die modernste Werkzeuge erwarten.</li></ul><h4><strong>Warum Lenovo?</strong></h4><p>Lenovo führt die Entwicklung mit KI-fähigen Geräten in den ThinkPad-, ThinkBook- und Yoga-Serien an, unterstützt durch robuste Sicherheit, unternehmensgerechte Zuverlässigkeit und globalen Support. Für Partner bedeutet dies:</p><ul><li><strong>Höhere Margen</strong> bei Premium-KI-fähigen Produkten.</li><li><strong>Unterscheidbare Angebote</strong> für Kunden, die Innovation suchen.</li><li><strong>Zugang zum KI-Ökosystem von Lenovo</strong>, einschließlich Software-Optimierungen und Partner-Enablement-Programmen.</li></ul></div>
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: |
+        <div class="ck-content"><p>Künstliche Intelligenz (KI) ist kein futuristisches Konzept mehres ist ein geschäftliches Muss. Da Unternehmen bestrebt sind, wettbewerbsfähig zu bleiben, steigt die Nachfrage nach intelligenteren, schnelleren und sichereren Computerlösungen rasant an. Betreten Sie die Welt der <strong>KI-gestützten PCs</strong>, eine neue Generation von Geräten, die Produktivität, Sicherheit und Benutzererfahrung transformieren sollen.</p></div>
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Quantencomputing
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: "Der Business Case für KI-PCs"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4093944d-21e4-44d9-8f3d-b7814bf21918"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: Zurück zu Lösungen
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: "KI-PCs"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: "Warum Lenovo-Partner sich kümmern sollten"
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Quantencomputing
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: Hauptmerkmale
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: Lösungen anzeigen
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100832Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Betreten Sie die Welt der <strong>KI-gestützten PCs</strong>, eine neue Generation von Geräten, die Produktivität, Sicherheit und Benutzererfahrung transformieren sollen.</p></div>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: Vertrieb kontaktieren
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: Alles, was Sie brauchen, um einen modernen digitalen Arbeitsplatz zu schaffen
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "842d29e3-1275-43bf-b00e-bc6d746efc61"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Quantum Computing
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{EA0F03D8-F2D9-402A-85AA-1901FBDCE30A}"
+              s:ds="65ab194f-3b6f-4b91-8fe4-d22c507b515f">
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{8F663C5B-2C3B-4D94-B9F6-AB8D4AB95F70}"
+                    s:name="44e8533774dd4353836d63c2ca20a2be">
+                    <conditions>
+                      <condition
+                        uid="CB3D76A7F208477A84379F53E9394A9D"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="44e8533774dd4353836d63c2ca20a2be" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{120537EA-EA72-4B90-A052-908172E881BC}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="1d2109a9-52cf-4a97-9d11-5d2d625b33b6" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="277F1C19846242CAB68AFC66586D6F2B"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{706D04B9-89D8-408B-A464-F18911ECE4BE}"
+              p:after="r[@uid='{EA0F03D8-F2D9-402A-85AA-1901FBDCE30A}']">
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{BE68E91C-60BC-4173-AC8E-6D0374EBF765}"
+                    s:name="44e8533774dd4353836d63c2ca20a2be">
+                    <conditions>
+                      <condition
+                        uid="0583EE9CD06F4E9EB508F838297D227A"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="44e8533774dd4353836d63c2ca20a2be" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{AE7526F4-3D7A-4FB5-8B5C-6993667D2D87}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="734dda75-21cb-45b7-a164-18f66e8b0630" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="5C86EAAADE5046FFA20AF9EE8B3C8221"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+          </d>
+        </r>
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: Lenovo
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: "AI-Powered"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T103239Z
+    - ID: "2d246ada-1e97-401d-907d-47abed3ce4fe"
+      Hint: Content
+      Value: |
+        <div class="ck-content"><h4><strong>1. Enhanced Productivity Through On-Device AI</strong></h4><p>AI PCs leverage dedicated neural processing units (NPUs) to handle AI workloads locally. This means:</p><ul><li><strong>Faster performance</strong> for tasks like real-time language translation, image recognition, and predictive analytics.</li><li><strong>Reduced latency</strong> compared to cloud-based AI, enabling seamless multitasking and improved responsiveness.</li><li><strong>Optimized applications</strong>: From Microsoft Copilot to creative tools, AI PCs accelerate workflows for knowledge workers, developers, and designers.</li></ul><h4><strong>2. Improved Security and Privacy</strong></h4><p>With AI processing happening on-device:</p><ul><li>Sensitive data stays local, reducing exposure to cyber threats.</li><li>Advanced AI-driven security features like adaptive threat detection and biometric authentication enhance protection.</li><li>Compliance becomes easier for industries with strict data governance requirements.</li></ul><h4><strong>3. Energy Efficiency and Sustainability</strong></h4><p>AI PCs intelligently manage power consumption:</p><ul><li>NPUs offload tasks from CPUs and GPUs, reducing energy use.</li><li>Longer battery life for mobile workers.</li><li>Lower carbon footprint aligns with corporate sustainability goals.</li></ul><h4><strong>4. Future-Proofing Your Business</strong></h4><p>AI PCs are built for the next wave of innovation:</p><ul><li>Native support for AI-driven applications ensures longevity.</li><li>Scalable performance for emerging workloads like generative AI and machine learning.</li><li>A competitive edge in attracting talent who expect cutting-edge tools.</li></ul><h4><strong>Why Lenovo?</strong></h4><p>Lenovo leads the charge with AI-ready devices across ThinkPad, ThinkBook, and Yoga lines, backed by robust security, enterprise-grade reliability, and global support. For partners, this means:</p><ul><li><strong>Higher margins</strong> on premium AI-enabled products.</li><li><strong>Differentiated offerings</strong> for customers seeking innovation.</li><li><strong>Access to Lenovo’s AI ecosystem</strong>, including software optimizations and partner enablement programs.</li></ul></div>
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: |
+        <div class="ck-content"><p>Artificial Intelligence isn't just a glimpse into the futureit's the heartbeat of modern business. In the race for innovation, companies are under pressure to outperform, and the need for smarter, faster, and robust computing solutions has never been greater. Introducing <strong>AI powered PCs</strong>, the groundbreaking devices that redefine productivity, enhance security, and elevate the user experience beyond expectation.</p></div>
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Quantum Computing
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: The Business Case for AI PCs
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9adb9575-6d15-454e-9c61-baf27231bbaf"
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: AI PCs
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Why Lenovo Partners Should Care 
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Quantum Computing
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: View Solutions
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T134125Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Enter <strong>AI-powered PCs</strong>, a new generation of devices designed to transform productivity, security, and user experience.</p></div>
+- Language: "fr-FR"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "ddfffb57-8d9f-4de9-8689-33a1f9fde21f"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Quantum Computing
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{706D04B9-89D8-408B-A464-F18911ECE4BE}">
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{BE68E91C-60BC-4173-AC8E-6D0374EBF765}"
+                    s:name="44e8533774dd4353836d63c2ca20a2be">
+                    <conditions>
+                      <condition
+                        uid="0583EE9CD06F4E9EB508F838297D227A"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="44e8533774dd4353836d63c2ca20a2be" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{AE7526F4-3D7A-4FB5-8B5C-6993667D2D87}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="734dda75-21cb-45b7-a164-18f66e8b0630" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="5C86EAAADE5046FFA20AF9EE8B3C8221"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+          </d>
+        </r>
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: Lenovo
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: Avantages de la solution
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: Alimenté par l'IA
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T103239Z
+    - ID: "2d246ada-1e97-401d-907d-47abed3ce4fe"
+      Hint: Content
+      Value: |
+        <div class="ck-content"><h4><strong>1. Productivité améliorée grâce à l'IA sur l'appareil</strong></h4><p>Les PC AI exploitent des unités de traitement neuronal dédiées (NPU) pour gérer les charges de travail de l'IA localement. Cela signifie :</p><ul><li><strong>Performance plus rapide</strong> pour des tâches telles que la traduction de langue en temps réel, la reconnaissance d'image et l'analyse prédictive.</li><li><strong>Latence réduite</strong> par rapport à l'IA basée sur le cloud, permettant un multitâche fluide et une réactivité améliorée.</li><li><strong>Applications optimisées</strong> : De Microsoft Copilot aux outils créatifs, les PC AI accélèrent les flux de travail pour les travailleurs du savoir, les développeurs et les designers.</li></ul><h4><strong>2. Sécurité et confidentialité améliorées</strong></h4><p>Avec le traitement de l'IA se produisant sur l'appareil :</p><ul><li>Les données sensibles restent locales, réduisant l'exposition aux cybermenaces.</li><li>Des fonctionnalités de sécurité avancées basées sur l'IA telles que la détection adaptative des menaces et l'authentification biométrique améliorent la protection.</li><li>La conformité devient plus facile pour les industries avec des exigences strictes en matière de gouvernance des données.</li></ul><h4><strong>3. Efficacité énergétique et durabilité</strong></h4><p>Les PC AI gèrent intelligemment la consommation d'énergie :</p><ul><li>Les NPU déchargent les tâches des CPU et GPU, réduisant l'utilisation d'énergie.</li><li>Autonomie de batterie prolongée pour les travailleurs mobiles.</li><li>Une empreinte carbone réduite s'aligne sur les objectifs de durabilité des entreprises.</li></ul><h4><strong>4. Préparation de votre entreprise pour l'avenir</strong></h4><p>Les PC AI sont conçus pour la prochaine vague d'innovation :</p><ul><li>Support natif pour les applications pilotées par l'IA assure la longévité.</li><li>Performance évolutive pour les charges de travail émergentes telles que l'IA générative et l'apprentissage automatique.</li><li>Un avantage compétitif pour attirer les talents qui s'attendent à des outils de pointe.</li></ul><h4><strong>Pourquoi Lenovo ?</strong></h4><p>Lenovo mène la charge avec des appareils prêts pour l'IA dans les gammes ThinkPad, ThinkBook et Yoga, soutenus par une sécurité robuste, une fiabilité de niveau entreprise et un support mondial. Pour les partenaires, cela signifie :</p><ul><li><strong>Marges plus élevées</strong> sur les produits premium activés par l'IA.</li><li><strong>Offres différenciées</strong> pour les clients en quête d'innovation.</li><li><strong>Accès à l'écosystème AI de Lenovo</strong>, y compris les optimisations logicielles et les programmes d'habilitation des partenaires.</li></ul></div>
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: |
+        <div class="ck-content"><p>L'intelligence artificielle (IA) n'est plus un concept futuristec'est une nécessité commerciale. Alors que les organisations s'efforcent de rester compétitives, la demande de solutions informatiques plus intelligentes, plus rapides et plus sécurisées est en plein essor. Entrez dans les <strong>PC alimentés par l'IA</strong>, une nouvelle génération de dispositifs conçus pour transformer la productivité, la sécurité et l'expérience utilisateur.</p></div>
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Quantum Computing
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: Le cas commercial des PC AI
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f7137215-7ca0-48b6-a8e5-d0fd03e5a73d"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: Retour aux solutions
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: PC AI
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Pourquoi les partenaires Lenovo devraient s'en soucier
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: PC AI
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: Caractéristiques clés
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: Voir les solutions
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T094525Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Entrez dans les <strong>PC alimentés par l'IA</strong>, une nouvelle génération de dispositifs conçus pour transformer la productivité, la sécurité et l'expérience utilisateur.</p></div>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: Contacter les ventes
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: Tout ce dont vous avez besoin pour construire un lieu de travail numérique moderne
+- Language: "ja-JP"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "12ace93f-4f80-416d-91a8-ed6bc1cd962b"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Quantum Computing
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{17F5C617-F59A-4826-B9F4-FAAEEB69F4AB}"
+              p:after="r[@uid='{C68455C6-A3BB-4195-9263-C460ED10B2F2}']"
+              s:ds="67a0df69-52af-465a-8e72-5c6fabc24dce"
+              s:id="{A1FD9A87-85CC-49E8-878D-66EE3A5F1B89}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+              s:ph="headless-main" />
+            <r
+              uid="{DCB10E87-560D-4543-9689-69DDC2565826}"
+              p:after="*[1=2]"
+              s:ds="0b540a00-d680-4d47-8bc1-dca23ff15a56"
+              s:id="{3DEFEF39-19E1-4B1E-AEC9-AB46C9C12D5A}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=6"
+              s:ph="/headless-main/lenovoStatsCardsContainer-5" />
+          </d>
+        </r>
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: Lenovo
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: ソリューションの利点
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: AI搭載
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T103239Z
+    - ID: "2d246ada-1e97-401d-907d-47abed3ce4fe"
+      Hint: Content
+      Value: |
+        <div class="ck-content"><h4><strong>1. デバイス内AIによる生産性の向上</strong></h4><p>AI PCは専用のニューラルプロセッシングユニット（NPU）を活用して、AIワークロードをローカルで処理します。これにより、以下のことが可能になります:</p><ul><li>リアルタイムの言語翻訳、画像認識、予測分析などのタスクに対する<strong>高速なパフォーマンス</strong></li><li>クラウドベースのAIと比較して<strong>低遅延</strong>で、シームレスなマルチタスクと応答性の向上</li><li>Microsoft Copilotからクリエイティブツールまで、AI PCは知識労働者、開発者、デザイナーのワークフローを加速します。</li></ul><h4><strong>2. セキュリティとプライバシーの向上</strong></h4><p>AI処理がデバイス内で行われることで:</p><ul><li>機密データがローカルに保持され、サイバー脅威への露出が減少します。</li><li>適応型脅威検出や生体認証などの高度なAI駆動セキュリティ機能が保護を強化します。</li><li>厳格なデータガバナンス要件を持つ業界にとってコンプライアンスが容易になります。</li></ul><h4><strong>3. エネルギー効率と持続可能性</strong></h4><p>AI PCは電力消費を賢く管理します:</p><ul><li>NPUがCPUやGPUからタスクをオフロードし、エネルギー使用を削減します。</li><li>モバイルワーカーのための長いバッテリー寿命。</li><li>低炭素排出量が企業の持続可能性目標に合致します。</li></ul><h4><strong>4. ビジネスの将来性</strong></h4><p>AI PCは次の革新の波に備えています:</p><ul><li>AI駆動アプリケーションのネイティブサポートが長寿命を保証します。</li><li>生成AIや機械学習などの新興ワークロードに対するスケーラブルなパフォーマンス。</li><li>最先端のツールを期待する人材を引き付ける競争力。</li></ul><h4><strong>なぜLenovoなのか?</strong></h4><p>Lenovoは、ThinkPad、ThinkBook、YogaラインにわたるAI対応デバイスで先頭を走り、強力なセキュリティ、企業グレードの信頼性、グローバルサポートを提供します。パートナーにとって、これは以下を意味します:</p><ul><li>プレミアムAI対応製品で<strong>高い利益率</strong></li><li>革新を求める顧客に対する<strong>差別化された提供</strong></li><li>ソフトウェア最適化やパートナー支援プログラムを含むLenovoのAIエコシステムへの<strong>アクセス</strong></li></ul></div>
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: |
+        <div class="ck-content"><p>人工知能（AI）はもはや未来の概念ではなく、ビジネスの必須要素です。企業が競争力を維持しようとする中で、よりスマートで、より速く、より安全なコンピューティングソリューションの需要が急増しています。<strong>AI搭載PC</strong>を導入することで、生産性、セキュリティ、ユーザーエクスペリエンスを変革する新世代のデバイスが登場します。</p></div>
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: AI PC
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: AI PCのビジネスケース
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "32124375-b8d9-4bde-b995-cb8474577199"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: ソリューションに戻る
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: AI PC
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Lenovoのパートナーが気にするべき理由
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: AI PC
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: 主な特徴
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: ソリューションを見る
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104911Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p><strong>AI搭載PC</strong>を導入することで、生産性、セキュリティ、ユーザーエクスペリエンスを変革する新世代のデバイスが登場します。</p></div>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: 営業に連絡する
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: 現代のデジタル職場を構築するために必要なすべて
+  - Version: 2
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{C3CD4EBD-564D-44A7-8863-70DBC66786CD}"
+              p:after="r[@uid='{C68455C6-A3BB-4195-9263-C460ED10B2F2}']"
+              s:ds="59806fb5-3074-4cd9-822f-407b27c9cd9d"
+              s:id="{F2F00AFD-28E3-48E4-A457-7AFB274FBC2A}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=7"
+              s:ph="headless-main">
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{06AF1FA7-6D15-4B11-8EA1-D5B6531DD24A}"
+                    s:name="c3cd4ebd564d44a7886370dbc66786cd_d0c5fbb30539490ab43ee1a269e06393">
+                    <conditions>
+                      <condition
+                        uid="F0CFC8B0BE5C43DC97ACE5BDE20BACF0"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="c3cd4ebd564d44a7886370dbc66786cd_d0c5fbb30539490ab43ee1a269e06393" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{192C0C85-CF41-45A5-93D3-08AEB9FE1778}"
+                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="A2B0D375F13642E98F3C06CB12EADD10"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{17F5C617-F59A-4826-B9F4-FAAEEB69F4AB}"
+              p:after="r[@uid='{C3CD4EBD-564D-44A7-8863-70DBC66786CD}']"
+              s:ds="67a0df69-52af-465a-8e72-5c6fabc24dce"
+              s:id="{A1FD9A87-85CC-49E8-878D-66EE3A5F1B89}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+              s:ph="headless-main" />
+            <r
+              uid="{DCB10E87-560D-4543-9689-69DDC2565826}"
+              p:after="*[1=2]"
+              s:ds="0b540a00-d680-4d47-8bc1-dca23ff15a56"
+              s:id="{3DEFEF39-19E1-4B1E-AEC9-AB46C9C12D5A}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=6"
+              s:ph="/headless-main/lenovoStatsCardsContainer-5" />
+          </d>
+        </r>
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: Lenovo
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: ソリューションの利点
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: AI搭載
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T105046Z
+    - ID: "2d246ada-1e97-401d-907d-47abed3ce4fe"
+      Hint: Content
+      Value: |
+        <div class="ck-content"><h4><strong>1. デバイス内AIによる生産性の向上</strong></h4><p>AI PCは専用のニューラルプロセッシングユニット（NPU）を活用して、AIワークロードをローカルで処理します。これにより、以下のことが可能になります:</p><ul><li>リアルタイムの言語翻訳、画像認識、予測分析などのタスクに対する<strong>高速なパフォーマンス</strong></li><li>クラウドベースのAIと比較して<strong>低遅延</strong>で、シームレスなマルチタスクと応答性の向上</li><li>Microsoft Copilotからクリエイティブツールまで、AI PCは知識労働者、開発者、デザイナーのワークフローを加速します。</li></ul><h4><strong>2. セキュリティとプライバシーの向上</strong></h4><p>AI処理がデバイス内で行われることで:</p><ul><li>機密データがローカルに保持され、サイバー脅威への露出が減少します。</li><li>適応型脅威検出や生体認証などの高度なAI駆動セキュリティ機能が保護を強化します。</li><li>厳格なデータガバナンス要件を持つ業界にとってコンプライアンスが容易になります。</li></ul><h4><strong>3. エネルギー効率と持続可能性</strong></h4><p>AI PCは電力消費を賢く管理します:</p><ul><li>NPUがCPUやGPUからタスクをオフロードし、エネルギー使用を削減します。</li><li>モバイルワーカーのための長いバッテリー寿命。</li><li>低炭素排出量が企業の持続可能性目標に合致します。</li></ul><h4><strong>4. ビジネスの将来性</strong></h4><p>AI PCは次の革新の波に備えています:</p><ul><li>AI駆動アプリケーションのネイティブサポートが長寿命を保証します。</li><li>生成AIや機械学習などの新興ワークロードに対するスケーラブルなパフォーマンス。</li><li>最先端のツールを期待する人材を引き付ける競争力。</li></ul><h4><strong>なぜLenovoなのか?</strong></h4><p>Lenovoは、ThinkPad、ThinkBook、YogaラインにわたるAI対応デバイスで先頭を走り、強力なセキュリティ、企業グレードの信頼性、グローバルサポートを提供します。パートナーにとって、これは以下を意味します:</p><ul><li>プレミアムAI対応製品で<strong>高い利益率</strong></li><li>革新を求める顧客に対する<strong>差別化された提供</strong></li><li>ソフトウェア最適化やパートナー支援プログラムを含むLenovoのAIエコシステムへの<strong>アクセス</strong></li></ul></div>
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: |
+        <div class="ck-content"><p>人工知能（AI）はもはや未来の概念ではなく、ビジネスの必須要素です。企業が競争力を維持しようとする中で、よりスマートで、より迅速で、より安全なコンピューティングソリューションの需要が急増しています。<strong>AI搭載PC</strong>を導入することで、生産性、セキュリティ、ユーザーエクスペリエンスを変革する新世代のデバイスが登場します。</p></div>
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Quantum Computing
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: AI PCのビジネスケース
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3b7d8ab0-0952-495c-a364-498763206aae"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: ソリューションに戻る
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: v1
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: AI PC
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Lenovoのパートナーが気にするべき理由
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: AI PC
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20251117T105046Z
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: 主な特徴
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: ソリューションを見る
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T105743Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p><strong>AI搭載PC</strong>を導入することで、生産性、セキュリティ、ユーザーエクスペリエンスを変革する新世代のデバイスが登場します。</p></div>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: 営業に連絡する
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: 現代のデジタル職場を構築するために必要なすべて
+- Language: "ko-KR"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "6cf9b620-eaf1-4680-8a42-dc51ca4d563a"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Quantum Computing
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{17F5C617-F59A-4826-B9F4-FAAEEB69F4AB}"
+              p:after="r[@uid='{C68455C6-A3BB-4195-9263-C460ED10B2F2}']"
+              s:ds="67a0df69-52af-465a-8e72-5c6fabc24dce"
+              s:id="{A1FD9A87-85CC-49E8-878D-66EE3A5F1B89}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+              s:ph="headless-main" />
+            <r
+              uid="{DCB10E87-560D-4543-9689-69DDC2565826}"
+              p:after="*[1=2]"
+              s:ds="0b540a00-d680-4d47-8bc1-dca23ff15a56"
+              s:id="{3DEFEF39-19E1-4B1E-AEC9-AB46C9C12D5A}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=6"
+              s:ph="/headless-main/lenovoStatsCardsContainer-5" />
+          </d>
+        </r>
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: Lenovo
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: 솔루션 혜택
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: AI 기반
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T103239Z
+    - ID: "2d246ada-1e97-401d-907d-47abed3ce4fe"
+      Hint: Content
+      Value: |
+        <div class="ck-content"><h4><strong>1. 온디바이스 AI를 통한 생산성 향상</strong></h4><p>AI PC는 전용 신경 처리 장치(NPU)를 활용하여 AI 작업을 로컬에서 처리합니다. 이는 다음을 의미합니다:</p><ul><li>실시간 언어 번역, 이미지 인식 및 예측 분석과 같은 작업에 대한 <strong>더 빠른 성능</strong>.</li><li>클라우드 기반 AI에 비해 <strong>지연 시간이 줄어들어</strong> 원활한 멀티태스킹과 향상된 응답성을 제공합니다.</li><li>Microsoft Copilot에서 창의적인 도구에 이르기까지 <strong>최적화된 애플리케이션</strong>: AI PC는 지식 근로자, 개발자 및 디자이너의 워크플로를 가속화합니다.</li></ul><h4><strong>2. 보안 및 개인정보 보호 개선</strong></h4><p>AI 처리가 온디바이스에서 이루어지면:</p><ul><li>민감한 데이터가 로컬에 유지되어 사이버 위협에 대한 노출이 줄어듭니다.</li><li>적응형 위협 탐지 및 생체 인증과 같은 고급 AI 기반 보안 기능이 보호를 강화합니다.</li><li>엄격한 데이터 거버넌스 요구 사항이 있는 산업에 대한 준수가 더 쉬워집니다.</li></ul><h4><strong>3. 에너지 효율 및 지속 가능성</strong></h4><p>AI PC는 전력 소비를 지능적으로 관리합니다:</p><ul><li>NPU는 CPU 및 GPU에서 작업을 오프로드하여 에너지 사용을 줄입니다.</li><li>모바일 근로자를 위한 더 긴 배터리 수명.</li><li>더 낮은 탄소 발자국은 기업의 지속 가능성 목표와 일치합니다.</li></ul><h4><strong>4. 비즈니스의 미래 대비</strong></h4><p>AI PC는 다음 혁신 물결을 위해 구축되었습니다:</p><ul><li>AI 기반 애플리케이션에 대한 네이티브 지원은 장기적인 사용을 보장합니다.</li><li>생성 AI 및 기계 학습과 같은 새로운 작업 부하에 대한 확장 가능한 성능.</li><li>최첨단 도구를 기대하는 인재를 유치하는 데 있어 경쟁 우위.</li></ul><h4><strong>Lenovo의 이유는 무엇입니까?</strong></h4><p>Lenovo는 강력한 보안, 엔터프라이즈급 안정성 및 글로벌 지원을 통해 ThinkPad, ThinkBook 및 Yoga 라인 전반에 걸쳐 AI 준비 장치를 선도합니다. 파트너에게 이는 다음을 의미합니다:</p><ul><li>프리미엄 AI 지원 제품에 대한 <strong>더 높은 마진</strong>.</li><li>혁신을 추구하는 고객을 위한 <strong>차별화된 제품</strong>.</li><li>소프트웨어 최적화 및 파트너 활성화 프로그램을 포함한 <strong>Lenovo의 AI 생태계에 대한 액세스</strong>.</li></ul></div>
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: |
+        <div class="ck-content"><p>인공지능(AI)은 더 이상 미래의 개념이 아닙니다. 비즈니스 필수 요소입니다. 조직이 경쟁력을 유지하기 위해 노력함에 따라 더 스마트하고 빠르며 안전한 컴퓨팅 솔루션에 대한 수요가 급증하고 있습니다. <strong>AI 기반 PC</strong>를 소개합니다. 생산성, 보안 및 사용자 경험을 혁신하도록 설계된 새로운 세대의 장치입니다.</p></div>
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Quantum Computing
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: AI PC의 비즈니스 사례
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6d72b434-7a4b-4877-beee-df992ff375ce"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: 솔루션으로 돌아가기
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: AI PC
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Lenovo 파트너가 관심을 가져야 하는 이유
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: AI PC
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: 주요 기능
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: 솔루션 보기
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T094448Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p><strong>AI 기반 PC</strong>를 소개합니다. 생산성, 보안 및 사용자 경험을 혁신하도록 설계된 새로운 세대의 장치입니다.</p></div>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: 영업 문의
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: 현대적인 디지털 작업 공간을 구축하는 데 필요한 모든 것
+- Language: "pl-PL"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "dbafd746-5906-4a16-9d67-52ebcf272f13"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Komputery kwantowe
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{EA0F03D8-F2D9-402A-85AA-1901FBDCE30A}"
+              s:ds="65ab194f-3b6f-4b91-8fe4-d22c507b515f">
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{8F663C5B-2C3B-4D94-B9F6-AB8D4AB95F70}"
+                    s:name="44e8533774dd4353836d63c2ca20a2be">
+                    <conditions>
+                      <condition
+                        uid="CB3D76A7F208477A84379F53E9394A9D"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="44e8533774dd4353836d63c2ca20a2be" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{120537EA-EA72-4B90-A052-908172E881BC}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="1d2109a9-52cf-4a97-9d11-5d2d625b33b6" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="277F1C19846242CAB68AFC66586D6F2B"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{706D04B9-89D8-408B-A464-F18911ECE4BE}"
+              p:after="r[@uid='{EA0F03D8-F2D9-402A-85AA-1901FBDCE30A}']">
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{BE68E91C-60BC-4173-AC8E-6D0374EBF765}"
+                    s:name="44e8533774dd4353836d63c2ca20a2be">
+                    <conditions>
+                      <condition
+                        uid="0583EE9CD06F4E9EB508F838297D227A"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="44e8533774dd4353836d63c2ca20a2be" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{AE7526F4-3D7A-4FB5-8B5C-6993667D2D87}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="734dda75-21cb-45b7-a164-18f66e8b0630" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="5C86EAAADE5046FFA20AF9EE8B3C8221"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+          </d>
+        </r>
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: Lenovo
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: Korzyści z rozwiązania
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: Zasilane przez AI
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T103239Z
+    - ID: "2d246ada-1e97-401d-907d-47abed3ce4fe"
+      Hint: Content
+      Value: |
+        <div class="ck-content"><h4><strong>1. Zwiększona produktywność dzięki AI na urządzeniu</strong></h4><p>Komputery AI wykorzystują dedykowane jednostki przetwarzania neuronowego (NPU) do obsługi obciążeń AI lokalnie. Oznacza to:</p><ul><li><strong>Szybsze działanie</strong> dla zadań takich jak tłumaczenie języka w czasie rzeczywistym, rozpoznawanie obrazów i analityka predykcyjna.</li><li><strong>Zredukowane opóźnienia</strong> w porównaniu do AI opartej na chmurze, umożliwiając płynne wielozadaniowość i poprawioną responsywność.</li><li><strong>Optymalizowane aplikacje</strong>: Od Microsoft Copilot po narzędzia kreatywne, komputery AI przyspieszają przepływy pracy dla pracowników wiedzy, deweloperów i projektantów.</li></ul><h4><strong>2. Poprawione bezpieczeństwo i prywatność</strong></h4><p>Dzięki przetwarzaniu AI na urządzeniu:</p><ul><li>Wrażliwe dane pozostają lokalne, zmniejszając narażenie na zagrożenia cybernetyczne.</li><li>Zaawansowane funkcje bezpieczeństwa oparte na AI, takie jak adaptacyjne wykrywanie zagrożeń i uwierzytelnianie biometryczne, zwiększają ochronę.</li><li>Łatwiejsze przestrzeganie wymogów dotyczących zarządzania danymi w branżach o surowych wymaganiach.</li></ul><h4><strong>3. Efektywność energetyczna i zrównoważony rozwój</strong></h4><p>Komputery AI inteligentnie zarządzają zużyciem energii:</p><ul><li>NPU odciążają zadania z CPU i GPU, zmniejszając zużycie energii.</li><li>Dłuższa żywotność baterii dla pracowników mobilnych.</li><li>Niższy ślad węglowy zgodny z celami zrównoważonego rozwoju korporacyjnego.</li></ul><h4><strong>4. Przyszłościowe podejście do biznesu</strong></h4><p>Komputery AI są zbudowane na następną falę innowacji:</p><ul><li>Wspieranie aplikacji opartych na AI zapewnia długowieczność.</li><li>Skalowalna wydajność dla nowych obciążeń, takich jak generatywna AI i uczenie maszynowe.</li><li>Przewaga konkurencyjna w przyciąganiu talentów oczekujących nowoczesnych narzędzi.</li></ul><h4><strong>Dlaczego Lenovo?</strong></h4><p>Lenovo prowadzi wprowadzenie urządzeń gotowych na AI w liniach ThinkPad, ThinkBook i Yoga, wspieranych przez solidne bezpieczeństwo, niezawodność na poziomie przedsiębiorstwa i globalne wsparcie. Dla partnerów oznacza to:</p><ul><li><strong>Wyższe marże</strong> na produktach premium z AI.</li><li><strong>Zróżnicowane oferty</strong> dla klientów poszukujących innowacji.</li><li><strong>Dostęp do ekosystemu AI Lenovo</strong>, w tym optymalizacji oprogramowania i programów wsparcia dla partnerów.</li></ul></div>
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: |
+        <div class="ck-content"><p>Sztuczna inteligencja to nie tylko spojrzenie w przyszłośćto serce nowoczesnego biznesu. W wyścigu o innowacje firmy są pod presją, aby przewyższać konkurencję, a potrzeba inteligentniejszych, szybszych i bardziej solidnych rozwiązań komputerowych nigdy nie była większa. Przedstawiamy <strong>komputery z AI</strong>, przełomowe urządzenia, które redefiniują produktywność, zwiększają bezpieczeństwo i podnoszą doświadczenie użytkownika ponad oczekiwania.</p></div>
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Komputery kwantowe
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: Biznesowy argument za komputerami AI
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ada57d8d-f33c-4479-9271-08e73fff25dc"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: Powrót do rozwiązań
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: Komputery AI
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Dlaczego partnerzy Lenovo powinni się tym zainteresować
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Komputery kwantowe
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: Kluczowe cechy
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: Zobacz rozwiązania
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144017Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Wprowadzenie <strong>komputerów z AI</strong>, nowej generacji urządzeń zaprojektowanych w celu transformacji produktywności, bezpieczeństwa i doświadczenia użytkownika.</p></div>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: Skontaktuj się z działem sprzedaży
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: Wszystko, czego potrzebujesz, aby zbudować nowoczesne cyfrowe miejsce pracy

@@ -1,0 +1,140 @@
+﻿---
+ID: "dc1da348-3c5c-492f-b9ab-f4e7d3c26ac1"
+Parent: "5988a860-d8bf-4285-819f-262cae122a6e"
+Template: "5988a860-d8bf-4285-819f-262cae122a6e"
+Path: /sitecore/templates/Project/lenovo/LenovoSolutionCard/__Standard Values
+SharedFields:
+- ID: "3c388020-f9da-43a9-bd5f-bd0ead940cf3"
+  Hint: BackLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{BF3A5B50-C224-424C-A3E5-0484F4FEA364}" />
+- ID: "5534371c-d9a0-48b6-ad13-a8fb354b782c"
+  Hint: Benefits
+  Value: |
+    {CD024889-1B12-40EE-A71D-24F58F35314F}
+    {32DB8691-1225-48B4-B258-D912A204870D}
+    {361E6855-B7B9-45D2-B58C-4B64EB2C92AD}
+    {C4579DAA-426B-4073-94C6-C710A20068CA}
+    {97A771F6-FD27-4F7A-8B81-F0EFC2CFC84D}
+    {5E9AA706-C643-44D2-8554-C5E40D9EEF33}
+    {725FADD1-2D65-4324-A52D-3AE429613E06}
+    {F6CC3E51-B288-421F-89AE-D17AEAAADA6B}
+- ID: "6cc01814-3192-49e6-ab63-9d466614b9c5"
+  Hint: BackgroundImage
+  Value: |
+    <image mediaid="2f906399-3969-49df-bb51-9f9d7804060c" />
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+- ID: "d90165a5-e66b-42b5-b841-69e736b47c46"
+  Hint: ButtonLink
+  Value: |
+    <link class="" querystring="" id="{0CC59DC6-76A7-4BDF-8356-9690C5C2C979}" anchor="" target="_blank" title="" linktype="internal" text="" url="/lenovo/lenovo-partner-hub/Home/Solutions/Digital Workplace" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "af71f8fa-8f14-4f42-b60a-95744ead92ad"
+- ID: "e964f726-91b1-407e-b247-2ef50345f20f"
+  Hint: CTALink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{39269482-B1D9-4889-9CEE-5B4795D2580D}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}">
+        <r
+          uid="{EA0F03D8-F2D9-402A-85AA-1901FBDCE30A}"
+          id="{1E14F30C-20FE-405B-B793-34D4911F97AF}"
+          par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+          ph="headless-main" />
+        <r
+          uid="{C68455C6-A3BB-4195-9263-C460ED10B2F2}"
+          id="{55FEED8B-CD34-4F9F-8EEE-28396448C7CD}"
+          par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+          ph="headless-main" />
+        <r
+          uid="{1A2B1FE8-7014-4799-B6BA-6CAF5F265E35}"
+          id="{67C69595-E02F-4386-B978-00B725A8095C}"
+          par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+          ph="headless-main" />
+        <r
+          uid="{706D04B9-89D8-408B-A464-F18911ECE4BE}"
+          ds="6533aaed-d918-4ca2-b3f3-5d38fa88bf8b"
+          id="{78188C93-88C4-4E65-8C20-1A2232A7BE85}"
+          par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+          ph="headless-main" />
+      </d>
+    </r>
+- ID: "fe79b7c3-f604-46f8-b940-762e232ba506"
+  Hint: KeyFeatures
+  Value: |
+    {A8B8E790-4E83-4949-9488-44A14F219137}
+    {40C3AD29-E14D-4D34-94A4-0BD2DF25C71B}
+    {3D06A152-4118-4782-8D06-66D2A0AEC1AB}
+    {94324E7C-D7B5-4B6B-8A9A-789793763E10}
+    {2D827695-5356-4D47-9D69-91A2DCDC07A3}
+    {230B9E93-9FC8-49E7-B77C-0956D2A85D51}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: "AI-Powered"
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: Solution Benefits
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: Cloud Integrated
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T015426Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: Digital Workplace
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fa4374cc-3c82-43e5-a144-029e80029748"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: Back to Solutions
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: Lenovo
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Transform Your Hybrid Work Environment
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: Key Features
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: View solutions
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T233824Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: Modern workplace solutions for hybrid work environments
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: Contact Sales
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: Everything you need to build a modern digital workplace

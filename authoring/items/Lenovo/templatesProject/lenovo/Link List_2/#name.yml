@@ -1,0 +1,27 @@
+﻿---
+ID: "179e96ba-5ef2-41bb-bf7d-1d533aeb3c3e"
+Parent: "ffc6fc39-88c6-4d17-b50a-523d82192fb8"
+Template: "c68163ee-9a81-4be2-a027-7c23bd7710b2"
+Path: /sitecore/templates/Project/lenovo/Link List_2/$name
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171019T090742Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bc802f26-d45f-4002-ad90-fc2d78fa604e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T174356Z

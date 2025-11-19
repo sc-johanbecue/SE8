@@ -1,0 +1,40 @@
+﻿---
+ID: "6390ddd9-b4ae-4e03-ab5f-0bcc77d70b1a"
+Parent: "d291e3ef-d5e3-4d19-afca-bbae543165b6"
+Template: "d291e3ef-d5e3-4d19-afca-bbae543165b6"
+Path: /sitecore/templates/Project/lenovo/LenovoStatCard/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T003600Z
+    - ID: "363cd166-0026-47c3-82ee-da4b85514fe9"
+      Hint: Value
+      Value: 10K+
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6d9d70da-53d1-4f74-ac46-0aa859a576ec"
+    - ID: "b63899cd-e228-45a9-b834-07b0df66b844"
+      Hint: IconColor
+      Value: "text-[#E2231A]"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "cad47f04-1a30-498a-8192-4fcdf0f68f60"
+      Hint: Label
+      Value: $name
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251113T003639Z

@@ -1,0 +1,27 @@
+﻿---
+ID: "ea22db84-d458-4ad3-89fa-5c64bfad3849"
+Parent: "50c89643-3213-486e-9d23-0399d3a717e0"
+Template: "50c89643-3213-486e-9d23-0399d3a717e0"
+Path: /sitecore/templates/Project/lenovo/Rendering Parameters/LenovoMainNavigationLinkList Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8aa6709c-8e09-45c3-8911-5cfb378dd05a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T192253Z

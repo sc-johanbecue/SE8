@@ -1,0 +1,428 @@
+﻿---
+ID: "6d4b6ced-7c08-44eb-91f6-62930dde7628"
+Parent: "593af6b1-c41d-42aa-99f3-ecd8bad4f5f7"
+Template: "b4b40804-b812-4e12-9412-cdd026f95814"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Data/Login Forms/Default Login Form"
+SharedFields:
+- ID: "c7ce01a7-ae8c-40ef-9d52-afe01a5f1dcc"
+  Hint: BackToHomeLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "65620f59-1c49-4620-ad9a-50b72461bdb2"
+- ID: "e20f4ae8-5b7f-48c2-ab7d-413b0e848065"
+  Hint: Logo
+  Value: |
+    <image mediaid="781649e2-0907-4c19-a168-db96cb12ecdb" />
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T225335Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5f0f4c0d-f4ea-4dac-9490-691d0473d4be"
+      Hint: UsernameLabel
+      Value: اسم المستخدم
+    - ID: "64620dd3-b61c-4ca4-a9e0-8982fb32747f"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "7063ff87-3393-4e9e-bd43-eb826a0ae8bf"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">أدخل بيانات الاعتماد الخاصة بك للوصول إلى مركز الشركاء</p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8c651c55-d295-44a6-a500-1d8f46542c4e"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a03e892a-502a-4aa0-b2c0-1084382b89bc"
+      Hint: PasswordLabel
+      Value: كلمة المرور
+    - ID: "a1e4fd48-f4d7-4dce-bd10-766d3b145171"
+      Hint: Title
+      Value: تسجيل دخول بوابة الشركاء
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c3e0a908-4d7f-42c4-b67a-6833101ba6c4"
+      Hint: SubmitButtonLoadingText
+      Value: جارٍ تسجيل الدخول...
+    - ID: "c8453ea4-0141-4a31-bf66-656b94a07bb0"
+      Hint: BackToHomeText
+      Value: العودة إلى الصفحة الرئيسية
+    - ID: "d2c7a05e-48a4-4f17-b06c-7db05c4bc34e"
+      Hint: UsernamePlaceholder
+      Value: أدخل اسم المستخدم الخاص بك
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153700Z
+    - ID: "e05dc923-fa96-4276-a10e-f76d7413cc7f"
+      Hint: PasswordPlaceholder
+      Value: أدخل كلمة المرور الخاصة بك
+    - ID: "fb24ea27-ff9c-4351-bf78-b5493fde6438"
+      Hint: SubmitButtonText
+      Value: تسجيل الدخول
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T225335Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5f0f4c0d-f4ea-4dac-9490-691d0473d4be"
+      Hint: UsernameLabel
+      Value: Benutzername
+    - ID: "64620dd3-b61c-4ca4-a9e0-8982fb32747f"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "7063ff87-3393-4e9e-bd43-eb826a0ae8bf"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">Geben Sie Ihre Zugangsdaten ein, um auf das Partnerportal zuzugreifen</p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6b4f4dd5-1544-48d9-a995-661d3ab45e96"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a03e892a-502a-4aa0-b2c0-1084382b89bc"
+      Hint: PasswordLabel
+      Value: Passwort
+    - ID: "a1e4fd48-f4d7-4dce-bd10-766d3b145171"
+      Hint: Title
+      Value: "Partnerportal-Login"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c3e0a908-4d7f-42c4-b67a-6833101ba6c4"
+      Hint: SubmitButtonLoadingText
+      Value: Anmeldung läuft...
+    - ID: "c8453ea4-0141-4a31-bf66-656b94a07bb0"
+      Hint: BackToHomeText
+      Value: Zurück zur Startseite
+    - ID: "d2c7a05e-48a4-4f17-b06c-7db05c4bc34e"
+      Hint: UsernamePlaceholder
+      Value: Geben Sie Ihren Benutzernamen ein
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100854Z
+    - ID: "e05dc923-fa96-4276-a10e-f76d7413cc7f"
+      Hint: PasswordPlaceholder
+      Value: Geben Sie Ihr Passwort ein
+    - ID: "fb24ea27-ff9c-4351-bf78-b5493fde6438"
+      Hint: SubmitButtonText
+      Value: Anmelden
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T225335Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "7063ff87-3393-4e9e-bd43-eb826a0ae8bf"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">Enter your credentials to access the partner hub</p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "32c26efd-337d-4c80-918b-1f439694dba5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d2c7a05e-48a4-4f17-b06c-7db05c4bc34e"
+      Hint: UsernamePlaceholder
+      Value: Enter yout username
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T224220Z
+    - ID: "e05dc923-fa96-4276-a10e-f76d7413cc7f"
+      Hint: PasswordPlaceholder
+      Value: Enter your password
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T225335Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5f0f4c0d-f4ea-4dac-9490-691d0473d4be"
+      Hint: UsernameLabel
+      Value: Nom d'utilisateur
+    - ID: "64620dd3-b61c-4ca4-a9e0-8982fb32747f"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "7063ff87-3393-4e9e-bd43-eb826a0ae8bf"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">Entrez vos identifiants pour accéder au hub partenaire</p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bdd5b3b7-f95d-430b-ac37-0a24c0c5dcca"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a03e892a-502a-4aa0-b2c0-1084382b89bc"
+      Hint: PasswordLabel
+      Value: Mot de passe
+    - ID: "a1e4fd48-f4d7-4dce-bd10-766d3b145171"
+      Hint: Title
+      Value: Portail Partenaire Connexion
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c3e0a908-4d7f-42c4-b67a-6833101ba6c4"
+      Hint: SubmitButtonLoadingText
+      Value: Connexion en cours...
+    - ID: "c8453ea4-0141-4a31-bf66-656b94a07bb0"
+      Hint: BackToHomeText
+      Value: Retour à l'accueil
+    - ID: "d2c7a05e-48a4-4f17-b06c-7db05c4bc34e"
+      Hint: UsernamePlaceholder
+      Value: demo1 ou demo2
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143611Z
+    - ID: "e05dc923-fa96-4276-a10e-f76d7413cc7f"
+      Hint: PasswordPlaceholder
+      Value: demo1 ou demo2
+    - ID: "fb24ea27-ff9c-4351-bf78-b5493fde6438"
+      Hint: SubmitButtonText
+      Value: Se Connecter
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T225335Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5f0f4c0d-f4ea-4dac-9490-691d0473d4be"
+      Hint: UsernameLabel
+      Value: ユーザー名
+    - ID: "64620dd3-b61c-4ca4-a9e0-8982fb32747f"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "7063ff87-3393-4e9e-bd43-eb826a0ae8bf"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">パートナーハブにアクセスするには、資格情報を入力してください</p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "22ec770c-66c2-4fad-9636-5b3ad991268c"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a03e892a-502a-4aa0-b2c0-1084382b89bc"
+      Hint: PasswordLabel
+      Value: パスワード
+    - ID: "a1e4fd48-f4d7-4dce-bd10-766d3b145171"
+      Hint: Title
+      Value: パートナーポータルログイン
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "c3e0a908-4d7f-42c4-b67a-6833101ba6c4"
+      Hint: SubmitButtonLoadingText
+      Value: サインイン中...
+    - ID: "c8453ea4-0141-4a31-bf66-656b94a07bb0"
+      Hint: BackToHomeText
+      Value: ホームに戻る
+    - ID: "d2c7a05e-48a4-4f17-b06c-7db05c4bc34e"
+      Hint: UsernamePlaceholder
+      Value: demo1 または demo2
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T014410Z
+    - ID: "e05dc923-fa96-4276-a10e-f76d7413cc7f"
+      Hint: PasswordPlaceholder
+      Value: demo1 または demo2
+    - ID: "fb24ea27-ff9c-4351-bf78-b5493fde6438"
+      Hint: SubmitButtonText
+      Value: サインイン
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T225335Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5f0f4c0d-f4ea-4dac-9490-691d0473d4be"
+      Hint: UsernameLabel
+      Value: 사용자 이름
+    - ID: "64620dd3-b61c-4ca4-a9e0-8982fb32747f"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "7063ff87-3393-4e9e-bd43-eb826a0ae8bf"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">파트너 허브에 액세스하려면 자격 증명을 입력하세요</p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "13ec8b37-cb1f-47d3-afda-759135a97693"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a03e892a-502a-4aa0-b2c0-1084382b89bc"
+      Hint: PasswordLabel
+      Value: 비밀번호
+    - ID: "a1e4fd48-f4d7-4dce-bd10-766d3b145171"
+      Hint: Title
+      Value: 파트너 포털 로그인
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c3e0a908-4d7f-42c4-b67a-6833101ba6c4"
+      Hint: SubmitButtonLoadingText
+      Value: 로그인 중...
+    - ID: "c8453ea4-0141-4a31-bf66-656b94a07bb0"
+      Hint: BackToHomeText
+      Value: 홈으로 돌아가기
+    - ID: "d2c7a05e-48a4-4f17-b06c-7db05c4bc34e"
+      Hint: UsernamePlaceholder
+      Value: demo1 또는 demo2
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104958Z
+    - ID: "e05dc923-fa96-4276-a10e-f76d7413cc7f"
+      Hint: PasswordPlaceholder
+      Value: demo1 또는 demo2
+    - ID: "fb24ea27-ff9c-4351-bf78-b5493fde6438"
+      Hint: SubmitButtonText
+      Value: 로그인
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T225335Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5f0f4c0d-f4ea-4dac-9490-691d0473d4be"
+      Hint: UsernameLabel
+      Value: Nazwa użytkownika
+    - ID: "64620dd3-b61c-4ca4-a9e0-8982fb32747f"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "7063ff87-3393-4e9e-bd43-eb826a0ae8bf"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">Wprowadź swoje dane, aby uzyskać dostęp do centrum partnerskiego</p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "41bca9ee-1fbb-45d9-a331-5d117d1616a0"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "a03e892a-502a-4aa0-b2c0-1084382b89bc"
+      Hint: PasswordLabel
+      Value: Hasło
+    - ID: "a1e4fd48-f4d7-4dce-bd10-766d3b145171"
+      Hint: Title
+      Value: "Portal partnerski - Logowanie"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c3e0a908-4d7f-42c4-b67a-6833101ba6c4"
+      Hint: SubmitButtonLoadingText
+      Value: Logowanie...
+    - ID: "c8453ea4-0141-4a31-bf66-656b94a07bb0"
+      Hint: BackToHomeText
+      Value: Powrót do strony głównej
+    - ID: "d2c7a05e-48a4-4f17-b06c-7db05c4bc34e"
+      Hint: UsernamePlaceholder
+      Value: Wprowadź swoją nazwę użytkownika
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144035Z
+    - ID: "e05dc923-fa96-4276-a10e-f76d7413cc7f"
+      Hint: PasswordPlaceholder
+      Value: Wprowadź swoje hasło
+    - ID: "fb24ea27-ff9c-4351-bf78-b5493fde6438"
+      Hint: SubmitButtonText
+      Value: Zaloguj się

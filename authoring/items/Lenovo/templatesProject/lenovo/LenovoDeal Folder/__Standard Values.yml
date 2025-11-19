@@ -1,0 +1,36 @@
+﻿---
+ID: "295ec924-cd18-4e5a-aaa9-0a6a7e41e404"
+Parent: "2ee252d8-6d37-4ded-9b81-c3fa86bdf0c8"
+Template: "2ee252d8-6d37-4ded-9b81-c3fa86bdf0c8"
+Path: /sitecore/templates/Project/lenovo/LenovoDeal Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {56C48F0D-DB28-48CF-A791-8A9321531B7C}
+    {2EE252D8-6D37-4DED-9B81-C3FA86BDF0C8}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "39096d14-30bf-4232-83bd-b3659dd64739"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6fb67e4f-1357-466e-af18-ed10e18a8bb6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251113T222107Z

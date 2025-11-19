@@ -1,0 +1,282 @@
+﻿---
+ID: "c30cb1fe-5758-4a0e-908c-f6a5ba569609"
+Parent: "455bec58-fe74-4c74-b90b-5b8e5c3c4ad4"
+Template: "5516bd2a-20b8-4987-a2bf-7f14626c8487"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Data/Page Headers/Training Page Header"
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "2445dca3-471c-4517-a097-3ef040167e95"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>مرحبًا بك في لوحة التحكم الخاصة بالتدريب. هنا، ستجد قائمة شاملة بجميع الجلسات التدريبية المتاحة المصممة لتعزيز مهاراتك ومعرفتك. سواء كنت تبحث عن تعزيز خبرتك أو استكشاف مجالات جديدة، فإن تدريباتنا الشاملة مصممة لتلبية احتياجاتك.</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T030925Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "be7e9f79-b634-41fd-9e84-02010afcc095"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c4177bb2-8746-4625-98f6-fc2739a11fa6"
+      Hint: Tagline
+      Value: تعلم
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153714Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: تدريب
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "2445dca3-471c-4517-a097-3ef040167e95"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Willkommen in Ihrem Schulungs-Dashboard. Hier finden Sie eine umfangreiche Liste aller verfügbaren Schulungen, die darauf abzielen, Ihre Fähigkeiten und Ihr Wissen zu erweitern. Egal, ob Sie Ihre Expertise vertiefen oder neue Bereiche erkunden möchten, unsere umfassenden Schulungen sind darauf ausgelegt, Ihre Bedürfnisse zu erfüllen.</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T030925Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "85559357-730e-40a6-945b-ba8ad8612b00"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c4177bb2-8746-4625-98f6-fc2739a11fa6"
+      Hint: Tagline
+      Value: Lernen
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100903Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: Schulung
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "2445dca3-471c-4517-a097-3ef040167e95"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Welcome to your Training Dashboard. Here, you will find an extensive list of all available training sessions tailored to boost your skills and knowledge. Whether you are looking to enhance your expertise or explore new areas, our comprehensive trainings are designed to meet your needs.</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T030925Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8f762506-9dc7-4c97-8fee-3d8bdf540e8d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "c4177bb2-8746-4625-98f6-fc2739a11fa6"
+      Hint: Tagline
+      Value: Learning
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T031055Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: Training
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "2445dca3-471c-4517-a097-3ef040167e95"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Bienvenue sur votre tableau de bord de formation. Ici, vous trouverez une liste exhaustive de toutes les sessions de formation disponibles, conçues pour améliorer vos compétences et vos connaissances. Que vous cherchiez à renforcer votre expertise ou à explorer de nouveaux domaines, nos formations complètes sont conçues pour répondre à vos besoins.</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T030925Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "53d9ec69-22d0-463f-9571-48652c3e93b0"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c4177bb2-8746-4625-98f6-fc2739a11fa6"
+      Hint: Tagline
+      Value: Apprentissage
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143613Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: Formation
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "2445dca3-471c-4517-a097-3ef040167e95"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>トレーニングダッシュボードへようこそ。ここでは、スキルと知識を向上させるために特別に設計されたトレーニングセッションのリストを幅広くご覧いただけます。専門性を高めたい場合でも、新しい分野を探求したい場合でも、私たちの包括的なトレーニングはあなたのニーズに応えるように設計されています。</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T030925Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d4f620ba-c827-4279-adb7-aa3ec9b8d791"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "c4177bb2-8746-4625-98f6-fc2739a11fa6"
+      Hint: Tagline
+      Value: 学習
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T014414Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: トレーニング
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "2445dca3-471c-4517-a097-3ef040167e95"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>훈련 대시보드에 오신 것을 환영합니다. 여기에서 기술과 지식을 향상시키기 위해 맞춤화된 모든 훈련 세션의 광범위한 목록을 찾을 수 있습니다. 전문성을 강화하거나 새로운 분야를 탐색하려는 경우, 우리의 포괄적인 훈련은 귀하의 요구를 충족하도록 설계되었습니다.</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T030925Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "eed2fbaa-4550-44e6-a382-8cc0fa4ab0dc"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c4177bb2-8746-4625-98f6-fc2739a11fa6"
+      Hint: Tagline
+      Value: 학습
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T105002Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: 훈련
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "2445dca3-471c-4517-a097-3ef040167e95"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Witamy na Twoim pulpicie szkoleniowym. Tutaj znajdziesz obszerną listę wszystkich dostępnych sesji szkoleniowych, które mają na celu zwiększenie Twoich umiejętności i wiedzy. Niezależnie od tego, czy chcesz zwiększyć swoje kompetencje, czy odkrywać nowe obszary, nasze kompleksowe szkolenia są zaprojektowane tak, aby spełniać Twoje potrzeby.</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T030925Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f158e077-b090-4c28-8eeb-85526e245b75"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c4177bb2-8746-4625-98f6-fc2739a11fa6"
+      Hint: Tagline
+      Value: Nauka
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144040Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: Szkolenie

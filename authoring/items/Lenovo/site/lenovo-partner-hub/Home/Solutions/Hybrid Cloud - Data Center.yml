@@ -1,0 +1,613 @@
+﻿---
+ID: "1508c486-6412-4cf0-8755-fa97e1b0140c"
+Parent: "bf3a5b50-c224-424c-a3e5-0484f4fea364"
+Template: "5988a860-d8bf-4285-819f-262cae122a6e"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Home/Solutions/Hybrid Cloud - Data Center"
+SharedFields:
+- ID: "6cc01814-3192-49e6-ab63-9d466614b9c5"
+  Hint: BackgroundImage
+  Value: |
+    <image mediaid="fa01e243-1864-422e-a4c6-673984b0392b" />
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{22792410-8E94-4587-9A6F-8C3FB1AC5143}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "2fd963c8-e9a1-4316-affb-011191d23309"
+Languages:
+- Language: "ar-EG"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "70d786fe-86d4-46bb-a3b4-cbe5d679857c"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: السحابة الهجينة / مركز البيانات
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: مدعوم بالذكاء الاصطناعي
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: فوائد الحل
+    - ID: "1b94ff97-53a8-4429-bb75-b76bcd3e5646"
+      Hint: Gradient
+      Value: من البنفسجي إلى الوردي
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: متكامل مع السحابة
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T020205Z
+    - ID: "2e4e0495-edd1-48fa-a935-76deb5b02369"
+      Hint: Icon
+      Value: ☁️
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: حلول بنية تحتية مرنة لعمليات مركز البيانات القابلة للتوسع والآمنة والفعالة
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: السحابة الهجينة / مركز البيانات
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: السحابة الهجينة / مركز البيانات
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a7018a66-1d79-4c3b-85b4-ecb6c5292e0d"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: العودة إلى الحلول
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: مميز
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: حوّل بيئة العمل الهجينة الخاصة بك
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: السحابة الهجينة / مركز البيانات
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: الميزات الرئيسية
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: عرض الحلول
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153632Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>بنية تحتية مرنة لاحتياجاتك المتطورة</p></div>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: اتصل بالمبيعات
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: كل ما تحتاجه لبناء مكان عمل رقمي حديث
+- Language: "de-DE"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "ebc681d4-698e-4608-a867-0f225026aaee"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Hybride Cloud / Rechenzentrum
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: "KI-gestützt"
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: Lösungsnutzen
+    - ID: "1b94ff97-53a8-4429-bb75-b76bcd3e5646"
+      Hint: Gradient
+      Value: "von-lila-500 zu-pink-500"
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: Cloud integriert
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T020205Z
+    - ID: "2e4e0495-edd1-48fa-a935-76deb5b02369"
+      Hint: Icon
+      Value: 
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: Flexible Infrastrukturlösungen für skalierbare, sichere und effiziente Rechenzentrumsoperationen
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Hybride Cloud / Rechenzentrum
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: Hybride Cloud / Rechenzentrum
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2c0b434f-536a-4548-ba4e-621553e1671d"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: Zurück zu Lösungen
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: Vorgestellt
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Transformieren Sie Ihre hybride Arbeitsumgebung
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Hybride Cloud / Rechenzentrum
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: Hauptmerkmale
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: Lösungen anzeigen
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100832Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Flexible Infrastruktur für Ihre sich entwickelnden Bedürfnisse</p></div>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: Vertrieb kontaktieren
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: Alles, was Sie brauchen, um einen modernen digitalen Arbeitsplatz zu schaffen
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "15c4e400-c6c5-456e-9a21-57e4b2bbde03"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Hybrid Cloud / Data Center
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "1b94ff97-53a8-4429-bb75-b76bcd3e5646"
+      Hint: Gradient
+      Value: "from-purple-500 to-pink-500"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T020205Z
+    - ID: "2e4e0495-edd1-48fa-a935-76deb5b02369"
+      Hint: Icon
+      Value: ☁️
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: Flexible infrastructure solutions for scalable, secure, and efficient data center operations
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Hybrid Cloud / Data Center 
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: Hybrid Cloud / Data Center 
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1d29ee32-f5ba-4aa7-8ffa-7cc3e9841ca3"
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: Featured
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Hybrid Cloud / Data Center 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T112458Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Flexible infrastructure for your evolving needs</p></div>
+- Language: "fr-FR"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "f64c0483-ecc3-4ac0-8271-efc4b4ffae68"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Cloud hybride / Centre de données
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: Alimenté par l'IA
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: Avantages de la solution
+    - ID: "1b94ff97-53a8-4429-bb75-b76bcd3e5646"
+      Hint: Gradient
+      Value: "de violet-500 à rose-500"
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: Intégré au cloud
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T020205Z
+    - ID: "2e4e0495-edd1-48fa-a935-76deb5b02369"
+      Hint: Icon
+      Value: 
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: Solutions d'infrastructure flexibles pour des opérations de centre de données évolutives, sécurisées et efficaces
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Cloud hybride / Centre de données
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: Cloud hybride / Centre de données
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6fcc8b0e-5d57-46a5-acc7-6b7d515f9f30"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: Retour aux solutions
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: En vedette
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Transformez votre environnement de travail hybride
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Cloud hybride / Centre de données
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: Caractéristiques clés
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: Voir les solutions
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143552Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Infrastructure flexible pour vos besoins évolutifs</p></div>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: Contacter les ventes
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: Tout ce dont vous avez besoin pour construire un lieu de travail numérique moderne
+- Language: "ja-JP"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "db58e131-a9f6-4b22-9993-0275e8ed7263"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ハイブリッドクラウド / データセンター
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: "AI-Powered"
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: ソリューションの利点
+    - ID: "1b94ff97-53a8-4429-bb75-b76bcd3e5646"
+      Hint: Gradient
+      Value: "from-purple-500 to-pink-500"
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: クラウド統合
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T020205Z
+    - ID: "2e4e0495-edd1-48fa-a935-76deb5b02369"
+      Hint: Icon
+      Value: 
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: スケーラブルで安全かつ効率的なデータセンター運用のための柔軟なインフラストラクチャソリューション
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: ハイブリッドクラウド / データセンター
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: ハイブリッドクラウド / データセンター
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c403c0c5-4079-47bb-96f8-fb5610544f3c"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: ソリューションに戻る
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: 注目の
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: ハイブリッドワーク環境を変革する
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: ハイブリッドクラウド / データセンター
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: 主な特徴
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: ソリューションを見る
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T014355Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>進化するニーズに対応する柔軟なインフラストラクチャ</p></div>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: 営業に連絡する
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: 現代のデジタル職場を構築するために必要なすべて
+- Language: "ko-KR"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "2e7d665e-ecb0-4ad9-be8c-864bdf0e3f83"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 하이브리드 클라우드 / 데이터 센터
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: AI 기반
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: 솔루션 혜택
+    - ID: "1b94ff97-53a8-4429-bb75-b76bcd3e5646"
+      Hint: Gradient
+      Value: "from-purple-500 to-pink-500"
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: 클라우드 통합
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T020205Z
+    - ID: "2e4e0495-edd1-48fa-a935-76deb5b02369"
+      Hint: Icon
+      Value:  
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: 확장 가능하고 안전하며 효율적인 데이터 센터 운영을 위한 유연한 인프라 솔루션
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: 하이브리드 클라우드 / 데이터 센터
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: 하이브리드 클라우드 / 데이터 센터
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "99fd47cd-b6f3-4e56-8d20-18f37eb745ca"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: 솔루션으로 돌아가기
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: 추천
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: 하이브리드 작업 환경을 변혁하십시오
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: 하이브리드 클라우드 / 데이터 센터
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: 주요 기능
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: 솔루션 보기
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104941Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>변화하는 요구에 맞춘 유연한 인프라</p></div>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: 영업 문의
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: 현대적인 디지털 작업 공간을 구축하는 데 필요한 모든 것
+- Language: "pl-PL"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "b9e6b9f6-8235-4f56-a9b8-b7cb7a98baad"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Chmura hybrydowa / Centrum danych
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: Zasilane przez AI
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: Korzyści z rozwiązania
+    - ID: "1b94ff97-53a8-4429-bb75-b76bcd3e5646"
+      Hint: Gradient
+      Value: "od fioletowego-500 do różowego-500"
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: Zintegrowana chmura
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T020205Z
+    - ID: "2e4e0495-edd1-48fa-a935-76deb5b02369"
+      Hint: Icon
+      Value:  
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: Elastyczne rozwiązania infrastrukturalne dla skalowalnych, bezpiecznych i wydajnych operacji centrum danych
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Chmura hybrydowa / Centrum danych
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: Chmura hybrydowa / Centrum danych
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0580ae1d-acde-4a8b-b9ba-6aca8ccf1121"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: Powrót do rozwiązań
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: Polecane
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Przekształć swoje hybrydowe środowisko pracy
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Chmura hybrydowa / Centrum danych
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: Kluczowe cechy
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: Zobacz rozwiązania
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144017Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Elastyczna infrastruktura dla Twoich zmieniających się potrzeb</p></div>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: Skontaktuj się z działem sprzedaży
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: Wszystko, czego potrzebujesz, aby zbudować nowoczesne cyfrowe miejsce pracy

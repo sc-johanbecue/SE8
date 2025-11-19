@@ -1,0 +1,27 @@
+﻿---
+ID: "b90e43c6-826c-4e72-a8ff-80758f91e424"
+Parent: "437e1970-d6e7-47b9-8566-50c98b04e443"
+Template: "437e1970-d6e7-47b9-8566-50c98b04e443"
+Path: /sitecore/templates/Project/lenovo/Rendering Parameters/LenovoFooterColumn Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d2d215a3-e423-4e00-9c01-d2e7325ecf1d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T174353Z

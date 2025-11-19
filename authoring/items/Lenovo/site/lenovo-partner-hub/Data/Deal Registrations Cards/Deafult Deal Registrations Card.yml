@@ -1,0 +1,343 @@
+﻿---
+ID: "0351164e-8c9b-4924-8401-540eb1e2dcfc"
+Parent: "0467bcdc-a97a-484c-9d08-a5546b373aed"
+Template: "329d35d8-2267-4560-90b7-1b33211b0173"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Data/Deal Registrations Cards/Deafult Deal Registrations Card"
+SharedFields:
+- ID: "10bf37a1-a4cc-4398-b161-af8300681715"
+  Hint: BidRequestHistoric
+  Value: Pending
+- ID: "4d10caff-e8fe-4ad7-a41e-0f10a5578b19"
+  Hint: DealRegPending
+  Value: (19)
+- ID: "65c4af4b-f8d5-4a7d-a206-4b33e1a88408"
+  Hint: BidRequestValue
+  Value: 16
+- ID: "6a3718aa-78b0-4ccc-9f5f-6eb6a0be4a7d"
+  Hint: DealRegValue
+  Value: 610
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "b71e7ab9-e2cf-4673-999c-247c8b7b5dd0"
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "07f802d1-f2e6-4af0-bad5-3c4cd204c10e"
+      Hint: ButtonText
+      Value: عرض الصفقات
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251116T225805Z
+    - ID: "31dcee8e-774d-4938-9938-c40502cc7a72"
+      Hint: LeadsStatus
+      Value: جديد
+    - ID: "432dbd71-4d46-4b4b-ad11-284d0c136925"
+      Hint: BidRequestLabel
+      Value: طلبات العطاء
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "741ac966-bccf-4e63-96e1-3d18a1b608fb"
+      Hint: DealRegLabel
+      Value: تسجيلات الصفقات
+    - ID: "75d71bf0-0735-484b-86d4-ef39f62f618d"
+      Hint: DealRegSubmitted
+      Value: ٤٢٠
+    - ID: "864e5391-7360-4556-b638-25d884aef803"
+      Hint: InfrastructureLabel
+      Value: البنية التحتية
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b4786df4-fa8b-4889-8f3e-aeff04beab92"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9b5f5826-e884-40cc-b189-2ddddd6acba3"
+      Hint: Heading
+      Value: تسجيلات الصفقات وطلبات العطاء
+    - ID: "ab06d809-6442-41a5-b51b-fa4fc59bf32f"
+      Hint: InfrastructureStatus
+      Value: أخبار
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "cd4fc4ba-be43-4985-ac28-05be05d11991"
+      Hint: LeadsLabel
+      Value: العملاء المحتملين
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153645Z
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "07f802d1-f2e6-4af0-bad5-3c4cd204c10e"
+      Hint: ButtonText
+      Value: Deals anzeigen
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251116T225805Z
+    - ID: "31dcee8e-774d-4938-9938-c40502cc7a72"
+      Hint: LeadsStatus
+      Value: Neu
+    - ID: "432dbd71-4d46-4b4b-ad11-284d0c136925"
+      Hint: BidRequestLabel
+      Value: Gebotsanfragen
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "741ac966-bccf-4e63-96e1-3d18a1b608fb"
+      Hint: DealRegLabel
+      Value: Dealregistrierungen
+    - ID: "75d71bf0-0735-484b-86d4-ef39f62f618d"
+      Hint: DealRegSubmitted
+      Value: 420
+    - ID: "864e5391-7360-4556-b638-25d884aef803"
+      Hint: InfrastructureLabel
+      Value: Infrastruktur
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c0a485ca-b787-4e0f-aded-cffe50bc10e7"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9b5f5826-e884-40cc-b189-2ddddd6acba3"
+      Hint: Heading
+      Value: Dealregistrierungen und Gebotsanfragen
+    - ID: "ab06d809-6442-41a5-b51b-fa4fc59bf32f"
+      Hint: InfrastructureStatus
+      Value: Nachrichten
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "cd4fc4ba-be43-4985-ac28-05be05d11991"
+      Hint: LeadsLabel
+      Value: Leads
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100845Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251116T225805Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "75d71bf0-0735-484b-86d4-ef39f62f618d"
+      Hint: DealRegSubmitted
+      Value: 420
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1de4a2b7-3962-4baf-8831-0e7caff0754d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T003858Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "07f802d1-f2e6-4af0-bad5-3c4cd204c10e"
+      Hint: ButtonText
+      Value: Voir les offres
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251116T225805Z
+    - ID: "31dcee8e-774d-4938-9938-c40502cc7a72"
+      Hint: LeadsStatus
+      Value: Nouveau
+    - ID: "432dbd71-4d46-4b4b-ad11-284d0c136925"
+      Hint: BidRequestLabel
+      Value: Requêtes d'enchères
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "741ac966-bccf-4e63-96e1-3d18a1b608fb"
+      Hint: DealRegLabel
+      Value: Enregistrements de transactions
+    - ID: "75d71bf0-0735-484b-86d4-ef39f62f618d"
+      Hint: DealRegSubmitted
+      Value: 420
+    - ID: "864e5391-7360-4556-b638-25d884aef803"
+      Hint: InfrastructureLabel
+      Value: Infrastructure
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d0cb243f-2c62-4a3c-9f52-40ee198558d5"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9b5f5826-e884-40cc-b189-2ddddd6acba3"
+      Hint: Heading
+      Value: Enregistrements de transactions et requêtes d'enchères
+    - ID: "ab06d809-6442-41a5-b51b-fa4fc59bf32f"
+      Hint: InfrastructureStatus
+      Value: Actualités
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "cd4fc4ba-be43-4985-ac28-05be05d11991"
+      Hint: LeadsLabel
+      Value: Prospects
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143602Z
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "07f802d1-f2e6-4af0-bad5-3c4cd204c10e"
+      Hint: ButtonText
+      Value: 거래 보기
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251116T225805Z
+    - ID: "31dcee8e-774d-4938-9938-c40502cc7a72"
+      Hint: LeadsStatus
+      Value: 신규
+    - ID: "432dbd71-4d46-4b4b-ad11-284d0c136925"
+      Hint: BidRequestLabel
+      Value: 입찰 요청
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "741ac966-bccf-4e63-96e1-3d18a1b608fb"
+      Hint: DealRegLabel
+      Value: 거래 등록
+    - ID: "75d71bf0-0735-484b-86d4-ef39f62f618d"
+      Hint: DealRegSubmitted
+      Value: 420
+    - ID: "864e5391-7360-4556-b638-25d884aef803"
+      Hint: InfrastructureLabel
+      Value: 인프라
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0c36f50d-cb1e-4e0b-ba1d-e22449619934"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9b5f5826-e884-40cc-b189-2ddddd6acba3"
+      Hint: Heading
+      Value: 거래 등록 및 입찰 요청
+    - ID: "ab06d809-6442-41a5-b51b-fa4fc59bf32f"
+      Hint: InfrastructureStatus
+      Value: 뉴스
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "cd4fc4ba-be43-4985-ac28-05be05d11991"
+      Hint: LeadsLabel
+      Value: 리드
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104950Z
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "07f802d1-f2e6-4af0-bad5-3c4cd204c10e"
+      Hint: ButtonText
+      Value: Zobacz transakcje
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251116T225805Z
+    - ID: "31dcee8e-774d-4938-9938-c40502cc7a72"
+      Hint: LeadsStatus
+      Value: Nowy
+    - ID: "432dbd71-4d46-4b4b-ad11-284d0c136925"
+      Hint: BidRequestLabel
+      Value: Żądania ofertowe
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "741ac966-bccf-4e63-96e1-3d18a1b608fb"
+      Hint: DealRegLabel
+      Value: Rejestracje transakcji
+    - ID: "75d71bf0-0735-484b-86d4-ef39f62f618d"
+      Hint: DealRegSubmitted
+      Value: 420
+    - ID: "864e5391-7360-4556-b638-25d884aef803"
+      Hint: InfrastructureLabel
+      Value: Infrastruktura
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a35f2d7c-8397-457f-a3a4-e00c1c383536"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9b5f5826-e884-40cc-b189-2ddddd6acba3"
+      Hint: Heading
+      Value: Rejestracje transakcji i żądania ofertowe
+    - ID: "ab06d809-6442-41a5-b51b-fa4fc59bf32f"
+      Hint: InfrastructureStatus
+      Value: Aktualności
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "cd4fc4ba-be43-4985-ac28-05be05d11991"
+      Hint: LeadsLabel
+      Value: Leady
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144027Z

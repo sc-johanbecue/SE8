@@ -1,0 +1,371 @@
+﻿---
+ID: "59806fb5-3074-4cd9-822f-407b27c9cd9d"
+Parent: "73de3adf-c2c0-44e1-ae3c-e8e1488fc8e1"
+Template: "74c44b0e-2efa-4d5d-81b2-6ceff3a2cbdf"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Data/Solution CTA Cards/Need help finding the right solution"
+Languages:
+- Language: "ar-EG"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "2b1f85c7-b5f6-4e0e-b4d8-654433404424"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: هل تحتاج إلى مساعدة في العثور على الحل المناسب؟
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T005901Z
+    - ID: "26b7e51d-1788-4f30-befd-8a326bc2e2b4"
+      Hint: PrimaryButtonLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "572826b7-67ee-45fc-afae-b6482cd6312b"
+      Hint: SecondaryButtonText
+      Value: تصفح جميع الحلول
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5ebf2305-7daf-4d05-9826-821a4c5ec931"
+      Hint: Description
+      Value: <p>متخصصو الحلول لدينا هنا لمساعدتك في تحديد أفضل حلول Lenovo لاحتياجات عملائك الفريدة. احصل على إرشادات ودعم شخصي.</p>
+    - ID: "5f63f897-d9df-406a-a640-f329cd4d0868"
+      Hint: SecondaryButtonLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{BF3A5B50-C224-424C-A3E5-0484F4FEA364}" />
+    - ID: "70f9cd28-3351-4c0a-a9f2-b678de83fa6c"
+      Hint: PrimaryButtonText
+      Value: اتصل بأخصائي
+    - ID: "75999923-df55-407c-a048-ed6d6a5cfca7"
+      Hint: Heading
+      Value: هل تحتاج إلى مساعدة في العثور على الحل المناسب؟
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5b150993-1a6f-4df8-b6bb-f28e0472d2a4"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153718Z
+- Language: "de-DE"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "57d23bc0-c513-43a5-942b-20e422868ab1"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Benötigen Sie Hilfe bei der Suche nach der richtigen Lösung?"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T005901Z
+    - ID: "26b7e51d-1788-4f30-befd-8a326bc2e2b4"
+      Hint: PrimaryButtonLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "572826b7-67ee-45fc-afae-b6482cd6312b"
+      Hint: SecondaryButtonText
+      Value: Alle Lösungen durchsuchen
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5ebf2305-7daf-4d05-9826-821a4c5ec931"
+      Hint: Description
+      Value: "<p>Unsere Lösungsspezialisten stehen Ihnen zur Verfügung, um die besten Lenovo-Lösungen für die individuellen Bedürfnisse Ihrer Kunden zu identifizieren. Erhalten Sie persönliche Beratung und Unterstützung.</p>"
+    - ID: "5f63f897-d9df-406a-a640-f329cd4d0868"
+      Hint: SecondaryButtonLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{BF3A5B50-C224-424C-A3E5-0484F4FEA364}" />
+    - ID: "70f9cd28-3351-4c0a-a9f2-b678de83fa6c"
+      Hint: PrimaryButtonText
+      Value: Kontaktieren Sie einen Spezialisten
+    - ID: "75999923-df55-407c-a048-ed6d6a5cfca7"
+      Hint: Heading
+      Value: "Benötigen Sie Hilfe bei der Suche nach der richtigen Lösung?"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "856e89cc-e06b-4b5e-a5fa-ae64a64c9f02"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100908Z
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "418799bc-1bee-4118-b701-ea77f2e87db3"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Need help finding the right solution?"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T005901Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "75999923-df55-407c-a048-ed6d6a5cfca7"
+      Hint: Heading
+      Value: "Need help finding the right solution?"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3c41fc80-2318-4e50-a862-daf093fe9b2a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T010316Z
+- Language: "fr-FR"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "9255baef-306a-43c8-92e9-95b16c821018"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Besoin d'aide pour trouver la bonne solution ?"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T005901Z
+    - ID: "26b7e51d-1788-4f30-befd-8a326bc2e2b4"
+      Hint: PrimaryButtonLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "572826b7-67ee-45fc-afae-b6482cd6312b"
+      Hint: SecondaryButtonText
+      Value: Parcourir toutes les solutions
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5ebf2305-7daf-4d05-9826-821a4c5ec931"
+      Hint: Description
+      Value: <p>Nos spécialistes en solutions sont là pour vous aider à identifier les meilleures solutions Lenovo pour les besoins uniques de vos clients. Obtenez des conseils et un soutien personnalisés.</p>
+    - ID: "5f63f897-d9df-406a-a640-f329cd4d0868"
+      Hint: SecondaryButtonLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{BF3A5B50-C224-424C-A3E5-0484F4FEA364}" />
+    - ID: "70f9cd28-3351-4c0a-a9f2-b678de83fa6c"
+      Hint: PrimaryButtonText
+      Value: Contacter un spécialiste
+    - ID: "75999923-df55-407c-a048-ed6d6a5cfca7"
+      Hint: Heading
+      Value: "Besoin d'aide pour trouver la bonne solution ?"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "98a8277d-8bee-484f-8f67-99103ea17788"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143618Z
+- Language: "ja-JP"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "128f89e2-5d8c-4d61-95f2-36d0d38907f0"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 適切なソリューションを見つけるお手伝いが必要ですか？
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T005901Z
+    - ID: "26b7e51d-1788-4f30-befd-8a326bc2e2b4"
+      Hint: PrimaryButtonLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "572826b7-67ee-45fc-afae-b6482cd6312b"
+      Hint: SecondaryButtonText
+      Value: すべてのソリューションを閲覧する
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5ebf2305-7daf-4d05-9826-821a4c5ec931"
+      Hint: Description
+      Value: <p>当社のソリューションスペシャリストが、お客様のニーズに最適なLenovoソリューションを特定するお手伝いをします。個別のガイダンスとサポートを受けてください。</p>
+    - ID: "5f63f897-d9df-406a-a640-f329cd4d0868"
+      Hint: SecondaryButtonLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{BF3A5B50-C224-424C-A3E5-0484F4FEA364}" />
+    - ID: "70f9cd28-3351-4c0a-a9f2-b678de83fa6c"
+      Hint: PrimaryButtonText
+      Value: スペシャリストに連絡する
+    - ID: "75999923-df55-407c-a048-ed6d6a5cfca7"
+      Hint: Heading
+      Value: 適切なソリューションを見つけるお手伝いが必要ですか？
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d620caa4-1d46-4d4d-8769-be1739bf0034"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T014415Z
+- Language: "ko-KR"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "ecd76c2a-806e-4120-aec5-d092059c564e"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "올바른 솔루션을 찾는 데 도움이 필요하십니까?"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T005901Z
+    - ID: "26b7e51d-1788-4f30-befd-8a326bc2e2b4"
+      Hint: PrimaryButtonLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "572826b7-67ee-45fc-afae-b6482cd6312b"
+      Hint: SecondaryButtonText
+      Value: 모든 솔루션 보기
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5ebf2305-7daf-4d05-9826-821a4c5ec931"
+      Hint: Description
+      Value: <p>저희 솔루션 전문가들이 고객의 고유한 요구에 맞는 최고의 Lenovo 솔루션을 식별할 수 있도록 도와드립니다. 맞춤형 안내와 지원을 받으세요.</p>
+    - ID: "5f63f897-d9df-406a-a640-f329cd4d0868"
+      Hint: SecondaryButtonLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{BF3A5B50-C224-424C-A3E5-0484F4FEA364}" />
+    - ID: "70f9cd28-3351-4c0a-a9f2-b678de83fa6c"
+      Hint: PrimaryButtonText
+      Value: 전문가에게 문의하기
+    - ID: "75999923-df55-407c-a048-ed6d6a5cfca7"
+      Hint: Heading
+      Value: "올바른 솔루션을 찾는 데 도움이 필요하십니까?"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7abfc473-910e-41ca-bd2a-20d7078a0a76"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T105009Z
+- Language: "pl-PL"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "1a36c15e-7209-4c5a-bc16-a55d85eb0e2d"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Potrzebujesz pomocy w znalezieniu odpowiedniego rozwiązania?"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T005901Z
+    - ID: "26b7e51d-1788-4f30-befd-8a326bc2e2b4"
+      Hint: PrimaryButtonLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "572826b7-67ee-45fc-afae-b6482cd6312b"
+      Hint: SecondaryButtonText
+      Value: Przeglądaj wszystkie rozwiązania
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5ebf2305-7daf-4d05-9826-821a4c5ec931"
+      Hint: Description
+      Value: <p>Nasi specjaliści ds. rozwiązań są tutaj, aby pomóc Ci zidentyfikować najlepsze rozwiązania Lenovo dla unikalnych potrzeb Twoich klientów. Uzyskaj spersonalizowane wsparcie i pomoc.</p>
+    - ID: "5f63f897-d9df-406a-a640-f329cd4d0868"
+      Hint: SecondaryButtonLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{BF3A5B50-C224-424C-A3E5-0484F4FEA364}" />
+    - ID: "70f9cd28-3351-4c0a-a9f2-b678de83fa6c"
+      Hint: PrimaryButtonText
+      Value: Skontaktuj się ze specjalistą
+    - ID: "75999923-df55-407c-a048-ed6d6a5cfca7"
+      Hint: Heading
+      Value: "Potrzebujesz pomocy w znalezieniu odpowiedniego rozwiązania?"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1a6b0eb6-4dcb-4a56-8d52-459b9013cc9a"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144045Z

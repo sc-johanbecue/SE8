@@ -1,0 +1,320 @@
+﻿---
+ID: "000a30b2-f56b-4e91-b618-31a7c14b5224"
+Parent: "22fd6759-1c42-4b1f-a448-8ba63a06e160"
+Template: "5f1b0356-f0f9-4ed4-a9c4-48e0ca32af2b"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Data/CTA Sections/Default CTA Section"
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">انضم إلى آلاف الشركاء الذين يستفيدون بالفعل من حلول لينوفو لدفع نجاح العملاء ونمو الأعمال</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "823b2d18-e738-44d6-8ece-aa59c06e77bc"
+      Hint: TextColor
+      Value: "text-white"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7aae2ab7-97ad-4f35-8e42-8bfb1abf281b"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b6f20da0-e122-406e-8cf0-a562dd54abaf"
+      Hint: BackgroundColor
+      Value: "bg-slate-900"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: الوصول إلى بوابة الشركاء
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: هل أنت مستعد لتنمية عملك؟
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153644Z
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">Schließen Sie sich Tausenden von Partnern an, die bereits Lenovo-Lösungen nutzen, um Kundenerfolg und Geschäftswachstum zu fördern.</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "823b2d18-e738-44d6-8ece-aa59c06e77bc"
+      Hint: TextColor
+      Value: "text-white"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c20ee628-b255-497b-b639-3db416273e17"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b6f20da0-e122-406e-8cf0-a562dd54abaf"
+      Hint: BackgroundColor
+      Value: "bg-slate-900"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: Partnerportal zugreifen
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: "Bereit, Ihr Geschäft auszubauen?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100844Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">Join thousands of partners already leveraging Lenovo solutions to drive customer success and business growth</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1d4d06db-bb4d-4718-91c5-4028fc9393fe"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251113T025835Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">Rejoignez des milliers de partenaires qui exploitent déjà les solutions Lenovo pour stimuler le succès des clients et la croissance des entreprises</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "823b2d18-e738-44d6-8ece-aa59c06e77bc"
+      Hint: TextColor
+      Value: "text-white"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "189f62e6-3620-4f57-9a43-2b5ab4922894"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b6f20da0-e122-406e-8cf0-a562dd54abaf"
+      Hint: BackgroundColor
+      Value: "bg-slate-900"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: Accéder au Portail Partenaire
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: "Prêt à développer votre entreprise ?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143602Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">すでにレノボのソリューションを活用している数千のパートナーに加わり、顧客の成功とビジネスの成長を促進しましょう</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "823b2d18-e738-44d6-8ece-aa59c06e77bc"
+      Hint: TextColor
+      Value: "text-white"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c1cc6ca7-14a1-4de5-85ec-e4d927de277a"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b6f20da0-e122-406e-8cf0-a562dd54abaf"
+      Hint: BackgroundColor
+      Value: "bg-slate-900"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: パートナーポータルにアクセス
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: ビジネスを成長させる準備はできていますか？
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T014359Z
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">수천 명의 파트너가 이미 Lenovo 솔루션을 활용하여 고객 성공과 비즈니스 성장을 이끌고 있습니다</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "823b2d18-e738-44d6-8ece-aa59c06e77bc"
+      Hint: TextColor
+      Value: "text-white"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ac5dde30-cfb6-41c5-977c-7f7a2f6182fd"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b6f20da0-e122-406e-8cf0-a562dd54abaf"
+      Hint: BackgroundColor
+      Value: "bg-slate-900"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: 파트너 포털에 액세스
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: "비즈니스를 성장시킬 준비가 되셨나요?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104950Z
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025300Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">Dołącz do tysięcy partnerów, którzy już korzystają z rozwiązań Lenovo, aby zwiększyć sukces klientów i rozwój biznesu</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "823b2d18-e738-44d6-8ece-aa59c06e77bc"
+      Hint: TextColor
+      Value: "text-white"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7ec62962-c14b-44f3-9b31-c898ba34bdc4"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b6f20da0-e122-406e-8cf0-a562dd54abaf"
+      Hint: BackgroundColor
+      Value: "bg-slate-900"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: Dostęp do portalu partnerskiego
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: "Gotowy na rozwój swojego biznesu?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144026Z

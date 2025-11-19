@@ -1,0 +1,37 @@
+﻿---
+ID: "8b6b150b-bce7-4442-9676-e95119e8aeb3"
+Parent: "36d4883d-d0db-4ac6-bffe-72167553bb27"
+Template: "36d4883d-d0db-4ac6-bffe-72167553bb27"
+Path: /sitecore/templates/Project/lenovo/LenovoSolutionsSection/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T014358Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c2f4b886-00f6-413c-bae2-94ab851e54f4"
+    - ID: "ab6284b9-926b-4582-bde4-9a04af7cc1bc"
+      Hint: Heading
+      Value: Solution Hub
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251113T014417Z
+    - ID: "f394892b-529b-44da-9486-bf1fd7087ea4"
+      Hint: Description
+      Value: <p>Explore our comprehensive solutions designed to help you deliver exceptional value to your customers</p>

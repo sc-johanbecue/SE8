@@ -1,0 +1,33 @@
+﻿---
+ID: "5153d63a-61d8-4125-aa12-b5d413bc21e4"
+Parent: "c68163ee-9a81-4be2-a027-7c23bd7710b2"
+Template: "c68163ee-9a81-4be2-a027-7c23bd7710b2"
+Path: /sitecore/templates/Project/lenovo/Link List/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{6CC1222B-C876-48F5-A1DB-44D484CC15E9}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "6cbd16e3-3c80-4133-ae87-3a14ecdec634"
+- ID: "f7b94d8c-a842-49f8-ab7a-2169d00426b0"
+  Hint: __Should Not Organize In Bucket
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20111206T092520Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e062c435-c780-4ae7-9367-b22671ddaf45"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T174355Z

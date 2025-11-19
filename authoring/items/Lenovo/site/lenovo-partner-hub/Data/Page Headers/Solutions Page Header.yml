@@ -1,0 +1,283 @@
+﻿---
+ID: "eddd3646-9ad9-486e-b962-e5c209d3193d"
+Parent: "455bec58-fe74-4c74-b90b-5b8e5c3c4ad4"
+Template: "5516bd2a-20b8-4987-a2bf-7f14626c8487"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Data/Page Headers/Solutions Page Header"
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "2445dca3-471c-4517-a097-3ef040167e95"
+      Hint: Description
+      Value: <p>الوصول إلى حلول شاملة وموارد وأدوات مصممة لمساعدة الشركاء على زيادة الإيرادات والكفاءة ورضا العملاء. من مكان العمل الرقمي إلى الذكاء الاصطناعي على الحافة، تجد كل ما تحتاجه للنجاح.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T120215Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6bd7c97f-d135-4ed3-98fd-e30bc3404333"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c4177bb2-8746-4625-98f6-fc2739a11fa6"
+      Hint: Tagline
+      Value: تقديم قيمة استثنائية لعملائك
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153714Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: شركاء حلول لينوفو
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "2445dca3-471c-4517-a097-3ef040167e95"
+      Hint: Description
+      Value: "<p>Zugriff auf umfassende Lösungen, Ressourcen und Tools, die Partnern helfen sollen, Umsatz, Effizienz und Kundenzufriedenheit zu maximieren. Von digitalem Arbeitsplatz bis zu Edge-KI, finden Sie alles, was Sie für Ihren Erfolg benötigen.</p>"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T120215Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d15eb8c8-db1b-4ebd-b112-10b664e6e758"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c4177bb2-8746-4625-98f6-fc2739a11fa6"
+      Hint: Tagline
+      Value: Liefern Sie außergewöhnlichen Wert für Ihre Kunden
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100903Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: Lenovo Partnerlösungen
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "2445dca3-471c-4517-a097-3ef040167e95"
+      Hint: Description
+      Value: <p>Access comprehensive solutions, resources, and tools designed to help partners maximize revenue, efficiency, and customer satisfaction. From digital workplace to edge AI, find everything you need to succeed.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T120215Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c1049d1f-2822-4961-a150-2dc4018a6790"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "c4177bb2-8746-4625-98f6-fc2739a11fa6"
+      Hint: Tagline
+      Value: Deliver exceptional value to your customers
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T011258Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: Lenovo Partner Solutions
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "2445dca3-471c-4517-a097-3ef040167e95"
+      Hint: Description
+      Value: <p>Accédez à des solutions, ressources et outils complets conçus pour aider les partenaires à maximiser les revenus, l'efficacité et la satisfaction client. Du lieu de travail numérique à l'IA de périphérie, trouvez tout ce dont vous avez besoin pour réussir.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T120215Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d0ab3a7d-6c11-4c94-b64d-8aa15ea0a71b"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c4177bb2-8746-4625-98f6-fc2739a11fa6"
+      Hint: Tagline
+      Value: Offrez une valeur exceptionnelle à vos clients
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143613Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: Lenovo Partner Solutions
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "2445dca3-471c-4517-a097-3ef040167e95"
+      Hint: Description
+      Value: <p>パートナーが収益、効率、顧客満足度を最大化するための包括的なソリューション、リソース、ツールにアクセスできます。デジタルワークプレイスからエッジAIまで、成功に必要なすべてを見つけてください。</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T120215Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3a58c2da-e1ae-459a-aaea-f289ea28e51a"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "c4177bb2-8746-4625-98f6-fc2739a11fa6"
+      Hint: Tagline
+      Value: 顧客に卓越した価値を提供する
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T014411Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: レノボパートナーソリューション
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "2445dca3-471c-4517-a097-3ef040167e95"
+      Hint: Description
+      Value: <p>파트너가 수익, 효율성 및 고객 만족도를 극대화할 수 있도록 설계된 포괄적인 솔루션, 리소스 및 도구에 액세스하십시오. 디지털 워크플레이스에서 엣지 AI에 이르기까지 성공에 필요한 모든 것을 찾을 수 있습니다.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T120215Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e7b98649-5cd1-4fbe-aa56-ed82990699d7"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c4177bb2-8746-4625-98f6-fc2739a11fa6"
+      Hint: Tagline
+      Value: 고객에게 뛰어난 가치를 제공하십시오
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104959Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: Lenovo 파트너 솔루션
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "2445dca3-471c-4517-a097-3ef040167e95"
+      Hint: Description
+      Value: <p>Uzyskaj dostęp do kompleksowych rozwiązań, zasobów i narzędzi zaprojektowanych, aby pomóc partnerom maksymalizować przychody, efektywność i satysfakcję klientów. Od cyfrowego miejsca pracy po edge AI, znajdź wszystko, czego potrzebujesz, aby odnieść sukces.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T120215Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9d2ced0d-a580-4dae-af07-bfd18d54ab7c"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c4177bb2-8746-4625-98f6-fc2739a11fa6"
+      Hint: Tagline
+      Value: Dostarczaj wyjątkową wartość swoim klientom
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144040Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: Rozwiązania partnerskie Lenovo

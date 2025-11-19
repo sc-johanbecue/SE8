@@ -1,0 +1,27 @@
+﻿---
+ID: "32a7d3ca-7a2d-4883-824e-3d284742fa40"
+Parent: "a080b114-ba15-4ca0-af06-6190e4a81ba6"
+Template: "a080b114-ba15-4ca0-af06-6190e4a81ba6"
+Path: /sitecore/templates/Project/lenovo/Rendering Parameters/LenovoStatCard Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a665a9b8-098b-41f9-8d09-ccb72ac17f92"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251113T002653Z

@@ -1,0 +1,287 @@
+﻿---
+ID: "962b04d9-2118-4788-8d17-0ccdb195b6c3"
+Parent: "4aa8ea40-7ff5-42d8-bad0-625e060d267d"
+Template: "801b0997-0fc3-41ae-a6d9-633263b469db"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Settings"
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "0129da3f-8c86-4591-ae32-6ec923413923"
+  Hint: DictionaryDomain
+  Value: "{D8CD132A-57A9-46DE-8200-CA74850A47E7}"
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{C2DC4690-AF44-48C7-BB21-90D1AD246732}"
+- ID: "300fb7a0-b27f-44dd-9af0-b37a19723e0e"
+  Hint: RouteTemplateName
+  Value: Settings Route
+- ID: "32ce6bbe-4217-46e5-9335-42793884cbe3"
+  Hint: AppTemplate
+  Value: "{35F4A92A-97A1-4769-B866-A36F05A86862}"
+- ID: "3e4f559f-8e59-4405-b50d-619811371f6c"
+  Hint: Name
+  Value: "lenovo-partner-hub"
+- ID: "5764d2d4-724d-4313-a81b-9246c911faff"
+  Hint: AppDatasourcesPath
+  Value: "{9A37A524-22F4-4247-9E7A-393F2B7B6000}"
+- ID: "5ca117eb-8782-4a4f-9f2f-30de31fc2e34"
+  Hint: PlaceholdersPath
+  Value: "{EAD2FF89-A7DD-427E-A22E-D44339675D3C}"
+- ID: "72e83c8d-3578-4e50-b4c0-93a78a1729f2"
+  Hint: FilesystemPath
+  Value: "/dist/lenovo-partner-hub"
+- ID: "9016141c-ff51-40f2-9135-40f5161b9784"
+  Hint: ServerSideRenderingEngine
+  Value: http
+- ID: "a7bbad73-b933-49ff-95c8-1c269cb35e7c"
+  Hint: DictionaryPath
+  Value: "{D8CD132A-57A9-46DE-8200-CA74850A47E7}"
+- ID: "af332c24-fe17-41e7-8caf-8e64c588fe72"
+  Hint: EditingTheme
+  Value: "{3BCAB9EF-1E4F-4C23-B452-783BB82AA686}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 2000
+- ID: "c8d002f9-9518-4c5e-9baa-6617e13f0797"
+  Hint: LayoutPath
+  Value: "{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}"
+- ID: "d0ce707c-342f-4c02-ac0a-edb21346dde4"
+  Hint: SupportedLanguages
+  Value: af58419145c9420187405409f4cf8bdd|045fcafc6e5c445da7db100213a5069a|3c235c6a7444492bbf5510523c4ae21c|66aece2dcd354be9988365b5a3fec837|4872cb521dcf4e3c9728c1927d8e8269|974cf8957f3348c2a283ec9cc63790a6|bb8763e959954f819f2e389178a7b212
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "b5f98961-442e-44c9-8cbe-d9dfa82b5bfc"
+- ID: "e8881464-38af-4655-be4a-ee10586578a2"
+  Hint: Templates
+  Value: "{3567C6E5-E2B9-4D78-982D-0B01E7F30496}"
+- ID: "f29428d5-1285-48b8-a884-44057965829a"
+  Hint: RenderingsPath
+  Value: "{BEA04FE7-322D-4875-9419-6717BB8CF1BA}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{0FEEB907-58F0-44DE-B08C-2F43C063D0A5}"
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144322Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "81938b82-31cf-45e9-96ec-f21779abbb99"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9cbc4d47-1608-4a43-ac9c-6eb461fe58f5"
+      Hint: ComponentEditorScript
+      Value: "https://feaasstatic.blob.core.windows.net/packages/page-extension/latest/page.js"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153615Z
+- Language: "de-DE"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "019a3037-ac25-4481-8823-fdf64c49d3cb"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Einstellungen
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144322Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "34df7131-3cf3-4613-b67b-de250e283d00"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9cbc4d47-1608-4a43-ac9c-6eb461fe58f5"
+      Hint: ComponentEditorScript
+      Value: "https://feaasstatic.blob.core.windows.net/packages/page-extension/latest/page.js"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100814Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144322Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0d9a8e03-e739-48b8-9ce8-f000bdff4ba8"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153444Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144322Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c9a52284-8fec-4eff-bfbd-90ba8cb4dca7"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9cbc4d47-1608-4a43-ac9c-6eb461fe58f5"
+      Hint: ComponentEditorScript
+      Value: "https://feaasstatic.blob.core.windows.net/packages/page-extension/latest/page.js"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143536Z
+- Language: "ja-JP"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "7acad0f4-075d-4f16-b316-f41a02aa123c"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144322Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "099bc347-2d75-421e-895f-1c801ff8f13d"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9cbc4d47-1608-4a43-ac9c-6eb461fe58f5"
+      Hint: ComponentEditorScript
+      Value: "https://feaasstatic.blob.core.windows.net/packages/page-extension/latest/page.js"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T014347Z
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144322Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "91f8bbf9-01cd-4375-a37d-4fe50e0fecae"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9cbc4d47-1608-4a43-ac9c-6eb461fe58f5"
+      Hint: ComponentEditorScript
+      Value: "https://feaasstatic.blob.core.windows.net/packages/page-extension/latest/page.js"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104927Z
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144322Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1c3b9e7b-8c92-401e-9e39-47c2fe626f31"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "9cbc4d47-1608-4a43-ac9c-6eb461fe58f5"
+      Hint: ComponentEditorScript
+      Value: "https://feaasstatic.blob.core.windows.net/packages/page-extension/latest/page.js"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144001Z

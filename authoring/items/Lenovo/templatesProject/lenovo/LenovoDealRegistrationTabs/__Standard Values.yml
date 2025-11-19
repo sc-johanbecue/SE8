@@ -1,0 +1,110 @@
+﻿---
+ID: "11fb7132-a45d-4bdc-a754-d3c189ac4a87"
+Parent: "2f680548-ddf7-453b-a7f3-a3131bef4041"
+Template: "2f680548-ddf7-453b-a7f3-a3131bef4041"
+Path: /sitecore/templates/Project/lenovo/LenovoDealRegistrationTabs/__Standard Values
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "b0f98998-fc87-4800-9445-01d77915bada"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "031b5395-ad42-46dc-b6cb-c6ca09de8fe2"
+      Hint: SubmitButtonText
+      Value: Submit Deal Registration
+    - ID: "1484cc85-3d8b-454c-b15b-fe004a91869c"
+      Hint: CompanyPlaceholderText
+      Value: Enter company name
+    - ID: "2336fa48-1007-42ee-a95f-9b6ae4a952ff"
+      Hint: PhoneLabel
+      Value: Phone Number
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T015426Z
+    - ID: "27d16baa-3729-4247-910b-9eaef05341d9"
+      Hint: ContactPlaceholderText
+      Value: Enter contact person
+    - ID: "2b28f136-fab4-456c-bedb-b9f6a0788e33"
+      Hint: TrackingValueLabel
+      Value: "Value:"
+    - ID: "3211d6ce-f9c5-4fff-9988-574bbfc6e03e"
+      Hint: PhonePlaceholderText
+      Value: "+1 (555) 123-4567"
+    - ID: "4d27ee12-da6e-43dc-97a5-d9f979c5f7c0"
+      Hint: Tab2Label
+      Value: Track Deals
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "64974aa2-080a-4d7f-a2e9-59c85908902c"
+      Hint: DealValuePlaceholderText
+      Value: $ 50000
+    - ID: "6514e0c5-a568-4d4d-937d-19ccf858f5fb"
+      Hint: EmailPlaceholderText
+      Value: contact@company.com
+    - ID: "6949b57f-45d2-4a29-b67b-7f91d60b3032"
+      Hint: ContactLabel
+      Value: Contact Person
+    - ID: "8a1b0bb3-9de4-4cc3-8d2c-52c01e2188b2"
+      Hint: EmailLabel
+      Value: Email Address
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d925d201-62d2-47ea-b9a4-746cf1c56547"
+    - ID: "8e5d908a-47b5-415f-a50d-d113ac56fdbd"
+      Hint: TrackingProductLabel
+      Value: "Product:"
+    - ID: "91d1c6d3-9f06-4438-acd4-d987f37518e7"
+      Hint: NewDealTitle
+      Value: New Deal Registration
+    - ID: "96ee04df-aef0-4c8f-84ae-9e647910a39d"
+      Hint: Tab1Label
+      Value: Register New Deal
+    - ID: "a499fd75-d3c7-4ddf-a992-7bb713cce563"
+      Hint: NewDealDescription
+      Value: Complete the form below to register a new partner deal
+    - ID: "ab1604d2-90e4-44c4-90a0-386f95a5c7af"
+      Hint: TrackingDescription
+      Value: Track the status of your submitted deals
+    - ID: "ac9b0ddd-e0de-4a7a-8c40-505033f1051f"
+      Hint: ProductPlaceholderText
+      Value: Select product category
+    - ID: "b692d2c5-31f1-48c2-9dce-7dd211bda089"
+      Hint: NotesPlaceholderText
+      Value: Provide any additional details about this deal...
+    - ID: "ba22f884-ff08-414c-a184-50b9e3fd983e"
+      Hint: ProductLabel
+      Value: Product Category
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "bb05c99c-1a71-4377-bde4-1c00d3a2fa78"
+      Hint: NotesLabel
+      Value: Additional Notes
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251113T230002Z
+    - ID: "f8205690-499e-4ba3-a9ff-539a83ea461d"
+      Hint: TrackingTitle
+      Value: Your Deal Registrations
+    - ID: "f884099b-f0d1-4f0d-a495-e17deef9a042"
+      Hint: DealValueLabel
+      Value: Estimated Deal Value ($)
+    - ID: "f9d5bf18-7fb1-4146-81ee-ddf40913c463"
+      Hint: CompanyLabel
+      Value: Company Name
+    - ID: "fca5a822-cbef-4226-a5fb-6cca0ebc616c"
+      Hint: TrackingSubmittedLabel
+      Value: "Submitted:"

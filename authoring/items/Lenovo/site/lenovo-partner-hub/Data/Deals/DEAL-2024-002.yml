@@ -1,0 +1,317 @@
+﻿---
+ID: "35a96e20-0574-4c4e-9ade-f55c7e484a2e"
+Parent: "77736714-56dc-403c-9ae8-67f276fc97ec"
+Template: "56c48f0d-db28-48cf-a791-8a9321531b7c"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Data/Deals/DEAL-2024-002"
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b9b6d13-8ae5-4541-acfe-419bc74b461c"
+      Hint: ID
+      Value: "DEAL-2024-002"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T222256Z
+    - ID: "2db5115b-c579-446b-affe-0016edeb47b6"
+      Hint: Value
+      Value: 45,000 دولار أمريكي
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5b629f59-deb8-4788-b700-db90dc6991bc"
+      Hint: Company
+      Value: الشركات العالمية
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "63bd8a83-a9fc-43dd-92c6-cfb32a14978f"
+      Hint: Date
+      Value: "2024-12-20"
+    - ID: "8461f29f-8efe-4664-9230-53f02868ba65"
+      Hint: Status
+      Value: قيد الانتظار
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f3c437c7-3051-44fd-81e9-adbc77e05133"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "99784235-96f1-49ad-b5c7-d98024d591c9"
+      Hint: Product
+      Value: ThinkStation P Series (10 وحدات)
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153646Z
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b9b6d13-8ae5-4541-acfe-419bc74b461c"
+      Hint: ID
+      Value: "DEAL-2024-002"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T222256Z
+    - ID: "2db5115b-c579-446b-affe-0016edeb47b6"
+      Hint: Value
+      Value: 45.000 $
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5b629f59-deb8-4788-b700-db90dc6991bc"
+      Hint: Company
+      Value: Globale Unternehmen
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "63bd8a83-a9fc-43dd-92c6-cfb32a14978f"
+      Hint: Date
+      Value: "2024-12-20"
+    - ID: "8461f29f-8efe-4664-9230-53f02868ba65"
+      Hint: Status
+      Value: Ausstehend
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0d93a717-1ff5-434a-8136-e45f25f53f69"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "99784235-96f1-49ad-b5c7-d98024d591c9"
+      Hint: Product
+      Value: ThinkStation P Serie (10 Einheiten)
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100845Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b9b6d13-8ae5-4541-acfe-419bc74b461c"
+      Hint: ID
+      Value: "DEAL-2024-002"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T222256Z
+    - ID: "2db5115b-c579-446b-affe-0016edeb47b6"
+      Hint: Value
+      Value: $45,000
+    - ID: "5b629f59-deb8-4788-b700-db90dc6991bc"
+      Hint: Company
+      Value: Global Enterprises
+    - ID: "63bd8a83-a9fc-43dd-92c6-cfb32a14978f"
+      Hint: Date
+      Value: "2024-12-20"
+    - ID: "8461f29f-8efe-4664-9230-53f02868ba65"
+      Hint: Status
+      Value: Pending
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4d7eec1a-b8cd-42b6-9c6a-08c385eb877c"
+    - ID: "99784235-96f1-49ad-b5c7-d98024d591c9"
+      Hint: Product
+      Value: ThinkStation P Series (10 units)
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251113T222331Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b9b6d13-8ae5-4541-acfe-419bc74b461c"
+      Hint: ID
+      Value: "DEAL-2024-002"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T222256Z
+    - ID: "2db5115b-c579-446b-affe-0016edeb47b6"
+      Hint: Value
+      Value: 45 000 $
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5b629f59-deb8-4788-b700-db90dc6991bc"
+      Hint: Company
+      Value: Entreprises Globales
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "63bd8a83-a9fc-43dd-92c6-cfb32a14978f"
+      Hint: Date
+      Value: 20/12/2024
+    - ID: "8461f29f-8efe-4664-9230-53f02868ba65"
+      Hint: Status
+      Value: En attente
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4a0268e3-7001-40f1-b44e-87409db25ec4"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "99784235-96f1-49ad-b5c7-d98024d591c9"
+      Hint: Product
+      Value: ThinkStation Série P (10 unités)
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143602Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b9b6d13-8ae5-4541-acfe-419bc74b461c"
+      Hint: ID
+      Value: "DEAL-2024-002"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T222256Z
+    - ID: "2db5115b-c579-446b-affe-0016edeb47b6"
+      Hint: Value
+      Value: $45,000
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5b629f59-deb8-4788-b700-db90dc6991bc"
+      Hint: Company
+      Value: グローバルエンタープライズ
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "63bd8a83-a9fc-43dd-92c6-cfb32a14978f"
+      Hint: Date
+      Value: "2024-12-20"
+    - ID: "8461f29f-8efe-4664-9230-53f02868ba65"
+      Hint: Status
+      Value: 保留中
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4af990ca-f36f-451f-8fa3-3cf136241078"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "99784235-96f1-49ad-b5c7-d98024d591c9"
+      Hint: Product
+      Value: ThinkStation Pシリーズ（10台）
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T014405Z
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b9b6d13-8ae5-4541-acfe-419bc74b461c"
+      Hint: ID
+      Value: "DEAL-2024-002"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T222256Z
+    - ID: "2db5115b-c579-446b-affe-0016edeb47b6"
+      Hint: Value
+      Value: $45,000
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5b629f59-deb8-4788-b700-db90dc6991bc"
+      Hint: Company
+      Value: 글로벌 엔터프라이즈
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "63bd8a83-a9fc-43dd-92c6-cfb32a14978f"
+      Hint: Date
+      Value: "2024-12-20"
+    - ID: "8461f29f-8efe-4664-9230-53f02868ba65"
+      Hint: Status
+      Value: 보류 중
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fbccb51e-5ff1-419e-8273-72f43649dec7"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "99784235-96f1-49ad-b5c7-d98024d591c9"
+      Hint: Product
+      Value: ThinkStation P 시리즈 (10대)
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104950Z
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b9b6d13-8ae5-4541-acfe-419bc74b461c"
+      Hint: ID
+      Value: "DEAL-2024-002"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T222256Z
+    - ID: "2db5115b-c579-446b-affe-0016edeb47b6"
+      Hint: Value
+      Value: 45 000 USD
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5b629f59-deb8-4788-b700-db90dc6991bc"
+      Hint: Company
+      Value: Global Enterprises
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "63bd8a83-a9fc-43dd-92c6-cfb32a14978f"
+      Hint: Date
+      Value: "2024-12-20"
+    - ID: "8461f29f-8efe-4664-9230-53f02868ba65"
+      Hint: Status
+      Value: Oczekujące
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5c8d54d5-1a56-4d7a-a0ee-a9a549997bb3"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "99784235-96f1-49ad-b5c7-d98024d591c9"
+      Hint: Product
+      Value: ThinkStation P Series (10 jednostek)
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144027Z

@@ -1,0 +1,797 @@
+﻿---
+ID: "3097b137-1e09-4797-8b66-fa71ab9403f9"
+Parent: "029abbd2-d258-49fa-963b-8bafce921a93"
+Template: "dff82a0c-9a0d-4290-a71c-45d6e76ed944"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Data/Nav Bars/Default Nav Bar"
+SharedFields:
+- ID: "7fbf4c71-96fd-46b0-aa83-2a0b50f7e285"
+  Hint: ProductsLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{BF3A5B50-C224-424C-A3E5-0484F4FEA364}" />
+- ID: "ab793651-e9c7-4ee6-bd86-6712d2423cd2"
+  Hint: DealsLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{979D2425-B798-45ED-8C08-A5846183EF0A}" />
+- ID: "d72ed194-c32b-490b-be40-c60e6c1ac547"
+  Hint: Logo
+  Value: |
+    <image mediaid="781649e2-0907-4c19-a168-db96cb12ecdb" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "724b384f-ce2f-404a-9cb3-1ade31395100"
+- ID: "e4bba994-62f6-45fd-8377-4725de2f2a57"
+  Hint: TrainingLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{16775E82-080E-4D76-9DD8-99F00C4CE2F4}" />
+- ID: "f5b862ba-1784-4758-bca0-a36b3d5356ad"
+  Hint: DashboardLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E26E1515-B1C5-4472-8336-5FC460B6CDCD}" />
+- ID: "fbb9419e-b2c4-4bf9-93d1-61c7528f9bbb"
+  Hint: SolutionsLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{BF3A5B50-C224-424C-A3E5-0484F4FEA364}" />
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0907a2d2-0033-4bdf-82da-cadc6d076fd4"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "24904b38-9338-41cc-8477-30cfe2b24156"
+      Hint: DashboardText
+      Value: لوحة التحكم
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T031402Z
+    - ID: "334c2072-be2b-4258-a773-f23f89f59246"
+      Hint: UsernamePlaceholder
+      Value: #username#
+    - ID: "3ac6e647-a7d3-4566-bbac-813f39568b64"
+      Hint: TrainingText
+      Value: التدريب
+    - ID: "4d493dac-c763-4a3a-b5bd-4b83eccf237b"
+      Hint: CompanyPlaceholder
+      Value: #company#
+    - ID: "501391f8-3a7a-4018-bd10-d77d0d3c6561"
+      Hint: LastnamePlaceholder
+      Value: #lastname#
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "62038aca-b248-4737-841d-659c54090d04"
+      Hint: SignOutText
+      Value: تسجيل الخروج
+    - ID: "7001fde7-a56d-4657-ab6f-2a2a2457fbf0"
+      Hint: ProductsText
+      Value: المنتجات والخدمات
+    - ID: "897290ea-d71b-41ec-919e-f894c09662a0"
+      Hint: ProfileText
+      Value: ملفي الشخصي
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "977cf9d0-00f0-415a-a2a5-857b7f3257a8"
+    - ID: "9234a8ba-ae22-4928-9ddb-3a45958377fc"
+      Hint: DealsText
+      Value: تسجيل الصفقة
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b3b80959-4183-4f93-963d-6302a6947240"
+      Hint: HomeText
+      Value: الصفحة الرئيسية
+    - ID: "b90e95f0-5501-4271-af65-5d1e3b5dde2d"
+      Hint: SignInText
+      Value: تسجيل الدخول
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c8098dd6-2900-4615-b9ce-6ff0a6a7acf1"
+      Hint: SettingsText
+      Value: الإعدادات
+    - ID: "cad9feb0-451a-4ac4-86f9-4a08d21bcf0f"
+      Hint: SubtitleText
+      Value: مركز الشركاء 360
+    - ID: "cb3e0a6a-cae1-41ba-a27a-c4bb838e3313"
+      Hint: FirstnamePlaceholder
+      Value: #firstname#
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153701Z
+    - ID: "f251d9c5-d9f4-471b-b16c-859a884aa943"
+      Hint: SolutionsText
+      Value: الحلول
+    - ID: "fbc346c6-3391-4087-970d-06c9e76eefb4"
+      Hint: SearchPlaceholder
+      Value: ما الذي تبحث عنه؟
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0907a2d2-0033-4bdf-82da-cadc6d076fd4"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "24904b38-9338-41cc-8477-30cfe2b24156"
+      Hint: DashboardText
+      Value: Dashboard
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T031402Z
+    - ID: "334c2072-be2b-4258-a773-f23f89f59246"
+      Hint: UsernamePlaceholder
+      Value: #username#
+    - ID: "3ac6e647-a7d3-4566-bbac-813f39568b64"
+      Hint: TrainingText
+      Value: Schulung
+    - ID: "4d493dac-c763-4a3a-b5bd-4b83eccf237b"
+      Hint: CompanyPlaceholder
+      Value: #company#
+    - ID: "501391f8-3a7a-4018-bd10-d77d0d3c6561"
+      Hint: LastnamePlaceholder
+      Value: #lastname#
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "62038aca-b248-4737-841d-659c54090d04"
+      Hint: SignOutText
+      Value: Abmelden
+    - ID: "7001fde7-a56d-4657-ab6f-2a2a2457fbf0"
+      Hint: ProductsText
+      Value: Produkte & Dienstleistungen
+    - ID: "897290ea-d71b-41ec-919e-f894c09662a0"
+      Hint: ProfileText
+      Value: Mein Profil
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c77249ce-0c89-46eb-b2b9-4226ba165558"
+    - ID: "9234a8ba-ae22-4928-9ddb-3a45958377fc"
+      Hint: DealsText
+      Value: Deal Registrierung
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b3b80959-4183-4f93-963d-6302a6947240"
+      Hint: HomeText
+      Value: Startseite
+    - ID: "b90e95f0-5501-4271-af65-5d1e3b5dde2d"
+      Hint: SignInText
+      Value: Anmelden
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c8098dd6-2900-4615-b9ce-6ff0a6a7acf1"
+      Hint: SettingsText
+      Value: Einstellungen
+    - ID: "cad9feb0-451a-4ac4-86f9-4a08d21bcf0f"
+      Hint: SubtitleText
+      Value: 360 Partner Hub
+    - ID: "cb3e0a6a-cae1-41ba-a27a-c4bb838e3313"
+      Hint: FirstnamePlaceholder
+      Value: #firstname#
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100855Z
+    - ID: "f251d9c5-d9f4-471b-b16c-859a884aa943"
+      Hint: SolutionsText
+      Value: Lösungen
+    - ID: "fbc346c6-3391-4087-970d-06c9e76eefb4"
+      Hint: SearchPlaceholder
+      Value: "Wonach suchen Sie?"
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T031402Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "54669625-3c26-44b6-8717-ccd848fe679f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T224836Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0907a2d2-0033-4bdf-82da-cadc6d076fd4"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "24904b38-9338-41cc-8477-30cfe2b24156"
+      Hint: DashboardText
+      Value: Tableau de bord
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T031402Z
+    - ID: "334c2072-be2b-4258-a773-f23f89f59246"
+      Hint: UsernamePlaceholder
+      Value: #username#
+    - ID: "3ac6e647-a7d3-4566-bbac-813f39568b64"
+      Hint: TrainingText
+      Value: Formation
+    - ID: "4d493dac-c763-4a3a-b5bd-4b83eccf237b"
+      Hint: CompanyPlaceholder
+      Value: #company#
+    - ID: "501391f8-3a7a-4018-bd10-d77d0d3c6561"
+      Hint: LastnamePlaceholder
+      Value: #lastname#
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "62038aca-b248-4737-841d-659c54090d04"
+      Hint: SignOutText
+      Value: Se déconnecter
+    - ID: "7001fde7-a56d-4657-ab6f-2a2a2457fbf0"
+      Hint: ProductsText
+      Value: Produits et services
+    - ID: "897290ea-d71b-41ec-919e-f894c09662a0"
+      Hint: ProfileText
+      Value: Mon profil
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b2d7b0b3-88ac-4bf8-916c-3f447a5f9b98"
+    - ID: "9234a8ba-ae22-4928-9ddb-3a45958377fc"
+      Hint: DealsText
+      Value: Enregistrement des offres
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b3b80959-4183-4f93-963d-6302a6947240"
+      Hint: HomeText
+      Value: Accueil
+    - ID: "b90e95f0-5501-4271-af65-5d1e3b5dde2d"
+      Hint: SignInText
+      Value: Se connecter
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c8098dd6-2900-4615-b9ce-6ff0a6a7acf1"
+      Hint: SettingsText
+      Value: Paramètres
+    - ID: "cad9feb0-451a-4ac4-86f9-4a08d21bcf0f"
+      Hint: SubtitleText
+      Value: 360 Partner Hub
+    - ID: "cb3e0a6a-cae1-41ba-a27a-c4bb838e3313"
+      Hint: FirstnamePlaceholder
+      Value: #firstname#
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143611Z
+    - ID: "f251d9c5-d9f4-471b-b16c-859a884aa943"
+      Hint: SolutionsText
+      Value: Solutions
+    - ID: "fbc346c6-3391-4087-970d-06c9e76eefb4"
+      Hint: SearchPlaceholder
+      Value: "Que cherchez-vous ?"
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: 
+    - ID: "0907a2d2-0033-4bdf-82da-cadc6d076fd4"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "24904b38-9338-41cc-8477-30cfe2b24156"
+      Hint: DashboardText
+      Value: ダッシュボード
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T031402Z
+    - ID: "334c2072-be2b-4258-a773-f23f89f59246"
+      Hint: UsernamePlaceholder
+      Value: #username#
+    - ID: "3ac6e647-a7d3-4566-bbac-813f39568b64"
+      Hint: TrainingText
+      Value: トレーニング
+    - ID: "4d493dac-c763-4a3a-b5bd-4b83eccf237b"
+      Hint: CompanyPlaceholder
+      Value: #company#
+    - ID: "501391f8-3a7a-4018-bd10-d77d0d3c6561"
+      Hint: LastnamePlaceholder
+      Value: #lastname#
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "62038aca-b248-4737-841d-659c54090d04"
+      Hint: SignOutText
+      Value: サインアウト
+    - ID: "7001fde7-a56d-4657-ab6f-2a2a2457fbf0"
+      Hint: ProductsText
+      Value: 製品とサービス
+    - ID: "897290ea-d71b-41ec-919e-f894c09662a0"
+      Hint: ProfileText
+      Value: マイプロフィール
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ff73f2ac-8f32-49e5-9532-999240536300"
+    - ID: "9234a8ba-ae22-4928-9ddb-3a45958377fc"
+      Hint: DealsText
+      Value: ディール登録
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b3b80959-4183-4f93-963d-6302a6947240"
+      Hint: HomeText
+      Value: ホーム
+    - ID: "b90e95f0-5501-4271-af65-5d1e3b5dde2d"
+      Hint: SignInText
+      Value: サインイン
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "c8098dd6-2900-4615-b9ce-6ff0a6a7acf1"
+      Hint: SettingsText
+      Value: 設定
+    - ID: "cad9feb0-451a-4ac4-86f9-4a08d21bcf0f"
+      Hint: SubtitleText
+      Value: 360パートナーハブ
+    - ID: "cb3e0a6a-cae1-41ba-a27a-c4bb838e3313"
+      Hint: FirstnamePlaceholder
+      Value: #firstname#
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T014410Z
+    - ID: "f251d9c5-d9f4-471b-b16c-859a884aa943"
+      Hint: SolutionsText
+      Value: ソリューション
+    - ID: "fbc346c6-3391-4087-970d-06c9e76eefb4"
+      Hint: SearchPlaceholder
+      Value: 何をお探しですか？
+  - Version: 2
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0907a2d2-0033-4bdf-82da-cadc6d076fd4"
+      Hint: LogoText
+      Value: レノボ
+    - ID: "24904b38-9338-41cc-8477-30cfe2b24156"
+      Hint: DashboardText
+      Value: ダッシュボード
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T031402Z
+    - ID: "334c2072-be2b-4258-a773-f23f89f59246"
+      Hint: UsernamePlaceholder
+      Value: #username#
+    - ID: "3ac6e647-a7d3-4566-bbac-813f39568b64"
+      Hint: TrainingText
+      Value: トレーニング
+    - ID: "4d493dac-c763-4a3a-b5bd-4b83eccf237b"
+      Hint: CompanyPlaceholder
+      Value: #company#
+    - ID: "501391f8-3a7a-4018-bd10-d77d0d3c6561"
+      Hint: LastnamePlaceholder
+      Value: #lastname#
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "62038aca-b248-4737-841d-659c54090d04"
+      Hint: SignOutText
+      Value: サインアウト
+    - ID: "7001fde7-a56d-4657-ab6f-2a2a2457fbf0"
+      Hint: ProductsText
+      Value: 製品とサービス
+    - ID: "897290ea-d71b-41ec-919e-f894c09662a0"
+      Hint: ProfileText
+      Value: マイプロフィール
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c270de3a-8516-4143-a868-0a0fcdbe7820"
+    - ID: "9234a8ba-ae22-4928-9ddb-3a45958377fc"
+      Hint: DealsText
+      Value: ディール登録
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b3b80959-4183-4f93-963d-6302a6947240"
+      Hint: HomeText
+      Value: ホーム
+    - ID: "b90e95f0-5501-4271-af65-5d1e3b5dde2d"
+      Hint: SignInText
+      Value: サインイン
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c8098dd6-2900-4615-b9ce-6ff0a6a7acf1"
+      Hint: SettingsText
+      Value: 設定
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 
+    - ID: "cad9feb0-451a-4ac4-86f9-4a08d21bcf0f"
+      Hint: SubtitleText
+      Value: 360 Partner Hub
+    - ID: "cb3e0a6a-cae1-41ba-a27a-c4bb838e3313"
+      Hint: FirstnamePlaceholder
+      Value: #firstname#
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143757Z
+    - ID: "f251d9c5-d9f4-471b-b16c-859a884aa943"
+      Hint: SolutionsText
+      Value: ソリューション
+    - ID: "fbc346c6-3391-4087-970d-06c9e76eefb4"
+      Hint: SearchPlaceholder
+      Value: 何をお探しですか？
+  - Version: 3
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0907a2d2-0033-4bdf-82da-cadc6d076fd4"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "24904b38-9338-41cc-8477-30cfe2b24156"
+      Hint: DashboardText
+      Value: ダッシュボード
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T031402Z
+    - ID: "334c2072-be2b-4258-a773-f23f89f59246"
+      Hint: UsernamePlaceholder
+      Value: #username#
+    - ID: "3ac6e647-a7d3-4566-bbac-813f39568b64"
+      Hint: TrainingText
+      Value: トレーニング
+    - ID: "4d493dac-c763-4a3a-b5bd-4b83eccf237b"
+      Hint: CompanyPlaceholder
+      Value: #company#
+    - ID: "501391f8-3a7a-4018-bd10-d77d0d3c6561"
+      Hint: LastnamePlaceholder
+      Value: #lastname#
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "62038aca-b248-4737-841d-659c54090d04"
+      Hint: SignOutText
+      Value: サインアウト
+    - ID: "7001fde7-a56d-4657-ab6f-2a2a2457fbf0"
+      Hint: ProductsText
+      Value: 製品とサービス
+    - ID: "897290ea-d71b-41ec-919e-f894c09662a0"
+      Hint: ProfileText
+      Value: マイプロフィール
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4dbf615d-b45d-4c7c-a3f1-790ef867d3d1"
+    - ID: "9234a8ba-ae22-4928-9ddb-3a45958377fc"
+      Hint: DealsText
+      Value: ディール登録
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b3b80959-4183-4f93-963d-6302a6947240"
+      Hint: HomeText
+      Value: ホーム
+    - ID: "b90e95f0-5501-4271-af65-5d1e3b5dde2d"
+      Hint: SignInText
+      Value: サインイン
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c8098dd6-2900-4615-b9ce-6ff0a6a7acf1"
+      Hint: SettingsText
+      Value: 設定
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 
+    - ID: "cad9feb0-451a-4ac4-86f9-4a08d21bcf0f"
+      Hint: SubtitleText
+      Value: 360パートナーハブ
+    - ID: "cb3e0a6a-cae1-41ba-a27a-c4bb838e3313"
+      Hint: FirstnamePlaceholder
+      Value: #firstname#
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T101519Z
+    - ID: "f251d9c5-d9f4-471b-b16c-859a884aa943"
+      Hint: SolutionsText
+      Value: ソリューション
+    - ID: "fbc346c6-3391-4087-970d-06c9e76eefb4"
+      Hint: SearchPlaceholder
+      Value: 何をお探しですか？
+  - Version: 4
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0907a2d2-0033-4bdf-82da-cadc6d076fd4"
+      Hint: LogoText
+      Value: レノボ
+    - ID: "24904b38-9338-41cc-8477-30cfe2b24156"
+      Hint: DashboardText
+      Value: ダッシュボード
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T031402Z
+    - ID: "334c2072-be2b-4258-a773-f23f89f59246"
+      Hint: UsernamePlaceholder
+      Value: #username#
+    - ID: "3ac6e647-a7d3-4566-bbac-813f39568b64"
+      Hint: TrainingText
+      Value: トレーニング
+    - ID: "4d493dac-c763-4a3a-b5bd-4b83eccf237b"
+      Hint: CompanyPlaceholder
+      Value: #company#
+    - ID: "501391f8-3a7a-4018-bd10-d77d0d3c6561"
+      Hint: LastnamePlaceholder
+      Value: #lastname#
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "62038aca-b248-4737-841d-659c54090d04"
+      Hint: SignOutText
+      Value: サインアウト
+    - ID: "7001fde7-a56d-4657-ab6f-2a2a2457fbf0"
+      Hint: ProductsText
+      Value: 製品とサービス
+    - ID: "897290ea-d71b-41ec-919e-f894c09662a0"
+      Hint: ProfileText
+      Value: マイプロフィール
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f608b1ca-ea34-4b85-8d24-ddc86f1caa89"
+    - ID: "9234a8ba-ae22-4928-9ddb-3a45958377fc"
+      Hint: DealsText
+      Value: ディール登録
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b3b80959-4183-4f93-963d-6302a6947240"
+      Hint: HomeText
+      Value: ホーム
+    - ID: "b90e95f0-5501-4271-af65-5d1e3b5dde2d"
+      Hint: SignInText
+      Value: サインイン
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c8098dd6-2900-4615-b9ce-6ff0a6a7acf1"
+      Hint: SettingsText
+      Value: 設定
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 
+    - ID: "cad9feb0-451a-4ac4-86f9-4a08d21bcf0f"
+      Hint: SubtitleText
+      Value: 360 Partner Hub
+    - ID: "cb3e0a6a-cae1-41ba-a27a-c4bb838e3313"
+      Hint: FirstnamePlaceholder
+      Value: #firstname#
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153725Z
+    - ID: "f251d9c5-d9f4-471b-b16c-859a884aa943"
+      Hint: SolutionsText
+      Value: ソリューション
+    - ID: "fbc346c6-3391-4087-970d-06c9e76eefb4"
+      Hint: SearchPlaceholder
+      Value: 何をお探しですか？
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0907a2d2-0033-4bdf-82da-cadc6d076fd4"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "24904b38-9338-41cc-8477-30cfe2b24156"
+      Hint: DashboardText
+      Value: 대시보드
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T031402Z
+    - ID: "334c2072-be2b-4258-a773-f23f89f59246"
+      Hint: UsernamePlaceholder
+      Value: #username#
+    - ID: "3ac6e647-a7d3-4566-bbac-813f39568b64"
+      Hint: TrainingText
+      Value: 교육
+    - ID: "4d493dac-c763-4a3a-b5bd-4b83eccf237b"
+      Hint: CompanyPlaceholder
+      Value: #company#
+    - ID: "501391f8-3a7a-4018-bd10-d77d0d3c6561"
+      Hint: LastnamePlaceholder
+      Value: #lastname#
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "62038aca-b248-4737-841d-659c54090d04"
+      Hint: SignOutText
+      Value: 로그아웃
+    - ID: "7001fde7-a56d-4657-ab6f-2a2a2457fbf0"
+      Hint: ProductsText
+      Value: 제품 및 서비스
+    - ID: "897290ea-d71b-41ec-919e-f894c09662a0"
+      Hint: ProfileText
+      Value: 내 프로필
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ffae1e61-9860-4c58-9594-86c10c433faf"
+    - ID: "9234a8ba-ae22-4928-9ddb-3a45958377fc"
+      Hint: DealsText
+      Value: 거래 등록
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b3b80959-4183-4f93-963d-6302a6947240"
+      Hint: HomeText
+      Value: 홈
+    - ID: "b90e95f0-5501-4271-af65-5d1e3b5dde2d"
+      Hint: SignInText
+      Value: 로그인
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c8098dd6-2900-4615-b9ce-6ff0a6a7acf1"
+      Hint: SettingsText
+      Value: 설정
+    - ID: "cad9feb0-451a-4ac4-86f9-4a08d21bcf0f"
+      Hint: SubtitleText
+      Value: 360 파트너 허브
+    - ID: "cb3e0a6a-cae1-41ba-a27a-c4bb838e3313"
+      Hint: FirstnamePlaceholder
+      Value: #firstname#
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104959Z
+    - ID: "f251d9c5-d9f4-471b-b16c-859a884aa943"
+      Hint: SolutionsText
+      Value: 솔루션
+    - ID: "fbc346c6-3391-4087-970d-06c9e76eefb4"
+      Hint: SearchPlaceholder
+      Value: "무엇을 찾고 계십니까?"
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0907a2d2-0033-4bdf-82da-cadc6d076fd4"
+      Hint: LogoText
+      Value: Lenovo
+    - ID: "24904b38-9338-41cc-8477-30cfe2b24156"
+      Hint: DashboardText
+      Value: Pulpit nawigacyjny
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T031402Z
+    - ID: "334c2072-be2b-4258-a773-f23f89f59246"
+      Hint: UsernamePlaceholder
+      Value: #username#
+    - ID: "3ac6e647-a7d3-4566-bbac-813f39568b64"
+      Hint: TrainingText
+      Value: Szkolenie
+    - ID: "4d493dac-c763-4a3a-b5bd-4b83eccf237b"
+      Hint: CompanyPlaceholder
+      Value: #company#
+    - ID: "501391f8-3a7a-4018-bd10-d77d0d3c6561"
+      Hint: LastnamePlaceholder
+      Value: #lastname#
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "62038aca-b248-4737-841d-659c54090d04"
+      Hint: SignOutText
+      Value: Wyloguj się
+    - ID: "7001fde7-a56d-4657-ab6f-2a2a2457fbf0"
+      Hint: ProductsText
+      Value: Produkty i usługi
+    - ID: "897290ea-d71b-41ec-919e-f894c09662a0"
+      Hint: ProfileText
+      Value: Mój profil
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "08869953-0991-45c1-9e4f-df41f32809f8"
+    - ID: "9234a8ba-ae22-4928-9ddb-3a45958377fc"
+      Hint: DealsText
+      Value: Rejestracja transakcji
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "b3b80959-4183-4f93-963d-6302a6947240"
+      Hint: HomeText
+      Value: Strona główna
+    - ID: "b90e95f0-5501-4271-af65-5d1e3b5dde2d"
+      Hint: SignInText
+      Value: Zaloguj się
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c8098dd6-2900-4615-b9ce-6ff0a6a7acf1"
+      Hint: SettingsText
+      Value: Ustawienia
+    - ID: "cad9feb0-451a-4ac4-86f9-4a08d21bcf0f"
+      Hint: SubtitleText
+      Value: 360 Partner Hub
+    - ID: "cb3e0a6a-cae1-41ba-a27a-c4bb838e3313"
+      Hint: FirstnamePlaceholder
+      Value: #firstname#
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144035Z
+    - ID: "f251d9c5-d9f4-471b-b16c-859a884aa943"
+      Hint: SolutionsText
+      Value: Rozwiązania
+    - ID: "fbc346c6-3391-4087-970d-06c9e76eefb4"
+      Hint: SearchPlaceholder
+      Value: "Czego szukasz?"

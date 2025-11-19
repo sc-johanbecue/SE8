@@ -1,0 +1,36 @@
+﻿---
+ID: "fc1149b4-e7f4-4b85-b008-674ca0f59922"
+Parent: "2557b268-5405-4e3e-9b7b-6849ea73b6f2"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: "/sitecore/media library/Project/lenovo/lenovo-partner-hub/Sample Media/Images/Feature Icons"
+BranchID: "837d58b2-113d-4ba0-960a-8ce0ed8d01e2"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{8472627F-B23D-404B-A22C-AAA4BC5C992F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251115T225426Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\neli.kostadinova@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e9db5cb8-7ebc-4cee-b43b-6ee2523951a2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T225426Z

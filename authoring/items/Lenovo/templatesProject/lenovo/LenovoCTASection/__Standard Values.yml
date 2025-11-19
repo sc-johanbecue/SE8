@@ -1,0 +1,54 @@
+﻿---
+ID: "c5c45b7c-f894-49fc-916c-402557dc15fe"
+Parent: "5f1b0356-f0f9-4ed4-a9c4-48e0ca32af2b"
+Template: "5f1b0356-f0f9-4ed4-a9c4-48e0ca32af2b"
+Path: /sitecore/templates/Project/lenovo/LenovoCTASection/__Standard Values
+SharedFields:
+- ID: "69ff00f7-bde6-4d61-aa0a-031f7b051120"
+  Hint: ButtonLink
+  Value: |
+    <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{AB10FA66-939A-48FD-A2F5-12C9FACDE5FC}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "c5d56fb8-32d6-4878-ab92-6764ee9888bb"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T025649Z
+    - ID: "38a988e8-192d-4820-8814-9cf884d68633"
+      Hint: Description
+      Value: <p>Join thousands of partners already leveraging Lenovo solutions to drive customer success and business growth</p>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "823b2d18-e738-44d6-8ece-aa59c06e77bc"
+      Hint: TextColor
+      Value: "text-white"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ecb71952-d6b0-4f28-8f33-841833464099"
+    - ID: "b6f20da0-e122-406e-8cf0-a562dd54abaf"
+      Hint: BackgroundColor
+      Value: "bg-slate-900"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "bccd8514-3213-4295-b166-cfd325a07d82"
+      Hint: ButtonText
+      Value: Access Partner Portal
+    - ID: "ccab80e0-a077-41e5-834f-9cf8b6e88d26"
+      Hint: Heading
+      Value: "Ready to grow your business?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251113T025748Z

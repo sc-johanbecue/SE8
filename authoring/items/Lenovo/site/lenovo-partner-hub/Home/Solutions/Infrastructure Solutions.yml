@@ -1,0 +1,557 @@
+﻿---
+ID: "9564781d-4d9d-414d-aa60-9643118461ed"
+Parent: "bf3a5b50-c224-424c-a3e5-0484f4fea364"
+Template: "5988a860-d8bf-4285-819f-262cae122a6e"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Home/Solutions/Infrastructure Solutions"
+SharedFields:
+- ID: "6cc01814-3192-49e6-ab63-9d466614b9c5"
+  Hint: BackgroundImage
+  Value: |
+    <image mediaid="2f906399-3969-49df-bb51-9f9d7804060c" />
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{A9BCC3A8-D054-4F21-ACC6-C950B6F4A79C}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "9bddb004-83ce-491d-881e-ec2df479926c"
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: مدعوم بالذكاء الاصطناعي
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: فوائد الحلول
+    - ID: "1b94ff97-53a8-4429-bb75-b76bcd3e5646"
+      Hint: Gradient
+      Value: "من الأخضر-500 إلى الزمرد-500"
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: متكامل مع السحابة
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T235113Z
+    - ID: "2e4e0495-edd1-48fa-a935-76deb5b02369"
+      Hint: Icon
+      Value: 🔧
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: خوادم، تخزين، وشبكات على مستوى المؤسسات للمهام الحرجة
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: حلول البنية التحتية
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: حلول البنية التحتية
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e18679bb-b2ca-4b7e-a14c-b72df81317e7"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: العودة إلى الحلول
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: مؤسساتي
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: حوّل بيئة العمل الهجينة الخاصة بك
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: حلول البنية التحتية
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: الميزات الرئيسية
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: عرض الحلول
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153633Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: خوادم، تخزين، وشبكات على مستوى المؤسسات للمهام الحرجة
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: اتصل بالمبيعات
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: كل ما تحتاجه لبناء مكان عمل رقمي حديث
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: "KI-gestützt"
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: Lösungsnutzen
+    - ID: "1b94ff97-53a8-4429-bb75-b76bcd3e5646"
+      Hint: Gradient
+      Value: "von-grün-500 bis-smaragd-500"
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: Cloud integriert
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T235113Z
+    - ID: "2e4e0495-edd1-48fa-a935-76deb5b02369"
+      Hint: Icon
+      Value: 🔧
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: "Unternehmensgerechte Server, Speicher und Netzwerk-Infrastruktur für geschäftskritische Workloads"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: "Infrastruktur-Lösungen"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: "Infrastruktur-Lösungen"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "079595d0-c38d-4e01-8c25-5dfbb99c25da"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: Zurück zu Lösungen
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: Unternehmen
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Verwandeln Sie Ihre hybride Arbeitsumgebung
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: "Infrastruktur-Lösungen"
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: Hauptmerkmale
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: Lösungen anzeigen
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100833Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: "Unternehmensgerechte Server, Speicher und Netzwerk-Infrastruktur für geschäftskritische Workloads"
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: Vertrieb kontaktieren
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: Alles, was Sie brauchen, um einen modernen digitalen Arbeitsplatz zu schaffen
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "1b94ff97-53a8-4429-bb75-b76bcd3e5646"
+      Hint: Gradient
+      Value: "from-green-500 to-emerald-500"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T235113Z
+    - ID: "2e4e0495-edd1-48fa-a935-76deb5b02369"
+      Hint: Icon
+      Value: 🔧
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: "Enterprise-grade servers, storage, and networking infrastructure for mission-critical workloads"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Infrastructure Solutions
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: Infrastructure Solutions
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "383b423a-6283-4b83-9a60-0f76b48ce3d8"
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: Enterprise
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Infrastructure Solutions
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T112458Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: "Enterprise-grade servers, storage, and networking infrastructure for mission-critical workloads"
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: Propulsé par l'IA
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: Avantages de la solution
+    - ID: "1b94ff97-53a8-4429-bb75-b76bcd3e5646"
+      Hint: Gradient
+      Value: "de-vert-500 à-émeraude-500"
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: Intégré au cloud
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T235113Z
+    - ID: "2e4e0495-edd1-48fa-a935-76deb5b02369"
+      Hint: Icon
+      Value: 🔧
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: Serveurs, stockage et infrastructure réseau de qualité entreprise pour des charges de travail critiques
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Solutions d'infrastructure
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: Solutions d'infrastructure
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a4f9235c-d4b8-448b-a568-0cd3d8b96dbc"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: Retour aux solutions
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: Entreprise
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Transformez votre environnement de travail hybride
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Solutions d'infrastructure
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: Caractéristiques clés
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: Voir les solutions
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143553Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: Serveurs, stockage et infrastructure réseau de qualité entreprise pour des charges de travail critiques
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: Contacter les ventes
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: Tout ce dont vous avez besoin pour construire un lieu de travail numérique moderne
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: AI搭載
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: ソリューションの利点
+    - ID: "1b94ff97-53a8-4429-bb75-b76bcd3e5646"
+      Hint: Gradient
+      Value: "from-green-500 to-emerald-500"
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: クラウド統合
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T235113Z
+    - ID: "2e4e0495-edd1-48fa-a935-76deb5b02369"
+      Hint: Icon
+      Value: 🔧
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: ミッションクリティカルなワークロードのためのエンタープライズグレードのサーバー、ストレージ、ネットワークインフラストラクチャ
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: インフラソリューション
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: インフラソリューション
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "71062c4a-e5fd-421a-a7a8-e0a08de0162c"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: ソリューションに戻る
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: エンタープライズ
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: ハイブリッドワーク環境を変革する
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: インフラソリューション
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: 主な特徴
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: ソリューションを見る
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T014355Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: ミッションクリティカルなワークロードのためのエンタープライズグレードのサーバー、ストレージ、ネットワークインフラストラクチャ
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: 営業に連絡する
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: 現代のデジタルワークプレースを構築するために必要なすべて
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: AI 기반
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: 솔루션 혜택
+    - ID: "1b94ff97-53a8-4429-bb75-b76bcd3e5646"
+      Hint: Gradient
+      Value: "from-green-500 to-emerald-500"
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: 클라우드 통합
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T235113Z
+    - ID: "2e4e0495-edd1-48fa-a935-76deb5b02369"
+      Hint: Icon
+      Value: 🔧
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: 미션 크리티컬 워크로드를 위한 엔터프라이즈급 서버, 스토리지 및 네트워킹 인프라
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: 인프라 솔루션
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: 인프라 솔루션
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "262312a4-c1e8-4af7-b0de-06430a2d7b36"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: 솔루션으로 돌아가기
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: 엔터프라이즈
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: 하이브리드 작업 환경 변환
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: 인프라 솔루션
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: 주요 기능
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: 솔루션 보기
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104941Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: 미션 크리티컬 워크로드를 위한 엔터프라이즈급 서버, 스토리지 및 네트워킹 인프라
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: 영업팀에 문의하기
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: 현대적인 디지털 작업 공간 구축에 필요한 모든 것
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: Zasilane przez AI
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: Korzyści z rozwiązania
+    - ID: "1b94ff97-53a8-4429-bb75-b76bcd3e5646"
+      Hint: Gradient
+      Value: "od-green-500 do-emerald-500"
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: Zintegrowane z chmurą
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T235113Z
+    - ID: "2e4e0495-edd1-48fa-a935-76deb5b02369"
+      Hint: Icon
+      Value: 🔧
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: Serwery klasy korporacyjnej, pamięć masowa i infrastruktura sieciowa dla obciążeń o znaczeniu krytycznym
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Rozwiązania infrastrukturalne
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: Rozwiązania infrastrukturalne
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1b02c684-b3ef-4514-a766-0198916f8662"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: Powrót do rozwiązań
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: Korporacyjne
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Przekształć swoje hybrydowe środowisko pracy
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Rozwiązania infrastrukturalne
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: Kluczowe cechy
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: Zobacz rozwiązania
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144017Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: Serwery klasy korporacyjnej, pamięć masowa i infrastruktura sieciowa dla obciążeń o znaczeniu krytycznym
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: Skontaktuj się z działem sprzedaży
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: Wszystko, czego potrzebujesz, aby zbudować nowoczesne cyfrowe miejsce pracy

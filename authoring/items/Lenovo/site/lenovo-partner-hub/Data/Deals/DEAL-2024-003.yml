@@ -1,0 +1,317 @@
+﻿---
+ID: "497ef65d-bc36-4926-a34c-f8a57c4b188d"
+Parent: "77736714-56dc-403c-9ae8-67f276fc97ec"
+Template: "56c48f0d-db28-48cf-a791-8a9321531b7c"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Data/Deals/DEAL-2024-003"
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b9b6d13-8ae5-4541-acfe-419bc74b461c"
+      Hint: ID
+      Value: "DEAL-2024-003"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T222344Z
+    - ID: "2db5115b-c579-446b-affe-0016edeb47b6"
+      Hint: Value
+      Value: ٢٢٬٥٠٠ دولار أمريكي
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5b629f59-deb8-4788-b700-db90dc6991bc"
+      Hint: Company
+      Value: مبتكرو الشركات الناشئة
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "63bd8a83-a9fc-43dd-92c6-cfb32a14978f"
+      Hint: Date
+      Value: "٢٢-١٢-٢٠٢٤"
+    - ID: "8461f29f-8efe-4664-9230-53f02868ba65"
+      Hint: Status
+      Value: قيد المراجعة
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b53300d1-b28b-4716-b092-4f9662bb77cf"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "99784235-96f1-49ad-b5c7-d98024d591c9"
+      Hint: Product
+      Value: ThinkBook 14 (25 وحدة)
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153652Z
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b9b6d13-8ae5-4541-acfe-419bc74b461c"
+      Hint: ID
+      Value: "DEAL-2024-003"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T222344Z
+    - ID: "2db5115b-c579-446b-affe-0016edeb47b6"
+      Hint: Value
+      Value: 22.500 $
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5b629f59-deb8-4788-b700-db90dc6991bc"
+      Hint: Company
+      Value: "Startup-Innovatoren"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "63bd8a83-a9fc-43dd-92c6-cfb32a14978f"
+      Hint: Date
+      Value: "2024-12-22"
+    - ID: "8461f29f-8efe-4664-9230-53f02868ba65"
+      Hint: Status
+      Value: In Überprüfung
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8b7ab3d5-e196-4113-89f9-c625ee33f7b4"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "99784235-96f1-49ad-b5c7-d98024d591c9"
+      Hint: Product
+      Value: ThinkBook 14 (25 Einheiten)
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100848Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b9b6d13-8ae5-4541-acfe-419bc74b461c"
+      Hint: ID
+      Value: "DEAL-2024-003"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T222344Z
+    - ID: "2db5115b-c579-446b-affe-0016edeb47b6"
+      Hint: Value
+      Value: $22,500
+    - ID: "5b629f59-deb8-4788-b700-db90dc6991bc"
+      Hint: Company
+      Value: Startup Innovators
+    - ID: "63bd8a83-a9fc-43dd-92c6-cfb32a14978f"
+      Hint: Date
+      Value: "2024-12-22"
+    - ID: "8461f29f-8efe-4664-9230-53f02868ba65"
+      Hint: Status
+      Value: Under Review
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cab5e51a-2e21-487f-9271-423c20f68997"
+    - ID: "99784235-96f1-49ad-b5c7-d98024d591c9"
+      Hint: Product
+      Value: ThinkBook 14 (25 units)
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251113T222414Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b9b6d13-8ae5-4541-acfe-419bc74b461c"
+      Hint: ID
+      Value: "DEAL-2024-003"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T222344Z
+    - ID: "2db5115b-c579-446b-affe-0016edeb47b6"
+      Hint: Value
+      Value: 22 500 $
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5b629f59-deb8-4788-b700-db90dc6991bc"
+      Hint: Company
+      Value: Innovateurs de Startup
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "63bd8a83-a9fc-43dd-92c6-cfb32a14978f"
+      Hint: Date
+      Value: "2024-12-22"
+    - ID: "8461f29f-8efe-4664-9230-53f02868ba65"
+      Hint: Status
+      Value: En cours de révision
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "959ede49-7afe-466c-b2c7-5a60ac6853c8"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "99784235-96f1-49ad-b5c7-d98024d591c9"
+      Hint: Product
+      Value: ThinkBook 14 (25 unités)
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143605Z
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b9b6d13-8ae5-4541-acfe-419bc74b461c"
+      Hint: ID
+      Value: "DEAL-2024-003"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T222344Z
+    - ID: "2db5115b-c579-446b-affe-0016edeb47b6"
+      Hint: Value
+      Value: ¥2,250,000
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5b629f59-deb8-4788-b700-db90dc6991bc"
+      Hint: Company
+      Value: スタートアップイノベーターズ
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "63bd8a83-a9fc-43dd-92c6-cfb32a14978f"
+      Hint: Date
+      Value: "2024-12-22"
+    - ID: "8461f29f-8efe-4664-9230-53f02868ba65"
+      Hint: Status
+      Value: 審査中
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d56d6969-3384-4c87-88a5-1791ccf24e0e"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "99784235-96f1-49ad-b5c7-d98024d591c9"
+      Hint: Product
+      Value: ThinkBook 14 (25台)
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T014405Z
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b9b6d13-8ae5-4541-acfe-419bc74b461c"
+      Hint: ID
+      Value: "DEAL-2024-003"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T222344Z
+    - ID: "2db5115b-c579-446b-affe-0016edeb47b6"
+      Hint: Value
+      Value: $22,500
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5b629f59-deb8-4788-b700-db90dc6991bc"
+      Hint: Company
+      Value: 스타트업 혁신가들
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "63bd8a83-a9fc-43dd-92c6-cfb32a14978f"
+      Hint: Date
+      Value: "2024-12-22"
+    - ID: "8461f29f-8efe-4664-9230-53f02868ba65"
+      Hint: Status
+      Value: 검토 중
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b612107d-30d0-4bbc-92c0-52b84f07d572"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "99784235-96f1-49ad-b5c7-d98024d591c9"
+      Hint: Product
+      Value: ThinkBook 14 (25대)
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104951Z
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b9b6d13-8ae5-4541-acfe-419bc74b461c"
+      Hint: ID
+      Value: "DEAL-2024-003"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T222344Z
+    - ID: "2db5115b-c579-446b-affe-0016edeb47b6"
+      Hint: Value
+      Value: 22 500 USD
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5b629f59-deb8-4788-b700-db90dc6991bc"
+      Hint: Company
+      Value: Innowatorzy startupów
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "63bd8a83-a9fc-43dd-92c6-cfb32a14978f"
+      Hint: Date
+      Value: "2024-12-22"
+    - ID: "8461f29f-8efe-4664-9230-53f02868ba65"
+      Hint: Status
+      Value: W trakcie przeglądu
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ab6432a4-0ab6-463e-89dc-f03ea9d3549f"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "99784235-96f1-49ad-b5c7-d98024d591c9"
+      Hint: Product
+      Value: ThinkBook 14 (25 jednostek)
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144027Z

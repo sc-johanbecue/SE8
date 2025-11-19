@@ -1,0 +1,34 @@
+﻿---
+ID: "a49eeb71-e48e-4154-baac-5f8758815a5d"
+Parent: "5516bd2a-20b8-4987-a2bf-7f14626c8487"
+Template: "5516bd2a-20b8-4987-a2bf-7f14626c8487"
+Path: /sitecore/templates/Project/lenovo/LenovoPageHeader/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T120536Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ff5e5c89-be07-47fd-b104-59debd46a891"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251113T123702Z
+    - ID: "da604f4e-cf9f-4f73-9b95-efdbd3d9d691"
+      Hint: Heading
+      Value: $name

@@ -1,0 +1,51 @@
+﻿---
+ID: "ce98674a-2de2-4790-b282-28b8a5d2cab0"
+Parent: "74c44b0e-2efa-4d5d-81b2-6ceff3a2cbdf"
+Template: "74c44b0e-2efa-4d5d-81b2-6ceff3a2cbdf"
+Path: /sitecore/templates/Project/lenovo/LenovoSolutionCTACard/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T010128Z
+    - ID: "26b7e51d-1788-4f30-befd-8a326bc2e2b4"
+      Hint: PrimaryButtonLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{E44F3C70-887E-4C5A-942D-CD294D40723E}" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "572826b7-67ee-45fc-afae-b6482cd6312b"
+      Hint: SecondaryButtonText
+      Value: Browse All Solutions
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5ebf2305-7daf-4d05-9826-821a4c5ec931"
+      Hint: Description
+      Value: <p>Our solution specialists are here to help you identify the best Lenovo solutions for your customers' unique needs. Get personalized guidance and support.</p>
+    - ID: "5f63f897-d9df-406a-a640-f329cd4d0868"
+      Hint: SecondaryButtonLink
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="_blank" querystring="" id="{BF3A5B50-C224-424C-A3E5-0484F4FEA364}" />
+    - ID: "70f9cd28-3351-4c0a-a9f2-b678de83fa6c"
+      Hint: PrimaryButtonText
+      Value: Contact a Specialist
+    - ID: "75999923-df55-407c-a048-ed6d6a5cfca7"
+      Hint: Heading
+      Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fd823ff1-86d2-4a05-81e0-854aa79aaf96"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T010246Z

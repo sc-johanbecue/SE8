@@ -1,0 +1,36 @@
+﻿---
+ID: "0bd6e4ed-cb61-486c-9384-e4ef3e516bea"
+Parent: "6d27dcc8-f59e-4674-8110-787a053f8d54"
+Template: "6d27dcc8-f59e-4674-8110-787a053f8d54"
+Path: /sitecore/templates/Project/lenovo/LenovoFeaturedTrainingPrograms Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {ECF0EF98-7611-456F-A54B-3B2E58EF1204}
+    {6D27DCC8-F59E-4674-8110-787A053F8D54}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0fd146a1-9d50-4fb6-b7a8-d86e230916e1"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c2cffcb8-aa9d-43de-af11-8c3329b22a8a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251112T215754Z

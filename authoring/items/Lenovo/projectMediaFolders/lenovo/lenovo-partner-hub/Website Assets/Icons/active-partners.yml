@@ -1,0 +1,54 @@
+﻿---
+ID: "7eb9eaa0-6ead-4df6-83c4-05ee884a38c9"
+Parent: "1a490611-0db6-4421-a3c5-494837e831a7"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/lenovo/lenovo-partner-hub/Website Assets/Icons/active-partners"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/7EB9EAA06EAD4DF683C405EE884A38C9.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "c943afb9-ea85-4258-b835-10e92ea43f37"
+  Value: PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIyNSIgY3k9IjE1IiByPSI2IiBmaWxsPSIjRTIyMzFBIi8+CiAgPHBhdGggZD0iTTM1IDQwQzM1IDM0LjQ3NzIgMzAuNTIyOCAzMCAyNSAzMEMxOS40NzcyIDMwIDE1IDM0LjQ3NzIgMTUgNDAiIHN0cm9rZT0iI0UyMjMxQSIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8Y2lyY2xlIGN4PSIzOCIgY3k9IjE4IiByPSI1IiBmaWxsPSIjNjY2Ii8+CiAgPHBhdGggZD0iTTQ2IDQwQzQ2IDM2LjY4NjMgNDMuMzEzNyAzNCA0MCAzNEMzOSAzNCAzOC41IDM0LjIgMzggMzQuNSIgc3Ryb2tlPSIjNjY2IiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGNpcmNsZSBjeD0iMTIiIGN5PSIxOCIgcj0iNSIgZmlsbD0iIzY2NiIvPgogIDxwYXRoIGQ9Ik00IDQwQzQgMzYuNjg2MyA2LjY4NjI5IDM0IDEwIDM0QzExIDM0IDExLjUgMzQuMiAxMiAzNC41IiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 634
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "6a23a2d2-907e-4e68-a249-4826f3d635c7"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251113T012939Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: "active-partners"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "df300d8e-4935-4f47-8b2c-ce1640d1bc80"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251113T012940Z

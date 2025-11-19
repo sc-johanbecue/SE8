@@ -1,0 +1,414 @@
+﻿---
+ID: "40c91fe5-a8c4-4d19-a037-94658ce4a877"
+Parent: "bf3a5b50-c224-424c-a3e5-0484f4fea364"
+Template: "5988a860-d8bf-4285-819f-262cae122a6e"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Home/Solutions/Edge and AI Solutions"
+SharedFields:
+- ID: "6cc01814-3192-49e6-ab63-9d466614b9c5"
+  Hint: BackgroundImage
+  Value: |
+    <image mediaid="0f7258aa-2143-4c1d-b3ea-6b0b757f04de" alt="EdgeComputing" />
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 163
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{13D0C1A3-FEDD-401B-8BAC-007B6C6475C2}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "5d82201e-0b1a-465f-b859-fbf29e4991d5"
+Languages:
+- Language: "ar-EG"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "e826ccc9-26d0-407f-b374-06e85a083a8a"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: حلول الحافة والذكاء الاصطناعي
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: مدعوم بالذكاء الاصطناعي
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: فوائد الحلول
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: متكامل مع السحابة
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T111015Z
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: |
+        <div class="ck-content"><p>في اقتصاد اليوم الرقمي، السرعة والذكاء هما كل شيء. الشركات تولد كميات هائلة من البيانات على الحافة - سواء في متاجر البيع بالتجزئة أو طوابق التصنيع أو مرافق الرعاية الصحية أو المواقع البعيدة. التحدي؟ معالجة هذه البيانات بسرعة وأمان دون الاعتماد فقط على البنية التحتية السحابية المركزية. هنا تأتي <strong>حلول الحافة من لينوفو</strong>.</p></div>
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: حلول الحافة
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: حلول الحافة والذكاء الاصطناعي
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "13d4e028-848d-40b0-94b0-3891c842e047"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: العودة إلى الحلول
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: الشائع
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: معالجة هذه البيانات بسرعة وأمان دون الاعتماد فقط على البنية التحتية السحابية المركزية.
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: حلول الحافة والذكاء الاصطناعي
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: الميزات الرئيسية
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: عرض الحلول
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153631Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: <p>معالجة هذه البيانات بسرعة وأمان دون الاعتماد فقط على البنية التحتية السحابية المركزية. هنا تأتي <strong>حلول الحافة من لينوفو</strong>.</p>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: اتصل بالمبيعات
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: كل ما تحتاجه لبناء مكان عمل رقمي حديث
+- Language: "de-DE"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "bce8f674-24ce-4080-a9d0-5dd3f8350879"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Edge- und KI-Lösungen"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: "KI-gestützt"
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: Lösungsnutzen
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: Cloud integriert
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T111015Z
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: |
+        <div class="ck-content"><p>In der heutigen digitalen Wirtschaft sind Geschwindigkeit und Intelligenz alles. Unternehmen erzeugen riesige Datenmengen am Edge – sei es in Einzelhandelsgeschäften, Fertigungsstätten, Gesundheitseinrichtungen oder abgelegenen Standorten. Die Herausforderung? Diese Daten schnell und sicher zu verarbeiten, ohne sich ausschließlich auf zentrale Cloud-Infrastruktur zu verlassen. Hier kommen <strong>Lenovo Edge Solutions</strong> ins Spiel.</p></div>
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: "Edge-Lösungen"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: "Edge- und KI-Lösungen"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b3b046b6-9287-49a2-b5f2-0bd655a5290c"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: Zurück zu Lösungen
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: Trend
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: "Diese Daten schnell und sicher zu verarbeiten, ohne sich ausschließlich auf zentrale Cloud-Infrastruktur zu verlassen."
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: "Edge- und KI-Lösungen"
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: Hauptmerkmale
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: Lösungen anzeigen
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100831Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: "<p>Diese Daten schnell und sicher zu verarbeiten, ohne sich ausschließlich auf zentrale Cloud-Infrastruktur zu verlassen. Hier kommen <strong>Lenovo Edge Solutions</strong> ins Spiel.</p>"
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: Vertrieb kontaktieren
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: Alles, was Sie brauchen, um einen modernen digitalen Arbeitsplatz zu schaffen
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "b34f54e5-8ab3-45b6-9131-0ebff9ebea06"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Edge and AI Solutions
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T111015Z
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: |
+        <div class="ck-content"><p>In today’s digital economy, speed and intelligence are everything. Businesses are generating massive amounts of data at the edge—whether in retail stores, manufacturing floors, healthcare facilities, or remote sites. The challenge? Processing this data quickly and securely without relying solely on centralized cloud infrastructure. That’s where <strong>Lenovo Edge Solutions</strong> come in.</p></div>
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Edge Solutions
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: Edge and AI Solutions
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3fa9d149-cf04-4ea2-8b59-d83fb8738468"
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: Trending
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Processing this data quickly and securely without relying solely on centralized cloud infrastructure. 
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Edge and AI Solutions
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T093546Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: <p>Processing this data quickly and securely without relying solely on centralized cloud infrastructure. That’s where <strong>Lenovo Edge Solutions</strong> come in.</p>
+- Language: "fr-FR"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "ef39c710-ed87-46e0-bea4-6a6c5e59b44f"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Solutions Edge et IA
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: Propulsé par l'IA
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: Avantages de la solution
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: Intégré au cloud
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T111015Z
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: |
+        <div class="ck-content"><p>Dans l'économie numérique d'aujourd'hui, la vitesse et l'intelligence sont primordiales. Les entreprises génèrent des quantités massives de données à la périphérie, que ce soit dans les magasins de détail, les ateliers de fabrication, les établissements de santé ou les sites distants. Le défi ? Traiter ces données rapidement et en toute sécurité sans dépendre uniquement de l'infrastructure cloud centralisée. C'est là que les <strong>solutions Lenovo Edge</strong> interviennent.</p></div>
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Solutions Edge
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: Solutions Edge et IA
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5cc5ab30-81df-458d-8fb7-6507d06f8cdf"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: Retour aux solutions
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: Tendance
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Traitement rapide et sécurisé de ces données sans dépendre uniquement de l'infrastructure cloud centralisée.
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Solutions Edge et IA
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: Caractéristiques clés
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: Voir les solutions
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143551Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: <p>Traitement rapide et sécurisé de ces données sans dépendre uniquement de l'infrastructure cloud centralisée. C'est là que les <strong>solutions Lenovo Edge</strong> interviennent.</p>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: Contacter les ventes
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: Tout ce dont vous avez besoin pour créer un lieu de travail numérique moderne
+- Language: "pl-PL"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "0a4fdd6d-d380-4383-bb73-c7c20e73c261"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Rozwiązania Edge i AI
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0b7a09bc-beb3-464a-a460-2e4028579180"
+      Hint: Badge3
+      Value: Zasilane przez AI
+    - ID: "182ccb48-f6c4-4610-9423-95904aea3dd1"
+      Hint: BenefitsTitle
+      Value: Korzyści z rozwiązania
+    - ID: "236d29c5-7fe9-4ec3-a4dd-1ec6d0defd50"
+      Hint: Badge2
+      Value: Zintegrowane z chmurą
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251117T111015Z
+    - ID: "3a9bba24-0ca6-4d99-8af2-c1fc11c81524"
+      Hint: LongDescription
+      Value: |
+        <div class="ck-content"><p>W dzisiejszej cyfrowej gospodarce szybkość i inteligencja są wszystkim. Firmy generują ogromne ilości danych na krawędzi — czy to w sklepach detalicznych, na halach produkcyjnych, w placówkach opieki zdrowotnej czy w odległych miejscach. Wyzwanie? Przetwarzanie tych danych szybko i bezpiecznie, bez polegania wyłącznie na scentralizowanej infrastrukturze chmurowej. Właśnie tutaj wkraczają <strong>Lenovo Edge Solutions</strong>.</p></div>
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Rozwiązania Edge
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "898eed82-2b68-46ed-b7ac-686621b124a0"
+      Hint: SolutionTitle
+      Value: Rozwiązania Edge i AI
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "299cabeb-1c5d-4cbc-a499-7ccb101193a9"
+    - ID: "93ba1e17-d85e-4343-89c2-d625a39568c2"
+      Hint: BackLinkText
+      Value: Powrót do rozwiązań
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "abdf518d-024b-4aed-8f67-8526dd1ab571"
+      Hint: Badge1
+      Value: Popularne
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "bee16718-5997-46da-8581-1fe5274e1250"
+      Hint: Subtitle
+      Value: Przetwarzanie tych danych szybko i bezpiecznie, bez polegania wyłącznie na scentralizowanej infrastrukturze chmurowej.
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: Rozwiązania Edge i AI
+    - ID: "d3b77cb7-d296-418d-a0c6-1ffbd7589a76"
+      Hint: KeyFeaturesTitle
+      Value: Kluczowe funkcje
+    - ID: "d79bd10a-d25b-4876-82d6-6fd239b2d6a8"
+      Hint: ButtonText
+      Value: Zobacz rozwiązania
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144016Z
+    - ID: "ef636164-2a0b-46c4-afae-c837c9166d87"
+      Hint: Description
+      Value: <p>Przetwarzanie tych danych szybko i bezpiecznie, bez polegania wyłącznie na scentralizowanej infrastrukturze chmurowej. Właśnie tutaj wkraczają <strong>Lenovo Edge Solutions</strong>.</p>
+    - ID: "f1647492-9d67-4524-b163-aed1db19ccff"
+      Hint: CTAText
+      Value: Skontaktuj się z działem sprzedaży
+    - ID: "fc07ea25-a844-48c9-800b-8fa0959fda6e"
+      Hint: KeyFeaturesDescription
+      Value: Wszystko, czego potrzebujesz, aby zbudować nowoczesne cyfrowe miejsce pracy

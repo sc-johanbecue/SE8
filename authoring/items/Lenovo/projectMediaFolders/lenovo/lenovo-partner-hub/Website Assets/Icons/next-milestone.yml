@@ -1,0 +1,54 @@
+﻿---
+ID: "18157b0a-5f47-48ac-a6e1-97f63872c405"
+Parent: "1a490611-0db6-4421-a3c5-494837e831a7"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/lenovo/lenovo-partner-hub/Website Assets/Icons/next-milestone"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/18157B0A5F4748ACA6E197F63872C405.ashx?h=16&thn=1&w=16"
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "01616b9b-af30-4fda-aab4-ce3ac48777c3"
+  Value: PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8IS0tIEZsYWcgb24gcG9sZSAtLT4KICA8cGF0aCBkPSJNMTAgOFY0NiIgc3Ryb2tlPSIjRTIyMzFBIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0xMCA4QzEwIDggMTUgMTIgMjUgMTJDMzUgMTIgNDAgOCA0MCA4VjI4QzQwIDI4IDM1IDMyIDI1IDMyQzE1IDMyIDEwIDI4IDEwIDI4VjhaIiBmaWxsPSIjRTIyMzFBIiBzdHJva2U9IiNFMjIzMUEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDwhLS0gU3RhciBpbiBmbGFnIC0tPgogIDxwYXRoIGQ9Ik0yNSAxNkwyNi41IDIwLjVMMzEgMjAuNUwyNy41IDIzLjVMMjguNSAyNy41TDI1IDI0LjVMMjEuNSAyNy41TDIyLjUgMjMuNUwxOSAyMC41TDIzLjUgMjAuNUwyNSAxNloiIGZpbGw9IndoaXRlIi8+CiAgPGNpcmNsZSBjeD0iMTAiIGN5PSI0NiIgcj0iMiIgZmlsbD0iI0UyMjMxQSIvPgo8L3N2Zz4K
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 573
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/svg+xml
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: svg
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "84ea8a75-0ca3-41e6-931a-66f134ed20e7"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T025647Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: "next-milestone"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d987928b-008f-4a08-9655-bae905b264f5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251114T025647Z

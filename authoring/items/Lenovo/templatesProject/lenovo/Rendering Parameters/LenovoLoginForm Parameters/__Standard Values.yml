@@ -1,0 +1,27 @@
+﻿---
+ID: "8fa2b77d-45cc-47b0-8f6c-808df7e5e9c2"
+Parent: "275c9a2f-e497-4325-b5b2-f1b26c5798ea"
+Template: "275c9a2f-e497-4325-b5b2-f1b26c5798ea"
+Path: /sitecore/templates/Project/lenovo/Rendering Parameters/LenovoLoginForm Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cc162b66-cec7-4f94-b971-c960b5933a42"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251112T215250Z

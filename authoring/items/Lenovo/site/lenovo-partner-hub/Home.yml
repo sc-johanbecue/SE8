@@ -1,0 +1,521 @@
+﻿---
+ID: "e44f3c70-887e-4c5a-942d-cd294d40723e"
+Parent: "4aa8ea40-7ff5-42d8-bad0-625e060d267d"
+Template: "30b881ed-9320-4536-8e1d-49d6744eb89e"
+Path: "/sitecore/content/lenovo/lenovo-partner-hub/Home"
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{AC7ED183-E00E-49BC-A83A-EB39D1E0D604}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "fe52b4d4-8ed6-46a1-8afc-af74a54fe2e2"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{DB5B128D-CCF0-4675-A033-E4BCBB3A956F}"
+          p:before="*"
+          s:ds="56e2abaf-57c3-455a-bb4e-ddfe64ca97eb"
+          s:id="{FE9D4BF8-8DE7-4C27-BF1D-C9E0E8A9FE04}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+          s:ph="headless-main" />
+        <r
+          uid="{3694AFFA-5E63-4B35-9261-EA369F3022DD}"
+          p:after="r[@uid='{DB5B128D-CCF0-4675-A033-E4BCBB3A956F}']"
+          s:ds="67a0df69-52af-465a-8e72-5c6fabc24dce"
+          s:id="{A1FD9A87-85CC-49E8-878D-66EE3A5F1B89}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+          s:ph="headless-main" />
+        <r
+          uid="{EC98EBE4-5470-44F2-A714-672763D9F776}"
+          p:after="r[@uid='{3694AFFA-5E63-4B35-9261-EA369F3022DD}']"
+          s:ds="9503cb36-6c0d-41c7-83dc-6d7aa6679d74"
+          s:id="{6F39463C-91D4-48BA-814A-3E8108ABA872}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=7"
+          s:ph="headless-main" />
+        <r
+          uid="{0ED6185B-4F42-46BD-84DB-E88EFA1481E0}"
+          p:after="r[@uid='{EC98EBE4-5470-44F2-A714-672763D9F776}']"
+          s:ds="000a30b2-f56b-4e91-b618-31a7c14b5224"
+          s:id="{78188C93-88C4-4E65-8C20-1A2232A7BE85}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=11"
+          s:ph="headless-main" />
+        <r
+          uid="{6B1385E4-0F17-4520-9963-859E95CF8B8D}"
+          p:after="r[@uid='{0ED6185B-4F42-46BD-84DB-E88EFA1481E0}']"
+          s:ds="0b540a00-d680-4d47-8bc1-dca23ff15a56"
+          s:id="{3DEFEF39-19E1-4B1E-AEC9-AB46C9C12D5A}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+          s:ph="/headless-main/lenovoStatsCardsContainer-2" />
+        <r
+          uid="{68402B1C-44C3-46A2-AAB1-556294535758}"
+          p:after="r[@uid='{6B1385E4-0F17-4520-9963-859E95CF8B8D}']"
+          s:ds="0b540a00-d680-4d47-8bc1-dca23ff15a56"
+          s:id="{3DEFEF39-19E1-4B1E-AEC9-AB46C9C12D5A}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=13"
+          s:ph="/headless-main/lenovoStatsCardsContainer-2" />
+        <r
+          uid="{947DD4E4-B466-45EC-8B30-C3D2970447E7}"
+          p:after="r[@uid='{68402B1C-44C3-46A2-AAB1-556294535758}']"
+          s:ds="015bc604-a20f-49dd-987c-71be74af764c"
+          s:id="{3DEFEF39-19E1-4B1E-AEC9-AB46C9C12D5A}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+          s:ph="/headless-main/lenovoStatsCardsContainer-2" />
+        <r
+          uid="{BFEFD08E-0A10-4F3D-8F88-5737EBFE802F}"
+          p:after="r[@uid='{947DD4E4-B466-45EC-8B30-C3D2970447E7}']"
+          s:ds="6d9cfd80-7838-4158-9897-2a1e8963611e"
+          s:id="{3DEFEF39-19E1-4B1E-AEC9-AB46C9C12D5A}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+          s:ph="/headless-main/lenovoStatsCardsContainer-2" />
+        <r
+          uid="{EBB1C89B-8C9B-46F5-BBA5-696D57CEC474}"
+          p:after="r[@uid='{BFEFD08E-0A10-4F3D-8F88-5737EBFE802F}']"
+          s:ds="074856f5-0a2c-427c-95a0-eae7ffc3780d"
+          s:id="{3DEFEF39-19E1-4B1E-AEC9-AB46C9C12D5A}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=6"
+          s:ph="/headless-main/lenovoStatsCardsContainer-2" />
+        <r
+          uid="{9BFC0068-F0EE-4AB0-8F13-5DCA44A6C7F4}"
+          p:after="r[@uid='{EBB1C89B-8C9B-46F5-BBA5-696D57CEC474}']"
+          s:ds="0cc59dc6-76a7-4bdf-8356-9690c5c2c979"
+          s:id="{D7D0F81C-FD87-4A45-939D-2DD91C9536EE}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=8"
+          s:ph="/headless-main/lenovoSolutionCardsContainer-7" />
+        <r
+          uid="{DBF479DE-1BD9-4097-8826-680BAA0D7C36}"
+          p:after="r[@uid='{9BFC0068-F0EE-4AB0-8F13-5DCA44A6C7F4}']"
+          s:ds="{40C91FE5-A8C4-4D19-A037-94658CE4A877}"
+          s:id="{D7D0F81C-FD87-4A45-939D-2DD91C9536EE}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=12"
+          s:ph="/headless-main/lenovoSolutionCardsContainer-7" />
+        <r
+          uid="{5CF99BCB-AF79-47F0-B20E-1AD01DAEA838}"
+          p:after="*[1=2]"
+          s:ds="1508c486-6412-4cf0-8755-fa97e1b0140c"
+          s:id="{D7D0F81C-FD87-4A45-939D-2DD91C9536EE}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=9"
+          s:ph="/headless-main/lenovoSolutionCardsContainer-7" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{F558BEC9-C602-4D7A-B9A1-D0411C946EA4}"
+Languages:
+- Language: "ar-EG"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{68402B1C-44C3-46A2-AAB1-556294535758}">
+              <p:d />
+            </r>
+            <r
+              uid="{DBF479DE-1BD9-4097-8826-680BAA0D7C36}">
+              <p:d />
+            </r>
+            <r
+              uid="{601F847A-0AD9-4ACD-AC4B-E8153524CA71}"
+              p:after="r[@uid='{9BFC0068-F0EE-4AB0-8F13-5DCA44A6C7F4}']"
+              s:ds="40c91fe5-a8c4-4d19-a037-94658ce4a877"
+              s:id="{D7D0F81C-FD87-4A45-939D-2DD91C9536EE}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=14"
+              s:ph="/headless-main/lenovoSolutionCardsContainer-7" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144321Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: $name
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e02ce701-4eeb-4c00-b8b7-24bb93b65efd"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: "lenovo-partner-hub"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T153615Z
+- Language: "de-DE"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "1aa3fe5d-ffbc-480e-81b9-d2e809bd2206"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Home
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{68402B1C-44C3-46A2-AAB1-556294535758}">
+              <p:d />
+            </r>
+            <r
+              uid="{DBF479DE-1BD9-4097-8826-680BAA0D7C36}">
+              <p:d />
+            </r>
+            <r
+              uid="{601F847A-0AD9-4ACD-AC4B-E8153524CA71}"
+              p:after="r[@uid='{9BFC0068-F0EE-4AB0-8F13-5DCA44A6C7F4}']"
+              s:ds="40c91fe5-a8c4-4d19-a037-94658ce4a877"
+              s:id="{D7D0F81C-FD87-4A45-939D-2DD91C9536EE}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=14"
+              s:ph="/headless-main/lenovoSolutionCardsContainer-7" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144321Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: $name
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "62a12598-b539-44ea-9f50-9ebb1ed31ec5"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: "lenovo-partner-hub"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T100814Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{68402B1C-44C3-46A2-AAB1-556294535758}">
+              <p:d />
+            </r>
+            <r
+              uid="{DBF479DE-1BD9-4097-8826-680BAA0D7C36}">
+              <p:d />
+            </r>
+            <r
+              uid="{601F847A-0AD9-4ACD-AC4B-E8153524CA71}"
+              p:after="r[@uid='{9BFC0068-F0EE-4AB0-8F13-5DCA44A6C7F4}']"
+              s:ds="40c91fe5-a8c4-4d19-a037-94658ce4a877"
+              s:id="{D7D0F81C-FD87-4A45-939D-2DD91C9536EE}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=14"
+              s:ph="/headless-main/lenovoSolutionCardsContainer-7" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144321Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1a40ac47-69c1-42a3-80f2-373576dfdf6f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: "lenovo-partner-hub"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T134014Z
+- Language: "fr-FR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{68402B1C-44C3-46A2-AAB1-556294535758}">
+              <p:d />
+            </r>
+            <r
+              uid="{DBF479DE-1BD9-4097-8826-680BAA0D7C36}">
+              <p:d />
+            </r>
+            <r
+              uid="{601F847A-0AD9-4ACD-AC4B-E8153524CA71}"
+              p:after="r[@uid='{9BFC0068-F0EE-4AB0-8F13-5DCA44A6C7F4}']"
+              s:ds="40c91fe5-a8c4-4d19-a037-94658ce4a877"
+              s:id="{D7D0F81C-FD87-4A45-939D-2DD91C9536EE}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=14"
+              s:ph="/headless-main/lenovoSolutionCardsContainer-7" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144321Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: $nom
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b2728fbe-4a7b-4fd5-910b-43c6faa0668f"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: "lenovo-partner-hub"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T143536Z
+- Language: "ja-JP"
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "0409bc93-8cc0-46b7-8f90-67a9f6e30423"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{68402B1C-44C3-46A2-AAB1-556294535758}">
+              <p:d />
+            </r>
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144321Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7ed981ed-f9ec-45a4-956d-9391ca934afe"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: レノボ・パートナー・ハブ
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251115T232229Z
+- Language: "ko-KR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{68402B1C-44C3-46A2-AAB1-556294535758}">
+              <p:d />
+            </r>
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144321Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: $name
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6993d58a-b013-4ea8-b594-cf9e013763e7"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: 레노버 파트너 허브
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251117T104926Z
+- Language: "pl-PL"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{68402B1C-44C3-46A2-AAB1-556294535758}">
+              <p:d />
+            </r>
+            <r
+              uid="{DBF479DE-1BD9-4097-8826-680BAA0D7C36}">
+              <p:d />
+            </r>
+            <r
+              uid="{601F847A-0AD9-4ACD-AC4B-E8153524CA71}"
+              p:after="r[@uid='{9BFC0068-F0EE-4AB0-8F13-5DCA44A6C7F4}']"
+              s:ds="40c91fe5-a8c4-4d19-a037-94658ce4a877"
+              s:id="{D7D0F81C-FD87-4A45-939D-2DD91C9536EE}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=14"
+              s:ph="/headless-main/lenovoSolutionCardsContainer-7" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T144321Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: $name
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\johan.becue@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "181b7ffa-2e4e-4894-817b-82460de593a3"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\sarah.oreilly@sitecore.com
+    - ID: "c40b789a-9a3f-46e8-9563-ed1251f56e34"
+      Hint: Title
+      Value: "lenovo-partner-hub"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20251118T144001Z
